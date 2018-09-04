@@ -3,14 +3,14 @@ bookdown::gitbook:
   # split_by: none # creates only one html file
   config:
     toc:
-      before: |
-        <li><a href="./"> Welcome </a></li>
+      #before: |
+      #  <li><a href="./"> Welcome </a></li>
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank"> Powered by bookdown </a></li>
         <li><a href="http://www.barelysignificant.com" target="blank"> Ladislas Nalborczyk </a></li>
       collapse: none # section / subsection
       scroll_highlight: yes
-    #edit: https://github.com/lnalborczyk/phd_thesis2/
+    #edit: https://github.com/lnalborczyk/phd_thesis/
     search: yes
     download: [["thesis.pdf", "PDF"], ["thesis.epub", "EPUB"]]
     highlight: pygments

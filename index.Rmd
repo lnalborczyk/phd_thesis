@@ -9,7 +9,7 @@ bibliography: [bib/book.bib, bib/packages.bib]
 biblio-style: apalike
 
 link-citations: yes
-github-repo: lnalborczyk/phd_thesis2
+github-repo: lnalborczyk/phd_thesis
 
 cover-image: assets/cover.png
 description: Blah blah blah...
@@ -21,23 +21,26 @@ space_between_paragraphs: true
 geometry: "left=4cm, right=3cm, top=2.5cm, bottom=2.5cm"
 ---
 
-# Prerequisites
+\frontmatter
 
-This is a _sample_ book written in **Markdown**. You can use anything that Pandoc's Markdown supports, e.g., a math equation $a^2 + b^2 = c^2$.
+```{block, include = identical(knitr:::pandoc_to(), "html")}
+Welcome {-}
+========================================================================
 
-The **bookdown** package can be installed from CRAN or Github:
-
-```{r eval=FALSE}
-install.packages("bookdown")
-# or the development version
-# devtools::install_github("rstudio/bookdown")
 ```
 
-Remember each Rmd file contains one and only one chapter, and a chapter is defined by the first-level heading `#`.
+```{r fig.align = "center", out.width = "50%", echo = FALSE, include = identical(knitr:::pandoc_to(), "html")}
+knitr::include_graphics("assets/cover.png", dpi = NA)
+```
 
-To compile this example to PDF, you need XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): <https://yihui.name/tinytex/>.
+```{r, include = identical(knitr:::pandoc_to(), "html"), results = "asis", echo = FALSE}
+cat("
+This book, when finished, will contain my dissertation research. 
 
-```{r include = FALSE, warning = FALSE}
+- Last compiled:", format(Sys.time()))
+```
+
+```{r eval = FALSE, include = FALSE, warning = FALSE}
 # automatically create a bib database for all installed R packages
 knitr::write_bib(x = installed.packages()[, 1], file = "bib/packages.bib")
 ```
