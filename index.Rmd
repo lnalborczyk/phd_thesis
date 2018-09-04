@@ -1,15 +1,24 @@
 --- 
-title: "A Minimal Book Example"
-author: "Ladislas Nalborczyk"
+title: Psychophysiological characteristics of verbal rumination
+author: Ladislas Nalborczyk
 date: "`r Sys.Date()`"
-site: bookdown::bookdown_site
-output: bookdown::gitbook
 documentclass: book
-bibliography: [book.bib, packages.bib]
+site: bookdown::bookdown_site
+
+bibliography: [bib/book.bib, bib/packages.bib]
 biblio-style: apalike
+
 link-citations: yes
-github-repo: lnalborczyk/phd_thesis
-description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
+github-repo: lnalborczyk/phd_thesis2
+
+cover-image: assets/cover.png
+description: Blah blah blah...
+
+csl: csl/apa6.csl
+lot: true # list of tables
+lof: true # list of figures
+space_between_paragraphs: true
+geometry: "left=4cm, right=3cm, top=2.5cm, bottom=2.5cm"
 ---
 
 # Prerequisites
@@ -28,9 +37,7 @@ Remember each Rmd file contains one and only one chapter, and a chapter is defin
 
 To compile this example to PDF, you need XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): <https://yihui.name/tinytex/>.
 
-```{r include=FALSE}
-# automatically create a bib database for R packages
-knitr::write_bib(c(
-  .packages(), 'bookdown', 'knitr', 'rmarkdown'
-), 'packages.bib')
+```{r include = FALSE, warning = FALSE}
+# automatically create a bib database for all installed R packages
+knitr::write_bib(x = installed.packages()[, 1], file = "bib/packages.bib")
 ```
