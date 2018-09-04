@@ -12,7 +12,7 @@ bookdown::gitbook:
       scroll_highlight: yes
     #edit: https://github.com/lnalborczyk/phd_thesis/
     search: yes
-    download: [["thesis.pdf", "PDF"], ["thesis.epub", "EPUB"]]
+    download: ["pdf"]
     highlight: pygments
 
 bookdown::pdf_book:
@@ -23,7 +23,7 @@ bookdown::pdf_book:
   latex_engine: xelatex
   citation_package: natbib
   keep_tex: yes
-  #dev: "cairo_pdf"
+  dev: "cairo_pdf"
   #template: latex/template.tex
 
 bookdown::epub_book: default

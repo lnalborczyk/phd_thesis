@@ -21,6 +21,6 @@ geometry: "left=4cm, right=3cm, top=2.5cm, bottom=2.5cm"
 
 # Welcome {-}
 
-This book, when finished, will contain my dissertation research.
+This book, when finished, will contain my PhD thesis.
 
 
