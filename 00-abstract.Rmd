@@ -1,3 +1,3 @@
-# Abstract {#abstract}
+# Abstract {-}
 
 Blah blah blah

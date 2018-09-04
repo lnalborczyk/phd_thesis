@@ -1,3 +1,3 @@
-# Final Words
+# Articulatory suppression effects on induced rumination
 
-We have finished a nice book.
+...

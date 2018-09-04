@@ -1,3 +1,7 @@
-# Methods
+# (PART) Experimental part {-}
 
-We describe our methods in this chapter.
+Blah blah blah... explain why two parts...
+
+# Orofacial electromyographic correlates of induced verbal rumination 
+
+Biological Psychology paper...

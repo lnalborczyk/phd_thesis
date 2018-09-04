@@ -6,6 +6,7 @@ new_session: yes
 edit: https://github.com/lnalborczyk/phd_thesis/edit/master/%s
 rmd_files:
   - index.Rmd
+  - 00-acknowledgments.Rmd
   - 00-abstract.Rmd
   - 01-chap1.Rmd
   - 02-chap2.Rmd
@@ -14,4 +15,5 @@ rmd_files:
   - 05-chap5.Rmd
   - 06-chap6.Rmd
   - 07-chap7.Rmd
+  - 08-discussion.Rmd
   - 99-references.Rmd

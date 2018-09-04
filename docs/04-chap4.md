@@ -1,7 +1,3 @@
-# Applications
+# Dissociating facial electromyographic correlates of visual and verbal induced rumination
 
-Some _significant_ applications are demonstrated in this chapter.
-
-## Example one
-
-## Example two
+Second EMG study with Sonja...

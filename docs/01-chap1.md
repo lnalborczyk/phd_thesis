@@ -1,59 +1,44 @@
-# (PART) Part I {-} 
+# (PART) Theoretical framework {-} 
+
+# Overt and imagined actions {#intro}
 
 ...
 
-# Introduction {#intro}
+## Motor imagery
 
-You can label chapter and section titles using `{#label}` after them, e.g., we can reference Chapter \@ref(intro). If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \@ref(methods).
+Considerable experimental evidence has accumulated to suggest that movement execution and MI share substantial overlap of active brain regions (for review, see Guillot et al., 2012). Such apparent functional equivalence supports the hypothesis that MI draws on the similar neural networks that are used in actual perception and motor control (Jeannerod, 1994; Grezes and Decety, 2001; Holmes and Collins, 2001)...
 
-Figures and tables with captions will be placed in `figure` and `table` environments, respectively.
+### Simulation theories
 
+...
 
-```r
-par(mar = c(4, 4, .1, .1))
-plot(pressure, type = 'b', pch = 19)
-```
+### Emulation theories
+
+...
+
+### Action representation and internal models
+
+Voir Jeannerod (2004), Wolpert el al. (1995), Wolpert & Gharamani (2000)...
+
+## Speech imagery
+
+...
+
+### MVTV Cohen (1986)
+
+...
+
+### Predictive models
+
+...
+
+# Rumination as simulated speech
+
+As suggested by @Christoff2016, rumination and other forms of spontaneous thoughts can be considered in a common conceptual space (see Figure 1). This space is built upon two dimensions: *deliberate constraints* and *automatic constraints*. These dimensions represent two general mechanisms that allow to constrain the contents of these related mental states and the transitions between them. The first contrain correspond to a deliberate processus and is implemented through **cognitive control** [@Miller2000]. The second constrain is referring to more automatic constrains like sensory afferences. In this framework, rumination is characterized by the highest level of automatic constraints and spread all along the *deliberate constraints* dimension.
 
 <div class="figure" style="text-align: center">
-<img src="01-chap1_files/figure-epub3/nice-fig-1.png" alt="Here is a nice figure!" width="80%" />
-<p class="caption">(\#fig:nice-fig)Here is a nice figure!</p>
+<img src="assets/conceptual_space.png" alt="Conceptual space of different types of thought (Christoff et al., 2016)"  />
+<p class="caption">(\#fig:unnamed-chunk-1)Conceptual space of different types of thought (Christoff et al., 2016)</p>
 </div>
 
-Reference a figure by its code chunk label with the `fig:` prefix, e.g., see Figure \@ref(fig:nice-fig). Similarly, you can reference tables generated from `knitr::kable()`, e.g., see Table \@ref(tab:nice-tab).
-
-
-```r
-knitr::kable(
-  head(iris, 20), caption = 'Here is a nice table!',
-  booktabs = TRUE
-)
-```
-
-
-
-Table: (\#tab:nice-tab)Here is a nice table!
-
- Sepal.Length   Sepal.Width   Petal.Length   Petal.Width  Species 
--------------  ------------  -------------  ------------  --------
-          5.1           3.5            1.4           0.2  setosa  
-          4.9           3.0            1.4           0.2  setosa  
-          4.7           3.2            1.3           0.2  setosa  
-          4.6           3.1            1.5           0.2  setosa  
-          5.0           3.6            1.4           0.2  setosa  
-          5.4           3.9            1.7           0.4  setosa  
-          4.6           3.4            1.4           0.3  setosa  
-          5.0           3.4            1.5           0.2  setosa  
-          4.4           2.9            1.4           0.2  setosa  
-          4.9           3.1            1.5           0.1  setosa  
-          5.4           3.7            1.5           0.2  setosa  
-          4.8           3.4            1.6           0.2  setosa  
-          4.8           3.0            1.4           0.1  setosa  
-          4.3           3.0            1.1           0.1  setosa  
-          5.8           4.0            1.2           0.2  setosa  
-          5.7           4.4            1.5           0.4  setosa  
-          5.4           3.9            1.3           0.4  setosa  
-          5.1           3.5            1.4           0.3  setosa  
-          5.7           3.8            1.7           0.3  setosa  
-          5.1           3.8            1.5           0.3  setosa  
-
-You can write citations, too. For example, we are using the **bookdown** package [@R-bookdown] in this sample book, which was built on top of R Markdown and **knitr** [@xie2015].
+...
