@@ -31,6 +31,10 @@
 \usepackage{booktabs,caption,fixltx2e}
 \usepackage[none]{hyphenat}
 
+% for the cover page
+\usepackage[a4paper]{meta-donnees}
+\usepackage{lmodern}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % below is the by-default configuration of bookdown-demo
 % https://github.com/rstudio/bookdown-demo/blob/master/preamble.tex
@@ -45,3 +49,11 @@
   \thm@postskip=\thm@preskip
 }
 \makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% remove default title
+% https://stackoverflow.com/questions/45963505/coverpage-and-copyright-notice-before-title-in-r-bookdown
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\let\oldmaketitle\maketitle
+\AtBeginDocument{\let\maketitle\relax}

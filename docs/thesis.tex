@@ -25,7 +25,6 @@
 \usepackage{hyperref}
 \hypersetup{unicode=true,
             pdftitle={Psychophysiological characteristics of verbal rumination},
-            pdfauthor={Ladislas Nalborczyk},
             pdfborder={0 0 0},
             breaklinks=true}
 \urlstyle{same}  % don't use monospace font for urls
@@ -120,13 +119,11 @@
   \title{Psychophysiological characteristics of verbal rumination}
     \pretitle{\vspace{\droptitle}\centering\huge}
   \posttitle{\par}
-    \author{Ladislas Nalborczyk}
-    \preauthor{\centering\large\emph}
-  \postauthor{\par}
-      \predate{\centering\large\emph}
-  \postdate{\par}
-    \date{2018-09-04}
-
+    \author{}
+    \preauthor{}\postauthor{}
+    \date{}
+    \predate{}\postdate{}
+  
 \usepackage{tikz}
 \usepackage{lscape}
 \usepackage{indentfirst}
@@ -160,6 +157,10 @@
 \usepackage{booktabs,caption,fixltx2e}
 \usepackage[none]{hyphenat}
 
+% for the cover page
+\usepackage[a4paper]{meta-donnees}
+\usepackage{lmodern}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % below is the by-default configuration of bookdown-demo
 % https://github.com/rstudio/bookdown-demo/blob/master/preamble.tex
@@ -175,8 +176,63 @@
 }
 \makeatother
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% remove default title
+% https://stackoverflow.com/questions/45963505/coverpage-and-copyright-notice-before-title-in-r-bookdown
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\let\oldmaketitle\maketitle
+\AtBeginDocument{\let\maketitle\relax}
+
 \begin{document}
 \maketitle
+
+%\pdfbookmark[0]{Title}{title}
+%\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Title information
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Specialite{Cognitive Sciences, Psychology, Neurocognition \& \\ Educational Sciences}
+\Arrete{May 25 2016}
+\Auteur{Ladislas Nalborczyk}
+\Directeur{Pr. Elsa Spinelli \& Pr. Ernst Koster}
+\CoDirecteur{Dr. Hélène L\oe venbruck \& Dr. Marcela Perrone-Bertolotti}
+
+% Lab(s)
+\Laboratoire{Laboratoire de Psychologie et NeuroCognition \& \\ Psychopathology and Affective Neuroscience Laboratory}
+
+% Doctoral school(s)
+\EcoleDoctorale{the doctoral school EDISCE (Grenoble) and the Doctoral School of Social and Behavioural Sciences (Ghent)}
+
+% Title
+\Titre{Psychophysiological characteristics\\ of verbal rumination}
+
+% Sub-title
+\Soustitre{Basic and clinical aspects}
+
+% defense date
+\Depot{November XX 2019}
+
+\Jury{
+
+\UGTPresident{XXXX}{...}
+%\UGTPresidente{XXXX}{...}
+
+\UGTRapporteur{XXXX}{...}
+\UGTRapporteur{XXXX}{...}
+
+\UGTExaminatrice{XXXX}{...}
+\UGTExaminatrice{XXXX}{...}
+
+\UGTDirecteur{Elsa Spinelli}{...}
+\UGTCoEncandrant{Ernst Koster}{...}
+}
+
+%\frontmatter
+\MakeUGthesePDG
+\cleardoublepage
 
 {
 \setcounter{tocdepth}{3}
@@ -199,7 +255,12 @@ framework}\label{part-theoretical-framework}
 
 \chapter{Overt and imagined actions}\label{intro}
 
-\ldots{}
+Blah blah \citep{koster_rumination_2013}\ldots{}
+
+Wittgenstein's (1953) famous query: ``When I raise my arm, what is left
+after subtracting the fact that my arm raised?''. We posit that what is
+left is an internal model (a representation) of what should happen if
+and when my arm goes up (Jeannerod, 1999)\ldots{}
 
 \section{Motor imagery}\label{motor-imagery}
 
@@ -211,9 +272,19 @@ networks that are used in actual perception and motor control
 (Jeannerod, 1994; Grezes and Decety, 2001; Holmes and Collins,
 2001)\ldots{}
 
+See introduction of O'Shea (2017) phd thesis introduction\ldots{}
+
+See Stinear's chapter in Guillot's book for intracortical and spinal
+mechanisms involved during motor imagery (p.55-57).
+
 \subsection{Simulation theories}\label{simulation-theories}
 
 \ldots{}
+
+For Jeannerod (1995), motor imagery is necessarily first-perspective.
+Third perspective imagery is imagery, but not MOTOR imagery\ldots{}
+Motor representations are conceived here as `internal models' of the
+goal of an action.
 
 \subsection{Emulation theories}\label{emulation-theories}
 
@@ -225,9 +296,23 @@ models}\label{action-representation-and-internal-models}
 Voir Jeannerod (2004), Wolpert el al. (1995), Wolpert \& Gharamani
 (2000)\ldots{}
 
-\section{Speech imagery}\label{speech-imagery}
+\section{Inner speech}\label{inner-speech}
 
 \ldots{}
+
+The inner voice as the sensory consequence (prediction, see Loevenbruck
+et al., 2018) of imagined speech. Analogy with raising the arm: what we
+perceive when we imagine raising our arm are the sensory consequences
+(e.g., visual) of what would happen if we actually raised our arm, these
+are then kind of predictions. The same thing happens during inner speech
+production: the inner voice is the predicted auditory consequence of
+actual speech, except that it's predicted. The two actions might seem
+very different, partly because of differences in the degree of
+automaticity. Imagining raising our arm might need a
+voluntary/deliberate/conscious (choose a word) intention (i.e., I want
+to raise my arm \textgreater{} I raise my arm) while speech imagery
+(i.e., inner speech) seems more automatic: we do not expression
+consciously the intention to speak, we just speak\ldots{}
 
 \subsection{MVTV Cohen (1986)}\label{mvtv-cohen-1986}
 
@@ -235,7 +320,20 @@ Voir Jeannerod (2004), Wolpert el al. (1995), Wolpert \& Gharamani
 
 \subsection{Predictive models}\label{predictive-models}
 
-\ldots{}
+Learning how to internalise speech might be similar to learning how to
+internalise playing an instrument\ldots{} Let's consider the analogy
+between speaking and playing an instrument (e.g., the piano). Playing
+piano results from the learning of an infinitely complex coordination of
+fine motor sequences, that in turn produce sensory (kinestheatic,
+auditory, visual, etc) feedback to the producer of the action (the
+agent). It seems that (from a certain level of analysis), the act of
+speech can be paralleled with the act of playing an instrument in that
+its consists in the coordination of infinitely complex movements that
+result in some modifications in the environment that in turn generate
+sensory feedbacks for the agent. Thus, pursuing the analogy, we argue
+that imagining playing pian and imagining speaking (i.e., producing
+inner speech) might rest on similar mechanisms\ldots{} see O'Shea \&
+Moran (2018) on expert pianists\ldots{}
 
 \chapter{Rumination as simulated
 speech}\label{rumination-as-simulated-speech}
@@ -2535,7 +2633,7 @@ conclusions}\label{part-general-discussion-and-conclusions}
 \setlength{\parindent}{-0.20in} \setlength{\leftskip}{0.20in}
 \setlength{\parskip}{8pt}
 
-\bibliography{bib/book.bib,bib/packages.bib}
+\bibliography{bib/thesis.bib,bib/packages.bib}
 
 
 \end{document}
