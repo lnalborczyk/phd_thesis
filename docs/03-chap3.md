@@ -1,7 +1,3 @@
-# (PART) Experimental part {-}
-
-Blah blah blah... explain why two parts...
-
 # Orofacial electromyographic correlates of induced verbal rumination 
 
 Summary of the research...^[This experimental chapter is a published paper reformatted for the need of this thesis. Source: Nalborczyk, L., Perrone-Bertolotti, M., Baeyens, C., Grandchamp, R., Polosan, M., Spinelli, E., ... L\oe venbruck, H. (2017). Orofacial Electromyographic Correlates of Induced Verbal Rumination. *Biological Psychology, 127*, 53-63. http://dx.doi.org/10.1016/j.biopsycho.2017.04.013.]
@@ -108,7 +104,7 @@ Mean VAS score on the Feelings scale was slightly lower after induction ($\alpha
 In the following, we report the mean (indicated by the Greek symbol ρ) and the 95% HDI of the posterior distribution on the correlation coefficient ($\rho$). Examination of the correlation matrix estimated by the multivariate model revealed no apparent correlation neither between Feelings and Problems scales ($\rho$ = −0.01, 95% HDI [-0.23, 0.22]), nor between Feelings and Brooding ($\rho$ = 0.08, 95% HDI [-0.15, 0.30]). However, we observed a strong positive correlation between Problems and Brooding VASs ($\rho$ = 0.64, 95% HDI [.49, 0.76]), a positive correlation between Feelings and Focused ($\rho$ = 0.30, 95% HDI [.08, 0.50]), and a negative correlation between Problems and Focused ($\rho$ = −0.30, 95% HDI [-0.49, −0.08]), as well as between Brooding and Focused ($\rho$ = −0.18, 95% HDI [-0.39, 0.05]).
 
 <div class="figure" style="text-align: center">
-<img src="assets/emg_fig1.png" alt="Posterior mean (white dots) and 95\% credible intervals for the EMG amplitude (expressed in percentage of baseline level, left panel), and the VAS score (expressed in relative change from baseline, right panel). N = 71 (for each muscle and each VAS). Dashed line represents the null value (i.e., 100)."  />
+<img src="assets/emg_fig1.png" alt="Posterior mean (white dots) and 95\% credible intervals for the EMG amplitude (expressed in percentage of baseline level, left panel), and the VAS score (expressed in relative change from baseline, right panel). N = 71 (for each muscle and each VAS). Dashed line represents the null value (i.e., 100)." width="2244" />
 <p class="caption">(\#fig:unnamed-chunk-2)Posterior mean (white dots) and 95\% credible intervals for the EMG amplitude (expressed in percentage of baseline level, left panel), and the VAS score (expressed in relative change from baseline, right panel). N = 71 (for each muscle and each VAS). Dashed line represents the null value (i.e., 100).</p>
 </div>
 
@@ -143,7 +139,7 @@ Since the Problems and the Brooding scales seemed to be sensitive markers of rum
 Concerning the Problems VAS, the decrease observed in the Orofacial condition was more pronounced than in the Arm condition (Est = −11.06, SE = 6.35, ER10 = 22.65), and slightly more pro- nounced compared to the Story condition (Est = −6.05, SE = 6.31, ER10 = 4.98). The observed on the Brooding VAS score in the Orofacial condition was larger than in the Arm condition (Est = −9.98, SE = 6.07, ER10 = 18.85), and slightly more important compared to the Story condition (Est = −5.23, SE = 6.01, ER10 = 4.27).
 
 <div class="figure" style="text-align: center">
-<img src="assets/emg_fig2.png" alt="Posterior mean and 95\% credible intervals for the VAS score (expressed in relative change from post-induction level)."  />
+<img src="assets/emg_fig2.png" alt="Posterior mean and 95\% credible intervals for the VAS score (expressed in relative change from post-induction level)." width="1063" />
 <p class="caption">(\#fig:unnamed-chunk-3)Posterior mean and 95\% credible intervals for the VAS score (expressed in relative change from post-induction level).</p>
 </div>
 
@@ -158,7 +154,7 @@ We used the same strategy as before to compare the effects of the two kinds of r
 Concerning the OOS, the observed decrease in the Orofacial condition was more pronounced than in the Arm condition (Est = −0.34, SE = 0.14, ER10 = 140.73), as well as concerning the OOI (Est = −0.35, SE = 0.19, ER10 = 29.46), while we observed no noticeable differences between the two kinds of relaxation concerning the EMG amplitude of the FRO (Est = -0.04, SE = 0.14, ER10 = 1.53).
 
 <div class="figure" style="text-align: center">
-<img src="assets/emg_fig3.png" alt="Posterior mean and 95\% credible intervals for the VAS score (expressed in relative change from post-induction level)."  />
+<img src="assets/emg_fig3.png" alt="Posterior mean and 95\% credible intervals for the VAS score (expressed in relative change from post-induction level)." width="1063" />
 <p class="caption">(\#fig:unnamed-chunk-4)Posterior mean and 95\% credible intervals for the VAS score (expressed in relative change from post-induction level).</p>
 </div>
 

@@ -184,6 +184,20 @@
 \let\oldmaketitle\maketitle
 \AtBeginDocument{\let\maketitle\relax}
 
+\usepackage{amsthm}
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{lemma}{Lemma}[chapter]
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[chapter]
+\newtheorem{corollary}{Corollary}[chapter]
+\newtheorem{proposition}{Proposition}[chapter]
+\theoremstyle{definition}
+\newtheorem{example}{Example}[chapter]
+\theoremstyle{definition}
+\newtheorem{exercise}{Exercise}[chapter]
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\newtheorem*{solution}{Solution}
 \begin{document}
 \maketitle
 
@@ -250,10 +264,9 @@ Acknowledgemnents are not yet available.
 
 \ldots{}
 
-\part{Theoretical
-framework}\label{part-theoretical-framework}
+\chapter{Theoretical framework}\label{intro}
 
-\chapter{Overt and imagined actions}\label{intro}
+\section{Overt and imagined actions}\label{intro}
 
 Blah blah \citep{koster_rumination_2013}\ldots{}
 
@@ -262,7 +275,7 @@ after subtracting the fact that my arm raised?''. We posit that what is
 left is an internal model (a representation) of what should happen if
 and when my arm goes up (Jeannerod, 1999)\ldots{}
 
-\section{Motor imagery}\label{motor-imagery}
+\subsection{Motor imagery}\label{motor-imagery}
 
 Considerable experimental evidence has accumulated to suggest that
 movement execution and MI share substantial overlap of active brain
@@ -277,7 +290,7 @@ See introduction of O'Shea (2017) phd thesis introduction\ldots{}
 See Stinear's chapter in Guillot's book for intracortical and spinal
 mechanisms involved during motor imagery (p.55-57).
 
-\subsection{Simulation theories}\label{simulation-theories}
+\subsubsection{Simulation theories}\label{simulation-theories}
 
 \ldots{}
 
@@ -286,17 +299,17 @@ Third perspective imagery is imagery, but not MOTOR imagery\ldots{}
 Motor representations are conceived here as `internal models' of the
 goal of an action.
 
-\subsection{Emulation theories}\label{emulation-theories}
+\subsubsection{Emulation theories}\label{emulation-theories}
 
 \ldots{}
 
-\subsection{Action representation and internal
+\subsubsection{Action representation and internal
 models}\label{action-representation-and-internal-models}
 
 Voir Jeannerod (2004), Wolpert el al. (1995), Wolpert \& Gharamani
 (2000)\ldots{}
 
-\section{Inner speech}\label{inner-speech}
+\subsection{Inner speech}\label{inner-speech}
 
 \ldots{}
 
@@ -314,11 +327,11 @@ to raise my arm \textgreater{} I raise my arm) while speech imagery
 (i.e., inner speech) seems more automatic: we do not expression
 consciously the intention to speak, we just speak\ldots{}
 
-\subsection{MVTV Cohen (1986)}\label{mvtv-cohen-1986}
+\subsubsection{MVTV Cohen (1986)}\label{mvtv-cohen-1986}
 
 \ldots{}
 
-\subsection{Predictive models}\label{predictive-models}
+\subsubsection{Predictive models}\label{predictive-models}
 
 Learning how to internalise speech might be similar to learning how to
 internalise playing an instrument\ldots{} Let's consider the analogy
@@ -335,7 +348,7 @@ that imagining playing pian and imagining speaking (i.e., producing
 inner speech) might rest on similar mechanisms\ldots{} see O'Shea \&
 Moran (2018) on expert pianists\ldots{}
 
-\chapter{Rumination as simulated
+\section{Rumination as simulated
 speech}\label{rumination-as-simulated-speech}
 
 As suggested by \citet{Christoff2016}, rumination and other forms of
@@ -353,7 +366,7 @@ dimension.
 
 \begin{figure}
 
-{\centering \includegraphics{assets/conceptual_space} 
+{\centering \includegraphics[width=17.03in]{assets/conceptual_space} 
 
 }
 
@@ -362,27 +375,30 @@ dimension.
 
 \ldots{}
 
-\chapter{Electromyographic correlates of speech
+\chapter{Theoretical propositions and methodological
+developments}\label{theoretical-propositions-and-methodological-developments}
+
+\section{Electromyographic correlates of speech
 production}\label{electromyographic-correlates-of-speech-production}
 
 \ldots{}
 
-\section{Speech production
+\subsection{Speech production
 mechanisms}\label{speech-production-mechanisms}
 
 \ldots{}
 
-\section{Speech production muscles}\label{speech-production-muscles}
+\subsection{Speech production muscles}\label{speech-production-muscles}
 
 \ldots{}
 
-\section{Muscular physiology}\label{muscular-physiology}
+\subsection{Muscular physiology}\label{muscular-physiology}
 
 \ldots{}
 
-\section{EMG signal}\label{emg-signal}
+\subsection{EMG signal}\label{emg-signal}
 
-\subsection{EMG signal measures}\label{emg-signal-measures}
+\section{EMG signal measures}\label{emg-signal-measures}
 
 Muscular activity can be studied at different levels. At the cellular
 level, using electrophysiological measures like micro-electrods
@@ -391,53 +407,60 @@ potential}. At the segmental level, biomechanis study muscular activity
 using surface sensors, positionned on the skin\ldots{}intermediate
 levels\ldots{}
 
-\subsection{Motor Unit Action
-Potential}\label{motor-unit-action-potential}
+\subsection{Motor unit action
+potential}\label{motor-unit-action-potential}
 
-\textbf{Motor unit action potential} (MUAP) is the electric field
-resulting from the sum f the electric fiels emitted y each fiber of the
-motor unit. This train of action potentials will generate a \emph{train}
-of MUAP, call \textbf{motor unit action potential trains} (MUAPT). The
-electric potential generated by this field is highly dependant of
-parameters such as the number of fibers, their length, speed of
-conduction and position of the neuromuscular junction.
+The \textbf{motor unit action potential} (MUAP) is the electric field
+resulting from the sum of the electric fiels emitted by each fiber of
+the motor unit. This train of action potentials will generate a
+\emph{train} of MUAP, call \textbf{motor unit action potential trains}
+(MUAPT). The electric potential generated by this field is highly
+dependent of parameters such as the number of fibers, their length,
+speed of conduction and position of the neuromuscular junction\ldots{}
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics{assets/muap} 
 
 }
 
-\caption{Motor unit action potential schema.}\label{fig:unnamed-chunk-1}
+\caption{Motor unit action potential representation.}\label{fig:unnamed-chunk-1}
 \end{figure}
 
-\ldots{}
-
-EMG signal then result in a mixture of recruited motor units.
+To sum up, the EMG signal results from a mixture of recruited motor
+units\ldots{}
 
 \subsection{Surface EMG}\label{surface-emg}
 
-\ldots{}\emph{crosstalk} phenomenon \citep{DeLuca1997}. In reason of the
-important\ldots{} of facial muscles, the EMG activity of one recorded
-muscle generally does not represent the activity of a single muscle but
-rather a mixture of\ldots{}\citet{Rapin2011}\ldots{}
+\ldots{}\emph{crosstalk} phenomenon \citep{de_luca_use_1997}. In reason
+of the important\ldots{} of facial muscles, the EMG activity of one
+recorded muscle generally does not represent the activity of a single
+muscle but rather a mixture of\ldots{} \citet{Rapin2011}\ldots{}
 
 \subsection{Basic signal processing}\label{basic-signal-processing}
 
 \ldots{}the EMG signal is a stochastic signal\ldots{} In order to
 illustrate what EMG signal looks like, we simulated EMG signal based on
-a standard algorithm \citep[pp.70-71]{Hermens1999}, implemented in R by
-\citet{Borg2014}.
+a standard algorithm implemented in the \texttt{biosignalEMG} package
+\citep{R-biosignalEMG}.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\OperatorTok{>}\StringTok{ }\KeywordTok{source}\NormalTok{(}\StringTok{"code/EMGfuns.R"}\NormalTok{)}
-\OperatorTok{>}\StringTok{ }\NormalTok{emg <-}\StringTok{ }\KeywordTok{EMG_sim}\NormalTok{(}\DataTypeTok{n =} \DecValTok{2048}\NormalTok{, }\DataTypeTok{sampFreq =} \DecValTok{1000}\NormalTok{, }\DataTypeTok{lF =} \DecValTok{10}\NormalTok{, }\DataTypeTok{hF =} \DecValTok{100}\NormalTok{)}\OperatorTok{$}\NormalTok{sim}
-\OperatorTok{>}\StringTok{ }\KeywordTok{ts.plot}\NormalTok{(emg, }\DataTypeTok{xlab =} \StringTok{"Time (ms)"}\NormalTok{, }\DataTypeTok{ylab =} \StringTok{"simEMG"}\NormalTok{, }\DataTypeTok{col =} \StringTok{"steelblue"}\NormalTok{)}
+\KeywordTok{library}\NormalTok{(biosignalEMG)}
+\KeywordTok{library}\NormalTok{(tidyverse)}
+
+\NormalTok{emg <-}\StringTok{ }\KeywordTok{syntheticemg}\NormalTok{(}
+  \DataTypeTok{off.sd =} \DecValTok{1}\NormalTok{, }\DataTypeTok{on.sd =} \DecValTok{2}\NormalTok{, }\DataTypeTok{on.mode.pos =} \FloatTok{0.1}\NormalTok{, }\DataTypeTok{samplingrate =} \FloatTok{1e3}\NormalTok{, }\DataTypeTok{units =} \StringTok{"mV"}
+\NormalTok{  )}\OperatorTok{$}\NormalTok{values}
+
+\KeywordTok{ts.plot}\NormalTok{(}
+\NormalTok{  emg, }\DataTypeTok{xlab =} \StringTok{"Time (samples)"}\NormalTok{, }\DataTypeTok{ylab =} \StringTok{"Raw EMG signal (mV)"}\NormalTok{,}
+  \DataTypeTok{col =} \StringTok{"steelblue"}
+\NormalTok{  )}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{figure}[h!]
+\begin{figure}[H]
 
 {\centering \includegraphics{02-chap2_files/figure-latex/unnamed-chunk-2-1} 
 
@@ -446,22 +469,22 @@ a standard algorithm \citep[pp.70-71]{Hermens1999}, implemented in R by
 \caption{Simulated EMG signal.}\label{fig:unnamed-chunk-2}
 \end{figure}
 
-\ldots{}we rectify the EMG signal by taking its absolute value and
+We usually rectify the EMG signal by taking its absolute value and
 substracting the mean in order to correct for any offset (bias) present
-in the raw data. It is interesting to note that the effects of
-rectification on the EMG signal is similar to the rectification of AM
-radio waves whose purpose is to enhance the low frequency components,
-wich encode the voice signals. Concerning EMG, the ``voice'' of the
-signal corresponds to the encoded force \citep{Borg2007}.
+in the raw data.
 
 \begin{Shaded}
 \begin{Highlighting}[]
 \OperatorTok{>}\StringTok{ }\NormalTok{emg <-}\StringTok{ }\KeywordTok{abs}\NormalTok{(emg }\OperatorTok{-}\StringTok{ }\KeywordTok{mean}\NormalTok{(emg) )}
-\OperatorTok{>}\StringTok{ }\KeywordTok{ts.plot}\NormalTok{(emg, }\DataTypeTok{xlab =} \StringTok{"Time (ms)"}\NormalTok{, }\DataTypeTok{ylab =} \StringTok{"simEMG"}\NormalTok{, }\DataTypeTok{col =} \StringTok{"steelblue"}\NormalTok{)}
+\OperatorTok{>}\StringTok{ }
+\ErrorTok{>}\StringTok{ }\KeywordTok{ts.plot}\NormalTok{(}
+\OperatorTok{+}\StringTok{   }\NormalTok{emg, }\DataTypeTok{xlab =} \StringTok{"Time (samples)"}\NormalTok{, }\DataTypeTok{ylab =} \StringTok{"Rectified EMG signal"}\NormalTok{,}
+\OperatorTok{+}\StringTok{   }\DataTypeTok{col =} \StringTok{"steelblue"}
+\OperatorTok{+}\StringTok{   }\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{figure}[h!]
+\begin{figure}[H]
 
 {\centering \includegraphics{02-chap2_files/figure-latex/unnamed-chunk-3-1} 
 
@@ -470,31 +493,29 @@ signal corresponds to the encoded force \citep{Borg2007}.
 \caption{Rectified EMG signal.}\label{fig:unnamed-chunk-3}
 \end{figure}
 
-\ldots{}
+From there, two main measures can be used to represent the magnitude of
+muscle activity\footnote{But see \citet{phinyomark_feature_2012} for
+  other features that can be extracted from the surface EMG signals.}.
+The first one is the \textbf{mean absolute value} (MAV):
 
-There are two main measures thant can be used to represent the magnitude
-of muscle activity. These two measures can be directly computed from the
-filtered EMG signal. The first one is the \textbf{average rectified
-value} (ARV):
+\[MAV = \frac{1}{N} \sum_{n=1}^{N} | x_{n} |\]
 
-\[ARV = \frac{1}{T} \sum_{t=1}^{T} | EMG(t_{i}) |\]
+which is computed over a specific interval and where \(|x_{n}|\) is the
+absolute value of a datum of EMG in the data window. The unit of
+measurement is \(mV\) or \(\mu V\), and the MAV calculation is generally
+similar to the numerical formula for integration
+\citep{kamen_essentials_2010}. The second one is the
+\textbf{root-mean-square} (RMS) amplitude:
 
-which is computed over a specific interval \((0,T)\) and where
-\(|EMG(_{i})|\) is the absolute value of a datum of EMG in the data
-window. The unit of measurement is \(mV\) or \(\mu V\), and the ARV
-calculation is generally similar to the numerical formula for
-integration \citep{Kamen2010}.
+\[RMS = \sqrt \frac{1}{N} \sum_{n=1}^{N} | x^{2}_{n} |\]
 
-The second one is the \textbf{root-mean-square} (RMS) amplitude:
-
-\[RMS = \sqrt \frac{1}{T} \sum_{t=1}^{T} | EMG^{2}(t_{i}) |\]
-
-where \(|EMG^{2}(_{i})|\) is the squared value of each EMG datum and has
+where \(| x^{2}_{n} |\) is the squared value of each EMG datum and has
 both physical and physiological meanings\ldots{}
 
-\part{Experimental part}\label{part-experimental-part}
+\section{Overview of the experimental
+chapters}\label{overview-of-the-experimental-chapters}
 
-Blah blah blah\ldots{} explain why two parts\ldots{}
+\ldots{}
 
 \chapter{Orofacial electromyographic correlates of induced verbal
 rumination}\label{orofacial-electromyographic-correlates-of-induced-verbal-rumination}
@@ -1105,7 +1126,7 @@ correlation between Problems and Focused (\(\rho\) = −0.30, 95\% HDI
 
 \begin{figure}
 
-{\centering \includegraphics{assets/emg_fig1} 
+{\centering \includegraphics[width=31.17in]{assets/emg_fig1} 
 
 }
 
@@ -1196,7 +1217,7 @@ important compared to the Story condition (Est = −5.23, SE = 6.01, ER10
 
 \begin{figure}
 
-{\centering \includegraphics{assets/emg_fig2} 
+{\centering \includegraphics[width=14.76in]{assets/emg_fig2} 
 
 }
 
@@ -1220,7 +1241,7 @@ kinds of relaxation concerning the EMG amplitude of the FRO (Est =
 
 \begin{figure}
 
-{\centering \includegraphics{assets/emg_fig3} 
+{\centering \includegraphics[width=14.76in]{assets/emg_fig3} 
 
 }
 
@@ -2618,14 +2639,18 @@ experiment.
 
 \ldots{}
 
-\part{General discussion and
-conclusions}\label{part-general-discussion-and-conclusions}
+\chapter{Discussion}\label{discussion-3}
 
-\chapter{General discussion}\label{general-discussion-1}
+\section{Summary of the results}\label{summary-of-the-results}
 
 \ldots{}
 
-\chapter{Conclusions}\label{conclusions}
+\section{Limitations and ways
+forward}\label{limitations-and-ways-forward}
+
+\ldots{}
+
+\section{Conclusion}\label{conclusion}
 
 \ldots{}
 

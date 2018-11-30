@@ -1,9 +1,13 @@
-# (PART) General discussion and conclusions {-} 
+# Discussion
 
-# General discussion
+## Summary of the results
 
 ...
 
-# Conclusions
+## Limitations and ways forward
+
+...
+
+## Conclusion
 
 ...
