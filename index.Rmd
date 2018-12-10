@@ -21,7 +21,16 @@ space_between_paragraphs: true
 
 `r if (knitr::is_html_output()) '# Welcome {-}'`
 
-`r if (knitr::is_html_output()) 'This book, when finished, will contain my PhD thesis.'`
+```{r, include = identical(knitr:::pandoc_to(), "html"), results = "asis", echo = FALSE}
+cat(
+  "This book, when finished, will contain my doctoral thesis (last compiled on ",
+  format(Sys.Date() ), ")", sep = ""
+  )
+```
+
+```{r fig.align = "center", out.width = "100%", echo = FALSE, include = identical(knitr:::pandoc_to(), "html")}
+knitr::include_graphics("assets/cover.png", dpi = NA)
+```
 
 ```{r eval = FALSE, include = FALSE, warning = FALSE}
 # automatically create a bib database for all installed R packages

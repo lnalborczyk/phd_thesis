@@ -80,6 +80,13 @@ In order to evaluate trait rumination, participants completed the short version 
 
 
 
+
+```
+## Warning: 'plotly::export' is deprecated.
+## Use 'orca' instead.
+## See help("Deprecated")
+```
+
 <div class="figure" style="text-align: center">
 <img src="06-chap6_files/figure-epub3/diagram-1.pdf" alt="Timeline of the experiment, from top to bottom."  />
 <p class="caption">(\#fig:diagram)Timeline of the experiment, from top to bottom.</p>
