@@ -4,8 +4,8 @@ Summary of the research...^[This experimental chapter is a manuscript reformatte
 
 
 
-\begin{tcolorbox}[title = Summary of the chapter]
+\begin{summary}{Summary of Chapter\getcurrentref{chapter}}
 
 Blah blah ...
 
-\end{tcolorbox}
+\end{summary}

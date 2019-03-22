@@ -9,8 +9,8 @@ knitr::opts_chunk$set(
   )
 ```
 
-\begin{tcolorbox}[title = Summary of the chapter]
+\begin{summary}{Summary of Chapter\getcurrentref{chapter}}
 
 Blah blah ...
 
-\end{tcolorbox}
+\end{summary}

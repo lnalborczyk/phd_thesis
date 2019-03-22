@@ -22,7 +22,7 @@ lof: true # list of figures
 space_between_paragraphs: true
 ---
 
-# Welcome {-}
+
 
 
 

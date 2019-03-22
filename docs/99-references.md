@@ -1,4 +1,4 @@
-# References {-}
+
 
 <!-- This manually sets the header for this unnumbered chapter.
 \markboth{References}{References}

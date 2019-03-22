@@ -143,4 +143,21 @@
 \makeoddhead{myvf}{}{}{\small\textsc{\rightmark}}
 \pagestyle{myvf}
 
-% \pagenumbering{roman}
+\pagenumbering{roman}
+%s\setcounter{page}{0}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Create summary box to put at the end of each chapter %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newtcolorbox[]{summary}[2][]{title=#2,#1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Get the number of current chapter %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand\getcurrentref[1]{
+ \ifnumequal{\value{#1}}{0}
+  {??}
+  {\the\value{#1}}
+}

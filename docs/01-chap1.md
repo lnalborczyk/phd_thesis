@@ -1,5 +1,7 @@
 # Theoretical framework {#intro}
 
+\pagenumbering{arabic}
+
 
 
 \initial{A}s you read these words, you might notice the presence of a familiar companion. A voice-like phenomenon that remains unnoticed until we pay attention to it. However, if I ask you to focus on that little voice while you are reading these lines, you would probably be able to provide a relatively fine-graind description of this thing that we call inner speech. Whose voice is it ? Is it yours ? Is it gendered ? It is usually possible to examine these aspects as well as more low-level features like the tone of this soundy companion, its pitch, its tempo, or virtually any sensory aspect of it. This first set of very basic observations already provide us some very important insights. First, if we can think about inner speech, then it should be something different from thinking itself (réf ?). Rather, inner speech (or *covert speech*), can be construed as *a* vehicle for conscious thought (instead of *verbal thinking*, for instance)^[We will not dwell on the touchy question whether inner speech is a necessary condition for consciousness. For the current purpose, it is sufficient to say that thinking and inner speech are ontologically separable.]. Second, the set of observations we can make about our inner voice also tautologically reveals that inner speech is accompanied by sensory percepts (sounds, kinaesthesic feelings, etc.). It thus raises an interesting question: where do these percepts come from ? Why do they look like the one we experience when we *actually* (overtly) speak ?
@@ -18,10 +20,14 @@ Blah blah [@koster_rumination_2013]...
 
 As suggested by @Christoff2016, rumination and other forms of spontaneous thoughts can be considered in a common conceptual space (see Figure 1). This space is built upon two dimensions: *deliberate constraints* and *automatic constraints*. These dimensions represent two general mechanisms that allow to constrain the contents of these related mental states and the transitions between them. The first contrain correspond to a deliberate processus and is implemented through **cognitive control** [@Miller2000]. The second constrain is referring to more automatic constrains like sensory afferences. In this framework, rumination is characterizsd by the highest level of automatic constraints and spread all along the *deliberate constraints* dimension.
 
-<div class="figure" style="text-align: center">
-<img src="assets/conceptual_space.png" alt="Conceptual space of different types of thought (Christoff et al., 2016)" width="75%" />
-<p class="caption">(\#fig:conceptual)Conceptual space of different types of thought (Christoff et al., 2016)</p>
-</div>
+\begin{figure}
+
+{\centering \includegraphics[width=0.75\linewidth]{assets/conceptual_space} 
+
+}
+
+\caption{Conceptual space of different types of thought (Christoff et al., 2016)}(\#fig:conceptual)
+\end{figure}
 
 **Copy-pasted from zygoto old intro...**
 

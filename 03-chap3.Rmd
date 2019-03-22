@@ -216,3 +216,9 @@ This project was funded by the ANR project INNERSPEECH [grant number ANR-13-BSH2
 ## Supplementary data
 
 Supplementary data associated with this article can be found, in the online version, at http://dx.doi.org/10.1016/j.biopsycho.2017.04.013.
+
+\begin{summary}{Summary of Chapter\getcurrentref{chapter}}
+
+Blah blah ...
+
+\end{summary}

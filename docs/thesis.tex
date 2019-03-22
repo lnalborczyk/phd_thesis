@@ -269,7 +269,24 @@
 \makeoddhead{myvf}{}{}{\small\textsc{\rightmark}}
 \pagestyle{myvf}
 
-% \pagenumbering{roman}
+\pagenumbering{roman}
+%s\setcounter{page}{0}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Create summary box to put at the end of each chapter %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newtcolorbox[]{summary}[2][]{title=#2,#1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Get the number of current chapter %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand\getcurrentref[1]{
+ \ifnumequal{\value{#1}}{0}
+  {??}
+  {\the\value{#1}}
+}
 
 \begin{document}
 \maketitle
@@ -335,6 +352,8 @@
 \initial{B}lah blah\ldots{}
 
 \chapter{Theoretical framework}\label{intro}
+
+\pagenumbering{arabic}
 
 \initial{A}s you read these words, you might notice the presence of a
 familiar companion. A voice-like phenomenon that remains unnoticed until
@@ -1991,6 +2010,12 @@ Supplementary data associated with this article can be found, in the
 online version, at
 \url{http://dx.doi.org/10.1016/j.biopsycho.2017.04.013}.
 
+\begin{summary}{Summary of Chapter\getcurrentref{chapter}}
+
+Blah blah ...
+
+\end{summary}
+
 \chapter{Dissociating facial electromyographic correlates of visual and
 verbal induced
 rumination}\label{dissociating-facial-electromyographic-correlates-of-visual-and-verbal-induced-rumination}
@@ -2001,11 +2026,11 @@ Summary of the research\ldots{}\footnote{This experimental chapter is a
   Pre-registered protocol, preprint, data, as well as reproducible code
   and figures are available at: \url{https://osf.io/c9pag/}.}
 
-\begin{tcolorbox}[title = Summary of the chapter]
+\begin{summary}{Summary of Chapter\getcurrentref{chapter}}
 
 Blah blah ...
 
-\end{tcolorbox}
+\end{summary}
 
 \chapter{Muscle-specific electromyographic correlates of inner speech
 production}\label{muscle-specific-electromyographic-correlates-of-inner-speech-production}
@@ -2016,13 +2041,11 @@ Summary of the research\ldots{}\footnote{This experimental chapter is a
   Pre-registered protocol, preprint, data, as well as reproducible code
   and figures are available at: \url{https://osf.io/czer4/}.}
 
-\ldots{}
-
-\begin{tcolorbox}[title = Summary of the chapter]
+\begin{summary}{Summary of Chapter\getcurrentref{chapter}}
 
 Blah blah ...
 
-\end{tcolorbox}
+\end{summary}
 
 \chapter{Articulatory suppression effects on induced
 rumination}\label{articulatory-suppression-effects-on-induced-rumination}
@@ -2033,13 +2056,11 @@ Summary of the research\ldots{}\footnote{This experimental chapter is a
   Pre-registered protocol, preprint, data, as well as reproducible code
   and figures are available at: \url{https://osf.io/3bh67/}.}
 
-\ldots{}
-
-\begin{tcolorbox}[title = Summary of the chapter]
+\begin{summary}{Summary of Chapter\getcurrentref{chapter}}
 
 Blah blah ...
 
-\end{tcolorbox}
+\end{summary}
 
 \chapter{Refining the involvement of the speech motor system during
 rumination: a dual-task
@@ -2051,13 +2072,11 @@ Summary of the research\ldots{}\footnote{This experimental chapter is a
   Pre-registered protocol, preprint, data, as well as reproducible code
   and figures are available at: \url{https://osf.io/8ab2d/}.}
 
-\ldots{}
-
-\begin{tcolorbox}[title = Summary of the chapter]
+\begin{summary}{Summary of Chapter\getcurrentref{chapter}}
 
 Blah blah ...
 
-\end{tcolorbox}
+\end{summary}
 
 \chapter{Discussion}\label{discussion-1}
 
