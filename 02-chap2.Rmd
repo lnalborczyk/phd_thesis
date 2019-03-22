@@ -1,5 +1,12 @@
 # Theoretical propositions and methodological developments
 
+```{r setup, echo = FALSE, message = FALSE, warning = FALSE, results = "hide"}
+knitr::opts_chunk$set(
+  cache = TRUE, echo = FALSE, warning = FALSE, message = FALSE,
+  out.width = "100%"
+  )
+```
+
 ## Electromyographic correlates of speech production
 
 ...
@@ -75,7 +82,10 @@ $$RMS = \sqrt \frac{1}{N} \sum_{n=1}^{N} | x^{2}_{n} |$$
 
 where $| x^{2}_{n} |$ is the squared value of each EMG datum and has both physical and physiological meanings...
 
+## Statistical modelling approach
+
+Describe the way we approach data analysis here...
+
 ## Overview of the experimental chapters
 
 ...
-

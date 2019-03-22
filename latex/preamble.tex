@@ -1,3 +1,7 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Loading relevant packages %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \usepackage{tikz}
 \usepackage{lscape}
 \usepackage{indentfirst}
@@ -28,6 +32,8 @@
 \usepackage{textcomp}
 \usepackage{setspace}
 
+\usepackage{microtype} % make better looking pdf
+
 \usepackage{booktabs,caption,fixltx2e}
 \usepackage[none]{hyphenat}
 
@@ -35,25 +41,106 @@
 \usepackage[a4paper]{meta-donnees}
 \usepackage{lmodern}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% below is the by-default configuration of bookdown-demo
-% https://github.com/rstudio/bookdown-demo/blob/master/preamble.tex
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% below is the by-default configuration of bookdown-demo            %
+% https://github.com/rstudio/bookdown-demo/blob/master/preamble.tex %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \usepackage{graphicx}
 \usepackage{amsthm}
 
 \makeatletter
-\def\thm@space@setup{%
+
+\def\thm@space@setup{
   \thm@preskip=8pt plus 2pt minus 4pt
   \thm@postskip=\thm@preskip
 }
+
 \makeatother
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% remove default title
+%%%%%%%%%%%%%%%%%%%%%%%%
+% remove default title %
 % https://stackoverflow.com/questions/45963505/coverpage-and-copyright-notice-before-title-in-r-bookdown
-%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
 
 \let\oldmaketitle\maketitle
 \AtBeginDocument{\let\maketitle\relax}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Add a lettrine to the very first character of the content %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%M
+
+\usepackage{lettrine}
+\newcommand{\initial}[1]{%
+	\lettrine[lines=3,lhang=0.33,nindent=0em]{
+		\color{gray}
+     		{\textsc{#1}}}{}}
+
+%%%%%%%%%%%%%%%%%%%
+% Font and format %
+%%%%%%%%%%%%%%%%%%%
+
+% Font with math support: New Century Schoolbook
+\usepackage{fouriernc}
+\usepackage[T1]{fontenc}
+
+\setstocksize{11in}{8.5in}
+\settrimmedsize{11in}{8.5in}{*}
+\settrims{0in}{0in}
+\settypeblocksize{9.0in}{30pc}{*}
+\setlrmargins{2in}{*}{*}
+\setulmargins{1.0in}{*}{*}
+\setheadfoot{13pt}{26pt}
+\setheaderspaces{*}{13pt}{*}
+\checkandfixthelayout
+\frenchspacing % single spacing
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Chapter style (taken and slightly modified from Lars Madsen Memoir Chapter %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{calc,soul,fourier}
+\makeatletter
+\newlength\dlf@normtxtw
+\setlength\dlf@normtxtw{\textwidth}
+\newsavebox{\feline@chapter}
+\newcommand\feline@chapter@marker[1][4cm]{%
+	\sbox\feline@chapter{%
+		\resizebox{!}{#1}{\fboxsep=1pt%
+			\colorbox{gray}{\color{white}\thechapter}%
+		}}%
+		\rotatebox{90}{%
+			\resizebox{%
+				\heightof{\usebox{\feline@chapter}}+\depthof{\usebox{\feline@chapter}}}%
+			{!}{\scshape\so\@chapapp}}\quad%
+		\raisebox{\depthof{\usebox{\feline@chapter}}}{\usebox{\feline@chapter}}%
+}
+\newcommand\feline@chm[1][4cm]{%
+	\sbox\feline@chapter{\feline@chapter@marker[#1]}%
+	\makebox[0pt][c]{% aka \rlap
+		\makebox[1cm][r]{\usebox\feline@chapter}%
+	}}
+
+\makechapterstyle{daleifmodif}{
+	\renewcommand\chapnamefont{\normalfont\Large\scshape\raggedleft\so}
+	\renewcommand\chaptitlefont{\normalfont\Large\bfseries\scshape}
+	\renewcommand\chapternamenum{} \renewcommand\printchaptername{}
+	\renewcommand\printchapternum{\null\hfill\feline@chm[2.5cm]\par}
+	\renewcommand\afterchapternum{\par\vskip\midchapskip}
+	\renewcommand\printchaptertitle[1]{\color{gray}\chaptitlefont\raggedleft
+    \renewcommand\chaptername{Chapter}
+##1\par}
+}
+\makeatother
+\chapterstyle{daleifmodif}
+
+% The pages should be numbered consecutively at the bottom centre of the page.
+\makepagestyle{myvf}
+\makeoddfoot{myvf}{}{\thepage}{}
+\makeevenfoot{myvf}{}{\thepage}{}
+\makeheadrule{myvf}{\textwidth}{\normalrulethickness}
+\makeevenhead{myvf}{\small\textsc{\leftmark}}{}{}
+\makeoddhead{myvf}{}{}{\small\textsc{\rightmark}}
+\pagestyle{myvf}
+
+% \pagenumbering{roman}

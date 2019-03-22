@@ -1,8 +1,13 @@
 --- 
 title: Psychophysiological characteristics of verbal rumination
+
 author: "" # Ladislas Nalborczyk
 date: "" #"`r Sys.Date()`"
-documentclass: book # reedthesis # book
+
+documentclass: memoir # book # reedthesis
+classoption: a4paper,11pt,legno,oldfontcommands
+#classoption: a4paper,11pt,final,twoside,openright
+
 site: bookdown::bookdown_site
 
 bibliography: [bib/thesis.bib, bib/packages.bib]
@@ -11,12 +16,10 @@ link-citations: yes
 github-repo: lnalborczyk/phd_thesis
 description: Blah blah blah...
 
-fontsize: 12pt
 csl: csl/apa6.csl
 lot: true # list of tables
 lof: true # list of figures
 space_between_paragraphs: true
-#geometry: "left=4cm, right=3cm, top=2.5cm, bottom=2.5cm"
 ---
 
 `r if (knitr::is_html_output()) '# Welcome {-}'`
@@ -24,7 +27,7 @@ space_between_paragraphs: true
 ```{r, include = identical(knitr:::pandoc_to(), "html"), results = "asis", echo = FALSE}
 cat(
   "This book, when finished, will contain my doctoral thesis (last compiled on ",
-  format(Sys.Date() ), ")", sep = ""
+  format(Sys.Date() ), ").", sep = ""
   )
 ```
 

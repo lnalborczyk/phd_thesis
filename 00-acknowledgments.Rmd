@@ -1,3 +1,3 @@
 # Acknowledgments {-}
 
-Acknowledgemnents are not yet available.
+\initial{A}cknowledgemnents are not yet available.

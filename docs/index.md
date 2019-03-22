@@ -1,8 +1,13 @@
 --- 
 title: Psychophysiological characteristics of verbal rumination
+
 author: "" # Ladislas Nalborczyk
-date: "" #"2018-12-10"
-documentclass: book # reedthesis # book
+date: "" #"2019-03-22"
+
+documentclass: memoir # book # reedthesis
+classoption: a4paper,11pt,legno,oldfontcommands
+#classoption: a4paper,11pt,final,twoside,openright
+
 site: bookdown::bookdown_site
 
 bibliography: [bib/thesis.bib, bib/packages.bib]
@@ -11,12 +16,10 @@ link-citations: yes
 github-repo: lnalborczyk/phd_thesis
 description: Blah blah blah...
 
-fontsize: 12pt
 csl: csl/apa6.csl
 lot: true # list of tables
 lof: true # list of figures
 space_between_paragraphs: true
-#geometry: "left=4cm, right=3cm, top=2.5cm, bottom=2.5cm"
 ---
 
 # Welcome {-}

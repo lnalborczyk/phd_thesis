@@ -1,0 +1,2962 @@
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.3.22)  22 MAR 2019 15:52
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**thesis.tex
+(./thesis.tex
+LaTeX2e <2018-04-01> patch level 2
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/memoir/memoir.cls
+Document Class: memoir 2018/04/04 v3.7g configurable book, report, article docu
+ment class
+\onelineskip=\skip41
+\lxvchars=\skip42
+\xlvchars=\skip43
+\@memcnta=\count80
+\c@@memmarkcntra=\count81
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/ifetex/ifetex.sty
+Package: ifetex 2018/03/31 v1.2a ifetex
+(/usr/local/texlive/2018/texmf-dist/tex/plain/ifetex/ifetex.tex)) (/usr/local/t
+exlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+\stockheight=\skip44
+\stockwidth=\skip45
+\trimtop=\skip46
+\trimedge=\skip47
+(/usr/local/texlive/2018/texmf-dist/tex/latex/memoir/mem11.clo
+File: mem11.clo 2008/01/30 v0.3 memoir class 11pt size option
+)
+\binding=\skip48
+\spinemargin=\skip49
+\foremargin=\skip50
+\uppermargin=\skip51
+\lowermargin=\skip52
+\headdrop=\skip53
+\normalrulethickness=\skip54
+\mem@maxheadheight=\skip55
+\mem@maxfootheight=\skip56
+\headwidth=\skip57
+\c@storedpagenumber=\count82
+\memPD=\dimen102
+\m@mabparskip=\skip58
+\thanksmarkwidth=\skip59
+\thanksmarksep=\skip60
+\droptitle=\skip61
+\c@book=\count83
+\c@part=\count84
+\c@chapter=\count85
+\c@section=\count86
+\c@subsection=\count87
+\c@subsubsection=\count88
+\c@paragraph=\count89
+\c@subparagraph=\count90
+\beforechapskip=\skip62
+\midchapskip=\skip63
+\afterchapskip=\skip64
+\chapindent=\skip65
+\bottomsectionskip=\skip66
+\secindent=\skip67
+\beforesecskip=\skip68
+\aftersecskip=\skip69
+\subsecindent=\skip70
+\beforesubsecskip=\skip71
+\aftersubsecskip=\skip72
+\subsubsecindent=\skip73
+\beforesubsubsecskip=\skip74
+\aftersubsubsecskip=\skip75
+\paraindent=\skip76
+\beforeparaskip=\skip77
+\afterparaskip=\skip78
+\subparaindent=\skip79
+\beforesubparaskip=\skip80
+\aftersubparaskip=\skip81
+\pfbreakskip=\skip82
+\c@@ppsavesec=\count91
+\c@@ppsaveapp=\count92
+\ragrparindent=\dimen103
+\everylistparindent=\dimen104
+\parsepi=\skip83
+\topsepi=\skip84
+\itemsepi=\skip85
+\parsepii=\skip86
+\topsepii=\skip87
+\topsepiii=\skip88
+\itemsepii=\skip89
+\itemsepiii=\skip90
+\partopsepii=\skip91
+\partopsepiii=\skip92
+\m@msavetopsep=\skip93
+\m@msavepartopsep=\skip94
+\@enLab=\toks14
+\abstitleskip=\skip95
+\absleftindent=\skip96
+\abs@leftindent=\dimen105
+\absrightindent=\skip97
+\absparindent=\skip98
+\absparsep=\skip99
+\c@vslineno=\count93
+\c@poemline=\count94
+\c@modulo@vs=\count95
+\c@memfvsline=\count96
+\vleftskip=\skip100
+\vrightskip=\skip101
+\stanzaskip=\skip102
+\versewidth=\skip103
+\vgap=\skip104
+\vindent=\skip105
+\vleftmargin=\dimen106
+\c@verse=\count97
+\c@chrsinstr=\count98
+\beforepoemtitleskip=\skip106
+\afterpoemtitleskip=\skip107
+\c@poem=\count99
+\beforePoemTitleskip=\skip108
+\midPoemTitleskip=\skip109
+\afterPoemTitleskip=\skip110
+\col@sep=\dimen107
+\extrarowheight=\dimen108
+\NC@list=\toks15
+\extratabsurround=\skip111
+\backup@length=\skip112
+\TX@col@width=\dimen109
+\TX@old@table=\dimen110
+\TX@old@col=\dimen111
+\TX@target=\dimen112
+\TX@delta=\dimen113
+\TX@cols=\count100
+\TX@ftn=\toks16
+\heavyrulewidth=\dimen114
+\lightrulewidth=\dimen115
+\cmidrulewidth=\dimen116
+\belowrulesep=\dimen117
+\belowbottomsep=\dimen118
+\aboverulesep=\dimen119
+\abovetopsep=\dimen120
+\cmidrulesep=\dimen121
+\cmidrulekern=\dimen122
+\defaultaddspace=\dimen123
+\@cmidla=\count101
+\@cmidlb=\count102
+\@aboverulesep=\dimen124
+\@belowrulesep=\dimen125
+\@thisruleclass=\count103
+\@lastruleclass=\count104
+\@thisrulewidth=\dimen126
+\ctableftskip=\skip113
+\ctabrightskip=\skip114
+\abovecolumnspenalty=\count105
+\@linestogo=\count106
+\@cellstogo=\count107
+\@cellsincolumn=\count108
+\crtok=\toks17
+\@mincolumnwidth=\dimen127
+\c@newflo@tctr=\count109
+\mem@margin@floatbox=\box26
+\@contcwidth=\skip115
+\@contindw=\skip116
+\abovecaptionskip=\skip117
+\belowcaptionskip=\skip118
+\subfloattopskip=\skip119
+\subfloatcapskip=\skip120
+\subfloatcaptopadj=\skip121
+\subfloatbottomskip=\skip122
+\subfloatlabelskip=\skip123
+\subfloatcapmargin=\dimen128
+\c@@contsubnum=\count110
+\m@mscap@capbox=\box27
+\m@mscap@fbox=\box28
+\sidecapsep=\dimen129
+\sidecapwidth=\dimen130
+\m@m@tempdima=\dimen131
+\m@mscapraise=\dimen132
+\sidecapraise=\dimen133
+\m@mscapmainwidth=\dimen134
+\m@mscaplkern=\dimen135
+\beforeepigraphskip=\skip124
+\afterepigraphskip=\skip125
+\epigraphwidth=\skip126
+\epigraphrule=\skip127
+LaTeX Info: Redefining \em on input line 7578.
+LaTeX Info: Redefining \emph on input line 7586.
+\tocentryskip=\skip128
+\tocbaseline=\skip129
+\cftparskip=\skip130
+\cftbeforebookskip=\skip131
+\cftbookindent=\dimen136
+\cftbooknumwidth=\dimen137
+\cftbeforepartskip=\skip132
+\cftpartindent=\skip133
+\cftpartnumwidth=\skip134
+\cftbeforechapterskip=\skip135
+\cftchapterindent=\skip136
+\cftchapternumwidth=\skip137
+\cftbeforesectionskip=\skip138
+\cftsectionindent=\skip139
+\cftsectionnumwidth=\skip140
+\cftbeforesubsectionskip=\skip141
+\cftsubsectionindent=\skip142
+\cftsubsectionnumwidth=\skip143
+\cftbeforesubsubsectionskip=\skip144
+\cftsubsubsectionindent=\skip145
+\cftsubsubsectionnumwidth=\skip146
+\cftbeforeparagraphskip=\skip147
+\cftparagraphindent=\skip148
+\cftparagraphnumwidth=\skip149
+\cftbeforesubparagraphskip=\skip150
+\cftsubparagraphindent=\skip151
+\cftsubparagraphnumwidth=\skip152
+\prechapterprecisshift=\dimen138
+\c@maxsecnumdepth=\count111
+\bibindent=\dimen139
+\bibitemsep=\skip153
+\indexcolsep=\skip154
+\indexrule=\skip155
+\indexmarkstyle=\toks18
+\@indexbox=\insert199
+\glossarycolsep=\dimen140
+\glossaryrule=\dimen141
+\sideparvshift=\skip156
+\sideins=\insert198
+\sidebartopsep=\skip157
+\sidebarhsep=\skip158
+\sidebarvsep=\skip159
+\sidebarwidth=\skip160
+\footmarkwidth=\skip161
+\footmarksep=\skip162
+\footparindent=\skip163
+\footinsdim=\skip164
+\footinsv@r=\insert197
+\@mpfootinsv@r=\insert196
+\m@m@k=\count112
+\m@m@h=\dimen142
+\m@mipn@skip=\skip165
+\sidefootins=\insert195
+\sidefootadjust=\skip166
+\sidefootheight=\skip167
+\sidefoothsep=\skip168
+\sidefootvsep=\skip169
+\sidefootwidth=\skip170
+\m@mdownsf=\skip171
+\c@sidefootnote=\count113
+\sidefootmarkwidth=\skip172
+\sidefootmarksep=\skip173
+\sidefootparindent=\skip174
+\c@pagenote=\count114
+\c@pagenoteshadow=\count115
+\mem@pn@lastkern=\skip175
+\every@verbatim=\toks19
+\afterevery@verbatim=\toks20
+\verbatim@line=\toks21
+\tab@position=\count116
+\verbatim@in@stream=\read1
+\verbatimindent=\skip176
+\verbatim@out=\write3
+\bvboxsep=\skip177
+\c@memfbvline=\count117
+\c@bvlinectr=\count118
+\bvnumlength=\skip178
+\fb@frw=\dimen143
+\fb@frh=\dimen144
+\FrameRule=\dimen145
+\FrameSep=\dimen146
+\c@cp@cntr=\count119
+LaTeX Info: Redefining \: on input line 12100.
+LaTeX Info: Redefining \! on input line 12102.
+\c@ism@mctr=\count120
+\c@xsm@mctr=\count121
+\c@csm@mctr=\count122
+\c@ksm@mctr=\count123
+\c@xksm@mctr=\count124
+\c@cksm@mctr=\count125
+\c@msm@mctr=\count126
+\c@xmsm@mctr=\count127
+\c@cmsm@mctr=\count128
+\c@bsm@mctr=\count129
+\c@workm@mctr=\count130
+\c@sheetsequence=\count131
+\c@lastsheet=\count132
+\c@lastpage=\count133
+\c@figure=\count134
+\c@lofdepth=\count135
+\cftbeforefigureskip=\skip179
+\cftfigureindent=\skip180
+\cftfigurenumwidth=\skip181
+\c@table=\count136
+\c@lotdepth=\count137
+\cftbeforetableskip=\skip182
+\cfttableindent=\skip183
+\cfttablenumwidth=\skip184
+Package abstract [2008/07/23] emulated by memoir.
+Package appendix [2008/07/23] emulated by memoir.
+Package array [2016/10/06] emulated by memoir.
+Package booktabs [2016/05/16] emulated by memoir.
+Package ccaption [2008/07/23] emulated by memoir.
+Package changepage [2008/07/23] emulated by memoir.
+Package chngcntr [2008/07/23] emulated by memoir.
+Package chngpage [2008/07/23] emulated by memoir.
+Package crop emulated by memoir.
+Package dcolumn [2008/07/23] emulated by memoir.
+Package delarray [2014/10/28] emulated by memoir.
+Package enumerate [2008/07/23] emulated by memoir.
+Package epigraph [2008/07/23] emulated by memoir.
+Package ifmtarg [2008/07/23] emulated by memoir.
+Package index [2008/07/23] emulated by memoir.
+Package makeidx [2008/07/23] emulated by memoir.
+Package moreverb [2008/07/23] emulated by memoir.
+Package mparhack [2008/07/23] emulated by memoir.
+Package needspace [2008/07/23] emulated by memoir.
+Package newfile [2008/07/23] emulated by memoir.
+Package nextpage [2008/07/23] emulated by memoir.
+Package pagenote [2008/07/23] emulated by memoir.
+Package parskip [2008/07/23] emulated by memoir.
+Package patchcmd [2008/07/23] emulated by memoir.
+Package setspace [2008/07/23] emulated by memoir.
+Package shortvrb [2008/07/23] emulated by memoir.
+Package showidx [2008/07/23] emulated by memoir.
+Package tabularx [2016/02/03] emulated by memoir.
+Package titleref [2008/07/23] emulated by memoir.
+Package titling [2008/07/23] emulated by memoir.
+Package tocbibind [2008/07/23] emulated by memoir.
+Package tocloft [2008/07/23] emulated by memoir.
+Package tocvsec2 [2008/07/23] emulated by memoir.
+Package verbatim [2008/07/23] emulated by memoir.
+Package verse [2008/07/23] emulated by memoir.
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/lmodern.sty
+Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks22
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip185
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks23
+\ex@=\dimen147
+)) (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen148
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count138
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count139
+\leftroot@=\count140
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count141
+\DOTSCASE@=\count142
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box29
+\strutbox@=\box30
+\big@size=\dimen149
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count143
+\c@MaxMatrixCols=\count144
+\dotsspace@=\muskip10
+\c@parentequation=\count145
+\dspbrk@lvl=\count146
+\tag@help=\toks24
+\row@=\count147
+\column@=\count148
+\maxfields@=\count149
+\andhelp@=\toks25
+\eqnshift@=\dimen150
+\alignsep@=\dimen151
+\tagshift@=\dimen152
+\tagwidth@=\dimen153
+\totwidth@=\dimen154
+\lineht@=\dimen155
+\@envbody=\toks26
+\multlinegap=\skip186
+\multlinetaggap=\skip187
+\mathdisplay@stack=\toks27
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/base/fixltx2e.sty
+Package: fixltx2e 2016/12/29 v2.1a fixes to LaTeX (obsolete)
+Applying: [2015/01/01] Old fixltx2e package on input line 46.
+
+Package fixltx2e Warning: fixltx2e is not required with releases after 2015
+(fixltx2e)                All fixes are now in the LaTeX kernel.
+(fixltx2e)                See the latexrelease package for details.
+
+Already applied: [0000/00/00] Old fixltx2e package on input line 53.
+) (/usr/local/texlive/2018/texmf-dist/tex/xelatex/mathspec/mathspec.sty
+Package: mathspec 2016/12/22 v0.2b LaTeX Package (Mathematics font selection fo
+r XeLaTeX)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count150
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/fontspec/fontspec.sty (/usr/loc
+al/texlive/2018/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (/usr/local/t
+exlive/2018/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2018/03/05 L3 programming layer (loader) 
+(/usr/local/texlive/2018/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+Package: expl3 2018/03/05 L3 programming layer (code)
+\c_max_int=\count151
+\l_tmpa_int=\count152
+\l_tmpb_int=\count153
+\g_tmpa_int=\count154
+\g_tmpb_int=\count155
+\g__intarray_font_int=\count156
+\g__prg_map_int=\count157
+\c_log_iow=\count158
+\l_iow_line_count_int=\count159
+\l__iow_line_target_int=\count160
+\l__iow_one_indent_int=\count161
+\l__iow_indent_int=\count162
+\c_zero_dim=\dimen156
+\c_max_dim=\dimen157
+\l_tmpa_dim=\dimen158
+\l_tmpb_dim=\dimen159
+\g_tmpa_dim=\dimen160
+\g_tmpb_dim=\dimen161
+\c_zero_skip=\skip188
+\c_max_skip=\skip189
+\l_tmpa_skip=\skip190
+\l_tmpb_skip=\skip191
+\g_tmpa_skip=\skip192
+\g_tmpb_skip=\skip193
+\c_zero_muskip=\muskip11
+\c_max_muskip=\muskip12
+\l_tmpa_muskip=\muskip13
+\l_tmpb_muskip=\muskip14
+\g_tmpa_muskip=\muskip15
+\g_tmpb_muskip=\muskip16
+\l_keys_choice_int=\count163
+\c__fp_leading_shift_int=\count164
+\c__fp_middle_shift_int=\count165
+\c__fp_trailing_shift_int=\count166
+\c__fp_big_leading_shift_int=\count167
+\c__fp_big_middle_shift_int=\count168
+\c__fp_big_trailing_shift_int=\count169
+\c__fp_Bigg_leading_shift_int=\count170
+\c__fp_Bigg_middle_shift_int=\count171
+\c__fp_Bigg_trailing_shift_int=\count172
+\l__sort_length_int=\count173
+\l__sort_min_int=\count174
+\l__sort_top_int=\count175
+\l__sort_max_int=\count176
+\l__sort_true_max_int=\count177
+\l__sort_block_int=\count178
+\l__sort_begin_int=\count179
+\l__sort_end_int=\count180
+\l__sort_A_int=\count181
+\l__sort_B_int=\count182
+\l__sort_C_int=\count183
+\l__tl_build_start_index_int=\count184
+\l__tl_build_index_int=\count185
+\l__tl_analysis_normal_int=\count186
+\l__tl_analysis_index_int=\count187
+\l__tl_analysis_nesting_int=\count188
+\l__tl_analysis_type_int=\count189
+\l__regex_internal_a_int=\count190
+\l__regex_internal_b_int=\count191
+\l__regex_internal_c_int=\count192
+\l__regex_balance_int=\count193
+\l__regex_group_level_int=\count194
+\l__regex_mode_int=\count266
+\c__regex_cs_in_class_mode_int=\count267
+\c__regex_cs_mode_int=\count268
+\l__regex_catcodes_int=\count269
+\l__regex_default_catcodes_int=\count270
+\c__regex_catcode_L_int=\count271
+\c__regex_catcode_O_int=\count272
+\c__regex_catcode_A_int=\count273
+\c__regex_all_catcodes_int=\count274
+\l__regex_show_lines_int=\count275
+\l__regex_min_state_int=\count276
+\l__regex_max_state_int=\count277
+\l__regex_left_state_int=\count278
+\l__regex_right_state_int=\count279
+\l__regex_capturing_group_int=\count280
+\l__regex_min_pos_int=\count281
+\l__regex_max_pos_int=\count282
+\l__regex_curr_pos_int=\count283
+\l__regex_start_pos_int=\count284
+\l__regex_success_pos_int=\count285
+\l__regex_curr_char_int=\count286
+\l__regex_curr_catcode_int=\count287
+\l__regex_last_char_int=\count288
+\l__regex_case_changed_char_int=\count289
+\l__regex_curr_state_int=\count290
+\l__regex_step_int=\count291
+\l__regex_min_active_int=\count292
+\l__regex_max_active_int=\count293
+\l__regex_replacement_csnames_int=\count294
+\l__regex_match_count_int=\count295
+\l__regex_min_submatch_int=\count296
+\l__regex_submatch_int=\count297
+\l__regex_zeroth_submatch_int=\count298
+\g__regex_trace_regex_int=\count299
+\c_empty_box=\box31
+\l_tmpa_box=\box32
+\l_tmpb_box=\box33
+\g_tmpa_box=\box34
+\g_tmpb_box=\box35
+\l__box_top_dim=\dimen162
+\l__box_bottom_dim=\dimen163
+\l__box_left_dim=\dimen164
+\l__box_right_dim=\dimen165
+\l__box_top_new_dim=\dimen166
+\l__box_bottom_new_dim=\dimen167
+\l__box_left_new_dim=\dimen168
+\l__box_right_new_dim=\dimen169
+\l__box_internal_box=\box36
+\l__coffin_internal_box=\box37
+\l__coffin_internal_dim=\dimen170
+\l__coffin_offset_x_dim=\dimen171
+\l__coffin_offset_y_dim=\dimen172
+\l__coffin_x_dim=\dimen173
+\l__coffin_y_dim=\dimen174
+\l__coffin_x_prime_dim=\dimen175
+\l__coffin_y_prime_dim=\dimen176
+\c_empty_coffin=\box38
+\l__coffin_aligned_coffin=\box39
+\l__coffin_aligned_internal_coffin=\box40
+\l_tmpa_coffin=\box41
+\l_tmpb_coffin=\box42
+\l__coffin_display_coffin=\box43
+\l__coffin_display_coord_coffin=\box44
+\l__coffin_display_pole_coffin=\box45
+\l__coffin_display_offset_dim=\dimen177
+\l__coffin_display_x_dim=\dimen178
+\l__coffin_display_y_dim=\dimen179
+\l__coffin_bounding_shift_dim=\dimen180
+\l__coffin_left_corner_dim=\dimen181
+\l__coffin_right_corner_dim=\dimen182
+\l__coffin_bottom_corner_dim=\dimen183
+\l__coffin_top_corner_dim=\dimen184
+\l__coffin_scaled_total_height_dim=\dimen185
+\l__coffin_scaled_width_dim=\dimen186
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/l3kernel/l3xdvipdfmx.def
+File: l3xdvidpfmx.def 2017/03/18 v L3 Experimental driver: xdvipdfmx
+\g__driver_image_int=\count300
+))
+Package: xparse 2018/02/21 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count301
+\g__xparse_grabber_int=\count302
+\l__xparse_m_args_int=\count303
+\l__xparse_mandatory_args_int=\count304
+\l__xparse_v_nesting_int=\count305
+)
+Package: fontspec 2017/11/09 v2.6g Font selection for XeLaTeX and LuaLaTeX
+(/usr/local/texlive/2018/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2017/11/09 v2.6g Font selection for XeLaTeX and LuaLaTe
+X
+\l__fontspec_script_int=\count306
+\l__fontspec_language_int=\count307
+\l__fontspec_strnum_int=\count308
+\l__fontspec_tmp_int=\count309
+\l__fontspec_em_int=\count310
+\l__fontspec_emdef_int=\count311
+\l__fontspec_strong_int=\count312
+\l__fontspec_strongdef_int=\count313
+\l__fontspec_tmpa_dim=\dimen187
+\l__fontspec_tmpb_dim=\dimen188
+\l__fontspec_tmpc_dim=\dimen189
+\g__file_internal_ior=\read2
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/tuenc.def
+File: tuenc.def 2017/04/05 v2.0i Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TU on input line 82.
+))
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \fontspec with sig. 'O{}mO{}' on line 542.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmainfont with sig. 'O{}mO{}' on line 546.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setsansfont with sig. 'O{}mO{}' on line 550.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmonofont with sig. 'O{}mO{}' on line 554.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathrm with sig. 'O{}mO{}' on line 558.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setboldmathrm with sig. 'O{}mO{}' on line 562.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathsf with sig. 'O{}mO{}' on line 566.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathtt with sig. 'O{}mO{}' on line 570.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setromanfont with sig. 'O{}mO{}' on line 574.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontfamily with sig. 'mO{}mO{}' on line 578.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontface with sig. 'mO{}mO{}' on line 582.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \defaultfontfeatures with sig. 't+om' on line 586.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \addfontfeatures with sig. 'm' on line 590.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \addfontfeature with sig. 'm' on line 594.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontfeature with sig. 'mm' on line 598.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newAATfeature with sig. 'mmmm' on line 602.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newopentypefeature with sig. 'mmm' on line 606.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newICUfeature with sig. 'mmm' on line 610.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \aliasfontfeature with sig. 'mm' on line 614.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \aliasfontfeatureoption with sig. 'mmm' on line 618.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontscript with sig. 'mm' on line 622.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontlanguage with sig. 'mm' on line 626.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareFontsExtensions with sig. 'm' on line 630.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \IfFontFeatureActiveTF with sig. 'mmm' on line 634.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingCommand with sig. 'mO{}m' on line 3632.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingAccent with sig. 'mm' on line 3638.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingSymbol with sig. 'mm' on line 3644.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingComposite with sig. 'mmm' on line 3650.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingCompositeCommand with sig. 'mmm' on line 3656.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareUnicodeEncoding with sig. 'mm' on line 3681.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \UndeclareSymbol with sig. 'm' on line 3687.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \UndeclareAccent with sig. 'm' on line 3693.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \UndeclareCommand with sig. 'm' on line 3699.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \UndeclareComposite with sig. 'mm' on line 3706.
+.................................................
+(/usr/local/texlive/2018/texmf-dist/tex/latex/fontspec/fontspec.cfg)
+LaTeX Info: Redefining \itshape on input line 3891.
+LaTeX Info: Redefining \slshape on input line 3896.
+LaTeX Info: Redefining \scshape on input line 3901.
+LaTeX Info: Redefining \upshape on input line 3906.
+LaTeX Info: Redefining \em on input line 3936.
+LaTeX Info: Redefining \emph on input line 3961.
+LaTeX Info: Redefining \- on input line 4015.
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \oldstylenums with sig. 'm' on line 4110.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \liningnums with sig. 'm' on line 4114.
+.................................................
+)) (/usr/local/texlive/2018/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/local
+/texlive/2018/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks28
+\XKV@tempa@toks=\toks29
+(/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/keyval.tex))
+\XKV@depth=\count314
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+\c@eu@=\count315
+\c@eu@i=\count316
+\c@mkern=\count317
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2017/04/05 v2.0i Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+)
+LaTeX Info: Redefining \oldstylenums on input line 334.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 351.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 352.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 353.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 354.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 355.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 356.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 357.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 358.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 359.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 360.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 361.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 362.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 363.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 364.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 365.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 366.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 367.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 368.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 376.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 377.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 378.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 379.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 380.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 381.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 382.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 383.
+Package textcomp Info: Setting lmtt sub-encoding to TS1/0 on input line 384.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 385.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 386.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 387.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 388.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 389.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 390.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 391.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 392.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 393.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 394.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 395.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 396.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 397.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 398.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 399.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 400.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 401.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 402.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 403.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 404.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 405.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
+)) (/usr/local/texlive/2018/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2018/01/14 v2.7a Micro-typographical refinements (RS)
+\MT@toks=\toks30
+\MT@count=\count318
+LaTeX Info: Redefining \textls on input line 793.
+\MT@outer@kern=\dimen190
+LaTeX Info: Redefining \textmicrotypecontext on input line 1339.
+\MT@listname@count=\count319
+(/usr/local/texlive/2018/texmf-dist/tex/latex/microtype/microtype-xetex.def
+File: microtype-xetex.def 2018/01/14 v2.7a Definitions specific to xetex (RS)
+LaTeX Info: Redefining \lsstyle on input line 256.
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2018/01/14 v2.7a microtype main configuration file (RS)
+)) (/usr/local/texlive/2018/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2018/03/24 v5.7 Page Geometry
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+\Gm@cnth=\count320
+\Gm@cntv=\count321
+\c@Gm@tempcnt=\count322
+\Gm@bindingoffset=\dimen191
+\Gm@wd@mp=\dimen192
+\Gm@odd@mp=\dimen193
+\Gm@even@mp=\dimen194
+\Gm@layoutwidth=\dimen256
+\Gm@layoutheight=\dimen257
+\Gm@layouthoffset=\dimen258
+\Gm@layoutvoffset=\dimen259
+\Gm@dimlist=\toks31
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+Package hobsub Info: Skipping package `ifluatex' (already loaded).
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: pdfTeX >= 1.30 not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen260
+\Hy@linkcounter=\count323
+\Hy@pagecounter=\count324
+(/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count325
+(/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4509.
+Package hyperref Info: Link nesting OFF on input line 4514.
+Package hyperref Info: Hyper index ON on input line 4517.
+Package hyperref Info: Plain pages OFF on input line 4524.
+Package hyperref Info: Backreferencing OFF on input line 4529.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4762.
+\c@Hy@tempcnt=\count326
+(/usr/local/texlive/2018/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5115.
+\XeTeXLinkMargin=\dimen261
+\Fld@menulength=\count327
+\Field@Width=\dimen262
+\Fld@charsize=\dimen263
+Package hyperref Info: Hyper figures OFF on input line 6369.
+Package hyperref Info: Link nesting OFF on input line 6374.
+Package hyperref Info: Hyper index ON on input line 6377.
+Package hyperref Info: backreferencing OFF on input line 6384.
+Package hyperref Info: Link coloring OFF on input line 6389.
+Package hyperref Info: Link coloring with OCG OFF on input line 6394.
+Package hyperref Info: PDF/A mode OFF on input line 6399.
+LaTeX Info: Redefining \ref on input line 6439.
+LaTeX Info: Redefining \pageref on input line 6443.
+\Hy@abspage=\count328
+\c@Item=\count329
+\c@Hfootnote=\count330
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/memoir/memhfixc.sty
+Package: memhfixc 2013/05/30 v1.17 nameref/hyperref package fixes for memoir cl
+ass
+\c@memhycontfloat=\count331
+\c@Hpagenote=\count332
+)
+Package hyperref Info: Driver (autodetected): hxetex.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hxetex.def
+File: hxetex.def 2018/02/06 v6.86b Hyperref driver for XeTeX
+(/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2018/02/06 v6.86b Hyperref: PDF Unicode definition (HO)
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/stringenc.sty
+Package: stringenc 2016/05/16 v1.11 Convert strings between diff. encodings (HO
+)
+)
+\pdfm@box=\box46
+\c@Hy@AnnotLevel=\count333
+\HyField@AnnotCount=\count334
+\Fld@listcount=\count335
+\c@bookmark@seq@number=\count336
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip194
+)
+Package hyperref Info: Option `unicode' set `true' on input line 29.
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/se-ascii-print.def
+File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
+
+)
+Package hyperref Info: Option `breaklinks' set `true' on input line 29.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip256
+\bibsep=\skip257
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count337
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: xetex.def on input line 147.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2017/06/24 v5.0h Graphics/color driver for xetex
+)) (/usr/local/texlive/2018/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2008/02/07
+
+Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
+<2008/02/07> (tvz)
+\FV@CodeLineNo=\count338
+\FV@InFile=\read3
+\FV@TabBox=\box47
+\c@FancyVerbLine=\count339
+\FV@StepNumber=\count340
+\FV@OutFile=\write4
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip258
+\fb@frw=\dimen264
+\fb@frh=\dimen265
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip259
+\LTright=\skip260
+\LTpre=\skip261
+\LTpost=\skip262
+\LTchunksize=\count341
+\LTcapwidth=\dimen266
+\LT@head=\box48
+\LT@firsthead=\box49
+\LT@foot=\box50
+\LT@lastfoot=\box51
+\LT@cols=\count342
+\LT@rows=\count343
+\c@LT@tables=\count344
+\c@LT@chunks=\count345
+\LT@p@ftn=\toks32
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 99.
+)
+\Gin@req@height=\dimen267
+\Gin@req@width=\dimen268
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grffile.sty
+Package: grffile 2017/06/30 v1.18 Extended file name support for graphics (HO)
+Package grffile Info: Option `multidot' is set to `true'.
+Package grffile Info: Option `extendedchars' is set to `false'.
+Package grffile Info: Option `space' is set to `true'.
+Package grffile Info: \Gin@ii of package `graphicx' fixed on input line 494.
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/us
+r/local/texlive/2018/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/local/te
+xlive/2018/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
+x
+\pgfutil@everybye=\toks33
+\pgfutil@tempdima=\dimen269
+\pgfutil@tempdimb=\dimen270
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-li
+sts.tex))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box52
+(/usr/local/texlive/2018/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+)) (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.te
+x
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
+))
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/
+local/texlive/2018/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks34
+\pgfkeys@temptoks=\toks35
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.c
+ode.tex
+\pgfkeys@tmptoks=\toks36
+))
+\pgf@x=\dimen271
+\pgf@y=\dimen272
+\pgf@xa=\dimen273
+\pgf@ya=\dimen274
+\pgf@xb=\dimen275
+\pgf@yb=\dimen276
+\pgf@xc=\dimen277
+\pgf@yc=\dimen278
+\w@pgf@writea=\write5
+\r@pgf@reada=\read4
+\c@pgf@counta=\count346
+\c@pgf@countb=\count347
+\c@pgf@countc=\count348
+\c@pgf@countd=\count349
+\t@pgf@toka=\toks37
+\t@pgf@tokb=\toks38
+\t@pgf@tokc=\toks39
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Driver file for pgf: pgfsys-xetex.def
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-xetex.de
+f
+File: pgfsys-xetex.def 2014/07/09  (rcs-revision 1.11)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx
+.def
+File: pgfsys-dvipdfmx.def 2014/07/09  (rcs-revision 1.14)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-p
+df.def
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)
+\pgfsys@objnum=\count350
+)))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
+code.tex
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count351
+\pgfsyssoftpath@bigbuffer@items=\count352
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
+code.tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+)) (/usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 225.
+LaTeX Info: Redefining \color on input line 709.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr
+/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (/usr/
+local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen279
+\pgfmath@count=\count353
+\pgfmath@box=\box53
+\pgfmath@toks=\toks40
+\pgfmath@stack@operand=\toks41
+\pgfmath@stack@operation=\toks42
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
+tex
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic
+.code.tex)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigo
+nometric.code.tex)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.rando
+m.code.tex)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.compa
+rison.code.tex)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.
+code.tex)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round
+.code.tex)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.
+code.tex)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
+erarithmetics.code.tex))) (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/m
+ath/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count354
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
+de.tex
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen280
+\pgf@picmaxx=\dimen281
+\pgf@picminy=\dimen282
+\pgf@picmaxy=\dimen283
+\pgf@pathminx=\dimen284
+\pgf@pathmaxx=\dimen285
+\pgf@pathminy=\dimen286
+\pgf@pathmaxy=\dimen287
+\pgf@xx=\dimen288
+\pgf@xy=\dimen289
+\pgf@yx=\dimen290
+\pgf@yy=\dimen291
+\pgf@zx=\dimen292
+\pgf@zy=\dimen293
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
+ruct.code.tex
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen294
+\pgf@path@lasty=\dimen295
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
+.code.tex
+File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
+\pgf@shorten@end@additional=\dimen296
+\pgf@shorten@start@additional=\dimen297
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
+de.tex
+File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
+\pgfpic=\box54
+\pgf@hbox=\box55
+\pgf@layerbox@main=\box56
+\pgf@picture@serial@count=\count355
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
+ate.code.tex
+File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
+\pgflinewidth=\dimen298
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
+ations.code.tex
+File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
+\pgf@pt@x=\dimen299
+\pgf@pt@y=\dimen300
+\pgf@pt@temp=\dimen301
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
+e.tex
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.c
+ode.tex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathproce
+ssing.code.tex
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
+de.tex
+File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
+\pgfarrowsep=\dimen302
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
+e.tex
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen303
+\pgf@sys@shading@range@num=\count356
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
+e.tex
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.
+code.tex
+File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
+\pgfexternal@startupbox=\box57
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.co
+de.tex
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretranspare
+ncy.code.tex
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.
+code.tex
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+)))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
+e.tex
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
+\pgfnodeparttextbox=\box58
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
+tex
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-0-65.sty
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen304
+\pgf@nodesepend=\dimen305
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-1-18.sty
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+)) (/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr
+/local/texlive/2018/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/local/
+texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/usr/loca
+l/texlive/2018/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/local/texlive/20
+18/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/local/texlive/2018/
+texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen306
+\pgffor@skip=\dimen307
+\pgffor@stack=\toks43
+\pgffor@toks=\toks44
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
+e.tex
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
+dlers.code.tex
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+\pgf@plot@mark@count=\count357
+\pgfplotmarksize=\dimen308
+)
+\tikz@lastx=\dimen309
+\tikz@lasty=\dimen310
+\tikz@lastxsaved=\dimen311
+\tikz@lastysaved=\dimen312
+\tikzleveldistance=\dimen313
+\tikzsiblingdistance=\dimen314
+\tikz@figbox=\box59
+\tikz@figbox@bg=\box60
+\tikz@tempbox=\box61
+\tikz@tempbox@bg=\box62
+\tikztreelevel=\count358
+\tikznumberofchildren=\count359
+\tikznumberofcurrentchild=\count360
+\tikz@fig@count=\count361
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
+e.tex
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count362
+\pgfmatrixcurrentcolumn=\count363
+\pgf@matrix@numberofcolumns=\count364
+)
+\tikz@expandcount=\count365
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+))) (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/indentfirst.sty
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count366
+\float@exts=\toks45
+\float@box=\box63
+\@float@everytoks=\toks46
+\@floatcapt=\box64
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/threeparttable/threeparttable.sty
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box65
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/marginnote/marginnote.sty
+Package: marginnote 2017/04/22 v1.2b non floating margin notes for LaTeX
+\c@mn@abspage=\count367
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2018/03/22 version 4.13 text color boxes
+(/usr/local/texlive/2018/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+(/usr/local/texlive/2018/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\tcb@titlebox=\box66
+\tcb@upperbox=\box67
+\tcb@lowerbox=\box68
+\tcb@phantombox=\box69
+\c@tcbbreakpart=\count368
+\c@tcblayer=\count369
+\tcolorbox@number=\count370
+\tcb@temp=\box70
+\tcb@temp=\box71
+\tcb@temp=\box72
+\tcb@temp=\box73
+\tcb@out=\write6
+\tcb@record@out=\write7
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2017/10/31 v0.5l Insert pages of external PDF documents (AM)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count371
+\calc@Bcount=\count372
+\calc@Adimen=\dimen315
+\calc@Bdimen=\dimen316
+\calc@Askip=\skip263
+\calc@Bskip=\skip264
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count373
+\calc@Cskip=\skip265
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
+)
+\AM@pagewidth=\dimen317
+\AM@pageheight=\dimen318
+(/usr/local/texlive/2018/texmf-dist/tex/latex/pdfpages/ppxetex.def
+File: ppxetex.def 2017/10/31 v0.5l Pdfpages driver for XeTeX (AM)
+)
+\AM@pagebox=\box74
+\AM@global@opts=\toks47
+\AM@toc@title=\toks48
+\c@AM@survey=\count374
+\AM@templatesizebox=\box75
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryintersections.code.tex
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/libraries/pgflibraryinterse
+ctions.code.tex
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.cod
+e.tex)
+\pgf@intersect@solutions=\count375
+)) (/usr/local/texlive/2018/texmf-dist/tex/latex/tcolorbox/tcblistings.code.tex
+Library (tcolorbox): 'tcblistings.code.tex' version '4.13'
+(/usr/local/texlive/2018/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count376
+\lst@gtempboxa=\box76
+\lst@token=\toks49
+\lst@length=\count377
+\lst@currlwidth=\dimen319
+\lst@column=\count378
+\lst@pos=\count379
+\lst@lostspace=\dimen320
+\lst@width=\dimen321
+\lst@newlines=\count380
+\lst@lineno=\count381
+\lst@maxwidth=\dimen322
+(/usr/local/texlive/2018/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count382
+\lst@skipnumbers=\count383
+\lst@framebox=\box77
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/tcolorbox/tcblistingscore.code.te
+x
+Library (tcolorbox): 'tcblistingscore.code.tex' version '4.13'
+(/usr/local/texlive/2018/texmf-dist/tex/latex/tcolorbox/tcbprocessing.code.tex
+Library (tcolorbox): 'tcbprocessing.code.tex' version '4.13'
+(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2016/06/07 v0.02a unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 69.
+))
+\c@tcblisting=\count384
+)) (/usr/local/texlive/2018/texmf-dist/tex/latex/tcolorbox/tcbbreakable.code.te
+x
+Library (tcolorbox): 'tcbbreakable.code.tex' version '4.13'
+\tcb@testbox=\box78
+\tcb@totalupperbox=\box79
+\tcb@totallowerbox=\box80
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/pifont.sty
+Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
+LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Try loading font information for U+psy on input line 64.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+)) (/usr/local/texlive/2018/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/04/06 v1.3b Input encoding file
+\inpenc@prehook=\toks50
+\inpenc@posthook=\toks51
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
+Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 99.
+
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/supertabular/supertabular.sty
+Package: supertabular 2004/02/20 v4.1e the supertabular environment
+\c@tracingst=\count385
+\ST@wd=\dimen323
+\ST@rightskip=\skip266
+\ST@leftskip=\skip267
+\ST@parfillskip=\skip268
+\ST@pageleft=\dimen324
+\ST@headht=\dimen325
+\ST@tailht=\dimen326
+\ST@pagesofar=\dimen327
+\ST@pboxht=\dimen328
+\ST@lineht=\dimen329
+\ST@stretchht=\dimen330
+\ST@prevht=\dimen331
+\ST@toadd=\dimen332
+\ST@dimen=\dimen333
+\ST@pbox=\box81
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+Class memoir Warning: You are using the caption package with the memoir class. 
+To prepare we will now reset all captioning macros and configurations to kernel
+ defaults, and then let the caption package take over. Please remember to use
+ the caption package interfaces in order to
+ configure your captions.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen334
+\captionmargin@=\dimen335
+\captionwidth=\dimen336
+\caption@tempdima=\dimen337
+\caption@indent=\dimen338
+\caption@parindent=\dimen339
+\caption@hangindent=\dimen340
+)
+\c@ContinuedFloat=\count386
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: longtable package is loaded.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
+)
+Package caption Info: supertabular package is loaded.
+Package caption Info: threeparttable package is loaded.
+)
+\c@KVtest=\count387
+\sf@farskip=\skip269
+\sf@captopadj=\dimen341
+\sf@capskip=\skip270
+\sf@nearskip=\skip271
+\c@subfigure=\count388
+\c@subfigure@save=\count389
+\c@subtable=\count390
+\c@subtable@save=\count391
+\sf@top=\skip272
+\sf@bottom=\skip273
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/koma-script/scrextend.sty
+Package: scrextend 2018/03/30 v3.25 KOMA-Script package (extend other classes w
+ith features of KOMA-Script classes)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/koma-script/scrkbase.sty
+Package: scrkbase 2018/03/30 v3.25 KOMA-Script package (KOMA-Script-dependent b
+asics and keyval usage)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2018/03/30 v3.25 KOMA-Script package (KOMA-Script-independent 
+basics and keyval usage)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2018/03/30 v3.25 KOMA-Script package (loading files)
+
+LaTeX Warning: Command \InputIfFileExists  has changed.
+               Check if current package is valid.
+
+)))
+
+LaTeX Warning: Command \@footnotemark  has changed.
+               Check if current package is valid.
+
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/tabu/tabu.sty
+Package: tabu 2011/02/26 v2.8 - flexible LaTeX tabulars (FC)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box82
+\sift@deathcycles=\count392
+\@vwid@loff=\dimen342
+\@vwid@roff=\dimen343
+)
+\c@taburow=\count393
+\tabu@nbcols=\count394
+\tabu@cnt=\count395
+\tabu@Xcol=\count396
+\tabu@alloc=\count397
+\tabu@nested=\count398
+\tabu@target=\dimen344
+\tabu@spreadtarget=\dimen345
+\tabu@naturalX=\dimen346
+\tabucolX=\dimen347
+\tabu@Xsum=\dimen348
+\extrarowdepth=\dimen349
+\abovetabulinesep=\dimen350
+\belowtabulinesep=\dimen351
+\tabustrutrule=\dimen352
+\tabu@thebody=\toks52
+\tabu@footnotes=\toks53
+\tabu@box=\box83
+\tabu@arstrutbox=\box84
+\tabu@hleads=\box85
+\tabu@vleads=\box86
+\tabu@cellskip=\skip274
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/eurosym/eurosym.sty
+Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
+\@eurobox=\box87
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/stackrel.sty
+Package: stackrel 2016/05/16 v1.3 Adding subscript option to stackrel (HO)
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/hyphenat/hyphenat.sty
+Package: hyphenat 2009/09/02 v2.3c hyphenation utilities
+\langwohyphens=\language84
+LaTeX Info: Redefining \_ on input line 43.
+) (./meta-donnees.sty
+Package: meta-donnees 2011/02/25 v0.01
+\@UGTtitlepageshift=\skip275
+\@Sethpageshift=\skip276
+\@Setvpageshift=\skip277
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2017/10/31 v2.20.4
+\thm@style=\toks54
+\thm@bodyfont=\toks55
+\thm@headfont=\toks56
+\thm@notefont=\toks57
+\thm@headpunct=\toks58
+\thm@preskip=\skip278
+\thm@postskip=\skip279
+\thm@headsep=\skip280
+\dth@everypar=\toks59
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/lettrine/lettrine.sty
+File: lettrine.sty 2015/08/31 v1.9 (Daniel Flipo)
+\c@DefaultLines=\count399
+\c@DefaultDepth=\count400
+\DefaultFindent=\dimen353
+\DefaultNindent=\dimen354
+\DefaultSlope=\dimen355
+\DiscardVskip=\dimen356
+\L@lbox=\box88
+\L@tbox=\box89
+\c@L@lines=\count401
+\c@L@depth=\count402
+\L@Pindent=\dimen357
+\L@Findent=\dimen358
+\L@Nindent=\dimen359
+\L@lraise=\dimen360
+\L@first=\dimen361
+\L@next=\dimen362
+\L@slope=\dimen363
+\L@height=\dimen364
+\L@novskip=\dimen365
+\LettrineWidth=\dimen366
+\LettrineHeight=\dimen367
+\LettrineDepth=\dimen368
+Loading lettrine.cfg
+(/usr/local/texlive/2018/texmf-dist/tex/latex/lettrine/lettrine.cfg)) (/usr/loc
+al/texlive/2018/texmf-dist/tex/latex/fouriernc/fouriernc.sty
+Package: fouriernc 2005/12/20 1.0 fouriernc package
+(/usr/local/texlive/2018/texmf-dist/tex/latex/fourier/fourier.sty
+Package: fourier 2005/01/01 1.4 fourier-GUTenberg package
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+)
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 105.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)) (/usr/local/texlive/2018/texmf-dist/tex/latex/fourier/fourier-orns.sty
+Package: fourier-orns 2004/01/30 1.1 fourier-ornaments package
+)
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 50.
+LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
+(Font)              `operators' in the math version `normal' on input line 50.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/lmr/m/n --> T1/futs/m/n on input line 50.
+LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
+(Font)              `operators' in the math version `bold' on input line 50.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/lmr/bx/n --> T1/futs/m/n on input line 50.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  T1/futs/m/n --> T1/futs/b/n on input line 51.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 59.
+LaTeX Font Info:    Encoding `OML' has changed to `FML' for symbol font
+(Font)              `letters' in the math version `normal' on input line 59.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/lmm/m/it --> FML/futmi/m/it on input line 59.
+LaTeX Font Info:    Encoding `OML' has changed to `FML' for symbol font
+(Font)              `letters' in the math version `bold' on input line 59.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/lmm/b/it --> FML/futmi/m/it on input line 59.
+\symotherletters=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  FML/futmi/m/it --> FML/futmi/b/it on input line 61.
+LaTeX Font Info:    Overwriting symbol font `otherletters' in version `bold'
+(Font)                  FML/futm/m/it --> FML/futm/b/it on input line 62.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 63.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 64.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 65.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 66.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 67.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 68.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 69.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 70.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 71.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 72.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 73.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 113.
+LaTeX Font Info:    Encoding `OMS' has changed to `FMS' for symbol font
+(Font)              `symbols' in the math version `normal' on input line 113.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/lmsy/m/n --> FMS/futm/m/n on input line 113.
+LaTeX Font Info:    Encoding `OMS' has changed to `FMS' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 113.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/lmsy/b/n --> FMS/futm/m/n on input line 113.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 114.
+LaTeX Font Info:    Encoding `OMX' has changed to `FMX' for symbol font
+(Font)              `largesymbols' in the math version `normal' on input line 1
+14.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/lmex/m/n --> FMX/futm/m/n on input line 114.
+LaTeX Font Info:    Encoding `OMX' has changed to `FMX' for symbol font
+(Font)              `largesymbols' in the math version `bold' on input line 114
+.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/lmex/m/n --> FMX/futm/m/n on input line 114.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 115.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/lmr/bx/n --> T1/futs/bx/n on input line 115.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/lmr/bx/n --> T1/futs/bx/n on input line 115.
+LaTeX Font Info:    Redeclaring math alphabet \mathrm on input line 116.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 117.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/lmr/m/it --> T1/futs/m/it on input line 117.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/lmr/bx/it --> T1/futs/m/it on input line 117.
+LaTeX Font Info:    Redeclaring math alphabet \mathcal on input line 118.
+LaTeX Font Info:    Redeclaring math symbol \varkappa on input line 119.
+LaTeX Font Info:    Redeclaring math symbol \leqslant on input line 125.
+LaTeX Font Info:    Redeclaring math symbol \geqslant on input line 126.
+LaTeX Font Info:    Redeclaring math symbol \vDash on input line 129.
+LaTeX Font Info:    Redeclaring math symbol \blacktriangleleft on input line 13
+0.
+LaTeX Font Info:    Redeclaring math symbol \blacktriangleright on input line 1
+31.
+LaTeX Font Info:    Redeclaring math symbol \nleqslant on input line 132.
+LaTeX Font Info:    Redeclaring math symbol \ngeqslant on input line 133.
+LaTeX Font Info:    Redeclaring math symbol \parallel on input line 134.
+LaTeX Font Info:    Redeclaring math symbol \nparallel on input line 135.
+LaTeX Font Info:    Redeclaring math symbol \nvDash on input line 137.
+LaTeX Font Info:    Redeclaring math symbol \intercal on input line 138.
+LaTeX Font Info:    Redeclaring math symbol \hslash on input line 139.
+LaTeX Font Info:    Redeclaring math symbol \nexists on input line 140.
+LaTeX Font Info:    Redeclaring math symbol \complement on input line 141.
+LaTeX Font Info:    Redeclaring math symbol \varsubsetneq on input line 142.
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 148.
+LaTeX Font Info:    Redeclaring math symbol \smallsetminus on input line 149.
+LaTeX Font Info:    Redeclaring math symbol \subsetneqq on input line 150.
+LaTeX Font Info:    Redeclaring math symbol \rightrightarrows on input line 151
+.
+LaTeX Font Info:    Redeclaring math symbol \leftleftarrows on input line 152.
+LaTeX Font Info:    Redeclaring math symbol \square on input line 153.
+LaTeX Font Info:    Redeclaring math symbol \curvearrowleft on input line 154.
+LaTeX Font Info:    Redeclaring math symbol \curvearrowright on input line 155.
+
+LaTeX Font Info:    Redeclaring math symbol \blacksquare on input line 156.
+LaTeX Font Info:    Redeclaring math symbol \varkappa on input line 186.
+LaTeX Font Info:    Redeclaring math symbol \varvarrho on input line 187.
+LaTeX Font Info:    Redeclaring math delimiter \Vert on input line 210.
+LaTeX Font Info:    Redeclaring math delimiter \vert on input line 215.
+LaTeX Font Info:    Redeclaring math delimiter \lvert on input line 217.
+LaTeX Font Info:    Redeclaring math delimiter \rvert on input line 219.
+LaTeX Font Info:    Redeclaring math delimiter \lVert on input line 221.
+LaTeX Font Info:    Redeclaring math delimiter \rVert on input line 223.
+LaTeX Font Info:    Redeclaring math delimiter \Downarrow on input line 225.
+LaTeX Font Info:    Redeclaring math delimiter \backslash on input line 227.
+LaTeX Font Info:    Redeclaring math delimiter \rangle on input line 229.
+LaTeX Font Info:    Redeclaring math delimiter \langle on input line 231.
+LaTeX Font Info:    Redeclaring math delimiter \rbrace on input line 233.
+LaTeX Font Info:    Redeclaring math delimiter \lbrace on input line 235.
+LaTeX Font Info:    Redeclaring math delimiter \rceil on input line 237.
+LaTeX Font Info:    Redeclaring math delimiter \lceil on input line 239.
+LaTeX Font Info:    Redeclaring math delimiter \rfloor on input line 241.
+LaTeX Font Info:    Redeclaring math delimiter \lfloor on input line 243.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 247.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 248.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 249.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 250.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 251.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 252.
+LaTeX Font Info:    Redeclaring math accent \check on input line 253.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 254.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 255.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 256.
+\symUfutm=\mathgroup7
+)
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 16.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  FML/futmi/m/it --> FML/fncmi/m/it on input line 16.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  FML/futmi/b/it --> FML/fncmi/m/it on input line 16.
+LaTeX Font Info:    Redeclaring symbol font `otherletters' on input line 17.
+LaTeX Font Info:    Overwriting symbol font `otherletters' in version `normal'
+(Font)                  FML/futm/m/it --> FML/fncm/m/it on input line 17.
+LaTeX Font Info:    Overwriting symbol font `otherletters' in version `bold'
+(Font)                  FML/futm/b/it --> FML/fncm/m/it on input line 17.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  FML/fncmi/m/it --> FML/fncmi/b/it on input line 18.
+LaTeX Font Info:    Overwriting symbol font `otherletters' in version `bold'
+(Font)                  FML/fncm/m/it --> FML/fncm/b/it on input line 19.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 32.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  T1/futs/m/n --> T1/fnc/m/n on input line 32.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  T1/futs/b/n --> T1/fnc/m/n on input line 32.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  T1/fnc/m/n --> T1/fnc/b/n on input line 33.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 34.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  FMS/futm/m/n --> FMS/fncm/m/n on input line 34.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  FMS/futm/m/n --> FMS/fncm/m/n on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  T1/futs/bx/n --> T1/fnc/b/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  T1/futs/bx/n --> T1/fnc/b/n on input line 35.
+LaTeX Font Info:    Redeclaring math alphabet \mathrm on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  T1/futs/m/n --> T1/fnc/m/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
+(Font)                  T1/futs/m/n --> T1/fnc/m/n on input line 36.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  T1/futs/m/it --> T1/fnc/m/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  T1/futs/m/it --> T1/fnc/m/it on input line 37.
+LaTeX Font Info:    Redeclaring math alphabet \mathcal on input line 38.
+LaTeX Font Info:    Overwriting math alphabet `\mathcal' in version `normal'
+(Font)                  FMS/futm/m/n --> FMS/fncm/m/n on input line 38.
+LaTeX Font Info:    Overwriting math alphabet `\mathcal' in version `bold'
+(Font)                  FMS/futm/m/n --> FMS/fncm/m/n on input line 38.
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+
+******************************************************
+Stock height and width: 794.96999pt by 614.295pt
+Top and edge trims: 0pt and 0pt
+Page height and width: 794.96999pt by 614.295pt
+Text height and width: 650.20029pt by 360pt
+Spine and edge margins: 144.54pt and 109.755pt
+Upper and lower margins: 72.26999pt and 72.49971pt
+Headheight and headsep: 13pt and 13pt
+Footskip: 26pt
+Columnsep and columnseprule: 10pt and 0pt
+Marginparsep and marginparwidth: 7pt and 95.755pt
+Sidecapsep and sidecapwidth: 7pt and 101pt
+Sidebarhsep and sidebarwidth: 7pt and 101pt
+Sidebarvsep and sidebartopsep: 13.6pt and 0pt
+Sidebarheight: 594.32022pt
+Sidefoothsep and sidefootwidth: 7pt and 101pt
+Sidefootvsep and sidefootheight: 13.6pt and 594.32022pt
+******************************************************
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/soul/soul.sty
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks60
+\SOUL@lasttoken=\toks61
+\SOUL@cmds=\toks62
+\SOUL@buffer=\toks63
+\SOUL@token=\toks64
+\SOUL@spaceskip=\skip281
+\SOUL@ttwidth=\dimen369
+\SOUL@uldp=\dimen370
+\SOUL@ulht=\dimen371
+)
+\dlf@normtxtw=\skip282
+\feline@chapter=\box90
+
+LaTeX Warning: Unused global option(s):
+    [legno].
+
+(./thesis.aux
+
+LaTeX Warning: Label `fig:unnamed-chunk-1' multiply defined.
+
+
+LaTeX Warning: Label `fig:unnamed-chunk-2' multiply defined.
+
+
+LaTeX Warning: Label `emg' multiply defined.
+
+
+LaTeX Warning: Label `fig:unnamed-chunk-3' multiply defined.
+
+)
+\openout1 = `thesis.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 274.
+LaTeX Font Info:    ... okay on input line 274.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 274.
+LaTeX Font Info:    ... okay on input line 274.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 274.
+LaTeX Font Info:    ... okay on input line 274.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 274.
+LaTeX Font Info:    ... okay on input line 274.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 274.
+LaTeX Font Info:    ... okay on input line 274.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 274.
+LaTeX Font Info:    ... okay on input line 274.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 274.
+LaTeX Font Info:    ... okay on input line 274.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 274.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 274.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 274.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 274.
+LaTeX Font Info:    ... okay on input line 274.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 274.
+LaTeX Font Info:    ... okay on input line 274.
+LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 274.
+LaTeX Font Info:    Try loading font information for FML+fncmi on input line 27
+4.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/fouriernc/fmlfncmi.fd
+File: fmlfncmi.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncmi.
+)
+LaTeX Font Info:    ... okay on input line 274.
+LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 274.
+LaTeX Font Info:    Try loading font information for FMS+fncm on input line 274
+.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/fouriernc/fmsfncm.fd
+File: fmsfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FMS/fncm.
+)
+LaTeX Font Info:    ... okay on input line 274.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 274.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 274
+.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/fourier/fmxfutm.fd
+File: fmxfutm.fd futm-extension
+)
+LaTeX Font Info:    ... okay on input line 274.
+LaTeX Font Info:    Try loading font information for T1+fnc on input line 274.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/fouriernc/t1fnc.fd
+File: t1fnc.fd 2005/12/13 scaled font definitions for T1/fnc.
+)
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 10.18341pt on input line 274.
+LaTeX Info: Redefining \microtypecontext on input line 274.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using protrusion set `basicmath'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of spacing.
+Package microtype Info: No adjustment of kerning.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `fnc' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(72.26999pt, 452.9679pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 700.50687pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=360.0pt
+* \textheight=650.20029pt
+* \oddsidemargin=72.0pt
+* \evensidemargin=37.0pt
+* \topmargin=-26.0pt
+* \headheight=13.0pt
+* \headsep=13.0pt
+* \topskip=11.0pt
+* \footskip=26.0pt
+* \marginparwidth=95.755pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=12.0pt plus 4.0pt minus 4.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\AtBeginShipoutBox=\box91
+Package hyperref Info: Link coloring OFF on input line 274.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count403
+)
+LaTeX Info: Redefining \ref on input line 274.
+LaTeX Info: Redefining \pageref on input line 274.
+LaTeX Info: Redefining \nameref on input line 274.
+(./thesis.out) (./thesis.out)
+\@outlinefile=\write8
+\openout8 = `thesis.out'.
+
+ABD: EveryShipout initializing macros
+Package marginnote Info: \pdfoutput not 0 or unimportant and
+(marginnote)             \pdflastxpos or \lastxpos available.
+(marginnote)             Extended position detection mode activated.
+\c@lstlisting=\count404
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 318.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/lm/t1lmss.fd
+File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+File: logo_uga.eps Graphic file (type eps)
+<logo_uga.eps>
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 318.
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 10.22992pt on input line 318.
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 7.77467pt on input line 318.
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 6.138pt on input line 318.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 10.11998pt on input line 318.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 7.69112pt on input line 318.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.07204pt on input line 318.
+LaTeX Font Info:    Try loading font information for U+msa on input line 318.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 318.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+LaTeX Font Info:    Try loading font information for FML+fncm on input line 318
+.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/fouriernc/fmlfncm.fd
+File: fmlfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncm.
+)
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 10.11998pt on input line 318.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 7.69112pt on input line 318.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.07204pt on input line 318.
+File: logo_comue.eps Graphic file (type eps)
+<logo_comue.eps>
+Invalid UTF-8 byte or sequence at line 318 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 318 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 318 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 318 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 318 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 318 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 318 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 318 replaced by U+FFFD.
+File: logo_ugent.eps Graphic file (type eps)
+<logo_ugent.eps>
+
+Overfull \hbox (19.80464pt too wide) in paragraph at lines 318--318
+[] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 318--318
+
+ []
+
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmss' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 9.29993pt on input line 318.
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 7.06795pt on input line 318.
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 5.57996pt on input line 318.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 318.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 318.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 318.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 318.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 318.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 318.
+
+Overfull \hbox (17.79987pt too wide) in paragraph at lines 318--318
+[][] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 318
+ []
+
+[1
+
+] [2
+
+
+]
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 13.39188pt on input line 324.
+LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/fnc/b/n' tried instead on input line 324.
+LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
+(Font)              scaled to size 13.39188pt on input line 324.
+LaTeX Font Info:    Font shape `T1/fnc/bx/sc' in size <14.4> not available
+(Font)              Font shape `T1/fnc/b/sc' tried instead on input line 324.
+LaTeX Font Info:    Font shape `T1/fnc/b/sc' will be
+(Font)              scaled to size 13.39188pt on input line 324.
+(./thesis.toc
+LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/fnc/b/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
+(Font)              scaled to size 10.18341pt on input line 1.
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 7.71893pt on input line 1.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 1.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 7.63599pt on input line 1.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 1.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 7.63599pt on input line 1.
+
+Class memoir Warning: The material used in the headers is too large
+(13.59999pt) for the given head height (13.0pt), it is recommended to
+either increase the head height or redesign the header
+(in both cases you will find help in the memoir manual). on input line 34.
+
+
+Overfull \vbox (0.59999pt too high) has occurred while \output is active []
+
+[3]
+Underfull \hbox (badness 7030) in paragraph at lines 44--44
+ [][] [][]\T1/fnc/m/n/10.95 Experiment 2: ru-mi-na-tion re-duc-tion by 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--63
+ [][] [][]\T1/fnc/b/n/10.95 Muscle-specific elec-tromyo-graphic cor-re-lates of
+ in-ner 
+ []
+
+)
+LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
+(Font)              scaled to size 9.29993pt on input line 326.
+
+Overfull \vbox (0.59999pt too high) has occurred while \output is active []
+
+[4] (./thesis.lot) (./thesis.lof)
+Overfull \vbox (0.59999pt too high) has occurred while \output is active []
+
+[5] [6
+
+]
+LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
+(Font)              scaled to size 10.18341pt on input line 330.
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 30.94487pt on input line 330.
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 45.523pt on input line 330.
+LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
+(Font)              scaled to size 45.523pt on input line 330.
+
+Overfull \vbox (0.59999pt too high) has occurred while \output is active []
+
+[7] [8
+
+]
+Overfull \vbox (0.59999pt too high) has occurred while \output is active []
+
+[9] [10
+
+]
+LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
+(Font)              scaled to size 10.18341pt on input line 351.
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 8.36993pt on input line 355.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 8.27998pt on input line 355.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 8.27998pt on input line 355.
+
+Overfull \vbox (0.59999pt too high) has occurred while \output is active []
+
+[11]
+Underfull \hbox (badness 1436) in paragraph at lines 388--402
+\T1/fnc/m/n/10.95 from the learn-ing of an in-finitely com-plex co-or-di-na-tio
+n of fine mo-tor
+ []
+
+
+Package natbib Warning: Citation `koster_rumination_2013' on page 12 undefined 
+on input line 406.
+
+
+Package natbib Warning: Citation `Christoff2016' on page 12 undefined on input 
+line 408.
+
+
+Package natbib Warning: Citation `Miller2000' on page 12 undefined on input lin
+e 415.
+
+File: assets/conceptual_space.png Graphic file (type bmp)
+<assets/conceptual_space.png>
+
+Package natbib Warning: Citation `perrone-bertolotti_what_2014' on page 12 unde
+fined on input line 443.
+
+
+Overfull \vbox (0.59999pt too high) has occurred while \output is active []
+
+[12]
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 11.15991pt on input line 460.
+LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <12> not available
+(Font)              Font shape `T1/fnc/b/n' tried instead on input line 460.
+LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
+(Font)              scaled to size 11.15991pt on input line 460.
+Missing character: There is no ’ in font pncr8t!
+
+Underfull \hbox (badness 3209) in paragraph at lines 462--474
+\T1/fnc/m/n/10.95 ex-pla-na-tion of this broad phe-nomenon, the \T1/fnc/m/it/10
+.95 mo-tor sim-u-la-tion the-ory
+ []
+
+
+Underfull \hbox (badness 6575) in paragraph at lines 462--474
+\T1/fnc/m/n/10.95 (MST; []Jean-nerod[], []1994[], []2001[], []2006[]), con-tain
+s the three fol-low-ing
+ []
+
+Missing character: There is no ’ in font pncr8t!
+
+Package natbib Warning: Citation `barsalou_grounded_2008' on page 13 undefined 
+on input line 480.
+
+Missing character: There is no ’ in font pncr8t!
+LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
+(Font)              scaled to size 8.36993pt on input line 489.
+
+Underfull \hbox (badness 1107) in paragraph at lines 475--490
+[]\T1/fnc/m/n/10.95 In this frame-work, the con-cept of sim-u-la-tion refers to
+ the ``of-fline
+ []
+
+
+Overfull \vbox (0.59999pt too high) has occurred while \output is active []
+
+[13]
+Underfull \hbox (badness 1005) in paragraph at lines 491--504
+[]\T1/fnc/m/n/10.95 The MST is sup-ported by a wealth a find-ings, go-ing from 
+men-tal
+ []
+
+Missing character: There is no ’ in font pncr8t!
+
+Underfull \hbox (badness 1067) in paragraph at lines 523--531
+[]\T1/fnc/m/n/10.95 Emulation the-o-ries (e.g., []Grush[], []2004[]; []Moul-ton
+ and Koss-lyn[], []2009[])
+ []
+
+
+Underfull \hbox (badness 2418) in paragraph at lines 523--531
+\T1/fnc/m/n/10.95 ex-clu-sively by in-ter-nal mo-tor rep-re-sen-ta-tions, the e
+m-u-la-tion the-o-ries
+ []
+
+
+Overfull \vbox (0.59999pt too high) has occurred while \output is active []
+
+[14]
+Underfull \hbox (badness 1442) in paragraph at lines 544--564
+\T1/fnc/m/n/10.95 mo-tor cen-tres as be-ing suf-fi-cient for ex-plain-ing mo-to
+r im-agery, while
+ []
+
+
+Underfull \hbox (badness 2582) in paragraph at lines 571--596
+\T1/fnc/m/n/10.95 pres-sure. Us-ing tran-scra-nial mag-netic stim-u-la-tion and
+ mo-tor evoked
+ []
+
+
+Underfull \hbox (badness 1072) in paragraph at lines 597--616
+\T1/fnc/m/n/10.95 mus-cu-lar ac-tiv-ity ob-served dur-ing imag-ined ac-tions wa
+s the \T1/fnc/m/it/10.95 source \T1/fnc/m/n/10.95 of
+ []
+
+
+Underfull \hbox (badness 1552) in paragraph at lines 597--616
+\T1/fnc/m/n/10.95 the men-tal con-tent. How-ever, as ex-plained by []Jean-nerod
+[] ([]2006[]), this
+ []
+
+
+Underfull \hbox (badness 1552) in paragraph at lines 597--616
+\T1/fnc/m/n/10.95 ex-per-i-ment mo-tor im-agery, with-out any ob-serv-able mus-
+cu-lar ac-tiv-ity[][][].
+ []
+
+
+Overfull \vbox (0.59999pt too high) has occurred while \output is active []
+
+[15]
+Underfull \hbox (badness 1019) in paragraph at lines 647--651
+\T1/fnc/m/n/10.95 as a kind of mo-tor (and sen-sory) im-agery of speech, and di
+s-cuss the
+ []
+
+
+Underfull \hbox (badness 1484) in paragraph at lines 647--651
+\T1/fnc/m/n/10.95 the-o-ret-i-cal un-der-pin-nings of this propo-si-tion as wel
+l as the avail-able
+ []
+
+
+Overfull \vbox (0.59999pt too high) has occurred while \output is active []
+
+[16]
+Missing character: There is no œ in font pncr8t!
+
+Underfull \hbox (badness 2393) in paragraph at lines 676--688
+\T1/fnc/m/n/10.95 per-cepts stem-ming from coarse multi-sensory goals''. In oth
+er words,
+ []
+
+
+Underfull \hbox (badness 1215) in paragraph at lines 710--712
+[]\T1/fnc/m/n/10.95 See Stin-ear's chap-ter in Guil-lot's book for in-tra-cor-t
+i-cal and spinal
+ []
+
+
+Overfull \vbox (0.59999pt too high) has occurred while \output is active []
+
+[17]
+Underfull \hbox (badness 1436) in paragraph at lines 755--769
+\T1/fnc/m/n/10.95 from the learn-ing of an in-finitely com-plex co-or-di-na-tio
+n of fine mo-tor
+ []
+
+
+Overfull \vbox (0.59999pt too high) has occurred while \output is active []
+
+[18]
+Overfull \vbox (0.59999pt too high) has occurred while \output is active []
+
+[19] [20
+
+]
+Overfull \vbox (0.59999pt too high) has occurred while \output is active []
+
+[21]
+File: assets/muap.jpg Graphic file (type bmp)
+<assets/muap.jpg>
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 841.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Underfull \hbox (badness 2837) in paragraph at lines 839--843
+\T1/fnc/m/n/10.95 al-go-rithm im-ple-mented in the \T1/lmtt/m/n/10.95 biosignal
+EMG \T1/fnc/m/n/10.95 pack-age ([]Guer-rero and
+ []
+
+
+Package xcolor Warning: Incompatible color definition on input line 844.
+
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 846.
+
+Package xcolor Warning: Incompatible color definition on input line 858.
+
+
+Package xcolor Warning: Incompatible color definition on input line 858.
+
+
+Package xcolor Warning: Incompatible color definition on input line 858.
+
+
+Class memoir Warning: The material used in the headers is too large
+(27.2pt) for the given head height (13.0pt), it is recommended to
+either increase the head height or redesign the header
+(in both cases you will find help in the memoir manual). on input line 858.
+
+
+Overfull \vbox (14.2pt too high) has occurred while \output is active []
+
+[22]
+
+Package xcolor Warning: Incompatible color definition on input line 858.
+
+
+Package xcolor Warning: Incompatible color definition on input line 858.
+
+File: 02-chap2_files/figure-latex/unnamed-chunk-2-1.pdf Graphic file (type pdf)
+
+<use 02-chap2_files/figure-latex/unnamed-chunk-2-1.pdf>
+
+Package xcolor Warning: Incompatible color definition on input line 873.
+
+
+Package xcolor Warning: Incompatible color definition on input line 882.
+
+
+Package xcolor Warning: Incompatible color definition on input line 882.
+
+File: 02-chap2_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file (type pdf)
+
+<use 02-chap2_files/figure-latex/unnamed-chunk-3-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (0.59999pt too high) has occurred while \output is active []
+
+[23]
+Overfull \vbox (14.2pt too high) has occurred while \output is active []
+
+[24]
+Underfull \hbox (badness 3375) in paragraph at lines 935--942
+\T1/fnc/m/n/10.95 our-selves, think-ing about our own feel-ings, thoughts and b
+e-hav-iors.
+ []
+
+
+Underfull \hbox (badness 2050) in paragraph at lines 935--942
+\T1/fnc/m/n/10.95 present ex-pe-ri-ences (Boyd & Fales, 1983; Nolen-Hoeksema, W
+isco, &
+ []
+
+
+Underfull \hbox (badness 1533) in paragraph at lines 935--942
+\T1/fnc/m/n/10.95 Lyubomirsky, 2008). How-ever, this pro-cess can lead to un-co
+n-struc-tive
+ []
+
+
+Underfull \hbox (badness 3179) in paragraph at lines 935--942
+\T1/fnc/m/n/10.95 con-se-quences when self-referent thoughts be-come repet-i-ti
+ve, ab-stract,
+ []
+
+
+Overfull \vbox (0.59999pt too high) has occurred while \output is active []
+
+[25
+
+]
+Overfull \vbox (14.2pt too high) has occurred while \output is active []
+
+[26]
+Underfull \hbox (badness 1178) in paragraph at lines 1012--1055
+\T1/fnc/m/n/10.95 pro-duces the au-di-tory sim-u-la-tion, and sec-ond, be-cause
+ of asso- ciated
+ []
+
+
+Underfull \hbox (badness 2809) in paragraph at lines 1056--1081
+\T1/fnc/m/n/10.95 ex-per-i-men-tal re-sults. Ex-am-in-ing the prop-er-ties of e
+r-rors dur-ing the
+ []
+
+
+Overfull \vbox (0.59999pt too high) has occurred while \output is active []
+
+[27]
+Underfull \hbox (badness 2173) in paragraph at lines 1094--1112
+\T1/fnc/m/n/10.95 have of-fered a de-tailed de-scrip-tion of rumina- tion style
+s and more
+ []
+
+
+Overfull \vbox (14.2pt too high) has occurred while \output is active []
+
+[28]
+Underfull \hbox (badness 1577) in paragraph at lines 1137--1159
+[]\T1/fnc/m/n/10.95 In ad-di-tion to labial mus-cu-lar ac-tiv-ity, we also reco
+rded fore-head
+ []
+
+
+Underfull \hbox (badness 1661) in paragraph at lines 1137--1159
+\T1/fnc/m/n/10.95 mus-cu-lar ac-tiv-ity (i.e., frontalis mus-cle) be-cause of i
+ts im-pli-ca-tion in
+ []
+
+Missing character: There is no − in font pncr8t!
+Missing character: There is no − in font pncr8t!
+Missing character: There is no − in font pncr8t!
+
+Underfull \hbox (badness 1681) in paragraph at lines 1171--1191
+\T1/fnc/m/n/10.95 of ver-bal ru-mi-na-tion. To test the in-volve-ment of the or
+o-fa-cial mo-tor
+ []
+
+
+Underfull \hbox (badness 1424) in paragraph at lines 1171--1191
+\T1/fnc/m/n/10.95 in fa-cial mus-cle ac-tiv-ity (Ex-per-i-ment 1). In the sec-o
+nd ap-proach, we
+ []
+
+
+Underfull \hbox (badness 1735) in paragraph at lines 1171--1191
+\T1/fnc/m/n/10.95 dur-ing ru-mi-na-tion, fo-cus-ing on the com-par-i-son of spe
+ech-related (i.e.,
+ []
+
+
+Underfull \hbox (badness 1189) in paragraph at lines 1171--1191
+\T1/fnc/m/n/10.95 self-reported ru-mi-na-tion. Al-ter-na-tively, un-der the Ab-
+strac-tion view, an
+ []
+
+
+Overfull \vbox (0.59999pt too high) has occurred while \output is active []
+
+[29]
+Underfull \hbox (badness 2005) in paragraph at lines 1192--1213
+\T1/fnc/m/n/10.95 than af-ter an Arm Re-lax-ation (as-so-ci-ated with a larger 
+de-crease in
+ []
+
+
+Underfull \hbox (badness 1226) in paragraph at lines 1218--1233
+\T1/fnc/m/n/10.95 men (see John-son & Whis-man, 2013; for a re-cent meta-analys
+is), we
+ []
+
+
+Underfull \hbox (badness 2443) in paragraph at lines 1218--1233
+\T1/fnc/m/n/10.95 chose to in-clude fe-male par-tic-i-pants only. Seventy-two f
+e-male under-
+ []
+
+
+Overfull \vbox (14.2pt too high) has occurred while \output is active []
+
+[30]
+File: assets/face_emg.jpg Graphic file (type bmp)
+<assets/face_emg.jpg>
+
+Underfull \hbox (badness 2253) in paragraph at lines 1288--1305
+\T1/fnc/m/n/10.95 We also col-lected in-for-ma-tion about any po-ten-tial speec
+h, neu-ro-logic,
+ []
+
+
+Underfull \vbox (badness 1184) has occurred while \output is active []
+
+
+Overfull \vbox (0.59999pt too high) has occurred while \output is active []
+
+[31]
+Overfull \vbox (14.2pt too high) has occurred while \output is active []
+
+[32]
+Missing character: There is no ∼ in font pncr8t!
+
+Underfull \hbox (badness 1112) in paragraph at lines 1319--1328
+\T1/fnc/m/n/10.95 re-lax-ation ses-sion (i.e., with-out tar-get-ing spe-cific m
+us-cles) in or-der to
+ []
+
+Missing character: There is no − in font pncr8t!
+
+Underfull \hbox (badness 1014) in paragraph at lines 1329--1344
+\T1/fnc/m/n/10.95 which was pre-sented on the com-puter screen fac-ing them. Th
+ey were
+ []
+
+
+Underfull \hbox (badness 1354) in paragraph at lines 1345--1357
+\T1/fnc/m/n/10.95 and con-se-quences of their feel-ings, dur-ing five min-utes 
+(rumina- tion
+ []
+
+
+Overfull \vbox (0.59999pt too high) has occurred while \output is active []
+
+[33]
+Underfull \hbox (badness 1436) in paragraph at lines 1382--1386
+[]\T1/fnc/m/n/10.95 After the re-lax-ation/dis-trac-tion ses-sion, par-tic-i-pa
+nts were asked to
+ []
+
+
+Underfull \hbox (badness 1565) in paragraph at lines 1382--1386
+\T1/fnc/m/n/10.95 mea-sure-ments were col-lected (EMG Post-relaxation mea-sures
+). Fi-nally,
+ []
+
+Missing character: There is no β in font pncr8t!
+
+Underfull \hbox (badness 1297) in paragraph at lines 1420--1439
+[]\T1/fnc/m/n/10.95 After pre-processing, EMG data were ex-ported from Labchart
+ soft-
+ []
+
+
+Underfull \hbox (badness 2635) in paragraph at lines 1420--1439
+\T1/fnc/m/n/10.95 in each Ses-sion (Base-line, Post- In-duc-tion, Post-Relaxati
+on) for each
+ []
+
+
+Overfull \vbox (14.2pt too high) has occurred while \output is active []
+
+[34]
+Underfull \hbox (badness 2318) in paragraph at lines 1442--1449
+\T1/fnc/m/n/10.95 Ca-cioppo, & Van-man, 2007). In ad-di-tion, there are inter- 
+in-di-vid-ual
+ []
+
+
+Underfull \hbox (badness 2460) in paragraph at lines 1450--1458
+\T1/fnc/m/n/10.95 in-duc-tion (Ex-per-i-ment 1) and re-lax-ation (Ex-per-i-ment
+ 2), we used a
+ []
+
+
+Overfull \vbox (0.59999pt too high) has occurred while \output is active []
+
+[35]
+Missing character: There is no − in font pncr8t!
+Missing character: There is no − in font pncr8t!
+Missing character: There is no − in font pncr8t!
+Missing character: There is no − in font pncr8t!
+Missing character: There is no − in font pncr8t!
+Missing character: There is no − in font pncr8t!
+Missing character: There is no − in font pncr8t!
+Missing character: There is no − in font pncr8t!
+Missing character: There is no ρ in font pncr8t!
+Missing character: There is no − in font pncr8t!
+Missing character: There is no − in font pncr8t!
+Missing character: There is no − in font pncr8t!
+Missing character: There is no − in font pncr8t!
+File: assets/emg_fig1.png Graphic file (type bmp)
+<assets/emg_fig1.png>
+
+Underfull \vbox (badness 1902) has occurred while \output is active []
+
+
+Overfull \vbox (14.2pt too high) has occurred while \output is active []
+
+[36]
+Missing character: There is no − in font pncr8t!
+
+Underfull \hbox (badness 2205) in paragraph at lines 1553--1565
+[]\T1/fnc/m/n/10.95 Examination of the cor-re-la-tion ma-trix es-ti-mated by th
+e bayesian
+ []
+
+
+Underfull \hbox (badness 2126) in paragraph at lines 1553--1565
+\T1/fnc/m/n/10.95 mul-ti-vari-ate model re-vealed a pos-i-tive cor-re-la-tion b
+e-tween OOS and
+ []
+
+
+Overfull \vbox (0.59999pt too high) has occurred while \output is active []
+
+[37]
+Underfull \hbox (badness 2790) in paragraph at lines 1607--1610
+\T1/fnc/m/n/10.95 mark-ers of ru-mi-na-tion (as their scores in-creased af-ter 
+in-duc-tion in
+ []
+
+Missing character: There is no − in font pncr8t!
+Missing character: There is no − in font pncr8t!
+Missing character: There is no − in font pncr8t!
+Missing character: There is no − in font pncr8t!
+File: assets/emg_fig2.png Graphic file (type bmp)
+<assets/emg_fig2.png>
+Missing character: There is no − in font pncr8t!
+Missing character: There is no − in font pncr8t!
+
+Overfull \vbox (14.2pt too high) has occurred while \output is active []
+
+[38]
+File: assets/emg_fig3.png Graphic file (type bmp)
+<assets/emg_fig3.png>
+
+Underfull \hbox (badness 1648) in paragraph at lines 1657--1664
+[]\T1/fnc/m/n/10.95 In the first ex-per-i-ment, we ex-am-ined elec-tromyo-graph
+ic cor-re-lates
+ []
+
+
+Underfull \hbox (badness 1308) in paragraph at lines 1657--1664
+\T1/fnc/m/n/10.95 of in-duced ru-mi-na-tion in healthy in-di-vid-u-als. Ac-cord
+-ing to the Mo-tor
+ []
+
+
+Overfull \vbox (0.59999pt too high) has occurred while \output is active []
+
+[39]
+Underfull \hbox (badness 1199) in paragraph at lines 1672--1690
+\T1/fnc/m/n/10.95 here sug-gests that the speech mo-tor sys-tem was in-volved d
+ur-ing the
+ []
+
+
+Overfull \vbox (14.2pt too high) has occurred while \output is active []
+
+[40]
+Underfull \hbox (badness 1242) in paragraph at lines 1737--1756
+\T1/fnc/m/n/10.95 to ru-mi-na-tion in-duc-tion than the ``Prob-lems'' VAS. Give
+n this greater
+ []
+
+
+Overfull \vbox (0.59999pt too high) has occurred while \output is active []
+
+[41]
+Underfull \hbox (badness 1472) in paragraph at lines 1795--1811
+\T1/fnc/m/n/10.95 pro-duc-tion as-so-ci-ated with ru-mi-na-tion was more re-duc
+ed by oro-fa-cial
+ []
+
+
+Overfull \vbox (14.2pt too high) has occurred while \output is active []
+
+[42]
+Underfull \hbox (badness 1147) in paragraph at lines 1812--1839
+\T1/fnc/m/n/10.95 re-lax-ation con-di-tion com-pared with the other con-di-tion
+s sug-gests that
+ []
+
+
+Overfull \vbox (0.59999pt too high) has occurred while \output is active []
+
+[43]
+Underfull \hbox (badness 1515) in paragraph at lines 1869--1887
+\T1/fnc/m/n/10.95 mo-tor sim-u-la-tion or is bet-ter de-scribed as lin-guis-ti-
+cally ab-stract and
+ []
+
+
+Underfull \hbox (badness 1005) in paragraph at lines 1888--1908
+\T1/fnc/m/n/10.95 oro-fa-cial re-lax-ation than af-ter arm-focused re-lax-ation
+. In the fore-head
+ []
+
+
+Underfull \hbox (badness 1052) in paragraph at lines 1888--1908
+\T1/fnc/m/n/10.95 in self-reports of ru-mi-na-tion and was most pro-nounced af-
+ter oro-fa-cial
+ []
+
+
+Overfull \vbox (14.2pt too high) has occurred while \output is active []
+
+[44]
+Overfull \vbox (0.59999pt too high) has occurred while \output is active []
+
+[45]
+Underfull \hbox (badness 1062) in paragraph at lines 1973--1987
+\T1/fnc/m/n/10.95 num-ber ANR-13-BSH2-0003-01]. The first au-thor of the manusc
+ript is
+ []
+
+
+Underfull \hbox (badness 1622) in paragraph at lines 1973--1987
+\T1/fnc/m/n/10.95 the Pôle Greno-ble Cog-ni-tion. We thank Nathalie Val-let for
+ record-ing
+ []
+
+
+Overfull \vbox (14.2pt too high) has occurred while \output is active []
+
+[46]
+Overfull \vbox (0.59999pt too high) has occurred while \output is active []
+
+[47
+
+] [48
+
+]
+Overfull \vbox (0.59999pt too high) has occurred while \output is active []
+
+[49] [50
+
+]
+Overfull \vbox (0.59999pt too high) has occurred while \output is active []
+
+[51] [52
+
+]
+Overfull \vbox (0.59999pt too high) has occurred while \output is active []
+
+[53] [54
+
+] (./thesis.bbl
+Overfull \vbox (0.59999pt too high) has occurred while \output is active []
+
+[55] [56
+
+]
+Underfull \hbox (badness 1577) in paragraph at lines 23--27
+[]\T1/fnc/m/n/10.95 Cohen, B. H. (1986).  The mo-tor the-ory of vol-un-tary thi
+nk-ing.  In
+ []
+
+
+Underfull \hbox (badness 3623) in paragraph at lines 67--70
+[]\T1/fnc/m/n/10.95 Guerrero, J. and Macias-Diaz, J. (2018).  \T1/fnc/m/it/10.9
+5 biosig-nalEMG: Tools for
+ []
+
+
+Overfull \vbox (0.59999pt too high) has occurred while \output is active []
+
+[57]
+Missing character: There is no œ in font pncr8t!
+
+Overfull \vbox (0.59999pt too high) has occurred while \output is active []
+
+[58]
+Missing character: There is no ’ in font pncr8t!
+Missing character: There is no œ in font pncr8t!
+
+Underfull \hbox (badness 1092) in paragraph at lines 203--207
+\T1/fnc/m/n/10.95 EMG Pat-tern Clas-si-fi-ca-tion.  \T1/fnc/m/it/10.95 Elec-tro
+n-ics and Elec-tri-cal En-gi-neer-ing\T1/fnc/m/n/10.95 ,
+ []
+
+
+Underfull \hbox (badness 3460) in paragraph at lines 209--212
+[]\T1/fnc/m/n/10.95 Pickering, M. J. and Gar-rod, S. (2013).  An in-te-grated t
+he-ory of
+ []
+
+
+Overfull \vbox (0.59999pt too high) has occurred while \output is active []
+
+[59])
+
+Class memoir Warning: The material used in the headers is too large
+(27.2pt) for the given head height (13.0pt), it is recommended to
+either increase the head height or redesign the header
+(in both cases you will find help in the memoir manual). on input line 2084.
+
+
+Package natbib Warning: There were undefined citations.
+
+
+Overfull \vbox (0.59999pt too high) has occurred while \output is active []
+
+[60]
+\tf@toc=\write9
+\openout9 = `thesis.toc'.
+
+\tf@lot=\write10
+\openout10 = `thesis.lot'.
+
+\tf@lof=\write11
+\openout11 = `thesis.lof'.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2084.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2084.
+(./thesis.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 2084.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2084.
+
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: E5A5BEBF7A0579A6E09DD9D26AEF2AEF.
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 44560 strings out of 492970
+ 847778 string characters out of 6133938
+ 1018332 words of memory out of 5000000
+ 47917 multiletter control sequences out of 15000+600000
+ 613197 words of font info for 128 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 64i,16n,96p,10447b,521s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on thesis.pdf (60 pages).
