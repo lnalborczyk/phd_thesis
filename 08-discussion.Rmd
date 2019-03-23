@@ -1,4 +1,6 @@
-# Discussion
+# (PART) Discussion {-}
+
+# Discussion and perspectives
 
 ## Summary of the results
 
@@ -8,6 +10,6 @@
 
 ...
 
-## Conclusion
+## Conclusions
 
 ...

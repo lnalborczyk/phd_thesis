@@ -5,7 +5,7 @@ author: "" # Ladislas Nalborczyk
 date: "" #"`r Sys.Date()`"
 
 documentclass: memoir # book # reedthesis
-classoption: a4paper,11pt,oneside,oldfontcommands
+classoption: a4paper,12pt,oneside,oldfontcommands
 
 csl: csl/apa6.csl
 lot: true # list of tables
@@ -20,18 +20,18 @@ link-citations: yes
 
 `r if (knitr::is_html_output()) '# Welcome {-}'`
 
-```{r, include = identical(knitr:::pandoc_to(), "html"), results = "asis", echo = FALSE}
+```{r welcome, include = identical(knitr:::pandoc_to(), "html"), results = "asis", echo = FALSE}
 cat(
   "This book, when finished, will contain my doctoral thesis (last compiled on ",
   format(Sys.Date() ), ").", sep = ""
   )
 ```
 
-```{r, eval = FALSE, fig.align = "center", out.width = "100%", echo = FALSE, include = identical(knitr:::pandoc_to(), "html")}
+```{r coverpicture, eval = FALSE, fig.align = "center", out.width = "100%", echo = FALSE, include = identical(knitr:::pandoc_to(), "html")}
 knitr::include_graphics("assets/cover.png", dpi = NA)
 ```
 
-```{r eval = FALSE, include = FALSE, warning = FALSE}
+```{r writebib, eval = FALSE, include = FALSE, warning = FALSE}
 # automatically create a bib database for all installed R packages
 knitr::write_bib(x = installed.packages()[, 1], file = "bib/packages.bib")
 ```

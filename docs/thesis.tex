@@ -1,4 +1,4 @@
-\documentclass[a4paper,11pt,oneside,oldfontcommands]{memoir}
+\documentclass[a4paper,12pt,oneside,oldfontcommands]{memoir}
 \usepackage{lmodern}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
@@ -215,16 +215,14 @@
 
 %\setstocksize{11in}{8.5in} % "real" paper size, already set by a4paper class option
 %\settrimmedsize{11in}{8.5in}{*} % trimmed paper size (trimmed on the left and right)
-%\settrims{0in}{0in}
-%\settypeblocksize{9.0in}{30pc}{*}
 
 % Spine and trim page margins from main typeblock
-%\setlrmarginsandblock{30mm}{30mm}{*}
+%\setlrmarginsandblock{25mm}{25mm}{*}
 
 % Top and bottom page margins from main typeblock
-%\setulmarginsandblock{20mm}{20mm}{*}
+%\setulmarginsandblock{15mm}{20mm}{*}
 
-%\setlrmargins{2in}{*}{*}
+%\setlrmargins{25mm}{25mm}{*}
 %\setulmargins{1.0in}{*}{*}
 
 %\setheadfoot{13pt}{26pt}
@@ -232,6 +230,22 @@
 
 % apply and enforce the layout
 %\checkandfixthelayout
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% alternative format
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \settrimmedsize{297mm}{210mm}{*}
+% \setlength{\trimtop}{0pt}
+% \setlength{\trimedge}{\stockwidth}
+% \addtolength{\trimedge}{-\paperwidth}
+% \settypeblocksize{634pt}{448.13pt}{*}
+% \setulmargins{4cm}{*}{*}
+% \setlrmargins{*}{*}{1.5}
+% \setmarginnotes{17pt}{51pt}{\onelineskip}
+% \setheadfoot{\onelineskip}{2\onelineskip}
+% \setheaderspaces{*}{2\onelineskip}{*}
+% \checkandfixthelayout
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % ensure single spacing
 \frenchspacing
@@ -264,14 +278,14 @@
 	}}
 
 \makechapterstyle{daleifmodif}{
-	\renewcommand\chapnamefont{\normalfont\Large\scshape\raggedleft\so}
-	\renewcommand\chaptitlefont{\normalfont\Large\bfseries\scshape}
-	\renewcommand\chapternamenum{} \renewcommand\printchaptername{}
-	\renewcommand\printchapternum{\null\hfill\feline@chm[2.5cm]\par}
-	\renewcommand\afterchapternum{\par\vskip\midchapskip}
-	\renewcommand\printchaptertitle[1]{\color{gray}\chaptitlefont\raggedleft
-    \renewcommand\chaptername{Chapter}
-##1\par}
+\renewcommand\chapnamefont{\normalfont\Large\scshape\raggedleft\so}
+\renewcommand\chaptitlefont{\normalfont\Large\bfseries\scshape}
+\renewcommand\chapternamenum{} \renewcommand\printchaptername{}
+\renewcommand\printchapternum{\null\hfill\feline@chm[2.5cm]\par}
+\renewcommand\afterchapternum{\par\vskip\midchapskip}
+\renewcommand\printchaptertitle[1]{\color{gray}\chaptitlefont\raggedleft
+  \renewcommand\chaptername{Chapter}
+  ##1\par}
 }
 
 \makeatother
@@ -302,24 +316,36 @@
   {\the\value{#1}}
 }
 
+%%%%%%%%%%%%%%%%%%%%%%%%
+% Insert an empty page %
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{afterpage}
+
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    %\addtocounter{page}{-1}% % uncomment to increase page counter
+    \newpage}
+
 \begin{document}
 \maketitle
 
 %%%%%%%%%%%%%%%%%%%%%
-% Title information %
+% Cover information %
 %%%%%%%%%%%%%%%%%%%%%
 
 \Specialite{Cognitive Sciences, Psychology, Neurocognition \& \\ Educational Sciences}
 \Arrete{May 25, 2016}
-\Auteur{Ladislas Nalborczyk}
-\Directeur{Pr. Elsa Spinelli \& Pr. Ernst Koster}
-\CoDirecteur{Dr. Hélène L\oe venbruck \& Dr. Marcela Perrone-Bertolotti}
+\Auteur{Ladislas \textsc{Nalborczyk}}
+\Directeur{Dr. Hélène \textsc{L\oe venbruck} \& Pr. Ernst \textsc{Koster}}
+\CoDirecteur{Dr. Marcela \textsc{Perrone-Bertolotti}}
 
 % Lab(s)
-\Laboratoire{Laboratoire de Psychologie et NeuroCognition \& \\ Psychopathology and Affective Neuroscience Laboratory}
+\Laboratoire{Laboratoire de Psychologie et NeuroCognition (UGA) \& Psychopathology and Affective Neuroscience Laboratory (UGent)}
 
 % Doctoral school(s)
-\EcoleDoctorale{the doctoral school EDISCE (Grenoble) and the Doctoral School of Social and Behavioural Sciences (Ghent)}
+\EcoleDoctorale{the doctoral school EDISCE (UGA) and the Doctoral School of Social and Behavioural Sciences (UGent)}
 
 % Title
 \Titre{Psychophysiological characteristics\\ of verbal rumination}
@@ -332,7 +358,7 @@
 
 \Jury{
 
-\UGTPresident{XXXX}{...}
+%\UGTPresident{XXXX}{...}
 %\UGTPresidente{XXXX}{...}
 
 \UGTRapporteur{XXXX}{...}
@@ -341,16 +367,18 @@
 \UGTExaminatrice{XXXX}{...}
 \UGTExaminatrice{XXXX}{...}
 
-\UGTDirecteur{Elsa Spinelli}{...}
-\UGTCoEncandrant{Ernst Koster}{...}
+\UGTDirecteur{Dr. Hélène \textsc{L\oe venbruck}}{\textsc{CR, CNRS, Université Grenoble Alpes}}
+\UGTDirecteur{Pr. Ernst \textsc{Koster}}{\textsc{Professor, Ghent University}}
+\UGTCoDirecteur{Dr. Marcela \textsc{Perrone-Bertolotti}}{\textsc{MCF, Université Grenoble Alpes}}
 }
 
-%\frontmatter
-\MakeUGthesePDG
-\cleardoublepage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% end of title page template %%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% start page numbering
-\pagenumbering{roman}
+\pagenumbering{roman} % start page numbering (roman style)
+\MakeUGthesePDG % make cover page
+\blankpage % leave an empty page between cover page and TOC
 
 {
 \setcounter{tocdepth}{2}
@@ -363,6 +391,8 @@
 
 \initial{B}lah blah\ldots{}
 
+\afterpage{\blankpage}
+
 \chapter*{Overzicht}\label{overzicht}
 \addcontentsline{toc}{chapter}{Overzicht}
 
@@ -373,15 +403,24 @@
 
 \initial{B}lah blah\ldots{}
 
-\chapter*{Acknowledgments}\label{acknowledgments}
-\addcontentsline{toc}{chapter}{Acknowledgments}
+\afterpage{\blankpage}
 
-\initial{A}cknowledgemnents are not yet available.
+\chapter*{Acknowledgements}\label{acknowledgements}
+\addcontentsline{toc}{chapter}{Acknowledgements}
+
+\initial{A}cknowledgements will be included in the final version of this
+thesis.
+
+\afterpage{\blankpage}
 
 \chapter*{Preface}\label{preface}
 \addcontentsline{toc}{chapter}{Preface}
 
 \initial{B}lah blah\ldots{}
+
+\afterpage{\blankpage}
+
+\part{Theoretical chapters}\label{part-theoretical-chapters}
 
 \chapter{Theoretical framework}\label{intro}
 
@@ -823,8 +862,7 @@ HMOSAIC}\label{loevenbruck-et-al.-hmosaic}
 
 \ldots{}
 
-\chapter{Theoretical propositions and methodological
-developments}\label{theoretical-propositions-and-methodological-developments}
+\chapter{Methodological framework}\label{methodological-framework}
 
 \section{Electromyographic correlates of speech
 production}\label{electromyographic-correlates-of-speech-production}
@@ -969,6 +1007,9 @@ Describe the way we approach data analysis here\ldots{}
 chapters}\label{overview-of-the-experimental-chapters}
 
 \ldots{}
+
+\part{Experimental
+chapters}\label{part-experimental-chapters}
 
 \chapter{Orofacial electromyographic correlates of induced verbal
 rumination}\label{orofacial-electromyographic-correlates-of-induced-verbal-rumination}
@@ -2019,7 +2060,7 @@ inner speech production, manifested as verbal rumination. In addition,
 facial EMG activity provides a useful means to objectively quantify the
 presence of verbal rumination.
 
-\section{Acknowledgements}\label{acknowledgements}
+\section{Acknowledgements}\label{acknowledgements-1}
 
 This project was funded by the ANR project INNERSPEECH {[}grant number
 ANR-13-BSH2-0003-01{]}. The first author of the manuscript is funded by
@@ -2110,7 +2151,9 @@ Blah blah ...
 
 \end{summary}
 
-\chapter{Discussion}\label{discussion-1}
+\part{Discussion}\label{part-discussion}
+
+\chapter{Discussion and perspectives}\label{discussion-and-perspectives}
 
 \section{Summary of the results}\label{summary-of-the-results}
 
@@ -2121,7 +2164,7 @@ forward}\label{limitations-and-ways-forward}
 
 \ldots{}
 
-\section{Conclusion}\label{conclusion}
+\section{Conclusions}\label{conclusions}
 
 \ldots{}
 

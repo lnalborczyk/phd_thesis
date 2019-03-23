@@ -9,9 +9,8 @@ bookdown::gitbook:
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank"> Powered by bookdown </a></li>
         <li><a href="http://www.barelysignificant.com" target="blank"> Ladislas Nalborczyk </a></li>
-      collapse: section # none / section / subsection
+      collapse: subsection # none / section / subsection
       scroll_highlight: yes
-    # edit: https://github.com/lnalborczyk/phd_thesis/
     search: yes
     download: ["pdf"]
     highlight: pygments

@@ -89,16 +89,14 @@
 
 %\setstocksize{11in}{8.5in} % "real" paper size, already set by a4paper class option
 %\settrimmedsize{11in}{8.5in}{*} % trimmed paper size (trimmed on the left and right)
-%\settrims{0in}{0in}
-%\settypeblocksize{9.0in}{30pc}{*}
 
 % Spine and trim page margins from main typeblock
-%\setlrmarginsandblock{30mm}{30mm}{*}
+%\setlrmarginsandblock{25mm}{25mm}{*}
 
 % Top and bottom page margins from main typeblock
-%\setulmarginsandblock{20mm}{20mm}{*}
+%\setulmarginsandblock{15mm}{20mm}{*}
 
-%\setlrmargins{2in}{*}{*}
+%\setlrmargins{25mm}{25mm}{*}
 %\setulmargins{1.0in}{*}{*}
 
 %\setheadfoot{13pt}{26pt}
@@ -106,6 +104,22 @@
 
 % apply and enforce the layout
 %\checkandfixthelayout
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% alternative format
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \settrimmedsize{297mm}{210mm}{*}
+% \setlength{\trimtop}{0pt}
+% \setlength{\trimedge}{\stockwidth}
+% \addtolength{\trimedge}{-\paperwidth}
+% \settypeblocksize{634pt}{448.13pt}{*}
+% \setulmargins{4cm}{*}{*}
+% \setlrmargins{*}{*}{1.5}
+% \setmarginnotes{17pt}{51pt}{\onelineskip}
+% \setheadfoot{\onelineskip}{2\onelineskip}
+% \setheaderspaces{*}{2\onelineskip}{*}
+% \checkandfixthelayout
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % ensure single spacing
 \frenchspacing
@@ -138,14 +152,14 @@
 	}}
 
 \makechapterstyle{daleifmodif}{
-	\renewcommand\chapnamefont{\normalfont\Large\scshape\raggedleft\so}
-	\renewcommand\chaptitlefont{\normalfont\Large\bfseries\scshape}
-	\renewcommand\chapternamenum{} \renewcommand\printchaptername{}
-	\renewcommand\printchapternum{\null\hfill\feline@chm[2.5cm]\par}
-	\renewcommand\afterchapternum{\par\vskip\midchapskip}
-	\renewcommand\printchaptertitle[1]{\color{gray}\chaptitlefont\raggedleft
-    \renewcommand\chaptername{Chapter}
-##1\par}
+\renewcommand\chapnamefont{\normalfont\Large\scshape\raggedleft\so}
+\renewcommand\chaptitlefont{\normalfont\Large\bfseries\scshape}
+\renewcommand\chapternamenum{} \renewcommand\printchaptername{}
+\renewcommand\printchapternum{\null\hfill\feline@chm[2.5cm]\par}
+\renewcommand\afterchapternum{\par\vskip\midchapskip}
+\renewcommand\printchaptertitle[1]{\color{gray}\chaptitlefont\raggedleft
+  \renewcommand\chaptername{Chapter}
+  ##1\par}
 }
 
 \makeatother
@@ -175,3 +189,15 @@
   {??}
   {\the\value{#1}}
 }
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+% Insert an empty page %
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{afterpage}
+
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    %\addtocounter{page}{-1}% % uncomment to increase page counter
+    \newpage}
