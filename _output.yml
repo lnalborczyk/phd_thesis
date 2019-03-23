@@ -11,6 +11,7 @@ bookdown::gitbook:
         <li><a href="http://www.barelysignificant.com" target="blank"> Ladislas Nalborczyk </a></li>
       collapse: subsection # none / section / subsection
       scroll_highlight: yes
+    edit: https://github.com/lnalborczyk/phd_thesis/edit/master/%s
     search: yes
     download: ["pdf"]
     highlight: pygments

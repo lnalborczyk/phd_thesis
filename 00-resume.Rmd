@@ -1,4 +1,5 @@
-# Résumé {-}
+\chapter*{Résumé}
+
 
 \initial{B}lah blah...
 

@@ -1,5 +1,6 @@
-# Preface {-}
+\chapter*{Preface}
 
 \initial{B}lah blah...
 
-\afterpage{\blankpage}
+\newpage
+\blankpage

@@ -380,51 +380,58 @@
 \MakeUGthesePDG % make cover page
 \blankpage % leave an empty page between cover page and TOC
 
-{
-\setcounter{tocdepth}{2}
-\tableofcontents
-}
-\listoftables
-\listoffigures
-\chapter*{Résumé}\label{resume}
-\addcontentsline{toc}{chapter}{Résumé}
+\chapter*{Résumé}
 
 \initial{B}lah blah\ldots{}
 
 \afterpage{\blankpage}
 
-\chapter*{Overzicht}\label{overzicht}
-\addcontentsline{toc}{chapter}{Overzicht}
-
-\initial{B}lah blah\ldots{}
-
-\chapter*{Abstract}\label{abstract}
-\addcontentsline{toc}{chapter}{Abstract}
+\chapter*{Overzicht}
 
 \initial{B}lah blah\ldots{}
 
 \afterpage{\blankpage}
 
-\chapter*{Acknowledgements}\label{acknowledgements}
-\addcontentsline{toc}{chapter}{Acknowledgements}
+\chapter*{Abstract}
+
+\initial{B}lah blah\ldots{}
+
+\afterpage{\blankpage}
+
+\chapter*{Acknowledgements}
 
 \initial{A}cknowledgements will be included in the final version of this
 thesis.
 
 \afterpage{\blankpage}
 
-\chapter*{Preface}\label{preface}
-\addcontentsline{toc}{chapter}{Preface}
+\chapter*{Preface}
 
 \initial{B}lah blah\ldots{}
 
-\afterpage{\blankpage}
+\newpage
+
+\blankpage
+
+\renewcommand{\contentsname}{Table of contents}
+
+\maxtocdepth{subsection} \tableofcontents*
+\addtocontents{toc}{\par\nobreak \mbox{}\hfill{\bf Page}\par\nobreak}
+\newpage
+
+\listoftables
+\addtocontents{lot}{\par\nobreak\textbf{{\scshape Table} \hfill Page}\par\nobreak}
+\newpage
+
+\listoffigures
+\addtocontents{lof}{\par\nobreak\textbf{{\scshape Figure} \hfill Page}\par\nobreak}
+\newpage
+
+\pagenumbering{arabic}
 
 \part{Theoretical chapters}\label{part-theoretical-chapters}
 
 \chapter{Theoretical framework}\label{intro}
-
-\pagenumbering{arabic}
 
 \initial{A}s you read these words, you might notice the presence of a
 familiar companion. A voice-like phenomenon that remains unnoticed until

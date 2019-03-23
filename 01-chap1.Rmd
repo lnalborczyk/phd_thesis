@@ -2,8 +2,6 @@
 
 # Theoretical framework {#intro}
 
-\pagenumbering{arabic}
-
 ```{r setup, echo = FALSE, message = FALSE, warning = FALSE, results = "hide"}
 knitr::opts_chunk$set(
   cache = TRUE, echo = FALSE, warning = FALSE, message = FALSE,
