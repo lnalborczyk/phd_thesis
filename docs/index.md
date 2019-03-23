@@ -16,8 +16,8 @@ site: bookdown::bookdown_site
 bibliography: [bib/thesis.bib, bib/packages.bib]
 biblio-style: apalike
 link-citations: yes
-github-repo: lnalborczyk/phd_thesis
-description: Blah blah blah...
+#github-repo: lnalborczyk/phd_thesis
+#description: Blah blah blah...
 ---
 
 # Welcome {-}

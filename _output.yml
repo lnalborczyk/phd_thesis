@@ -2,6 +2,7 @@ bookdown::gitbook:
   css: style.css
   author: Ladislas Nalborczyk
   date: "`r Sys.Date()`"
+  github-repo: lnalborczyk/phd_thesis
   split_by: none # creates only one html file
   config:
     toc:
