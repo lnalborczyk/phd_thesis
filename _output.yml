@@ -2,15 +2,13 @@ bookdown::gitbook:
   css: style.css
   author: Ladislas Nalborczyk
   date: "`r Sys.Date()`"
-  # split_by: none # creates only one html file
+  split_by: none # creates only one html file
   config:
     toc:
-      # before: |
-      #  <li><a href="./"> Blah blah </a></li>
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank"> Powered by bookdown </a></li>
         <li><a href="http://www.barelysignificant.com" target="blank"> Ladislas Nalborczyk </a></li>
-      collapse: none # section / subsection
+      collapse: section # none / section / subsection
       scroll_highlight: yes
     # edit: https://github.com/lnalborczyk/phd_thesis/
     search: yes
@@ -21,13 +19,11 @@ bookdown::pdf_book:
   includes:
     in_header: latex/preamble.tex
     before_body: latex/before_body.tex
-    # after_body: latex/after_body.tex
   latex_engine: xelatex
   citation_package: natbib
-  keep_tex: yes
+  keep_tex: true
   dev: "cairo_pdf"
   toc: true
-  toc_depth: 4
-  # template: latex/template_thesis.tex
+  toc_depth: 3
 
 bookdown::epub_book: default

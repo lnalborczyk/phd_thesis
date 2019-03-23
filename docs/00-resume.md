@@ -1,0 +1,3 @@
+# Résumé {-}
+
+\initial{B}lah blah...

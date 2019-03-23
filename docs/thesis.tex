@@ -1,4 +1,4 @@
-\documentclass[a4paper,11pt,legno,oldfontcommands]{memoir}
+\documentclass[a4paper,11pt,oneside,oldfontcommands]{memoir}
 \usepackage{lmodern}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
@@ -163,8 +163,7 @@
 \usepackage{booktabs,caption,fixltx2e}
 \usepackage[none]{hyphenat}
 
-% for the cover page
-\usepackage[a4paper]{meta-donnees}
+\usepackage[a4paper]{meta-donnees} % cover page
 \usepackage{lmodern}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -197,7 +196,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%M
 
 \usepackage{lettrine}
-\newcommand{\initial}[1]{%
+\newcommand{\initial}[1]{
 	\lettrine[lines=3,lhang=0.33,nindent=0em]{
 		\color{gray}
      		{\textsc{#1}}}{}}
@@ -210,20 +209,36 @@
 \usepackage{fouriernc}
 \usepackage[T1]{fontenc}
 
-\setstocksize{11in}{8.5in}
-\settrimmedsize{11in}{8.5in}{*}
-\settrims{0in}{0in}
-\settypeblocksize{9.0in}{30pc}{*}
-\setlrmargins{2in}{*}{*}
-\setulmargins{1.0in}{*}{*}
-\setheadfoot{13pt}{26pt}
-\setheaderspaces{*}{13pt}{*}
-\checkandfixthelayout
-\frenchspacing % single spacing
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% https://texdoc.net/texmf-dist/doc/latex/memoir/memman.pdf %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Chapter style (taken and slightly modified from Lars Madsen Memoir Chapter %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\setstocksize{11in}{8.5in} % "real" paper size, already set by a4paper class option
+%\settrimmedsize{11in}{8.5in}{*} % trimmed paper size (trimmed on the left and right)
+%\settrims{0in}{0in}
+%\settypeblocksize{9.0in}{30pc}{*}
+
+% Spine and trim page margins from main typeblock
+%\setlrmarginsandblock{30mm}{30mm}{*}
+
+% Top and bottom page margins from main typeblock
+%\setulmarginsandblock{20mm}{20mm}{*}
+
+%\setlrmargins{2in}{*}{*}
+%\setulmargins{1.0in}{*}{*}
+
+%\setheadfoot{13pt}{26pt}
+%\setheaderspaces{*}{13pt}{*} % set space between header and block
+
+% apply and enforce the layout
+%\checkandfixthelayout
+
+% ensure single spacing
+\frenchspacing
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Chapter style (taken and slightly modified from Lars Madsen Memoir Chapter) %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \usepackage{calc,soul,fourier}
 \makeatletter
@@ -241,6 +256,7 @@
 			{!}{\scshape\so\@chapapp}}\quad%
 		\raisebox{\depthof{\usebox{\feline@chapter}}}{\usebox{\feline@chapter}}%
 }
+
 \newcommand\feline@chm[1][4cm]{%
 	\sbox\feline@chapter{\feline@chapter@marker[#1]}%
 	\makebox[0pt][c]{% aka \rlap
@@ -257,10 +273,11 @@
     \renewcommand\chaptername{Chapter}
 ##1\par}
 }
+
 \makeatother
 \chapterstyle{daleifmodif}
 
-% The pages should be numbered consecutively at the bottom centre of the page.
+% The pages should be numbered consecutively at the bottom centre of the page
 \makepagestyle{myvf}
 \makeoddfoot{myvf}{}{\thepage}{}
 \makeevenfoot{myvf}{}{\thepage}{}
@@ -268,9 +285,6 @@
 \makeevenhead{myvf}{\small\textsc{\leftmark}}{}{}
 \makeoddhead{myvf}{}{}{\small\textsc{\rightmark}}
 \pagestyle{myvf}
-
-\pagenumbering{roman}
-%s\setcounter{page}{0}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Create summary box to put at the end of each chapter %
@@ -296,7 +310,7 @@
 %%%%%%%%%%%%%%%%%%%%%
 
 \Specialite{Cognitive Sciences, Psychology, Neurocognition \& \\ Educational Sciences}
-\Arrete{May 25 2016}
+\Arrete{May 25, 2016}
 \Auteur{Ladislas Nalborczyk}
 \Directeur{Pr. Elsa Spinelli \& Pr. Ernst Koster}
 \CoDirecteur{Dr. Hélène L\oe venbruck \& Dr. Marcela Perrone-Bertolotti}
@@ -311,10 +325,10 @@
 \Titre{Psychophysiological characteristics\\ of verbal rumination}
 
 % Sub-title
-\Soustitre{Basic and clinical aspects}
+% \Soustitre{Basic and clinical aspects}
 
-% defense date
-\Depot{November XX 2019}
+% Defense date
+\Depot{October 20, 2019}
 
 \Jury{
 
@@ -335,19 +349,37 @@
 \MakeUGthesePDG
 \cleardoublepage
 
+% start page numbering
+\pagenumbering{roman}
+
 {
-\setcounter{tocdepth}{3}
+\setcounter{tocdepth}{2}
 \tableofcontents
 }
 \listoftables
 \listoffigures
+\chapter*{Résumé}\label{resume}
+\addcontentsline{toc}{chapter}{Résumé}
+
+\initial{B}lah blah\ldots{}
+
+\chapter*{Overzicht}\label{overzicht}
+\addcontentsline{toc}{chapter}{Overzicht}
+
+\initial{B}lah blah\ldots{}
+
+\chapter*{Abstract}\label{abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+
+\initial{B}lah blah\ldots{}
+
 \chapter*{Acknowledgments}\label{acknowledgments}
 \addcontentsline{toc}{chapter}{Acknowledgments}
 
 \initial{A}cknowledgemnents are not yet available.
 
-\chapter*{Abstract}\label{abstract}
-\addcontentsline{toc}{chapter}{Abstract}
+\chapter*{Preface}\label{preface}
+\addcontentsline{toc}{chapter}{Preface}
 
 \initial{B}lah blah\ldots{}
 

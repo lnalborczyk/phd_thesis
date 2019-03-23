@@ -1,6 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%                meta-donnees style                  %%
-%%    pour produire la Page de Garde des theses       %%
+%%                Meta-donnees style                  %%
+%%    pour produire la page de garde des theses       %%
 %%      de l'Universite De Grenoble Alpes             %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%      Fichier encode au format ISO-8859-16          %%
@@ -10,7 +10,7 @@
 \ProvidesPackage{meta-donnees}[2011/02/25 v0.01]
 
 \DeclareOption{a4paper}
-   {\setlength\paperheight {297mm}% 297mm
+   {\setlength\paperheight {297mm}  % 297mm
     \setlength\paperwidth  {210mm}} % 210mm
 
 \ProcessOptions\relax
@@ -21,18 +21,18 @@
 % includings logos
 \long\def\Universite#1{\gdef\@Universite{#1}}
 
-%\def\@Universite{\includegraphics[width=10cm,clip]{logo_comue.eps}\hspace*{\fill}\includegraphics[width=8cm,clip]{logo_ugent.eps}}
-
 \def\@Universite{\begin{tabular}{p{0.5\textwidth} p{0.5\textwidth}}
   \vspace{8.5mm} \includegraphics[width=0.49\textwidth]{logo_comue.eps} &
   \vspace{0mm} \includegraphics[width=0.49\textwidth]{logo_ugent.eps}
 \end{tabular}}
 
+%\def\@Universite{\includegraphics[width=10cm,clip]{logo_comue.eps}\hspace*{\fill}\includegraphics[width=8cm,clip]{logo_ugent.eps}}
+
 % title
 \long\def\EcoleDoctorale#1{\gdef\@EcoleDoctorale{In {\bfseries#1}}}
 \def\@EcoleDoctorale{}
 \long\def\Grade#1{\gdef\@Grade{\uppercase{#1}}}
-\def\@Grade{\uppercase{Doctor of Cognitive Psychology of Universit\'e Grenoble Alpes \\ \\ Doctor of Psychology of\\ Ghent University}}
+\def\@Grade{\uppercase{Doctor of Cognitive Psychology from Universit\'e Grenoble Alpes \\ \\ Doctor of Psychology from\\ Ghent University}}
 
 \long\def\Specialite#1{\gdef\@Specialite{#1}}
 \def\@Specialite{}
@@ -81,7 +81,7 @@
 \newcommand{\@ThesisType}{\uppercase{Thesis}}
 \newcommand\ThesisType[1]{\renewcommand{\@ThesisType}{{#1}}}
 
-\newcommand{\@ThesisInOrderToGet}{In order to get the title of}
+\newcommand{\@ThesisInOrderToGet}{In order to obtain the title of}
 \newcommand\ThesisInOrderToGet[1]{\renewcommand{\@ThesisInOrderToGet}{{#1}}}
 
 \newcommand{\@ThesisMinisterialDecree}{Arr\^et\'e minist\'eriel~:}
@@ -132,7 +132,7 @@
 \newcommand{\@ThesisCoSupervisor}{{\@CoDirecteur}{\@CoEncadrant}}
 \newcommand\ThesisCoSupervisor[1]{\renewcommand{\@ThesisCoSupervisor}{{#1}}}
 
-\newcommand{\@ThesisJuryTitle}{{in front of the following committee~:}}
+\newcommand{\@ThesisJuryTitle}{{in front of the following committee:}}
 \newcommand\ThesisJuryTitle[1]{\renewcommand{\@ThesisJuryTitle}{{#1}}}
 
 \newcommand{\@ThesisJury}{\begin{tabular}{@{}p{12.5cm}@{}}\@Jury\end{tabular}}
@@ -169,7 +169,7 @@
             \hglue\@Sethpageshift
             \rlap{\vbox to0pt{\vbox to\@UGthesepage@height
             {\hsize\@UGthesepage@width
-            \fontfamily{lmss}\fontsize{11}{13}\selectfont\@Thesis@titlep@ge}
+            \fontfamily{phv}\fontsize{11}{13}\selectfont\@Thesis@titlep@ge}
                         \vss
                        }
                  }\par
@@ -203,8 +203,8 @@
              \@ThesisEcoleDoctorale
        \vskip10mm plus2fil
              {\bfseries\fontsize{22}{24}\selectfont\@ThesisTitle}
-       \vskip1mm plus1fil
-             {\fontsize{18}{20}\selectfont\@ThesisSubTitle}
+       %\vskip1mm plus1fil
+      %     {\fontsize{18}{20}\selectfont\@ThesisSubTitle}
        \vskip5mm plus2fil
              \@ThesisDefendedThe\ {\bfseries\@ThesisPresentedThe},\\
              \@ThesisJuryTitle

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.3.22)  22 MAR 2019 19:20
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.3.22)  23 MAR 2019 12:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1898,28 +1898,7 @@ Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
-))
-
-******************************************************
-Stock height and width: 794.96999pt by 614.295pt
-Top and edge trims: 0pt and 0pt
-Page height and width: 794.96999pt by 614.295pt
-Text height and width: 650.20029pt by 360pt
-Spine and edge margins: 144.54pt and 109.755pt
-Upper and lower margins: 72.26999pt and 72.49971pt
-Headheight and headsep: 13pt and 13pt
-Footskip: 26pt
-Columnsep and columnseprule: 10pt and 0pt
-Marginparsep and marginparwidth: 7pt and 95.755pt
-Sidecapsep and sidecapwidth: 7pt and 101pt
-Sidebarhsep and sidebarwidth: 7pt and 101pt
-Sidebarvsep and sidebartopsep: 13.6pt and 0pt
-Sidebarheight: 594.32022pt
-Sidefoothsep and sidefootwidth: 7pt and 101pt
-Sidefootvsep and sidefootheight: 13.6pt and 594.32022pt
-******************************************************
-
-(/usr/local/texlive/2018/texmf-dist/tex/latex/soul/soul.sty
+)) (/usr/local/texlive/2018/texmf-dist/tex/latex/soul/soul.sty
 Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@word=\toks60
 \SOUL@lasttoken=\toks61
@@ -1933,10 +1912,6 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 )
 \dlf@normtxtw=\skip282
 \feline@chapter=\box90
-
-LaTeX Warning: Unused global option(s):
-    [legno].
-
 (./thesis.aux
 
 LaTeX Warning: Label `fig:unnamed-chunk-1' multiply defined.
@@ -1953,59 +1928,59 @@ LaTeX Warning: Label `fig:unnamed-chunk-3' multiply defined.
 )
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 291.
-LaTeX Font Info:    ... okay on input line 291.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 291.
-LaTeX Font Info:    ... okay on input line 291.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 291.
-LaTeX Font Info:    ... okay on input line 291.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 291.
-LaTeX Font Info:    ... okay on input line 291.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 291.
-LaTeX Font Info:    ... okay on input line 291.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 291.
-LaTeX Font Info:    ... okay on input line 291.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 291.
-LaTeX Font Info:    ... okay on input line 291.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 291.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 291.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 305.
+LaTeX Font Info:    ... okay on input line 305.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 305.
+LaTeX Font Info:    ... okay on input line 305.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 305.
+LaTeX Font Info:    ... okay on input line 305.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 305.
+LaTeX Font Info:    ... okay on input line 305.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 305.
+LaTeX Font Info:    ... okay on input line 305.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 305.
+LaTeX Font Info:    ... okay on input line 305.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 305.
+LaTeX Font Info:    ... okay on input line 305.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 305.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 305.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 291.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 291.
-LaTeX Font Info:    ... okay on input line 291.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 291.
-LaTeX Font Info:    ... okay on input line 291.
-LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 291.
-LaTeX Font Info:    Try loading font information for FML+fncmi on input line 29
-1.
+LaTeX Font Info:    ... okay on input line 305.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 305.
+LaTeX Font Info:    ... okay on input line 305.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 305.
+LaTeX Font Info:    ... okay on input line 305.
+LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 305.
+LaTeX Font Info:    Try loading font information for FML+fncmi on input line 30
+5.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/fouriernc/fmlfncmi.fd
 File: fmlfncmi.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncmi.
 )
-LaTeX Font Info:    ... okay on input line 291.
-LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 291.
-LaTeX Font Info:    Try loading font information for FMS+fncm on input line 291
+LaTeX Font Info:    ... okay on input line 305.
+LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 305.
+LaTeX Font Info:    Try loading font information for FMS+fncm on input line 305
 .
 (/usr/local/texlive/2018/texmf-dist/tex/latex/fouriernc/fmsfncm.fd
 File: fmsfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FMS/fncm.
 )
-LaTeX Font Info:    ... okay on input line 291.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 291.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 291
+LaTeX Font Info:    ... okay on input line 305.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 305.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 305
 .
 (/usr/local/texlive/2018/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 291.
-LaTeX Font Info:    Try loading font information for T1+fnc on input line 291.
+LaTeX Font Info:    ... okay on input line 305.
+LaTeX Font Info:    Try loading font information for T1+fnc on input line 305.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/fouriernc/t1fnc.fd
 File: t1fnc.fd 2005/12/13 scaled font definitions for T1/fnc.
 )
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 10.18341pt on input line 291.
-LaTeX Info: Redefining \microtypecontext on input line 291.
+(Font)              scaled to size 10.18341pt on input line 305.
+LaTeX Info: Redefining \microtypecontext on input line 305.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using protrusion set `basicmath'.
 Package microtype Info: No adjustment of tracking.
@@ -2022,21 +1997,21 @@ Package microtype Info: Loading generic protrusion settings for font family
 * paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
+* modes: 
 * h-part:(L,W,R)=(72.26999pt, 452.9679pt, 72.26999pt)
 * v-part:(T,H,B)=(72.26999pt, 700.50687pt, 72.26999pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=360.0pt
-* \textheight=650.20029pt
-* \oddsidemargin=72.0pt
-* \evensidemargin=37.0pt
-* \topmargin=-26.0pt
-* \headheight=13.0pt
-* \headsep=13.0pt
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=452.9679pt
+* \textheight=700.50687pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-33.4738pt
+* \headheight=13.6pt
+* \headsep=19.8738pt
 * \topskip=11.0pt
-* \footskip=26.0pt
-* \marginparwidth=95.755pt
+* \footskip=27.46295pt
+* \marginparwidth=49.0pt
 * \marginparsep=7.0pt
 * \columnsep=10.0pt
 * \skip\footins=12.0pt plus 4.0pt minus 4.0pt
@@ -2044,13 +2019,13 @@ Package microtype Info: Loading generic protrusion settings for font family
 * \voffset=0.0pt
 * \mag=1000
 * \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
+* \@twosidefalse
+* \@mparswitchfalse
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box91
-Package hyperref Info: Link coloring OFF on input line 291.
+Package hyperref Info: Link coloring OFF on input line 305.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -2058,9 +2033,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count403
 )
-LaTeX Info: Redefining \ref on input line 291.
-LaTeX Info: Redefining \pageref on input line 291.
-LaTeX Info: Redefining \nameref on input line 291.
+LaTeX Info: Redefining \ref on input line 305.
+LaTeX Info: Redefining \pageref on input line 305.
+LaTeX Info: Redefining \nameref on input line 305.
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write8
 \openout8 = `thesis.out'.
@@ -2073,118 +2048,137 @@ Package marginnote Info: \pdfoutput not 0 or unimportant and
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 335.
-
-(/usr/local/texlive/2018/texmf-dist/tex/latex/lm/t1lmss.fd
-File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+LaTeX Font Info:    Try loading font information for T1+phv on input line 349.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/t1phv.fd
+File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 File: logo_uga.eps Graphic file (type eps)
 <logo_uga.eps>
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 335.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 349.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 10.22992pt on input line 335.
+(Font)              scaled to size 10.22992pt on input line 349.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 7.77467pt on input line 335.
+(Font)              scaled to size 7.77467pt on input line 349.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 6.138pt on input line 335.
+(Font)              scaled to size 6.138pt on input line 349.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.11998pt on input line 335.
+(Font)              scaled to size 10.11998pt on input line 349.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.69112pt on input line 335.
+(Font)              scaled to size 7.69112pt on input line 349.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.07204pt on input line 335.
-LaTeX Font Info:    Try loading font information for U+msa on input line 335.
+(Font)              scaled to size 6.07204pt on input line 349.
+LaTeX Font Info:    Try loading font information for U+msa on input line 349.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 335.
+LaTeX Font Info:    Try loading font information for U+msb on input line 349.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Try loading font information for FML+fncm on input line 335
+LaTeX Font Info:    Try loading font information for FML+fncm on input line 349
 .
 (/usr/local/texlive/2018/texmf-dist/tex/latex/fouriernc/fmlfncm.fd
 File: fmlfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncm.
 )
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.11998pt on input line 335.
+(Font)              scaled to size 10.11998pt on input line 349.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.69112pt on input line 335.
+(Font)              scaled to size 7.69112pt on input line 349.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.07204pt on input line 335.
+(Font)              scaled to size 6.07204pt on input line 349.
 File: logo_comue.eps Graphic file (type eps)
 <logo_comue.eps>
-Invalid UTF-8 byte or sequence at line 335 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 335 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 335 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 335 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 335 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 335 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 335 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 335 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 349 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 349 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 349 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 349 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 349 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 349 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 349 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 349 replaced by U+FFFD.
 File: logo_ugent.eps Graphic file (type eps)
 <logo_ugent.eps>
 
-Overfull \hbox (19.80464pt too wide) in paragraph at lines 335--335
+Overfull \hbox (112.77254pt too wide) in paragraph at lines 349--349
 [] [] 
  []
 
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <11> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 349.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <16> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 349.
 
-Underfull \hbox (badness 10000) in paragraph at lines 335--335
+Underfull \hbox (badness 10000) in paragraph at lines 349--349
 
  []
 
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmss' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 9.29993pt on input line 335.
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 7.06795pt on input line 335.
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 5.57996pt on input line 335.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 335.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 335.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 335.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 335.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 335.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 335.
 
-Overfull \hbox (17.79987pt too wide) in paragraph at lines 335--335
+Underfull \hbox (badness 10000) in paragraph at lines 349--349
+\T1/phv/m/n/11 Co-supervised by \T1/phv/b/n/11 Dr. Hélène L÷venbruck & Dr. Marc
+ela
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 349--349
+[]\T1/phv/m/n/11 Prepared as a joint PhD in \T1/phv/b/n/11 Lab-o-ra-toire de Ps
+y-cholo-gie et
+ []
+
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <22> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 349.
+
+Overfull \hbox (13.73834pt too wide) in paragraph at lines 349--349
+[]\T1/phv/b/n/22 Psychophysiological char-ac-ter-is-tics 
+ []
+
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 9.29993pt on input line 349.
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 7.06795pt on input line 349.
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 5.57996pt on input line 349.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 349.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 349.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 349.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 349.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 349.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 349.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 349.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 349.
+
+Overfull \hbox (17.79987pt too wide) in paragraph at lines 349--349
 [][] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 335
+Underfull \vbox (badness 10000) detected at line 349
  []
 
 [1
 
-] [2
-
-
 ]
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 13.39188pt on input line 341.
+(Font)              scaled to size 13.39188pt on input line 358.
 LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/fnc/b/n' tried instead on input line 341.
+(Font)              Font shape `T1/fnc/b/n' tried instead on input line 358.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 13.39188pt on input line 341.
+(Font)              scaled to size 13.39188pt on input line 358.
 LaTeX Font Info:    Font shape `T1/fnc/bx/sc' in size <14.4> not available
-(Font)              Font shape `T1/fnc/b/sc' tried instead on input line 341.
+(Font)              Font shape `T1/fnc/b/sc' tried instead on input line 358.
 LaTeX Font Info:    Font shape `T1/fnc/b/sc' will be
-(Font)              scaled to size 13.39188pt on input line 341.
+(Font)              scaled to size 13.39188pt on input line 358.
 (./thesis.toc
 LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/fnc/b/n' tried instead on input line 1.
@@ -2201,507 +2195,209 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 7.63599pt on input line 1.
 
-Class memoir Warning: The material used in the headers is too large
-(13.59999pt) for the given head height (13.0pt), it is recommended to
-either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 34.
+Overfull \hbox (1.74115pt too wide) detected at line 8
+ \T1/fnc/b/n/10.95 viii
+ []
+
+[1
 
 
-Overfull \vbox (0.59999pt too high) has occurred while \output is active []
-
+]) (./thesis.lot) (./thesis.lof [2])
+LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
+(Font)              scaled to size 9.29993pt on input line 361.
 [3]
-Underfull \hbox (badness 7030) in paragraph at lines 44--44
- [][] [][]\T1/fnc/m/n/10.95 Experiment 2: ru-mi-na-tion re-duc-tion by 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 63--63
- [][] [][]\T1/fnc/b/n/10.95 Muscle-specific elec-tromyo-graphic cor-re-lates of
- in-ner 
- []
-
-)
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
-(Font)              scaled to size 9.29993pt on input line 343.
-
-Overfull \vbox (0.59999pt too high) has occurred while \output is active []
-
-[4] (./thesis.lot) (./thesis.lof)
-Overfull \vbox (0.59999pt too high) has occurred while \output is active []
-
-[5] [6
-
-]
-LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
-(Font)              scaled to size 10.18341pt on input line 347.
+(Font)              scaled to size 10.18341pt on input line 364.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 30.94487pt on input line 347.
+(Font)              scaled to size 30.94487pt on input line 364.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 45.523pt on input line 347.
+(Font)              scaled to size 45.523pt on input line 364.
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
-(Font)              scaled to size 45.523pt on input line 347.
+(Font)              scaled to size 45.523pt on input line 364.
+[4
 
-Overfull \vbox (0.59999pt too high) has occurred while \output is active []
+] [5
 
-[7] [8
+] [6
 
-]
-Overfull \vbox (0.59999pt too high) has occurred while \output is active []
+] [7
 
-[9] [10
+] [8
 
 ]
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 10.18341pt on input line 370.
+(Font)              scaled to size 10.18341pt on input line 402.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 8.36993pt on input line 374.
+(Font)              scaled to size 8.36993pt on input line 406.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 374.
+(Font)              scaled to size 8.27998pt on input line 406.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 374.
+(Font)              scaled to size 8.27998pt on input line 406.
+[1
 
-Overfull \vbox (0.59999pt too high) has occurred while \output is active []
-
-[1]
-Underfull \hbox (badness 1436) in paragraph at lines 407--421
-\T1/fnc/m/n/10.95 from the learn-ing of an in-finitely com-plex co-or-di-na-tio
-n of fine mo-tor
- []
-
+]
 
 Package natbib Warning: Citation `koster_rumination_2013' on page 2 undefined o
-n input line 425.
+n input line 457.
 
 
 Package natbib Warning: Citation `Christoff2016' on page 2 undefined on input l
-ine 427.
+ine 459.
 
 
 Package natbib Warning: Citation `Miller2000' on page 2 undefined on input line
- 434.
+ 466.
 
 File: assets/conceptual_space.png Graphic file (type bmp)
 <assets/conceptual_space.png>
 
 Package natbib Warning: Citation `perrone-bertolotti_what_2014' on page 2 undef
-ined on input line 462.
-
-
-Overfull \vbox (0.59999pt too high) has occurred while \output is active []
+ined on input line 494.
 
 [2]
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 11.15991pt on input line 479.
+(Font)              scaled to size 11.15991pt on input line 511.
 LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <12> not available
-(Font)              Font shape `T1/fnc/b/n' tried instead on input line 479.
+(Font)              Font shape `T1/fnc/b/n' tried instead on input line 511.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 11.15991pt on input line 479.
+(Font)              scaled to size 11.15991pt on input line 511.
 Missing character: There is no ’ in font pncr8t!
-
-Underfull \hbox (badness 3209) in paragraph at lines 481--493
-\T1/fnc/m/n/10.95 ex-pla-na-tion of this broad phe-nomenon, the \T1/fnc/m/it/10
-.95 mo-tor sim-u-la-tion the-ory
- []
-
-
-Underfull \hbox (badness 6575) in paragraph at lines 481--493
-\T1/fnc/m/n/10.95 (MST; []Jean-nerod[], []1994[], []2001[], []2006[]), con-tain
-s the three fol-low-ing
- []
-
 Missing character: There is no ’ in font pncr8t!
 
 Package natbib Warning: Citation `barsalou_grounded_2008' on page 3 undefined o
-n input line 499.
+n input line 531.
 
 Missing character: There is no ’ in font pncr8t!
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 8.36993pt on input line 508.
-
-Underfull \hbox (badness 1107) in paragraph at lines 494--509
-[]\T1/fnc/m/n/10.95 In this frame-work, the con-cept of sim-u-la-tion refers to
- the ``of-fline
- []
-
-
-Overfull \vbox (0.59999pt too high) has occurred while \output is active []
-
-[3]
-Underfull \hbox (badness 1005) in paragraph at lines 510--523
-[]\T1/fnc/m/n/10.95 The MST is sup-ported by a wealth a find-ings, go-ing from 
-men-tal
- []
-
+(Font)              scaled to size 8.36993pt on input line 540.
 Missing character: There is no ’ in font pncr8t!
-
-Underfull \hbox (badness 1067) in paragraph at lines 542--550
-[]\T1/fnc/m/n/10.95 Emulation the-o-ries (e.g., []Grush[], []2004[]; []Moul-ton
- and Koss-lyn[], []2009[])
- []
-
-
-Underfull \hbox (badness 2418) in paragraph at lines 542--550
-\T1/fnc/m/n/10.95 ex-clu-sively by in-ter-nal mo-tor rep-re-sen-ta-tions, the e
-m-u-la-tion the-o-ries
- []
-
-
-Overfull \vbox (0.59999pt too high) has occurred while \output is active []
-
-[4]
-Underfull \hbox (badness 1442) in paragraph at lines 563--583
-\T1/fnc/m/n/10.95 mo-tor cen-tres as be-ing suf-fi-cient for ex-plain-ing mo-to
-r im-agery, while
- []
-
-
-Underfull \hbox (badness 2582) in paragraph at lines 590--615
-\T1/fnc/m/n/10.95 pres-sure. Us-ing tran-scra-nial mag-netic stim-u-la-tion and
- mo-tor evoked
- []
-
-
-Underfull \hbox (badness 1072) in paragraph at lines 616--635
-\T1/fnc/m/n/10.95 mus-cu-lar ac-tiv-ity ob-served dur-ing imag-ined ac-tions wa
-s the \T1/fnc/m/it/10.95 source \T1/fnc/m/n/10.95 of
- []
-
-
-Underfull \hbox (badness 1552) in paragraph at lines 616--635
-\T1/fnc/m/n/10.95 the men-tal con-tent. How-ever, as ex-plained by []Jean-nerod
-[] ([]2006[]), this
- []
-
-
-Underfull \hbox (badness 1552) in paragraph at lines 616--635
-\T1/fnc/m/n/10.95 ex-per-i-ment mo-tor im-agery, with-out any ob-serv-able mus-
-cu-lar ac-tiv-ity[][][].
- []
-
-
-Overfull \vbox (0.59999pt too high) has occurred while \output is active []
-
-[5]
-Underfull \hbox (badness 1019) in paragraph at lines 666--670
-\T1/fnc/m/n/10.95 as a kind of mo-tor (and sen-sory) im-agery of speech, and di
-s-cuss the
- []
-
-
-Underfull \hbox (badness 1484) in paragraph at lines 666--670
-\T1/fnc/m/n/10.95 the-o-ret-i-cal un-der-pin-nings of this propo-si-tion as wel
-l as the avail-able
- []
-
-
-Overfull \vbox (0.59999pt too high) has occurred while \output is active []
-
-[6]
+[3] [4]
 Missing character: There is no œ in font pncr8t!
-
-Underfull \hbox (badness 2393) in paragraph at lines 695--707
-\T1/fnc/m/n/10.95 per-cepts stem-ming from coarse multi-sensory goals''. In oth
-er words,
+[5] [6] [7]
+Overfull \hbox (19.36237pt too wide) in paragraph at lines 851--857
+[]\T1/fnc/m/n/10.95 Muscular ac-tiv-ity can be stud-ied at dif-fer-ent lev-els.
+ At the cel-lu-lar level, us-ing elec-tro-phys-i-o-log-i-cal
  []
 
-
-Underfull \hbox (badness 1215) in paragraph at lines 729--731
-[]\T1/fnc/m/n/10.95 See Stin-ear's chap-ter in Guil-lot's book for in-tra-cor-t
-i-cal and spinal
- []
-
-
-Overfull \vbox (0.59999pt too high) has occurred while \output is active []
-
-[7]
-Underfull \hbox (badness 1436) in paragraph at lines 774--788
-\T1/fnc/m/n/10.95 from the learn-ing of an in-finitely com-plex co-or-di-na-tio
-n of fine mo-tor
- []
-
-
-Overfull \vbox (0.59999pt too high) has occurred while \output is active []
-
-[8]
-Overfull \vbox (0.59999pt too high) has occurred while \output is active []
-
-[9] [10
-
-]
-Overfull \vbox (0.59999pt too high) has occurred while \output is active []
-
-[11]
 File: assets/muap.jpg Graphic file (type bmp)
 <assets/muap.jpg>
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 860.
+[8
+
+]
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 892.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Underfull \hbox (badness 2837) in paragraph at lines 858--862
-\T1/fnc/m/n/10.95 al-go-rithm im-ple-mented in the \T1/lmtt/m/n/10.95 biosignal
-EMG \T1/fnc/m/n/10.95 pack-age ([]Guer-rero and
- []
 
-
-Package xcolor Warning: Incompatible color definition on input line 863.
+Package xcolor Warning: Incompatible color definition on input line 895.
 
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 865.
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 897.
 
-Package xcolor Warning: Incompatible color definition on input line 877.
-
-
-Package xcolor Warning: Incompatible color definition on input line 877.
+Package xcolor Warning: Incompatible color definition on input line 909.
 
 
-Package xcolor Warning: Incompatible color definition on input line 877.
-
-
-Class memoir Warning: The material used in the headers is too large
-(27.2pt) for the given head height (13.0pt), it is recommended to
-either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 877.
-
-
-Overfull \vbox (14.2pt too high) has occurred while \output is active []
-
-[12]
-
-Package xcolor Warning: Incompatible color definition on input line 877.
-
-
-Package xcolor Warning: Incompatible color definition on input line 877.
+Package xcolor Warning: Incompatible color definition on input line 909.
 
 File: 02-chap2_files/figure-latex/unnamed-chunk-2-1.pdf Graphic file (type pdf)
 
 <use 02-chap2_files/figure-latex/unnamed-chunk-2-1.pdf>
+[9]
 
-Package xcolor Warning: Incompatible color definition on input line 892.
-
-
-Package xcolor Warning: Incompatible color definition on input line 901.
+Package xcolor Warning: Incompatible color definition on input line 924.
 
 
-Package xcolor Warning: Incompatible color definition on input line 901.
+Package xcolor Warning: Incompatible color definition on input line 933.
+
+
+Package xcolor Warning: Incompatible color definition on input line 933.
 
 File: 02-chap2_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file (type pdf)
 
 <use 02-chap2_files/figure-latex/unnamed-chunk-3-1.pdf>
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \vbox (0.59999pt too high) has occurred while \output is active []
-
-[13]
-Overfull \vbox (14.2pt too high) has occurred while \output is active []
-
-[14]
-Underfull \hbox (badness 3375) in paragraph at lines 954--961
-\T1/fnc/m/n/10.95 our-selves, think-ing about our own feel-ings, thoughts and b
-e-hav-iors.
+[10] [11]
+Underfull \hbox (badness 1990) in paragraph at lines 994--1010
+\T1/fnc/m/n/10.95 and im-pli-ca-tions of de-pres-sive symp-toms. Even though ru
+-mi-na-tion can in-volve sev-eral
  []
 
 
-Underfull \hbox (badness 2050) in paragraph at lines 954--961
-\T1/fnc/m/n/10.95 present ex-pe-ri-ences (Boyd & Fales, 1983; Nolen-Hoeksema, W
-isco, &
+Underfull \hbox (badness 1132) in paragraph at lines 1011--1026
+\T1/fnc/m/n/10.95 sim-u-la-tions and as op-er-at-ing on an amodal level. It has
+ been de-scribed as ``con-densed,
  []
 
-
-Underfull \hbox (badness 1533) in paragraph at lines 954--961
-\T1/fnc/m/n/10.95 Lyubomirsky, 2008). How-ever, this pro-cess can lead to un-co
-n-struc-tive
- []
-
-
-Underfull \hbox (badness 3179) in paragraph at lines 954--961
-\T1/fnc/m/n/10.95 con-se-quences when self-referent thoughts be-come repet-i-ti
-ve, ab-stract,
- []
-
-
-Overfull \vbox (0.59999pt too high) has occurred while \output is active []
-
-[15
+[12
 
 ]
-Overfull \vbox (14.2pt too high) has occurred while \output is active []
+Underfull \hbox (badness 1102) in paragraph at lines 1027--1062
+\T1/fnc/m/n/10.95 view is sup-ported by sev-eral find-ings. Firstly, covert and
+ overt speech have com-pa-ra-ble
+ []
+
+
+Class memoir Warning: The material used in the headers is too large
+(27.2pt) for the given head height (13.6pt), it is recommended to
+either increase the head height or redesign the header
+(in both cases you will find help in the memoir manual). on input line 1106.
+
+
+Overfull \vbox (13.59999pt too high) has occurred while \output is active []
+
+[13]
+Underfull \hbox (badness 1087) in paragraph at lines 1145--1163
+[]\T1/fnc/m/n/10.95 There is strong in-ter-est in the ex-am-i-na-tion of phys-i
+-o-log-i-cal cor-re-lates of ru-mi-na-tion
+ []
+
+
+Overfull \vbox (13.59999pt too high) has occurred while \output is active []
+
+[14]
+Underfull \hbox (badness 1028) in paragraph at lines 1188--1210
+\T1/fnc/m/n/10.95 Kalveram, 1996), and anx-i-ety or neg-a-tive emo-tional state
+ (Con-rad & Roth, 2007)[][][]. Our
+ []
+
+Missing character: There is no − in font pncr8t!
+Missing character: There is no − in font pncr8t!
+Missing character: There is no − in font pncr8t!
+
+Underfull \hbox (badness 1087) in paragraph at lines 1222--1242
+[]\T1/fnc/m/n/10.95 In sum-mary, the cur-rent study aimed at eval-u-at-ing the 
+Mo-tor Sim-u-la-tion view and
+ []
+
+
+Overfull \vbox (13.59999pt too high) has occurred while \output is active []
+
+[15]
+Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 [16]
-Underfull \hbox (badness 1178) in paragraph at lines 1031--1074
-\T1/fnc/m/n/10.95 pro-duces the au-di-tory sim-u-la-tion, and sec-ond, be-cause
- of asso- ciated
- []
-
-
-Underfull \hbox (badness 2809) in paragraph at lines 1075--1100
-\T1/fnc/m/n/10.95 ex-per-i-men-tal re-sults. Ex-am-in-ing the prop-er-ties of e
-r-rors dur-ing the
- []
-
-
-Overfull \vbox (0.59999pt too high) has occurred while \output is active []
-
-[17]
-Underfull \hbox (badness 2173) in paragraph at lines 1113--1131
-\T1/fnc/m/n/10.95 have of-fered a de-tailed de-scrip-tion of rumina- tion style
-s and more
- []
-
-
-Overfull \vbox (14.2pt too high) has occurred while \output is active []
-
-[18]
-Underfull \hbox (badness 1577) in paragraph at lines 1156--1178
-[]\T1/fnc/m/n/10.95 In ad-di-tion to labial mus-cu-lar ac-tiv-ity, we also reco
-rded fore-head
- []
-
-
-Underfull \hbox (badness 1661) in paragraph at lines 1156--1178
-\T1/fnc/m/n/10.95 mus-cu-lar ac-tiv-ity (i.e., frontalis mus-cle) be-cause of i
-ts im-pli-ca-tion in
- []
-
-Missing character: There is no − in font pncr8t!
-Missing character: There is no − in font pncr8t!
-Missing character: There is no − in font pncr8t!
-
-Underfull \hbox (badness 1681) in paragraph at lines 1190--1210
-\T1/fnc/m/n/10.95 of ver-bal ru-mi-na-tion. To test the in-volve-ment of the or
-o-fa-cial mo-tor
- []
-
-
-Underfull \hbox (badness 1424) in paragraph at lines 1190--1210
-\T1/fnc/m/n/10.95 in fa-cial mus-cle ac-tiv-ity (Ex-per-i-ment 1). In the sec-o
-nd ap-proach, we
- []
-
-
-Underfull \hbox (badness 1735) in paragraph at lines 1190--1210
-\T1/fnc/m/n/10.95 dur-ing ru-mi-na-tion, fo-cus-ing on the com-par-i-son of spe
-ech-related (i.e.,
- []
-
-
-Underfull \hbox (badness 1189) in paragraph at lines 1190--1210
-\T1/fnc/m/n/10.95 self-reported ru-mi-na-tion. Al-ter-na-tively, un-der the Ab-
-strac-tion view, an
- []
-
-
-Overfull \vbox (0.59999pt too high) has occurred while \output is active []
-
-[19]
-Underfull \hbox (badness 2005) in paragraph at lines 1211--1232
-\T1/fnc/m/n/10.95 than af-ter an Arm Re-lax-ation (as-so-ci-ated with a larger 
-de-crease in
- []
-
-
-Underfull \hbox (badness 1226) in paragraph at lines 1237--1252
-\T1/fnc/m/n/10.95 men (see John-son & Whis-man, 2013; for a re-cent meta-analys
-is), we
- []
-
-
-Underfull \hbox (badness 2443) in paragraph at lines 1237--1252
-\T1/fnc/m/n/10.95 chose to in-clude fe-male par-tic-i-pants only. Seventy-two f
-e-male under-
- []
-
-
-Overfull \vbox (14.2pt too high) has occurred while \output is active []
-
-[20]
 File: assets/face_emg.jpg Graphic file (type bmp)
 <assets/face_emg.jpg>
 
-Underfull \hbox (badness 2253) in paragraph at lines 1307--1324
-\T1/fnc/m/n/10.95 We also col-lected in-for-ma-tion about any po-ten-tial speec
-h, neu-ro-logic,
- []
+Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
-
-Underfull \vbox (badness 1184) has occurred while \output is active []
-
-
-Overfull \vbox (0.59999pt too high) has occurred while \output is active []
-
-[21]
-Overfull \vbox (14.2pt too high) has occurred while \output is active []
-
-[22]
+[17]
 Missing character: There is no ∼ in font pncr8t!
-
-Underfull \hbox (badness 1112) in paragraph at lines 1338--1347
-\T1/fnc/m/n/10.95 re-lax-ation ses-sion (i.e., with-out tar-get-ing spe-cific m
-us-cles) in or-der to
- []
-
 Missing character: There is no − in font pncr8t!
 
-Underfull \hbox (badness 1014) in paragraph at lines 1348--1363
-\T1/fnc/m/n/10.95 which was pre-sented on the com-puter screen fac-ing them. Th
-ey were
- []
+Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
-
-Underfull \hbox (badness 1354) in paragraph at lines 1364--1376
-\T1/fnc/m/n/10.95 and con-se-quences of their feel-ings, dur-ing five min-utes 
-(rumina- tion
- []
-
-
-Overfull \vbox (0.59999pt too high) has occurred while \output is active []
-
-[23]
-Underfull \hbox (badness 1436) in paragraph at lines 1401--1405
-[]\T1/fnc/m/n/10.95 After the re-lax-ation/dis-trac-tion ses-sion, par-tic-i-pa
-nts were asked to
- []
-
-
-Underfull \hbox (badness 1565) in paragraph at lines 1401--1405
-\T1/fnc/m/n/10.95 mea-sure-ments were col-lected (EMG Post-relaxation mea-sures
-). Fi-nally,
- []
-
+[18]
 Missing character: There is no β in font pncr8t!
 
-Underfull \hbox (badness 1297) in paragraph at lines 1439--1458
-[]\T1/fnc/m/n/10.95 After pre-processing, EMG data were ex-ported from Labchart
- soft-
+Overfull \vbox (13.59999pt too high) has occurred while \output is active []
+
+[19]
+Underfull \hbox (badness 1303) in paragraph at lines 1510--1526
+\T1/fnc/m/n/10.95 which al-low yield-ing pos-te-rior dis-tri-bu-tions that are 
+straight-for-ward to use for in-ter-val
  []
 
-
-Underfull \hbox (badness 2635) in paragraph at lines 1439--1458
-\T1/fnc/m/n/10.95 in each Ses-sion (Base-line, Post- In-duc-tion, Post-Relaxati
-on) for each
- []
-
-
-Overfull \vbox (14.2pt too high) has occurred while \output is active []
-
-[24]
-Underfull \hbox (badness 2318) in paragraph at lines 1461--1468
-\T1/fnc/m/n/10.95 Ca-cioppo, & Van-man, 2007). In ad-di-tion, there are inter- 
-in-di-vid-ual
- []
-
-
-Underfull \hbox (badness 2460) in paragraph at lines 1469--1477
-\T1/fnc/m/n/10.95 in-duc-tion (Ex-per-i-ment 1) and re-lax-ation (Ex-per-i-ment
- 2), we used a
- []
-
-
-Overfull \vbox (0.59999pt too high) has occurred while \output is active []
-
-[25]
 Missing character: There is no − in font pncr8t!
 Missing character: There is no − in font pncr8t!
 Missing character: There is no − in font pncr8t!
@@ -2710,6 +2406,10 @@ Missing character: There is no − in font pncr8t!
 Missing character: There is no − in font pncr8t!
 Missing character: There is no − in font pncr8t!
 Missing character: There is no − in font pncr8t!
+
+Overfull \vbox (13.59999pt too high) has occurred while \output is active []
+
+[20]
 Missing character: There is no ρ in font pncr8t!
 Missing character: There is no − in font pncr8t!
 Missing character: There is no − in font pncr8t!
@@ -2717,33 +2417,20 @@ Missing character: There is no − in font pncr8t!
 Missing character: There is no − in font pncr8t!
 File: assets/emg_fig1.png Graphic file (type bmp)
 <assets/emg_fig1.png>
-
-Underfull \vbox (badness 1902) has occurred while \output is active []
-
-
-Overfull \vbox (14.2pt too high) has occurred while \output is active []
-
-[26]
 Missing character: There is no − in font pncr8t!
 
-Underfull \hbox (badness 2205) in paragraph at lines 1572--1584
+Underfull \hbox (badness 1107) in paragraph at lines 1604--1616
 []\T1/fnc/m/n/10.95 Examination of the cor-re-la-tion ma-trix es-ti-mated by th
-e bayesian
+e bayesian mul-ti-vari-ate model
  []
 
 
-Underfull \hbox (badness 2126) in paragraph at lines 1572--1584
-\T1/fnc/m/n/10.95 mul-ti-vari-ate model re-vealed a pos-i-tive cor-re-la-tion b
-e-tween OOS and
- []
+Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
-
-Overfull \vbox (0.59999pt too high) has occurred while \output is active []
-
-[27]
-Underfull \hbox (badness 2790) in paragraph at lines 1626--1629
-\T1/fnc/m/n/10.95 mark-ers of ru-mi-na-tion (as their scores in-creased af-ter 
-in-duc-tion in
+[21]
+Underfull \hbox (badness 1931) in paragraph at lines 1631--1635
+[]\T1/fnc/m/n/10.95 Correlations be-tween EMG am-pli-tudes and VAS scores were 
+exam- ined us-ing the
  []
 
 Missing character: There is no − in font pncr8t!
@@ -2754,181 +2441,90 @@ File: assets/emg_fig2.png Graphic file (type bmp)
 <assets/emg_fig2.png>
 Missing character: There is no − in font pncr8t!
 Missing character: There is no − in font pncr8t!
-
-Overfull \vbox (14.2pt too high) has occurred while \output is active []
-
-[28]
 File: assets/emg_fig3.png Graphic file (type bmp)
 <assets/emg_fig3.png>
 
-Underfull \hbox (badness 1648) in paragraph at lines 1676--1683
-[]\T1/fnc/m/n/10.95 In the first ex-per-i-ment, we ex-am-ined elec-tromyo-graph
-ic cor-re-lates
+Underfull \hbox (badness 1237) in paragraph at lines 1708--1715
+\T1/fnc/m/n/10.95 in self-reported ru-mi-na-tion. Al-ter-na-tively, the Ab-stra
+c-tion view pre-dicted an in-crease in
  []
 
 
-Underfull \hbox (badness 1308) in paragraph at lines 1676--1683
-\T1/fnc/m/n/10.95 of in-duced ru-mi-na-tion in healthy in-di-vid-u-als. Ac-cord
--ing to the Mo-tor
+Overfull \vbox (13.59999pt too high) has occurred while \output is active []
+
+[22]
+Overfull \vbox (13.59999pt too high) has occurred while \output is active []
+
+[23]
+Overfull \vbox (13.59999pt too high) has occurred while \output is active []
+
+[24]
+Overfull \vbox (13.59999pt too high) has occurred while \output is active []
+
+[25]
+Overfull \vbox (13.59999pt too high) has occurred while \output is active []
+
+[26]
+Overfull \vbox (13.59999pt too high) has occurred while \output is active []
+
+[27]
+Overfull \hbox (32.15802pt too wide) in paragraph at lines 2024--2038
+[]\T1/fnc/m/n/10.95 This project was funded by the ANR project IN-NER-SPEECH [g
+rant num-ber ANR-13-BSH2-0003-01].
  []
 
 
-Overfull \vbox (0.59999pt too high) has occurred while \output is active []
+Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
-[29]
-Underfull \hbox (badness 1199) in paragraph at lines 1691--1709
-\T1/fnc/m/n/10.95 here sug-gests that the speech mo-tor sys-tem was in-volved d
-ur-ing the
- []
+[28]
+Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
+[29] [30
 
-Overfull \vbox (14.2pt too high) has occurred while \output is active []
+] [31
 
-[30]
-Underfull \hbox (badness 1242) in paragraph at lines 1756--1775
-\T1/fnc/m/n/10.95 to ru-mi-na-tion in-duc-tion than the ``Prob-lems'' VAS. Give
-n this greater
- []
+] [32
 
+] [33
 
-Overfull \vbox (0.59999pt too high) has occurred while \output is active []
-
-[31]
-Underfull \hbox (badness 1472) in paragraph at lines 1814--1830
-\T1/fnc/m/n/10.95 pro-duc-tion as-so-ci-ated with ru-mi-na-tion was more re-duc
-ed by oro-fa-cial
- []
-
-
-Overfull \vbox (14.2pt too high) has occurred while \output is active []
-
-[32]
-Underfull \hbox (badness 1147) in paragraph at lines 1831--1858
-\T1/fnc/m/n/10.95 re-lax-ation con-di-tion com-pared with the other con-di-tion
-s sug-gests that
- []
-
-
-Overfull \vbox (0.59999pt too high) has occurred while \output is active []
-
-[33]
-Underfull \hbox (badness 1515) in paragraph at lines 1888--1906
-\T1/fnc/m/n/10.95 mo-tor sim-u-la-tion or is bet-ter de-scribed as lin-guis-ti-
-cally ab-stract and
- []
-
-
-Underfull \hbox (badness 1005) in paragraph at lines 1907--1927
-\T1/fnc/m/n/10.95 oro-fa-cial re-lax-ation than af-ter arm-focused re-lax-ation
-. In the fore-head
- []
-
-
-Underfull \hbox (badness 1052) in paragraph at lines 1907--1927
-\T1/fnc/m/n/10.95 in self-reports of ru-mi-na-tion and was most pro-nounced af-
-ter oro-fa-cial
- []
-
-
-Overfull \vbox (14.2pt too high) has occurred while \output is active []
-
-[34]
-Overfull \vbox (0.59999pt too high) has occurred while \output is active []
-
-[35]
-Underfull \hbox (badness 1062) in paragraph at lines 1992--2006
-\T1/fnc/m/n/10.95 num-ber ANR-13-BSH2-0003-01]. The first au-thor of the manusc
-ript is
- []
-
-
-Underfull \hbox (badness 1622) in paragraph at lines 1992--2006
-\T1/fnc/m/n/10.95 the Pôle Greno-ble Cog-ni-tion. We thank Nathalie Val-let for
- record-ing
- []
-
-
-Overfull \vbox (14.2pt too high) has occurred while \output is active []
-
-[36]
-Overfull \vbox (0.59999pt too high) has occurred while \output is active []
-
-[37
-
-] [38
+] (./thesis.bbl [34
 
 ]
-Overfull \vbox (0.59999pt too high) has occurred while \output is active []
-
-[39] [40
-
-]
-Overfull \vbox (0.59999pt too high) has occurred while \output is active []
-
-[41] [42
-
-]
-Overfull \vbox (0.59999pt too high) has occurred while \output is active []
-
-[43] [44
-
-] (./thesis.bbl
-Overfull \vbox (0.59999pt too high) has occurred while \output is active []
-
-[45] [46
-
-]
-Underfull \hbox (badness 1577) in paragraph at lines 23--27
-[]\T1/fnc/m/n/10.95 Cohen, B. H. (1986).  The mo-tor the-ory of vol-un-tary thi
-nk-ing.  In
+Underfull \hbox (badness 1888) in paragraph at lines 34--39
+\T1/fnc/m/n/10.95 ex-citabil-ity is specif-i-cally mod-u-lated by mo-tor im-age
+ry a mag-netic stim-u-la-tion study.
  []
 
+[35
 
-Underfull \hbox (badness 3623) in paragraph at lines 67--70
-[]\T1/fnc/m/n/10.95 Guerrero, J. and Macias-Diaz, J. (2018).  \T1/fnc/m/it/10.9
-5 biosig-nalEMG: Tools for
- []
-
-
-Overfull \vbox (0.59999pt too high) has occurred while \output is active []
-
-[47]
+]
 Missing character: There is no œ in font pncr8t!
 
-Overfull \vbox (0.59999pt too high) has occurred while \output is active []
+Underfull \hbox (badness 1715) in paragraph at lines 176--180
+[]\T1/fnc/m/n/10.95 Moulton, S. T. and Koss-lyn, S. M. (2009).  Imag-in-ing pre
+-dic-tions: men-tal im-agery as
+ []
 
-[48]
 Missing character: There is no ’ in font pncr8t!
+[36]
 Missing character: There is no œ in font pncr8t!
 
-Underfull \hbox (badness 1092) in paragraph at lines 203--207
-\T1/fnc/m/n/10.95 EMG Pat-tern Clas-si-fi-ca-tion.  \T1/fnc/m/it/10.95 Elec-tro
-n-ics and Elec-tri-cal En-gi-neer-ing\T1/fnc/m/n/10.95 ,
+Underfull \hbox (badness 1237) in paragraph at lines 228--232
+\T1/fnc/m/n/10.95 in-ter-act to pre-dict de-pres-sion: A prospec-tive study.  \
+T1/fnc/m/it/10.95 Cog-ni-tive Ther-apy and Re-search\T1/fnc/m/n/10.95 ,
  []
 
-
-Underfull \hbox (badness 3460) in paragraph at lines 209--212
-[]\T1/fnc/m/n/10.95 Pickering, M. J. and Gar-rod, S. (2013).  An in-te-grated t
-he-ory of
- []
-
-
-Overfull \vbox (0.59999pt too high) has occurred while \output is active []
-
-[49])
+)
 
 Class memoir Warning: The material used in the headers is too large
-(27.2pt) for the given head height (13.0pt), it is recommended to
+(27.2pt) for the given head height (13.6pt), it is recommended to
 either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 2103.
+(in both cases you will find help in the memoir manual). on input line 2135.
 
 
 Package natbib Warning: There were undefined citations.
 
-
-Overfull \vbox (0.59999pt too high) has occurred while \output is active []
-
-[50]
+[37]
 \tf@toc=\write9
 \openout9 = `thesis.toc'.
 
@@ -2938,25 +2534,25 @@ Overfull \vbox (0.59999pt too high) has occurred while \output is active []
 \tf@lof=\write11
 \openout11 = `thesis.lof'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2103.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2103.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2135.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2135.
 (./thesis.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 2103.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2103.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 2135.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2135.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: E5A5BEBF7A0579A6E09DD9D26AEF2AEF.
+(rerunfilecheck)             Checksum: B869438073E1141E92140810E0AEF5C6.
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 44566 strings out of 492970
- 847846 string characters out of 6133938
- 1018438 words of memory out of 5000000
- 47923 multiletter control sequences out of 15000+600000
- 613197 words of font info for 128 fonts, out of 8000000 for 9000
+ 44580 strings out of 492970
+ 847740 string characters out of 6133938
+ 1018061 words of memory out of 5000000
+ 47940 multiletter control sequences out of 15000+600000
+ 601610 words of font info for 127 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 64i,16n,96p,10447b,521s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,16n,96p,10447b,507s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.pdf (60 pages).
+Output written on thesis.pdf (46 pages).

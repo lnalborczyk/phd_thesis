@@ -44,14 +44,10 @@ Because of the higher prevalence of rumination in women than in men (see Johnson
 
 EMG signals were detected with TrignoTM Mini sensors (Delsys Inc.) at a sampling rate of 1926 samples/s with a band pass of 20 Hz (12 dB/ oct) to 450 Hz (24 dB/oct) and were amplified by a TrignoTM 16-channel wireless EMG system (Delsys Inc.). The sensors consisted of two 5 mm long, 1 mm wide parallel bars, spaced by 10 mm, which were attached to the skin using double-sided adhesive interfaces. The skin was cleaned by gently scrubbing it with 70% isopropynol alcohol. EMG signals were then synchronized using the PowerLab 16/35 (ADInstrument, PL3516). Raw data from the EMG sensors were then resampled at a rate of 1 kHz and stored in digital format using Labchart 8 software (ADInstrument, MLU60/8). As shown in Fig. 1, bipolar surface EMG recordings were obtained from two speech-related labial muscles: orbicularis oris superior (OOS) and orbicularis oris inferior (OOI), as well as from one non speech- related but negative-affect-related facial muscle: frontalis (FRO) and from one non-facial and non speech-related muscle: flexor carpi radialis (FCR) on the non-dominant forearm. The latter pair of electrodes was used to check whether the rumination induction would cause any muscle contraction, outside of the facial muscles. The same sensor layout was used for all participants. Asymmetrical movements of the face have been shown in speech and emotional expression. As reviewed in Everdell, Marsh, Yurick, Munhall, and Paré (2007), the dominant side of the face displays larger movements than the left during speech production, whereas the non-dominant side is more emotionally expressive. To optimise the capture of speech-related activity, the OOS and OOI sensors were therefore positioned on the dominant side of the body (i.e. the right side for right-handed participants). To optimise the capture of emotion-related activity, the FRO sensor was positioned on the non-dominant side. To minimise the presence of involuntary manual gestures during the recording, the FCR sensor was positioned on the non-dominant side. Each pair of electrodes was placed parallel with the direction of the muscle fibers, at a position distant from the innervation zones and the muscle tendon interface, following the recommendations of DeLuca (1997). The experiment was video-monitored using a Sony HDR-CX240E video camera to track any visible facial movements. A microphone was placed 20–30 cm away from the participant’s lips to record any faint vocal production during rumination. Stimuli were displayed with E-prime 2.0 (http://www. pstnet.com) on a 19-inch color monitor.
 
-\begin{figure}
-
-{\centering \includegraphics[width=1\linewidth]{assets/face_emg} 
-
-}
-
-\caption{Facial muscles of interest. Two speech-related labial muscles: orbicularis oris superior (OOS) and orbicularis oris inferior (OOI); as well as one non speech-related but sadness-related facial muscle: frontalis (Front).}(\#fig:unnamed-chunk-1)
-\end{figure}
+<div class="figure" style="text-align: center">
+<img src="assets/face_emg.jpg" alt="Facial muscles of interest. Two speech-related labial muscles: orbicularis oris superior (OOS) and orbicularis oris inferior (OOI); as well as one non speech-related but sadness-related facial muscle: frontalis (Front)." width="100%" />
+<p class="caption">(\#fig:unnamed-chunk-1)Facial muscles of interest. Two speech-related labial muscles: orbicularis oris superior (OOS) and orbicularis oris inferior (OOI); as well as one non speech-related but sadness-related facial muscle: frontalis (Front).</p>
+</div>
 
 ### Procedure
 
@@ -109,14 +105,10 @@ Mean VAS score on the Feelings scale was slightly lower after induction ($\alpha
 
 In the following, we report the mean (indicated by the Greek symbol ρ) and the 95% HDI of the posterior distribution on the correlation coefficient ($\rho$). Examination of the correlation matrix estimated by the multivariate model revealed no apparent correlation neither between Feelings and Problems scales ($\rho$ = −0.01, 95% HDI [-0.23, 0.22]), nor between Feelings and Brooding ($\rho$ = 0.08, 95% HDI [-0.15, 0.30]). However, we observed a strong positive correlation between Problems and Brooding VASs ($\rho$ = 0.64, 95% HDI [.49, 0.76]), a positive correlation between Feelings and Focused ($\rho$ = 0.30, 95% HDI [.08, 0.50]), and a negative correlation between Problems and Focused ($\rho$ = −0.30, 95% HDI [-0.49, −0.08]), as well as between Brooding and Focused ($\rho$ = −0.18, 95% HDI [-0.39, 0.05]).
 
-\begin{figure}
-
-{\centering \includegraphics[width=1\linewidth]{assets/emg_fig1} 
-
-}
-
-\caption{Posterior mean (white dots) and 95\% credible intervals for the EMG amplitude (expressed in percentage of baseline level, left panel), and the VAS score (expressed in relative change from baseline, right panel). N = 71 (for each muscle and each VAS). Dashed line represents the null value (i.e., 100).}(\#fig:unnamed-chunk-2)
-\end{figure}
+<div class="figure" style="text-align: center">
+<img src="assets/emg_fig1.png" alt="Posterior mean (white dots) and 95\% credible intervals for the EMG amplitude (expressed in percentage of baseline level, left panel), and the VAS score (expressed in relative change from baseline, right panel). N = 71 (for each muscle and each VAS). Dashed line represents the null value (i.e., 100)." width="100%" />
+<p class="caption">(\#fig:unnamed-chunk-2)Posterior mean (white dots) and 95\% credible intervals for the EMG amplitude (expressed in percentage of baseline level, left panel), and the VAS score (expressed in relative change from baseline, right panel). N = 71 (for each muscle and each VAS). Dashed line represents the null value (i.e., 100).</p>
+</div>
 
 #### EMG
 
@@ -148,14 +140,10 @@ Since the Problems and the Brooding scales seemed to be sensitive markers of rum
 
 Concerning the Problems VAS, the decrease observed in the Orofacial condition was more pronounced than in the Arm condition (Est = −11.06, SE = 6.35, ER10 = 22.65), and slightly more pro- nounced compared to the Story condition (Est = −6.05, SE = 6.31, ER10 = 4.98). The observed on the Brooding VAS score in the Orofacial condition was larger than in the Arm condition (Est = −9.98, SE = 6.07, ER10 = 18.85), and slightly more important compared to the Story condition (Est = −5.23, SE = 6.01, ER10 = 4.27).
 
-\begin{figure}
-
-{\centering \includegraphics[width=1\linewidth]{assets/emg_fig2} 
-
-}
-
-\caption{Posterior mean and 95\% credible intervals for the VAS score (expressed in relative change from post-induction level).}(\#fig:unnamed-chunk-3)
-\end{figure}
+<div class="figure" style="text-align: center">
+<img src="assets/emg_fig2.png" alt="Posterior mean and 95\% credible intervals for the VAS score (expressed in relative change from post-induction level)." width="100%" />
+<p class="caption">(\#fig:unnamed-chunk-3)Posterior mean and 95\% credible intervals for the VAS score (expressed in relative change from post-induction level).</p>
+</div>
 
 <!-- insert table 2 here -->
 
@@ -167,14 +155,10 @@ We used the same strategy as before to compare the effects of the two kinds of r
 
 Concerning the OOS, the observed decrease in the Orofacial condition was more pronounced than in the Arm condition (Est = −0.34, SE = 0.14, ER10 = 140.73), as well as concerning the OOI (Est = −0.35, SE = 0.19, ER10 = 29.46), while we observed no noticeable differences between the two kinds of relaxation concerning the EMG amplitude of the FRO (Est = -0.04, SE = 0.14, ER10 = 1.53).
 
-\begin{figure}
-
-{\centering \includegraphics[width=1\linewidth]{assets/emg_fig3} 
-
-}
-
-\caption{Posterior mean and 95\% credible intervals for the VAS score (expressed in relative change from post-induction level).}(\#fig:unnamed-chunk-4)
-\end{figure}
+<div class="figure" style="text-align: center">
+<img src="assets/emg_fig3.png" alt="Posterior mean and 95\% credible intervals for the VAS score (expressed in relative change from post-induction level)." width="100%" />
+<p class="caption">(\#fig:unnamed-chunk-4)Posterior mean and 95\% credible intervals for the VAS score (expressed in relative change from post-induction level).</p>
+</div>
 
 <!-- insert table 2 here -->
 

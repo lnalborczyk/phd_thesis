@@ -5,8 +5,11 @@ author: "" # Ladislas Nalborczyk
 date: "" #"`r Sys.Date()`"
 
 documentclass: memoir # book # reedthesis
-classoption: a4paper,11pt,legno,oldfontcommands
-#classoption: a4paper,11pt,final,twoside,openright
+classoption: a4paper,11pt,oneside,oldfontcommands
+
+csl: csl/apa6.csl
+lot: true # list of tables
+lof: true # list of figures
 
 site: bookdown::bookdown_site
 
@@ -15,11 +18,6 @@ biblio-style: apalike
 link-citations: yes
 github-repo: lnalborczyk/phd_thesis
 description: Blah blah blah...
-
-csl: csl/apa6.csl
-lot: true # list of tables
-lof: true # list of figures
-space_between_paragraphs: true
 ---
 
 `r if (knitr::is_html_output()) '# Welcome {-}'`
@@ -31,7 +29,7 @@ cat(
   )
 ```
 
-```{r fig.align = "center", out.width = "100%", echo = FALSE, include = identical(knitr:::pandoc_to(), "html")}
+```{r, eval = FALSE, fig.align = "center", out.width = "100%", echo = FALSE, include = identical(knitr:::pandoc_to(), "html")}
 knitr::include_graphics("assets/cover.png", dpi = NA)
 ```
 

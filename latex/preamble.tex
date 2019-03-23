@@ -37,8 +37,7 @@
 \usepackage{booktabs,caption,fixltx2e}
 \usepackage[none]{hyphenat}
 
-% for the cover page
-\usepackage[a4paper]{meta-donnees}
+\usepackage[a4paper]{meta-donnees} % cover page
 \usepackage{lmodern}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -71,7 +70,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%M
 
 \usepackage{lettrine}
-\newcommand{\initial}[1]{%
+\newcommand{\initial}[1]{
 	\lettrine[lines=3,lhang=0.33,nindent=0em]{
 		\color{gray}
      		{\textsc{#1}}}{}}
@@ -84,20 +83,36 @@
 \usepackage{fouriernc}
 \usepackage[T1]{fontenc}
 
-\setstocksize{11in}{8.5in}
-\settrimmedsize{11in}{8.5in}{*}
-\settrims{0in}{0in}
-\settypeblocksize{9.0in}{30pc}{*}
-\setlrmargins{2in}{*}{*}
-\setulmargins{1.0in}{*}{*}
-\setheadfoot{13pt}{26pt}
-\setheaderspaces{*}{13pt}{*}
-\checkandfixthelayout
-\frenchspacing % single spacing
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% https://texdoc.net/texmf-dist/doc/latex/memoir/memman.pdf %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Chapter style (taken and slightly modified from Lars Madsen Memoir Chapter %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\setstocksize{11in}{8.5in} % "real" paper size, already set by a4paper class option
+%\settrimmedsize{11in}{8.5in}{*} % trimmed paper size (trimmed on the left and right)
+%\settrims{0in}{0in}
+%\settypeblocksize{9.0in}{30pc}{*}
+
+% Spine and trim page margins from main typeblock
+%\setlrmarginsandblock{30mm}{30mm}{*}
+
+% Top and bottom page margins from main typeblock
+%\setulmarginsandblock{20mm}{20mm}{*}
+
+%\setlrmargins{2in}{*}{*}
+%\setulmargins{1.0in}{*}{*}
+
+%\setheadfoot{13pt}{26pt}
+%\setheaderspaces{*}{13pt}{*} % set space between header and block
+
+% apply and enforce the layout
+%\checkandfixthelayout
+
+% ensure single spacing
+\frenchspacing
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Chapter style (taken and slightly modified from Lars Madsen Memoir Chapter) %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \usepackage{calc,soul,fourier}
 \makeatletter
@@ -115,6 +130,7 @@
 			{!}{\scshape\so\@chapapp}}\quad%
 		\raisebox{\depthof{\usebox{\feline@chapter}}}{\usebox{\feline@chapter}}%
 }
+
 \newcommand\feline@chm[1][4cm]{%
 	\sbox\feline@chapter{\feline@chapter@marker[#1]}%
 	\makebox[0pt][c]{% aka \rlap
@@ -131,10 +147,11 @@
     \renewcommand\chaptername{Chapter}
 ##1\par}
 }
+
 \makeatother
 \chapterstyle{daleifmodif}
 
-% The pages should be numbered consecutively at the bottom centre of the page.
+% The pages should be numbered consecutively at the bottom centre of the page
 \makepagestyle{myvf}
 \makeoddfoot{myvf}{}{\thepage}{}
 \makeevenfoot{myvf}{}{\thepage}{}
@@ -142,9 +159,6 @@
 \makeevenhead{myvf}{\small\textsc{\leftmark}}{}{}
 \makeoddhead{myvf}{}{}{\small\textsc{\rightmark}}
 \pagestyle{myvf}
-
-\pagenumbering{roman}
-%s\setcounter{page}{0}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Create summary box to put at the end of each chapter %
