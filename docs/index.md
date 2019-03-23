@@ -7,7 +7,6 @@ date: "" #"2019-03-23"
 documentclass: memoir # book # reedthesis
 classoption: a4paper,12pt,oneside,oldfontcommands
 
-toc: false # table of contents
 lot: false # list of tables
 lof: false # list of figures
 

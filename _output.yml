@@ -24,7 +24,6 @@ bookdown::pdf_book:
   citation_package: natbib
   keep_tex: true
   dev: "cairo_pdf"
-  toc: true
-  toc_depth: 3
+  toc: false # table of contents
 
 bookdown::epub_book: default
