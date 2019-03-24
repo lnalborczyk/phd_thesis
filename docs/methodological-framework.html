@@ -159,7 +159,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="5" data-path="muscle-specific-electromyographic-correlates-of-inner-speech-production.html"><a href="muscle-specific-electromyographic-correlates-of-inner-speech-production.html"><i class="fa fa-check"></i><b>5</b> Muscle-specific electromyographic correlates of inner speech production</a></li>
 <li class="chapter" data-level="6" data-path="articulatory-suppression-effects-on-induced-rumination.html"><a href="articulatory-suppression-effects-on-induced-rumination.html"><i class="fa fa-check"></i><b>6</b> Articulatory suppression effects on induced rumination</a></li>
 <li class="chapter" data-level="7" data-path="refining-the-involvement-of-the-speech-motor-system-during-rumination-a-dual-task-investigation.html"><a href="refining-the-involvement-of-the-speech-motor-system-during-rumination-a-dual-task-investigation.html"><i class="fa fa-check"></i><b>7</b> Refining the involvement of the speech motor system during rumination: a dual-task investigation</a></li>
-<li class="part"><span><b>III Discussion</b></span></li>
+<li class="part"><span><b>III Discussion and conclusions</b></span></li>
 <li class="chapter" data-level="8" data-path="discussion-and-perspectives.html"><a href="discussion-and-perspectives.html"><i class="fa fa-check"></i><b>8</b> Discussion and perspectives</a><ul>
 <li class="chapter" data-level="8.1" data-path="discussion-and-perspectives.html"><a href="discussion-and-perspectives.html#summary-of-the-results"><i class="fa fa-check"></i><b>8.1</b> Summary of the results</a></li>
 <li class="chapter" data-level="8.2" data-path="discussion-and-perspectives.html"><a href="discussion-and-perspectives.html#limitations-and-ways-forward"><i class="fa fa-check"></i><b>8.2</b> Limitations and ways forward</a></li>
@@ -224,11 +224,11 @@ Figure 2.1: Motor unit action potential representation.
 </div>
 <div id="surface-emg" class="section level3">
 <h3><span class="header-section-number">2.2.2</span> Surface EMG</h3>
-<p>…<em>crosstalk</em> phenomenon <span class="citation">(De Luca <a href="#ref-de_luca_use_1997">1997</a>)</span>. In reason of the important… of facial muscles, the EMG activity of one recorded muscle generally does not represent the activity of a single muscle but rather a mixture of… <span class="citation">L. Rapin (<a href="#ref-Rapin2011">2011</a>)</span>…</p>
+<p>…<em>crosstalk</em> phenomenon <span class="citation">(De Luca, <a href="#ref-de_luca_use_1997">1997</a>)</span>. In reason of the important… of facial muscles, the EMG activity of one recorded muscle generally does not represent the activity of a single muscle but rather a mixture of… <span class="citation">L. Rapin (<a href="#ref-Rapin2011">2011</a>)</span>…</p>
 </div>
 <div id="basic-signal-processing" class="section level3">
 <h3><span class="header-section-number">2.2.3</span> Basic signal processing</h3>
-<p>…the EMG signal is a stochastic signal… In order to illustrate what EMG signal looks like, we simulated EMG signal based on a standard algorithm implemented in the <code>biosignalEMG</code> package <span class="citation">(Guerrero and Macias-Diaz <a href="#ref-R-biosignalEMG">2018</a>)</span>.</p>
+<p>…the EMG signal is a stochastic signal… In order to illustrate what EMG signal looks like, we simulated EMG signal based on a standard algorithm implemented in the <code>biosignalEMG</code> package <span class="citation">(Guerrero &amp; Macias-Diaz, <a href="#ref-R-biosignalEMG">2018</a>)</span>.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(biosignalEMG)
 <span class="kw">library</span>(tidyverse)
 
@@ -261,7 +261,7 @@ Figure 2.3: Rectified EMG signal.
 </div>
 <p>From there, two main measures can be used to represent the magnitude of muscle activity<a href="#fn7" class="footnoteRef" id="fnref7"><sup>7</sup></a>. The first one is the <strong>mean absolute value</strong> (MAV):</p>
 <p><span class="math display">\[MAV = \frac{1}{N} \sum_{n=1}^{N} | x_{n} |\]</span></p>
-<p>which is computed over a specific interval and where <span class="math inline">\(|x_{n}|\)</span> is the absolute value of a datum of EMG in the data window. The unit of measurement is <span class="math inline">\(mV\)</span> or <span class="math inline">\(\mu V\)</span>, and the MAV calculation is generally similar to the numerical formula for integration <span class="citation">(Kamen and Gabriel <a href="#ref-kamen_essentials_2010">2010</a>)</span>. The second one is the <strong>root-mean-square</strong> (RMS) amplitude:</p>
+<p>which is computed over a specific interval and where <span class="math inline">\(|x_{n}|\)</span> is the absolute value of a datum of EMG in the data window. The unit of measurement is <span class="math inline">\(mV\)</span> or <span class="math inline">\(\mu V\)</span>, and the MAV calculation is generally similar to the numerical formula for integration <span class="citation">(Kamen &amp; Gabriel, <a href="#ref-kamen_essentials_2010">2010</a>)</span>. The second one is the <strong>root-mean-square</strong> (RMS) amplitude:</p>
 <p><span class="math display">\[RMS = \sqrt \frac{1}{N} \sum_{n=1}^{N} | x^{2}_{n} |\]</span></p>
 <p>where <span class="math inline">\(| x^{2}_{n} |\)</span> is the squared value of each EMG datum and has both physical and physiological meanings…</p>
 </div>
@@ -282,22 +282,22 @@ Figure 2.3: Rectified EMG signal.
 <h3>References</h3>
 <div id="refs" class="references">
 <div id="ref-de_luca_use_1997">
-<p>De Luca, Carlo J. 1997. “The Use of Surface Electromyography in Biomechanics.” <em>Journal of Applied Biomechanics</em> 13 (2): 135–63. doi:<a href="https://doi.org/10.1123/jab.13.2.135">10.1123/jab.13.2.135</a>.</p>
+<p>De Luca, C. J. (1997). The Use of Surface Electromyography in Biomechanics. <em>Journal of Applied Biomechanics</em>, <em>13</em>(2), 135–163. <a href="https://doi.org/10.1123/jab.13.2.135" class="uri">https://doi.org/10.1123/jab.13.2.135</a></p>
 </div>
 <div id="ref-Rapin2011">
-<p>Rapin, L. 2011. “Hallucinations Auditives Verbales et Trouble Du Langage Intérieur Dans La Schizophrénie: Traces Physiologiques et Bases Cérébrales.” PhD thesis, University of Grenoble.</p>
+<p>Rapin, L. (2011). <em>Hallucinations auditives verbales et trouble du langage intérieur dans la schizophrénie: Traces physiologiques et bases cérébrales</em> (PhD thesis). University of Grenoble.</p>
 </div>
 <div id="ref-R-biosignalEMG">
-<p>Guerrero, J.A., and J.E. Macias-Diaz. 2018. <em>BiosignalEMG: Tools for Electromyogram Signals (Emg) Analysis</em>. <a href="https://CRAN.R-project.org/package=biosignalEMG" class="uri">https://CRAN.R-project.org/package=biosignalEMG</a>.</p>
+<p>Guerrero, J., &amp; Macias-Diaz, J. (2018). <em>BiosignalEMG: Tools for electromyogram signals (emg) analysis</em>. Retrieved from <a href="https://CRAN.R-project.org/package=biosignalEMG" class="uri">https://CRAN.R-project.org/package=biosignalEMG</a></p>
 </div>
 <div id="ref-kamen_essentials_2010">
-<p>Kamen, Gary, and David A. Gabriel. 2010. <em>Essentials of Electromyography</em>. Champaign, IL: Human Kinetics.</p>
+<p>Kamen, G., &amp; Gabriel, D. A. (2010). <em>Essentials of electromyography</em>. Champaign, IL: Human Kinetics.</p>
 </div>
 </div>
 <div class="footnotes">
 <hr />
 <ol start="7">
-<li id="fn7"><p>But see <span class="citation">Phinyomark et al. (<a href="#ref-phinyomark_feature_2012">2012</a>)</span> for other features that can be extracted from the surface EMG signals.<a href="methodological-framework.html#fnref7">↩</a></p></li>
+<li id="fn7"><p>But see <span class="citation">Phinyomark, Nuidod, Phukpattaranont, &amp; Limsakul (<a href="#ref-phinyomark_feature_2012">2012</a>)</span> for other features that can be extracted from the surface EMG signals.<a href="methodological-framework.html#fnref7">↩</a></p></li>
 </ol>
 </div>
             </section>
@@ -345,7 +345,7 @@ gitbook.start({
 },
 "download": ["thesis.pdf"],
 "toc": {
-"collapse": "subsection",
+"collapse": "none / section / subsection",
 "scroll_highlight": true
 },
 "search": true,

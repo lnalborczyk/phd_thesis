@@ -3,7 +3,10 @@ bookdown::gitbook:
   author: Ladislas Nalborczyk
   date: "`r Sys.Date()`"
   github-repo: lnalborczyk/phd_thesis
-  #split_by: chapter # "none" creates only one html file
+  citation_package: none # needs to be "none" in order to use the csl file
+  pandoc_args: [ "--csl", "./csl/apa6.csl" ] # specifies the csl file to be used
+  split_bib: true # adds references at the end of each chapter
+  # split_by: chapter # "none" creates only one html file
   config:
     toc:
       after: |
@@ -18,12 +21,12 @@ bookdown::gitbook:
 
 bookdown::pdf_book:
   includes:
-    in_header: latex/preamble.tex
-    before_body: latex/before_body.tex
+    in_header: latex/preamble.tex # defines style and latex options
+    before_body: latex/before_body.tex # defines cover page
   latex_engine: xelatex
-  citation_package: natbib
-  keep_tex: true
+  citation_package: none # needs to be "none" in order to use the csl file
+  keep_tex: true # keepd the .tex file
   dev: "cairo_pdf"
-  toc: false # table of contents
-
-bookdown::epub_book: default
+  toc: false # deactivates default table of contents
+  highlight: pygments # code highlighting
+  pandoc_args: [ "--csl", "./csl/apa6.csl" ] # specifies the csl file to be used
