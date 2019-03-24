@@ -14,7 +14,11 @@
 \tcbuselibrary{listings,breakable}
 \usepackage{pifont}
 \usepackage{hyperref}
-\usepackage[utf8]{inputenc}
+
+\usepackage[utf8]{inputenc} % special characters
+\usepackage[T1]{fontenc} % special characters
+\usepackage{fontspec} % special characters
+
 \usepackage{graphicx,pdflscape}
 \usepackage{geometry}
 \usepackage{float}
@@ -35,9 +39,9 @@
 \usepackage{microtype} % make better looking pdf
 
 \usepackage{booktabs,caption,fixltx2e}
-\usepackage[none]{hyphenat}
+\usepackage[none]{hyphenat} % remove hyphenation
 
-\usepackage[a4paper]{meta-donnees} % cover page
+\usepackage[a4paper]{./cover/cover_page} % cover page
 \usepackage{lmodern}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
