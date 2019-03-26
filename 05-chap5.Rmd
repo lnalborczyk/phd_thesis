@@ -1,8 +1,8 @@
 # Muscle-specific electromyographic correlates of inner speech production
 
-Summary of the research...^[This experimental chapter is a manuscript reformatted for the need of this thesis. Source: The manuscript has been submitted to Psychological Research. Pre-registered protocol, preprint, data, as well as reproducible code and figures are available at: https://osf.io/czer4/.]
+Summary of the research...^[This experimental chapter is a submitted manuscript reformatted for the need of this thesis. Pre-registered protocol, preprint, data, as well as reproducible code and figures are available at: [https://osf.io/czer4/](https://osf.io/czer4/).]
 
-```{r setup, echo = FALSE, message = FALSE, warning = FALSE, results = "hide"}
+```{r setupCH5, echo = FALSE, message = FALSE, warning = FALSE, results = "hide"}
 knitr::opts_chunk$set(
   cache = TRUE, echo = FALSE, warning = FALSE, message = FALSE,
   out.width = "100%"

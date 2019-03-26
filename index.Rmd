@@ -5,7 +5,7 @@ author: "" # Ladislas Nalborczyk
 date: "" #"`r Sys.Date()`"
 
 documentclass: memoir # book # reedthesis
-#classoption: a4paper,12pt,oneside,oldfontcommands # memoir class options
+# classoption: a4paper,12pt,oneside,oldfontcommands # memoir class options
 classoption: a4paper,12pt,twoside,openright,oldfontcommands # memoir class options
 
 lot: false # list of tables

@@ -2,6 +2,11 @@
 % Loading relevant packages %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%\usepackage[T1]{fontenc} % special characters with pdflatex
+%\usepackage[utf8]{inputenc} % special characterswith pdflatex
+
+\usepackage{fontspec} % special characters with xelatex
+
 \usepackage{tikz}
 \usepackage{lscape}
 \usepackage{indentfirst}
@@ -14,11 +19,6 @@
 \tcbuselibrary{listings,breakable}
 \usepackage{pifont}
 \usepackage{hyperref}
-
-\usepackage[utf8]{inputenc} % special characters
-\usepackage[T1]{fontenc} % special characters
-\usepackage{fontspec} % special characters
-
 \usepackage{graphicx,pdflscape}
 \usepackage{geometry}
 \usepackage{float}
@@ -37,15 +37,13 @@
 \usepackage{setspace}
 
 \usepackage{microtype} % make better looking pdf
-
 \usepackage{booktabs,caption,fixltx2e}
 \usepackage[none]{hyphenat} % remove hyphenation
 
-\usepackage[a4paper]{./cover/cover_page} % cover page
-\usepackage{lmodern}
+\usepackage[a4paper]{./cover/cover_page} % specifies the path to the cover page template
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% below is the by-default configuration of bookdown-demo            %
+% Below is the by-default configuration of bookdown-demo            %
 % https://github.com/rstudio/bookdown-demo/blob/master/preamble.tex %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -62,7 +60,7 @@
 \makeatother
 
 %%%%%%%%%%%%%%%%%%%%%%%%
-% remove default title %
+% Remove default title %
 % https://stackoverflow.com/questions/45963505/coverpage-and-copyright-notice-before-title-in-r-bookdown
 %%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -74,6 +72,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%M
 
 \usepackage{lettrine}
+
 \newcommand{\initial}[1]{
 	\lettrine[lines=3,lhang=0.33,nindent=0em]{
 		\color{gray}
@@ -109,22 +108,6 @@
 % apply and enforce the layout
 %\checkandfixthelayout
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% alternative format
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \settrimmedsize{297mm}{210mm}{*}
-% \setlength{\trimtop}{0pt}
-% \setlength{\trimedge}{\stockwidth}
-% \addtolength{\trimedge}{-\paperwidth}
-% \settypeblocksize{634pt}{448.13pt}{*}
-% \setulmargins{4cm}{*}{*}
-% \setlrmargins{*}{*}{1.5}
-% \setmarginnotes{17pt}{51pt}{\onelineskip}
-% \setheadfoot{\onelineskip}{2\onelineskip}
-% \setheaderspaces{*}{2\onelineskip}{*}
-% \checkandfixthelayout
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 % ensure single spacing
 \frenchspacing
 
@@ -133,6 +116,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \usepackage{calc,soul,fourier}
+
 \makeatletter
 \newlength\dlf@normtxtw
 \setlength\dlf@normtxtw{\textwidth}

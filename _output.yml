@@ -25,7 +25,7 @@ bookdown::pdf_book:
     before_body: latex/before_body.tex # defines cover page
   latex_engine: xelatex
   citation_package: none # needs to be "none" in order to use the csl file
-  keep_tex: true # keepd the .tex file
+  keep_tex: true # keeps the .tex file
   dev: "cairo_pdf"
   toc: false # deactivates default table of contents
   highlight: pygments # code highlighting

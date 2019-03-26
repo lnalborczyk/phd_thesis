@@ -34,7 +34,7 @@ The **motor unit action potential** (MUAP) is the electric field resulting from 
 
 }
 
-\caption{Motor unit action potential representation.}(\#fig:unnamed-chunk-1)
+\caption{Motor unit action potential representation.}(\#fig:muap)
 \end{figure}
 
 To sum up, the EMG signal results from a mixture of recruited motor units...
@@ -64,11 +64,11 @@ ts.plot(
 
 \begin{figure}[H]
 
-{\centering \includegraphics[width=1\linewidth]{02-chap2_files/figure-latex/unnamed-chunk-2-1} 
+{\centering \includegraphics[width=1\linewidth]{02-chap2_files/figure-latex/emgplot1-1} 
 
 }
 
-\caption{Simulated EMG signal.}(\#fig:unnamed-chunk-2)
+\caption{Simulated EMG signal.}(\#fig:emgplot1)
 \end{figure}
 
 We usually rectify the EMG signal by taking its absolute value and substracting the mean in order to correct for any offset (bias) present in the raw data.
@@ -85,11 +85,11 @@ We usually rectify the EMG signal by taking its absolute value and substracting 
 
 \begin{figure}[H]
 
-{\centering \includegraphics[width=1\linewidth]{02-chap2_files/figure-latex/unnamed-chunk-3-1} 
+{\centering \includegraphics[width=1\linewidth]{02-chap2_files/figure-latex/emgplot2-1} 
 
 }
 
-\caption{Rectified EMG signal.}(\#fig:unnamed-chunk-3)
+\caption{Rectified EMG signal.}(\#fig:emgplot2)
 \end{figure}
 
 From there, two main measures can be used to represent the magnitude of muscle activity^[But see @phinyomark_feature_2012 for other features that can be extracted from the surface EMG signals.]. The first one is the **mean absolute value** (MAV):

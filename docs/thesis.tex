@@ -124,6 +124,11 @@
 % Loading relevant packages %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%\usepackage[T1]{fontenc} % special characters with pdflatex
+%\usepackage[utf8]{inputenc} % special characterswith pdflatex
+
+\usepackage{fontspec} % special characters with xelatex
+
 \usepackage{tikz}
 \usepackage{lscape}
 \usepackage{indentfirst}
@@ -136,11 +141,6 @@
 \tcbuselibrary{listings,breakable}
 \usepackage{pifont}
 \usepackage{hyperref}
-
-\usepackage[utf8]{inputenc} % special characters
-\usepackage[T1]{fontenc} % special characters
-\usepackage{fontspec} % special characters
-
 \usepackage{graphicx,pdflscape}
 \usepackage{geometry}
 \usepackage{float}
@@ -159,15 +159,13 @@
 \usepackage{setspace}
 
 \usepackage{microtype} % make better looking pdf
-
 \usepackage{booktabs,caption,fixltx2e}
 \usepackage[none]{hyphenat} % remove hyphenation
 
-\usepackage[a4paper]{./cover/cover_page} % cover page
-\usepackage{lmodern}
+\usepackage[a4paper]{./cover/cover_page} % specifies the path to the cover page template
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% below is the by-default configuration of bookdown-demo            %
+% Below is the by-default configuration of bookdown-demo            %
 % https://github.com/rstudio/bookdown-demo/blob/master/preamble.tex %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -184,7 +182,7 @@
 \makeatother
 
 %%%%%%%%%%%%%%%%%%%%%%%%
-% remove default title %
+% Remove default title %
 % https://stackoverflow.com/questions/45963505/coverpage-and-copyright-notice-before-title-in-r-bookdown
 %%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -196,6 +194,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%M
 
 \usepackage{lettrine}
+
 \newcommand{\initial}[1]{
 	\lettrine[lines=3,lhang=0.33,nindent=0em]{
 		\color{gray}
@@ -231,22 +230,6 @@
 % apply and enforce the layout
 %\checkandfixthelayout
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% alternative format
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \settrimmedsize{297mm}{210mm}{*}
-% \setlength{\trimtop}{0pt}
-% \setlength{\trimedge}{\stockwidth}
-% \addtolength{\trimedge}{-\paperwidth}
-% \settypeblocksize{634pt}{448.13pt}{*}
-% \setulmargins{4cm}{*}{*}
-% \setlrmargins{*}{*}{1.5}
-% \setmarginnotes{17pt}{51pt}{\onelineskip}
-% \setheadfoot{\onelineskip}{2\onelineskip}
-% \setheaderspaces{*}{2\onelineskip}{*}
-% \checkandfixthelayout
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 % ensure single spacing
 \frenchspacing
 
@@ -255,6 +238,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \usepackage{calc,soul,fourier}
+
 \makeatletter
 \newlength\dlf@normtxtw
 \setlength\dlf@normtxtw{\textwidth}
@@ -383,19 +367,19 @@
 
 \chapter*{Résumé}
 
-\initial{B}lah blah\ldots{}
+\initial{T}o be detailed\ldots{}
 
 \afterpage{\blankpage}
 
 \chapter*{Overzicht}
 
-\initial{B}lah blah\ldots{}
+\initial{T}o be detailed\ldots{}
 
 \afterpage{\blankpage}
 
 \chapter*{Abstract}
 
-\initial{B}lah blah\ldots{}
+\initial{T}o be detailed\ldots{}
 
 \afterpage{\blankpage}
 
@@ -408,7 +392,13 @@ thesis.
 
 \chapter*{Preface}
 
-\initial{B}lah blah\ldots{}
+\initial{T}his PhD has been realised as a joint PhD between Univ.
+Grenoble Alpes (Grenoble, France) and Ghent University (Ghent, Belgium).
+It has been funded by Univ. Grenoble Alpes (UPMF)\ldots{} studies have
+also been co-funded by the ANR INNER SPEECH () and\ldots{}
+
+The underlying code as well as an online version of this is thesis is
+available at: \url{https://github.com/lnalborczyk/phd_thesis}.
 
 \newpage
 
@@ -480,8 +470,6 @@ also be considered as \emph{mis-exadaptation}, Agnati et al.,
 as\ldots{} They can generally be understood as transdiagnostic processes
 (i.e., a process that is not specific to a single pathology), and cover
 various\ldots{}
-
-\ldots{}
 
 Learning how to internalise speech might be similar to learning how to
 internalise playing an instrument\ldots{} Let's consider the analogy
@@ -784,6 +772,28 @@ available empirical evidence in its support.
 \subsection{Inner speech as multimodal verbal
 imagery}\label{inner-speech-as-multimodal-verbal-imagery}
 
+\ldots{}various terms: internal speech, silent speech, covert speech,
+implicit speech, speech imagery\ldots{} difference between generative
+component (mackay, 1992) / inner speaking / inner voice and perceptual
+or auditory component (MacKay, 1992) or inner hearing / inner
+ear\ldots{}
+
+\ldots{} a key question: what is the lowest level of specification of
+inner speech ? \ldots{} figure from oppenheim \& dell (2010\ldots{})
+
+\ldots{} add a brief historical timeline here (from egger to
+kapur)\ldots{}
+
+\ldots{} see MacKay (1992, page 131) for discussion of speaking rate in
+inner and overt speech\ldots{} faster rates also occur for other highli
+trained skills (e.g., tying a shoelace, Annett, 1988)\ldots{}ref to
+review of Guillot\ldots{}
+
+\ldots{} emg during inner speech (from mckay, 1992): ``interestingly,
+this same EMG activity invariably precedes by a few milliseconds the
+full blown muscle activity that occurs during normal movements'' (e.g.,
+Schmidt, 1982)\ldots{}
+
 While grasping the concept of a visual image appears as relatively
 straightforward, it seems more difficult at first to grasp the concept
 of a motor image, especially when it comes to verbal imagery. The
@@ -955,7 +965,7 @@ speed of conduction and position of the neuromuscular junction\ldots{}
 
 }
 
-\caption{Motor unit action potential representation.}\label{fig:unnamed-chunk-1}
+\caption{Motor unit action potential representation.}\label{fig:muap}
 \end{figure}
 
 To sum up, the EMG signal results from a mixture of recruited motor
@@ -995,11 +1005,11 @@ a standard algorithm implemented in the \texttt{biosignalEMG} package
 
 \begin{figure}[H]
 
-{\centering \includegraphics[width=1\linewidth]{02-chap2_files/figure-latex/unnamed-chunk-2-1} 
+{\centering \includegraphics[width=1\linewidth]{02-chap2_files/figure-latex/emgplot1-1} 
 
 }
 
-\caption{Simulated EMG signal.}\label{fig:unnamed-chunk-2}
+\caption{Simulated EMG signal.}\label{fig:emgplot1}
 \end{figure}
 
 We usually rectify the EMG signal by taking its absolute value and
@@ -1019,11 +1029,11 @@ in the raw data.
 
 \begin{figure}[H]
 
-{\centering \includegraphics[width=1\linewidth]{02-chap2_files/figure-latex/unnamed-chunk-3-1} 
+{\centering \includegraphics[width=1\linewidth]{02-chap2_files/figure-latex/emgplot2-1} 
 
 }
 
-\caption{Rectified EMG signal.}\label{fig:unnamed-chunk-3}
+\caption{Rectified EMG signal.}\label{fig:emgplot2}
 \end{figure}
 
 From there, two main measures can be used to represent the magnitude of
@@ -1062,23 +1072,46 @@ chapters}\label{part-experimental-chapters}
 \chapter{Orofacial electromyographic correlates of induced verbal
 rumination}\label{orofacial-electromyographic-correlates-of-induced-verbal-rumination}
 
-Summary of the research\ldots{}\footnote{This experimental chapter is a
+Add a summary of the research and brief introduction to this first
+empirical chapter here\ldots{}\footnote{This experimental chapter is a
   published paper reformatted for the need of this thesis. Source:
   Nalborczyk, L., Perrone-Bertolotti, M., Baeyens, C., Grandchamp, R.,
   Polosan, M., Spinelli, E., \ldots{} L\oe venbruck, H. (2017).
   Orofacial Electromyographic Correlates of Induced Verbal Rumination.
   \emph{Biological Psychology, 127}, 53-63.
-  \url{http://dx.doi.org/10.1016/j.biopsycho.2017.04.013}.}
+  \url{https://dx.doi.org/10.1016/j.biopsycho.2017.04.013}.}
+
+\section{Abstract}\label{abstract-1}
+
+Rumination is predominantly experienced in the form of repetitive verbal
+thoughts. Verbal rumination is a particular case of inner speech.
+According to the \emph{Motor Simulation view}, inner speech is a kind of
+motor action, recruiting the speech motor system. In this framework, we
+predicted an increase in speech muscle activity during rumination as
+compared to rest. We also predicted increased forehead activity,
+associated with anxiety during rumination. We measured electromyographic
+activity over the \emph{orbicularis oris superior and inferior},
+\emph{frontalis} and \emph{flexor carpi radialis} muscles. Results
+showed increased lip and forehead activity after rumination induction
+compared to an initial relaxed state, together with increased
+self-reported levels of rumination. Moreover, our data suggest that
+orofacial relaxation is more effective in reducing rumination than
+non-orofacial relaxation. Altogether, these results support the
+hypothesis that verbal rumination involves the speech motor system, and
+provide a promising psychophysiological index to assess the presence of
+verbal rumination.
 
 \section{Introduction}\label{introduction}
 
 As humans, we spend a considerable amount of time reflecting upon
 ourselves, thinking about our own feelings, thoughts and behaviors.
 Self-reflection enables us to create and clarify the meaning of past and
-present experiences (Boyd \& Fales, 1983; Nolen-Hoeksema, Wisco, \&
-Lyubomirsky, 2008). However, this process can lead to unconstructive
-consequences when self-referent thoughts become repetitive, abstract,
-evaluative, and self-critical (Watkins,
+present experiences (Boyd \& Fales,
+\protect\hyperlink{ref-boyd_reflective_1983}{1983}; Nolen-Hoeksema,
+Wisco, \& Lyubomirsky,
+\protect\hyperlink{ref-Nolen-Hoeksema2008}{2008}). However, this process
+can lead to unconstructive consequences when self-referent thoughts
+become repetitive, abstract, evaluative, and self-critical (Watkins,
 \protect\hyperlink{ref-Watkins2008}{2008}).
 
 Indeed, rumination is most often defined as a repetitive and recursive
@@ -1104,204 +1137,257 @@ particularly significant form of inner speech.
 
 Inner speech or covert speech can be defined as silent verbal production
 in one's mind or the activity of silently talking to oneself (Zivin,
-1979). The nature of inner speech is still a matter of theoretical
-debate (see Perrone-Bertolotti, Rapin, Lachaux, Baciu, \& Lœvenbruck,
-\protect\hyperlink{ref-Perrone-Bertolotti2014}{2014} for a review). Two
-opposing views have been proposed in the literature: the Abstraction
-view and the Motor Simulation view. The Abstraction view describes inner
-speech as unconcerned with articulatory or auditory simulations and as
-operating on an amodal level. It has been described as ``condensed,
-abbreviated, disconnected, fragmented, and incomprehensible to others''
-(Vygotsky, 1987). It has been argued that important words or grammatical
-affixes may be dropped in inner speech (Vygotsky, 1987) or even that the
-phonological form or representation of inner words may be incomplete
-(Sokolov, 1972; Dell \& Repka, 1992). MacKay (1992) stated that inner
-speech is nonarticulatory and nonauditory and that ``Even the lowest
-level units for inner speech are highly abstract'' (p.122).
+\protect\hyperlink{ref-zivin_development_1979}{1979}). The nature of
+inner speech is still a matter of theoretical debate (for a review, see
+Perrone-Bertolotti, Rapin, Lachaux, Baciu, \& Lœvenbruck,
+\protect\hyperlink{ref-Perrone-Bertolotti2014}{2014}). Two opposing
+views have been proposed in the literature: the \emph{Abstraction view}
+and the \emph{Motor Simulation view}. The \emph{Abstraction view}
+describes inner speech as unconcerned with articulatory or auditory
+simulations and as operating on an amodal level. It has been described
+as ``condensed, abbreviated, disconnected, fragmented, and
+incomprehensible to others'' (Vygotsky,
+\protect\hyperlink{ref-vygotsky_collected_1987}{1987}). It has been
+argued that important words or grammatical affixes may be dropped in
+inner speech (Vygotsky,
+\protect\hyperlink{ref-vygotsky_collected_1987}{1987}) or even that the
+phonological form or representation of inner words may be incomplete (G.
+S. Dell \& Repka, \protect\hyperlink{ref-dell_errors_1992}{1992};
+Sokolov, \protect\hyperlink{ref-sokolov_inner_1972}{1972}). MacKay
+(\protect\hyperlink{ref-mackay_constraints_1992}{1992}) stated that
+inner speech is nonarticulatory and nonauditory and that ``Even the
+lowest level units for inner speech are highly abstract'' (p.122).
 
-In contrast with this Abstraction view, the physicalist or embodied view
-considers inner speech production as mental simulation of overt speech
-production. As such, it can be viewed as similar to overt speech
-production, except that the motor execution process is blocked and no
-sound is produced (Grèzes \& Decety, 2001; Postma \& Noordanus, 1996).
-Under this Motor Simulation view, a continuum exists between overt and
-covert speech, in line with the continuum drawn by Decety and Jeannerod
-(1996) between imagined and actual actions. This hypoth- esis has led
-certain authors to claim that inner speech by essence should share
-features with speech motor actions (Feinberg, 1978; Jones \& Fernyhough,
-2007). The Motor Simulation view is supported by several findings.
-Firstly, covert and overt speech have comparable physiological
-correlates: for instance, measurements of speaking rate (Landauer, 1962;
-Netsell, Ashley, \& Bakker, 2010) and respiratory rate (Conrad \&
-Schönle, 1979) are similar in both. A prediction of the Motor Simulation
-view is that the speech motor system should be recruited during inner
-speech. Subtle muscle activity has been detected in the speech
-musculature using electromyography (EMG) during verbal mental imagery,
-silent reading, silent recitation (Jacobson, 1931; Sokolov, 1972;
-Livesay, Liebke, Samaras, \& Stanley, 1996; McGuigan \& Dollins, 1989),
-and during auditory verbal hallucination in patients with schizophrenia
-(Rapin, Dohen, Polosan, Perrier, \& L \& venbruck, 2013). Secondly, it
-has been shown that covert speech production involves a similar cerebral
-network as that of overt speech production. Covert and overt speech both
-recruit essential language areas in the left hemisphere (for a review,
-see Perrone- Bertolotti et al., 2014). However, there are differences.
-Consistent with the Motor Simulation view and the notion of a continuum
-between covert and overt speech, overt speech is associated with more
-activity in motor and premotor areas than inner speech (e.g., Palmer et
-al., 2001). This can be related to the absence of articulatory movements
-during inner verbal production. In a reciprocal way, inner speech
-involves cerebral areas that are not activated during overt speech
-(Basho, Palmer, Rubio, Wulfeck, \& Müller, 2007). Some of these
-activations (cingulate gyrus and superior rostral frontal cortex) can be
-attributed to the inhibition of overt responses.
+In contrast with this \emph{Abstraction view}, the physicalist or
+embodied view considers inner speech production as mental simulation of
+overt speech production. As such, it can be viewed as similar to overt
+speech production, except that the motor execution process is blocked
+and no sound is produced (Gr�zes \& Decety,
+\protect\hyperlink{ref-grzes_functional_2001}{2001}; Postma \&
+Noordanus, \protect\hyperlink{ref-postma_production_1996}{1996}). Under
+this \emph{Motor Simulation view}, a continuum exists between overt and
+covert speech, in line with the continuum drawn by Decety \& Jeannerod
+(\protect\hyperlink{ref-decety_mentally_1996}{1996}) between imagined
+and actual actions. This hypothesis has led certain authors to claim
+that inner speech by essence should share features with speech motor
+actions (Feinberg,
+\protect\hyperlink{ref-feinberg_efference_1978}{1978}; Jones \&
+Fernyhough, \protect\hyperlink{ref-Jones2007}{2007}). The \emph{Motor
+Simulation view} is supported by several findings. First, covert and
+overt speech have comparable physiological correlates: for instance,
+measurements of speaking rate(Landauer, 1962) and respiratory rate (B.
+Conrad \& Schönle, \protect\hyperlink{ref-conrad_speech_1979}{1979}) are
+similar in both. A prediction of the \emph{Motor Simulation view} is
+that the speech motor system should be recruited during inner speech.
+Subtle muscle activity has been detected in the speech musculature using
+electromyography (EMG) during verbal mental imagery, silent reading,
+silent recitation (Jacobson,
+\protect\hyperlink{ref-jacobson_electrical_1931}{1931}; Livesay, Liebke,
+Samaras, \& Stanley, \protect\hyperlink{ref-livesay_covert_1996}{1996};
+McGuigan \& Dollins,
+\protect\hyperlink{ref-mcguigan_patterns_1989}{1989}; Sokolov,
+\protect\hyperlink{ref-sokolov_inner_1972}{1972}), and during auditory
+verbal hallucination in patients with schizophrenia (Rapin, Dohen,
+Polosan, Perrier, \& Lœvenbruck,
+\protect\hyperlink{ref-Rapin2013}{2013}). Second, it has been shown that
+covert speech production involves a similar cerebral network as that of
+overt speech production. Covert and overt speech both recruit essential
+language areas in the left hemisphere (for a review, see
+Perrone-Bertolotti et al.,
+\protect\hyperlink{ref-Perrone-Bertolotti2014}{2014}). However, there
+are differences. Consistent with the \emph{Motor Simulation view} and
+the notion of a continuum between covert and overt speech, overt speech
+is associated with more activity in motor and premotor areas than inner
+speech (e.g., Palmer et al.,
+\protect\hyperlink{ref-palmer_event-related_2001}{2001}). This can be
+related to the absence of articulatory movements during inner verbal
+production. In a reciprocal way, inner speech involves cerebral areas
+that are not activated during overt speech (Basho, Palmer, Rubio,
+Wulfeck, \& Müller, \protect\hyperlink{ref-basho_effects_2007}{2007}).
+Some of these activations (cingulate gyrus and superior rostral frontal
+cortex) can be attributed to the inhibition of overt responses.
 
 These findings suggest that the processes involved in overt speech
 include those required for inner speech (except for inhibition). Several
 studies in patients with aphasia support this view: overt speech loss
 can either be associated with an impairment in inner speech (e.g.,
-Levine, Calvanio, \& Popovics, 1982; Martin \& Caramazza, 1982) or with
-intact inner speech: only the later phases of speech production
-(execution) being affected by the lesion (Baddeley \& Wilson, 1985;
-Marshall et al., 1985; Vallar \& Cappa, 1987). Geva, Bennett, Warburton,
-and Patterson (2011) have reported a dissociation that goes against this
-view, however. In three patients with chronic post-stroke aphasia (out
-of 27 patients), poorer homophone and rhyme judgement performance was in
-fact observed in covert mode compared with overt mode. A limitation of
-this study, though, was that the task was to detect rhymes in written
-words, which could have been too difficult for the patients. To over-
-come this limitation, Langland-Hassan, Faries, Richardson, and Dietz
-(2015) have tested aphasia patients with a similar task, using images
-rather than written words. They also found that most patients performed
-better in the overt than in the covert mode. They inferred from these
-results that inner speech might be more demanding in terms of cognitive
-and linguistic load, and that inner speech may be a distinct ability,
-with its own neural substrates. We suggest an alternative interpretation
-to this dissociation. According to our view, rhyme and homophone
-judgements rely on auditory representations of the stimuli (see e.g.,
-Paulesu, Frith, \& Frackowiak, 1993). Overt speech provides a strong
-acoustic output that is fed back to the auditory cortex and can create
-an auditory trace, which can be used to monitor speech. In the covert
-mode, the auditory output is only mentally simulated, and its saliency
-in the auditory system is lesser than in the overt mode. This is in
-accordance with the finding that inner speech is associated with reduced
-sensory cortex activation compared with overt speech (Shuster \&
-Lemieux, 2005). In patients with aphasia, the weakened saliency of
-covert auditory signals may be accentuated for two reasons: first,
-because of impairment in the motor-to-auditory transformation that
-produces the auditory simulation, and second, because of asso- ciated
-auditory deficits. Therefore, according to our view, the reduced
-performance observed in rhyme and homophone judgement tasks in the
-covert compared with the overt mode in brain-injured patients, simply
-indicates a lower saliency of the auditory sensations evoked during
-inner speech compared with the actual auditory sensations fed back
-during overt speech production. In summary, these findings suggest that
-overt and covert speech share common subjective, physiological and
-neural correlates, supporting the claim that inner speech is a motor
-simulation of overt speech.
+Levine, Calvanio, \& Popovics,
+\protect\hyperlink{ref-levine_language_1982}{1982}; Martin \& Caramazza,
+\protect\hyperlink{ref-martin_short-term_1982}{1982}) or with intact
+inner speech: only the later phases of speech production (execution)
+being affected by the lesion (Baddeley \& Wilson,
+\protect\hyperlink{ref-baddeley_phonological_1985}{1985}; Marshall,
+Rappaport, \& Garcia-Bunuel,
+\protect\hyperlink{ref-marshall_self-monitoring_1985}{1985}; Vallar \&
+Cappa, \protect\hyperlink{ref-vallar_articulation_1987}{1987}). Geva,
+Bennett, Warburton, \& Patterson
+(\protect\hyperlink{ref-geva_discrepancy_2011}{2011}) have reported a
+dissociation that goes against this view, however. In three patients
+with chronic post-stroke aphasia (out of 27 patients), poorer homophone
+and rhyme judgement performance was in fact observed in covert mode
+compared with overt mode. A limitation of this study, though, was that
+the task was to detect rhymes in written words, which could have been
+too difficult for the patients. To overcome this limitation,
+Langland-Hassan, Faries, Richardson, \& Dietz
+(\protect\hyperlink{ref-langland-hassan_inner_2015}{2015}) have tested
+aphasia patients with a similar task, using images rather than written
+words. They also found that most patients performed better in the overt
+than in the covert mode. They inferred from these results that inner
+speech might be more demanding in terms of cognitive and linguistic
+load, and that inner speech may be a distinct ability, with its own
+neural substrates. We suggest an alternative interpretation to this
+dissociation. According to our view, rhyme and homophone judgements rely
+on auditory representations of the stimuli (e.g., Paulesu, Frith, \&
+Frackowiak, \protect\hyperlink{ref-paulesu_neural_1993}{1993}). Overt
+speech provides a strong acoustic output that is fed back to the
+auditory cortex and can create an auditory trace, which can be used to
+monitor speech. In the covert mode, the auditory output is only mentally
+simulated, and its saliency in the auditory system is lesser than in the
+overt mode. This is in accordance with the finding that inner speech is
+associated with reduced sensory cortex activation compared with overt
+speech (Shuster \& Lemieux,
+\protect\hyperlink{ref-shuster_fmri_2005}{2005}). In patients with
+aphasia, the weakened saliency of covert auditory signals may be
+accentuated for two reasons: first, because of impairment in the
+motor-to-auditory transformation that produces the auditory simulation,
+and second, because of associated auditory deficits. Therefore,
+according to our view, the reduced performance observed in rhyme and
+homophone judgement tasks in the covert compared with the overt mode in
+brain-injured patients, simply indicates a lower saliency of the
+auditory sensations evoked during inner speech compared with the actual
+auditory sensations fed back during overt speech production. In summary,
+these findings suggest that overt and covert speech share common
+subjective, physiological and neural correlates, supporting the claim
+that inner speech is a motor simulation of overt speech.
 
-However, the Motor Simulation view has been challenged by several
+However, the \emph{Motor Simulation view} has been challenged by several
 experimental results. Examining the properties of errors during the
-production of tongue twisters, Oppenheim and Dell (2010) showed that
-speech errors display a lexical bias in both overt and inner speech.
-According to these researchers, errors also display a phonemic similar-
-ity effect (or articulatory bias), a tendency to exchange phonemes with
-common articulatory features, but this second effect is only observed
-with overt speech or with inner speech accompanied with mouthing. This
-has led Oppenheim and Dell (2010) to claim that inner speech is fully
-specified at the lexical level, but that it is impoverished at lower
-featural (articulatory) levels. This claim, related to the Abstraction
-view, is still debated however, as a phonemic similarity effect has been
-found by Corley, Brocklehurst and Moat (2011). Their findings suggest
-that inner speech is in fact specified at the articulatory level, even
-when there is no intention to articulate words overtly. Other findings
-however, may still challenge the Motor Simulation view. Netsell et al.
-(2010) have examined covert and overt speech in persons who stutter
-(PWS) and typical speakers. They have found that PWS were faster in
-covert than in overt speech while typical speakers presented similar
-overt and covert speech rates. This can be interpreted in favour of the
-Abstraction view, in which inner representations are not fully specified
-at the articulatory level, which would explain why they are not
-disrupted in PWS speech. Altogether, these results suggest that full
-articulatory specification may not always be necessary for inner speech
-to be produced.
+production of tongue twisters, Oppenheim \& Dell
+(\protect\hyperlink{ref-oppenheim_motor_2010}{2010}) showed that speech
+errors display a lexical bias in both overt and inner speech. According
+to these researchers, errors also display a phonemic similarity effect
+(or articulatory bias), a tendency to exchange phonemes with common
+articulatory features, but this second effect is only observed with
+overt speech or with inner speech accompanied with mouthing. This has
+led Oppenheim \& Dell
+(\protect\hyperlink{ref-oppenheim_motor_2010}{2010}) to claim that inner
+speech is fully specified at the lexical level, but that it is
+impoverished at lower featural (articulatory) levels. This claim,
+related to the \emph{Abstraction view}, is still debated however, as a
+phonemic similarity effect has been found by Corley, Brocklehurst, \&
+Moat (\protect\hyperlink{ref-corley_error_2011}{2011}). Their findings
+suggest that inner speech is in fact specified at the articulatory
+level, even when there is no intention to articulate words overtly.
+Other findings however, may still challenge the Motor Simulation view.
+R. Netsell, Ashley, \& Bakker
+(\protect\hyperlink{ref-netsell_inner_2010}{2010}) have examined covert
+and overt speech in persons who stutter (PWS) and typical speakers. They
+have found that PWS were faster in covert than in overt speech while
+typical speakers presented similar overt and covert speech rates. This
+can be interpreted in favour of the \emph{Abstraction view}, in which
+inner representations are not fully specified at the articulatory level,
+which would explain why they are not disrupted in PWS speech.
+Altogether, these results suggest that full articulatory specification
+may not always be necessary for inner speech to be produced.
 
 The aim of this study is to examine the physiological correlates of
 verbal rumination in an attempt to provide new data in the debate
-between motor simulation and abstraction. A prediction of the Motor
-Simulation view is that verbal rumination, as a kind of inner speech,
-should be accompanied with activity in speech-related facial muscles, as
-well as in negative emotion or anxiety-related facial muscles, but
-should not involve non-facial muscles (such as arm muscles).
-Alternatively, the Abstraction view predicts that verbal rumination
-should be associated with an increase in emotion-related facial
-activity, without activity in speech-related muscles and non-facial
-muscles.
+between motor simulation and abstraction. A prediction of the
+\emph{Motor Simulation view} is that verbal rumination, as a kind of
+inner speech, should be accompanied with activity in speech-related
+facial muscles, as well as in negative emotion or anxiety-related facial
+muscles, but should not involve non-facial muscles (such as arm
+muscles). Alternatively, the \emph{Abstraction view} predicts that
+verbal rumination should be associated with an increase in
+emotion-related facial activity, without activity in speech-related
+muscles and non-facial muscles.
 
 There is strong interest in the examination of physiological correlates
 of rumination as traditional assessment of rumination essentially
 consists of self-reported measures. The measurement of rumination as
-conceptualized by Nolen-Hoeksema (1991) was operationalized by the
-development of the Ruminative Response Scale (RRS), which is a subscale
-of the response style questionnaire (Nolen-Hoeksema \& Morrow, 1991).
-The RRS consists of 22 items that describe responses to dysphoric mood
-that are self-focused, symptom-focused, and focused on the causes and
-consequences of one's mood. Based on this scale, Treynor, Gonzalez and
-Nolen-Hoeksema (2003) have offered a detailed description of rumina-
-tion styles and more recently, Watkins (2004, 2008) has further
-characterized different modes of rumination. The validity of these
-descriptions is nevertheless based on the hypothesis that individuals
-have direct and reliable access to their internal states. However, self-
-reports increase reconstruction biases (e.g., Brewer, 1986; Conway,
-1990) and it is well known that participants have a very low level of
-awareness of the cognitive processes that underlie and modulate complex
-behaviors (Nisbett \& Wilson, 1977).
+conceptualized by Nolen-Hoeksema
+(\protect\hyperlink{ref-nolen-hoeksema_responses_1991}{1991}) was
+operationalized by the development of the Ruminative Response Scale
+(RRS), which is a subscale of the response style questionnaire
+(Nolen-Hoeksema \& Morrow,
+\protect\hyperlink{ref-nolen-hoeksema_prospective_1991}{1991}). The RRS
+consists of 22 items that describe responses to dysphoric mood that are
+self-focused, symptom-focused, and focused on the causes and
+consequences of one's mood. Based on this scale, Treynor, Gonzalez, \&
+Nolen-Hoeksema (\protect\hyperlink{ref-treynor_rumination_2003}{2003})
+have offered a detailed description of rumination styles and more
+recently, Watkins (\protect\hyperlink{ref-Watkins2008}{2008}) has
+further characterized different modes of rumination. The validity of
+these descriptions is nevertheless based on the hypothesis that
+individuals have direct and reliable access to their internal states.
+However, self-reports increase reconstruction biases (e.g., Brewer,
+\protect\hyperlink{ref-rubin_what_1986}{1986}; Conway,
+\protect\hyperlink{ref-conway_autobiographical_1990}{1990}) and it is
+well known that participants have a very low level of awareness of the
+cognitive processes that underlie and modulate complex behaviors
+(Nisbett \& Wilson, \protect\hyperlink{ref-nisbett_telling_1977}{1977}).
 
-In order to overcome these difficulties, some authors have at- tempted
-to quantify state rumination and trait rumination more objectively, by
+In order to overcome these difficulties, some authors have attempted to
+quantify state rumination and trait rumination more objectively, by
 recording physiological or neuroanatomical correlates of rumination (for
-a review, see Siegle \& Thayer, 2003). Peripheral physiological
-manifestations (e.g., pupil dilation, blood pressure, cardiac rhythm,
-cardiac variability) have been examined during induced or chronic
-rumination. Vickers and Vogeltanz-Holm (2003) have observed an increase
-in systolic blood pressure after rumination induction, suggesting the
-involvement of the autonomic nervous system in rumination. Moreover,
-galvanic skin response has shown to be increased after a rumination
-induction, in highly anxious women (Sigmon, Dorhofer, Rohan, \& Boulard,
-2000). According to Siegle and Thayer (2003), disrupted autonomic
-activity could provide a reliable physiological correlate of rumination.
-In this line, Key, Campbell, Bacon, and Gerin (2008) have observed a
-diminution of the high- frequency component of heart rate variability
-(HF-HRV) after rumina- tion induction in people with a low tendency to
-ruminate (see also Woody, McGeary, \& Gibb, 2014). A consistent link
-between persevera- tive cognition and decreased HRV was also found in a
-meta-analysis conducted by Ottaviani et al. (2015). Based on these
-positive results and on suggestions that labial EMG activity may
-accompany inner speech and therefore rumination, our aim was to examine
-facial EMG as a potential correlate of rumination and HRV as an index to
-examine concurrent validity.
+a review, see Siegle \& Thayer,
+\protect\hyperlink{ref-papageorgiou_physiological_2003}{2003}).
+Peripheral physiological manifestations (e.g., pupil dilation, blood
+pressure, cardiac rhythm, cardiac variability) have been examined during
+induced or chronic rumination. Vickers \& Vogeltanz-Holm
+(\protect\hyperlink{ref-vickers_effects_2003}{2003}) have observed an
+increase in systolic blood pressure after rumination induction,
+suggesting the involvement of the autonomic nervous system in
+rumination. Moreover, galvanic skin response has shown to be increased
+after a rumination induction, in highly anxious women (Sigmon, Dorhofer,
+Rohan, \& Boulard, \protect\hyperlink{ref-sigmon_impact_2000}{2000}).
+According to Siegle \& Thayer
+(\protect\hyperlink{ref-papageorgiou_physiological_2003}{2003}),
+disrupted autonomic activity could provide a reliable physiological
+correlate of rumination. In this line, Key, Campbell, Bacon, \& Gerin
+(\protect\hyperlink{ref-Key2008}{2008}) have observed a diminution of
+the high-frequency component of heart rate variability (HF-HRV) after
+rumination induction in people with a low tendency to ruminate (see also
+Woody, McGeary, \& Gibb,
+\protect\hyperlink{ref-woody_brooding_2014}{2014}). A consistent link
+between perseverative cognition and decreased HRV was also found in a
+meta-analysis conducted by Ottaviani et al.
+(\protect\hyperlink{ref-Ottaviani2015}{2015}). Based on these positive
+results and on suggestions that labial EMG activity may accompany inner
+speech and therefore rumination, our aim was to examine facial EMG as a
+potential correlate of rumination and HRV as an index to examine
+concurrent validity.
 
 In addition to labial muscular activity, we also recorded forehead
-muscular activity (i.e., frontalis muscle) because of its implication in
-prototypical expression of sadness (e.g., Ekman, 2003; Kohler et al.,
-2004), reactions to unpleasant stimuli (Jäncke, Vogt, Musial, Lutz, \&
-Kalveram, 1996), and anxiety or negative emotional state (Conrad \&
-Roth, 2007)\footnote{The corrugator supercilii was another potential
-  site, as it is sensitive to negative emotions. However, it has been
-  claimed to be mostly activated for strong emotions such as
-  fear/terror, anger/rage and sadness/grief (Ekman \& Friesen, 1978;
-  Sumitsuji, Matsumoto, Tanaka, Kashiwagi, \& Kaneko, 1967). The
+muscular activity (i.e., \emph{frontalis} muscle) because of its
+implication in prototypical expression of sadness (e.g., Ekman \&
+Friesen, \protect\hyperlink{ref-ekman_facial_1978}{1978}; Kohler et al.,
+\protect\hyperlink{ref-kohler_differences_2004}{2004}), reactions to
+unpleasant stimuli (Jäncke, Vogt, Musial, Lutz, \& Kalveram,
+\protect\hyperlink{ref-Jancke1996}{1996}), and anxiety or negative
+emotional state (A. Conrad \& Roth,
+\protect\hyperlink{ref-conrad_muscle_2007}{2007})\footnote{The
+  \emph{corrugator supercilii} was another potential site, as it is
+  sensitive to negative emotions. However, it has been claimed to be
+  mostly activated for strong emotions such as fear/terror, anger/rage
+  and sadness/grief (Ekman \& Friesen,
+  \protect\hyperlink{ref-ekman_facial_1978}{1978}; Sumitsuji, Matsumoto,
+  Tanaka, Kashiwagi, \& Kaneko,
+  \protect\hyperlink{ref-sumitsuji_electromyographic_1967}{1967}). The
   rumination induction used in this study was designed to have
-  participants self-reflect and brood over their failure at the IQ-
+  participants self-reflect and brood over their failure at the I.Q.
   test. It was not meant to induce such strong emotions. Several studies
-  have reported increased activity in the frontalis muscle at rest in
-  anxious or generalized anxiety disorder patients (for a review see
-  Conrad \& Roth, 2007). We expected the type of emotional state induced
-  by rumination to be closer to anxiety or worry than to strong emotions
-  like fear, anger or grief. It was therefore more appropriate to record
-  non-speech facial activity in the frontalis rather than in the
-  corrugator.}. Our hypothesis was that frontalis activity could be an
-accurate electromyographic correlate of induced rumination, as a
-negatively valenced mental process.
+  have reported increased activity in the \emph{frontalis} muscle at
+  rest in anxious or generalized anxiety disorder patients (for a
+  review, see A. Conrad \& Roth,
+  \protect\hyperlink{ref-conrad_muscle_2007}{2007}). We expected the
+  type of emotional state induced by rumination to be closer to anxiety
+  or worry than to strong emotions like fear, anger or grief. It was
+  therefore more appropriate to record non-speech facial activity in the
+  \emph{frontalis} rather than in the \emph{corrugator.}}. Our
+hypothesis was that \emph{frontalis} activity could be an accurate
+electromyographic correlate of induced rumination, as a negatively
+valenced mental process.
 
 In this study, we were also interested in the effects of relaxation on
 induced rumination. Using a relaxation procedure targeted on muscles
@@ -1310,30 +1396,33 @@ of the link between inner speech (verbal rumination) and orofacial
 muscle activity. If verbal rumination is a kind of action, then its
 production should be modulated in return by the effects of relaxation on
 speech effectors. This idea is supported by the results of (among
-others) Cefidekhanie, Savariaux, Sato and Schwartz (2014), who have
+others) Cefidekhanie, Savariaux, Sato, \& Schwartz
+(\protect\hyperlink{ref-cefidekhanie_interaction_2014}{2014}), who have
 observed substantial perturbations of inner speech production while
 participants had to realize forced movements of the articulators.
 
-In summary, the current study aimed at evaluating the Motor Simulation
-view and the Abstraction view by using objective and subjective measures
-of verbal rumination. To test the involvement of the orofacial motor
-system in verbal rumination, we used two basic approaches. In the first
-approach, we induced verbal rumination and examined concurrent changes
-in facial muscle activity (Experiment 1). In the second approach, we
-examined whether orofacial relaxation would reduce verbal rumination
-levels (Experiment 2). More specifi- cally, in Experiment 1, we aimed to
-provide an objective assessment of verbal rumination using quantitative
-physiological measures. Thus, we used EMG recordings of muscle activity
-during rumination, focusing on the comparison of speech-related (i.e.,
-two lip muscles − orbicularis oris superior and orbicularis oris
-inferior) and speech-unrelated (i.e., forehead −frontalis- and forearm −
-flexor carpi radialis) muscles. Under the Motor Simulation view, an
-increase in lip and forehead EMG activity should be observed after
-rumination induction, with no change in forearm EMG activity, associated
-with an increase in self-reported rumination. Alternatively, under the
-Abstraction view, an increase in forehead activity should be observed,
-associated with an increase in self-reported rumination, and no changes
-in either lip or forearm activity should be noted.
+In summary, the current study aimed at evaluating the \emph{Motor
+Simulation view} and the \emph{Abstraction view} by using objective and
+subjective measures of verbal rumination. To test the involvement of the
+orofacial motor system in verbal rumination, we used two basic
+approaches. In the first approach, we induced verbal rumination and
+examined concurrent changes in facial muscle activity (Experiment 1). In
+the second approach, we examined whether orofacial relaxation would
+reduce verbal rumination levels (Experiment 2). More specifically, in
+Experiment 1, we aimed to provide an objective assessment of verbal
+rumination using quantitative physiological measures. Thus, we used EMG
+recordings of muscle activity during rumination, focusing on the
+comparison of speech-related (i.e., two lip muscles − \emph{orbicularis
+oris superior} and \emph{orbicularis oris inferior}) and
+speech-unrelated (i.e., forehead −\emph{frontalis}- and forearm −
+\emph{flexor carpi radialis}) muscles. Under the \emph{Motor Simulation
+view}, an increase in lip and forehead EMG activity should be observed
+after rumination induction, with no change in forearm EMG activity,
+associated with an increase in self-reported rumination. Alternatively,
+under the \emph{Abstraction view}, an increase in forehead activity
+should be observed, associated with an increase in self-reported
+rumination, and no changes in either lip or forearm activity should be
+noted.
 
 In Experiment 2, in order to assess the reciprocity of the rumination
 and orofacial motor activity relationship, we evaluated the effects of
@@ -1341,34 +1430,36 @@ orofacial relaxation on rumination. More specifically, we compared three
 kinds of relaxation: i) Orofacial Relaxation (i.e., lip muscles), ii)
 Arm Relaxation (i.e., to differentiate effects specific to
 speech-related muscle relaxation) and iii) Story Relaxation (i.e., to
-differentiate effects specific to attentional distraction). If the Motor
-simulation view is correct, we predicted a larger decrease of lip and
-forehead muscle activity after an Orofacial Relaxation than after an Arm
-Relaxation (associated with a larger decrease in self-reported
-rumination), which should also be larger than after listening to a
-story. We also predicted that forearm activity should remain stable
-across the three conditions (i.e., should not decrease after
-relaxation). Alternatively, if the Abstraction view is correct, we
-predicted that none of the relaxation conditions should have an effect
-on lip or arm activity, because none of these should have increased
-after induction. However, we expected to observe a decrease in forehead
-activity and self-reported rumination after Orofacial or Arm relaxation,
-this decrease being larger than after listening to a Story. Importantly,
-we predicted that, under the Abstraction View no superiority of the
-Orofacial relaxation should be observed over the Arm relaxation.
+differentiate effects specific to attentional distraction). If the
+\emph{Motor simulation view} is correct, we predicted a larger decrease
+of lip and forehead muscle activity after an Orofacial Relaxation than
+after an Arm Relaxation (associated with a larger decrease in
+self-reported rumination), which should also be larger than after
+listening to a story. We also predicted that forearm activity should
+remain stable across the three conditions (i.e., should not decrease
+after relaxation). Alternatively, if the \emph{Abstraction view} is
+correct, we predicted that none of the relaxation conditions should have
+an effect on lip or arm activity, because none of these should have
+increased after induction. However, we expected to observe a decrease in
+forehead activity and self-reported rumination after Orofacial or Arm
+relaxation, this decrease being larger than after listening to a Story.
+Importantly, we predicted that, under the \emph{Abstraction View} no
+superiority of the Orofacial relaxation should be observed over the Arm
+relaxation.
 
 \section{Methods}\label{methods}
 
 \subsection{Participants}\label{participants}
 
 Because of the higher prevalence of rumination in women than in men (see
-Johnson \& Whisman, 2013; for a recent meta-analysis), we chose to
-include female participants only. Seventy-two female under- graduate
-students from Université Grenoble Alpes, native French speaking,
-participated in our study. One participant presenting aberrant data
-(probably due to inadequate sensor sticking) was removed from analyses.
-Final sample consisted of seventy-one undergraduate female students
-(Mage = 20.58, SDage = 4.99). They were recruited by e-mail diffusion
+Johnson \& Whisman, \protect\hyperlink{ref-Johnson2013}{2013}, for a
+recent meta-analysis), we chose to include female participants only.
+Seventy-two female undergraduate students from Univ. Grenoble Alpes,
+native French speaking, participated in our study. One participant
+presenting aberrant data (probably due to inadequate sensor sticking)
+was removed from analyses. Final sample consisted of seventy-one
+undergraduate female students (M\textsubscript{age} = 20.58,
+SD\textsubscript{age} = 4.99). They were recruited by e-mail diffusion
 lists and participated in the experiment for course credits. They did
 not know the goals of the study. The cover story presented the research
 as aiming at validating a new I.Q. test, more sensitive to personality
@@ -1379,54 +1470,55 @@ been approved by the local ethical committee (CERNI, N° 2015-03-03-61).
 
 \subsection{Material}\label{material}
 
-\ldots{}
-
-EMG signals were detected with TrignoTM Mini sensors (Delsys Inc.) at a
-sampling rate of 1926 samples/s with a band pass of 20 Hz (12 dB/ oct)
-to 450 Hz (24 dB/oct) and were amplified by a TrignoTM 16-channel
-wireless EMG system (Delsys Inc.). The sensors consisted of two 5 mm
-long, 1 mm wide parallel bars, spaced by 10 mm, which were attached to
-the skin using double-sided adhesive interfaces. The skin was cleaned by
-gently scrubbing it with 70\% isopropynol alcohol. EMG signals were then
-synchronized using the PowerLab 16/35 (ADInstrument, PL3516). Raw data
-from the EMG sensors were then resampled at a rate of 1 kHz and stored
-in digital format using Labchart 8 software (ADInstrument, MLU60/8). As
-shown in Fig. 1, bipolar surface EMG recordings were obtained from two
-speech-related labial muscles: orbicularis oris superior (OOS) and
-orbicularis oris inferior (OOI), as well as from one non speech- related
-but negative-affect-related facial muscle: frontalis (FRO) and from one
-non-facial and non speech-related muscle: flexor carpi radialis (FCR) on
-the non-dominant forearm. The latter pair of electrodes was used to
-check whether the rumination induction would cause any muscle
-contraction, outside of the facial muscles. The same sensor layout was
-used for all participants. Asymmetrical movements of the face have been
-shown in speech and emotional expression. As reviewed in Everdell,
-Marsh, Yurick, Munhall, and Paré (2007), the dominant side of the face
-displays larger movements than the left during speech production,
-whereas the non-dominant side is more emotionally expressive. To
-optimise the capture of speech-related activity, the OOS and OOI sensors
-were therefore positioned on the dominant side of the body (i.e.~the
-right side for right-handed participants). To optimise the capture of
-emotion-related activity, the FRO sensor was positioned on the
-non-dominant side. To minimise the presence of involuntary manual
+EMG signals were detected with Trigno\textsuperscript{TM} Mini sensors
+(Delsys Inc.) at a sampling rate of 1926 samples/s with a band pass of
+20 Hz (12 dB/ oct) to 450 Hz (24 dB/oct) and were amplified by a
+Trigno\textsuperscript{TM} 16-channel wireless EMG system (Delsys Inc.).
+The sensors consisted of two 5 mm long, 1 mm wide parallel bars, spaced
+by 10 mm, which were attached to the skin using double-sided adhesive
+interfaces. The skin was cleaned by gently scrubbing it with 70\%
+isopropynol alcohol. EMG signals were then synchronized using the
+PowerLab 16/35 (ADInstrument, PL3516). Raw data from the EMG sensors
+were then resampled at a rate of 1 kHz and stored in digital format
+using Labchart 8 software (ADInstrument, MLU60/8). As shown in Figure
+\ref{fig:emgface}, bipolar surface EMG recordings were obtained from two
+speech-related labial muscles: \emph{orbicularis oris superior} (OOS)
+and \emph{orbicularis oris inferior} (OOI), as well as from one non
+speech-related but negative-affect-related facial muscle:
+\emph{frontalis} (FRO) and from one non-facial and non speech-related
+muscle: \emph{flexor carpi radialis} (FCR) on the non-dominant forearm.
+The latter pair of electrodes was used to check whether the rumination
+induction would cause any muscle contraction, outside of the facial
+muscles. The same sensor layout was used for all participants.
+Asymmetrical movements of the face have been shown in speech and
+emotional expression. As reviewed in Everdell, Marsh, Yurick, Munhall,
+\& Paré (\protect\hyperlink{ref-everdell_gaze_2007}{2007}), the dominant
+side of the face displays larger movements than the left during speech
+production, whereas the non-dominant side is more emotionally
+expressive. To optimise the capture of speech-related activity, the OOS
+and OOI sensors were therefore positioned on the dominant side of the
+body (i.e.~the right side for right-handed participants). To optimise
+the capture of emotion-related activity, the FRO sensor was positioned
+on the non-dominant side. To minimise the presence of involuntary manual
 gestures during the recording, the FCR sensor was positioned on the
 non-dominant side. Each pair of electrodes was placed parallel with the
 direction of the muscle fibers, at a position distant from the
 innervation zones and the muscle tendon interface, following the
-recommendations of DeLuca (1997). The experiment was video-monitored
-using a Sony HDR-CX240E video camera to track any visible facial
-movements. A microphone was placed 20--30 cm away from the participant's
-lips to record any faint vocal production during rumination. Stimuli
-were displayed with E-prime 2.0 (\url{http://www}. pstnet.com) on a
-19-inch color monitor.
+recommendations of De Luca
+(\protect\hyperlink{ref-de_luca_use_1997}{1997}). The experiment was
+video-monitored using a Sony HDR-CX240E video camera to track any
+visible facial movements. A microphone was placed 20--30 cm away from
+the participant's lips to record any faint vocal production during
+rumination. Stimuli were displayed with E-prime 2.0
+(\url{http://www.pstnet.com}) on a 19-inch color monitor.
 
 \begin{figure}
 
-{\centering \includegraphics[width=1\linewidth]{assets/face_emg} 
+{\centering \includegraphics[width=0.75\linewidth]{assets/face_emg} 
 
 }
 
-\caption{Facial muscles of interest. Two speech-related labial muscles: orbicularis oris superior (OOS) and orbicularis oris inferior (OOI); as well as one non speech-related but sadness-related facial muscle: frontalis (Front).}\label{fig:unnamed-chunk-1}
+\caption{Facial muscles of interest. Two speech-related labial muscles: \textit{orbicularis oris superior} (OOS) and \textit{orbicularis oris inferior} (OOI); as well as one non speech-related but sadness-related facial muscle: \textit{frontalis} (FRO).}\label{fig:emgface}
 \end{figure}
 
 \subsection{Procedure}\label{procedure}
@@ -1435,42 +1527,48 @@ This study consisted of two parts. The first part was carried out a week
 before the EMG experiment and consisted in checking the inclusion
 criteria. We checked that participants did not exceed a threshold on a
 depressive symptoms scale. This was assessed using the French version of
-the Center for Epidemiologic Studies Depression scale (CES-D; Fuhrer \&
-Rouillon, 1989), which evaluates the level of depres- sive symptom in
-subclinical population. We also collected information about any
-potential speech, neurologic, neuromuscular or cardiac disorders and
-about academic curriculum. Finally, the tendency to ruminate (i.e.,
-trait rumination) in daily life was evaluated using the French version
-of the Mini-CERTS (Cambridge-Exeter Repetitive Thought Scale; Douilliez,
-Philippot, Heeren, Watkins, \& Barnard, 2014). The second part included
-two EMG interdependent experiments related to Rumination Induction and
-Rumination Reduction by Muscle Relaxation. Specifically, Experiment 1
-consisted of acquiring physiolo- gical EMG data during rest and induced
-rumination and Experiment 2 consisted of acquiring physiological EMG
-data after different kinds of relaxation (see below).
+the \emph{Center for Epidemiologic Studies Depression} scale (CES-D,
+Fuhrer \& Rouillon, \protect\hyperlink{ref-fuhrer_version_1989}{1989}),
+which evaluates the level of depressive symptom in subclinical
+population. We also collected information about any potential speech,
+neurologic, neuromuscular or cardiac disorders and about academic
+curriculum. Finally, the tendency to ruminate (i.e., trait rumination)
+in daily life was evaluated using the French version of the Mini-CERTS
+(Cambridge-Exeter Repetitive Thought Scale, Douilliez, Philippot,
+Heeren, Watkins, \& Barnard,
+\protect\hyperlink{ref-Douilliez2012}{2012}). The second part included
+two EMG interdependent experiments related to \emph{Rumination
+Induction} and \emph{Rumination Reduction by Muscle Relaxation}.
+Specifically, Experiment 1 consisted of acquiring physiological EMG data
+during rest and induced rumination and Experiment 2 consisted of
+acquiring physiological EMG data after different kinds of relaxation
+(see below).
 
 During both Experiment 1 and Experiment 2, momentary rumination was
 assessed using four different Visual Analogue Scales (VAS, the first two
-being adapted and translated to French from Huffziger, Ebner- Priemer,
-Koudela, Reinhard, \& Kuehner, 2012) rated from 0 to 100: i) ``At this
-moment, I am thinking about my feelings'' (referred to as VAS
-``Feelings''), ii) ``At this moment, I am thinking about my problems''
-(referred to as VAS ``Problems''), iii) ``At this moment, I am brooding
-about negative things'' (referred to as VAS ``Brooding'') and iv) ``At
-this moment, I am focused on myself'' (referred to as VAS ``Focused'').
+being adapted and translated to French from Huffziger, Ebner-Priemer,
+Koudela, Reinhard, \& Kuehner,
+\protect\hyperlink{ref-Huffziger2012}{2012}) rated from 0 to 100: i)
+``At this moment, I am thinking about my feelings'' (referred to as VAS
+``\emph{Feelings}''), ii) ``At this moment, I am thinking about my
+problems'' (referred to as VAS ``\emph{Problems}''), iii) ``At this
+moment, I am brooding about negative things'' (referred to as VAS
+``\emph{Brooding}'') and iv) ``At this moment, I am focused on myself''
+(referred to as VAS ``\emph{Focused}'').
 
 \subsubsection{Experiment 1: rumination
 induction}\label{experiment-1-rumination-induction}
 
 Participants were seated in front of a computer screen in a comfortable
-and quiet room. EMG sensors were positioned as explained above (see Fig.
-1). Before the rumination induction, each participant underwent a
-non-specific relaxation session (i.e., without targeting specific
-muscles) in order to minimize inter-individual initial thymic
-variability (approximate duration ∼330 s). Immediately after, partici-
-pants were instructed to remain silent and not to move for one minute to
-carry out EMG ``baseline'' measurements. Then, participants' initial
-level of rumination was assessed using the four VASs.
+and quiet room. EMG sensors were positioned as explained above (see
+Figure \ref{fig:emgface}). Before the rumination induction, each
+participant underwent a non-specific relaxation session (i.e., without
+targeting specific muscles) in order to minimize inter-individual
+initial thymic variability (approximate duration ∼330 s). Immediately
+after, participants were instructed to remain silent and not to move for
+one minute to carry out EMG ``baseline'' measurements. Then,
+participants' initial level of rumination was assessed using the four
+VASs.
 
 Subsequently, participants were invited to perform a 15-min I.Q. test,
 which was presented on the computer screen facing them. They were
@@ -1478,28 +1576,31 @@ instructed to correctly respond to three types of I.Q. questions
 (logical, mathematical and spatial-reasoning questions) in a very short
 time (30 s). Most of the questions were very difficult, if not
 impossible, to correctly answer in 30 s. We included ten different
-questions for each of the three types of IQ question: ten logical
+questions for each of the three types of I.Q. question: ten logical
 questions (e.g., finding the next number of a Fibonacci sequence), ten
 mathematical questions (e.g., ``What is the result of the following
 calculus: (30/165) − (70/ 66)'') and ten spatial-reasoning questions
 (e.g., finding the next figure of a series). Forced-failure tasks have
 extensively been employed in the literature to induce a slightly
-negative mood, ideal for subsequent rumination induction (e.g., LeMoult
-\& Joormann, 2014; Van Randenborgh, Hüffmeier, LeMoult, \& Joormann,
-2010).
+negative mood, ideal for subsequent rumination induction (e.g., Lemoult
+\& Joormann, \protect\hyperlink{ref-Lemoult2014}{2014}; Randenborgh,
+Hüffmeier, LeMoult, \& Joormann,
+\protect\hyperlink{ref-VanRandenborgh2010}{2010}).
 
 After the I.Q. test, participants were invited to reflect upon the
 causes and consequences of their feelings, during five minutes (rumina-
 tion induction). This method is based on the induction paradigm
-developed by Nolen-Hoeksema and Morrow (1993). The classical paradigm
-uses a series of prompts. In order to avoid the potential confound in
-muscle activity induced by silent reading, we did not use the full
-paradigm. We simply summarised the series of prompts by one typical
-induction sentence. During this period, participants were asked to
-remain silent and not to move, while EMG recordings were carried out
-(i.e., EMG Post-induction measures). EMG signals of rumination were
-collected during the last minute of this period. Finally, partici- pants
-were instructed to self-report momentary rumination on the four VASs.
+developed by Nolen-Hoeksema \& Morrow
+(\protect\hyperlink{ref-nolen-hoeksema_effects_1993}{1993}). The
+classical paradigm uses a series of prompts. In order to avoid the
+potential confound in muscle activity induced by silent reading, we did
+not use the full paradigm. We simply summarised the series of prompts by
+one typical induction sentence. During this period, participants were
+asked to remain silent and not to move, while EMG recordings were
+carried out (i.e., EMG Post-induction measures). EMG signals of
+rumination were collected during the last minute of this period.
+Finally, participants were instructed to self-report momentary
+rumination on the four VASs.
 
 \subsubsection{Experiment 2: rumination reduction by
 relaxation}\label{experiment-2-rumination-reduction-by-relaxation}
@@ -1507,17 +1608,17 @@ relaxation}\label{experiment-2-rumination-reduction-by-relaxation}
 After Experiment 1, participants were randomly allocated to one of three
 groups. In the first group, participants listened to a pre-recorded
 relaxation session that was focused on orofacial speech-related muscles
-(``Orofacial Relaxation'' condition). In the second group, relaxation
-was focused on the arm muscles (``Arm Relaxation'' condition). In the
-third group, participants simply listened to a story, read by the same
-person, for an equivalent duration (``Story'' condition, detailed
-content of the story can be found in the Supplementary Materials, in
-French). In summary, the first condition allowed us to evaluate the
-effects of targeted speech muscle relaxation on rumination. The second
-condition allowed evaluating the effects of a non-orofacial relaxation
-(i.e., speech- unrelated muscles) while the third condition allowed
-controlling for effects of attentional distraction during relaxation
-listening.
+(``\emph{Orofacial Relaxation}'' condition). In the second group,
+relaxation was focused on the arm muscles (``\emph{Arm Relaxation}''
+condition). In the third group, participants simply listened to a story,
+read by the same person, for an equivalent duration (``\emph{Story}''
+condition, detailed content of the story can be found in the
+\protect\hyperlink{suppCH3}{supplementary materials}, in French). In
+summary, the first condition allowed us to evaluate the effects of
+targeted speech muscle relaxation on rumination. The second condition
+allowed evaluating the effects of a non-orofacial relaxation (i.e.,
+speech-unrelated muscles) while the third condition allowed controlling
+for effects of attentional distraction during relaxation listening.
 
 The speeches associated with the three conditions, relaxation sessions
 and story listening session, were delivered to the participants through
@@ -1537,12 +1638,15 @@ analysis}\label{data-processing-and-analysis}
 
 EMG signal pre-processing was carried out using Labchart 8. The EMG data
 were high-pass filtered using a Finite Impulse Response (FIR) filter at
-a cut-off of 20 Hz, using the Kaiser window method with β = 6. Then,
-output of this first filter was to a low-pass filtered at a cut-off of
-450 Hz (with the same parameters), in order to focus on the 20--450 Hz
-frequency band, following current recommendations for facial EMG studies
-(DeLuca, 1997; DeLuca, Gilmore, Kuznetsov, \& Roy, 2010; Van Boxtel,
-2001).
+a cut-off of 20 Hz, using the Kaiser window method with \(\beta\) = 6.
+Then, output of this first filter was to a low-pass filtered at a
+cut-off of 450 Hz (with the same parameters), in order to focus on the
+20--450 Hz frequency band, following current recommendations for facial
+EMG studies (A. Boxtel,
+\protect\hyperlink{ref-boxtel_optimal_2001}{2001}; De Luca,
+\protect\hyperlink{ref-de_luca_use_1997}{1997}; De Luca, Donald Gilmore,
+Kuznetsov, \& Roy,
+\protect\hyperlink{ref-de_luca_filtering_2010}{2010}).
 
 Although we specifically asked participants to remain silent and not to
 move during EMG data collection, tiny facial movements (such as biting
@@ -1552,24 +1656,25 @@ do this, visual inspection of audio, video, and EMG signal was
 performed. Specifically, for the EMG signals, we compared two methods of
 signal selection. The first one consisted of setting a threshold on the
 absolute value of the EMG signal and portions of signals above this
-threshold were removed. This threshold was empiri- cally chosen using
+threshold were removed. This threshold was empirically chosen using
 visual inspection of a few samples and set to the mean EMG value plus 6
 SDs. The second method consisted of manually removing periods of time
 that included visually obvious bursts of EMG activity, corresponding to
-overt contraction (as in Rapin et al., 2013). Based on samples from a
+overt contraction (as in Rapin, Dohen, Polosan, \& Perrier,
+\protect\hyperlink{ref-rapin_emg_2013}{2013}). Based on samples from a
 few participants, the comparisons between these two methods showed that
 the automatic threshold method was somewhat less sensitive to overt
 movements. Therefore, the second method was used, as it was more
 conservative and less prone to leave data related to irrelevant overt
 movements.
 
-After pre-processing, EMG data were exported from Labchart soft- ware to
+After pre-processing, EMG data were exported from Labchart software to
 Matlab r2014a (Version 8.3.0.532, www.mathworks.fr). For each EMG
 signal, mean values were computed under Matlab, using 200 ms sliding
 windows. The average of these mean values were calculated for each
 recording session (baseline, after induction and after
 relaxation/induction). This provided a score for each muscle of interest
-(OOS, OOI, FCR, FRO) in each Session (Baseline, Post- Induction,
+(OOS, OOI, FCR, FRO) in each Session (Baseline, Post-Induction,
 Post-Relaxation) for each participant\footnote{Because of constraints
   attributable to the design of our experiment, we were not able to
   perform conventional control measures (e.g., time of the day, food
@@ -1578,8 +1683,10 @@ Post-Relaxation) for each participant\footnote{Because of constraints
   analysis time periods (cf.~methodology section). Although recent
   studies suggest that ``ultrashort term'' HRV analysis seems to
   correlate quite well with HRV analysis performed on longer periods of
-  time (Brisinda et al., 2013; Salahuddin, Cho, Gi Jeong,\&Kim, 2007),
-  we cannot exclude that our measurements might be unreliable. For these
+  time (Brisinda et al.,
+  \protect\hyperlink{ref-brisinda_comparison_2013}{2013}; Salahuddin,
+  Cho, Jeong, \& Kim, \protect\hyperlink{ref-Salahuddin2007}{2007}), we
+  cannot exclude that our measurements might be unreliable. For these
   reasons, we chose not to present HRV results in this report and to
   focus on EMG results as well as subjective reports of rumination.}.
 
@@ -1587,46 +1694,51 @@ Post-Relaxation) for each participant\footnote{Because of constraints
 
 Absolute EMG values are not meaningful as muscle activation is never
 null, even in resting conditions, due in part to physiological noise
-(Tassinary, Cacioppo, \& Vanman, 2007). In addition, there are inter-
-individual variations in the amount of EMG activity in the baseline. To
-normalise for baseline activity across participants, we used a
-differential measure and expressed EMG amplitude as a percentage of
-baseline level (Experiment 1) or of post-induction level (Experiment 2).
+(Tassinary, Cacioppo, \& Vanman,
+\protect\hyperlink{ref-berntson_skeletomotor_2007}{2007}). In addition,
+there are inter-individual variations in the amount of EMG activity in
+the baseline. To normalise for baseline activity across participants, we
+used a differential measure and expressed EMG amplitude as a percentage
+of baseline level (Experiment 1) or of post-induction level (Experiment
+2).
 
 To model EMG amplitude variations in response to the rumination
 induction (Experiment 1) and relaxation (Experiment 2), we used a
 bayesian multivariate regression model with the natural logarithm of the
-EMG amplitude (expressed in\% of baseline level) as an outcome, in an
+EMG amplitude (expressed in \% of baseline level) as an outcome, in an
 intercept-only model (in Experiment 1), and using Condition (Orofacial,
 Arm or Story) as a categorical predictor in Experiment 2. We used the
 same strategy (two multivariate models) to analyse VAS scores (expressed
 in relative changes) along the two experiments.
 
-These analyses were conducted using RStudio (RStudio Team, 2015) and the
-brms package (Bürkner, in press), an R implementation of Bayesian
-multilevel models that employs the probabilistic program- ming language,
-Stan (Carpenter et al., 2016). Stan implements gradient- based Markov
-Chain Monte Carlo (MCMC) algorithms (e.g., Hamilto- nian Monte-Carlo),
-which allow yielding posterior distributions that are straightforward to
-use for interval estimation around all parameters. Two MCMC simulations
-(or ``chains'') were run for each model, including 100,000 iterations, a
-warmup of 10,000 iterations, and a thinning interval of 10. Posterior
-convergence was assessed examining autocorrelation and trace plots, as
-well as the Gelman-Rubin statistic. Fixed effects were estimated via the
-posterior mean and 95\% highest density intervals (HDIs), where an HDI
-interval is the Bayesian analogue of a classical confidence
-interval\footnote{While not suffering from the misunderstandings
-  associated with frequentist confidence intervals (for more details,
-  see for instance Morey, Hoekstra, Rouder, Lee \& Wagenmakers, 2015).}.
+These analyses were conducted using RStudio (RStudio Team, 2018) and the
+\texttt{brms} package (Bürkner, \protect\hyperlink{ref-R-brms}{2018}),
+an \texttt{R} implementation of Bayesian multilevel models that employs
+the probabilistic programming language \texttt{Stan} (Carpenter et al.,
+\protect\hyperlink{ref-carpenter_stan:_2017}{2017}). Stan implements
+gradient-based Markov Chain Monte Carlo (MCMC) algorithms (e.g.,
+Hamiltonian Monte-Carlo), which allow yielding posterior distributions
+that are straightforward to use for interval estimation around all
+parameters. Two MCMC simulations (or ``chains'') were run for each
+model, including 100,000 iterations, a warmup of 10,000 iterations, and
+a thinning interval of 10. Posterior convergence was assessed examining
+autocorrelation and trace plots, as well as the Gelman-Rubin statistic.
+Fixed effects were estimated via the posterior mean and 95\% highest
+density intervals (HDIs), where an HDI interval is the Bayesian analogue
+of a classical confidence interval\footnote{While not suffering from the
+  misunderstandings associated with frequentist confidence intervals
+  (for more details, see for instance Morey, Hoekstra, Rouder, Lee, \&
+  Wagenmakers, \protect\hyperlink{ref-morey_fallacy_2015}{2015}).}.
 
 This strategy allowed us to examine posterior probability distribution
 on each parameter of interest (i.e., effects of session and condition on
 each response variable). When applicable, we also report evidence ratios
-(ERs), computed using the hypothesis function of the brms package
-(Bürkner, in press). These evidence ratios are simply the posterior
-probability under a hypothesis against its alternative (Bürkner, in
-press). We also report summary statistics (mean and HDI) of Cohen's d
-effect sizes, computed from the posterior samples.
+(ERs), computed using the hypothesis function of the \texttt{brms}
+package (Bürkner, \protect\hyperlink{ref-R-brms}{2018}). These evidence
+ratios are simply the posterior probability under a hypothesis against
+its alternative (Bürkner, \protect\hyperlink{ref-R-brms}{2018}). We also
+report summary statistics (mean and HDI) of Cohen's d effect sizes,
+computed from the posterior samples.
 
 \section{Results}\label{results}
 
@@ -1642,10 +1754,11 @@ examined.
 scores}\label{self-reported-rumination-measures-vas-scores}
 
 Results for VAS relative changes based on the multivariate models
-described earlier are shown in the right panel of Fig. 2. Thereafter,
-\(\alpha\) represents the mean of the posterior distribution of the
-intercept. Raw pre- and post-induction scores are provided in
-Supplementary Materials.
+described earlier are shown in the right panel of Figure
+\ref{fig:resultsemgfig1}. Thereafter, \(\alpha\) represents the mean of
+the posterior distribution of the intercept. Raw pre- and post-induction
+scores are provided in the \protect\hyperlink{suppCH3}{supplementary
+materials}.
 
 Mean VAS score on the Feelings scale was slightly lower after induction
 (\(\alpha\) = −5.55, 95\% HDI {[}-10.89, −0.24{]}, d = −0.23, 95\% HDI
@@ -1658,19 +1771,19 @@ scale (\(\alpha\) = −11.63, 95\% HDI {[}-17, −6.07{]}, d = −0.48, 95\%
 HDI {[}-0.72, −0.24{]}). As we examined the fit of the intercept-only
 model, these estimates represent the posterior mean for each muscle.
 
-In the following, we report the mean (indicated by the Greek symbol ρ)
-and the 95\% HDI of the posterior distribution on the correlation
-coefficient (\(\rho\)). Examination of the correlation matrix estimated
-by the multivariate model revealed no apparent correlation neither
-between Feelings and Problems scales (\(\rho\) = −0.01, 95\% HDI
-{[}-0.23, 0.22{]}), nor between Feelings and Brooding (\(\rho\) = 0.08,
-95\% HDI {[}-0.15, 0.30{]}). However, we observed a strong positive
-correlation between Problems and Brooding VASs (\(\rho\) = 0.64, 95\%
-HDI {[}.49, 0.76{]}), a positive correlation between Feelings and
-Focused (\(\rho\) = 0.30, 95\% HDI {[}.08, 0.50{]}), and a negative
-correlation between Problems and Focused (\(\rho\) = −0.30, 95\% HDI
-{[}-0.49, −0.08{]}), as well as between Brooding and Focused (\(\rho\) =
-−0.18, 95\% HDI {[}-0.39, 0.05{]}).
+In the following, we report the mean (indicated by the Greek symbol
+\(\rho\)) and the 95\% HDI of the posterior distribution on the
+correlation coefficient (\(\rho\)). Examination of the correlation
+matrix estimated by the multivariate model revealed no apparent
+correlation neither between Feelings and Problems scales (\(\rho\) =
+−0.01, 95\% HDI {[}-0.23, 0.22{]}), nor between Feelings and Brooding
+(\(\rho\) = 0.08, 95\% HDI {[}-0.15, 0.30{]}). However, we observed a
+strong positive correlation between Problems and Brooding VASs (\(\rho\)
+= 0.64, 95\% HDI {[}.49, 0.76{]}), a positive correlation between
+Feelings and Focused (\(\rho\) = 0.30, 95\% HDI {[}.08, 0.50{]}), and a
+negative correlation between Problems and Focused (\(\rho\) = −0.30,
+95\% HDI {[}-0.49, −0.08{]}), as well as between Brooding and Focused
+(\(\rho\) = −0.18, 95\% HDI {[}-0.39, 0.05{]}).
 
 \begin{figure}
 
@@ -1678,14 +1791,15 @@ correlation between Problems and Focused (\(\rho\) = −0.30, 95\% HDI
 
 }
 
-\caption{Posterior mean (white dots) and 95\% credible intervals for the EMG amplitude (expressed in percentage of baseline level, left panel), and the VAS score (expressed in relative change from baseline, right panel). N = 71 (for each muscle and each VAS). Dashed line represents the null value (i.e., 100).}\label{fig:unnamed-chunk-2}
+\caption{Posterior mean (white dots) and 95\% credible intervals for the EMG amplitude (expressed in percentage of baseline level, left panel), and the VAS score (expressed in relative change from baseline, right panel). N = 71 (for each muscle and each VAS). Dashed line represents the null value (i.e., 100\% for the EMG amplitude and 0 for the VAS scores).}\label{fig:resultsemgfig1}
 \end{figure}
 
 \subsubsection{EMG}\label{emg}
 
 Results for EMG data based on the multivariate model described earlier
-are shown in the left panel of Figure 2. Summary statistics were
-computed on posterior samples transformed back from log scale.
+are shown in the left panel of Figure \ref{fig:resultsemgfig1}. Summary
+statistics were computed on posterior samples transformed back from log
+scale.
 
 Mean EMG amplitude for OOS was higher after induction (\(\alpha\) =
 138.57, 95\% HDI {[}124.43, 151.71{]}, d = 0.66, 95\% HDI {[}0.49,
@@ -1705,17 +1819,17 @@ HDI {[}-0.14, 0.31{]}), OOS and FRO (\(\rho\) = 0.12, 95\% HDI {[}-0.11,
 and FCR (\(\rho\) = −0.06, 95\% HDI {[}-0.28, 0.17{]}), nor OOI and FRO
 (\(\rho\) = 0.07, 95\% HDI {[}-0.16, 0.29{]}). Scatterplots, marginal
 posterior distributions and posterior distributions on correlation
-coefficients are available in Supplementary Materials (Supplementary
-materials, data, reproducible code and figures are available at:
-\url{https://osf.io/882te/}).
+coefficients are available in \protect\hyperlink{suppCH3}{supplementary
+materials}.
 
 In order to check whether the propensity to ruminate could predict the
 effects of the rumination induction on EMG amplitude, we compared the
 multivariate model described above, with a similar model but with the
-score on the abstract dimension of the Mini- CERTS as an additional
+score on the abstract dimension of the Mini-CERTS as an additional
 predictor. We compared these models using the widely applicable
 information criterion (WAIC; Watanabe, 2010), via the WAIC function of
-the brms package (Bürkner, in press). Results showed that the
+the \texttt{brms} package (Bürkner,
+\protect\hyperlink{ref-R-brms}{2018}). Results showed that the
 intercept-only model had a lower WAIC (WAIC = 177.39) than the more
 complex model (WAIC = 182.01), indicating that there is no predictive
 benefit in adding the Mini-CERTS score as a predictor.
@@ -1723,10 +1837,11 @@ benefit in adding the Mini-CERTS score as a predictor.
 \subsubsection{Correlations between EMG amplitudes and VAS
 scores}\label{correlations-between-emg-amplitudes-and-vas-scores}
 
-Correlations between EMG amplitudes and VAS scores were exam- ined using
-the BayesianFirstAid package (Bååth, 2013), using 15,000 iterations for
-each correlation coefficient. Both estimated correlation coefficients
-(\(\rho\)s) and 95\% HDIs are reported in Table 1.
+Correlations between EMG amplitudes and VAS scores were examined using
+the \texttt{BayesianFirstAid} package (Bååth,
+\protect\hyperlink{ref-R-BayesianFirstAid}{2018}), using 15,000
+iterations for each correlation coefficient. Both estimated correlation
+coefficients (\(\rho\)s) and 95\% HDIs are reported in Table XX.
 
 \subsection{Experiment 2: rumination reduction by
 relaxation}\label{experiment-2-rumination-reduction-by-relaxation-1}
@@ -1740,15 +1855,16 @@ listening to a Story.
 scores}\label{self-reported-rumination-measures-vas-scores-1}
 
 Posterior means and 95\% HDIs of the VAS scores in each condition of
-experiment 2 are represented in Fig. 3 and Table 1 (Table 2).
+experiment 2 are represented in Figure XX and Table XX.
 
 In order to compare the effects of the two kind of relaxation on the VAS
-scores, we then used the hypothesis function of the brms package that
-allows deriving evidence ratios (ER). These evidence ratios are simply
-the posterior probability under a hypothesis (e.g., the hypothesis that
-the Orofacial relaxation session would be more effective in reducing
-self-reported rumination than the Arm relaxation session) against its
-alternative (Bürkner, in press).
+scores, we then used the \texttt{hypothesis()} function of the
+\texttt{brms} package that allows deriving evidence ratios (ER). These
+evidence ratios are simply the posterior probability under a hypothesis
+(e.g., the hypothesis that the Orofacial relaxation session would be
+more effective in reducing self-reported rumination than the Arm
+relaxation session) against its alternative (Bürkner,
+\protect\hyperlink{ref-R-brms}{2018}).
 
 Since the Problems and the Brooding scales seemed to be sensitive
 markers of rumination (as their scores increased after induction in
@@ -1765,20 +1881,19 @@ important compared to the Story condition (Est = −5.23, SE = 6.01, ER10
 
 \begin{figure}
 
-{\centering \includegraphics[width=1\linewidth]{assets/emg_fig2} 
+{\centering \includegraphics[width=0.75\linewidth]{assets/emg_fig2} 
 
 }
 
-\caption{Posterior mean and 95\% credible intervals for the VAS score (expressed in relative change from post-induction level).}\label{fig:unnamed-chunk-3}
+\caption{Posterior mean and 95\% credible intervals for the VAS score (expressed in relative change from post-induction level).}\label{fig:resultsemgfig2}
 \end{figure}
 
 \subsubsection{EMG}\label{emg-1}
 
 Posterior means and 95\% HDIs of the EMG amplitude in each condition of
-experiment 2 are represented in Figure XX and reported in Table XX.
-
-We used the same strategy as before to compare the effects of the two
-kinds of relaxation on the EMG amplitudes.
+experiment 2 are represented in Figure XX and reported in Table XX. We
+used the same strategy as before to compare the effects of the two kinds
+of relaxation on the EMG amplitudes.
 
 Concerning the OOS, the observed decrease in the Orofacial condition was
 more pronounced than in the Arm condition (Est = −0.34, SE = 0.14, ER10
@@ -1789,11 +1904,11 @@ kinds of relaxation concerning the EMG amplitude of the FRO (Est =
 
 \begin{figure}
 
-{\centering \includegraphics[width=1\linewidth]{assets/emg_fig3} 
+{\centering \includegraphics[width=0.75\linewidth]{assets/emg_fig3} 
 
 }
 
-\caption{Posterior mean and 95\% credible intervals for the VAS score (expressed in relative change from post-induction level).}\label{fig:unnamed-chunk-4}
+\caption{Posterior mean and 95\% credible intervals for the VAS score (expressed in relative change from post-induction level).}\label{fig:resultsemgfig3}
 \end{figure}
 
 \section{Discussion}\label{discussion}
@@ -1801,12 +1916,13 @@ kinds of relaxation concerning the EMG amplitude of the FRO (Est =
 \subsection{Experiment 1}\label{experiment-1}
 
 In the first experiment, we examined electromyographic correlates of
-induced rumination in healthy individuals. According to the Motor
-Simulation view, we predicted an increase in the activity of all facial
+induced rumination in healthy individuals. According to the \emph{Motor
+Simulation view}, we predicted an increase in the activity of all facial
 muscles after the rumination induction, associated with an increase in
-self-reported rumination. Alternatively, the Abstraction view predicted
-an increase in self-reported rumination associated with an increase in
-forehead activity with no changes in either lip or forearm activity.
+self-reported rumination. Alternatively, the \emph{Abstraction view}
+predicted an increase in self-reported rumination associated with an
+increase in forehead activity with no changes in either lip or forearm
+activity.
 
 To test the predictions of these two theoretical views, we compared EMG
 measures and VAS scores after induction to their values before
@@ -1815,17 +1931,19 @@ muscles involved in speech production, FRO, a facial negative-
 affect-related but not speech-related muscle, and FCR, a non-facial
 control muscle on the non-dominant forearm.
 
-As predicted by the Motor Simulation view, we observed an increase in
-the activity of the two speech-related muscles (OOS \& OOI) as well as
-in the negative-affect-related muscle (FRO) and no change in FCR
-activity. The increase in facial EMG together with the increase in the
-subjective reports of rumination suggests that facial EMG increase is a
-correlate of verbal rumination. As supported by several studies results,
-the forehead muscle activity has been associated with unpleasant
-emotions (Jäncke et al., 1996) or anxiety (Conrad \& Roth, 2007). The
-increase in FRO activity observed here is consistent with the increase
-in negative emotions induced by our negatively valenced induction
-procedure. Orbicularis oris lip muscles are associated with speech
+As predicted by the \emph{Motor Simulation view}, we observed an
+increase in the activity of the two speech-related muscles (OOS \& OOI)
+as well as in the negative-affect-related muscle (FRO) and no change in
+FCR activity. The increase in facial EMG together with the increase in
+the subjective reports of rumination suggests that facial EMG increase
+is a correlate of verbal rumination. As supported by several studies
+results, the forehead muscle activity has been associated with
+unpleasant emotions (Jäncke et al.,
+\protect\hyperlink{ref-Jancke1996}{1996}) or anxiety (A. Conrad \& Roth,
+\protect\hyperlink{ref-conrad_muscle_2007}{2007}). The increase in FRO
+activity observed here is consistent with the increase in negative
+emotions induced by our negatively valenced induction procedure.
+\emph{Orbicularis oris} lip muscles are associated with speech
 production. The increase in lip activity observed here suggests that the
 speech motor system was involved during the ruminative phase. The fact
 that the FCR remained stable after rumination induction suggests that
@@ -1837,48 +1955,54 @@ articulatory-specified inner speech.
 After the rumination induction, a larger increase in OOI activity was
 observed compared to the increase in OOS activity. This finding is
 consistent with previous findings of higher EMG amplitude in the lower
-lip during speech and inner speech (e.g., Barlow \& Netsell, 1986;
-Regalo et al., 2005; Sokolov, 1972) or auditory verbal hallucinations
-(Rapin et al., 2013). Rapin et al. (2013) have explained the difference
-between the activities of the two lip muscles by muscle anatomy. The
-proximity of the OOI muscle with other speech muscles (such as the
-depressor angular muscle or the mentalis) could increase the surface EMG
-signal captured on the lower lip (OOI), as compared to the upper lip
-(OOS) during speech. An even larger increase in FRO activity was
-observed compared to the increase in lip muscle activity. As EMG
+lip during speech and inner speech (e.g., S. M. Barlow \& Netsell,
+\protect\hyperlink{ref-barlow_differential_1986}{1986}; Regalo et al.,
+\protect\hyperlink{ref-regalo_electromyographic_2005}{2005}; Sokolov,
+\protect\hyperlink{ref-sokolov_inner_1972}{1972}) or auditory verbal
+hallucinations (Rapin et al.,
+\protect\hyperlink{ref-rapin_emg_2013}{2013}). Rapin et al.
+(\protect\hyperlink{ref-rapin_emg_2013}{2013}) have explained the
+difference between the activities of the two lip muscles by muscle
+anatomy. The proximity of the OOI muscle with other speech muscles (such
+as the depressor angular muscle or the mentalis) could increase the
+surface EMG signal captured on the lower lip (OOI), as compared to the
+upper lip (OOS) during speech. An even larger increase in FRO activity
+was observed compared to the increase in lip muscle activity. As EMG
 amplitude is known to vary with muscle length (Babault, Pousson,
-Michaut, \& Van Hoecke, 2003), the greater increase in frontalis
-activity could be explained by its anatomical properties.
+Michaut, \& Van Hoecke,
+\protect\hyperlink{ref-babault_effect_2003}{2003}), the greater increase
+in frontalis activity could be explained by its anatomical properties.
 
 However, although a functional distinction can be drawn between the
 forehead and the lip muscles, one should acknowledge the fact that these
 two sets of muscles can be commonly activated during some behaviours.
-For instance, Van Boxtel \& Jessurun (1993) have shown that orbicularis
-oris inferior and frontalis were both activated during a two-choice
-serial reaction task in which nonverbal auditory or visual signals were
-presented. Moreover, there was a gradual increase in EMG activity in
-these muscles during the task, either when the task was prolonged or
-when the task was made more difficult. They interpreted this increase in
-EMG activity as associated with a growing compensa- tory effort to keep
-performance at an adequate level. An alternative interpretation is that
-the increase in task difficulty was dealt with by inner verbalization.
-Covertly rehearsing the instructions or covertly qualifying the stimuli
-might have helped the participants to perform adequately. Therefore, the
-increase in orbicularis oris activity might have been related to an
-increase in covert verbalization, whereas the increase in frontalis
-activity might have been related to increased anxiety or tension. The
-fact that the EMG increase was muscle specific, and that some facial
-muscles (orbicularis oculi, zygomaticus major, temporalis) did not show
-an increase in activity unless the task became too difficult, supports
-this interpretation. It cannot be ruled out, however, that orbicularis
-oris activity may in some cases be related to mental effort without
-mental verbalisation. Nevertheless, although the IQ test itself was
-designed to induce mental effort, no cognitively demanding task was
-asked to the participant during the period of EMG recording (i.e.,
-approximately four minutes after the end of the test). Although we
-cannot absolutely exclude that rumination in itself could require
-cognitive effort, it seems unlikely that mental effort was the main
-factor of variation.
+For instance, A. van Boxtel \& Jessurun
+(\protect\hyperlink{ref-van_boxtel_amplitude_1993}{1993}) have shown
+that orbicularis oris inferior and frontalis were both activated during
+a two-choice serial reaction task in which nonverbal auditory or visual
+signals were presented. Moreover, there was a gradual increase in EMG
+activity in these muscles during the task, either when the task was
+prolonged or when the task was made more difficult. They interpreted
+this increase in EMG activity as associated with a growing compensatory
+effort to keep performance at an adequate level. An alternative
+interpretation is that the increase in task difficulty was dealt with by
+inner verbalization. Covertly rehearsing the instructions or covertly
+qualifying the stimuli might have helped the participants to perform
+adequately. Therefore, the increase in orbicularis oris activity might
+have been related to an increase in covert verbalization, whereas the
+increase in frontalis activity might have been related to increased
+anxiety or tension. The fact that the EMG increase was muscle specific,
+and that some facial muscles (\emph{orbicularis oculi},
+\emph{zygomaticus major}, \emph{temporalis}) did not show an increase in
+activity unless the task became too difficult, supports this
+interpretation. It cannot be ruled out, however, that orbicularis oris
+activity may in some cases be related to mental effort without mental
+verbalisation. Nevertheless, although the I.Q. test itself was designed
+to induce mental effort, no cognitively demanding task was asked to the
+participant during the period of EMG recording (i.e., approximately four
+minutes after the end of the test). Although we cannot absolutely
+exclude that rumination in itself could require cognitive effort, it
+seems unlikely that mental effort was the main factor of variation.
 
 Scores on the VAS need to be discussed in further detail. We examined
 which VAS scales were most suitable to capture changes in state
@@ -1903,25 +2027,26 @@ rumination in the following.
 The fact that we did not observe any association between the propensity
 to ruminate (as measured by the Mini-CERTS questionnaire) and the
 effects of the induction is consistent with the results of Rood,
-Roelofs, Bögels, and Arntz (2012) who found that the level of trait
-rumination did not moderate the effects of a rumination induction.
+Roelofs, Bögels, \& Arntz (\protect\hyperlink{ref-Rood2012}{2012}) who
+found that the level of trait rumination did not moderate the effects of
+a rumination induction.
 
 \subsection{Experiment 2}\label{experiment-2}
 
-In the second experiment, we studied the effects of two muscle- specific
+In the second experiment, we studied the effects of two muscle-specific
 relaxation sessions: Orofacial relaxation and Arm relaxation. We
 compared their effects to a third control condition (Story), which did
 not involve the deliberate relaxation of any specific muscle. Our
 predictions were that a decrease in facial EMG activity should be
-observed in each condition. If the Motor Simulation view is correct, we
-expected a larger decrease in the activity of all facial muscles in the
-``Orofacial relaxation'' condition than in the ``Arm relaxation''
-condition, associated with a larger decrease in self-reported
-rumination. Additionally, we expected a more pronounced decrease in the
-two relaxation conditions (orofacial and arm relaxation conditions) than
-in the control (``Story'') condition. We also expected no difference
-between relaxation conditions regarding the change in the forearm muscle
-activity.
+observed in each condition. If the \emph{Motor Simulation view} is
+correct, we expected a larger decrease in the activity of all facial
+muscles in the ``Orofacial relaxation'' condition than in the ``Arm
+relaxation'' condition, associated with a larger decrease in
+self-reported rumination. Additionally, we expected a more pronounced
+decrease in the two relaxation conditions (orofacial and arm relaxation
+conditions) than in the control (``Story'') condition. We also expected
+no difference between relaxation conditions regarding the change in the
+forearm muscle activity.
 
 The data indicated a decrease in self-reported rumination (``Brooding''
 VAS) in each condition. The ``Orofacial'' relaxation condi- tion
@@ -1933,10 +2058,11 @@ decrease was more pronounced in the orofacial condition than in the
 other two conditions. The frontalis activity did not show the same
 pattern. A similar FRO activity decrease was observed in both the
 orofacial and the non-orofacial relaxation conditions. Therefore, in
-Experiment 2, the lip muscles and the forehead muscle follow differ-
-ential evolutions. A dissociation was observed: whereas both orofacial
-and arm relaxations resulted in a decrease in forehead activity, only
-orofacial relaxation was successful at reducing lip activity.
+Experiment 2, the lip muscles and the forehead muscle follow
+differential evolutions. A dissociation was observed: whereas both
+orofacial and arm relaxations resulted in a decrease in forehead
+activity, only orofacial relaxation was successful at reducing lip
+activity.
 
 Considering both VAS results and the dissociation in EMG patterns,
 several interpretations are possible. The first interpretation is that
@@ -1946,14 +2072,15 @@ interpretation is consistent with the fact that the ``Brooding'' VAS was
 slightly more decreased in this condition compared to the other two. The
 larger decrease in OOS and OOI amplitude after orofacial relaxa- tion
 would thus reflect this reduction in verbal production, as hypothesised
-by the Motor Simulation view. The fact that FRO activity displayed a
-similar decrease in both orofacial and non-orofacial relaxation
-conditions could suggest that any means of body relaxation (be it
-orofacial or not) is appropriate to reduce negative affect and can
-therefore reduce forehead contraction. This suggests that the FRO
+by the \emph{Motor Simulation view}. The fact that FRO activity
+displayed a similar decrease in both orofacial and non-orofacial
+relaxation conditions could suggest that any means of body relaxation
+(be it orofacial or not) is appropriate to reduce negative affect and
+can therefore reduce forehead contraction. This suggests that the FRO
 activity increase presumably reflected negative affect and tension (such
 as observed in EMG studies on generalised anxiety disorder patients, see
-Conrad \& Roth, 2007 for a review).
+A. Conrad \& Roth, \protect\hyperlink{ref-conrad_muscle_2007}{2007}, for
+a review).
 
 Alternatively, one could also argue that the larger decrease in lip
 muscle activity after orofacial relaxation finds a more trivial explana-
@@ -1984,7 +2111,7 @@ the interpretation of decreased OOS and OOI activities in the orofacial
 relaxation condition as markers of rumination reduction.
 
 Interestingly, we observed no changes of forearm EMG activity in any of
-the three conditions of experiment 2. The fact that the relaxation
+the three conditions of Experiment 2. The fact that the relaxation
 session focused on the forearm was not associated with a decrease in FCR
 activity has a simple explanation: FCR activity had not increased after
 rumination induction and had remained at floor level. The forearm was
@@ -2005,10 +2132,10 @@ discrepancy observed in ``Focused'' VAS between the two relaxation
 conditions on the one hand and the control condition on the other hand,
 suggests that the EMG decrease observed in the ``Story'' condition might
 be attributable to a different cause than that observed in the two
-relaxation conditions. Listening to a story could help reducing rumina-
-tion by shifting attention away from ruminative thoughts. Relaxation
-sessions could help reducing rumination by shifting attention to the
-body in a beneficial way.
+relaxation conditions. Listening to a story could help reducing
+rumination by shifting attention away from ruminative thoughts.
+Relaxation sessions could help reducing rumination by shifting attention
+to the body in a beneficial way.
 
 \subsection{General discussion}\label{general-discussion}
 
@@ -2019,8 +2146,8 @@ to assess potential articulatory correlates of rumination. The patterns
 of results of our study seem to be in favour of the motor nature of
 verbal rumination. In Experiment 1, rumination induction was associated
 with a higher score on the scale ``I am brooding about negative things''
-which is representative of abstract- analytical rumination, considered
-as verbal rumination. This maladap- tive rumination state was associated
+which is representative of abstract-analytical rumination, considered as
+verbal rumination. This maladap- tive rumination state was associated
 with an increase in the activity of two speech-related muscles, without
 modification of the arm muscle activity, which indicates that rumination
 involves activity in speech articulatory muscles, specifically. The
@@ -2028,8 +2155,9 @@ concurrent increase in forehead muscle activity could be explained by an
 increase in negative emotions induced by our negatively valenced
 induction procedure. The results of Experiment 1 therefore show the
 involvement of the speech muscula- ture during rumination. This is in
-line with the Motor simulation view, according to which inner speech is
-fully specified at the articulatory level, not just the lexical level.
+line with the \emph{Motor simulation view}, according to which inner
+speech is fully specified at the articulatory level, not just the
+lexical level.
 
 In Experiment 2, guided relaxation resulted in a decrease in speech
 muscle activity. In the lip muscles, the activity decrease was stronger
@@ -2039,36 +2167,37 @@ relaxation. This decrease in speech muscle activity was associated with
 a decrease in self-reports of rumination and was most pronounced after
 orofacial relaxation. These findings suggest that a reduction in speech
 muscle activity could hinder articulatory simulation and thus limit
-inner speech production and therefore reduce rumination. This inter-
-pretation is consistent with the Motor Simulation view of inner speech.
-Brooding-type rumination was also diminished after the arm-focused
-relaxation as well as after listening to a story, although less than in
-the orofacial relaxation. This suggests that general relaxation or
-distraction are also likely to reduce negative rumination. To summarize,
-experi- ments 1 and 2 are consistent with the Motor Simulation view of
-inner speech, according to which speech muscle activity is inherent to
-inner speech production. Experiment 1 shows the involvement of the lip
-musculature during brooding-type rumination. Experiment 2 suggests that
-brooding-type rumination could be reduced by blocking or relaxing speech
-muscles.
+inner speech production and therefore reduce rumination. This
+interpretation is consistent with the \emph{Motor Simulation view} of
+inner speech. Brooding-type rumination was also diminished after the
+arm-focused relaxation as well as after listening to a story, although
+less than in the orofacial relaxation. This suggests that general
+relaxation or distraction are also likely to reduce negative rumination.
+To summarize, experiments 1 and 2 are consistent with the \emph{Motor
+Simulation view} of inner speech, according to which speech muscle
+activity is inherent to inner speech production. Experiment 1 shows the
+involvement of the lip musculature during brooding-type rumination.
+Experiment 2 suggests that brooding-type rumination could be reduced by
+blocking or relaxing speech muscles.
 
 These data support the utility of labial EMG as a tool to objectively
 assess inner speech in a variety of normal and pathological forms. We
 suggest that this method could be used as a complement to self-report
 measures, in order to overcome limitation of these measures.
 
-Our results should be interpreted with some limitations in mind.
-Firstly, our sample consisted exclusively of women. Although this
-methodological choice makes sense considering the more frequent
-occurrence of rumination in women, further studies should be con- ducted
-to ascertain that our results may generalize to men. Secondly, in
-Experiment 1, no between-subject control condition was used to compare
-with the group of participants who underwent rumination induction. Thus,
-we cannot rule out that other processes occurred between baseline and
-rumination induction, influencing responding. Thirdly, substantial
-inter-individual differences were observed concern- ing the size of the
-effect of rumination induction on facial EMG activity. The results of
-Jäncke (Jäncke, 1996; Jäncke et al., 1996) can shed light on this last
+Our results should be interpreted with some limitations in mind. First,
+our sample consisted exclusively of women. Although this methodological
+choice makes sense considering the more frequent occurrence of
+rumination in women, further studies should be conducted to ascertain
+that our results may generalize to men. Second, in Experiment 1, no
+between-subject control condition was used to compare with the group of
+participants who underwent rumination induction. Thus, we cannot rule
+out that other processes occurred between baseline and rumination
+induction, influencing responding. Thirdly, substantial inter-individual
+differences were observed concerning the size of the effect of
+rumination induction on facial EMG activity. The results of Jäncke
+(Jäncke, \protect\hyperlink{ref-Jancke1996a}{1996}; Jäncke et al.,
+\protect\hyperlink{ref-Jancke1996}{1996}) can shed light on this last
 result. Jäncke used a similar procedure (i.e., negative mood induction
 using a false I.Q. test and facial EMG measurements to assess emotions),
 except that the experimenter was not in the room while participants
@@ -2088,68 +2217,74 @@ EMG activity. This could partially explain the observed inter-individual
 variability in facial EMG activity associated with rumination. Moreover,
 even though rumination is a predominantly verbal process, one cannot
 exclude that some of our participants experienced rumination in another
-modality (e.g., ima- gery-based rumination), which would explain their
+modality (e.g., imagery-based rumination), which would explain their
 lower than average lip activity.
 
 Thus, a logical next step is to examine qualitative factors that mediate
 the link between rumination and facial muscular activity. These factors
 (among others) could be proneness to communicate emotion or proneness to
 verbalize affects. Additionally, recent studies suggest a link between
-verbal aptitudes and propensity to ruminate. Uttl, Morin and Hamper
-(2011) have observed a weak but consistent correlation between the
-tendency to ruminate and scores on a verbal intelligence test. Penney,
-Miedema and Mazmanian (2015) have observed that verbal intelligence
-constitutes a unique predictor of rumination severity in chronic anxious
-patients. To our knowledge, the link between verbal intelligence and
-induced rumination has never been studied. It would be interesting to
-examine whether the effects of a rumination induction could be mediated
-by verbal intelligence, and to what extent this could influence related
-facial EMG activity.
+verbal aptitudes and propensity to ruminate. Uttl, Morin, \& Hamper
+(\protect\hyperlink{ref-Uttl2011}{2011}) have observed a weak but
+consistent correlation between the tendency to ruminate and scores on a
+verbal intelligence test. Penney, Miedema, \& Mazmanian
+(\protect\hyperlink{ref-Penney2015}{2015}) have observed that verbal
+intelligence constitutes a unique predictor of rumination severity in
+chronic anxious patients. To our knowledge, the link between verbal
+intelligence and induced rumination has never been studied. It would be
+interesting to examine whether the effects of a rumination induction
+could be mediated by verbal intelligence, and to what extent this could
+influence related facial EMG activity.
 
 In conclusion, this study provides new evidence for the facial
 embodiment of rumination, considered as a particular instance of inner
 speech. Even if more data are needed to confirm these preliminary
-conclusions, our results seem to support the Motor Simulation view of
-inner speech production, manifested as verbal rumination. In addition,
-facial EMG activity provides a useful means to objectively quantify the
-presence of verbal rumination.
+conclusions, our results seem to support the \emph{Motor Simulation
+view} of inner speech production, manifested as verbal rumination. In
+addition, facial EMG activity provides a useful means to objectively
+quantify the presence of verbal rumination.
 
 \section{Acknowledgements}\label{acknowledgements-1}
 
-This project was funded by the ANR project INNERSPEECH {[}grant number
-ANR-13-BSH2-0003-01{]}. The first author of the manuscript is funded by
-a fellowship from Université Grenoble Alpes and a grant from the Pôle
-Grenoble Cognition. We thank Nathalie Vallet for recording the
-relaxation and distraction sessions. We thank our colleagues from
-GIPSA-lab: Marion Dohen for her help in the recording of the audio
-stimuli in the anechoic room at GIPSA-lab, as well as Christophe
-Savariaux and Coriandre Vilain for their advice in the audio setup
-associated with the EMG measures. We are also grateful to Rafael
-Laboissière and Adeline Leclercq Samson for their advice concerning data
-analysis. We sincerely thank two anonymous reviewers for their critical
-reading of our manuscript and their many insightful comments and
-suggestions. Access to the facility of the MSH-Alpes SCREEN platform for
-conducting research is gratefully acknowledged.
+This project was funded by the ANR project INNERSPEECH. The first author
+of the manuscript is funded by a fellowship from Université Grenoble
+Alpes and a grant from the Pôle Grenoble Cognition. We thank Nathalie
+Vallet for recording the relaxation and distraction sessions. We thank
+our colleagues from GIPSA-lab: Marion Dohen for her help in the
+recording of the audio stimuli in the anechoic room at GIPSA-lab, as
+well as Christophe Savariaux and Coriandre Vilain for their advice in
+the audio setup associated with the EMG measures. We are also grateful
+to Rafael Laboissière and Adeline Leclercq Samson for their advice
+concerning data analysis. We sincerely thank two anonymous reviewers for
+their critical reading of our manuscript and their many insightful
+comments and suggestions. Access to the facility of the MSH-Alpes SCREEN
+platform for conducting research is gratefully acknowledged.
 
-\section{Supplementary data}\label{supplementary-data}
+\hypertarget{suppCH3}{\section{Supplementary data}\label{suppCH3}}
 
-Supplementary data associated with this article can be found, in the
-online version, at
-\url{http://dx.doi.org/10.1016/j.biopsycho.2017.04.013}.
+Supplementary data associated with this article can be found at
+\url{https://osf.io/882te/}.
+
+\newpage
+
+\begin{vplace}[1]
 
 \begin{summary}{Summary of Chapter\getcurrentref{chapter}}
 
-Blah blah ...
+In this first experiment we... Rumination is predominantly experienced in the form of repetitive verbal thoughts. Verbal rumination is a particular case of inner speech. According to the Motor Simulation view, inner speech is a kind of motor action, recruiting the speech motor system. In this framework, we predicted an increase in speech muscle activity during rumination as compared to rest. We also predicted increased forehead activity, associated with anxiety during rumination. We measured electromyographic activity over the orbicularis oris superior and inferior, frontalis and flexor carpi radialis muscles. Results showed increased lip and forehead activity after rumination induction compared to an initial relaxed state, together with increased self-reported levels of rumination. Moreover, our data suggest that orofacial relaxation is more effective in reducing rumination than non-orofacial relaxation. Altogether, these results support the hypothesis that verbal rumination involves the speech motor system, and provide a promising psychophysiological index to assess the presence of verbal rumination.\\
+
+Blah blah...
 
 \end{summary}
+
+\end{vplace}
 
 \chapter{Dissociating facial electromyographic correlates of visual and
 verbal induced
 rumination}\label{dissociating-facial-electromyographic-correlates-of-visual-and-verbal-induced-rumination}
 
 Summary of the research\ldots{}\footnote{This experimental chapter is a
-  manuscript reformatted for the need of this thesis. Source: The
-  manuscript has been submitted to Psychological Research.
+  submitted manuscript reformatted for the need of this thesis.
   Pre-registered protocol, preprint, data, as well as reproducible code
   and figures are available at: \url{https://osf.io/c9pag/}.}
 
@@ -2163,8 +2298,7 @@ Blah blah ...
 production}\label{muscle-specific-electromyographic-correlates-of-inner-speech-production}
 
 Summary of the research\ldots{}\footnote{This experimental chapter is a
-  manuscript reformatted for the need of this thesis. Source: The
-  manuscript has been submitted to Psychological Research.
+  submitted manuscript reformatted for the need of this thesis.
   Pre-registered protocol, preprint, data, as well as reproducible code
   and figures are available at: \url{https://osf.io/czer4/}.}
 
@@ -2178,8 +2312,7 @@ Blah blah ...
 rumination}\label{articulatory-suppression-effects-on-induced-rumination}
 
 Summary of the research\ldots{}\footnote{This experimental chapter is a
-  manuscript reformatted for the need of this thesis. Source: The
-  manuscript has been submitted to Psychological Research.
+  submited manuscript reformatted for the need of this thesis.
   Pre-registered protocol, preprint, data, as well as reproducible code
   and figures are available at: \url{https://osf.io/3bh67/}.}
 
@@ -2194,8 +2327,7 @@ rumination: a dual-task
 investigation}\label{refining-the-involvement-of-the-speech-motor-system-during-rumination-a-dual-task-investigation}
 
 Summary of the research\ldots{}\footnote{This experimental chapter is a
-  manuscript reformatted for the need of this thesis. Source: The
-  manuscript has been submitted to Psychological Research.
+  submitted manuscript reformatted for the need of this thesis.
   Pre-registered protocol, preprint, data, as well as reproducible code
   and figures are available at: \url{https://osf.io/8ab2d/}.}
 
@@ -2213,6 +2345,13 @@ conclusions}\label{part-discussion-and-conclusions}
 \section{Summary of the results}\label{summary-of-the-results}
 
 \ldots{}
+
+\section{Benchmarks for theories of inner
+speech}\label{benchmarks-for-theories-of-inner-speech}
+
+A revised verson of MacKay
+(\protect\hyperlink{ref-mackay_constraints_1992}{1992})
+constraints\ldots{}
 
 \section{Limitations and ways
 forward}\label{limitations-and-ways-forward}
@@ -2238,6 +2377,37 @@ between human inner speech, schizophrenia and altruism. \emph{Brain
 Research}, \emph{1476}, 38--57.
 \url{https://doi.org/10.1016/j.brainres.2012.02.074}
 
+\hypertarget{ref-babault_effect_2003}{}
+Babault, N., Pousson, M., Michaut, A., \& Van Hoecke, J. (2003). Effect
+of quadriceps femoris muscle length on neural activation during
+isometric and concentric contractions. \emph{Journal of Applied
+Physiology}, \emph{94}(3), 983--990.
+\url{https://doi.org/10.1152/japplphysiol.00717.2002}
+
+\hypertarget{ref-baddeley_phonological_1985}{}
+Baddeley, A. D., \& Wilson, B. (1985). Phonological coding and
+short-term memory in patients without speech. \emph{Journal of Memory
+and Language}, \emph{24}(4), 490--502.
+\url{https://doi.org/10.1016/0749-596X(85)90041-5}
+
+\hypertarget{ref-barlow_differential_1986}{}
+Barlow, S. M., \& Netsell, R. (1986). Differential Fine Force Control of
+the Upper and Lower Lips. \emph{Journal of Speech, Language, and Hearing
+Research}, \emph{29}(2), 163--169.
+\url{https://doi.org/10.1044/jshr.2902.163}
+
+\hypertarget{ref-basho_effects_2007}{}
+Basho, S., Palmer, E. D., Rubio, M. A., Wulfeck, B., \& Müller, R.-A.
+(2007). Effects of generation mode in fMRI adaptations of semantic
+fluency: Paced production and overt speech. \emph{Neuropsychologia},
+\emph{45}(8), 1697--1706.
+\url{https://doi.org/10.1016/j.neuropsychologia.2007.01.007}
+
+\hypertarget{ref-R-BayesianFirstAid}{}
+Bååth, R. (2018). \emph{BayesianFirstAid: Bayesian replacements for the
+most commonly used statistical tests in r.} Retrieved from
+\url{http://www.sumsar.net}
+
 \hypertarget{ref-binet_psychologie_1886}{}
 Binet, A. (1886). \emph{La psychologie du raisonnement. Recherches
 expérimentales par l'hypnotisme}. Alcan, Paris.
@@ -2248,15 +2418,118 @@ simulation of an action modulates the excitability of spinal reflex
 pathways in man. \emph{Cognitive Brain Research}, \emph{5}(3), 221--228.
 \url{https://doi.org/10.1016/S0926-6410(96)00072-9}
 
+\hypertarget{ref-boxtel_optimal_2001}{}
+Boxtel, A. (2001). Optimal signal bandwidth for the recording of surface
+EMG activity of facial, jaw, oral, and neck muscles.
+\emph{Psychophysiology}, \emph{38}(1), 22--34.
+\url{https://doi.org/10.1111/1469-8986.3810022}
+
+\hypertarget{ref-van_boxtel_amplitude_1993}{}
+Boxtel, A. van, \& Jessurun, M. (1993). Amplitude and bilateral
+coherency of facial and jaw-elevator EMG activity as an index of effort
+during a two-choice serial reaction task. \emph{Psychophysiology},
+\emph{30}(6), 589--604.
+\url{https://doi.org/10.1111/j.1469-8986.1993.tb02085.x}
+
+\hypertarget{ref-boyd_reflective_1983}{}
+Boyd, E. M., \& Fales, A. W. (1983). Reflective Learning: Key to
+Learning from Experience. \emph{Journal of Humanistic Psychology},
+\emph{23}(2), 99--117. \url{https://doi.org/10.1177/0022167883232011}
+
+\hypertarget{ref-rubin_what_1986}{}
+Brewer, W. F. (1986). What is autobiographical memory? In D. C. Rubin
+(Ed.), \emph{Autobiographical Memory} (pp. 25--49). Cambridge: Cambridge
+University Press. \url{https://doi.org/10.1017/CBO9780511558313.006}
+
+\hypertarget{ref-brisinda_comparison_2013}{}
+Brisinda, D., Venuti, A., Sorbo, A., Cataldi, C., Iantorno, E., \&
+Fenici, R. (2013). Comparison between standard short-term, very-short
+and ultra-short-term heart rate variability analysis in healthy subjects
+during exercise testing. \emph{European Heart Journal},
+\emph{34}(suppl\_1).
+\url{https://doi.org/10.1093/eurheartj/eht309.P3384}
+
+\hypertarget{ref-R-brms}{}
+Bürkner, P.-C. (2018). \emph{Brms: Bayesian regression models using
+'stan'}. Retrieved from \url{https://CRAN.R-project.org/package=brms}
+
+\hypertarget{ref-carpenter_stan:_2017}{}
+Carpenter, B., Gelman, A., Hoffman, M., Lee, D., Goodrich, B.,
+Betancourt, M., \ldots{} Riddell, A. (2017). Stan: A Probabilistic
+Programming Language. \emph{Journal of Statistical Software, Articles},
+\emph{76}(1), 1--32. \url{https://doi.org/10.18637/jss.v076.i01}
+
+\hypertarget{ref-cefidekhanie_interaction_2014}{}
+Cefidekhanie, A. H., Savariaux, C., Sato, M., \& Schwartz, J.-l. (2014).
+Interaction between articulatory gestures and inner speech in a counting
+task. \emph{Journal of the Acoustical Society of America},
+\emph{136}(4), 1869--1879. \url{https://doi.org/10.1121/1.4893910}
+
 \hypertarget{ref-cohen_motor_1986}{}
 Cohen, B. H. (1986). The motor theory of voluntary thinking. In R. J.
 Davidson, G. E. Schartz, \& D. Shapiro (Eds.), \emph{Consciousness and
 self-regulation}. Springer, Boston, MA.
 
+\hypertarget{ref-conrad_muscle_2007}{}
+Conrad, A., \& Roth, W. T. (2007). Muscle relaxation therapy for anxiety
+disorders: It works but how? \emph{Journal of Anxiety Disorders},
+\emph{21}(3), 243--264.
+\url{https://doi.org/10.1016/j.janxdis.2006.08.001}
+
+\hypertarget{ref-conrad_speech_1979}{}
+Conrad, B., \& Schönle, P. (1979). Speech and respiration. \emph{Archiv
+Für Psychiatrie Und Nervenkrankheiten}, \emph{226}(4), 251--268.
+\url{https://doi.org/10.1007/BF00342238}
+
+\hypertarget{ref-conway_autobiographical_1990}{}
+Conway, M. A. (1990). \emph{Autobiographical memory: An introduction.}
+Open University Press.
+
+\hypertarget{ref-corley_error_2011}{}
+Corley, M., Brocklehurst, P. H., \& Moat, H. S. (2011). Error biases in
+inner and overt speech: Evidence from tongue twisters. \emph{Journal of
+Experimental Psychology: Learning, Memory, and Cognition}, \emph{37}(1),
+162--175. \url{https://doi.org/10.1037/a0021321}
+
 \hypertarget{ref-de_luca_use_1997}{}
 De Luca, C. J. (1997). The Use of Surface Electromyography in
 Biomechanics. \emph{Journal of Applied Biomechanics}, \emph{13}(2),
 135--163. \url{https://doi.org/10.1123/jab.13.2.135}
+
+\hypertarget{ref-de_luca_filtering_2010}{}
+De Luca, C. J., Donald Gilmore, L., Kuznetsov, M., \& Roy, S. H. (2010).
+Filtering the surface EMG signal: Movement artifact and baseline noise
+contamination. \emph{Journal of Biomechanics}, \emph{43}(8), 1573--1579.
+\url{https://doi.org/10.1016/j.jbiomech.2010.01.027}
+
+\hypertarget{ref-decety_mentally_1996}{}
+Decety, J., \& Jeannerod, M. (1996). Mentally simulated movements in
+virtual reality: Does Fitts's law hold in motor imagery?
+\emph{Behavioural Brain Research}, 8.
+
+\hypertarget{ref-dell_errors_1992}{}
+Dell, G. S., \& Repka, R. J. (1992). Errors in Inner Speech. In B. J.
+Baars (Ed.), \emph{Experimental Slips and Human Error: Exploring the
+Architecture of Volition} (pp. 237--262). Boston, MA: Springer US.
+\url{https://doi.org/10.1007/978-1-4899-1164-3_10}
+
+\hypertarget{ref-Douilliez2012}{}
+Douilliez, C., Philippot, P., Heeren, A., Watkins, E. R., \& Barnard, P.
+(2012). The Mini-CERTS (Cambridge-Exeter Repetitive Thought Scale): A
+Short Questionnaire to Assess Constructive and Unconstructive Repetitive
+Thinking. \emph{Revue Canadienne Des Sciences Du Comportement/ Canadian
+Journal of Behavioural Science.}, 1--19.
+
+\hypertarget{ref-ekman_facial_1978}{}
+Ekman, P., \& Friesen, W. (1978). \emph{Facial coding action system
+(FACS): A technique for the measurement of facial actions}. Palo Alto,
+CA: Consulting Psychologists Press.
+
+\hypertarget{ref-everdell_gaze_2007}{}
+Everdell, I. T., Marsh, H., Yurick, M. D., Munhall, K. G., \& Paré, M.
+(2007). Gaze Behaviour in Audiovisual Speech Perception: Asymmetrical
+Distribution of Face-Directed Fixations. \emph{Perception},
+\emph{36}(10), 1535--1545. \url{https://doi.org/10.1068/p5852}
 
 \hypertarget{ref-fadiga_corticospinal_1999}{}
 Fadiga, L., Buccino, G., Craighero, L., Fogassi, L., Gallese, V., \&
@@ -2265,12 +2538,31 @@ by motor imagery a magnetic stimulation study. \emph{Neuropsychologia},
 \emph{37}(2), 147--158.
 \url{https://doi.org/10.1016/s0028-3932(98)00089-x}
 
+\hypertarget{ref-feinberg_efference_1978}{}
+Feinberg, I. (1978). Efference Copy and Corollary Discharge:
+Implications for Thinking and Its Disorders. \emph{Schizophrenia
+Bulletin}, \emph{4}(4), 636--640.
+\url{https://doi.org/10.1093/schbul/4.4.636}
+
+\hypertarget{ref-fuhrer_version_1989}{}
+Fuhrer, R., \& Rouillon, F. (1989). La version française de l'échelle
+CES-D (Center for Epidemiologic Studies-Depression Scale). Description
+et traduction de l'échelle d'autoévaluation. \emph{Psychiatrie \&
+Psychobiologie}, \emph{4}(3), 163--166.
+
 \hypertarget{ref-gentsch_towards_2016}{}
 Gentsch, A., Weber, A., Synofzik, M., Vosgerau, G., \& Schütz-Bosbach,
 S. (2016). Towards a common framework of grounded action cognition:
 Relating motor control, perception and cognition. \emph{Cognition},
 \emph{146}, 81--89.
 \url{https://doi.org/10.1016/j.cognition.2015.09.010}
+
+\hypertarget{ref-geva_discrepancy_2011}{}
+Geva, S., Bennett, S., Warburton, E. A., \& Patterson, K. (2011).
+Discrepancy between inner and overt speech: Implications for post-stroke
+aphasia and normal language processing. \emph{Aphasiology},
+\emph{25}(3), 323--343.
+\url{https://doi.org/10.1080/02687038.2010.511236}
 
 \hypertarget{ref-glover_motor-cognitive_2017}{}
 Glover, S., \& Baran, M. (2017). The motor-cognitive model of motor
@@ -2288,6 +2580,12 @@ Worry and Depressive Rumination. \emph{Cognitive Therapy and Research},
 Grush, R. (2004). The emulation theory of representation: Motor control,
 imagery, and perception. \emph{Behavioral and Brain Sciences},
 \emph{27}(03). \url{https://doi.org/10.1017/S0140525X04000093}
+
+\hypertarget{ref-grzes_functional_2001}{}
+Gr�zes, J., \& Decety, J. (2001). Functional anatomy of execution,
+mental simulation, observation, and verb generation of actions: A
+meta-analysis. \emph{Human Brain Mapping}, \emph{12}(1), 1--19.
+\href{https://doi.org/10.1002/1097-0193(200101)12:1\%3C1::AID-HBM10\%3E3.0.CO;2-V}{https://doi.org/10.1002/1097-0193(200101)12:1\textless{}1::AID-HBM10\textgreater{}3.0.CO;2-V}
 
 \hypertarget{ref-R-biosignalEMG}{}
 Guerrero, J., \& Macias-Diaz, J. (2018). \emph{BiosignalEMG: Tools for
@@ -2348,6 +2646,31 @@ Houde, J. F., \& Nagarajan, S. S. (2011). Speech Production as State
 Feedback Control. \emph{Frontiers in Human Neuroscience}, \emph{5}.
 \url{https://doi.org/10.3389/fnhum.2011.00082}
 
+\hypertarget{ref-Huffziger2012}{}
+Huffziger, S., Ebner-Priemer, U., Koudela, S., Reinhard, I., \& Kuehner,
+C. (2012). Induced rumination in everyday life: Advancing research
+approaches to study rumination. \emph{Personality and Individual
+Differences}, \emph{53}(6), 790--795.
+\url{https://doi.org/10.1016/j.paid.2012.06.009}
+
+\hypertarget{ref-jacobson_electrical_1931}{}
+Jacobson, E. (1931). Electrical measurements of neuromuscular states
+during mental activities. VII. Imagination, recollection, and abstract
+thinking involving the speech musculature. \emph{American Journal of
+Physiology}, \emph{897}, 200--209.
+
+\hypertarget{ref-Jancke1996a}{}
+Jäncke, L. (1996). Facial EMG in an anger-provoking situation:
+Individual differences in directing anger outwards or inwards.
+\emph{International Journal of Psychophysiology}, \emph{23}(3),
+207--214. \url{https://doi.org/10.1016/S0167-8760(96)00062-1}
+
+\hypertarget{ref-Jancke1996}{}
+Jäncke, L., Vogt, J., Musial, F., Lutz, K., \& Kalveram, K. T. (1996).
+Facial EMG responses to auditory stimuli. \emph{International Journal of
+Psychophysiology}, \emph{22}(1-2), 85--96.
+\url{https://doi.org/10.1016/0167-8760(96)00013-X}
+
 \hypertarget{ref-jeannerod_representing_1994}{}
 Jeannerod, M. (1994). The representing brain: Neural correlates of motor
 intention and imagery. \emph{Behavioral and Brain Sciences},
@@ -2362,6 +2685,18 @@ for Motor Cognition. \emph{NeuroImage}, \emph{14}(1), S103--S109.
 Jeannerod, M. (2006). \emph{Motor cognition: What actions tell the
 self}. Oxford ; New York: Oxford University Press.
 
+\hypertarget{ref-Johnson2013}{}
+Johnson, D. P., \& Whisman, M. a. (2013). Gender differences in
+rumination: A meta-analysis. \emph{Personality and Individual
+Differences}, \emph{55}(4), 367--374.
+\url{https://doi.org/10.1016/j.paid.2013.03.019}
+
+\hypertarget{ref-Jones2007}{}
+Jones, S. R., \& Fernyhough, C. (2007). Thought as action: Inner speech,
+self-monitoring, and auditory verbal hallucinations. \emph{Consciousness
+and Cognition}, \emph{16}(2), 391--399.
+\url{https://doi.org/10.1016/j.concog.2005.12.003}
+
 \hypertarget{ref-kamen_essentials_2010}{}
 Kamen, G., \& Gabriel, D. A. (2010). \emph{Essentials of
 electromyography}. Champaign, IL: Human Kinetics.
@@ -2371,6 +2706,40 @@ Kawato, M. (1999). Internal models for motor control and trajectory
 planning. \emph{Current Opinion in Neurobiology}, \emph{9}(6), 718--727.
 \url{https://doi.org/10.1016/S0959-4388(99)00028-8}
 
+\hypertarget{ref-Key2008}{}
+Key, B. L., Campbell, T. S., Bacon, S. L., \& Gerin, W. (2008). The
+influence of trait and state rumination on cardiovascular recovery from
+a negative emotional stressor. \emph{Journal of Behavioral Medicine},
+\emph{31}, 237--248. \url{https://doi.org/10.1007/s10865-008-9152-9}
+
+\hypertarget{ref-kohler_differences_2004}{}
+Kohler, C. G., Turner, T., Stolar, N. M., Bilker, W. B., Brensinger, C.
+M., Gur, R. E., \& Gur, R. C. (2004). Differences in facial expressions
+of four universal emotions. \emph{Psychiatry Research}, \emph{128}(3),
+235--244. \url{https://doi.org/10.1016/j.psychres.2004.07.003}
+
+\hypertarget{ref-langland-hassan_inner_2015}{}
+Langland-Hassan, P., Faries, F. R., Richardson, M. J., \& Dietz, A.
+(2015). Inner speech deficits in people with aphasia. \emph{Frontiers in
+Psychology}, \emph{6}. \url{https://doi.org/10.3389/fpsyg.2015.00528}
+
+\hypertarget{ref-Lemoult2014}{}
+Lemoult, J., \& Joormann, J. (2014). Depressive rumination alters
+cortisol decline in Major Depressive Disorder. \emph{Biological
+Psychology}, \emph{100}, 50--55.
+\url{https://doi.org/10.1016/j.biopsycho.2014.05.001}
+
+\hypertarget{ref-levine_language_1982}{}
+Levine, D. N., Calvanio, R., \& Popovics, A. (1982). Language in the
+absence of inner speech. \emph{Neuropsychologia}, \emph{20}(4),
+391--409. \url{https://doi.org/10.1016/0028-3932(82)90039-2}
+
+\hypertarget{ref-livesay_covert_1996}{}
+Livesay, J., Liebke, A., Samaras, M., \& Stanley, A. (1996). Covert
+speech behavior during a silent language recitation task.
+\emph{Perceptual and Motor Skills}, \emph{83}, 1355--1362.
+\url{https://doi.org/10.2466/pms.1996.83.3f.1355}
+
 \hypertarget{ref-loevenbruck_cognitive_2018}{}
 Lœvenbruck, H., Grandchamp, R., Rapin, L., Nalborczyk, L., Dohen, M.,
 Perrier, P., \ldots{} Perrone-Bertolotti, M. (2018). A Cognitive
@@ -2378,10 +2747,31 @@ Neuroscience View of Inner Language: To predict and to hear, see, feel.
 In P. Langland-Hassan \& A. Vicente (Eds.), \emph{Inner speech: New
 voices} (p. 37). Oxford University Press.
 
+\hypertarget{ref-mackay_constraints_1992}{}
+MacKay, D. G. (1992). Constraints on theories of inner speech. In D.
+Reisberg (Ed.), \emph{Auditory imagery} (pp. 121--149). Erlbaum;
+Hillsdale, N. J.
+
 \hypertarget{ref-mackay_problem_1981}{}
 Mackay, D. G. (1981). The Problem of Rehearsal or Mental Practice.
 \emph{Journal of Motor Behavior}, \emph{13}(4), 274--285.
 \url{https://doi.org/10.1080/00222895.1981.10735253}
+
+\hypertarget{ref-marshall_self-monitoring_1985}{}
+Marshall, R. C., Rappaport, B., \& Garcia-Bunuel, L. (1985).
+Self-monitoring behavior in a case of severe auditory agnosia with
+aphasia. \emph{Brain and Language}, \emph{24}(2), 297--313.
+\url{https://doi.org/10.1016/0093-934X(85)90137-3}
+
+\hypertarget{ref-martin_short-term_1982}{}
+Martin, R. C., \& Caramazza, A. (1982). Short-term memory performance in
+the absence of phonological coding. \emph{Brain and Cognition},
+\emph{1}(1), 50--70. \url{https://doi.org/10.1016/0278-2626(82)90006-9}
+
+\hypertarget{ref-mcguigan_patterns_1989}{}
+McGuigan, F. J., \& Dollins, A. D. (1989). Patterns of covert speech
+behavior and phonetic coding. \emph{The Pavlovian Journal of Biological
+Science}, \emph{24}(1), 19--26.
 
 \hypertarget{ref-mclaughlin_effects_2007}{}
 McLaughlin, K. A., Borkovec, T. D., \& Sibrava, N. J. (2007). The
@@ -2389,11 +2779,28 @@ Effects of Worry and Rumination on Affect States and Cognitive Activity.
 \emph{Behavior Therapy}, \emph{38}(1), 23--38.
 \url{https://doi.org/10.1016/j.beth.2006.03.003}
 
+\hypertarget{ref-morey_fallacy_2015}{}
+Morey, R. D., Hoekstra, R., Rouder, J. N., Lee, M. D., \& Wagenmakers,
+E.-J. (2015). The fallacy of placing confidence in confidence intervals.
+\emph{Psychonomic Bulletin \& Review}, \emph{23}(1), 103--123.
+\url{https://doi.org/10.3758/s13423-015-0947-8}
+
 \hypertarget{ref-moulton_imagining_2009}{}
 Moulton, S. T., \& Kosslyn, S. M. (2009). Imagining predictions: Mental
 imagery as mental emulation. \emph{Philosophical Transactions of the
 Royal Society B: Biological Sciences}, \emph{364}(1521), 1273--1280.
 \url{https://doi.org/10.1098/rstb.2008.0314}
+
+\hypertarget{ref-netsell_inner_2010}{}
+Netsell, R., Ashley, E., \& Bakker, K. (2010). The inner speech of
+persons who stutter. In \emph{Proceedings of the international motor
+speech conference}.
+
+\hypertarget{ref-nisbett_telling_1977}{}
+Nisbett, J., \& Wilson, T. D. (1977). Telling more than we can know:
+Verbal reports of mental processes. \emph{Psychological Review},
+\emph{84}(3), 231--259.
+\href{https://doi.org/10.1037//\%200033-295x.84.3.231}{https://doi.org/10.1037// 0033-295x.84.3.231}
 
 \hypertarget{ref-nolen-hoeksema_responses_1991}{}
 Nolen-Hoeksema, S. (1991). Responses to depression and their effects on
@@ -2401,11 +2808,58 @@ the duration of depressive episodes. \emph{Journal of Abnormal
 Psychology}, \emph{100}(4), 569--582.
 \url{https://doi.org/10.1037//0021-843X.100.4.569}
 
+\hypertarget{ref-nolen-hoeksema_prospective_1991}{}
+Nolen-Hoeksema, S., \& Morrow, J. (1991). A Prospective Study of
+Depression and Posttraumatic Stress Symptoms After a Natural Disaster:
+The 1989 Loma Prieta Earthquake. \emph{Journal of Personality and Social
+Psychology}, \emph{61}(1), 115--121.
+\url{https://doi.org/10.1037//0022-3514.61.1.115}
+
+\hypertarget{ref-nolen-hoeksema_effects_1993}{}
+Nolen-Hoeksema, S., \& Morrow, J. (1993). Effects of rumination and
+distraction on naturally occurring depressed mood. \emph{Cognition and
+Emotion}, \emph{7}(6), 561--570.
+\url{https://doi.org/10.1080/02699939308409206}
+
+\hypertarget{ref-Nolen-Hoeksema2008}{}
+Nolen-Hoeksema, S., Wisco, B. E., \& Lyubomirsky, S. (2008). Rethinking
+Rumination. \emph{Perspectives on Psychological Science}, \emph{3}(5),
+400--424. \url{https://doi.org/10.1111/j.1745-6924.2008.00088.x}
+
+\hypertarget{ref-oppenheim_motor_2010}{}
+Oppenheim, G. M., \& Dell, G. S. (2010). Motor movement matters: The
+flexible abstractness of inner speech. \emph{Memory \& Cognition},
+\emph{38}(8), 1147--1160. \url{https://doi.org/10.3758/MC.38.8.1147}
+
+\hypertarget{ref-Ottaviani2015}{}
+Ottaviani, C., Shahabi, L., Tarvainen, M., Cook, I., Abrams, M., \&
+Shapiro, D. (2015). Cognitive, behavioral, and autonomic correlates of
+mind wandering and perseverative cognition in major depression.
+\emph{Frontiers in Neuroscience}, \emph{8}(January), 1--9.
+\url{https://doi.org/10.3389/fnins.2014.00433}
+
 \hypertarget{ref-oshea_does_2017}{}
 O'Shea, H., \& Moran, A. (2017). Does Motor Simulation Theory Explain
 the Cognitive Mechanisms Underlying Motor Imagery? A Critical Review.
 \emph{Frontiers in Human Neuroscience}, \emph{11}.
 \url{https://doi.org/10.3389/fnhum.2017.00072}
+
+\hypertarget{ref-palmer_event-related_2001}{}
+Palmer, E. D., Rosen, H. J., Ojemann, J. G., Buckner, R. L., Kelley, W.
+M., \& Petersen, S. E. (2001). An Event-Related fMRI Study of Overt and
+Covert Word Stem Completion. \emph{NeuroImage}, \emph{14}(1), 182--193.
+\url{https://doi.org/10.1006/nimg.2001.0779}
+
+\hypertarget{ref-paulesu_neural_1993}{}
+Paulesu, E., Frith, C. D., \& Frackowiak, R. S. J. (1993). The neural
+correlates of the verbal component of working memory. \emph{Nature},
+\emph{362}(6418), 342--345. \url{https://doi.org/10.1038/362342a0}
+
+\hypertarget{ref-Penney2015}{}
+Penney, A. M., Miedema, V. C., \& Mazmanian, D. (2015). Intelligence and
+emotional disorders : Is the worrying and ruminating mind a more
+intelligent mind ? \emph{Personality and Individual Differences},
+\emph{74}, 90--93. \url{https://doi.org/10.1016/j.paid.2014.10.005}
 
 \hypertarget{ref-Perrone-Bertolotti2014}{}
 Perrone-Bertolotti, M., Rapin, L., Lachaux, J. P., Baciu, M., \&
@@ -2426,10 +2880,42 @@ Pickering, M. J., \& Garrod, S. (2013). An integrated theory of language
 production and comprehension. \emph{Behavioral and Brain Sciences},
 \emph{36}(04), 329--347. \url{https://doi.org/10.1017/S0140525X12001495}
 
+\hypertarget{ref-postma_production_1996}{}
+Postma, A., \& Noordanus, C. (1996). Production and detection of speech
+errors in silent, mouthed, noise-masked, and normal auditory feedback
+speech. \emph{Language and Speech}, \emph{39}(4), 375--392.
+\url{https://doi.org/10.1177/002383099603900403}
+
+\hypertarget{ref-VanRandenborgh2010}{}
+Randenborgh, A. van, Hüffmeier, J., LeMoult, J., \& Joormann, J. (2010).
+Letting go of unmet goals: Does self-focused rumination impair goal
+disengagement? \emph{Motivation and Emotion}, \emph{34}, 325--332.
+\url{https://doi.org/10.1007/s11031-010-9190-9}
+
 \hypertarget{ref-Rapin2011}{}
 Rapin, L. (2011). \emph{Hallucinations auditives verbales et trouble du
 langage intérieur dans la schizophrénie: Traces physiologiques et bases
 cérébrales} (PhD thesis). University of Grenoble.
+
+\hypertarget{ref-rapin_emg_2013}{}
+Rapin, L., Dohen, M., Polosan, M., \& Perrier, P. (2013). An EMG Study
+of the Lip Muscles During Covert Auditory Verbal Hallucinations in
+Schizophrenia. \emph{JSLHR}, \emph{56}, 1882--1893.
+\url{https://doi.org/10.1044/1092-4388(2013/12-0210)and}
+
+\hypertarget{ref-Rapin2013}{}
+Rapin, L., Dohen, M., Polosan, M., Perrier, P., \& Lœvenbruck, H.
+(2013). An EMG study of the lip muscles during covert auditory verbal
+hallucinations in schizophrenia. \emph{Journal of Speech, Language, and
+Hearing Research : JSLHR}, \emph{56}(6), S1882--93.
+\url{https://doi.org/10.1044/1092-4388(2013/12-0210)}
+
+\hypertarget{ref-regalo_electromyographic_2005}{}
+Regalo, S. C. H., Vitti, M., Moraes, M. T. B., Semprini, M., Felício, C.
+M. de, Mattos, M. da G. C. de, \ldots{} Santos, C. M. (2005).
+Electromyographic analysis of the orbicularis oris muscle in oralized
+deaf individuals. \emph{Brazilian Dental Journal}, \emph{16}(3),
+237--242. \url{https://doi.org/10.1590/S0103-64402005000300012}
 
 \hypertarget{ref-Rippere1977}{}
 Rippere, V. (1977). What's the thing to do when you're feeling
@@ -2443,10 +2929,45 @@ stress-reactive rumination interact to predict depression: A prospective
 study. \emph{Cognitive Therapy and Research}, \emph{27}(3), 275--292.
 \url{https://doi.org/10.1023/A:1023914416469}
 
+\hypertarget{ref-Rood2012}{}
+Rood, L., Roelofs, J., Bögels, S. M., \& Arntz, A. (2012). The effects
+of experimentally induced rumination, positive reappraisal, acceptance,
+and distancing when thinking about a stressful event on affect states in
+adolescents. \emph{Journal of Abnormal Child Psychology}, \emph{40}(1),
+73--84. \url{https://doi.org/10.1007/s10802-011-9544-0}
+
 \hypertarget{ref-rossini_corticospinal_1999}{}
 Rossini, P. M. (1999). Corticospinal Excitability Modulation to Hand
 Muscles During Movement Imagery. \emph{Cerebral Cortex}, \emph{9}(2),
 161--167. \url{https://doi.org/10.1093/cercor/9.2.161}
+
+\hypertarget{ref-Salahuddin2007}{}
+Salahuddin, L., Cho, J., Jeong, M. G., \& Kim, D. (2007). Ultra short
+term analysis of heart rate variability for monitoring mental stress in
+mobile settings. \emph{Conference Proceedings : ... Annual International
+Conference of the IEEE Engineering in Medicine and Biology Society. IEEE
+Engineering in Medicine and Biology Society. Conference}, \emph{2007},
+4656--4659. \url{https://doi.org/10.1109/IEMBS.2007.4353378}
+
+\hypertarget{ref-shuster_fmri_2005}{}
+Shuster, L., \& Lemieux, S. (2005). An fMRI investigation of covertly
+and overtly produced mono- and multisyllabic words. \emph{Brain and
+Language}, \emph{93}(1), 20--31.
+\url{https://doi.org/10.1016/j.bandl.2004.07.007}
+
+\hypertarget{ref-papageorgiou_physiological_2003}{}
+Siegle, G. J., \& Thayer, J. F. (2003). Physiological Aspects of
+Depressive Rumination. In C. Papageorgiou \& A. Wells (Eds.),
+\emph{Depressive Rumination} (pp. 79--104). Chichester, UK: John Wiley
+\& Sons Ltd. \url{https://doi.org/10.1002/9780470713853.ch5}
+
+\hypertarget{ref-sigmon_impact_2000}{}
+Sigmon, S. T., Dorhofer, D. M., Rohan, K. J., \& Boulard, N. E. (2000).
+The Impact of Anxiety Sensitivity, Bodily Expectations, and Cultural
+Beliefs on Menstrual Symptom Reporting: A Test of the Menstrual
+Reactivity Hypothesis. \emph{Journal of Anxiety Disorders},
+\emph{14}(6), 615--633.
+\url{https://doi.org/10.1016/s0887-6185(00)00054-2}
 
 \hypertarget{ref-simonyan_laryngeal_2011}{}
 Simonyan, K., \& Horwitz, B. (2011). Laryngeal Motor Cortex and Control
@@ -2458,9 +2979,51 @@ Smith, S. M., Brown, H. O., Toman, J. E. P., \& Goodman, L. S. (1947).
 The lack of cerebral effects of d-tubocurarine. \emph{Anesthesiology},
 \emph{8}(1), 1--14.
 
+\hypertarget{ref-sokolov_inner_1972}{}
+Sokolov, A. (1972). \emph{Inner speech and thought.} New York:
+Springer-Verlag.
+
 \hypertarget{ref-stricker_studien_1880}{}
 Stricker, S. (1880). \emph{Studien über die Sprachvorstellungen}. Wien:
 Braumüller.
+
+\hypertarget{ref-sumitsuji_electromyographic_1967}{}
+Sumitsuji, N., Matsumoto, K., Tanaka, M., Kashiwagi, T., \& Kaneko, Z.
+(1967). Electromyographic investigation of the facial muscles.
+\emph{Electromyography}, \emph{7}(2), 77--96.
+
+\hypertarget{ref-berntson_skeletomotor_2007}{}
+Tassinary, L. G., Cacioppo, J. T., \& Vanman, E. J. (2007). The
+Skeletomotor System. In G. Berntson, J. T. Cacioppo, \& L. G. Tassinary
+(Eds.), \emph{Handbook of Psychophysiology} (3rd ed., pp. 267--300).
+Cambridge: Cambridge University Press. Retrieved from
+\url{https://www.cambridge.org/core/books/handbook-of-psychophysiology/skeletomotor-system/CAD1D438D70B4242013F71848E4799D0}
+
+\hypertarget{ref-treynor_rumination_2003}{}
+Treynor, W., Gonzalez, R., \& Nolen-Hoeksema, S. (2003). Rumination
+Reconsidered : A Psychometric Analysis, \emph{27}(3), 247--259.
+\url{https://doi.org/10.1023/A:1023910315561}
+
+\hypertarget{ref-Uttl2011}{}
+Uttl, B., Morin, A., \& Hamper, B. (2011). Are Inner Speech Self-Report
+Questionnaires Reliable and Valid? \emph{Procedia - Social and
+Behavioral Sciences}, \emph{30}, 1719--1723.
+\url{https://doi.org/10.1016/j.sbspro.2011.10.332}
+
+\hypertarget{ref-vallar_articulation_1987}{}
+Vallar, G., \& Cappa, S. F. (1987). Articulation and verbal short-term
+memory: Evidence from anarthria. \emph{Cognitive Neuropsychology},
+\emph{4}(1), 55--77. \url{https://doi.org/10.1080/02643298708252035}
+
+\hypertarget{ref-vickers_effects_2003}{}
+Vickers, K. S., \& Vogeltanz-Holm, N. D. (2003). The Effects of
+Rumination and Distraction Tasks on Psychophysiological Responses and
+Mood in Dysphoric and Nondysphoric Individuals. \emph{Cognitive Therapy
+and Research}, 19.
+
+\hypertarget{ref-vygotsky_collected_1987}{}
+Vygotsky, L. S. (1987). \emph{The Collected Works of L. S. Vygotsky}.
+(R. W. Rieber \& A. S. Carton, Eds.). Springer US.
 
 \hypertarget{ref-Watkins2008}{}
 Watkins, E. R. (2008). Constructive and unconstructive repetitive
@@ -2471,6 +3034,17 @@ thought. \emph{Psychological Bulletin}, \emph{134}(2), 163--206.
 Wolpert, D., Ghahramani, Z., \& Jordan, M. I. (1995). An internal model
 for sensorimotor integration. \emph{Science}, \emph{269}(5232),
 1880--1882. \url{https://doi.org/10.1126/science.7569931}
+
+\hypertarget{ref-woody_brooding_2014}{}
+Woody, M. L., McGeary, J. E., \& Gibb, B. E. (2014). Brooding rumination
+and heart rate variability in women at high and low risk for depression:
+Group differences and moderation by COMT genotype. \emph{Journal of
+Abnormal Psychology}, \emph{123}(1), 61--67.
+\url{https://doi.org/10.1037/a0035450}
+
+\hypertarget{ref-zivin_development_1979}{}
+Zivin, G. (1979). \emph{The development of self-regulation through
+private speech}. New York: Wiley.
 
 
 \end{document}

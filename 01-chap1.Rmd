@@ -2,7 +2,7 @@
 
 # Theoretical framework {#intro}
 
-```{r setup, echo = FALSE, message = FALSE, warning = FALSE, results = "hide"}
+```{r setupCH1, echo = FALSE, message = FALSE, warning = FALSE, results = "hide"}
 knitr::opts_chunk$set(
   cache = TRUE, echo = FALSE, warning = FALSE, message = FALSE,
   out.width = "100%"
@@ -14,8 +14,6 @@ knitr::opts_chunk$set(
 This first set of questions refer to the *nature* of inner speech, that is, *what* is it ? In the current work, we are mostly concerned with this first question. Another related set of interesting questions revolve around the *function* question, that is, *what for* is it ? The influential Vygotskian theory of inner speech development suggests that inner speech evolves from *private speech* (i.e., self-adressed overt speech) during childhood. As such, we (as others have argued elsewhere) postulate that the functions of inner speech are inherited from the functions of private speech, via a mechanism of internalisation. The specific features of this internalisation processs are worthy of investigation on their own (and we briefly discuss them later on) but we are mostly interesred in the *what is* (the nature) question here. Thus, we will only sparsely address the *functions* question in the following text.
 
 That being said, it is interesting to look at situations in which these functions do not work as intended. These *dysfunctions* [that can also be considered as *mis-exadaptation*, @agnati_possible_2012] are as spread as... They can generally be understood as transdiagnostic processes (i.e., a process that is not specific to a single pathology), and cover various...
-
-...
 
 Learning how to internalise speech might be similar to learning how to internalise playing an instrument... Let’s consider the analogy between speaking and playing an instrument (e.g., the piano). Playing piano results from the learning of an infinitely complex coordination of fine motor sequences, that in turn produce sensory (kinestheatic, auditory, visual, etc) feedback to the producer of the action (the agent). It seems that (from a certain level of analysis), the act of speech can be paralleled with the act of playing an instrument in that its consists in the coordination of infinitely complex movements that result in some modifications in the environment that in turn generate sensory feedbacks for the agent. Thus, pursuing the analogy, we argue that imagining playing pian and imagining speaking (i.e., producing inner speech) might rest on similar mechanisms… see O’Shea & Moran (2018) on expert pianists...
 
@@ -72,6 +70,16 @@ In the next section, we turn to a discussion of inner speech conceptualised as a
 ## What is that little voice inside my head ?
 
 ### Inner speech as multimodal verbal imagery
+
+...various terms: internal speech, silent speech, covert speech, implicit speech, speech imagery... difference between generative component (mackay, 1992) / inner speaking / inner voice and perceptual or auditory component (MacKay, 1992) or inner hearing / inner ear...
+
+... a key question: what is the lowest level of specification of inner speech ? ... figure from oppenheim & dell (2010...)
+
+... add a brief historical timeline here (from egger to kapur)...
+
+... see MacKay (1992, page 131) for discussion of speaking rate in inner and overt speech... faster rates also occur for other highli trained skills (e.g., tying a shoelace, Annett, 1988)...ref to review of Guillot...
+
+... emg during inner speech (from mckay, 1992): "interestingly, this same EMG activity invariably precedes by a few milliseconds the full blown muscle activity that occurs during normal movements" (e.g., Schmidt, 1982)...
 
 While grasping the concept of a visual image appears as relatively straightforward, it seems more difficult at first to grasp the concept of a motor image, especially when it comes to verbal imagery. The subjective experience of the tension that results from a given position of the articulators and the covert production of an incompatible speech sound permits to substantiate what a motor image is. For instance, it is generally impossible to generate the image of the pronunciation of the sound "b" while keeping the mouth wide opened [e.g.,@binet_psychologie_1886;@stricker_studien_1880]. This simple experiment allows defining imagined speech as the simulation of the corresponding overt verbal content, where *simulation* is meant to be understood either as the off-line rehearsal of neural motor networks involved in the overt action [@jeannerod_motor_2006], or in the terms of the emulation theories discussed previously^[Translated to speech, the MST is similar to previous proposals such as the *motor theory of voluntary thinking* [@cohen_motor_1986] or the hierarchical model of mental practice [@mackay_problem_1981].].
 

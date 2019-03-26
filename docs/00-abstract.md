@@ -1,5 +1,5 @@
 \chapter*{Abstract}
 
-\initial{B}lah blah...
+\initial{T}o be detailed...
 
 \afterpage{\blankpage}

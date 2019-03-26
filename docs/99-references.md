@@ -9,6 +9,7 @@ This manually sets the header for this unnumbered chapter.
 
 \singlespacing
 \sloppy
+
 -->
 
 \noindent
