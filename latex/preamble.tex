@@ -168,6 +168,21 @@
 
 \newtcolorbox[]{summary}[2][]{title=#2,#1}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Create explanation Box environment %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\tcbuselibrary{skins,breakable}
+\usepackage{lipsum}
+
+\newtcolorbox[auto counter, number within = chapter, number freestyle = {\noexpand\thechapter.\noexpand\arabic{\tcbcounter}}]{mybox}[2][]{%
+    enhanced,
+    %breakable,
+    fonttitle = \bfseries,
+    title = Box~\thetcbcounter: #2,
+    #1
+}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Get the number of current chapter %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

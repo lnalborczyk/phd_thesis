@@ -2,7 +2,7 @@
 title: Psychophysiological characteristics of verbal rumination
 
 author: "" # Ladislas Nalborczyk
-date: "" #"2019-03-26"
+date: "" #"2019-03-27"
 
 documentclass: memoir # book # reedthesis
 # classoption: a4paper,12pt,oneside,oldfontcommands # memoir class options

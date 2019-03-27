@@ -4,19 +4,19 @@
 
 
 
-\initial{A}s you read these words, you might notice the presence of a familiar companion. A voice-like phenomenon that remains unnoticed until we pay attention to it. However, if I ask you to focus on that little voice while you are reading these lines, you would probably be able to provide a relatively fine-graind description of this thing that we call inner speech. Whose voice is it ? Is it yours ? Is it gendered ? It is usually possible to examine these aspects as well as more low-level features like the tone of this soundy companion, its pitch, its tempo, or virtually any sensory aspect of it. This first set of very basic observations already provide us some very important insights. First, if we can think about inner speech, then it should be something different from thinking itself (réf ?). Rather, inner speech (or *covert speech*), can be construed as *a* vehicle for conscious thought (instead of *verbal thinking*, for instance)^[We will not dwell on the touchy question whether inner speech is a necessary condition for consciousness. For the current purpose, it is sufficient to say that thinking and inner speech are ontologically separable.]. Second, the set of observations we can make about our inner voice also tautologically reveals that inner speech is accompanied by sensory percepts (sounds, kinaesthesic feelings, etc.). It thus raises an interesting question: where do these percepts come from ? Why do they look like the one we experience when we *actually* (overtly) speak ?
+\initial{A}s you read these words, you might notice the presence of a familiar companion. A voice-like phenomenon that remains unnoticed until we pay attention to it. However, if I ask you to focus on that little voice while you are reading these lines, you would probably be able to provide a relatively fine-graind description of this thing that we call inner speech. Whose voice is it ? Is it yours ? Is it gendered ? It is usually possible to examine these aspects as well as more low-level features like the tone of this soundy companion, its pitch, its tempo, or virtually any sensory aspect of it. This first set of very basic observations already provide us some very important insights. First, if we can think about inner speech, then it should be something different from thinking itself. Rather, inner speech (or *covert speech*) can be construed as *a* vehicle for conscious thought (instead of *verbal thinking*, for instance)^[We will not dwell on the touchy question whether inner speech is a necessary condition for consciousness. For the current purpose, it is sufficient to say that thinking and inner speech are ontologically separable.]. Second, the set of observations we can make about our inner voice also tautologically reveals that inner speech is accompanied by sensory percepts (sounds, kinaesthesic feelings, etc.). It thus raises another set of fascinating questions about the origin and nature of inner speech percepts: where do these percepts come from ? Why do they look like the one we experience when we *actually* (overtly) speak ?
 
-This first set of questions refer to the *nature* of inner speech, that is, *what* is it ? In the current work, we are mostly concerned with this first question. Another related set of interesting questions revolve around the *function* question, that is, *what for* is it ? The influential Vygotskian theory of inner speech development suggests that inner speech evolves from *private speech* (i.e., self-adressed overt speech) during childhood. As such, we (as others have argued elsewhere) postulate that the functions of inner speech are inherited from the functions of private speech, via a mechanism of internalisation. The specific features of this internalisation processs are worthy of investigation on their own (and we briefly discuss them later on) but we are mostly interesred in the *what is* (the nature) question here. Thus, we will only sparsely address the *functions* question in the following text.
+This first set of questions refer to the *nature* of inner speech, that is, *what* is it ? In the current work, we are mostly concerned with this first question. Another related set of fascinating questions revolve around the *function* question, that is, *what is it for* [e.g.,@alderson-day_inner_2015] ? The influential Vygotskian theory of inner speech development suggests that inner speech evolves from *private speech* (i.e., self-adressed overt speech) during childhood. As such, we (as others have argued elsewhere) postulate that the functions of inner speech are inherited from the functions of private speech, via a mechanism of internalisation. The specific features of this internalisation processs are worthy of investigation on their own (and we briefly discuss them later on) but we are mostly interesred in the *what is* (the nature) question here. Thus, we will only sparsely address the *functions* question in the following text.
 
 That being said, it is interesting to look at situations in which these functions do not work as intended. These *dysfunctions* [that can also be considered as *mis-exadaptation*, @agnati_possible_2012] are as spread as... They can generally be understood as transdiagnostic processes (i.e., a process that is not specific to a single pathology), and cover various...
 
-Learning how to internalise speech might be similar to learning how to internalise playing an instrument... Let’s consider the analogy between speaking and playing an instrument (e.g., the piano). Playing piano results from the learning of an infinitely complex coordination of fine motor sequences, that in turn produce sensory (kinestheatic, auditory, visual, etc) feedback to the producer of the action (the agent). It seems that (from a certain level of analysis), the act of speech can be paralleled with the act of playing an instrument in that its consists in the coordination of infinitely complex movements that result in some modifications in the environment that in turn generate sensory feedbacks for the agent. Thus, pursuing the analogy, we argue that imagining playing pian and imagining speaking (i.e., producing inner speech) might rest on similar mechanisms… see O’Shea & Moran (2018) on expert pianists...
-
 ## Rumination as a form of repetitive negative thinking
 
-Blah blah [@koster_rumination_2013]...
+### Theoretical perspectives on rumination
 
-As suggested by @Christoff2016, rumination and other forms of spontaneous thoughts can be considered in a common conceptual space (see Figure 1). This space is built upon two dimensions: *deliberate constraints* and *automatic constraints*. These dimensions represent two general mechanisms that allow to constrain the contents of these related mental states and the transitions between them. The first contrain correspond to a deliberate processus and is implemented through **cognitive control** [@Miller2000]. The second constrain is referring to more automatic constrains like sensory afferences. In this framework, rumination is characterizsd by the highest level of automatic constraints and spread all along the *deliberate constraints* dimension.
+The cognitive approach [@Koster2011;@Koster2013]... from the RST to contrl theories and the mental habit theory...
+
+As suggested by @christoff_mind-wandering_2016, rumination and other forms of spontaneous thoughts can be considered in a common conceptual space (see Figure 1). This space is built upon two dimensions: *deliberate constraints* and *automatic constraints*. These dimensions represent two general mechanisms that allow to constrain the contents of these related mental states and the transitions between them. The first contrain correspond to a deliberate processus and is implemented through **cognitive control** [@miller_prefrontal_2000]. The second constrain is referring to more automatic constrains like sensory afferences. In this framework, rumination is characterised by the highest level of automatic constraints and spread all along the *deliberate constraints* dimension.
 
 \begin{figure}
 
@@ -27,21 +27,133 @@ As suggested by @Christoff2016, rumination and other forms of spontaneous though
 \caption{Conceptual space of different types of thought (Christoff et al., 2016)}(\#fig:conceptual)
 \end{figure}
 
+...
+
+### On the verbal and sensory properties of rumination
+
+...
+
+## What is that little voice inside my head ?
+
+...description, functions, nature...
+
+### Brief historical overiew of inner speech investigations
+
+...add a brief historical timeline here (from egger to kapur)...
+
+### Inner speech as a form of motor imagery
+
+...
+
+#### Action representation and internal models
+
+Voir @jeannerod_representing_1994 and @wolpert_internal_1995, Wolpert & Gharamani (2000)...
+
+\begin{mybox}[label = IM]{What is a internal model ?}
+
+Blah blah...
+
+\end{mybox}
+
+...
+
+### Theoretical perspectives about inner speech production
+
+The inner voice as the sensory consequence (prediction, see Loevenbruck et al., 2018) of imagined speech. Analogy with raising the arm: what we perceive when we imagine raising our arm are the sensory consequences (e.g., visual) of what would happen if we actually raised our arm, these are then kind of predictions. The same thing happens during inner speech production: the inner voice is the predicted auditory consequence of actual speech, except that it’s predicted. The two actions might seem very different, partly because of differences in the degree of automaticity. Imagining raising our arm might need a voluntary/deliberate/conscious (choose a word) intention (i.e., I want to raise my arm > I raise my arm) while speech imagery (i.e., inner speech) seems more automatic: we do not expression consciously the intention to speak, we just speak...
+
+Learning how to internalise speech might be similar to learning how to internalise playing an instrument... Let’s consider the analogy between speaking and playing an instrument (e.g., the piano). Playing piano results from the learning of an infinitely complex coordination of fine motor sequences, that in turn produce sensory (kinestheatic, auditory, visual, etc) feedback to the producer of the action (the agent). It seems that (from a certain level of analysis), the act of speech can be paralleled with the act of playing an instrument in that its consists in the coordination of infinitely complex movements that result in some modifications in the environment that in turn generate sensory feedbacks for the agent. Thus, pursuing the analogy, we argue that imagining playing pian and imagining speaking (i.e., producing inner speech) might rest on similar mechanisms… see @oshea_go_2018 on expert pianists...
+
+#### MVTV Cohen (1986)
+
+...
+
+#### Predictive models
+
+Learning how to internalise speech might be similar to learning how to internalise playing an instrument... Let’s consider the analogy between speaking and playing an instrument (e.g., the piano). Playing piano results from the learning of an infinitely complex coordination of fine motor sequences, that in turn produce sensory (kinestheatic, auditory, visual, etc) feedback to the producer of the action (the agent). It seems that (from a certain level of analysis), the act of speech can be paralleled with the act of playing an instrument in that its consists in the coordination of infinitely complex movements that result in some modifications in the environment that in turn generate sensory feedbacks for the agent. Thus, pursuing the analogy, we argue that imagining playing pian and imagining speaking (i.e., producing inner speech) might rest on similar mechanisms… see O’Shea & Moran (2018) on expert pianists...
+
+#### Loevenbruck et al., HMOSAIC
+
+...
+
 **Copy-pasted from zygoto old intro...**
 
-Speech production might be one of the most complex motor action ever studied. Involving the fine-grained coordination of more than 100 muscles in the upper part of the body [@simonyan_laryngeal_2011], its expression is shaped by a subtle combination of physiological, cultural and evolutionary determinants. In adult humans, its covert counterpart (i.e., *inner speech* or *verbal imagery*) has developed to allow the full reconstruction of usual overt speech situations. In the same way as visual imagery allows to mentally examine visual scenes, *verbal imagery* can be used as an internal tool, allowing --amongst other things-- to rehearse or to prepare past and future speech situations [for a review, see @perrone-bertolotti_what_2014]. In consideration of its self-evident motoric nature, a parallel can be drawn between verbal imagery and other forms of motor imagery (e.g., imagined walking or imagined writing). As such, inner speech studies might benefit from insights gained from the study of motor imagery and the field of motor cognition [e.g.,@haggard_conscious_2005;@jeannerod_motor_2006]. Whereas previous research have demonstrated that it is possible to record muscle-specific electromyographic correlates of inner speech production using invasive intramuscular needle electrodes, more recent research using surface electromyography lead to mixed results. Building upon previous work, we describe an experimental set-up using surface electromyography with the aim of refining the description of the involvement of the speech motor system during inner speech production.
+Speech production might be one of the most complex motor action ever studied. Involving the fine-grained coordination of more than 100 muscles in the upper part of the body [@simonyan_laryngeal_2011], its expression is shaped by a subtle combination of physiological, cultural and evolutionary determinants. In adult humans, its covert counterpart (i.e., *inner speech* or *verbal imagery*) has developed to allow the full reconstruction of usual overt speech situations. In the same way as visual imagery allows to mentally examine visual scenes, *verbal imagery* can be used as an internal tool, allowing --amongst other things-- to rehearse or to prepare past and future speech situations [for a review, see @Perrone-Bertolotti2014]. In consideration of its self-evident motoric nature, a parallel can be drawn between verbal imagery and other forms of motor imagery (e.g., imagined walking or imagined writing). As such, inner speech studies might benefit from insights gained from the study of motor imagery and the field of motor cognition [e.g.,@haggard_conscious_2005;@jeannerod_motor_2006]. Whereas previous research have demonstrated that it is possible to record muscle-specific electromyographic correlates of inner speech production using invasive intramuscular needle electrodes, more recent research using surface electromyography lead to mixed results. Building upon previous work, we describe an experimental set-up using surface electromyography with the aim of refining the description of the involvement of the speech motor system during inner speech production.
 
-## What is motor imagery ?
+## Theoretical perspective on motor imagery
+
+Considerable experimental evidence has accumulated to suggest that movement execution and MI share substantial overlap of active brain regions (for review, see Guillot et al., 2012). Such apparent functional equivalence supports the hypothesis that MI draws on the similar neural networks that are used in actual perception and motor control (Jeannerod, 1994; Grezes and Decety, 2001; Holmes and Collins, 2001)...
+
+See introduction of O’Shea (2017) phd thesis introduction... See Stinear’s chapter in Guillot’s book for intracortical and spinal mechanisms involved during motor imagery (p.55-57).
+
+### Overt and imagined actions
+
+Wittgenstein’s (1953) famous query: "When I raise my arm, what is left after subtracting the fact that my arm raised?". We posit that what is left is an internal model (a representation) of what should happen if and when my arm goes up (Jeannerod, 1999)...
 
 ### The motor simulation theory
 
-Motor imagery can be defined as the mental process by which one rehearses a given action, without engaging in the physical movements involved in this particular action. One of the most influential theoretical explanation of this broad phenomenon, the *motor simulation theory* [MST; @jeannerod_representing_1994;@jeannerod_neural_2001;@jeannerod_motor_2006], contains the three following postulates at its core: i) there exists a continuum between the covert (the mental representation) and the overt execution of an action, ii) action representations can operate off-line, via a *simulation* mechanism, and iii) covert actions rely on the same set of mechanisms as the overt actions they simulate, except that execution is inhibited [@oshea_does_2017].
+In his seminal paper, @jeannerod_representing_1994 introduces the idea of a close functional equivalence between motor imagery and motor preparation, as suggested by the similar neural and physiological correlates observed in both imaging and preparing (and by the effects of motor imagery on motor learning and training). According to Jeannerod, actions are driven by an "internally represented world rather than directly by the external world" (page 187). In the next paragraph(s), Jeannerod seems to equate motor representations with motor images or what he calls *pragmatic representations* (page 187). For Jeannerod, motor imagery is a part of a broader phenomenon (the motor representation) related to intending and preparing movements (page 189). He also echoes the distinction (coming from sport psychology) between *internal* (imagining an action from the first perspective, which would be more kinesthesic) and *external imagery* (imagining an action from the third perspective, which would be more visual). For him, motor imagery necessarily belongs to the former type (page 189), whereas the term of *motor imagery* in sport psychology seems to more broadly ecnompasse both first-person and third-person motor imagery [e.g.,].
 
-In this framework, the concept of simulation refers to the "offline rehearsal of neural networks" [@jeannerod_motor_2006], and motor imagery is conceptualised as a simulation of the covert stage of the same executed action [@oshea_does_2017]. The MST shares some similarities with the theories of embodied and grounded cognition [@barsalou_grounded_2008] in that both allow to account for the phenomenon of motor imagery by appealing to a simulation mechanism. However, the concept of simulation in grounded theories is assumed to be multi-modal (not just motoric) and to operate in order to achieve a particular abstract knowledge [@oshea_does_2017], which is not the concern of the MST^[We should also make a distinction between *embodiment of content*, which concerns the conceptual content of language, and *embodiment of form*, which concerns "the vehicle of thought", that is, proper speech production [@pickering_integrated_2013].].
+Motor preparation is unconscious while motor imagery is conscious. However, Jeannerod suggests that the difference between the two might be a difference of degree, rather than one of kind, as the difference between the two would only be determined by the time spent on each (i.e., if one makes motor preparation lasting for longer than it’s usually needed, it can “become” motor imagery, page 190). In plain words, the idea is that motor representations/intentions become known to the subject when they are not followed by execution (page 190), so there would be a continuum between motor preparation and motor imagery.
+
+EMG lines of evidence page 191: Eye movements have been recorded during the recall of visual scenes (e.g., Jeannerod & Mouret 1962). Jacobson (1930) first suggested that muscles were selectively activated during imagined action. Shaw (1940) reported that during imagined weight lifting, electromyographic (EMG) activity of forearm muscles increased linearly with the magnitude of the weight, etc.
+
+Neural structures and physiological correlates page 192-193.
+
+Evidence from mental chronometry and temporal equivalence (e.g., Landauer, 1962), showing that it takes approximately the same amount of time to say the alphabet or series of numbers aloud and to think them to himself.
+
+The famous walking + load experiment of Decety et al. (1989) reveals that force, rather than duration, is the encoded variable, and that estimated duration is merely derived from the level of centrally represented force. When the subjects carried the load, they centrally programmed a greater force to overcome any resistance, because subjects did not actually walk (page 194). For Jeannerod, the programming of force as a subjective correlate: the sensation of effort, which can become perceptible to the actor independently of overt movement execution and can be monitored experimentally (page 194). Page 196: representation of kinematic regularities (e.g., Fitts’ law, Viviani’s experiments, etc.).
+
+In the following (section 5, starting page 197), Jeannerod develops the idea that the goal of an action includes an internal representation of both the external object toward which it is directed and the final state of the organism when that object has been reached. Then, he develops on the idea of a distinction between a pragmatic mode and a semantic mode (page 198).  He also makes a distinction between two functions of representations: a sensory one (to extract from the external world the attributes of objects or situations that are relevant to a given action) and a motor one (to encode some aspects of that action) (page 199).
+
+NB: in this paper (Jeannerod, 1994), there is no explicit mention of a “simulation” process… Jeannerod only discusses the conscious access to the content of a representation, and defines it as motor imagery (cf. notes above as well as the distinction drawn by Grush, 2004). Interestingly, in the commentaries, Morton suggests that many of the cases Jeannerod reports are actually instances of simulations, rather than mere imagination, because these cases contain part of what would be involved in actual performance (page 215). In his response, Jeannerod seems to agree with and to endorse this view (e.g., page 231).
+
+In the commentary of this paper Gursh suggests that... (Motor models as steps to higher cognition (Rick Grush)) there should exist an inverse model, and points that nothing mentioned in the target article is actually capable of generating mental imagery. For Grush, this inverse model would act centrally, taking as input the efferent copy (for instance) and would output a mock version of the afferent signals the peripheral system would have produced given the same input (i.e., an emulator, see page 209).
+
+For @jeannerod_mental_1995, motor imagery is necessarily first-perspective. Third perspective imagery is imagery, but not MOTOR imagery... Motor representations are conceived here as 'internal models' of the goal of an action.
+
+In @jeannerod_neural_2001, "Covert and overt stages thus represent a continuum, such that overtly executed action implies the existence of a covet stage, whereas a covert action does not necessarily turns out into an overt action" (page S103). Jeannerod introduces the term S-states to designate mental stats which involve an action content and where brain activity can be shown to simulate that observed during the same, executed, action. These S-states correspond to intended action, imagined action, and many others (see Table 1, page S104).
+
+<!--
+The problem of inhibition (page S106): how come that covert actions, in spite of activation of the motor system, do not result in muscular activity and overt movements? Two possibilities:
+
+-	Subliminal activation during S-states, insufficient to fire spinal motoneurons
+-	Or, activations would be blocked/attenuated before to reach the motoneurons by an inhibitory mechanism generated in parallel to the motor activation
+
+NB: these two possibilities are not necessarily incompatible...
+-->
+
+In @jeannerod_motor_2006, The Simulation Hypothesis of Motor Cognition (pages 129-164). See Schematic summary of motor simulation according to Jeannerod (page 133).
+
+"Simulation is used here as the off-line rehearsal of neural networks involved in specific operations such as perceiving or acting (page 129). According to our view [...], the simulation relates not to complete actions but to unspecific elements that comprise actions. Motor representations are automatically assembled in response to immediate task requirements and do not rely on memorized actions (page 134)."
+
+The peripheralist versus centralist interpretation of physiological inner speech correlates (page 153): Subvocal speech was first interpreted as a source of peripheral kinesthetic information which, when projected to central nervous structures, generated auditory images of the corresponding words. The same interpretation was given to the low intensity EMG recorded during mental motor imagery of limb actions, which was thought to be the origin of the feelings experienced by the subject during mental rehearsal (Jacobson 1930), or to the eye movements recorded during mental visual imagery (e.g. Brandt and Stark, 1997). However, this interpretation of mental processes as consequences of peripheral feedback is now disproved by recent experiments showing complete absence of muscular activity in many subjects during motor imagery. When present, this activity is rather assumed to be a consequence of incomplete inhibition of motor output during mental states involving motor simulation. This same interpretation might also hold for inner speech.
+
+Motor imagery can be defined as the mental process by which one rehearses a given action, without engaging in the physical movements involved in this particular action. One of the most influential theoretical explanation of this broad phenomenon, the *motor simulation theory* [MST,@jeannerod_representing_1994;@jeannerod_neural_2001;@jeannerod_motor_2006], contains the three following postulates at its core: i) there exists a continuum between the covert (the mental representation) and the overt execution of an action, ii) action representations can operate off-line, via a *simulation* mechanism, and iii) covert actions rely on the same set of mechanisms as the overt actions they simulate, except that execution is inhibited [@oshea_does_2017].
+
+In this framework, the concept of simulation refers to the "offline rehearsal of neural networks" [@jeannerod_motor_2006], and motor imagery is conceptualised as a simulation of the covert stage of the same executed action [@oshea_does_2017]. The MST shares some similarities with the theories of embodied and grounded cognition [@Barsalou2008] in that both allow to account for the phenomenon of motor imagery by appealing to a simulation mechanism. However, the concept of simulation in grounded theories is assumed to be multi-modal (not just motoric) and to operate in order to achieve a particular abstract knowledge [@oshea_does_2017], which is not the concern of the MST^[We should also make a distinction between *embodiment of content*, which concerns the conceptual content of language, and *embodiment of form*, which concerns "the vehicle of thought", that is, proper speech production [@pickering_integrated_2013].].
 
 The MST is supported by a wealth a findings, going from mental chronometry studies showing that the time taken to perform an action is often found to be similar to the time needed to imagine the corresponding action [though not always, see @glover_motor-cognitive_2017, for a review of controversial findings and for an alternative conceptualisation of motor imagery], to neuroimaging and neurostimulation studies showing that both motor imagery and overt actions tend to recruit similar frontal, parietal and sub-cortical regions [e.g.,@hetu_neural_2013;@jeannerod_neural_2001]. The involvement of the motor system during motor imagery is also supported by repeated observations of autonomic responses and peripheral muscular activity during motor imagery (we discuss these observations in section \@ref(emg)).
 
+### Centralism versus peripheralism
+
+The motor theory of perception: mental states arise from movement (more precisely, from innervation associated with movements (the perceived image of an object arises from the muscular discharges produced during the movements involved in exploring it). The peripheral variant of the motor theory is the idea according to which the mental image of that object is also produced by covert muscular discharges in the related muscles (cf. work from James, 1890; Jacobson, 1930).
+
+But the idea developed in this paper is quite the reverse of the peripheral motor theory and would be more akin to a centralist version of the motor theory (page 190). Jeannerod says that existence of muscle discharge during a mental state does not imply a bottom-up influence of these discharges on the mental state. The key phenomenon in Jeannerod’s conception is the motor intention, which is though to be largely endogenous (page 190). Motor imagery would represent the results of conscious access to the content of the intention, and the content of the intention would constrain the expression of the image (page 190). Jeannerod also states that this view is in agreement with the corollary discharge model. The key idea is that the activation of peripheral mechanisms is not needed to generate the image (but they can be activated, as a consequence of the activation of the image/representation)...
+
 ### Emulation and internal models
+
+NB: in this paper emulator is used as a synonym for “forward models” (pages 378-379)...
+
+@grush_emulation_2004 proposes a unified framework for explaining a wide variety of representational functions of the brain: the emulation theory of representation. This theory has its origins in control theory (forward models) and signal processing (Kalman filters).
+
+Difference between emulation theory of motor imagery and simulation theory à la Jeannerod (pages 384-385): "[…] Given these definitions, it should be clear that the simulation theory and the emulation theory are not at all the same thing. They agree that the efferent motor centers are active during imagery. The simulation theory takes this by itself to be sufficient for motor imagery; the emulation theory does not, and claims that in addition, an emulator of the musculoskeletal system is needed and imagery is produced when the efferent motor centers drive this emulator. This distinction should be entirely obvious. To make an analogy: The emulation theory claims that motor imagery is like a pilot sitting in a flight simulator, and the pilot’s efferent commands (hand and foot movements, etc.) are translated into faux “sensory” information (instrument readings, mock visual display) by the flight simulator which is essentially an emulator of an aircraft. The simulation theory claims that just a pilot, moving her hands and feet around but driving neither a real aircraft nor a flight simulation, is sufficient for mock sensory information."
+
+Distinguishing between simulation and emulation theories (page 385): "[…] The only way to get from the former (signals in motor format) to the latter (signals in proprioceptive and kinesthetic format) is to run the motor signal through something that maps motor plans/signals to proprioception and kinesthesis. And the two possibilities are (a) the body (yielding real proprioception and kinesthesis), and (b) a body emulator (yielding faux proprioception and kinesthesis) […] A motor plan is one thing, a sequence of proprioception and kinesthesis is another. The simulation theorist conflates them."
+
+In @moulton_imagining_2009, In brief: they tried to characterize mental imagery as an information processing system, considering it in the perspective of Marr’s three levels of explanation (i.e., the computational, algorithmic, and implementation levels).
+
+Imagery is also characterized by its reliance on perceptual representations and activation of perceptual brain systems. We use this conception of imagery to argue that all imagery is simulation— more specifically, it is a specific type of simulation in which the mental processes that ‘run’ the simulation emulate those that would actually operate in the simulated scenario. This type of simulation, which we label emulation, has benefits over other types of simulations that merely mimic the content of the simulated scenario.
+They note (page 1273): "[…] ‘motor imagery’ (which actually appears to be proprioceptive or kinaesthetic imagery—one experiences the bodily sensations of movement, not the movement commands themselves: Jeannerod, 1994)."
 
 A second class of explanatory models of motor imagery are concerned with the phenomenon of *emulation* and with *internal models* [see @gentsch_towards_2016, for a review of the similarities and dissimilarities of simulation and emulation models].
 
@@ -55,7 +167,7 @@ One important difference between the emulation theory of motor imagery and the M
 
 ## Electromyography of covert actions {#emg}
 
-### Explanations for the presence of muscular activity during motor imagery
+### Explaining the muscular activity during motor imagery
 
 Motor imagery has consistently been defined as the mental rehearsal of a motor action without any overt movement. One consequence of this claim is that, in order to prevent execution, the neural commands for muscular contractions should be blocked at some level of the motor system by active inhibitory mechanisms [for a review, see @guillot_imagining_2012]. Despite these inhibitory mechanisms, there is now abundant evidence for peripheral muscular activation during motor imagery [for a review, see @guillot_contribution_2005;@guillot_imagining_2012]. As suggested by @jeannerod_representing_1994, the incomplete inhibition of the motor commands would provide a valid explanation to account for the peripheral muscular activity observed during motor imagery. This idea has been corroborated by studies of changes in the excitability of the motor pathways during motor imagery tasks. @bonnet_mental_1997 measured spinal reflexes while participants were instructed to either press a pedal with the foot or to simulate the same action mentally. They observed that both H-reflexes and T-reflexes increased during motor imagery, and that these increases correlated with the force of the simulated pressure. Using transcranial magnetic stimulation and motor evoked potentials (MEPs), several investigators observed muscle-specific increases of MEPs during various motor imagery tasks, while no such increase could be observed in antagonist muscles [e.g.,@fadiga_corticospinal_1999;@rossini_corticospinal_1999]^[As a side note, we should remark that these findings are consistent with both the simulation and the emulation views on motor imagery.].
 
@@ -67,15 +179,11 @@ As reviewed in @guillot_electromyographic_2010, although there are many observat
 
 In the next section, we turn to a discussion of inner speech conceptualised as a kind of motor (and sensory) imagery of speech, and discuss the theoretical underpinnings of this proposition as well as the available empirical evidence in its support.
 
-## What is that little voice inside my head ?
-
-### Inner speech as multimodal verbal imagery
+### Electromyographic correlates of inner speech production
 
 ...various terms: internal speech, silent speech, covert speech, implicit speech, speech imagery... difference between generative component (mackay, 1992) / inner speaking / inner voice and perceptual or auditory component (MacKay, 1992) or inner hearing / inner ear...
 
 ... a key question: what is the lowest level of specification of inner speech ? ... figure from oppenheim & dell (2010...)
-
-... add a brief historical timeline here (from egger to kapur)...
 
 ... see MacKay (1992, page 131) for discussion of speaking rate in inner and overt speech... faster rates also occur for other highli trained skills (e.g., tying a shoelace, Annett, 1988)...ref to review of Guillot...
 
@@ -86,45 +194,3 @@ While grasping the concept of a visual image appears as relatively straightforwa
 The model of wilful (voluntary) inner speech production introduced in @loevenbruck_cognitive_2018 goes one step further and, by building on the models of speech motor control [e.g.,@houde_speech_2011;@wolpert_internal_1995], describes inner speech as "multi-modal acts with multi-sensory percepts stemming from coarse multi-sensory goals". In other words, the auditory and kinaesthetic sensations perceived during inner speech prediction are assumed to be the predicted sensory consequences of speech motor acts, emulated by internal forward models, that use the efference copies issued from an inverse model [this proposal shares similarities with the emulation model of motor imagery discussed earlier, @grush_emulation_2004].
 
 **Fin de l'intro old de zygoto...**
-
-## Overt and imagined actions
-
-Wittgenstein’s (1953) famous query: "When I raise my arm, what is left after subtracting the fact that my arm raised?". We posit that what is left is an internal model (a representation) of what should happen if and when my arm goes up (Jeannerod, 1999)...
-
-### Motor imagery
-
-Considerable experimental evidence has accumulated to suggest that movement execution and MI share substantial overlap of active brain regions (for review, see Guillot et al., 2012). Such apparent functional equivalence supports the hypothesis that MI draws on the similar neural networks that are used in actual perception and motor control (Jeannerod, 1994; Grezes and Decety, 2001; Holmes and Collins, 2001)...
-
-See introduction of O’Shea (2017) phd thesis introduction...
-
-See Stinear’s chapter in Guillot’s book for intracortical and spinal mechanisms involved during motor imagery (p.55-57).
-
-#### Simulation theories
-
-For Jeannerod (1995), motor imagery is necessarily first-perspective. Third perspective imagery is imagery, but not MOTOR imagery… Motor representations are conceived here as 'internal models' of the goal of an action. 
-
-#### Emulation theories
-
-...
-
-#### Action representation and internal models
-
-Voir Jeannerod (2004), Wolpert el al. (1995), Wolpert & Gharamani (2000)...
-
-### Inner speech - what is this little voice in my head ?
-
-...
-
-The inner voice as the sensory consequence (prediction, see Loevenbruck et al., 2018) of imagined speech. Analogy with raising the arm: what we perceive when we imagine raising our arm are the sensory consequences (e.g., visual) of what would happen if we actually raised our arm, these are then kind of predictions. The same thing happens during inner speech production: the inner voice is the predicted auditory consequence of actual speech, except that it’s predicted. The two actions might seem very different, partly because of differences in the degree of automaticity. Imagining raising our arm might need a voluntary/deliberate/conscious (choose a word) intention (i.e., I want to raise my arm > I raise my arm) while speech imagery (i.e., inner speech) seems more automatic: we do not expression consciously the intention to speak, we just speak…
-
-#### MVTV Cohen (1986)
-
-...
-
-#### Predictive models
-
-Learning how to internalise speech might be similar to learning how to internalise playing an instrument... Let’s consider the analogy between speaking and playing an instrument (e.g., the piano). Playing piano results from the learning of an infinitely complex coordination of fine motor sequences, that in turn produce sensory (kinestheatic, auditory, visual, etc) feedback to the producer of the action (the agent). It seems that (from a certain level of analysis), the act of speech can be paralleled with the act of playing an instrument in that its consists in the coordination of infinitely complex movements that result in some modifications in the environment that in turn generate sensory feedbacks for the agent. Thus, pursuing the analogy, we argue that imagining playing pian and imagining speaking (i.e., producing inner speech) might rest on similar mechanisms… see O’Shea & Moran (2018) on expert pianists...
-
-#### Loevenbruck et al., HMOSAIC
-
-...

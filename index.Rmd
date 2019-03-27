@@ -28,7 +28,7 @@ cat(
   )
 ```
 
-```{r coverpicture, eval = FALSE, fig.align = "center", out.width = "100%", echo = FALSE, include = identical(knitr:::pandoc_to(), "html")}
+```{r coverpicture, fig.align = "center", out.width = "100%", echo = FALSE, include = identical(knitr:::pandoc_to(), "html")}
 knitr::include_graphics("assets/cover.png", dpi = NA)
 ```
 

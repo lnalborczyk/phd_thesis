@@ -28,44 +28,6 @@
             pdfborder={0 0 0},
             breaklinks=true}
 \urlstyle{same}  % don't use monospace font for urls
-\usepackage{color}
-\usepackage{fancyvrb}
-\newcommand{\VerbBar}{|}
-\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
-\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
-% Add ',fontsize=\small' for more characters per line
-\newenvironment{Shaded}{}{}
-\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
-\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{#1}}
-\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
-\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
-\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
-\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{#1}}
-\newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
-\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
-\newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
-\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
-\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{#1}}
-\newcommand{\ImportTok}[1]{#1}
-\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{#1}}}
-\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{#1}}}
-\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
-\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
-\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{#1}}
-\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{#1}}
-\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{#1}}
-\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
-\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{#1}}
-\newcommand{\BuiltInTok}[1]{#1}
-\newcommand{\ExtensionTok}[1]{#1}
-\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{#1}}
-\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{#1}}
-\newcommand{\RegionMarkerTok}[1]{#1}
-\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
-\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
-\newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
-\newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
-\newcommand{\NormalTok}[1]{#1}
 \usepackage{longtable,booktabs}
 \usepackage{graphicx,grffile}
 \makeatletter
@@ -290,6 +252,21 @@
 
 \newtcolorbox[]{summary}[2][]{title=#2,#1}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Create explanation Box environment %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\tcbuselibrary{skins,breakable}
+\usepackage{lipsum}
+
+\newtcolorbox[auto counter, number within = chapter, number freestyle = {\noexpand\thechapter.\noexpand\arabic{\tcbcounter}}]{mybox}[2][]{%
+    enhanced,
+    %breakable,
+    fonttitle = \bfseries,
+    title = Box~\thetcbcounter: #2,
+    #1
+}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Get the number of current chapter %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -394,8 +371,7 @@ thesis.
 
 \initial{T}his PhD has been realised as a joint PhD between Univ.
 Grenoble Alpes (Grenoble, France) and Ghent University (Ghent, Belgium).
-It has been funded by Univ. Grenoble Alpes (UPMF)\ldots{} studies have
-also been co-funded by the ANR INNER SPEECH () and\ldots{}
+It has been funded by Univ. Grenoble Alpes (UPMF)\ldots{}
 
 The underlying code as well as an online version of this is thesis is
 available at: \url{https://github.com/lnalborczyk/phd_thesis}.
@@ -435,33 +411,35 @@ features like the tone of this soundy companion, its pitch, its tempo,
 or virtually any sensory aspect of it. This first set of very basic
 observations already provide us some very important insights. First, if
 we can think about inner speech, then it should be something different
-from thinking itself (réf ?). Rather, inner speech (or \emph{covert
-speech}), can be construed as \emph{a} vehicle for conscious thought
-(instead of \emph{verbal thinking}, for instance)\footnote{We will not
-  dwell on the touchy question whether inner speech is a necessary
-  condition for consciousness. For the current purpose, it is sufficient
-  to say that thinking and inner speech are ontologically separable.}.
-Second, the set of observations we can make about our inner voice also
+from thinking itself. Rather, inner speech (or \emph{covert speech}) can
+be construed as \emph{a} vehicle for conscious thought (instead of
+\emph{verbal thinking}, for instance)\footnote{We will not dwell on the
+  touchy question whether inner speech is a necessary condition for
+  consciousness. For the current purpose, it is sufficient to say that
+  thinking and inner speech are ontologically separable.}. Second, the
+set of observations we can make about our inner voice also
 tautologically reveals that inner speech is accompanied by sensory
-percepts (sounds, kinaesthesic feelings, etc.). It thus raises an
-interesting question: where do these percepts come from ? Why do they
-look like the one we experience when we \emph{actually} (overtly) speak
-?
+percepts (sounds, kinaesthesic feelings, etc.). It thus raises another
+set of fascinating questions about the origin and nature of inner speech
+percepts: where do these percepts come from ? Why do they look like the
+one we experience when we \emph{actually} (overtly) speak ?
 
 This first set of questions refer to the \emph{nature} of inner speech,
 that is, \emph{what} is it ? In the current work, we are mostly
-concerned with this first question. Another related set of interesting
+concerned with this first question. Another related set of fascinating
 questions revolve around the \emph{function} question, that is,
-\emph{what for} is it ? The influential Vygotskian theory of inner
-speech development suggests that inner speech evolves from \emph{private
-speech} (i.e., self-adressed overt speech) during childhood. As such, we
-(as others have argued elsewhere) postulate that the functions of inner
-speech are inherited from the functions of private speech, via a
-mechanism of internalisation. The specific features of this
-internalisation processs are worthy of investigation on their own (and
-we briefly discuss them later on) but we are mostly interesred in the
-\emph{what is} (the nature) question here. Thus, we will only sparsely
-address the \emph{functions} question in the following text.
+\emph{what is it for} (e.g., Alderson-Day \& Fernyhough,
+\protect\hyperlink{ref-alderson-day_inner_2015}{2015}) ? The influential
+Vygotskian theory of inner speech development suggests that inner speech
+evolves from \emph{private speech} (i.e., self-adressed overt speech)
+during childhood. As such, we (as others have argued elsewhere)
+postulate that the functions of inner speech are inherited from the
+functions of private speech, via a mechanism of internalisation. The
+specific features of this internalisation processs are worthy of
+investigation on their own (and we briefly discuss them later on) but we
+are mostly interesred in the \emph{what is} (the nature) question here.
+Thus, we will only sparsely address the \emph{functions} question in the
+following text.
 
 That being said, it is interesting to look at situations in which these
 functions do not work as intended. These \emph{dysfunctions} (that can
@@ -470,6 +448,121 @@ also be considered as \emph{mis-exadaptation}, Agnati et al.,
 as\ldots{} They can generally be understood as transdiagnostic processes
 (i.e., a process that is not specific to a single pathology), and cover
 various\ldots{}
+
+\section{Rumination as a form of repetitive negative
+thinking}\label{rumination-as-a-form-of-repetitive-negative-thinking}
+
+\subsection{Theoretical perspectives on
+rumination}\label{theoretical-perspectives-on-rumination}
+
+The cognitive approach (Koster, De Lissnyder, \& De Raedt,
+\protect\hyperlink{ref-Koster2013}{2013}; Koster, De Lissnyder,
+Derakshan, \& De Raedt,
+\protect\hyperlink{ref-Koster2011}{2011})\ldots{} from the RST to contrl
+theories and the mental habit theory\ldots{}
+
+As suggested by Christoff, Irving, Fox, Spreng, \& Andrews-Hanna
+(\protect\hyperlink{ref-christoff_mind-wandering_2016}{2016}),
+rumination and other forms of spontaneous thoughts can be considered in
+a common conceptual space (see Figure 1). This space is built upon two
+dimensions: \emph{deliberate constraints} and \emph{automatic
+constraints}. These dimensions represent two general mechanisms that
+allow to constrain the contents of these related mental states and the
+transitions between them. The first contrain correspond to a deliberate
+processus and is implemented through \textbf{cognitive control} (Miller,
+\protect\hyperlink{ref-miller_prefrontal_2000}{2000}). The second
+constrain is referring to more automatic constrains like sensory
+afferences. In this framework, rumination is characterised by the
+highest level of automatic constraints and spread all along the
+\emph{deliberate constraints} dimension.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.75\linewidth]{assets/conceptual_space} 
+
+}
+
+\caption{Conceptual space of different types of thought (Christoff et al., 2016)}\label{fig:conceptual}
+\end{figure}
+
+\ldots{}
+
+\subsection{On the verbal and sensory properties of
+rumination}\label{on-the-verbal-and-sensory-properties-of-rumination}
+
+\ldots{}
+
+\section{What is that little voice inside my head
+?}\label{what-is-that-little-voice-inside-my-head}
+
+\ldots{}description, functions, nature\ldots{}
+
+\subsection{Brief historical overiew of inner speech
+investigations}\label{brief-historical-overiew-of-inner-speech-investigations}
+
+\ldots{}add a brief historical timeline here (from egger to
+kapur)\ldots{}
+
+\subsection{Inner speech as a form of motor
+imagery}\label{inner-speech-as-a-form-of-motor-imagery}
+
+\ldots{}
+
+\subsubsection{Action representation and internal
+models}\label{action-representation-and-internal-models}
+
+Voir Marc Jeannerod
+(\protect\hyperlink{ref-jeannerod_representing_1994}{1994}) and Wolpert,
+Ghahramani, \& Jordan
+(\protect\hyperlink{ref-wolpert_internal_1995}{1995}), Wolpert \&
+Gharamani (2000)\ldots{}
+
+\begin{mybox}[label = IM]{What is a internal model ?}
+
+Blah blah...
+
+\end{mybox}
+
+\ldots{}
+
+\subsection{Theoretical perspectives about inner speech
+production}\label{theoretical-perspectives-about-inner-speech-production}
+
+The inner voice as the sensory consequence (prediction, see Loevenbruck
+et al., 2018) of imagined speech. Analogy with raising the arm: what we
+perceive when we imagine raising our arm are the sensory consequences
+(e.g., visual) of what would happen if we actually raised our arm, these
+are then kind of predictions. The same thing happens during inner speech
+production: the inner voice is the predicted auditory consequence of
+actual speech, except that it's predicted. The two actions might seem
+very different, partly because of differences in the degree of
+automaticity. Imagining raising our arm might need a
+voluntary/deliberate/conscious (choose a word) intention (i.e., I want
+to raise my arm \textgreater{} I raise my arm) while speech imagery
+(i.e., inner speech) seems more automatic: we do not expression
+consciously the intention to speak, we just speak\ldots{}
+
+Learning how to internalise speech might be similar to learning how to
+internalise playing an instrument\ldots{} Let's consider the analogy
+between speaking and playing an instrument (e.g., the piano). Playing
+piano results from the learning of an infinitely complex coordination of
+fine motor sequences, that in turn produce sensory (kinestheatic,
+auditory, visual, etc) feedback to the producer of the action (the
+agent). It seems that (from a certain level of analysis), the act of
+speech can be paralleled with the act of playing an instrument in that
+its consists in the coordination of infinitely complex movements that
+result in some modifications in the environment that in turn generate
+sensory feedbacks for the agent. Thus, pursuing the analogy, we argue
+that imagining playing pian and imagining speaking (i.e., producing
+inner speech) might rest on similar mechanisms\ldots{} see O'Shea \&
+Moran (\protect\hyperlink{ref-oshea_go_2018}{2018}) on expert
+pianists\ldots{}
+
+\subsubsection{MVTV Cohen (1986)}\label{mvtv-cohen-1986}
+
+\ldots{}
+
+\subsubsection{Predictive models}\label{predictive-models}
 
 Learning how to internalise speech might be similar to learning how to
 internalise playing an instrument\ldots{} Let's consider the analogy
@@ -486,32 +579,10 @@ that imagining playing pian and imagining speaking (i.e., producing
 inner speech) might rest on similar mechanisms\ldots{} see O'Shea \&
 Moran (2018) on expert pianists\ldots{}
 
-\section{Rumination as a form of repetitive negative
-thinking}\label{rumination-as-a-form-of-repetitive-negative-thinking}
+\subsubsection{Loevenbruck et al.,
+HMOSAIC}\label{loevenbruck-et-al.-hmosaic}
 
-Blah blah ({\textbf{???}})\ldots{}
-
-As suggested by ({\textbf{???}}), rumination and other forms of
-spontaneous thoughts can be considered in a common conceptual space (see
-Figure 1). This space is built upon two dimensions: \emph{deliberate
-constraints} and \emph{automatic constraints}. These dimensions
-represent two general mechanisms that allow to constrain the contents of
-these related mental states and the transitions between them. The first
-contrain correspond to a deliberate processus and is implemented through
-\textbf{cognitive control} ({\textbf{???}}). The second constrain is
-referring to more automatic constrains like sensory afferences. In this
-framework, rumination is characterizsd by the highest level of automatic
-constraints and spread all along the \emph{deliberate constraints}
-dimension.
-
-\begin{figure}
-
-{\centering \includegraphics[width=0.75\linewidth]{assets/conceptual_space} 
-
-}
-
-\caption{Conceptual space of different types of thought (Christoff et al., 2016)}\label{fig:conceptual}
-\end{figure}
+\ldots{}
 
 \textbf{Copy-pasted from zygoto old intro\ldots{}}
 
@@ -526,13 +597,15 @@ allow the full reconstruction of usual overt speech situations. In the
 same way as visual imagery allows to mentally examine visual scenes,
 \emph{verbal imagery} can be used as an internal tool, allowing
 --amongst other things-- to rehearse or to prepare past and future
-speech situations (for a review, see {\textbf{???}}). In consideration
+speech situations (for a review, see Perrone-Bertolotti, Rapin, Lachaux,
+Baciu, \& Lœvenbruck,
+\protect\hyperlink{ref-Perrone-Bertolotti2014}{2014}). In consideration
 of its self-evident motoric nature, a parallel can be drawn between
 verbal imagery and other forms of motor imagery (e.g., imagined walking
 or imagined writing). As such, inner speech studies might benefit from
 insights gained from the study of motor imagery and the field of motor
 cognition (e.g., Haggard,
-\protect\hyperlink{ref-haggard_conscious_2005}{2005}; Jeannerod,
+\protect\hyperlink{ref-haggard_conscious_2005}{2005}; Marc Jeannerod,
 \protect\hyperlink{ref-jeannerod_motor_2006}{2006}). Whereas previous
 research have demonstrated that it is possible to record muscle-specific
 electromyographic correlates of inner speech production using invasive
@@ -542,16 +615,166 @@ describe an experimental set-up using surface electromyography with the
 aim of refining the description of the involvement of the speech motor
 system during inner speech production.
 
-\section{What is motor imagery ?}\label{what-is-motor-imagery}
+\section{Theoretical perspective on motor
+imagery}\label{theoretical-perspective-on-motor-imagery}
+
+Considerable experimental evidence has accumulated to suggest that
+movement execution and MI share substantial overlap of active brain
+regions (for review, see Guillot et al., 2012). Such apparent functional
+equivalence supports the hypothesis that MI draws on the similar neural
+networks that are used in actual perception and motor control
+(Jeannerod, 1994; Grezes and Decety, 2001; Holmes and Collins,
+2001)\ldots{}
+
+See introduction of O'Shea (2017) phd thesis introduction\ldots{} See
+Stinear's chapter in Guillot's book for intracortical and spinal
+mechanisms involved during motor imagery (p.55-57).
+
+\subsection{Overt and imagined
+actions}\label{overt-and-imagined-actions}
+
+Wittgenstein's (1953) famous query: ``When I raise my arm, what is left
+after subtracting the fact that my arm raised?''. We posit that what is
+left is an internal model (a representation) of what should happen if
+and when my arm goes up (Jeannerod, 1999)\ldots{}
 
 \subsection{The motor simulation
 theory}\label{the-motor-simulation-theory}
+
+In his seminal paper, Marc Jeannerod
+(\protect\hyperlink{ref-jeannerod_representing_1994}{1994}) introduces
+the idea of a close functional equivalence between motor imagery and
+motor preparation, as suggested by the similar neural and physiological
+correlates observed in both imaging and preparing (and by the effects of
+motor imagery on motor learning and training). According to Jeannerod,
+actions are driven by an ``internally represented world rather than
+directly by the external world'' (page 187). In the next paragraph(s),
+Jeannerod seems to equate motor representations with motor images or
+what he calls \emph{pragmatic representations} (page 187). For
+Jeannerod, motor imagery is a part of a broader phenomenon (the motor
+representation) related to intending and preparing movements (page 189).
+He also echoes the distinction (coming from sport psychology) between
+\emph{internal} (imagining an action from the first perspective, which
+would be more kinesthesic) and \emph{external imagery} (imagining an
+action from the third perspective, which would be more visual). For him,
+motor imagery necessarily belongs to the former type (page 189), whereas
+the term of \emph{motor imagery} in sport psychology seems to more
+broadly ecnompasse both first-person and third-person motor imagery
+{[}e.g.,{]}.
+
+Motor preparation is unconscious while motor imagery is conscious.
+However, Jeannerod suggests that the difference between the two might be
+a difference of degree, rather than one of kind, as the difference
+between the two would only be determined by the time spent on each
+(i.e., if one makes motor preparation lasting for longer than it's
+usually needed, it can ``become'' motor imagery, page 190). In plain
+words, the idea is that motor representations/intentions become known to
+the subject when they are not followed by execution (page 190), so there
+would be a continuum between motor preparation and motor imagery.
+
+EMG lines of evidence page 191: Eye movements have been recorded during
+the recall of visual scenes (e.g., Jeannerod \& Mouret 1962). Jacobson
+(1930) first suggested that muscles were selectively activated during
+imagined action. Shaw (1940) reported that during imagined weight
+lifting, electromyographic (EMG) activity of forearm muscles increased
+linearly with the magnitude of the weight, etc.
+
+Neural structures and physiological correlates page 192-193.
+
+Evidence from mental chronometry and temporal equivalence (e.g.,
+Landauer, 1962), showing that it takes approximately the same amount of
+time to say the alphabet or series of numbers aloud and to think them to
+himself.
+
+The famous walking + load experiment of Decety et al. (1989) reveals
+that force, rather than duration, is the encoded variable, and that
+estimated duration is merely derived from the level of centrally
+represented force. When the subjects carried the load, they centrally
+programmed a greater force to overcome any resistance, because subjects
+did not actually walk (page 194). For Jeannerod, the programming of
+force as a subjective correlate: the sensation of effort, which can
+become perceptible to the actor independently of overt movement
+execution and can be monitored experimentally (page 194). Page 196:
+representation of kinematic regularities (e.g., Fitts' law, Viviani's
+experiments, etc.).
+
+In the following (section 5, starting page 197), Jeannerod develops the
+idea that the goal of an action includes an internal representation of
+both the external object toward which it is directed and the final state
+of the organism when that object has been reached. Then, he develops on
+the idea of a distinction between a pragmatic mode and a semantic mode
+(page 198). He also makes a distinction between two functions of
+representations: a sensory one (to extract from the external world the
+attributes of objects or situations that are relevant to a given action)
+and a motor one (to encode some aspects of that action) (page 199).
+
+NB: in this paper (Jeannerod, 1994), there is no explicit mention of a
+``simulation'' process\ldots{} Jeannerod only discusses the conscious
+access to the content of a representation, and defines it as motor
+imagery (cf.~notes above as well as the distinction drawn by Grush,
+2004). Interestingly, in the commentaries, Morton suggests that many of
+the cases Jeannerod reports are actually instances of simulations,
+rather than mere imagination, because these cases contain part of what
+would be involved in actual performance (page 215). In his response,
+Jeannerod seems to agree with and to endorse this view (e.g., page 231).
+
+In the commentary of this paper Gursh suggests that\ldots{} (Motor
+models as steps to higher cognition (Rick Grush)) there should exist an
+inverse model, and points that nothing mentioned in the target article
+is actually capable of generating mental imagery. For Grush, this
+inverse model would act centrally, taking as input the efferent copy
+(for instance) and would output a mock version of the afferent signals
+the peripheral system would have produced given the same input (i.e., an
+emulator, see page 209).
+
+For M. Jeannerod (\protect\hyperlink{ref-jeannerod_mental_1995}{1995}),
+motor imagery is necessarily first-perspective. Third perspective
+imagery is imagery, but not MOTOR imagery\ldots{} Motor representations
+are conceived here as `internal models' of the goal of an action.
+
+In Marc Jeannerod (\protect\hyperlink{ref-jeannerod_neural_2001}{2001}),
+``Covert and overt stages thus represent a continuum, such that overtly
+executed action implies the existence of a covet stage, whereas a covert
+action does not necessarily turns out into an overt action'' (page
+S103). Jeannerod introduces the term S-states to designate mental stats
+which involve an action content and where brain activity can be shown to
+simulate that observed during the same, executed, action. These S-states
+correspond to intended action, imagined action, and many others (see
+Table 1, page S104).
+
+In Marc Jeannerod (\protect\hyperlink{ref-jeannerod_motor_2006}{2006}),
+The Simulation Hypothesis of Motor Cognition (pages 129-164). See
+Schematic summary of motor simulation according to Jeannerod (page 133).
+
+``Simulation is used here as the off-line rehearsal of neural networks
+involved in specific operations such as perceiving or acting (page 129).
+According to our view {[}\ldots{}{]}, the simulation relates not to
+complete actions but to unspecific elements that comprise actions. Motor
+representations are automatically assembled in response to immediate
+task requirements and do not rely on memorized actions (page 134).''
+
+The peripheralist versus centralist interpretation of physiological
+inner speech correlates (page 153): Subvocal speech was first
+interpreted as a source of peripheral kinesthetic information which,
+when projected to central nervous structures, generated auditory images
+of the corresponding words. The same interpretation was given to the low
+intensity EMG recorded during mental motor imagery of limb actions,
+which was thought to be the origin of the feelings experienced by the
+subject during mental rehearsal (Jacobson 1930), or to the eye movements
+recorded during mental visual imagery (e.g.~Brandt and Stark, 1997).
+However, this interpretation of mental processes as consequences of
+peripheral feedback is now disproved by recent experiments showing
+complete absence of muscular activity in many subjects during motor
+imagery. When present, this activity is rather assumed to be a
+consequence of incomplete inhibition of motor output during mental
+states involving motor simulation. This same interpretation might also
+hold for inner speech.
 
 Motor imagery can be defined as the mental process by which one
 rehearses a given action, without engaging in the physical movements
 involved in this particular action. One of the most influential
 theoretical explanation of this broad phenomenon, the \emph{motor
-simulation theory} (MST; Jeannerod,
+simulation theory} (MST, Marc Jeannerod,
 \protect\hyperlink{ref-jeannerod_representing_1994}{1994},
 \protect\hyperlink{ref-jeannerod_neural_2001}{2001},
 \protect\hyperlink{ref-jeannerod_motor_2006}{2006}), contains the three
@@ -564,17 +787,17 @@ execution is inhibited (O'Shea \& Moran,
 \protect\hyperlink{ref-oshea_does_2017}{2017}).
 
 In this framework, the concept of simulation refers to the ``offline
-rehearsal of neural networks'' (Jeannerod,
+rehearsal of neural networks'' (Marc Jeannerod,
 \protect\hyperlink{ref-jeannerod_motor_2006}{2006}), and motor imagery
 is conceptualised as a simulation of the covert stage of the same
 executed action (O'Shea \& Moran,
 \protect\hyperlink{ref-oshea_does_2017}{2017}). The MST shares some
 similarities with the theories of embodied and grounded cognition
-({\textbf{???}}) in that both allow to account for the phenomenon of
-motor imagery by appealing to a simulation mechanism. However, the
-concept of simulation in grounded theories is assumed to be multi-modal
-(not just motoric) and to operate in order to achieve a particular
-abstract knowledge (O'Shea \& Moran,
+(Barsalou, \protect\hyperlink{ref-Barsalou2008}{2008}) in that both
+allow to account for the phenomenon of motor imagery by appealing to a
+simulation mechanism. However, the concept of simulation in grounded
+theories is assumed to be multi-modal (not just motoric) and to operate
+in order to achieve a particular abstract knowledge (O'Shea \& Moran,
 \protect\hyperlink{ref-oshea_does_2017}{2017}), which is not the concern
 of the MST\footnote{We should also make a distinction between
   \emph{embodiment of content}, which concerns the conceptual content of
@@ -591,15 +814,99 @@ of controversial findings and for an alternative conceptualisation of
 motor imagery), to neuroimaging and neurostimulation studies showing
 that both motor imagery and overt actions tend to recruit similar
 frontal, parietal and sub-cortical regions (e.g., Hétu et al.,
-\protect\hyperlink{ref-hetu_neural_2013}{2013}; Jeannerod,
+\protect\hyperlink{ref-hetu_neural_2013}{2013}; Marc Jeannerod,
 \protect\hyperlink{ref-jeannerod_neural_2001}{2001}). The involvement of
 the motor system during motor imagery is also supported by repeated
 observations of autonomic responses and peripheral muscular activity
 during motor imagery (we discuss these observations in section
 \ref{emg}).
 
+\subsection{Centralism versus
+peripheralism}\label{centralism-versus-peripheralism}
+
+The motor theory of perception: mental states arise from movement (more
+precisely, from innervation associated with movements (the perceived
+image of an object arises from the muscular discharges produced during
+the movements involved in exploring it). The peripheral variant of the
+motor theory is the idea according to which the mental image of that
+object is also produced by covert muscular discharges in the related
+muscles (cf.~work from James, 1890; Jacobson, 1930).
+
+But the idea developed in this paper is quite the reverse of the
+peripheral motor theory and would be more akin to a centralist version
+of the motor theory (page 190). Jeannerod says that existence of muscle
+discharge during a mental state does not imply a bottom-up influence of
+these discharges on the mental state. The key phenomenon in Jeannerod's
+conception is the motor intention, which is though to be largely
+endogenous (page 190). Motor imagery would represent the results of
+conscious access to the content of the intention, and the content of the
+intention would constrain the expression of the image (page 190).
+Jeannerod also states that this view is in agreement with the corollary
+discharge model. The key idea is that the activation of peripheral
+mechanisms is not needed to generate the image (but they can be
+activated, as a consequence of the activation of the
+image/representation)\ldots{}
+
 \subsection{Emulation and internal
 models}\label{emulation-and-internal-models}
+
+NB: in this paper emulator is used as a synonym for ``forward models''
+(pages 378-379)\ldots{}
+
+Grush (\protect\hyperlink{ref-grush_emulation_2004}{2004}) proposes a
+unified framework for explaining a wide variety of representational
+functions of the brain: the emulation theory of representation. This
+theory has its origins in control theory (forward models) and signal
+processing (Kalman filters).
+
+Difference between emulation theory of motor imagery and simulation
+theory à la Jeannerod (pages 384-385): ``{[}\ldots{}{]} Given these
+definitions, it should be clear that the simulation theory and the
+emulation theory are not at all the same thing. They agree that the
+efferent motor centers are active during imagery. The simulation theory
+takes this by itself to be sufficient for motor imagery; the emulation
+theory does not, and claims that in addition, an emulator of the
+musculoskeletal system is needed and imagery is produced when the
+efferent motor centers drive this emulator. This distinction should be
+entirely obvious. To make an analogy: The emulation theory claims that
+motor imagery is like a pilot sitting in a flight simulator, and the
+pilot's efferent commands (hand and foot movements, etc.) are translated
+into faux ``sensory'' information (instrument readings, mock visual
+display) by the flight simulator which is essentially an emulator of an
+aircraft. The simulation theory claims that just a pilot, moving her
+hands and feet around but driving neither a real aircraft nor a flight
+simulation, is sufficient for mock sensory information.''
+
+Distinguishing between simulation and emulation theories (page 385):
+``{[}\ldots{}{]} The only way to get from the former (signals in motor
+format) to the latter (signals in proprioceptive and kinesthetic format)
+is to run the motor signal through something that maps motor
+plans/signals to proprioception and kinesthesis. And the two
+possibilities are (a) the body (yielding real proprioception and
+kinesthesis), and (b) a body emulator (yielding faux proprioception and
+kinesthesis) {[}\ldots{}{]} A motor plan is one thing, a sequence of
+proprioception and kinesthesis is another. The simulation theorist
+conflates them.''
+
+In Moulton \& Kosslyn
+(\protect\hyperlink{ref-moulton_imagining_2009}{2009}), In brief: they
+tried to characterize mental imagery as an information processing
+system, considering it in the perspective of Marr's three levels of
+explanation (i.e., the computational, algorithmic, and implementation
+levels).
+
+Imagery is also characterized by its reliance on perceptual
+representations and activation of perceptual brain systems. We use this
+conception of imagery to argue that all imagery is simulation--- more
+specifically, it is a specific type of simulation in which the mental
+processes that `run' the simulation emulate those that would actually
+operate in the simulated scenario. This type of simulation, which we
+label emulation, has benefits over other types of simulations that
+merely mimic the content of the simulated scenario. They note (page
+1273): ``{[}\ldots{}{]} `motor imagery' (which actually appears to be
+proprioceptive or kinaesthetic imagery---one experiences the bodily
+sensations of movement, not the movement commands themselves: Jeannerod,
+1994).''
 
 A second class of explanatory models of motor imagery are concerned with
 the phenomenon of \emph{emulation} and with \emph{internal models} (see
@@ -611,13 +918,12 @@ Internal model theories share the postulate that the motor system is
 represented by \emph{internal models}, whose function is to estimate and
 anticipate the outcome of a motor command. One of its variant, the
 \emph{motor control theory} (e.g., Kawato,
-\protect\hyperlink{ref-kawato_internal_1999}{1999}; Wolpert, Ghahramani,
-\& Jordan, \protect\hyperlink{ref-wolpert_internal_1995}{1995}), assumes
-two kind of models: a forward model that predicts the sensory
-consequences of motor commands from efference copies, and an inverse
-model that calculates the feed-forward motor commands from the desired
-movement (Gentsch et al.,
-\protect\hyperlink{ref-gentsch_towards_2016}{2016}).
+\protect\hyperlink{ref-kawato_internal_1999}{1999}; Wolpert et al.,
+\protect\hyperlink{ref-wolpert_internal_1995}{1995}), assumes two kind
+of models: a forward model that predicts the sensory consequences of
+motor commands from efference copies, and an inverse model that
+calculates the feed-forward motor commands from the desired movement
+(Gentsch et al., \protect\hyperlink{ref-gentsch_towards_2016}{2016}).
 
 Emulation theories (e.g., Grush,
 \protect\hyperlink{ref-grush_emulation_2004}{2004}; Moulton \& Kosslyn,
@@ -669,9 +975,8 @@ the content.
 
 \section{Electromyography of covert actions}\label{emg}
 
-\subsection{Explanations for the presence of muscular activity during
-motor
-imagery}\label{explanations-for-the-presence-of-muscular-activity-during-motor-imagery}
+\subsection{Explaining the muscular activity during motor
+imagery}\label{explaining-the-muscular-activity-during-motor-imagery}
 
 Motor imagery has consistently been defined as the mental rehearsal of a
 motor action without any overt movement. One consequence of this claim
@@ -684,7 +989,7 @@ inhibitory mechanisms, there is now abundant evidence for peripheral
 muscular activation during motor imagery (for a review, see Guillot \&
 Collet, \protect\hyperlink{ref-guillot_contribution_2005}{2005}; Guillot
 et al., \protect\hyperlink{ref-guillot_imagining_2012}{2012}). As
-suggested by Jeannerod
+suggested by Marc Jeannerod
 (\protect\hyperlink{ref-jeannerod_representing_1994}{1994}), the
 incomplete inhibition of the motor commands would provide a valid
 explanation to account for the peripheral muscular activity observed
@@ -708,8 +1013,8 @@ observed in antagonist muscles (e.g., Fadiga et al.,
 Interestingly, the dominant interpretation of the muscular correlates of
 motor imagery at the beginning of the last century was that the
 peripheral muscular activity observed during imagined actions was the
-\emph{source} of the mental content. However, as explained by Jeannerod
-(\protect\hyperlink{ref-jeannerod_motor_2006}{2006}), this
+\emph{source} of the mental content. However, as explained by Marc
+Jeannerod (\protect\hyperlink{ref-jeannerod_motor_2006}{2006}), this
 interpretation of mental processes as a consequence of peripheral
 feedback is now disproved, for instance by the simple fact that many
 people can experiment motor imagery, without any observable muscular
@@ -766,11 +1071,8 @@ conceptualised as a kind of motor (and sensory) imagery of speech, and
 discuss the theoretical underpinnings of this proposition as well as the
 available empirical evidence in its support.
 
-\section{What is that little voice inside my head
-?}\label{what-is-that-little-voice-inside-my-head}
-
-\subsection{Inner speech as multimodal verbal
-imagery}\label{inner-speech-as-multimodal-verbal-imagery}
+\subsection{Electromyographic correlates of inner speech
+production}\label{electromyographic-correlates-of-inner-speech-production}
 
 \ldots{}various terms: internal speech, silent speech, covert speech,
 implicit speech, speech imagery\ldots{} difference between generative
@@ -780,9 +1082,6 @@ ear\ldots{}
 
 \ldots{} a key question: what is the lowest level of specification of
 inner speech ? \ldots{} figure from oppenheim \& dell (2010\ldots{})
-
-\ldots{} add a brief historical timeline here (from egger to
-kapur)\ldots{}
 
 \ldots{} see MacKay (1992, page 131) for discussion of speaking rate in
 inner and overt speech\ldots{} faster rates also occur for other highli
@@ -807,7 +1106,7 @@ sound ``b'' while keeping the mouth wide opened (e.g., Binet,
 experiment allows defining imagined speech as the simulation of the
 corresponding overt verbal content, where \emph{simulation} is meant to
 be understood either as the off-line rehearsal of neural motor networks
-involved in the overt action (Jeannerod,
+involved in the overt action (Marc Jeannerod,
 \protect\hyperlink{ref-jeannerod_motor_2006}{2006}), or in the terms of
 the emulation theories discussed previously\footnote{Translated to
   speech, the MST is similar to previous proposals such as the
@@ -833,113 +1132,46 @@ emulation model of motor imagery discussed earlier, Grush,
 
 \textbf{Fin de l'intro old de zygoto\ldots{}}
 
-\section{Overt and imagined actions}\label{overt-and-imagined-actions}
-
-Wittgenstein's (1953) famous query: ``When I raise my arm, what is left
-after subtracting the fact that my arm raised?''. We posit that what is
-left is an internal model (a representation) of what should happen if
-and when my arm goes up (Jeannerod, 1999)\ldots{}
-
-\subsection{Motor imagery}\label{motor-imagery}
-
-Considerable experimental evidence has accumulated to suggest that
-movement execution and MI share substantial overlap of active brain
-regions (for review, see Guillot et al., 2012). Such apparent functional
-equivalence supports the hypothesis that MI draws on the similar neural
-networks that are used in actual perception and motor control
-(Jeannerod, 1994; Grezes and Decety, 2001; Holmes and Collins,
-2001)\ldots{}
-
-See introduction of O'Shea (2017) phd thesis introduction\ldots{}
-
-See Stinear's chapter in Guillot's book for intracortical and spinal
-mechanisms involved during motor imagery (p.55-57).
-
-\subsubsection{Simulation theories}\label{simulation-theories}
-
-For Jeannerod (1995), motor imagery is necessarily first-perspective.
-Third perspective imagery is imagery, but not MOTOR imagery\ldots{}
-Motor representations are conceived here as `internal models' of the
-goal of an action.
-
-\subsubsection{Emulation theories}\label{emulation-theories}
-
-\ldots{}
-
-\subsubsection{Action representation and internal
-models}\label{action-representation-and-internal-models}
-
-Voir Jeannerod (2004), Wolpert el al. (1995), Wolpert \& Gharamani
-(2000)\ldots{}
-
-\subsection{Inner speech - what is this little voice in my head
-?}\label{inner-speech---what-is-this-little-voice-in-my-head}
-
-\ldots{}
-
-The inner voice as the sensory consequence (prediction, see Loevenbruck
-et al., 2018) of imagined speech. Analogy with raising the arm: what we
-perceive when we imagine raising our arm are the sensory consequences
-(e.g., visual) of what would happen if we actually raised our arm, these
-are then kind of predictions. The same thing happens during inner speech
-production: the inner voice is the predicted auditory consequence of
-actual speech, except that it's predicted. The two actions might seem
-very different, partly because of differences in the degree of
-automaticity. Imagining raising our arm might need a
-voluntary/deliberate/conscious (choose a word) intention (i.e., I want
-to raise my arm \textgreater{} I raise my arm) while speech imagery
-(i.e., inner speech) seems more automatic: we do not expression
-consciously the intention to speak, we just speak\ldots{}
-
-\subsubsection{MVTV Cohen (1986)}\label{mvtv-cohen-1986}
-
-\ldots{}
-
-\subsubsection{Predictive models}\label{predictive-models}
-
-Learning how to internalise speech might be similar to learning how to
-internalise playing an instrument\ldots{} Let's consider the analogy
-between speaking and playing an instrument (e.g., the piano). Playing
-piano results from the learning of an infinitely complex coordination of
-fine motor sequences, that in turn produce sensory (kinestheatic,
-auditory, visual, etc) feedback to the producer of the action (the
-agent). It seems that (from a certain level of analysis), the act of
-speech can be paralleled with the act of playing an instrument in that
-its consists in the coordination of infinitely complex movements that
-result in some modifications in the environment that in turn generate
-sensory feedbacks for the agent. Thus, pursuing the analogy, we argue
-that imagining playing pian and imagining speaking (i.e., producing
-inner speech) might rest on similar mechanisms\ldots{} see O'Shea \&
-Moran (2018) on expert pianists\ldots{}
-
-\subsubsection{Loevenbruck et al.,
-HMOSAIC}\label{loevenbruck-et-al.-hmosaic}
-
-\ldots{}
-
 \chapter{Methodological framework}\label{methodological-framework}
 
-\section{Electromyographic correlates of speech
-production}\label{electromyographic-correlates-of-speech-production}
+This chapter aims to introduce the main materials and methods we will
+discuss throughout the experimental chapters. It concerns either
+experimental tools (e.g., electromyography), statistical tools, and the
+flow of experiments\ldots{}
 
-\ldots{}
-
-\subsection{Speech production
+\section{Speech production
 mechanisms}\label{speech-production-mechanisms}
 
 \ldots{}
 
 \subsection{Speech production muscles}\label{speech-production-muscles}
 
-\ldots{}
+In the current work, we were especially interested in the activity of
+the orofacial muscles, which can be dfined as the muscles situaated in
+the periphery of the mouth. More precisely, we were particulary
+interested in the \emph{orbicularis oris inferior} and \emph{orbicularis
+oris superior} muscles. As can be seen from Figure XX, these two muscles
+are actually parts of a broad sphyncter muscles that permis the
+contractio nand aperture of the mouth\ldots{}
 
 \subsection{Muscular physiology}\label{muscular-physiology}
 
 \ldots{}
 
-\subsection{EMG signal}\label{emg-signal}
+\section{Brief introduction to surface electromyography
+concepts}\label{brief-introduction-to-surface-electromyography-concepts}
 
-\section{EMG signal measures}\label{emg-signal-measures}
+The raw EMG signal is a stochastic train of motor unit action potentials
+(MUAP). When heard through a speaker, the raw EMG signal sounds like
+popcorn popping (Fridlund \& Cacioppo, 1986)\ldots{}
+
+Factors that influence the EMG signal: causative (extrinsic, intrinsic),
+intermediate and deterministic (De Luca, 1997)\ldots{}
+
+See van Boxtel 2001\ldots{}
+
+\subsection{The electromyographic
+signal}\label{the-electromyographic-signal}
 
 Muscular activity can be studied at different levels. At the cellular
 level, using electrophysiological measures like micro-electrods
@@ -947,9 +1179,6 @@ implanted in the cell, that allow direct measures of \textbf{action
 potential}. At the segmental level, biomechanis study muscular activity
 using surface sensors, positionned on the skin\ldots{}intermediate
 levels\ldots{}
-
-\subsection{Motor unit action
-potential}\label{motor-unit-action-potential}
 
 The \textbf{motor unit action potential} (MUAP) is the electric field
 resulting from the sum of the electric fiels emitted by each fiber of
@@ -959,9 +1188,9 @@ the motor unit. This train of action potentials will generate a
 dependent of parameters such as the number of fibers, their length,
 speed of conduction and position of the neuromuscular junction\ldots{}
 
-\begin{figure}[H]
+\begin{figure}
 
-{\centering \includegraphics[width=1\linewidth]{assets/muap} 
+{\centering \includegraphics[width=0.75\linewidth]{assets/muap} 
 
 }
 
@@ -971,7 +1200,8 @@ speed of conduction and position of the neuromuscular junction\ldots{}
 To sum up, the EMG signal results from a mixture of recruited motor
 units\ldots{}
 
-\subsection{Surface EMG}\label{surface-emg}
+\subsection{Specificities and challenges of surface
+electromyography}\label{specificities-and-challenges-of-surface-electromyography}
 
 \ldots{}\emph{crosstalk} phenomenon (De Luca,
 \protect\hyperlink{ref-de_luca_use_1997}{1997}). In reason of the
@@ -987,22 +1217,6 @@ illustrate what EMG signal looks like, we simulated EMG signal based on
 a standard algorithm implemented in the \texttt{biosignalEMG} package
 (Guerrero \& Macias-Diaz, \protect\hyperlink{ref-R-biosignalEMG}{2018}).
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{library}\NormalTok{(biosignalEMG)}
-\KeywordTok{library}\NormalTok{(tidyverse)}
-
-\NormalTok{emg <-}\StringTok{ }\KeywordTok{syntheticemg}\NormalTok{(}
-  \DataTypeTok{off.sd =} \DecValTok{1}\NormalTok{, }\DataTypeTok{on.sd =} \DecValTok{2}\NormalTok{, }\DataTypeTok{on.mode.pos =} \FloatTok{0.1}\NormalTok{, }\DataTypeTok{samplingrate =} \FloatTok{1e3}\NormalTok{, }\DataTypeTok{units =} \StringTok{"mV"}
-\NormalTok{  )}\OperatorTok{$}\NormalTok{values}
-
-\KeywordTok{ts.plot}\NormalTok{(}
-\NormalTok{  emg, }\DataTypeTok{xlab =} \StringTok{"Time (samples)"}\NormalTok{, }\DataTypeTok{ylab =} \StringTok{"Raw EMG signal (mV)"}\NormalTok{,}
-  \DataTypeTok{col =} \StringTok{"steelblue"}
-\NormalTok{  )}
-\end{Highlighting}
-\end{Shaded}
-
 \begin{figure}[H]
 
 {\centering \includegraphics[width=1\linewidth]{02-chap2_files/figure-latex/emgplot1-1} 
@@ -1014,18 +1228,8 @@ a standard algorithm implemented in the \texttt{biosignalEMG} package
 
 We usually rectify the EMG signal by taking its absolute value and
 substracting the mean in order to correct for any offset (bias) present
-in the raw data.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\OperatorTok{>}\StringTok{ }\NormalTok{emg <-}\StringTok{ }\KeywordTok{abs}\NormalTok{(emg }\OperatorTok{-}\StringTok{ }\KeywordTok{mean}\NormalTok{(emg) )}
-\OperatorTok{>}\StringTok{ }
-\ErrorTok{>}\StringTok{ }\KeywordTok{ts.plot}\NormalTok{(}
-\OperatorTok{+}\StringTok{   }\NormalTok{emg, }\DataTypeTok{xlab =} \StringTok{"Time (samples)"}\NormalTok{, }\DataTypeTok{ylab =} \StringTok{"Rectified EMG signal"}\NormalTok{,}
-\OperatorTok{+}\StringTok{   }\DataTypeTok{col =} \StringTok{"steelblue"}
-\OperatorTok{+}\StringTok{   }\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
+in the raw data. This operation is represented in Figure
+\ref{fig:emgplot2}.
 
 \begin{figure}[H]
 
@@ -1040,31 +1244,221 @@ From there, two main measures can be used to represent the magnitude of
 muscle activity\footnote{But see Phinyomark, Nuidod, Phukpattaranont, \&
   Limsakul (\protect\hyperlink{ref-phinyomark_feature_2012}{2012}) for
   other features that can be extracted from the surface EMG signals.}.
-The first one is the \textbf{mean absolute value} (MAV):
+The first one is the \emph{mean absolute value} (MAV), which is computed
+over a specific interval and where \(|x_{n}|\) is the absolute value of
+a datum of EMG in the data window.
 
 \[MAV = \frac{1}{N} \sum_{n=1}^{N} | x_{n} |\]
 
-which is computed over a specific interval and where \(|x_{n}|\) is the
-absolute value of a datum of EMG in the data window. The unit of
-measurement is \(mV\) or \(\mu V\), and the MAV calculation is generally
-similar to the numerical formula for integration (Kamen \& Gabriel,
-\protect\hyperlink{ref-kamen_essentials_2010}{2010}). The second one is
-the \textbf{root-mean-square} (RMS) amplitude:
+The unit of measurement is \(mV\) or \(\mu V\), and the MAV calculation
+is generally similar to the numerical formula for integration (Kamen \&
+Gabriel, \protect\hyperlink{ref-kamen_essentials_2010}{2010}). The
+second one is the \emph{root-mean-square} (RMS) amplitude:
 
 \[RMS = \sqrt \frac{1}{N} \sum_{n=1}^{N} | x^{2}_{n} |\]
 
 where \(| x^{2}_{n} |\) is the squared value of each EMG datum and has
-both physical and physiological meanings\ldots{}
+both physical and physiological meanings. Put broadly, the RMS it taken
+to reflect the level of the physiological activities in the motor unit
+during contraction. Both the MAV and the RMS are illustrated in Figure
+XX\ldots{}
 
-\section{Statistical modelling
-approach}\label{statistical-modelling-approach}
+Transition toward the statistical modelling approach\ldots{}
 
-Describe the way we approach data analysis here\ldots{}
+\section{Statistical modelling and statistical
+inference}\label{statistical-modelling-and-statistical-inference}
 
-\section{Overview of the experimental
-chapters}\label{overview-of-the-experimental-chapters}
+\subsection{Limitations of the standard statistical approach in
+Psychology}\label{limitations-of-the-standard-statistical-approach-in-psychology}
+
+Numerous authors have highlighted the limitations inherent to the
+Null-Hypothesis Significance Testing (NHST) approach and the (exclusive)
+reliance on \emph{p}-values and significance testing (e.g., Bakan,
+\protect\hyperlink{ref-bakan_test_1966}{1966}; Gigerenzer,
+\protect\hyperlink{ref-Gigerenzer2004}{2004}; Kline,
+\protect\hyperlink{ref-Kline2004}{2004}; Lambdin,
+\protect\hyperlink{ref-Lambdin2012}{2012}; Meehl,
+\protect\hyperlink{ref-meehl_theory-testing_1967}{1967}; Trafimow et
+al., \protect\hyperlink{ref-trafimow_manipulating_2018}{2018}).
+Considering these limitations, some authors have recommended to push
+away significance testing and to develop the use of effect size
+estimates and confidence intervals in order to favor accumulation of
+evidence (e.g., Cumming, \protect\hyperlink{ref-Cumming2012}{2012},
+\protect\hyperlink{ref-cumming_new_2014}{2014}).
+
+However, the apparent superiority of confidence intervals over
+\emph{p}-values is an illusion. Indeed, as noted by many observers,
+confidence intervals are simply inverted significance tests. In other
+words, the confidence interval represents the range of values that are
+significant at some \(\alpha\) level. Therefore, a confidence interval
+does not bring \emph{any} new inferential value. Morevoer, its
+interpretation might be as hard as the interpretation of
+\emph{p}-values. For instance, contrary to a widely shared belief,
+confidence intervals do not contain the \((1 - \alpha) \cdot 100\)\%
+most probable values of the parameter (e.g., Morey, Hoekstra, Rouder,
+Lee, \& Wagenmakers, \protect\hyperlink{ref-morey_fallacy_2015}{2015};
+Nalborczyk, Bürkner, \& Williams,
+\protect\hyperlink{ref-nalborczyk_pragmatism_2019}{2019}).
+
+That being said, it is fair to acknowledge that using confidence
+intervals (instead of or in addition to single \emph{p}-values) do shift
+the emphasis from a mechanical (mindless) point-hypothesis testing
+procedure to a more careful consideration of the range of values that
+are \emph{compatible} with some hypothesis. More importantly, it
+emphasises the uncertainty that accompanies every statistical procedure.
+Indeed, we think that most of the caveats that are attributed to a
+specific statistical procedure (e.g., to NHST) are really caveats of the
+way it is used. Namely, the fact that is used in a categorical and
+absolute way. This tendency has been coined as \emph{dichotomania}
+(i.e., the tendency to consider that results are either present --if
+significant-- or absent --if non-significant--), or \emph{trichotomania}
+(e.g., when considering evidence ratios thresholds).
+
+These biases and\ldots{} have been highlighted by several \ldots{}
+(Wasserstein \& Lazar,
+\protect\hyperlink{ref-wasserstein_asas_2016}{2016}). Very recently,
+\emph{The American Statistician} published a special issue on
+\emph{Moving to a Wold Beyond ``p\textless{}.05''}, with the intention
+to provide new recommendations for the users of statistics (e.g.,
+researchers, policy maker, journalists). This issue comprises 43
+original papers aiming to provide new guidelines and practical
+alternatives to the mindless use of statistics.
+
+In the accompanying editorial, Wassertine2019\ldots{} Amongst others
+things, they recommend to follow the ATOM guidelines: ``\textbf{A}ccept
+uncertainty. Be \textbf{t}houghtful, \textbf{o}pen, and
+\textbf{m}odest.'' In accordance with these guidelines\ldots{}
+
+\begin{itemize}
+\item
+  Accept uncertainty: we try to represent uncertainty in our analyses
+  and conclusions. For instance, we do not conclude and/or infer that an
+  effect is eithr ``present'' or ``absent'', but we report the
+  \emph{estimated} magnitude of the effect and the uncertainty that
+  comes with this estimation. Additionally, when applicable, we report
+  probabilistic statements based on the posterior distribution.
+\item
+  Be thoughtful: while being broad\ldots{} this incentivises statistical
+  thinking\ldots{}
+\item
+  Be open: the soundness of a statistical procedure (and more generally,
+  of an inferential procedure) can only be evaluated it its made
+  transparent to peers and readers. Therefore, we take some space in the
+  next section (but also in each experimental chapter) to motivate our
+  statistical modelling decisions. We also make all the R scripts
+  available to ensure the reproducibility of the analyses.
+\item
+  Be modest: \ldots{} Moreover, we discuss the limitations of our
+  conclusions
+\end{itemize}
+
+To sum up\ldots{}.
+
+\subsection{Current statistical
+approach}\label{current-statistical-approach}
+
+To briefly summarise the statistical approach that we have adopted
+during this work\ldots{} for more information on Bayesian statistical
+modelling, see Nalborczyk, Batailler, Lœvenbruck, Vilain, \& Bürkner
+(\protect\hyperlink{ref-nalborczyk_introduction_2019}{2019})\ldots{}
+
+Explain the main tools and index we use and the difference between them
+(make a box for the bayes factor, for the ICs, etc)\ldots{}
+
+\begin{mybox}[label = BF]{What is a Bayes factor ?}
+
+It is a rule in statistics that every statistics has already been suggested as the \textit{new statistics}. Confidence intervals have been suggested as a replacement to p-values, being purpotedly more informative and less difficult to interpret. Credible intervals have been suggested as a replacement to confidence intervals, for roughly the same reasons. Bayesian hypothesis testing through Bayes factors (BFs) has also been suggested as a replacement for frequentist hypothesis testing. It has been argued that they permit a richer inference and that they come with a more straightforward interpretation. Whereas this might be true, they nonetheless come with their lot of misinterpretations.\\
+
+To highlight what BFs are and what they are not, it might be useful to write down the formula used to compute them. To this end, it is useful to write the Bayes rule in its \textit{odds form}, making the BF explicitly visible:
+
+$$\underbrace{\dfrac{p(H_{0}|D)}{p(H_{1}|D)}}_{posterior\ odds} = \underbrace{\dfrac{p(D|H_{0})}{p(D|H_{1})}}_{Bayes\ factor} \times \underbrace{\dfrac{p(H_{0})}{p(H_{1})}}_{prior\ odds}$$
+
+This equation reveals that the \textit{posterior odds}, the ratio of the posterior probability (i.e., how much more probable is hypothesis 1 ($H_{1}$) as compared to hypothesis 2 ($H_{2}$), after seeing the data $D$), is equal to the ratio of the probability of the data given the first hypothesis and the probability of the data given the second hypothesis, multiplied by the \textit{prior odds} (i.e., how much more probable was hypothesis 1 ($H_{1}$) as compared to hypothesis 2 ($H_{2}$), before seeing the data $D$).\\ 
+
+Importantly, what we condider as \textit{evidence} in the Bayesian framework is also known as a \textit{marginal likelihood} and represents the information contained in the data, weighted by the prior information. It is a sum when parameters are discrete or an integral when paramaters are continuous.
+
+$$\text{evidence}\ = p(D|H) = \int p(\theta|H) p(D|\theta,H) \text{d}\theta$$
+
+Therefore, the BF does not indicate how much "probable" a hypothesis is, or how much more probable a hypothesis is, compared to another one (this would be to conflate the BF with the posterior odds). Instead, the BF can be (should be) interpreted either i) as a ratio of two \textit{marginal likelihoods} (i.e., a ratio of \textit{evidence}) or ii) as an updating factor, that indicates how we should reallocate credibility from prior knowledge (what we knew before seeing the data) to posterior knowledge (what we know after seeing the data).
+
+\end{mybox}
+
+Bayes factor are often said to have desirable asymptotic (when the
+number of observations is very large) properties. Indeed, they are
+\emph{consistent} for model identification. It means that if a
+\emph{true} statistical model is in the set of models that are compared,
+using a BF will usually permi to select this \emph{true} model with a
+probability approaching 1 with increasing sample size. Whereas this
+seems an appealing property, it also poses a challenge to the underlying
+statistical philosophy. Indeed, one could question whether it is
+sensible to assume a true model (an oxymoron) in real life, especially
+in the social sciences (e.g., Burnham \& Anderson,
+\protect\hyperlink{ref-burnham_model_2002}{2002},
+\protect\hyperlink{ref-burnham_multimodel_2004}{2004}). As Findley
+(\protect\hyperlink{ref-findley_unbiasedness_1985}{1985}) notes:
+\emph{``{[}\ldots{}{]} consistency can be an undesirable property in the
+context of selecting a model''}. A more realistic question is then not
+to look for the \emph{true} model, but for the \emph{best} model from
+some practical purpose.
+
+Whereas BFs are said to be \textbf{consistent for model identification}
+(i.e., for identifying the true model). The AIC is not
+\textbf{consistent} for model identification, but it is an
+\textbf{efficient estimator} of the expected K-L information
+loss\ldots{}
+
+\begin{mybox}[label = IC]{Information criteria}
+
+Hirotugu Akaike noticed that the negative log-likehood of a model + 2 times its number of parameters was approximately equal to the \textbf{out-of-sample deviance} of a model, which lead to what is nowadays known as the \textit{Akaike information criterion} (AIC):
+
+$$\text{AIC} = \underbrace{-2\log(\mathcal{L}(\hat{\theta}|\text{data}))}_{deviance} + 2K$$
+
+Where $K$ is the number of parameters of the model and the \textit{deviance} is a measure of discrepancy between the data and the model. Interestingly, we can mak a distinction between two types of deviances.\\
+
+First, the \textbf{in-sample deviance} indicates how bad a model is to explain the current dataset (the dataset that we used to fit the model). Second, and more importantly, the \textbf{out-of-sample deviance} indicates how bad a model is to explain a \textbf{future} dataset issued from the same data generation process (the same population).\\
+
+The usefulness of information criteria comes from their being approximations of the \textbf{out-of-sample deviance} of a model. In other words, they permit to approximate a quantity that we could otherwie obtain only by using cross-validation, that is, by acquiring much more data. In the current PhD work, we used generalisations of the AIC (especially the WAIC and LOOIC) that approximate the same quantity and as such give an indication of how good/bad a model is to predict future (i.e., non-observed) data.
+
+\end{mybox}
+
+In brief, in the present work, we used various methods but coherently
+with a few (nuanced) guiding principles. Namely:
+
+\begin{itemize}
+\tightlist
+\item
+  We favoured \emph{model comparison} over single-model testing (e.g.,
+  Burnham \& Anderson, \protect\hyperlink{ref-burnham_model_2002}{2002},
+  \protect\hyperlink{ref-burnham_multimodel_2004}{2004})
+\item
+  We favoured model estimation over model testing
+\item
+  We used several indicators when they provide complementary information
+  (e.g., using both posterior probabilities, information criteria or
+  Bayes factors)
+\end{itemize}
 
 \ldots{}
+
+\section{Overview of the following
+chapters}\label{overview-of-the-following-chapters}
+
+The experiment ran during this PhD will be presented as five empirical
+chapters that can be grouped under two main axes. In the first couple of
+experiment, we used surface electromyography and muscle-specific
+relaxation to investigate the involvement of the speech motor system
+during induced verbal and non-verbal rumination (Chapter 3 \& 4). In
+Chapter 5, we used surface electromyography and machine learning
+algorithms to decode the musle-specific EMG correlates of inner speech
+production. In the last couple of experiments, we switched strategy from
+the ``correlates strategy'' to the ``interference strategy'', where the
+goal was to directly interfere with the activity of the speech motor
+system. More precisely, we used articulatory suppression to disrupt
+induced rumination in Chapter 6, and we used articulatory suppression to
+disrupt either induced rumination or problem-solving in Chapter 7, in
+order to compare their effects. Finally, in Chapter 8, we will summarise
+the main findings, discuss their implications and suggest ways forward
+from both a theoretical and an experimental perspective.
 
 \part{Experimental
 chapters}\label{part-experimental-chapters}
@@ -1139,7 +1533,7 @@ Inner speech or covert speech can be defined as silent verbal production
 in one's mind or the activity of silently talking to oneself (Zivin,
 \protect\hyperlink{ref-zivin_development_1979}{1979}). The nature of
 inner speech is still a matter of theoretical debate (for a review, see
-Perrone-Bertolotti, Rapin, Lachaux, Baciu, \& Lœvenbruck,
+Perrone-Bertolotti et al.,
 \protect\hyperlink{ref-Perrone-Bertolotti2014}{2014}). Two opposing
 views have been proposed in the literature: the \emph{Abstraction view}
 and the \emph{Motor Simulation view}. The \emph{Abstraction view}
@@ -1727,8 +2121,8 @@ Fixed effects were estimated via the posterior mean and 95\% highest
 density intervals (HDIs), where an HDI interval is the Bayesian analogue
 of a classical confidence interval\footnote{While not suffering from the
   misunderstandings associated with frequentist confidence intervals
-  (for more details, see for instance Morey, Hoekstra, Rouder, Lee, \&
-  Wagenmakers, \protect\hyperlink{ref-morey_fallacy_2015}{2015}).}.
+  (for more details, see for instance Morey et al.,
+  \protect\hyperlink{ref-morey_fallacy_2015}{2015}).}.
 
 This strategy allowed us to examine posterior probability distribution
 on each parameter of interest (i.e., effects of session and condition on
@@ -2377,6 +2771,12 @@ between human inner speech, schizophrenia and altruism. \emph{Brain
 Research}, \emph{1476}, 38--57.
 \url{https://doi.org/10.1016/j.brainres.2012.02.074}
 
+\hypertarget{ref-alderson-day_inner_2015}{}
+Alderson-Day, B., \& Fernyhough, C. (2015). Inner speech: Development,
+cognitive functions, phenomenology, and neurobiology.
+\emph{Psychological Bulletin}, \emph{141}(5), 931--965.
+\url{https://doi.org/10.1037/bul0000021}
+
 \hypertarget{ref-babault_effect_2003}{}
 Babault, N., Pousson, M., Michaut, A., \& Van Hoecke, J. (2003). Effect
 of quadriceps femoris muscle length on neural activation during
@@ -2390,11 +2790,21 @@ short-term memory in patients without speech. \emph{Journal of Memory
 and Language}, \emph{24}(4), 490--502.
 \url{https://doi.org/10.1016/0749-596X(85)90041-5}
 
+\hypertarget{ref-bakan_test_1966}{}
+Bakan, D. (1966). The test of significance in psychological research.
+\emph{Psychological Bulletin}, \emph{66}(6), 423--437.
+\url{https://doi.org/10.1037/h0020412}
+
 \hypertarget{ref-barlow_differential_1986}{}
 Barlow, S. M., \& Netsell, R. (1986). Differential Fine Force Control of
 the Upper and Lower Lips. \emph{Journal of Speech, Language, and Hearing
 Research}, \emph{29}(2), 163--169.
 \url{https://doi.org/10.1044/jshr.2902.163}
+
+\hypertarget{ref-Barsalou2008}{}
+Barsalou, L. W. (2008). Grounded cognition. \emph{Annual Review of
+Psychology}, \emph{59}, 617--645.
+\url{https://doi.org/10.1146/annurev.psych.59.103006.093639}
 
 \hypertarget{ref-basho_effects_2007}{}
 Basho, S., Palmer, E. D., Rubio, M. A., Wulfeck, B., \& Müller, R.-A.
@@ -2449,6 +2859,17 @@ during exercise testing. \emph{European Heart Journal},
 \emph{34}(suppl\_1).
 \url{https://doi.org/10.1093/eurheartj/eht309.P3384}
 
+\hypertarget{ref-burnham_model_2002}{}
+Burnham, K. P., \& Anderson, D. R. (2002). \emph{Model selection and
+multimodel inference: A practical information-theoretic approach} (2nd
+ed). New York: Springer.
+
+\hypertarget{ref-burnham_multimodel_2004}{}
+Burnham, K. P., \& Anderson, D. R. (2004). Multimodel Inference:
+Understanding AIC and BIC in Model Selection. \emph{Sociological Methods
+\& Research}, \emph{33}(2), 261--304.
+\url{https://doi.org/10.1177/0049124104268644}
+
 \hypertarget{ref-R-brms}{}
 Bürkner, P.-C. (2018). \emph{Brms: Bayesian regression models using
 'stan'}. Retrieved from \url{https://CRAN.R-project.org/package=brms}
@@ -2464,6 +2885,12 @@ Cefidekhanie, A. H., Savariaux, C., Sato, M., \& Schwartz, J.-l. (2014).
 Interaction between articulatory gestures and inner speech in a counting
 task. \emph{Journal of the Acoustical Society of America},
 \emph{136}(4), 1869--1879. \url{https://doi.org/10.1121/1.4893910}
+
+\hypertarget{ref-christoff_mind-wandering_2016}{}
+Christoff, K., Irving, Z. C., Fox, K. C. R., Spreng, R. N., \&
+Andrews-Hanna, J. R. (2016). Mind-wandering as spontaneous thought: A
+dynamic framework. \emph{Nature Reviews Neuroscience}, \emph{17}(11),
+718--731. \url{https://doi.org/10.1038/nrn.2016.113}
 
 \hypertarget{ref-cohen_motor_1986}{}
 Cohen, B. H. (1986). The motor theory of voluntary thinking. In R. J.
@@ -2490,6 +2917,15 @@ Corley, M., Brocklehurst, P. H., \& Moat, H. S. (2011). Error biases in
 inner and overt speech: Evidence from tongue twisters. \emph{Journal of
 Experimental Psychology: Learning, Memory, and Cognition}, \emph{37}(1),
 162--175. \url{https://doi.org/10.1037/a0021321}
+
+\hypertarget{ref-Cumming2012}{}
+Cumming, G. (2012). \emph{Understanding the new statistics: Effect
+sizes, confidence intervals, and meta-analysis.} (New York:).
+
+\hypertarget{ref-cumming_new_2014}{}
+Cumming, G. (2014). The New Statistics: Why and How. \emph{Psychological
+Science}, \emph{25}(1), 7--29.
+\url{https://doi.org/10.1177/0956797613504966}
 
 \hypertarget{ref-de_luca_use_1997}{}
 De Luca, C. J. (1997). The Use of Surface Electromyography in
@@ -2544,6 +2980,12 @@ Implications for Thinking and Its Disorders. \emph{Schizophrenia
 Bulletin}, \emph{4}(4), 636--640.
 \url{https://doi.org/10.1093/schbul/4.4.636}
 
+\hypertarget{ref-findley_unbiasedness_1985}{}
+Findley, D. F. (1985). On the unbiasedness property of AIC for exact or
+approximating linear stochastic time series models. \emph{Journal of
+Time Series Analysis}, \emph{6}(4), 229--252.
+\url{https://doi.org/10.1111/j.1467-9892.1985.tb00412.x}
+
 \hypertarget{ref-fuhrer_version_1989}{}
 Fuhrer, R., \& Rouillon, F. (1989). La version française de l'échelle
 CES-D (Center for Epidemiologic Studies-Depression Scale). Description
@@ -2563,6 +3005,11 @@ Discrepancy between inner and overt speech: Implications for post-stroke
 aphasia and normal language processing. \emph{Aphasiology},
 \emph{25}(3), 323--343.
 \url{https://doi.org/10.1080/02687038.2010.511236}
+
+\hypertarget{ref-Gigerenzer2004}{}
+Gigerenzer, G. (2004). Mindless statistics. \emph{Journal of
+Socio-Economics}, \emph{33}(5), 587--606.
+\url{https://doi.org/10.1016/j.socec.2004.09.033}
 
 \hypertarget{ref-glover_motor-cognitive_2017}{}
 Glover, S., \& Baran, M. (2017). The motor-cognitive model of motor
@@ -2676,6 +3123,11 @@ Jeannerod, M. (1994). The representing brain: Neural correlates of motor
 intention and imagery. \emph{Behavioral and Brain Sciences},
 \emph{17}(02), 187. \url{https://doi.org/10.1017/S0140525X00034026}
 
+\hypertarget{ref-jeannerod_mental_1995}{}
+Jeannerod, M. (1995). Mental imagery in the motor context.
+\emph{Neuropsychologia}, \emph{33}(11), 1419--1432.
+\url{https://doi.org/10.1016/0028-3932(95)00073-C}
+
 \hypertarget{ref-jeannerod_neural_2001}{}
 Jeannerod, M. (2001). Neural Simulation of Action: A Unifying Mechanism
 for Motor Cognition. \emph{NeuroImage}, \emph{14}(1), S103--S109.
@@ -2712,11 +3164,33 @@ influence of trait and state rumination on cardiovascular recovery from
 a negative emotional stressor. \emph{Journal of Behavioral Medicine},
 \emph{31}, 237--248. \url{https://doi.org/10.1007/s10865-008-9152-9}
 
+\hypertarget{ref-Kline2004}{}
+Kline, R. (2004). \emph{What's Wrong With Statistical Tests--And Where
+We Go From Here.} \url{https://doi.org/10.1037/10693-003}
+
 \hypertarget{ref-kohler_differences_2004}{}
 Kohler, C. G., Turner, T., Stolar, N. M., Bilker, W. B., Brensinger, C.
 M., Gur, R. E., \& Gur, R. C. (2004). Differences in facial expressions
 of four universal emotions. \emph{Psychiatry Research}, \emph{128}(3),
 235--244. \url{https://doi.org/10.1016/j.psychres.2004.07.003}
+
+\hypertarget{ref-Koster2013}{}
+Koster, E. H. W., De Lissnyder, E., \& De Raedt, R. (2013). Rumination
+is characterized by valence-specific impairments in switching of
+attention. \emph{Acta Psychologica}, \emph{144}(3), 563--570.
+\url{https://doi.org/10.1016/j.actpsy.2013.09.008}
+
+\hypertarget{ref-Koster2011}{}
+Koster, E. H. W., De Lissnyder, E., Derakshan, N., \& De Raedt, R.
+(2011). Understanding depressive rumination from a cognitive science
+perspective: The impaired disengagement hypothesis. \emph{Clinical
+Psychology Review}, \emph{31}(1), 138--145.
+\url{https://doi.org/10.1016/j.cpr.2010.08.005}
+
+\hypertarget{ref-Lambdin2012}{}
+Lambdin, C. (2012). Significance tests as sorcery: Science is
+empirical--significance tests are not. \emph{Theory \& Psychology},
+\emph{22}(1), 67--90. \url{https://doi.org/10.1177/0959354311429854}
 
 \hypertarget{ref-langland-hassan_inner_2015}{}
 Langland-Hassan, P., Faries, F. R., Richardson, M. J., \& Dietz, A.
@@ -2779,6 +3253,14 @@ Effects of Worry and Rumination on Affect States and Cognitive Activity.
 \emph{Behavior Therapy}, \emph{38}(1), 23--38.
 \url{https://doi.org/10.1016/j.beth.2006.03.003}
 
+\hypertarget{ref-meehl_theory-testing_1967}{}
+Meehl, P. E. (1967). Theory-Testing in Psychology and Physics: A
+Methodological Paradox. \emph{Philosophy of Science}, \emph{34}(2),
+103--115. \url{https://doi.org/10.1086/288135}
+
+\hypertarget{ref-miller_prefrontal_2000}{}
+Miller, E. K. (2000). THE PREFRONTAL CORTEX AND COGNITIVE CONTROL, 7.
+
 \hypertarget{ref-morey_fallacy_2015}{}
 Morey, R. D., Hoekstra, R., Rouder, J. N., Lee, M. D., \& Wagenmakers,
 E.-J. (2015). The fallacy of placing confidence in confidence intervals.
@@ -2790,6 +3272,19 @@ Moulton, S. T., \& Kosslyn, S. M. (2009). Imagining predictions: Mental
 imagery as mental emulation. \emph{Philosophical Transactions of the
 Royal Society B: Biological Sciences}, \emph{364}(1521), 1273--1280.
 \url{https://doi.org/10.1098/rstb.2008.0314}
+
+\hypertarget{ref-nalborczyk_introduction_2019}{}
+Nalborczyk, L., Batailler, C., Lœvenbruck, H., Vilain, A., \& Bürkner,
+P.-C. (2019). An Introduction to Bayesian Multilevel Models Using brms:
+A Case Study of Gender Effects on Vowel Variability in Standard
+Indonesian. \emph{Journal of Speech Language and Hearing Research}.
+\url{https://doi.org/10.1044/2018_JSLHR-S-18-0006}
+
+\hypertarget{ref-nalborczyk_pragmatism_2019}{}
+Nalborczyk, L., Bürkner, P. C., \& Williams, D. R. (2019). Pragmatism
+should not be a substitute for statistical literacy, a commentary on
+Albers, Kiers, and van Ravenzwaaij (2018). \emph{Collabra: Psychology},
+\emph{5}(1). \url{https://doi.org/10.1525/collabra.197}
 
 \hypertarget{ref-netsell_inner_2010}{}
 Netsell, R., Ashley, E., \& Bakker, K. (2010). The inner speech of
@@ -2843,6 +3338,12 @@ O'Shea, H., \& Moran, A. (2017). Does Motor Simulation Theory Explain
 the Cognitive Mechanisms Underlying Motor Imagery? A Critical Review.
 \emph{Frontiers in Human Neuroscience}, \emph{11}.
 \url{https://doi.org/10.3389/fnhum.2017.00072}
+
+\hypertarget{ref-oshea_go_2018}{}
+O'Shea, H., \& Moran, A. (2018). To go or not to go? Pupillometry
+elucidates inhibitory mechanisms in motor imagery. \emph{Journal of
+Cognitive Psychology}, \emph{30}(4), 466--483.
+\url{https://doi.org/10.1080/20445911.2018.1461104}
 
 \hypertarget{ref-palmer_event-related_2001}{}
 Palmer, E. D., Rosen, H. J., Ojemann, J. G., Buckner, R. L., Kelley, W.
@@ -2999,6 +3500,13 @@ Skeletomotor System. In G. Berntson, J. T. Cacioppo, \& L. G. Tassinary
 Cambridge: Cambridge University Press. Retrieved from
 \url{https://www.cambridge.org/core/books/handbook-of-psychophysiology/skeletomotor-system/CAD1D438D70B4242013F71848E4799D0}
 
+\hypertarget{ref-trafimow_manipulating_2018}{}
+Trafimow, D., Amrhein, V., Areshenkoff, C. N., Barrera-Causil, C. J.,
+Beh, E. J., Bilgiç, Y. K., \ldots{} Marmolejo-Ramos, F. (2018).
+Manipulating the Alpha Level Cannot Cure Significance Testing.
+\emph{Frontiers in Psychology}, \emph{9}.
+\url{https://doi.org/10.3389/fpsyg.2018.00699}
+
 \hypertarget{ref-treynor_rumination_2003}{}
 Treynor, W., Gonzalez, R., \& Nolen-Hoeksema, S. (2003). Rumination
 Reconsidered : A Psychometric Analysis, \emph{27}(3), 247--259.
@@ -3024,6 +3532,12 @@ and Research}, 19.
 \hypertarget{ref-vygotsky_collected_1987}{}
 Vygotsky, L. S. (1987). \emph{The Collected Works of L. S. Vygotsky}.
 (R. W. Rieber \& A. S. Carton, Eds.). Springer US.
+
+\hypertarget{ref-wasserstein_asas_2016}{}
+Wasserstein, R. L., \& Lazar, N. A. (2016). The ASA's Statement on
+\emph{p} -Values: Context, Process, and Purpose. \emph{The American
+Statistician}, \emph{70}(2), 129--133.
+\url{https://doi.org/10.1080/00031305.2016.1154108}
 
 \hypertarget{ref-Watkins2008}{}
 Watkins, E. R. (2008). Constructive and unconstructive repetitive
