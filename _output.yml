@@ -5,7 +5,7 @@ bookdown::gitbook:
   github-repo: lnalborczyk/phd_thesis
   citation_package: none # needs to be "none" in order to use the csl file
   pandoc_args: [ "--csl", "./csl/apa6.csl" ] # specifies the csl file to be used
-  split_bib: true # adds references at the end of each chapter
+  split_bib: false # if true, adds references at the end of each chapter
   # split_by: chapter # "none" creates only one html file
   config:
     toc:
