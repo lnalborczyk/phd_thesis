@@ -4,6 +4,9 @@
 
 
 
+\epigraph{All human things are subject to decay, and when fate 
+summons, Monarchs must obey}{\textit{Mac Flecknoe \\ John Dryden}}
+
 \initial{A}s you read these words, you might notice the presence of a familiar companion. A voice-like phenomenon that remains unnoticed until we pay attention to it. However, if I ask you to focus on that little voice while you are reading these lines, you would probably be able to provide a relatively fine-graind description of this thing that we call inner speech. Whose voice is it ? Is it yours ? Is it gendered ? It is usually possible to examine these aspects as well as more low-level features like the tone of this soundy companion, its pitch, its tempo, or virtually any sensory aspect of it. This first set of very basic observations already provide us some very important insights. First, if we can think about inner speech, then it should be something different from thinking itself. Rather, inner speech (or *covert speech*) can be construed as *a* vehicle for conscious thought (instead of *verbal thinking*, for instance)^[We will not dwell on the touchy question whether inner speech is a necessary condition for consciousness. For the current purpose, it is sufficient to say that thinking and inner speech are ontologically separable.]. Second, the set of observations we can make about our inner voice also tautologically reveals that inner speech is accompanied by sensory percepts (sounds, kinaesthesic feelings, etc.). It thus raises another set of fascinating questions about the origin and nature of inner speech percepts: where do these percepts come from ? Why do they look like the one we experience when we *actually* (overtly) speak ?
 
 This first set of questions refer to the *nature* of inner speech, that is, *what* is it ? In the current work, we are mostly concerned with this first question. Another related set of fascinating questions revolve around the *function* question, that is, *what is it for* [e.g.,@alderson-day_inner_2015] ? The influential Vygotskian theory of inner speech development suggests that inner speech evolves from *private speech* (i.e., self-adressed overt speech) during childhood. As such, we (as others have argued elsewhere) postulate that the functions of inner speech are inherited from the functions of private speech, via a mechanism of internalisation. The specific features of this internalisation processs are worthy of investigation on their own (and we briefly discuss them later on) but we are mostly interesred in the *what is* (the nature) question here. Thus, we will only sparsely address the *functions* question in the following text.
@@ -18,7 +21,7 @@ The cognitive approach [@Koster2011;@Koster2013]... from the RST to contrl theor
 
 As suggested by @christoff_mind-wandering_2016, rumination and other forms of spontaneous thoughts can be considered in a common conceptual space (see Figure 1). This space is built upon two dimensions: *deliberate constraints* and *automatic constraints*. These dimensions represent two general mechanisms that allow to constrain the contents of these related mental states and the transitions between them. The first contrain correspond to a deliberate processus and is implemented through **cognitive control** [@miller_prefontral_2000]. The second constrain is referring to more automatic constrains like sensory afferences. In this framework, rumination is characterised by the highest level of automatic constraints and spread all along the *deliberate constraints* dimension.
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{assets/conceptual_space} 
 

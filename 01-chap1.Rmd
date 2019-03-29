@@ -5,9 +5,12 @@
 ```{r setupCH1, echo = FALSE, message = FALSE, warning = FALSE, results = "hide"}
 knitr::opts_chunk$set(
   cache = TRUE, echo = FALSE, warning = FALSE, message = FALSE,
-  out.width = "100%"
+  out.width = "100%", fig.pos = "H", fig.align = "center"
   )
 ```
+
+\epigraph{All human things are subject to decay, and when fate 
+summons, Monarchs must obey}{\textit{Mac Flecknoe \\ John Dryden}}
 
 \initial{A}s you read these words, you might notice the presence of a familiar companion. A voice-like phenomenon that remains unnoticed until we pay attention to it. However, if I ask you to focus on that little voice while you are reading these lines, you would probably be able to provide a relatively fine-graind description of this thing that we call inner speech. Whose voice is it ? Is it yours ? Is it gendered ? It is usually possible to examine these aspects as well as more low-level features like the tone of this soundy companion, its pitch, its tempo, or virtually any sensory aspect of it. This first set of very basic observations already provide us some very important insights. First, if we can think about inner speech, then it should be something different from thinking itself. Rather, inner speech (or *covert speech*) can be construed as *a* vehicle for conscious thought (instead of *verbal thinking*, for instance)^[We will not dwell on the touchy question whether inner speech is a necessary condition for consciousness. For the current purpose, it is sufficient to say that thinking and inner speech are ontologically separable.]. Second, the set of observations we can make about our inner voice also tautologically reveals that inner speech is accompanied by sensory percepts (sounds, kinaesthesic feelings, etc.). It thus raises another set of fascinating questions about the origin and nature of inner speech percepts: where do these percepts come from ? Why do they look like the one we experience when we *actually* (overtly) speak ?
 
