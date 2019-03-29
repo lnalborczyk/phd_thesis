@@ -7,27 +7,29 @@ knitr::opts_chunk$set(
   )
 ```
 
-This chapter aims to provide the key concepts related to the methods we used. More precisely, in this chapter we cover the technical concepts related to speech production mechanismes, to electromyography and to the statistical approach we followed in our work. Finally, we give an overview of the following chapters.
+In this chapter we introduce some of the key concepts related to the methods used in our work. More precisely, we cover the technical concepts related to speech production mechanisms, to electromyography and to our statistical approach. Finally, we give an overview of the following chapters.
 
 ## Speech production mechanisms
 
 ### Theoretical aspects of speech production
 
-...
+Three levels in speech production, from conceptualisation to formulation and articulation (Levelt)...
+
+The vibration of the vocal chords defines the fundamental frequency (F0)... each vowel can be described by combinations of specific formant (F1, F2 and F3) values and, accordingly, a specific spectrogram... As can be seen from Figure XX, there is a close correspondence between the articulatory space and the acoustic signal. The F1 formant can be represented on a top-down dimension... the F2 on a front to bottom dimension and F3 follows the roundness of the mouth.
 
 ### Mechanical aspects of speech production
 
-...
+Speech production requires the involvement of more than 100 muscles [@simonyan_laryngeal_2011] in the face, the neck and the chest...
 
-### Muscles of interest in the present work
-
-In the current work, we were especially interested in the activity of the orofacial muscles (i.e., the muscles situated around the mouth). More precisely, we were particulary interested in the *orbicularis oris inferior* and *orbicularis oris superior* muscles. As can be seen from Figure XX, these two muscles are actually parts of a broad sphyncter muscle that permis the contraction and aperture of the mouth...
+In the current work, we were especially interested in the activity of some orofacial muscles (i.e., the muscles situated around the mouth). More precisely, we were particulary interested in the *orbicularis oris inferior* and *orbicularis oris superior* muscles. As can be seen from Figure XX, these two muscles are actually parts of a broad sphyncter muscle that permis the contraction and aperture of the mouth...
 
 ```{r facial, out.width = "50%", fig.cap = "Illustration of a facial muscles of interest in the present work. Figure from Patrick J. Lynch, medical illustrator, http://patricklynch.net."}
 knitr::include_graphics("assets/facial_muscles.jpg")
 ```
 
-For sensors placement, we follow guidelines from... 
+For sensors placement, we follow guidelines from @fridlund_guidelines_1986...
+
+- *Orbicularis oris superior*: superior portion of the *orbicularis oris* (mouth sphincter), serves to contract the lips and to compress them eogether and forward...
 
 - *Orbicularis oris inferior*: inferior portion of the *orbicularis oris* (mouth sphincter), serves to contract the lips and to compress them eogether and forward...
 
@@ -36,6 +38,8 @@ For sensors placement, we follow guidelines from...
 - *Lateral frontalis*: ...
 
 - *Flexor carpi radialis*: serves to raise the outer and middle brow... the elelectrode is place on a vertical line tha travers the pupil of the eye (during centrred gaze)...
+
+Transition to the EMG part...
 
 ## A brief introduction to electromyography
 
@@ -49,46 +53,49 @@ Technically speaking, electromyography (EMG) is an experimental technique concer
 
 #### Muscular anatomy and physiology
 
-A muscle is a collection of fibers that can vary in length, orientation, diameter, and architectural characteristics. For instance, deeper muscle fibers are usually composed of a greater proportion of slow-twitch fibers (type I muscle fibers) whereas more superficial muscle fibers comprise a greater poportion of larger and fast-twitch fibers [type II muscles fibers, @kamen_essentials_2010]. On the basis of their structure and contractile properties, we can identify three types of muscle tissues: i) the skeletal muscles, ii) the cardiac muscles and iii) the smooth muscles. The skeletal muscles are the one we are recording the activity of when using EMG. These musclesare attached to the bones and are responsible for moving the skeleton.
+A muscle is a collection of fibers that can vary in length, orientation, diameter, and architectural characteristics. For instance, deeper muscle fibers are usually composed of a greater proportion of slow-twitch fibers (type I muscle fibers) whereas more superficial muscle fibers comprise a greater poportion of larger and fast-twitch fibers [type II muscles fibers, @kamen_essentials_2010]. On the basis of their structure and contractile properties, we can identify three types of muscle tissues: i) the *skeletal muscles* are attached to bones, their function is to produce voluntary movements and to protect the organs, ii) the *cardiac muscles* serve to pump blood and iii) the *smooth muscles*, involved in involuntary movements (e.g., respiration, moving food, regulating the blood).
 
-The contraction of skeletal muscles is usually under voluntary control and is initiatied by electrical impulses that propagate from the central nervous system to the muscle via the $\alpha$-motoneurons. Interestingly, many (both larger and smaller) muscles are partitioned, with each portion having a specific role for the muscle function. Moreover, there is no one-to-one mapping between populations of motor neurons and muscle compartments. In other words, one population of motoneurons may innervate several compartments and several populations of motoneurons may innervate the same muscle compartment. Therefore, interpreting the EMG signal require to be aware whether the recorded signal is characteristic of a whole muscle' activity or of a specific muscle compartment [@kamen_essentials_2010].
+The contraction of the skeletal muscles is initiatied by electrical impulses that propagate from the central nervous system to the muscle via the $\alpha$-motoneurons. Interestingly, many (both larger and smaller) muscles are partitioned, with each portion having a specific role for the muscle function. Moreover, there is no one-to-one mapping between populations of motor neurons and muscle compartments. In other words, one population of motoneurons may innervate several compartments and reciprocally, several populations of motoneurons may innervate the same muscle compartment. Therefore, interpreting the EMG signal requires to be aware whether the recorded signal is characteristic of a whole muscle' activity or of a specific muscle compartment [@kamen_essentials_2010].
 
 ```{r muscle, out.width = "50%", fig.cap = "Illustration of a muscle fiber. Figure from the OpenStax \\textit{Anatomy and Physiology} Textbook. Download for free at http://cnx.org/contents/14fb4ad7-39a1-4eee-ab6e-3ef2482e3e22@15.1."}
 knitr::include_graphics("assets/muscle.jpg")
 ```
 
-The muscle is a tissue, surrounded by a membrane, the *sarcolemma* (see Figure \@ref(fig:muscle)). Under resting conditions, the voltage inside the membrane is around -90mV, relative to the outside. This voltage results from a particular combination of sodium ($\text{Na}^{+}$), potassium ($\text{K}^{+}$), chloride ($\text{Cl}^{-}$), and other anions. At rest, the concentration of $\text{Na}^{+}$ is relatively high outside the membrane and relatively low inside the membrane. The concentration of $\text{K}^{+}$ follows an opposite pattern, with a greater concentration inside the membrane, and a lower concentration outside the membrane.
+The muscle fiber is surrounded by a membrane, the *sarcolemma* (see Figure \@ref(fig:muscle)). Under resting conditions, the voltage inside the membrane is around -90mV, relative to the outside. This voltage results from a particular combination of sodium ($\text{Na}^{+}$), potassium ($\text{K}^{+}$), chloride ($\text{Cl}^{-}$), and other anions. At rest, the concentration of $\text{Na}^{+}$ is relatively high outside the membrane and relatively low inside the membrane. The concentration of $\text{K}^{+}$ follows an opposite pattern, with a greater concentration inside the membrane, and a lower concentration outside the membrane.
 
 #### The motor action potential
 
-Because muscle membranes can change their electrical state, muscle fibers are excitable tissues. When a muscular fiber is depolarised, the *membrane potential* produces a response called the *muscle fiber ation potential* or more generally the *motor action potential* (MAP). The generated action potential proceeds along the muscle fiber in both directions from the neuromuscular junction [@kamen_essentials_2010]^[The *neuromuscular junction* is the site where the motoneuron's terminal meets the muscle fiber.]. In the first phase of the MAP, the $\text{Na}^{+}$ increases dramatically wich induces a massive income of $\text{Na}^{+}$ into the cell, resulting in an inversion of the polarity of the cell (see Figure \@ref(fig:mfap)).
+Because muscle membranes can change their electrical state, muscle fibers are excitable tissues. When a muscle fiber is depolarised, the *membrane potential* produces a response called the *muscle fiber ation potential* or more generally the *motor action potential* (MAP). The generated action potential proceeds along the muscle fiber in both directions from the neuromuscular junction [@kamen_essentials_2010]^[The *neuromuscular junction* is the site where the motoneuron meets the muscle fiber.]. In the first phase of the MAP, the $\text{Na}^{+}$ permeability increases dramatically, inducing a massive income of $\text{Na}^{+}$ into the cell. This results in a temporary inversion of the cell polarity (see Figure \@ref(fig:mfap)).
 
-```{r mfap, out.width = "75%", fig.cap = "Time course of the muscle fiber action potential (Figure from Kamen \\& Gabriel, 2010)."}
+```{r mfap, out.width = "75%", fig.cap = "Time course of a motor action potential (Figure from Kamen \\& Gabriel, 2010)."}
 knitr::include_graphics("assets/mfap.png")
 ```
 
-The MAP is followed by a *refractory period*, during which there is a decrease in membrane excitability. This refractory period can be further decomposed in an *absolute* refractory period during which all $\text{Na}^{+}$ channels are closed, and a *relative* refractory period where some $\text{Na}^{+}$ channels are open (but to a lesser extent than before the MAP). Interestingly, this after-impulse hyperpolarisation limits the frequency of MAPs [@kamen_essentials_2010]. 
+The MAP is followed by a *refractory period*, characterised by a decrease in membrane excitability. This refractory period can be further decomposed in an *absolute* refractory period during which all $\text{Na}^{+}$ channels are closed, and a *relative* refractory period where some $\text{Na}^{+}$ channels are open (but to a lesser extent than before the MAP). Interestingly, this after-impulse hyperpolarisation limits the frequency of MAPs [@kamen_essentials_2010]. 
 
 #### The motor unit
 
-The *motor unit* is the smallest controllable muscular unit. It consists of a single $\alpha$-motoneuron, its neurosmuscular junction, and all the muscle fibers it innervates. The number of motor units and their *innervation ratio* (i.e., the number of muscle fibers per motor unit) can vary by muscle. For instance, large muscles have hundreds of motor units and an invervation ratio of a few thousands whereas small muscles have thousands of motor units but can have an innervation ratio of 10 to 20 per motor unit.
+The *motor unit* is the smallest controllable muscular unit. It consists of a single $\alpha$-motoneuron, its neurosmuscular junction, and all the muscle fibers it innervates. The number of motor units and their *innervation ratio* (i.e., the number of muscle fibers per motor unit) can vary by muscle. For instance, large muscles have hundreds of motor units and an invervation ratio of a few thousands whereas small muscles can have thousands of motor units but an innervation ratio of only 10 to 20.
 
-Because a single motoneuron can innervate multiple muscle fibers, the firing of a single motoneuron results in the simultaneous discharge of many muscle fibers. The *motor unit action potential* (MUAP) is the electric field resulting from the sum of the electric fields emitted by each fiber of the motor unit. In other words, it represents the spatiotemporal summation of individual MAPs originating from muscle fibers that are sufficiently close to a given electrode. This generates a *train* of MUAPs, called *motor unit action potential trains* (MUAPTs). The electric potential generated by this field is highly dependent of parameters such as the number of fibers, their length, the speed of conduction and position of the neuromuscular junction.
+Because a single motoneuron can innervate multiple muscle fibers, the firing of a single motoneuron results in the simultaneous discharge of many muscle fibers. The *motor unit action potential* (MUAP) is the electric field resulting from the sum of the electric fields emitted by each fiber of the motor unit. In other words, it represents the spatiotemporal summation of individual MAPs originating from muscle fibers that are sufficiently close to a given electrode. This generates a *train* of MUAPs, called *motor unit action potential trains* (MUAPTs). The mixture of MUAPTs coming from different motor units constitue the raw EMG signal.
 
 ```{r muap, out.width = "75%", fig.cap = "Motor unit action potential representation (Figure from De Luca et al., 2006)."}
 knitr::include_graphics("assets/muap.jpg")
 ```
 
-In brief, the EMG signal results from a mixture of recruited motor units. It is composed of the sum of all MUAPs. This signal can vary considerably because of factors such as the muscle length [@babault_effect_2003], the distance between the muscle fiber (of interest) and the electrode, the fiber length or the muscle temperature.
+To sum up, the EMG signal results from a mixture of recruited motor units: it is composed of the sum of all MUAPs. This signal can vary considerably because of factors such as the muscle length [@babault_effect_2003], the distance between the muscle fiber (of interest) and the electrode, the fiber length or the muscle temperature.
 
-### EMG instrumentation
+### EMG instrumentation and recording
 
-Myoelectric measurements have a long history, starting in the XVII and XVIII centuries with the classical observations that muscle contraction can generate electricity and that electrical impulses can generate muscle contractions [for a more detailed historical perspective, see @raez_techniques_2006]. The term of electromyography and the first EMG measures were realised at the end of the XIXth century by Marey (1890).
+Myoelectric measurements have a long history, starting in the XVII and XVIII centuries with the classical observations that muscle contraction can generate electricity and that electrical impulses can generate muscle contractions [@raez_techniques_2006]. The term of electromyography and the first EMG measures were realised at the end of the XIXth century by Marey (1890)...
 
-Since then... Different types of electrodes: surface lectrodes, active electrodes, indwelling electrodes, needle eectrodes, wire electrodes... Fine-wire and Needle electrodes are mostly used in rehabiilitation for diagnostis of muscle function and nerve conduction [@fridlund_guidelines_1986]...
+Since then... both surface and indwelling (i.e., intramuscular) recordings have been used. Each methods is associated with its own type of sensors, its own advantages and disadvantages. Intramuscular recordings acquired via fine-wire and needle electrodes are mostly used in rehabilitation for diagnosis of muscle function and nerve conduction [@fridlund_guidelines_1986]. Because of their invasive properties for the participants, they are much less used nowadays in basic psychophysiology research.
 
+Surface electrodes have the advantage of being easy to use and non-invasive. However, their use is limited to (large and) superficial muscles. Moreover, because of the phenomenon of *cross-talk*^[The phenomenon of *cross-talk* can be defined as the mixing of the electrical activity of the muscle of interest with the electrical activity of adjacent or distant muscles, that are not of primary interest.], it is difficult to isolate the activity of specific muscle using surface EMG. On the opposite, intramuscular EMG (that can be recorded via a single needle or two wires implanted directly into the muscle) are highly selective and can permit to record the activity of individual motor units. In addition, indwelling recordings are not submitted to *tissue filtering* (i.e., the fact that muscles tissues act as low-pass filters), in contrast to surface recording.
 
-Many factors can affect the recorded EMG signals. These factors are usually described in three main categories [for more details, see @de_luca_use_1997]:
+In reason of the important intercrossing and superposition of facial muscles, the surface EMG activity recorded over facial muscles does not generally represent the activity of a single muscle but rather a mixture of muscles activations [@de_luca_use_1997;@Rapin2011]... As a result, it is usually inappropriate, when using surface EMG, to attribute the results to a single muscle [@fridlund_guidelines_1986]. Whereas for the sake of simplicity/clarity we designate sensors by the name of the underlying muscle (e.g., "FRO" for the *frontalis* site), it should be kept in mind that these sensors reflect the activity of "sites", rather than single muscles.
+
+Many other factors can affect the recorded EMG signals. These factors are usually described into three main categories [for more details, see @de_luca_use_1997]:
 
 * The *causative factors*, that have a basic effect on EMG signals. These factors can be further subdivided into two classes: i) the *extrinsic* factors including factors such as the type of electrode (e.g., size, shape, placement) or the inter-electrode distance and ii) the *intrinsic* factors such as physiological or anatomical factors (e.g., fiber type, fiber diameter, blood flow).
 
@@ -100,11 +107,9 @@ All these factors contribute to modulating both the amplitude of the EMG signal 
 
 (External) factors influencing the EMG signal: i) tissue characteristics (thickness, physiological changes and temperature), nb: vary greatly from subject to subject, ii) physiological cross-talk produced by neighbouring muscles but ECG spies can also interfer with the EMG recording (especially in the upper trunk or shoulder muscles), iii) external noise in noisy electrical environments (e.g., electrical power), iv) electrodes and amplifiers...
 
-The *crosstalk* phenomenon [@de_luca_use_1997]... In reason of the important... of facial muscles, the EMG activity of one recorded muscle generally does not represent the activity of a single muscle but rather a mixture of... @Rapin2011... Placement of EMG sensors: we follow the atlas provided by @fridlund_guidelines_1986...
-
-Advantages of surface electrodes... they broadly detect the firing of aggregates of MUAPs that ... hwoever, they are nonselective (i.e., they cannot be nterpreted as reflecting the activity of a single muscle), in comaprison to instrted needle electrodes. As a results, it is usually inapproparite, when using surface EMG, to attribute the results to a single muscle [@fridlund_guidelines_1986]. Whereas for the sake of simplicity/clarity we designate sensors by the name of the underlying muscle (e.g., "FRO" for the *frontalis* site), it should be kept in mind that these sensors reflect the activity of "sites", rather than single muscles.
-
 ### EMG signal processing
+
+### General signal processing
 
 The raw EMG signal is a stochastic train of MUAPs. As put by @fridlund_guidelines_1986, "when heard through a speaker, the raw EMG signal sounds like popcorn popping". Therefore, it is usually unsuitable for immediate quantification. In order to illustrate what the EMG signal looks like, we simulated EMG data based on a standard algorithm implemented in the `biosignalEMG` package [@R-biosignalEMG], which is represented in Figure \@ref(fig:emgplot1).
 
@@ -125,7 +130,7 @@ ts.plot(
   )
 ```
 
-We usually rectify the EMG signal by taking its absolute value and substracting the mean in order to correct for any offset (bias) present in the raw data. This operation is represented in Figure \@ref(fig:emgplot2).
+We usually rectify the EMG signal by taking its absolute value and substracting the mean in order to correct for any offset (bias) present in the raw data. The result of this operation is represented in Figure \@ref(fig:emgplot2).
 
 ```{r emgplot2, fig.width = 6, fig.height = 4, fig.cap = "Rectified EMG signal."}
 rectified_emg <- abs(emg$values - mean(emg$values) )
@@ -136,7 +141,7 @@ ts.plot(
   )
 ```
 
-From there, two main measures can be used to represent the magnitude of a muscle activity^[But see for instance @phinyomark_feature_2012 for a brief overview of other features that can be extracted from the surface EMG signal.]. The first one is the *mean absolute value* (MAV), which is computed over a specific interval and where $|x_{n}|$ is the absolute value of a datum of EMG in the data window.
+Then, the signal is usually low-pass filtered, with a cut-off frequency depending on the nature of the study. From there, two main measures can be used to represent the magnitude of a muscle activity^[But see for instance @phinyomark_feature_2012, for a brief overview of other features that can be extracted from the surface EMG signal.]. The first one is the *mean absolute value* (MAV), which is computed over a specific interval and where $|x_{n}|$ is the absolute value of a datum of EMG in the data window.
 
 <!--
 These measures reflect two main categories know either as signal *integration* or signal *smoothing*. Whereas the *integration* is simply the temporal summation (or accumulation) of EMG activity, the *smoothing* is simply a form a low-pass filtering, enveloppe detection, ar a type of averaging of the signal...
@@ -146,11 +151,11 @@ $$MAV = \frac{1}{N} \sum_{n=1}^{N} | x_{n} |$$
 
 The unit of measurement is usually the $mV$ and the MAV calculation is generally similar to the numerical formula for integration [@kamen_essentials_2010]. The second one is the *root-mean-square* (RMS) amplitude:
 
-$$RMS = \sqrt \frac{1}{N} \sum_{n=1}^{N} x^{2}_{n}$$
+$$RMS = \sqrt{ \frac{1}{N} \sum_{n=1}^{N} x^{2}_{n} }$$
 
 where $x^{2}_{n}$ is the squared value of each EMG datum and has both physical and physiological meanings. Put broadly, the RMS it taken to reflect the level of the physiological activities in the motor unit during contraction. Both the MAV and the RMS are illustrated in Figure \@ref(fig:emgplot3).
 
-```{r emgplot3, fig.width = 6, fig.height = 4, fig.cap = "Illustration of the MAV (in orange) and RMS (in green) values. These two features are usually highly correlated but differ in magnitude."}
+```{r emgplot3, fig.width = 6, fig.height = 4, fig.cap = "Illustration of the MAV (in orange) and RMS (in green) values. These two features are usually highly correlated but differ in magnitude. More precisely, the RMS is proportional to the MAV when the signal has a Gaussian shape."}
 ts.plot(
   rectified_emg, xlab = "Time (samples)", ylab = "Rectified EMG signal",
   col = "steelblue"
@@ -160,7 +165,7 @@ plot(ma, col = "orangered", lwd = 2, add = TRUE)
 plot(rms, col = "darkgreen", lwd = 2, add = TRUE)
 ```
 
-For facial EMG studies, it is also recommend to filter... Studes have generally show that the primary energy of surface EMg signals lie between 10 and 200Hz [@fridlund_guidelines_1986]. For facial surface EMG stdies more specifically... See van Boxtel 2001... [for more details on EMG signal processing, see for instance @raez_techniques_2006; @chowdhury_surface_2013]...
+Studes have generally show that the primary energy of surface EMG signals lie between 10 and 200Hz [@fridlund_guidelines_1986]. For facial surface EMG stdies more specifically... See van Boxtel 2001... [for more details on EMG signal processing, see for instance @raez_techniques_2006; @chowdhury_surface_2013]... Then, in keeping with the recommendation for facial EMG studies [@de_luca_filtering_2010], a 20 Hz – 450 Hz bandpass filter was applied, in order to focus on the facial EMG frequency band...
 
 ## Statistical modelling and statistical inference
 
@@ -204,7 +209,7 @@ All this pieced together shows that the result of a Bayesian analysis, namely th
 
 Probability theory has been argued to be nothing more than \textit{extended logic}. In other words, it generalises the rules of logic that apply to discrete events (e.g., TRUE of FALSE events) to continuous cases. By doing this move, probability theory gives a way to represent and to quantify the \textit{uncertainty}. Importantly, the rules of probability have the same status as the rules of logic: these rules can be used to derive statements (conclusions) that are guaranteed to be correct given that some premises are correct.\\
 
-Bayesian statistics can simply be presented as an application of probability theory to statistical analysis. Whereas the dependence of the inferential conclusions on prior assumptions is usually presented as a downside of this type of analysis, it is precisely what makes them \textit{optimal} or \textit{coherent} (in the sense of respecting the rules of probability). As put by Vandekerckhove (2018), the claim that Bayesian methods would be invalidated by their reliance on prior assumptions would be akin to conclude that logical deductions are somehow invalidated because they depend on premises.\\
+Bayesian statistics can simply be presented as an application of probability theory to statistical analysis. Whereas the dependence of the inferential conclusions on prior assumptions is usually presented as a downside of this type of analysis, it is precisely what makes them \textit{optimal} or \textit{coherent} (in the sense of respecting the rules of probability). As put by Vandekerckhove (2018), the claim that Bayesian methods would be invalidated by their reliance on prior assumptions would be akin to conclude that logical deductions are somehow invalidated because they depend on premises.
 
 \end{mybox}
 

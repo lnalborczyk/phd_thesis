@@ -40,8 +40,6 @@
 \usepackage{booktabs,caption,fixltx2e}
 \usepackage[none]{hyphenat} % remove hyphenation
 
-\usepackage{epigraph} % for quotations at the beginning of the chapters
-
 \usepackage[a4paper]{./cover/cover_page} % specifies the path to the cover page template
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -213,3 +211,15 @@
 %%%%%%%%%%%%%%%%%%%%%
 
 % \usepackage{chronology}
+
+%%%%%%%%%%%%%%%%%%
+% Epigraph style %
+%%%%%%%%%%%%%%%%%%
+
+\usepackage{epigraph}
+\setlength\epigraphwidth{1\textwidth}
+\setlength\epigraphrule{0pt} % no line between
+\setlength\beforeepigraphskip{1\baselineskip} % space before and after epigraph
+\setlength\afterepigraphskip{2\baselineskip}
+\renewcommand*{\textflush}{flushright}
+\renewcommand*{\epigraphsize}{\normalsize\itshape}
