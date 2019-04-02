@@ -30,3 +30,5 @@ bookdown::pdf_book:
   toc: false # deactivates default table of contents
   highlight: pygments # code highlighting
   pandoc_args: [ "--csl", "./csl/apa6.csl" ] # specifies the csl file to be used
+
+# bookdown::word_document2: default

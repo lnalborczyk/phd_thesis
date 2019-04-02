@@ -2,44 +2,81 @@
 
 
 
-In this chapter we introduce some of the key concepts related to the methods used in our work. More precisely, we cover the technical concepts related to speech production mechanisms, to electromyography and to our statistical approach. Finally, we give an overview of the following chapters.
+In this chapter we introduce some of the key concepts related to the methods we used in our work. More precisely, we cover the technical concepts related to speech production mechanisms, to electromyography and to our statistical approach. Finally, we give an overview of the following chapters.
 
 ## Speech production mechanisms
 
-### Theoretical aspects of speech production
+### Psychological aspects of speech production
 
-Three levels in speech production, from conceptualisation to formulation and articulation (Levelt)...
+What does language production imply ? At a biomechanical level, producing language means coordinating a complex dynamic system (i.e., the ensemble of speech muscles and organs) to produce slight perturbations of the air flow (sound waves). At a psychological level, language production is akin to information communication, from an emitter to a receptor. Before being communicated however, the information of interest is submitted to several important transformations. First, it needs to... three levels in speech production, from conceptualisation to formulation and articulation (Levelt)...
 
-The vibration of the vocal chords defines the fundamental frequency (F0)... each vowel can be described by combinations of specific formant (F1, F2 and F3) values and, accordingly, a specific spectrogram... As can be seen from Figure XX, there is a close correspondence between the articulatory space and the acoustic signal. The F1 formant can be represented on a top-down dimension... the F2 on a front to bottom dimension and F3 follows the roundness of the mouth.
+### Biomechanical aspects of speech production
 
-### Mechanical aspects of speech production
+#### Vocal apparatus
 
-Speech production requires the involvement of more than 100 muscles [@simonyan_laryngeal_2011] in the face, the neck and the chest...
+Speech production requires the involvement of more than 100 muscles in the face, the neck and the chest [@simonyan_laryngeal_2011]. The activity of these muscles is coordinated to produce an air flow moving from the lungs to the oral and nasal cavities, via the trachea, the larynx and the pharynx (see Figure \@ref(fig:vocal)). Broadly speaking, speech production can be said to consist essentially in i) *phonation*, which refers to the manipulation of the air flow and to the vibration of the vocal folds and ii) *articulation*, which refers to movements of the *articulators*. The action of the *articulators* (e.g., lips, tongue) is to shape the oral and nasal cavities, resulting in modifications of the sound waves and in the production of different vowels.
 
-In the current work, we were especially interested in the activity of some orofacial muscles (i.e., the muscles situated around the mouth). More precisely, we were particularly interested in the *orbicularis oris inferior* and *orbicularis oris superior* muscles. As can be seen from Figure XX, these two muscles are actually parts of a broad sphincter muscle that permits the contraction and aperture of the mouth...
+<!--
+The vocal folds in the larynx vibrate to produce fluctuations in air pressure (sound waves). These sounds waves are subsequently modified by the position and shape of the mouth, the lips, the tongue, and other speech organs.
+-->
 
 \begin{figure}[H]
 
-{\centering \includegraphics[width=0.5\linewidth]{assets/facial_muscles} 
+{\centering \includegraphics[width=0.75\linewidth]{assets/vocal} 
 
 }
 
-\caption{Illustration of a facial muscles of interest in the present work. Figure from Patrick J. Lynch, medical illustrator, http://patricklynch.net.}(\#fig:facial)
+\caption{Human respiratory and phonatory system. Figure from the OpenStax \textit{Anatomy and Physiology} Textbook. Download for free at http://cnx.org/contents/14fb4ad7-39a1-4eee-ab6e-3ef2482e3e22@15.1.}(\#fig:vocal)
 \end{figure}
 
-For sensors placement, we follow guidelines from @fridlund_guidelines_1986...
+The characteristics of the vocal folds (e.g., their length or thickness) influence what is known as the *fundamental frequency* (or F0), which in turn determines the perceived pitch of the voice. The speech signal can be further decomposed in *resonant frequencies* or *formants*. Interestingly, we can relate changes in the state of the articulatory system with changes in the formant (and especially the F1-F2) space (see Figure \@ref(fig:ipa)). Indeed, the frequency of the first formant (F1) is mostly determined by the height of the tongue body whereas the frequency of the second formant (F2) is mostly determined by the frontness/backness of the tongue body. For instance, when producing the /u/ vowel, the tongue is positioned at the top and in the back of the oral cavity (and the lips are rounded). However, when producing the /a/ vowel, the tongue is positioned at the bottom of the oral activity (and the lips are widely opened).
 
-- *Orbicularis oris superior*: superior portion of the *orbicularis oris* (mouth sphincter), serves to contract the lips and to compress them together and forward...
+\begin{figure}[H]
 
-- *Orbicularis oris inferior*: inferior portion of the *orbicularis oris* (mouth sphincter), serves to contract the lips and to compress them together and forward...
+{\centering \includegraphics[width=0.75\linewidth]{assets/vowels} 
 
-- *Zygomaticus major*: ...
+}
 
-- *Lateral frontalis*: ...
+\caption{Illustration of the vocalic 'quadrilateral' and the relation between vowels and formants (F1 and F2). Figure adapted from the International Phonetic Association (2015) - IPA Chart, available under a Creative Commons Attribution-Sharealike 3.0 Unported License.}(\#fig:ipa)
+\end{figure}
 
-- *Flexor carpi radialis*: serves to raise the outer and middle brow... the electrode is place on a vertical line that traverse the pupil of the eye (during centred gaze)...
+In brief, modifications in the shape of the *vocal tract* result in the production of different vowels. Changes in the configurations of articulators such as the lips or the tongue may also produce consonants. Consonants are produced by applying some form of restriction to (or by closing) the vocal tract to constraint the air flow. We usually classify consonants according to *where* (the *place of articulation*) and *how* (the *manner of articulation*) this restriction takes place (see Figure \@ref(fig:consonants)). For instance, consonants such as /p/ or /b/ are produced by putting the lips together and are called as such *bilabial* consonants.
 
-Transition to the EMG part...
+\begin{figure}[H]
+
+{\centering \includegraphics[width=1\linewidth]{assets/consonants} 
+
+}
+
+\caption{Table of consonants according to the manner (in rows) and place (in columns) of articulation. Figure from the International Phonetic Association (2015) - IPA Chart, available under a Creative Commons Attribution-Sharealike 3.0 Unported License.}(\#fig:consonants)
+\end{figure}
+
+To sum up, besides from being an essential communication tool for humans, speech production is also a complex motor action, involving the fine-grained coordination of numerous muscles. In the next section, we discuss in more details the specific facial muscles that were of interest in the present work.
+
+#### Orofacial speech muscles
+
+In our work, we were especially interested in the activity of some of the orofacial muscles (i.e., the muscles situated around the mouth). More precisely, we were particularly interested in the activity of the *orbicularis oris inferior* (OOI), the *orbicularis oris superior* (OOS), and the *zygomaticus major* (ZYG) muscles (cf. Figure \@ref(fig:facial)). Contrary to what was assumed until recently, the *orblicularis oris* muscle is not a sphincter muscle but is instead a complex of four distinct muscles that interlace in a way that give the *orbicularis oris* complex its circular aspect. Among these muscles, the OOS and the OOI are placed over and below (respectively) the mouth and are responsible for rounding or protruding the lips. More precisely, the OOS is responsible for lowering the upper lip whereas the OOI is repsponsible for elevating the lower lip. The ZYG muscle has its origin on the zygomatic bone and its insertion at the labial commissure (the angle of the mouth) where it meets with fibers of the *levator anguli oris* and *orbicularis oris* muscles. Together with the *levator anguli oris*, it serves to move the labial commissure upwards and lateraly, and is involved in laughing and more generally in pleasant reactions and positive emotions. It is also involved in speech production, especially during the production of *spread* sounds, that is, sounds that require a wide aperture of the mouth (e.g., /i/).
+
+\begin{figure}[H]
+
+{\centering \includegraphics[width=0.75\linewidth]{assets/facial_muscles} 
+
+}
+
+\caption{Illustration of the main facial muscles of interest in the present work. Figure adapted from Patrick J. Lynch, medical illustrator, http://patricklynch.net.}(\#fig:facial)
+\end{figure}
+
+For sensors placement, we followed guidelines from @fridlund_guidelines_1986. More precisely...
+
+- *Orbicularis oris superior*: superior portion of the *orbicularis oris*, serves to contract the lips and to compress them together and forward...
+
+- *Orbicularis oris inferior*: inferior portion of the *orbicularis oris*, serves to contract the lips and to compress them together and forward...
+
+- *Zygomaticus major*: ... his function is to ... the angles of the mouth and is (particularly implied) in the production of the /i/ vowel.
+
+We also routinely record other facial muscles such as the *frontalis* muscle (FRO) in Chapter 3, 4, 5, as well as the *corrugator supercilii* muscle (COR) in Chapter 5 in order to control for non speech-related facial muscular activity...
+
+There are several ways to probe the involvement of specific articulators in a given speech production tasks. It is possible to selectively interfere with the activity of some articulators (or groups of articulators). It is also possible to record the activity of facial muscles peripherally using surface electromyography, without interfering with (or with minimal interferences) the natural course of the speech production process. In the next section, we briefly introduce some core concepts of electromyography.
 
 ## A brief introduction to electromyography
 
@@ -102,23 +139,27 @@ To sum up, the EMG signal results from a mixture of recruited motor units: it is
 
 Myoelectric measurements have a long history, starting in the XVII and XVIII centuries with the classical observations that muscle contraction can generate electricity and that electrical impulses can generate muscle contractions. The term of electromyography and the first EMG measures were realised at the end of the XIXth century, and the quality of EMG measurements did not cease to improve since [see @raez_techniques_2006, for a brief historical perspective].
 
-Two main types of sensors have been used to record EMG signals, varying by their invasiveness. First, *indwelling* (intramuscular) recordings can be acquired via fine-wire and needle electrodes directly inserted into the muscle. This form of EMG is mostly used in rehabilitation, for diagnosis of muscle function and to examine nerve conduction [@fridlund_guidelines_1986]. Second, *surface electromyography* can be recorded at the surface of the skin. Each method is associated with its own type of sensors, its own advantages and disadvantages. Surface electrodes have the advantage of being easy to use and non-invasive. However, their use is limited to (large and) superficial muscles. Moreover, because of the phenomenon of *cross-talk*^[The phenomenon of *cross-talk* can be defined as the mixing of the electrical activity of the muscle of interest with the electrical activity of adjacent or distant muscles, that are not of primary interest.], it is difficult to isolate the activity of specific muscles using surface EMG. On the opposite, intramuscular EMG (that can be recorded via a single needle or two wires implanted directly into the muscle) are highly selective and can permit to record the activity of individual motor units. In addition, indwelling recordings are not submitted to *tissue filtering* (i.e., the fact that muscles tissues act as low-pass filters), in contrast to surface recordings.
+Two main types of sensors have been used to record EMG signals, varying by their invasiveness. First, *indwelling* (intramuscular) recordings can be acquired via electrodes directly inserted into the muscle. This form of EMG is mostly used in rehabilitation, for diagnosis of muscle function and to examine nerve conduction [@fridlund_guidelines_1986]. Second, *surface electromyography* can be recorded at the surface of the skin. Each method is associated with its own type of sensors, its own advantages and disadvantages. Surface electrodes have the advantage of being easy to use and non-invasive. However, their use is limited to (large and) superficial muscles. Moreover, because of the phenomenon of *cross-talk*^[The phenomenon of *cross-talk* can be defined as the mixing of the electrical activity of the muscle of interest with the electrical activity of adjacent or distant muscles, that are not of primary interest.], it is difficult to isolate the activity of specific muscles using surface EMG. On the opposite, intramuscular EMG (that can be recorded via a single needle or two wires implanted directly into the muscle) are highly selective and can sometimes record the activity of individual motor units. In addition, indwelling recordings are not submitted to *tissue filtering* (i.e., the fact that muscles tissues act as low-pass filters), in contrast to surface recordings.
 
-In reason of the important intercrossing and superposition of facial muscles, the surface EMG activity recorded over facial muscles does not generally represent the activity of a single muscle, but rather a mixture of muscles activations [@de_luca_use_1997;@Rapin2011]. As a result, it is usually inappropriate, when using surface EMG, to attribute the recorded activity to a single muscle [@fridlund_guidelines_1986]. Whereas for the sake of simplicity/clarity we designate sensors by the name of the underlying muscle in our work (e.g., "FRO" for the *frontalis* site), it should be kept in mind that these sensors reflect the activity of "sites", rather than the activity of single muscles.
+In reason of the important intercrossing and superposition of facial muscles, surface EMG recorded over facial muscles does not generally represent the activity of a single muscle, but rather a mixture of muscles activations [@de_luca_use_1997;@Rapin2011]. As a result, it is usually inappropriate, when using surface EMG, to attribute the recorded activity to a single muscle [@fridlund_guidelines_1986]. Whereas for the sake of simplicity, we designate sensors by the name of the underlying muscle in our work (e.g., "FRO" for the *frontalis* site), it should be kept in mind that these sensors reflect the activity of "sites", rather than the activity of single muscles.
 
-Aside from cross-talk, many other factors can affect the recorded EMG signals. These factors are usually described into three main categories [for more details, see @de_luca_use_1997]:
+Aside from *cross-talk*, many other factors can affect the recorded EMG signals. These factors are usually described into three main categories [for more details, see @de_luca_use_1997]:
 
-* The *causative factors*, that have a basic effect on EMG signals. These factors can be further subdivided into two classes: i) the *extrinsic* factors including factors such as the type of electrode (e.g., size, shape, placement) or the inter-electrode distance and ii) the *intrinsic* factors such as physiological or anatomical factors (e.g., fiber type, fiber diameter, blood flow).
+* The *causative factors*, that have a basic effect on EMG signals. These factors can be further subdivided into two classes: i) the *extrinsic* factors, including factors such as the type of electrode (e.g., size, shape, placement) or the inter-electrode distance and ii) the *intrinsic* factors such as physiological or anatomical factors (e.g., fiber type, fiber diameter, blood flow).
 
 * The *intermediate factors*. These are the physiological phenomena that are influenced by one or more of the causative factors and that in turn influence the deterministic factors, such as the conduction velocity, spatial filtering or the signal *cross-talk*.
 
 * Finally, the *deterministic factors* are influenced by the intermediate factors and have a direct effect on the EMG signal. These include the number of active motor units or the amplitude, duration and shape of the MUAPs.
 
-All these factors contribute to modulating both the amplitude of the EMG signal and its spectral properties (e.g., its mean or median frequency). @fridlund_guidelines_1986 also emphasise the importance of six factors determining the quality of the recorded surface EMG signals. These factors are i) the proximity of the electrode to the underlying muscle mass, ii) the position of the electrode relative to muscle fibers size, location, and orientation...
+All these factors contribute to modulating both the amplitude of the EMG signal and its spectral properties (e.g., its mean or median frequency). The importance of these perturbating factors should be acknowledged and controlled as far as possible. In our work, we use state-of-the art surface EMG apparatus, specifically developed to tackle these issues.
+
+<!--
+@fridlund_guidelines_1986 also emphasise the importance of six factors determining the quality of the recorded surface EMG signals. These factors are i) the proximity of the electrode to the underlying muscle mass, ii) the position of the electrode relative to muscle fibers size, location, and orientation...
 
 (External) factors influencing the EMG signal: i) tissue characteristics (thickness, physiological changes and temperature), nb: vary greatly from subject to subject, ii) physiological cross-talk produced by neighbouring muscles but ECG spies can also interfere with the EMG recording (especially in the upper trunk or shoulder muscles), iii) external noise in noisy electrical environments (e.g., electrical power), iv) electrodes and amplifiers...
 
 Studies have generally show that the primary energy of surface EMG signals lie between 10 and 200Hz [@fridlund_guidelines_1986]. For facial surface EMG studies more specifically... See van Boxtel 2001... [for more details on EMG signal processing, see for instance @raez_techniques_2006; @chowdhury_surface_2013]... Then, in keeping with the recommendation for facial EMG studies [@de_luca_filtering_2010], a 20 Hz – 450 Hz bandpass filter was applied, in order to focus on the facial EMG frequency band...
+-->
 
 ### EMG signal processing
 
@@ -167,7 +208,7 @@ where $x^{2}_{n}$ is the squared value of each EMG datum and has both physical a
 \caption{Illustration of the MAV (in orange) and RMS (in green) values. These two features are usually highly correlated but differ in magnitude. More precisely, the RMS is proportional to the MAV when the signal has a Gaussian shape.}(\#fig:emgplot3)
 \end{figure}
 
-These features provide the *envelope* of the EMG signal and therefore provide insights about the *amplitude* of the EMG signal. This envelope can then be summarised (e.g., via its mean or median) over a period of interest (e.g., during the utterance of some vowel).
+These features provide the *envelope* of the EMG signal and therefore provide insights about the *amplitude* of the EMG signal. This envelope can then be summarised (e.g., via its mean or median) over a period of interest (e.g., during the utterance of some phoneme).
 
 ## Statistical modelling and statistical inference
 
@@ -191,7 +232,7 @@ These biases have been highlighted by many statisticians in the past [e.g.,@wass
 
 To sum up, we try to acknowledge the uncertainty that accompanies every (statistical) inference. In the next section, we present in more details what our approach does entail and we introduce some key technical concepts.
 
-### Current statistical approach
+### Present statistical approach
 
 In brief, we tried to move from the point-hypothesis mechanical testing to an approach that emphasises parameter estimation, model comparison, and continuous model expansion [e.g.,@Cumming2012;@cumming_new_2014;@gelman_data_2006;@gelman_bayesian_2013;@R-rethinking;@kruschke_doing_2015;@kruschke_bayesian_2018;@kruschke_bayesian_2018-1]. In other words, our approach can be defined as a *statistical modelling* approach rather than a *statistical testing* approach. It means that we try to *model* the data (or rather the process that generated the data), rather than to "test" it. We carefully consider what could be the process that generated the data and we try to model it appropriately. For instance, we do not fit reaction time data, Likert data, or electromyographic data using the same model (e.g., an ANOVA), as this practice would lead to high rates of erroneous inferences.
 
@@ -239,7 +280,7 @@ Therefore, the BF does not indicate how much "probable" a hypothesis is, or how 
 
 Bayes factors are often said to have desirable asymptotic (when the number of observations is very large) properties. Indeed, they are *consistent* for model identification. It means that if a *true* statistical model is in the set of models that are compared, using a BF will usually lead to selecting this *true* model with a probability approaching 1 with increasing sample size. Whereas this seems as an appealing property or not depends on the underlying statistical philosophy. Indeed, one could question whether it is sensible to assume a "true model" (an oxymoron) in real life, especially in the social sciences [e.g.,@burnham_model_2002;@burnham_multimodel_2004]. As @findley_unbiasedness_1985 notes: *"[...] consistency can be an undesirable property in the context of selecting a model"*. A more realistic question is then not to look for the *true* model, but for the *best* model from some practical purpose.
 
-The usefulness of information criteria comes from them being approximations of the *out-of-sample deviance* of a model (see Box \ref{IC}). In the current PhD work, we used generalisations of the AIC (especially the WAIC and LOOIC) that also approximate the out-of-sample deviance and as such give an indication of how good/bad a model is to predict future (i.e., non-observed) data.
+The usefulness of information criteria comes from them being approximations of the *out-of-sample deviance* of a model (see Box \ref{IC}). In the present PhD work, we used generalisations of the AIC (especially the WAIC and LOOIC) that also approximate the out-of-sample deviance and as such give an indication of how good/bad a model is to predict future (i.e., non-observed) data.
 
 \vspace{2mm}
 
@@ -259,4 +300,4 @@ In brief, in the present work, we used various methods but coherently with a few
 
 ## Overview of the following chapters
 
-The experiment ran during this PhD will be presented as five empirical chapters that can be grouped under two main axes. In the first couple of experiments, we used surface electromyography and muscle-specific relaxation to investigate the involvement of the speech motor system during induced verbal and non-verbal rumination (Chapter 3 & 4). In Chapter 5, we used surface electromyography and machine learning algorithms to decode the muscle-specific EMG correlates of inner speech production. In the last couple of experiments, we switched strategy from the "correlates strategy" to the "interference strategy", where the goal was to directly interfere with the activity of the speech motor system. More precisely, we used articulatory suppression to disrupt induced rumination in Chapter 6, and we used articulatory suppression to disrupt either induced rumination or problem-solving in Chapter 7. Finally, in Chapter 8, we summarise the main findings, discuss their implications and suggest ways forward from both a theoretical and an experimental perspective.
+The experiments ran during this PhD will be presented as five empirical chapters that can be grouped under two main axes. In the first couple of experiments, we used surface electromyography and muscle-specific relaxation to investigate the involvement of the speech motor system during induced verbal and non-verbal rumination (Chapter 3 & 4). In Chapter 5, we used surface electromyography and machine learning algorithms to decode the muscle-specific EMG correlates of inner speech production. In the last couple of experiments, we switched strategy from the "correlates strategy" to the "interference strategy", where the goal was to directly interfere with the activity of the speech motor system. More precisely, we used articulatory suppression to disrupt induced rumination in Chapter 6, and we used articulatory suppression to disrupt either induced rumination or problem-solving in Chapter 7. Finally, in Chapter 8, we summarise the main findings, discuss their implications and suggest ways forward from both a theoretical and an experimental perspective.
