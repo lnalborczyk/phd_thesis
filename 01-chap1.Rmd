@@ -227,3 +227,9 @@ The model of wilful (voluntary) inner speech production introduced in @loevenbru
 **Fin de l'intro old de zygoto...**
 
 In other words, "inner speech is nothing but speech to oneself" [@sokolov_inner_1972]... it can be considered as a n internalisation, a psychological transofmration or "internal projection" of overt speech [@sokolov_inner_1972]...
+
+<!-- about levelt model of speech production
+
+However, it does not explicity account for how speech is *regulated* or *monitored* during its production. Speech production theories, in addition to being able to describe how speech is produced, its timecourse and caracteristics, should also be able to explain when and how speech production goes wrong, that is, when and how *speech errros* occur. These theories should also be able to explain how errors can be corrected and how speech, more generally, can be regulated. Several hypotheses have been emitted, that can be grouped under three main classes. Speech might be all programmed in advance, or there would be some *feedback control* during speech, or there would be a combination of both programmation and feedback control.
+
+-->

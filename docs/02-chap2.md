@@ -2,13 +2,26 @@
 
 
 
-In this chapter we introduce some of the key concepts related to the methods we used in our work. More precisely, we cover the technical concepts related to speech production mechanisms, to electromyography and to our statistical approach. Finally, we give an overview of the following chapters.
+In this chapter we briefly introduce some of the key concepts related to the methods we used in our work. More precisely, we cover the technical concepts related to speech production mechanisms, to electromyography and to our statistical approach. Finally, we give an overview of the following chapters.
 
 ## Speech production mechanisms
 
 ### Psychological aspects of speech production
 
-What does language production imply ? At a biomechanical level, producing language means coordinating a complex dynamic system (i.e., the ensemble of speech muscles and organs) to produce slight perturbations of the air flow (sound waves). At a psychological level, language production is akin to information communication, from an emitter to a receptor. Before being communicated however, the information of interest is submitted to several important transformations. First, it needs to... three levels in speech production, from conceptualisation to formulation and articulation (Levelt)...
+How do we (humans) produce speech ? At a biomechanical level, producing speech means coordinating a complex dynamic system (i.e., the ensemble of speech muscles and organs) to produce slight perturbations of the air flow (sound waves). At a psychological level, speech production can be said to consist in the translation of thoughts into speech, with the goal of communicating information. Before being communicated however, the information of interest is submitted to several important transformations.
+
+Although speech production is an everyday phenomenon, the way this process is exactly performed is still the subject of lively debates. However, current models generally agree with the core steps occurring during speech production. Willem Levelt [@levelt_speaking:_1989;@brown_producing_2000] proposed an influential psycholinguistic model of speech production (see Figure \@ref(fig:levelt)). According to this model, speech production starts with a message to be produced (*message generation*), and is managed by a component called the *conceptualizer*. This *preverbal message* is then fowarded to another component, the *formulator*, that handles both grammatical encoding (i.e., selecting the appropriate word or *lemma*) and phonological encoding (i.e., selecting the appropriate speech sounds). In brief, this component transforms a *preverbal message* into a linguistic object. Finally, the phonetic plan^[Interestingly, in this model the phonetic plan is thought to correspond to inner speech.] is forwarded to the *articulator*, responsible for the activation of *articulatory gestures*, to be executed by the speech *articulators* (e.g., tongue, lips, jaw).
+
+\begin{figure}[H]
+
+{\centering \includegraphics[width=1\linewidth]{assets/levelt} 
+
+}
+
+\caption{Illustration of Levelt's (1989, 2000) model of speech production.}(\#fig:levelt)
+\end{figure}
+
+This model permits to explain how a communicative intention is transformed into speech acts. However... In the next section, we briefly introduce some of the cores principles related to the biomechanics of speech production.
 
 ### Biomechanical aspects of speech production
 
@@ -29,7 +42,7 @@ The vocal folds in the larynx vibrate to produce fluctuations in air pressure (s
 \caption{Human respiratory and phonatory system. Figure from the OpenStax \textit{Anatomy and Physiology} Textbook. Download for free at http://cnx.org/contents/14fb4ad7-39a1-4eee-ab6e-3ef2482e3e22@15.1.}(\#fig:vocal)
 \end{figure}
 
-The characteristics of the vocal folds (e.g., their length or thickness) influence what is known as the *fundamental frequency* (or F0), which in turn determines the perceived pitch of the voice. The speech signal can be further decomposed in *resonant frequencies* or *formants*. Interestingly, we can relate changes in the state of the articulatory system with changes in the formant (and especially the F1-F2) space (see Figure \@ref(fig:ipa)). Indeed, the frequency of the first formant (F1) is mostly determined by the height of the tongue body whereas the frequency of the second formant (F2) is mostly determined by the frontness/backness of the tongue body. For instance, when producing the /u/ vowel, the tongue is positioned at the top and in the back of the oral cavity (and the lips are rounded). However, when producing the /a/ vowel, the tongue is positioned at the bottom of the oral activity (and the lips are widely opened).
+The characteristics of the vocal folds (e.g., their length or thickness) influence what is known as the *fundamental frequency* (or F0) of the speech signal, which in turn determines the perceived pitch of the voice. The speech signal can be further decomposed in *resonant frequencies* or *formants*. Interestingly, we can relate changes in the state of the articulatory system with changes in the formant (and especially the F1-F2) space (see Figure \@ref(fig:ipa)). Indeed, the frequency of the first formant (F1) is mostly determined by the height of the tongue body whereas the frequency of the second formant (F2) is mostly determined by the frontness/backness of the tongue body. For instance, when producing the /u/ vowel, the tongue is positioned at the top and in the back of the oral cavity (and the lips are rounded). However, when producing the /a/ vowel, the tongue is positioned at the bottom of the oral activity (and the lips are widely opened).
 
 \begin{figure}[H]
 
@@ -40,7 +53,7 @@ The characteristics of the vocal folds (e.g., their length or thickness) influen
 \caption{Illustration of the vocalic 'quadrilateral' and the relation between vowels and formants (F1 and F2). Figure adapted from the International Phonetic Association (2015) - IPA Chart, available under a Creative Commons Attribution-Sharealike 3.0 Unported License.}(\#fig:ipa)
 \end{figure}
 
-In brief, modifications in the shape of the *vocal tract* result in the production of different vowels. Changes in the configurations of articulators such as the lips or the tongue may also produce consonants. Consonants are produced by applying some form of restriction to (or by closing) the vocal tract to constraint the air flow. We usually classify consonants according to *where* (the *place of articulation*) and *how* (the *manner of articulation*) this restriction takes place (see Figure \@ref(fig:consonants)). For instance, consonants such as /p/ or /b/ are produced by putting the lips together and are called as such *bilabial* consonants.
+In brief, modifications in the shape of the *vocal tract* result in the production of different vowels. Changes in the configurations of articulators such as the lips or the tongue may also produce consonants. Consonants are produced by applying some form of restriction to (or by closing) the vocal tract to constraint the air flow. We usually classify consonants according to *where* (the *place of articulation*) and *how* (the *manner of articulation*) this restriction takes place (see Figure \@ref(fig:consonants)). For instance, consonants such as /p/ or /b/ are produced by putting the lips together and are therefore known as *bilabial* consonants.
 
 \begin{figure}[H]
 
@@ -55,7 +68,7 @@ To sum up, besides from being an essential communication tool for humans, speech
 
 #### Orofacial speech muscles
 
-In our work, we were especially interested in the activity of some of the orofacial muscles (i.e., the muscles situated around the mouth). More precisely, we were particularly interested in the activity of the *orbicularis oris inferior* (OOI), the *orbicularis oris superior* (OOS), and the *zygomaticus major* (ZYG) muscles (cf. Figure \@ref(fig:facial)). Contrary to what was assumed until recently, the *orblicularis oris* muscle is not a sphincter muscle but is instead a complex of four distinct muscles that interlace in a way that give the *orbicularis oris* complex its circular aspect. Among these muscles, the OOS and the OOI are placed over and below (respectively) the mouth and are responsible for rounding or protruding the lips. More precisely, the OOS is responsible for lowering the upper lip whereas the OOI is repsponsible for elevating the lower lip. The ZYG muscle has its origin on the zygomatic bone and its insertion at the labial commissure (the angle of the mouth) where it meets with fibers of the *levator anguli oris* and *orbicularis oris* muscles. Together with the *levator anguli oris*, it serves to move the labial commissure upwards and lateraly, and is involved in laughing and more generally in pleasant reactions and positive emotions. It is also involved in speech production, especially during the production of *spread* sounds, that is, sounds that require a wide aperture of the mouth (e.g., /i/).
+In our work, we were especially interested in the activity of some of the orofacial muscles (i.e., the muscles situated around the mouth). More precisely, we studied the activity of the *orbicularis oris inferior* (OOI), the *orbicularis oris superior* (OOS), and the *zygomaticus major* (ZYG) muscles (cf. Figure \@ref(fig:facial)). Contrary to what was assumed until recently, the *orblicularis oris* muscle is not a sphincter muscle but is instead a complex of several distinct muscles that interlace in a way that gives the *orbicularis oris* complex its circular aspect. Among these muscles, the OOS and the OOI are placed over and below (respectively) the mouth and are responsible for rounding or protruding the lips. More precisely, the OOS is responsible for lowering the upper lip whereas the OOI is responsible for elevating the lower lip. The ZYG muscle has its origin on the zygomatic bone and inserts at the labial commissure (the angle of the mouth) where it meets with fibers of the *levator anguli oris* and *orbicularis oris* muscles. Together with the *levator anguli oris*, it serves to move the labial commissure upwards and lateraly, and is involved in laughing and more generally in pleasant reactions and positive emotions. It is also involved in speech production, especially during the production of *spread* sounds, that is, sounds that require a wide aperture of the mouth (e.g., /i/).
 
 \begin{figure}[H]
 
@@ -66,17 +79,9 @@ In our work, we were especially interested in the activity of some of the orofac
 \caption{Illustration of the main facial muscles of interest in the present work. Figure adapted from Patrick J. Lynch, medical illustrator, http://patricklynch.net.}(\#fig:facial)
 \end{figure}
 
-For sensors placement, we followed guidelines from @fridlund_guidelines_1986. More precisely...
+For sensors placement, we followed guidelines and recommendations from @fridlund_guidelines_1986. In addition to speech-related orofacial muscles, we also routinely recorded the activity of other facial muscles such as the *frontalis* muscle (FRO) in Chapter 3, 4, 5, and the *corrugator supercilii* muscle (COR) in Chapter 5. The activity of these muscles was monitored to control for non speech-related facial muscular activity [as recommended by @garrity_electromyography:_1977].
 
-- *Orbicularis oris superior*: superior portion of the *orbicularis oris*, serves to contract the lips and to compress them together and forward...
-
-- *Orbicularis oris inferior*: inferior portion of the *orbicularis oris*, serves to contract the lips and to compress them together and forward...
-
-- *Zygomaticus major*: ... his function is to ... the angles of the mouth and is (particularly implied) in the production of the /i/ vowel.
-
-We also routinely record other facial muscles such as the *frontalis* muscle (FRO) in Chapter 3, 4, 5, as well as the *corrugator supercilii* muscle (COR) in Chapter 5 in order to control for non speech-related facial muscular activity...
-
-There are several ways to probe the involvement of specific articulators in a given speech production tasks. It is possible to selectively interfere with the activity of some articulators (or groups of articulators). It is also possible to record the activity of facial muscles peripherally using surface electromyography, without interfering with (or with minimal interferences) the natural course of the speech production process. In the next section, we briefly introduce some core concepts of electromyography.
+There are several ways to probe the involvement of specific articulators in a given speech production task. For instance, it is possible to selectively interfere with the activity of some articulators (or groups of articulators) to demonstrate their essential involvement in this particular task. It is also possible to record the activity of facial muscles peripherally using surface electromyography, without interfering with (or with minimal interferences) the natural course of the speech production process. In the next section, we briefly introduce some core concepts of electromyography.
 
 ## A brief introduction to electromyography
 
