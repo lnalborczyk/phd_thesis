@@ -23,7 +23,7 @@ bookdown::pdf_book:
   includes:
     in_header: latex/preamble.tex # defines style and latex options
     before_body: latex/before_body.tex # defines cover page
-  latex_engine: xelatex
+  latex_engine: xelatex # lualatex or xelatex
   citation_package: none # needs to be "none" in order to use the csl file
   keep_tex: true # keeps the .tex file
   dev: "cairo_pdf"

@@ -86,10 +86,14 @@
 % Loading relevant packages %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\usepackage[T1]{fontenc} % special characters with pdflatex
-%\usepackage[utf8]{inputenc} % special characterswith pdflatex
+%\usepackage{natbib} % using natbib to be able to use \cite* functions
 
-\usepackage{fontspec} % special characters with xelatex
+%\usepackage[utf8]{inputenc} % special characters with pdflatex
+%\usepackage[T1]{fontenc}% special characters with pdflatex
+
+%\usepackage[T1]{fontenc}
+%\usepackage[utf8]{inputenc} % special characters with pdflatex
+%\usepackage{fontspec} % special characters with xelatex
 
 \usepackage{tikz}
 \usepackage{lscape}
@@ -876,8 +880,7 @@ frontal, parietal and sub-cortical regions (e.g., Hétu et al.,
 \protect\hyperlink{ref-jeannerod_neural_2001}{2001}). The involvement of
 the motor system during motor imagery is also supported by repeated
 observations of autonomic responses and peripheral muscular activity
-during motor imagery (we discuss these observations in section
-\ref{emg}).
+during motor imagery (we discuss these observations in section XX).
 
 \vspace{2mm}
 
@@ -1015,7 +1018,8 @@ emulative simulations can be thought of as \emph{second-order}
 simulations that imitate both the content and the processes that change
 the content.
 
-\section{Electromyography of covert actions}\label{emg}
+\section{Electromyography of covert
+actions}\label{electromyography-of-covert-actions}
 
 \subsection{Explaining the muscular activity during motor
 imagery}\label{explaining-the-muscular-activity-during-motor-imagery}
@@ -1230,19 +1234,17 @@ during speech production. Willem Levelt (Levelt,
 \protect\hyperlink{ref-levelt_speaking:_1989}{1989},
 \protect\hyperlink{ref-brown_producing_2000}{2000}) proposed an
 influential psycholinguistic model of speech production (see Figure
-\ref{fig:levelt}). According to this model, speech production starts
-with a message to be produced (\emph{message generation}), and is
-managed by a component called the \emph{conceptualizer}. This
-\emph{preverbal message} is then fowarded to another component, the
-\emph{formulator}, that handles both grammatical encoding (i.e.,
-selecting the appropriate word or \emph{lemma}) and phonological
-encoding (i.e., selecting the appropriate speech sounds). In brief, this
-component transforms a \emph{preverbal message} into a linguistic
-object. Finally, the phonetic plan\footnote{Interestingly, in this model
-  the phonetic plan is thought to correspond to inner speech.} is
-forwarded to the \emph{articulator}, responsible for the activation of
-\emph{articulatory gestures}, to be executed by the speech
-\emph{articulators} (e.g., tongue, lips, jaw).
+\ref{fig:levelt}). According to this model, speech production can be
+described at three levels: \emph{conceptualisation}, \emph{formulation}
+and \emph{articulation}. The first step is managed by a component called
+the \emph{conceptualizer}, and consists in selecting a conceptual
+message to be produced (\emph{message generation}). In other words, the
+speaker conceives a comunicative intention that she wishes to reveal to
+an interlocutor. This \emph{preverbal message} is then forwarded to
+another component, the \emph{formulator}, that handles both
+\emph{grammatical encoding} (i.e., selecting the appropriate word or
+\emph{lemma}) and \emph{phonological encoding} (i.e., selecting the
+appropriate speech sounds).
 
 \begin{figure}[H]
 
@@ -1253,10 +1255,27 @@ forwarded to the \emph{articulator}, responsible for the activation of
 \caption{Illustration of Levelt's (1989, 2000) model of speech production.}\label{fig:levelt}
 \end{figure}
 
+During \emph{grammatical encoding}, \emph{lemmas} are retrieved from the
+\emph{lexicon} and are ordered in a syntactical appropriate way, giving
+the message its \emph{surface structure}. During \emph{phonological
+encoding}, the message is given its phonetic or articulatory
+characteristics. At this stage, phonemes are grouped into pronounceable
+syllables. Then, each syllable is associated with an \emph{articulatory
+program}, composed of an ensemble of \emph{articulatory gestures} (i.e.,
+coordinative structures of movements). These articulatory programs are
+stored in the \emph{syllabary}. In brief, the \emph{formulator}
+component transforms a \emph{preverbal message} into a linguistic
+object. Finally, the phonetic plan\footnote{Interestingly, in this model
+  the phonetic plan is thought to correspond to inner speech.} is
+forwarded to the \emph{articulator}, responsible for the activation of
+\emph{articulatory gestures}, to be executed by the speech
+\emph{articulators} (e.g., tongue, lips, jaw).
+
 This model permits to explain how a communicative intention is
-transformed into speech acts. However\ldots{} In the next section, we
-briefly introduce some of the cores principles related to the
-biomechanics of speech production.
+transformed into speech acts. However, it does not explicitly account
+for how speech acts are executed by the articulators. In the next
+section, we briefly introduce some of the cores principles related to
+the biomechanics of speech production.
 
 \subsection{Biomechanical aspects of speech
 production}\label{biomechanical-aspects-of-speech-production}
@@ -1347,7 +1366,7 @@ Contrary to what was assumed until recently, the \emph{orblicularis
 oris} muscle is not a sphincter muscle but is instead a complex of
 several distinct muscles that interlace in a way that gives the
 \emph{orbicularis oris} complex its circular aspect. Among these
-muscles, the OOS and the OOI are placed over and below (respectively)
+muscles, the OOS and the OOI are placed above and below (respectively)
 the mouth and are responsible for rounding or protruding the lips. More
 precisely, the OOS is responsible for lowering the upper lip whereas the
 OOI is responsible for elevating the lower lip. The ZYG muscle has its
@@ -1355,7 +1374,7 @@ origin on the zygomatic bone and inserts at the labial commissure (the
 angle of the mouth) where it meets with fibers of the \emph{levator
 anguli oris} and \emph{orbicularis oris} muscles. Together with the
 \emph{levator anguli oris}, it serves to move the labial commissure
-upwards and lateraly, and is involved in laughing and more generally in
+upwards and laterally, and is involved in laughing and more generally in
 pleasant reactions and positive emotions. It is also involved in speech
 production, especially during the production of \emph{spread} sounds,
 that is, sounds that require a wide aperture of the mouth (e.g., /i/).
@@ -1386,7 +1405,7 @@ selectively interfere with the activity of some articulators (or groups
 of articulators) to demonstrate their essential involvement in this
 particular task. It is also possible to record the activity of facial
 muscles peripherally using surface electromyography, without interfering
-with (or with minimal interferences) the natural course of the speech
+with (or with minimal interference to) the natural course of the speech
 production process. In the next section, we briefly introduce some core
 concepts of electromyography.
 
@@ -1399,7 +1418,7 @@ signals (i.e., signals resulting from physiological variations in the
 state of muscle fibers membranes). Broadly speaking, EMG is a measure of
 the electrical activity generated during muscle contraction. It is used
 both as a basic tool in (for instance) biomechanical and
-psychophysiology studies and as an evaluation tool in applied research
+psychophysiology research and as an evaluation tool in applied research
 (e.g., physiotherapy, rehabilitation, human-computer interfaces). To
 facilitate the interpretation of the EMG signal, it is useful to briefly
 detail the meaning of its physiological components.
@@ -1479,7 +1498,7 @@ temporary inversion of the cell polarity (see Figure \ref{fig:mfap}).
 
 }
 
-\caption{Time course of a motor action potential (Figure from Kamen \& Gabriel, 2010).}\label{fig:mfap}
+\caption{Time course of a motor action potential (figure from Kamen \& Gabriel, 2010).}\label{fig:mfap}
 \end{figure}
 
 The MAP is followed by a \emph{refractory period}, characterised by a
@@ -1494,7 +1513,7 @@ hyperpolarisation limits the frequency of MAPs (Kamen \& Gabriel,
 \subsubsection{The motor unit}\label{the-motor-unit}
 
 The \emph{motor unit} is the smallest controllable muscular unit. It
-consists of a single \(\alpha\)-motoneuron, its neuromuscular junction,
+consists in a single \(\alpha\)-motoneuron, its neuromuscular junction,
 and all the muscle fibers it innervates. The number of motor units and
 their \emph{innervation ratio} (i.e., the number of muscle fibers per
 motor unit) can vary by muscle. Because a single motoneuron can
@@ -1507,7 +1526,7 @@ summation of individual MAPs originating from muscle fibers that are
 sufficiently close to a given electrode. This generates a \emph{train}
 of MUAPs, called \emph{motor unit action potential trains} (MUAPTs). The
 mixture of MUAPTs coming from different motor units constitute the raw
-EMG signal.
+EMG signal (cf.~Figure \ref{fig:muap}).
 
 \begin{figure}[H]
 
@@ -1519,12 +1538,13 @@ EMG signal.
 \end{figure}
 
 To sum up, the EMG signal results from a mixture of recruited motor
-units: it is composed of the sum of all MUAPs. This signal can vary
-considerably because of factors such as the muscle length (Babault,
-Pousson, Michaut, \& Van Hoecke,
+units: it is composed of the sum of several to many MUAPTs. This signal
+can vary considerably because of factors such as the muscle length
+(Babault, Pousson, Michaut, \& Van Hoecke,
 \protect\hyperlink{ref-babault_effect_2003}{2003}), the distance between
 the muscle fiber (of interest) and the electrode, the fiber length or
-the muscle temperature.
+the muscle temperature. In the next section, we discuss in more details
+how this signal can be acquired.
 
 \subsection{EMG instrumentation and
 recording}\label{emg-instrumentation-and-recording}
@@ -1532,7 +1552,7 @@ recording}\label{emg-instrumentation-and-recording}
 Myoelectric measurements have a long history, starting in the XVII and
 XVIII centuries with the classical observations that muscle contraction
 can generate electricity and that electrical impulses can generate
-muscle contractions. The term of electromyography and the first EMG
+muscle contraction. The term of electromyography and the first EMG
 measures were realised at the end of the XIXth century, and the quality
 of EMG measurements did not cease to improve since (see Raez, Hussain,
 \& Mohd-Yasin, \protect\hyperlink{ref-raez_techniques_2006}{2006}, for a
@@ -1571,13 +1591,13 @@ inappropriate, when using surface EMG, to attribute the recorded
 activity to a single muscle (Fridlund \& Cacioppo,
 \protect\hyperlink{ref-fridlund_guidelines_1986}{1986}). Whereas for the
 sake of simplicity, we designate sensors by the name of the underlying
-muscle in our work (e.g., ``FRO'' for the \emph{frontalis} site), it
+muscle of interest (e.g., ``FRO'' for the \emph{frontalis} muscle), it
 should be kept in mind that these sensors reflect the activity of
 ``sites'', rather than the activity of single muscles.
 
-Aside from \emph{cross-talk}, many other factors can affect the recorded
-EMG signals. These factors are usually described into three main
-categories (for more details, see De Luca,
+Aside from \emph{cross-talk}, many other factors can affect the EMG
+signals. These factors are usually described under three main categories
+(for more details, see De Luca,
 \protect\hyperlink{ref-de_luca_use_1997}{1997}):
 
 \begin{itemize}
@@ -1604,7 +1624,9 @@ All these factors contribute to modulating both the amplitude of the EMG
 signal and its spectral properties (e.g., its mean or median frequency).
 The importance of these perturbating factors should be acknowledged and
 controlled as far as possible. In our work, we use state-of-the art
-surface EMG apparatus, specifically developed to tackle these issues.
+surface EMG apparatus, specifically developed to tackle these issues, as
+well as standardised procedures (more details regarding the EMG
+apparatus are provided in chapters 3 to 5).
 
 \subsection{EMG signal processing}\label{emg-signal-processing}
 
@@ -1615,8 +1637,8 @@ popping''. Therefore, it is usually unsuitable for immediate
 quantification. In order to illustrate what the EMG signal looks like,
 we simulated EMG data based on a standard algorithm implemented in the
 \texttt{biosignalEMG} package (Guerrero \& Macias-Diaz,
-\protect\hyperlink{ref-R-biosignalEMG}{2018}), which is represented in
-Figure \ref{fig:emgplot1}.
+\protect\hyperlink{ref-R-biosignalEMG}{2018}). This simulated EMG signal
+is represented in Figure \ref{fig:emgplot1}.
 
 \begin{figure}[H]
 
@@ -1643,8 +1665,8 @@ in the raw data. The result of this operation is represented in Figure
 
 Then, the signal is usually low-pass filtered, with a cut-off frequency
 depending on the nature of the study. From there, two main measures can
-be used to represent the magnitude of a muscle activity\footnote{But see
-  for instance Phinyomark, Nuidod, Phukpattaranont, \& Limsakul
+be used to represent the magnitude of the muscle activity\footnote{But
+  see for instance Phinyomark, Nuidod, Phukpattaranont, \& Limsakul
   (\protect\hyperlink{ref-phinyomark_feature_2012}{2012}), for a brief
   overview of other features that can be extracted from the surface EMG
   signal.}. The first one is the \emph{mean absolute value} (MAV), which
@@ -1794,8 +1816,7 @@ To sum up, we try to acknowledge the uncertainty that accompanies every
 what our approach does entail and we introduce some key technical
 concepts.
 
-\subsection{Present statistical
-approach}\label{present-statistical-approach}
+\subsection{Our statistical approach}\label{our-statistical-approach}
 
 In brief, we tried to move from the point-hypothesis mechanical testing
 to an approach that emphasises parameter estimation, model comparison,
@@ -1803,7 +1824,8 @@ and continuous model expansion (e.g., Cumming,
 \protect\hyperlink{ref-Cumming2012}{2012},
 \protect\hyperlink{ref-cumming_new_2014}{2014}; Gelman \& Hill,
 \protect\hyperlink{ref-gelman_data_2006}{2006}; Gelman et al.,
-\protect\hyperlink{ref-gelman_bayesian_2013}{2013}; Kruschke,
+\protect\hyperlink{ref-gelman_bayesian_2013}{2013}; Judd, McClelland, \&
+Ryan, \protect\hyperlink{ref-judd_data_2009}{2009}; Kruschke,
 \protect\hyperlink{ref-kruschke_doing_2015}{2015}; Kruschke \& Liddell,
 \protect\hyperlink{ref-kruschke_bayesian_2018}{2018}\protect\hyperlink{ref-kruschke_bayesian_2018}{a},
 \protect\hyperlink{ref-kruschke_bayesian_2018-1}{2018}\protect\hyperlink{ref-kruschke_bayesian_2018-1}{b};
@@ -1814,17 +1836,16 @@ to \emph{model} the data (or rather the process that generated the
 data), rather than to ``test'' it. We carefully consider what could be
 the process that generated the data and we try to model it
 appropriately. For instance, we do not fit reaction time data, Likert
-data, or electromyographic data using the same model (e.g., an ANOVA),
-as this practice would lead to high rates of erroneous inferences.
+data, or electromyographic data using the same model, as this practice
+would lead to high rates of erroneous inferences.
 
 Throughout this work, we use Bayesian statistical modelling, not by
 dogmatism, but because we think the Bayesian approach provides richer
-inferences than the frequentist one (while the later can be subsumed
-under the former under particular assumptions). The main advantage of
-the Bayesian approach is the explicit use of probability to model the
-uncertainty (see Box \ref{logic}). By doing so, the Bayesian approach
-permits to evaluate the probability of a parameter (or a vector of
-parameters) \(\theta\), given a set of data \(y\):
+inferences than the frequentist one. The main advantage of the Bayesian
+approach is the explicit use of probability to model the uncertainty
+(see Box \ref{logic}). By doing so, the Bayesian approach permits to
+evaluate the probability of a parameter (or a vector of parameters)
+\(\theta\), given a set of data \(y\):
 
 \[p(\theta|y) = \frac{p(y|\theta)p(\theta)}{p(y)}\]
 
@@ -1864,9 +1885,9 @@ the empirical evidence.
 
 \begin{mybox}[label = logic]{Probability theory as extended logic}
 
-Probability theory has been argued to be nothing more than \textit{extended logic}. In other words, it generalises the rules of logic that apply to discrete events (e.g., TRUE or FALSE events) to continuous cases. By doing this move, probability theory gives a way to represent and to quantify the \textit{uncertainty}. Importantly, the rules of probability have the same status as the rules of logic: these rules can be used to derive statements (conclusions) that are guaranteed to be correct given that some premises are correct.\\
+Probability theory has been argued to be nothing more than \textit{extended logic}. In other words, it generalises the rules of logic that apply to discrete events (e.g., TRUE or FALSE events) to continuous events. By doing this move, probability theory gives a way to represent and to quantify the \textit{uncertainty}. Importantly, the rules of probability have the same status as the rules of logic: these rules can be used to derive statements (conclusions) that are guaranteed to be correct given that some premises are correct.\\
 
-Bayesian statistics can simply be presented as an application of probability theory to statistical analysis. Whereas the dependence of the inferential conclusions on prior assumptions is usually presented as a downside of this type of analysis, it is precisely what makes them \textit{optimal} or \textit{coherent} (in the sense of respecting the rules of probability). As put by Vandekerckhove (2018), the claim that Bayesian methods would be invalidated by their reliance on prior assumptions would be akin to conclude that logical deductions are somehow invalidated because they depend on premises.
+Bayesian statistics can simply be presented as an application of probability theory to statistical analysis. Whereas the dependence of the inferential conclusions on prior assumptions is sometimes presented as a downside of this type of analysis, it is precisely what makes them \textit{optimal} or \textit{coherent} (in the sense of respecting the rules of probability). As put by Vandekerckhove (2018), the claim that Bayesian methods would be invalidated by their reliance on prior assumptions would be akin to conclude that logical deductions are somehow invalidated because they depend on premises.
 
 \end{mybox}
 
@@ -1880,20 +1901,20 @@ Batailler, Lœvenbruck, Vilain, \& Bürkner,
 Vasishth, \protect\hyperlink{ref-nicenboim_statistical_2016}{2016};
 Sorensen, Hohenstein, \& Vasishth,
 \protect\hyperlink{ref-sorensen_bayesian_2016}{2016}). Throughout this
-work, we also make us of several tools with very distinct properties and
-uses. For instance, we use Bayes factors (BFs) to quantify the relative
-evidence for a statistical hypothesis (see Box \ref{BF}), we use
-information criteria to assess the predictive abilities of our models
-(see Box \ref{IC}), we use posterior predictive checks as well as a
-diagnostics tools (e.g., convergence indexes, trace plots) to assess the
-validity of our models, and we use summary statistics when appropriate
-to convey the meaning of the main results.
+work, we also make use of several tools with very distinct properties
+and uses. For instance, we use Bayes factors (BFs) to quantify the
+relative evidence for a statistical hypothesis (see Box \ref{BF}), we
+use information criteria to assess the predictive abilities of our
+models (see Box \ref{IC}), we use posterior predictive checks as well as
+a diagnostics tools (e.g., convergence indexes, trace plots) to assess
+the validity of our models, and we use summary statistics when
+appropriate to convey the meaning of the main results.
 
 \vspace{2mm}
 
 \begin{mybox}[label = BF]{What is a Bayes factor ?}
 
-It is a rule in statistics that every statistics has already been suggested as the \textit{new statistics}. Confidence intervals have been suggested as a replacement to p-values, being purportedly more informative and less difficult to interpret. Credible intervals have been suggested as a replacement to confidence intervals, for roughly the same reasons. Bayesian hypothesis testing through Bayes factors (BFs) has also been suggested as a replacement for frequentist hypothesis testing. It has been argued that they permit a richer inference and that they come with a more straightforward interpretation. Whereas this might be true, they nonetheless come with their lot of misinterpretations.\\
+It is a rule in statistics that every statistics has already been suggested as the \textit{new statistics}. Confidence intervals have been suggested as a replacement to \textit{p}-values, being purportedly more informative and less difficult to interpret. Credible intervals have been suggested as a replacement to confidence intervals, for roughly the same reasons. Bayesian hypothesis testing through Bayes factors (BFs) has also been suggested as a replacement for frequentist hypothesis testing. It has been argued that they permit a richer inference and that they come with a more straightforward interpretation. Whereas this might be true, they nonetheless come with their lot of misinterpretations.\\
 
 To highlight what BFs are and what they are not, it might be useful to write down the formula used to compute them. To this end, it is useful to write the Bayes rule in its \textit{odds form}, making the BF explicitly visible:
 
@@ -1905,15 +1926,15 @@ Importantly, what we consider as \textit{evidence} in the Bayesian framework is 
 
 $$\text{evidence}\ = p(D|H) = \int p(\theta|H) p(D|\theta,H) \text{d}\theta$$
 
-Therefore, the BF does not indicate how much "probable" a hypothesis is, or how much more probable a hypothesis is, compared to another one (this would be to conflate the BF with the posterior odds). Instead, the BF can be (should be) interpreted either i) as a ratio of two \textit{marginal likelihoods} (i.e., a ratio of \textit{evidence}) or ii) as an updating factor, that indicates how we should reallocate credibility from prior knowledge (what we knew before seeing the data) to posterior knowledge (what we know after seeing the data).
+Therefore, the BF does not indicate how much "probable" a hypothesis is, or how much more probable a hypothesis is, compared to another one (this would be to conflate the BF with the posterior odds). Instead, the BF can be (should be) interpreted either i) as a ratio of two \textit{marginal likelihoods} (i.e., a ratio of \textit{evidence}) or ii) as an updating factor, indicating how we should reallocate credibility from prior knowledge (what we knew before seeing the data) to posterior knowledge (what we know after seeing the data).
 
 \end{mybox}
 
-Bayes factors are often said to have desirable asymptotic (when the
-number of observations is very large) properties. Indeed, they are
-\emph{consistent} for model identification. It means that if a
-\emph{true} statistical model is in the set of models that are compared,
-using a BF will usually lead to selecting this \emph{true} model with a
+Bayes factors are often said to have desirable \emph{asymptotic} (i.e.,
+when the number of observations is very large) properties. Indeed, they
+are \emph{consistent} for model identification. It means that if a
+``true'' statistical model is in the set of models that are compared,
+using a BF will usually lead to selecting this ``true'' model with a
 probability approaching 1 with increasing sample size. Whereas this
 seems as an appealing property or not depends on the underlying
 statistical philosophy. Indeed, one could question whether it is
@@ -1924,14 +1945,14 @@ especially in the social sciences (e.g., Burnham \& Anderson,
 (\protect\hyperlink{ref-findley_unbiasedness_1985}{1985}) notes:
 \emph{``{[}\ldots{}{]} consistency can be an undesirable property in the
 context of selecting a model''}. A more realistic question is then not
-to look for the \emph{true} model, but for the \emph{best} model from
+to look for the ``true'' model, but rather for the \emph{best} model for
 some practical purpose.
 
 The usefulness of information criteria comes from them being
-approximations of the \emph{out-of-sample deviance} of a model (see Box
-\ref{IC}). In the present PhD work, we used generalisations of the AIC
-(especially the WAIC and LOOIC) that also approximate the out-of-sample
-deviance and as such give an indication of how good/bad a model is to
+approximations of the \emph{out-of-sample deviance} (see Box \ref{IC}).
+In the present PhD work, we used generalisations of the AIC (especially
+the WAIC and LOOIC) that also approximate the \emph{out-of-sample
+deviance} and as such give an indication of how good/bad a model is to
 predict future (i.e., non-observed) data.
 
 \vspace{2mm}
@@ -1942,7 +1963,7 @@ Hirotugu Akaike noticed that the negative log-likelihood of a model + 2 times it
 
 $$\text{AIC} = \underbrace{\underbrace{-2\log(\mathcal{L}(\hat{\theta}|\text{data}))}_{\text{in-sample deviance}} + 2K}_{\approx\ \text{out-of-sample deviance}}$$
 
-Where $K$ is the number of parameters of the model and the \textit{deviance} is a measure of discrepancy between the data and the model. Interestingly, we can make a distinction between two types of deviances.\\
+where $K$ is the number of parameters of the model and the \textit{deviance} is a measure of discrepancy between the data and the model. Interestingly, we can make a distinction between two types of deviances.\\
 
 First, the \textbf{in-sample deviance} indicates how bad a model is to explain the current dataset (the dataset used to fit the model). Second, and more importantly, the \textbf{out-of-sample deviance} indicates how bad a model is to explain a \textbf{future} dataset issued from the same data generation process (the same population).
 
@@ -1952,13 +1973,13 @@ In brief, in the present work, we used various methods but coherently
 with a few (nuanced) guiding principles. Namely, we favoured a
 \emph{model comparison} approach (e.g., Burnham \& Anderson,
 \protect\hyperlink{ref-burnham_model_2002}{2002},
-\protect\hyperlink{ref-burnham_multimodel_2004}{2004}; Judd, McClelland,
-\& Ryan, \protect\hyperlink{ref-judd_data_2009}{2009}), we used several
+\protect\hyperlink{ref-burnham_multimodel_2004}{2004}; Judd et al.,
+\protect\hyperlink{ref-judd_data_2009}{2009}), we used several
 statistics when they provide complementary information (e.g., using both
 posterior probabilities, information criteria or BFs), we assessed the
 validity of our models (e.g., via posterior predictive checks), we
-reported these analyses transparently and we tried to convey uncertainty
-in our conclusions.
+reported these analyses transparently, and we tried to convey
+uncertainty in our conclusions.
 
 \section{Overview of the following
 chapters}\label{overview-of-the-following-chapters}
