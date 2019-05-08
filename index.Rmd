@@ -1,5 +1,5 @@
 --- 
-title: Psychophysiological characteristics of verbal rumination
+title: Understanding rumination as a form of inner speech
 
 author: "" # Ladislas Nalborczyk
 date: "" #"`r Sys.Date()`"

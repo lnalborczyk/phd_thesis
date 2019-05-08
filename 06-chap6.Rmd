@@ -9,8 +9,17 @@ knitr::opts_chunk$set(
   )
 ```
 
+
+<!-- create a new page for the summary -->
+\newpage
+
+<!-- center the box vertically, with a parameter to specify the ratio of space above to space below -->
+\begin{vplace}[1]
+
 \begin{summary}{Summary of Chapter\getcurrentref{chapter}}
 
-Blah blah ...
+Blah blah...
 
 \end{summary}
+
+\end{vplace}
