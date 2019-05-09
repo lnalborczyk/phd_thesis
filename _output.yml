@@ -31,4 +31,12 @@ bookdown::pdf_book:
   highlight: pygments # code highlighting
   pandoc_args: [ "--csl", "./csl/apa6.csl" ] # specifies the csl file to be used
 
-# bookdown::word_document2: default
+#bookdown::word_document2:
+#  pandoc_args: [
+#    "--csl", "./csl/apa6.csl",
+#    "--bibliography", "./bib/packages.bib",
+#    "--bibliography", "./bib/thesis.bib",
+#    #"--reference-doc", "./assets/2018-05-17-aim1-draft.docx",
+#    "--filter", "pandoc-citeproc"
+#    #"--filter", "./assets/fix-apa-ampersands.py"
+#  ]

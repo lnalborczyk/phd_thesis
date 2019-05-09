@@ -11,7 +11,7 @@ knitr::opts_chunk$set(
 
 \epigraph{Inner speech is nothing but speech to oneself}{Sokolov, A. N. (1972)}
 
-\initial{A}s you read these words, you might notice the presence of an inner voice accompanying your reading. This phenomenon usually remains unnoticed until we pay attention to it. However, if I ask you to focus on that little voice while you are reading these lines, you would probably be able to provide a relatively fine-grained description of this thing that we call inner speech. Whose voice is it ? Is it yours ? Is it gendered ? It is usually possible to examine these aspects as well as its lower-level features such as its tone, pitch, tempo, or virtually any sensory aspect of it. This first set of very basic observations already provide us some very important insights. First, if we can think about inner speech, then it should be something different from thinking itself. Rather, inner speech (or *covert speech*) can be construed as *a* vehicle for conscious thought^[We will not delve into the touchy question of whether inner speech is a necessary condition for consciousness. For the present work purpose, it is sufficient to note that thinking and inner speech are phenomenologically separable.]. Second, the set of observations we can make about our inner voice also tautologically reveals that inner speech is accompanied by sensory percepts (e.g., speech sounds, kinaesthetic feelings). It thus raises another set of fascinating questions about the origin and nature of inner speech percepts. Where do these percepts come from ? Why do they look like the one we experience when we speak overtly ?
+\initial{A}s you read these words, you might notice the presence of an inner voice accompanying your reading. This phenomenon usually remains unnoticed until we pay attention to it. However, if I ask you to focus on that little voice while you are reading these lines, you would probably be able to provide a relatively fine-grained description of this thing that we call inner speech. Whose voice is it? Is it yours? Is it gendered? It is usually possible to examine these aspects as well as its lower-level features such as its tone, pitch, tempo, or virtually any sensory aspect of it. This first set of very basic observations already provide us some very important insights. First, if we can think about inner speech, then it should be something different from thinking itself (where "thinking" is used in its broadest sense to refer to any sort of mental episode). Rather, inner speech (or *covert speech*) can be construed as *a* vehicle for conscious thought^[We will not delve into the touchy question of the role inner speech in theories consciousness (but see Carruthers, 1996; Denett, 1991, or Jackendoff, 1996. For the present work purpose, it is sufficient to note that thinking and inner speech are phenomenologically distinguishable.]. Second, the set of observations we can make about our inner voice also tautologically reveals that inner speech is accompanied by sensory percepts (e.g., speech sounds, kinaesthetic feelings). It thus raises another set of fascinating questions about the origin and nature of inner speech percepts. Where do these percepts come from? Why do they look like the one we experience when we speak overtly?
 
 This first set of questions refer to the *nature* of inner speech, that is, to *what* it is. In the present work, we are mostly concerned with this question. Another set of issues revolve around the question of the *functions* of inner speech, that is, *what it is for*. The influential Vygotskian theory of inner speech development suggests that inner speech evolves from *private speech* (i.e., self-addressed overt speech) during childhood. As such, we (as others have argued elsewhere) assume that the functions of inner speech are inherited from the functions of private speech, via a mechanism of progressive internalisation. The specific features of this internalisation process are worthy of investigation on their own (and we briefly discuss them later on) but we are mostly interested here in the *what is* (i.e., the nature) question. Thus, we will only sparsely address the question of the functions of inner speech.
 
@@ -55,7 +55,7 @@ Behavioural measures (questionaires, and cognitive tasks), and physiological mea
 
 ...
 
-## What is that little voice inside my head ?
+## What is that little voice inside my head?
 
 ### Brief historical overview of inner speech investigations
 
@@ -163,7 +163,7 @@ Voir @jeannerod_representing_1994 and @wolpert_internal_1995, Wolpert & Gharaman
 
 \vspace{2mm}
 
-\begin{mybox}[label = model]{What is an internal model ?}
+\begin{mybox}[label = model]{What is an internal model?}
 
 Blah blah...
 
@@ -284,7 +284,7 @@ In the next section, we turn to a discussion of inner speech conceptualised as a
 
 Various terms: internal speech, silent speech, covert speech, implicit speech, speech imagery... difference between generative component (mackay, 1992) / inner speaking / inner voice and perceptual or auditory component (MacKay, 1992) or inner hearing / inner ear...
 
-A key question: what is the lowest level of specification of inner speech ? ... figure from oppenheim & dell (2010...)
+A key question: what is the lowest level of specification of inner speech? ... figure from oppenheim & dell (2010...)
 
 See MacKay (1992, page 131) for discussion of speaking rate in inner and overt speech... faster rates also occur for other highly trained skills (e.g., tying a shoelace, Annett, 1988)...ref to review of Guillot...
 

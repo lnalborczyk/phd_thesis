@@ -1,6 +1,5 @@
 --- 
 title: Understanding rumination as a form of inner speech
-
 author: "" # Ladislas Nalborczyk
 date: "" #"`r Sys.Date()`"
 
@@ -28,7 +27,7 @@ cat(
   )
 ```
 
-```{r coverpicture, fig.align = "center", out.width = "100%", echo = FALSE, include = identical(knitr:::pandoc_to(), "html")}
+```{r coverpicture, eval = FALSE, fig.align = "center", out.width = "100%", echo = FALSE, include = identical(knitr:::pandoc_to(), "html")}
 knitr::include_graphics("assets/cover.png", dpi = NA)
 ```
 
