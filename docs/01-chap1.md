@@ -8,25 +8,27 @@
 
 \epigraph{Inner speech is nothing but speech to oneself}{Sokolov, A. N. (1972)}
 
-\initial{A}s you read these words, you might notice the presence of an inner voice accompanying your reading. This phenomenon, while occurring on a daily basis, usually remains unnoticed until we pay attention to it. However, if I ask you to focus on that little voice while you are reading these lines, you would probably be able to provide a relatively fine-grained description of this phenomenon. Whose voice is it? Is it yours? Is it gendered? It is usually possible to examine these aspects as well as its lower-level features such as its tone, pitch, tempo, or virtually any sensory aspect of it. This first set of basic observations already provide us some important insights. First, if we can think about our *inner speech*, then it should be something different from "thinking" itself (where thinking is used in its broadest sense to refer to any sort of mental episode). Rather, inner speech can be construed as *a* vehicle for conscious thought.^[We will not delve into the touchy question of the role inner speech plays in theories of consciousness (but see Carruthers, 1996; Denett, 1991; Jackendoff, 1996). For the present purpose, it is sufficient to note that thinking and inner speech are phenomenologically distinguishable.] Second, the set of observations we can make about our inner voice revealed that inner speech is accompanied by sensory percepts (e.g., speech sounds, kinaesthetic feelings). It thus raises another set of fascinating questions about the origin and nature of inner speech percepts. Where do these percepts come from? Why do they look like the one we experience when we speak overtly?
+\initial{A}s you read these words, you might notice the presence of an inner voice. This phenomenon, while occurring on a daily basis, usually remains unnoticed until we pay attention to it. However, if I ask you to focus on that little voice while you are reading these lines, you would probably be able to provide a relatively fine-grained description of this phenomenon. Whose voice is it? Is it yours? Is it gendered? It is usually possible to examine these aspects as well as lower-level features such as the tone, pitch, tempo, or virtually any sensory aspect. This first set of basic observations already provides us with some important insights. First, if we can think about our *inner speech*, then it should be something different from "thinking" itself (where thinking is used in its broadest sense to refer to any sort of mental episode). Rather, inner speech can be construed as *a* vehicle for conscious thought.^[We will not delve into the touchy question of the role inner speech plays in theories of consciousness [but see @carruthers_language_1996;@dennett_consciousness_1991].] Second, the set of observations we can make about our inner voice revealed that inner speech is accompanied by sensory percepts (e.g., speech sounds, kinaesthetic feelings). It thus raises another set of fascinating questions about the origin and nature of inner speech percepts. Where do these percepts come from? Why do they look like the one we experience when we speak overtly?
 
-This first set of questions refer to the *nature* of inner speech, that is, to *what* it is. In the present work, we are mostly concerned with these questions. Another set of issues revolve around the question of the *functions* of inner speech, that is, *what it is for*. The influential Vygotskian theory of inner speech development suggests that inner speech evolves from *private speech* (i.e., self-addressed overt speech) during childhood. As such, we (as others have argued elsewhere) assume that the functions of inner speech are inherited from the functions of private speech, via a mechanism of progressive internalisation. The specific features of this internalisation process are worthy of investigation on their own (and we briefly discuss them later on) but we are mostly interested here in the *what is* (i.e., the nature) question. Thus, we will only sparsely address the question of the functions of inner speech.
+This first set of questions refer to the *nature* of inner speech, that is, to *what* it is. In the present work, we are mostly concerned with these questions. Another set of issues revolve around the question of the *functions* of inner speech, that is, *what it is for*. The influential Vygotskian theory of inner speech development suggests that inner speech evolves from *private speech* (i.e., self-addressed overt speech) during childhood. As such, for the present purpose, we assume that the functions of inner speech are inherited from the functions of private speech, via a mechanism of progressive internalisation. The specific features of this internalisation process are worthy of investigation on their own (and we briefly discuss them later on). However, we are mostly interested here in the *what is* (i.e., the nature) question. Thus, we will only sparsely address the question of the functions of inner speech.
 
-That being said, a lot can be learned about inner speech by looking at situations in which these functions do not work as intended. These *dysfunctions*  are instances of inner speech when its (functional or adaptive) functions, such as problem-solving, self-regulation or planning (we discuss these in more details later) do not work as intended. These dysfunctionnal instances of inner speech may include auditory verbal hallucinations [AVHs; for a detailed investigation of the relation between inner speech and AVHs, see @Rapin2011], where the sense of agency (i.e., who is the author of the internal speech) is impaired, or repetitive negative thinking such as worry or rumination, where the ability to control (or to disengage from) negative thoughts is impaired. In the present work, we investigated (some of) the psychophysiological correlates of rumination, starting with the theoretical assumption that rumination can be considered as a form of inner speech. Therefore, we studied rumination as we would study inner speech, with the potential of refining our understanding of both rumination and inner speech.
+That being said, we think a lot can be learned about inner speech by looking at situations in which these functions deviate from their original trajectory. These *dysfunctions*  are instances of inner speech where its (functional or adaptive) functions, such as problem-solving, self-regulation or planning do not work as intended. These dysfunctionnal instances of inner speech may include auditory verbal hallucinations [AVHs; for a detailed investigation of the relation between inner speech and AVHs, see @Rapin2011], where the sense of agency (i.e., who is the author of the internal speech) is impaired, or repetitive negative thinking such as worry or rumination, where the ability to control (or to disengage from) negative thoughts is impaired. In the present work, we investigated (some of) the psychophysiological correlates of rumination, starting with the theoretical assumption that rumination can be considered as a form of inner speech. Therefore, we studied rumination as we would study inner speech, with the potential of refining our understanding of both rumination and inner speech.
 
-Rumination is associated with increased risks in the onset and maintenance of several psychiatric disorders such as the major depressive disorder (MDD) or the generalised anxiety disorder (GAD). More precisely, rumination is associated with the development of depression [e.g.,@Nolen-Hoeksema2000] and the severity of depression [e.g.,@treynor_rumination_2003] in individuals without history of depression and with the maintenance of depression [e.g.,@Nolen-Hoeksema2000]. Given the central role of rumination in depression and the societal importance of depression, rumination has been considered a key target in modern cognitive and behavioural therapies [e.g.,@watkins_rumination-focused_2016]. However, although rumination has mainly been studied in the framework of depression and anxiety, it has been suggested to be a key process in more than thirteen disorders []. Therefore, rumination can generally be understood as transdiagnostic process (i.e., a process that is not specific to a single class of symptoms). The term of rumination thus refers to...
+Rumination is associated with increased risks in the onset and maintenance of several psychiatric disorders such as depression or anxiety. More precisely, rumination has been shown to be associated with the development, severity and maintenance of depressive episodes [e.g.,@treynor_rumination_2003;@Nolen-Hoeksema2000;@Nolen-Hoeksema2008]. Given the central role of rumination in depression and the societal importance of depression (both in terms of lifetime prevalence and associated costs), rumination has been considered a key target in modern cognitive and behavioural therapies [e.g.,@watkins_rumination-focused_2016]. However, although rumination has mainly been studied in the framework of depression and anxiety, it has been suggested to be a key process in several other disorders [e.g.,@Baeyens2012;@ehring_repetitive_2008;@Watkins2008]. Thus, rumination can generally be understood as transdiagnostic process (i.e., a process that is not specific to a single disorder).
 
-In this first chapter, we briefly review the main theoretical frameworks in which rumination has been studied. We then review the historical and contemporary conceptualisations of inner speech and suggest how rumination can be considered and studied as a form of inner speech. We then broaden the discussion by considering the analogy between inner speech and the broader phenomenon of motor imagery. Finally, we discuss how electromyography can be used (and has been used) to investigate covert actions, before moving to a brief introduction to the technical aspects of the present work (Chapter 2).
+In this first chapter, we briefly review the main theoretical frameworks in which rumination has been studied. We then review the historical and contemporary conceptualisations of inner speech and suggest how rumination can be considered and studied as a form of inner speech. We then broaden the discussion by considering the analogy between inner speech and the more general phenomenon of motor imagery. Finally, we discuss how electromyography can be used (and has been used) to investigate covert actions (including inner speech), before moving to a brief introduction to the technical aspects of the present work (Chapter 2).
 
-## Rumination as a form of repetitive negative thinking
+## Rumination: theories and measures
 
 ### Theoretical perspectives on rumination
 
 Main characteristics of rumination: repetitive, negative, intrusive...
 
-For review, see @Smith2009, @Nolen-Hoeksema2008, and @Watkins2008...
+We do not aim to provide an exhaustive review of the existing theoretical perspectives on ruminativ tinking, but we refer the reader to more extensive work (e.g., reviews or books) when needed. For review, see @Smith2009, @Nolen-Hoeksema2008, and @Watkins2008...
 
-One of the most prolific model of rumination is the Response Style Theory [RST; @nolen-hoeksema_responses_1991]. Accoring to this theory, rumination consists of repetitive thinking about the causes, consequences and symptoms of negative affects...
+One of the most prolific model of rumination is the Response Style Theory [RST; @nolen-hoeksema_responses_1991]. Accoring to this theory, rumination consists of repetitive thinking about the causes, consequences and symptoms of negative affects... rumination is conceptualised as a mode of response to negative affects. Originally devleopped to account for gender differences...te tendency from female participants to ruminate more than male participants has been confirmed and quantified in a recet meta-analysis (ref)... This theory suggests four core mechanisms explaining the role of rumination in depression (as reviewed in Baeyens et al 2012).
+
+First, rumination (in comparison to distraction) has been shown to increase negative mood (ref). Rumination is usually associated with an negativitivy bias (i.e., a tendency toward negative interpretaiton). Rumination also increases negative autobiographical memories (ref). Second, rumiation with interfere with problem-solving abilities (ref). Third, rumination also intefers with motiviation (ref)... Finally, rumination might hinder social support (ref)...
 
 This theory has been later appended... stress-reactive model of rumination, in which ruination occurr after a stressful event. It has the advantage of explaining how rumination can appear in reaction to stressful events (even before the apparition of negative affects)...
 
@@ -34,20 +36,13 @@ The Goal Process Theory [@Martin] conceptualises rumination as a response to a f
 
 The Self-Regulatory Executive Function (S-REF) model of rumination...
 
-Watkins model...
+The theory of processing mode [@watkins_adaptive_2004;@Watkins2008]...
 
 The cognitive approach [@Koster2011;@Koster2013]... from the RST to control theories and the mental habit theory...
 
 As suggested by @christoff_mind-wandering_2016, rumination and other forms of spontaneous thoughts can be considered in a common conceptual space (see Figure 1). This space is built upon two dimensions: *deliberate constraints* and *automatic constraints*. These dimensions represent two general mechanisms that allow to constrain the contents of these related mental states and the transitions between them. The first constrain correspond to a deliberate process and is implemented through **cognitive control** [@miller_prefontral_2000]. The second constrain is referring to more automatic constrains like sensory afferences. In this framework, rumination is characterised by the highest level of automatic constraints and spread all along the *deliberate constraints* dimension.
 
-\begin{figure}[H]
-
-{\centering \includegraphics[width=0.75\linewidth]{assets/conceptual_space} 
-
-}
-
-\caption{Conceptual space of different types of thought (Christoff et al., 2016)}(\#fig:conceptual)
-\end{figure}
+![(\#fig:conceptual)Conceptual space of different types of thought (Christoff et al., 2016)](assets/conceptual_space.png)
 
 ...
 
@@ -77,14 +72,7 @@ In the last chapter of this book, Vygotsky analyzes the relationship between tho
 
 Vygotsky ends this statement with his famous dictum: *Thought is not expressed in words; it comes into existence through them* (1956, p. 330)...
 
-\begin{figure}[H]
-
-{\centering \includegraphics[width=0.75\linewidth]{assets/vygotsky} 
-
-}
-
-\caption{Vygotsky’s Levels in the Process of Verbal Thinking. Figure from Akhtuina (2003).}(\#fig:vygotsky)
-\end{figure}
+![(\#fig:vygotsky)Vygotsky’s Levels in the Process of Verbal Thinking. Figure from Akhtuina (2003).](assets/vygotsky.png)
 
 For Luria (1956), a verbal utterance usually starts with a *motive*^[This includes desires and needs, interests and impulses, affects and emotions, etc.], that is something to express. For Luria, a veral utterance always starts with a *vague thought* and the role of inner speech would be to transform this though into speech. Three stages i) the motive ii) the thought and its transformation to inner speech and iii) transofrmation to external speech... in his studies of aphasia, Luria (1947) then recognises thateach of these stages can be (more or less) independently impaired)...
 
@@ -96,14 +84,7 @@ See reed 1916 for an historical perspective... this initial suggestion (by watso
 
 In a small monograph, @stricker_studien_1880 reported that... however, Paulhan (1886) replied that he was able to produce (innerly) the vowel 1 and maintan the image of other vowels and that he was able to imagine the sound of any vowel without motor actions or feelings (images). Maybe this debats illustrates the limitations of the introspective method...which gives birht to experimental methods atthe beginning of the last century... for instance reed (1916) desrbies an apparatus to examine tongue movements (see Figure XX) and an experiment to examine the inovlvment of inner spech (and speech motor processes) in thinking...
 
-\begin{figure}[H]
-
-{\centering \includegraphics[width=0.5\linewidth]{assets/reed} 
-
-}
-
-\caption{Figure 1 \& 2 from Reed (1916), describing the apparatus used to record tongue movement during thinking and inner speech.}(\#fig:reed)
-\end{figure}
+![(\#fig:reed)Figure 1 \& 2 from Reed (1916), describing the apparatus used to record tongue movement during thinking and inner speech.](assets/reed.png)
 
 Faaborg-Anderson and Edfeldt (1958) found that activity in vocal musculature increased with difficulty of text [see also @sokolov_inner_1972]... however it is not clear that reading always entails inner speech and (or more precisely), that inner speech always involve "sub-articulation"...discuss counter-examples by the "anesthesists" [e.g.,@smith_lack_1947]...
 
@@ -111,14 +92,7 @@ Historical perspective on the exploration of the role of motor processes in inne
 
 <!-- \begin{landscape} -->
 
-\begin{figure}[H]
-
-{\centering \includegraphics[width=1\linewidth]{assets/timeline} 
-
-}
-
-\caption{Non-exhaustive overview of contemporary inner speech research from 1850 to present days.}(\#fig:timeline)
-\end{figure}
+![(\#fig:timeline)Non-exhaustive overview of contemporary inner speech research from 1850 to present days.](assets/timeline.pdf)
 
 <!-- \end{landscape} -->
 
@@ -172,14 +146,7 @@ This view is somehow consistent with the Vygotskian view of inner speech as inte
 
 ...
 
-\begin{figure}[H]
-
-{\centering \includegraphics[width=0.75\linewidth]{assets/loevenbruck} 
-
-}
-
-\caption{Predictive control account of inner speech production. Figure from Loevenbruck et al. (2018).}(\#fig:loevenbruck)
-\end{figure}
+![(\#fig:loevenbruck)Predictive control account of inner speech production. Figure from Loevenbruck et al. (2018).](assets/loevenbruck.pdf)
 
 #### Action representation and internal models
 

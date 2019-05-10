@@ -12,14 +12,7 @@ How do we (humans) produce speech ? At a biomechanical level, producing speech m
 
 Although speech production is an everyday phenomenon, the way this process is exactly performed is still the subject of lively debates. However, current models generally agree with the core steps occurring during speech production. Willem Levelt [@levelt_speaking:_1989;@brown_producing_2000] proposed an influential psycholinguistic model of speech production (see Figure \@ref(fig:levelt)). According to this model, speech production can be described at three levels: *conceptualisation*, *formulation* and *articulation*. The first step is managed by a component called the *conceptualizer*, and consists in selecting a conceptual message to be produced (*message generation*). In other words, the speaker conceives a comunicative intention that she wishes to reveal to an interlocutor. This *preverbal message* is then forwarded to another component, the *formulator*, that handles both *grammatical encoding* (i.e., selecting the appropriate word or *lemma*) and *phonological encoding* (i.e., selecting the appropriate speech sounds).
 
-\begin{figure}[H]
-
-{\centering \includegraphics[width=1\linewidth]{assets/levelt} 
-
-}
-
-\caption{Illustration of Levelt's (1989, 2000) model of speech production.}(\#fig:levelt)
-\end{figure}
+![(\#fig:levelt)Illustration of Levelt's (1989, 2000) model of speech production.](assets/levelt.pdf)
 
 During *grammatical encoding*, *lemmas* are retrieved from the *lexicon* and are ordered in a syntactical appropriate way, giving the message its *surface structure*. During *phonological encoding*, the message is given its phonetic or articulatory characteristics. At this stage, phonemes are grouped into pronounceable syllables. Then, each syllable is associated with an *articulatory program*, composed of an ensemble of *articulatory gestures* (i.e., coordinative structures of movements). These articulatory programs are stored in the *syllabary*. In brief, the *formulator* component transforms a *preverbal message* into a linguistic object. Finally, the phonetic plan^[Interestingly, in this model the phonetic plan is thought to correspond to inner speech.] is forwarded to the *articulator*, responsible for the activation of *articulatory gestures*, to be executed by the speech *articulators* (e.g., tongue, lips, jaw).
 
@@ -35,36 +28,15 @@ Speech production requires the involvement of more than 100 muscles in the face,
 The vocal folds in the larynx vibrate to produce fluctuations in air pressure (sound waves). These sounds waves are subsequently modified by the position and shape of the mouth, the lips, the tongue, and other speech organs.
 -->
 
-\begin{figure}[H]
-
-{\centering \includegraphics[width=0.75\linewidth]{assets/vocal} 
-
-}
-
-\caption{Human respiratory and phonatory system. Figure from the OpenStax \textit{Anatomy and Physiology} Textbook. Download for free at \url{https://cnx.org/contents/14fb4ad7-39a1-4eee-ab6e-3ef2482e3e22@15.1}.}(\#fig:vocal)
-\end{figure}
+![(\#fig:vocal)Human respiratory and phonatory system. Figure from the OpenStax \textit{Anatomy and Physiology} Textbook. Download for free at \url{https://cnx.org/contents/14fb4ad7-39a1-4eee-ab6e-3ef2482e3e22@15.1}.](assets/vocal.jpg)
 
 The characteristics of the vocal folds (e.g., their length or thickness) influence what is known as the *fundamental frequency* (or F0) of the speech signal, which in turn determines the perceived pitch of the voice. The speech signal can be further decomposed in *resonant frequencies* or *formants*. Interestingly, we can relate changes in the state of the articulatory system with changes in the formant (and especially the F1-F2) space (see Figure \@ref(fig:ipa)). Indeed, the frequency of the first formant (F1) is mostly determined by the height of the tongue body whereas the frequency of the second formant (F2) is mostly determined by the frontness/backness of the tongue body. For instance, when producing the /u/ vowel, the tongue is positioned at the top and in the back of the oral cavity (and the lips are rounded). However, when producing the /a/ vowel, the tongue is positioned at the bottom of the oral activity (and the lips are widely opened).
 
-\begin{figure}[H]
-
-{\centering \includegraphics[width=0.75\linewidth]{assets/vowels} 
-
-}
-
-\caption{Illustration of the vocalic 'quadrilateral' and the relation between vowels and formants (F1 and F2). Figure adapted from the International Phonetic Association (2015) - IPA Chart, available under a Creative Commons Attribution-Sharealike 3.0 Unported License.}(\#fig:ipa)
-\end{figure}
+![(\#fig:ipa)Illustration of the vocalic 'quadrilateral' and the relation between vowels and formants (F1 and F2). Figure adapted from the International Phonetic Association (2015) - IPA Chart, available under a Creative Commons Attribution-Sharealike 3.0 Unported License.](assets/vowels.pdf)
 
 In brief, modifications in the shape of the *vocal tract* result in the production of different vowels. Changes in the configurations of articulators such as the lips or the tongue may also produce consonants. Consonants are produced by applying some form of restriction to (or by closing) the vocal tract to constraint the air flow. We usually classify consonants according to *where* (the *place of articulation*) and *how* (the *manner of articulation*) this restriction takes place (see Figure \@ref(fig:consonants)). For instance, consonants such as /p/ or /b/ are produced by putting the lips together and are therefore known as *bilabial* consonants.
 
-\begin{figure}[H]
-
-{\centering \includegraphics[width=1\linewidth]{assets/consonants} 
-
-}
-
-\caption{Table of consonants according to the manner (in rows) and place (in columns) of articulation. Figure from the International Phonetic Association (2015) - IPA Chart, available under a Creative Commons Attribution-Sharealike 3.0 Unported License.}(\#fig:consonants)
-\end{figure}
+![(\#fig:consonants)Table of consonants according to the manner (in rows) and place (in columns) of articulation. Figure from the International Phonetic Association (2015) - IPA Chart, available under a Creative Commons Attribution-Sharealike 3.0 Unported License.](assets/consonants.png)
 
 To sum up, besides from being an essential communication tool for humans, speech production is also a complex motor action, involving the fine-grained coordination of numerous muscles. In the next section, we discuss in more details the specific facial muscles that were of interest in the present work.
 
@@ -72,14 +44,7 @@ To sum up, besides from being an essential communication tool for humans, speech
 
 In our work, we were especially interested in the activity of some of the orofacial muscles (i.e., the muscles situated around the mouth). More precisely, we studied the activity of the *orbicularis oris inferior* (OOI), the *orbicularis oris superior* (OOS), and the *zygomaticus major* (ZYG) muscles (cf. Figure \@ref(fig:facial)). Contrary to what was assumed until recently, the *orblicularis oris* muscle is not a sphincter muscle but is instead a complex of several distinct muscles that interlace in a way that gives the *orbicularis oris* complex its circular aspect. Among these muscles, the OOS and the OOI are placed above and below (respectively) the mouth and are responsible for rounding or protruding the lips. More precisely, the OOS is responsible for lowering the upper lip whereas the OOI is responsible for elevating the lower lip. The ZYG muscle has its origin on the zygomatic bone and inserts at the labial commissure (the angle of the mouth) where it meets with fibers of the *levator anguli oris* and *orbicularis oris* muscles. Together with the *levator anguli oris*, it serves to move the labial commissure upwards and laterally, and is involved in laughing and more generally in pleasant reactions and positive emotions. It is also involved in speech production, especially during the production of *spread* sounds, that is, sounds that require a wide aperture of the mouth (e.g., /i/).
 
-\begin{figure}[H]
-
-{\centering \includegraphics[width=0.75\linewidth]{assets/facial_muscles} 
-
-}
-
-\caption{Illustration of the main facial muscles of interest in the present work. Figure adapted from Patrick J. Lynch, medical illustrator, http://patricklynch.net.}(\#fig:facial)
-\end{figure}
+![(\#fig:facial)Illustration of the main facial muscles of interest in the present work. Figure adapted from Patrick J. Lynch, medical illustrator, http://patricklynch.net.](assets/facial_muscles.pdf)
 
 For sensors placement, we followed guidelines and recommendations from @fridlund_guidelines_1986. In addition to speech-related orofacial muscles, we also routinely recorded the activity of other facial muscles such as the *frontalis* muscle (FRO) in Chapter 3, 4, 5, and the *corrugator supercilii* muscle (COR) in Chapter 5. The activity of these muscles was monitored to control for non speech-related facial muscular activity [as recommended by @garrity_electromyography:_1977].
 
@@ -97,14 +62,7 @@ A muscle is a collection of fibers that can vary in length, orientation, diamete
 
 The contraction of the skeletal muscles is initiated by electrical impulses that propagate from the central nervous system to the muscle via the $\alpha$-motoneurons. Interestingly, many (both larger and smaller) muscles are partitioned, with each portion having a specific role for the muscle function. Moreover, there is no one-to-one mapping between populations of motor neurons and muscle compartments. In other words, one population of motoneurons may innervate several compartments and reciprocally, several populations of motoneurons may innervate the same muscle compartment. Therefore, interpreting the EMG signal requires to be aware whether the recorded signal is characteristic of a whole muscle' activity or of a specific muscle compartment [@kamen_essentials_2010].
 
-\begin{figure}[H]
-
-{\centering \includegraphics[width=0.5\linewidth]{assets/muscle} 
-
-}
-
-\caption{Illustration of a muscle fiber. Figure from the OpenStax \textit{Anatomy and Physiology} Textbook. Download for free at \url{https://cnx.org/contents/14fb4ad7-39a1-4eee-ab6e-3ef2482e3e22@15.1}.}(\#fig:muscle)
-\end{figure}
+![(\#fig:muscle)Illustration of a muscle fiber. Figure from the OpenStax \textit{Anatomy and Physiology} Textbook. Download for free at \url{https://cnx.org/contents/14fb4ad7-39a1-4eee-ab6e-3ef2482e3e22@15.1}.](assets/muscle.jpg)
 
 The muscle fiber is surrounded by a membrane, the *sarcolemma* (see Figure \@ref(fig:muscle)). Under resting conditions, the voltage inside the membrane is around -90mV, relative to the outside. This voltage results from a particular combination of sodium ($\text{Na}^{+}$), potassium ($\text{K}^{+}$), chloride ($\text{Cl}^{-}$), and other anions. At rest, the concentration of $\text{Na}^{+}$ is relatively high outside the membrane and relatively low inside the membrane. The concentration of $\text{K}^{+}$ follows an opposite pattern, with a greater concentration inside the membrane, and a lower concentration outside the membrane.
 
@@ -112,14 +70,7 @@ The muscle fiber is surrounded by a membrane, the *sarcolemma* (see Figure \@ref
 
 Because muscle membranes can change their electrical state, muscle fibers are excitable tissues. When a muscle fiber is depolarised, the *membrane potential* produces a response called the *muscle fiber ation potential* or more generally the *motor action potential* (MAP). The generated action potential proceeds along the muscle fiber in both directions from the neuromuscular junction [@kamen_essentials_2010]^[The *neuromuscular junction* is the site where the motoneuron meets the muscle fiber.]. In the first phase of the MAP, the $\text{Na}^{+}$ permeability increases dramatically, inducing a massive income of $\text{Na}^{+}$ into the cell. This results in a temporary inversion of the cell polarity (see Figure \@ref(fig:mfap)).
 
-\begin{figure}[H]
-
-{\centering \includegraphics[width=0.75\linewidth]{assets/mfap} 
-
-}
-
-\caption{Time course of a motor action potential (figure from Kamen \& Gabriel, 2010).}(\#fig:mfap)
-\end{figure}
+![(\#fig:mfap)Time course of a motor action potential (figure from Kamen \& Gabriel, 2010).](assets/mfap.png)
 
 The MAP is followed by a *refractory period*, characterised by a decrease in membrane excitability. This refractory period can be further decomposed in an *absolute* refractory period during which all $\text{Na}^{+}$ channels are closed, and a *relative* refractory period where some $\text{Na}^{+}$ channels are open (but to a lesser extent than before the MAP). Interestingly, this after-impulse hyperpolarisation limits the frequency of MAPs [@kamen_essentials_2010]. 
 
@@ -131,14 +82,7 @@ For instance, large muscles have hundreds of motor units and an invervation rati
 
 The *motor unit* is the smallest controllable muscular unit. It consists in a single $\alpha$-motoneuron, its neuromuscular junction, and all the muscle fibers it innervates. The number of motor units and their *innervation ratio* (i.e., the number of muscle fibers per motor unit) can vary by muscle. Because a single motoneuron can innervate multiple muscle fibers, the firing of a single motoneuron results in the simultaneous discharge of many muscle fibers. The *motor unit action potential* (MUAP) is the electric field resulting from the sum of the electric fields emitted by each fiber of the motor unit. In other words, it represents the spatiotemporal summation of individual MAPs originating from muscle fibers that are sufficiently close to a given electrode. This generates a *train* of MUAPs, called *motor unit action potential trains* (MUAPTs). The mixture of MUAPTs coming from different motor units constitute the raw EMG signal (cf. Figure \@ref(fig:muap)).
 
-\begin{figure}[H]
-
-{\centering \includegraphics[width=0.75\linewidth]{assets/muap} 
-
-}
-
-\caption{Motor unit action potential representation (Figure from De Luca et al., 2006).}(\#fig:muap)
-\end{figure}
+![(\#fig:muap)Motor unit action potential representation (Figure from De Luca et al., 2006).](assets/muap.jpg)
 
 To sum up, the EMG signal results from a mixture of recruited motor units: it is composed of the sum of several to many MUAPTs. This signal can vary considerably because of factors such as the muscle length [@babault_effect_2003], the distance between the muscle fiber (of interest) and the electrode, the fiber length or the muscle temperature. In the next section, we discuss in more details how this signal can be acquired.
 
@@ -172,25 +116,11 @@ Studies have generally show that the primary energy of surface EMG signals lie b
 
 The raw EMG signal is a stochastic train of MUAPs. As put by @fridlund_guidelines_1986, "when heard through a speaker, the raw EMG signal sounds like popcorn popping". Therefore, it is usually unsuitable for immediate quantification. In order to illustrate what the EMG signal looks like, we simulated EMG data based on a standard algorithm implemented in the `biosignalEMG` package [@R-biosignalEMG]. This simulated EMG signal is represented in Figure \@ref(fig:emgplot1).
 
-\begin{figure}[H]
-
-{\centering \includegraphics[width=1\linewidth]{02-chap2_files/figure-latex/emgplot1-1} 
-
-}
-
-\caption{Simulated EMG signal.}(\#fig:emgplot1)
-\end{figure}
+![(\#fig:emgplot1)Simulated EMG signal.](02-chap2_files/figure-docx/emgplot1-1.png)
 
 We usually rectify the EMG signal by taking its absolute value and subtracting the mean in order to correct for any offset (bias) present in the raw data. The result of this operation is represented in Figure \@ref(fig:emgplot2).
 
-\begin{figure}[H]
-
-{\centering \includegraphics[width=1\linewidth]{02-chap2_files/figure-latex/emgplot2-1} 
-
-}
-
-\caption{Rectified EMG signal.}(\#fig:emgplot2)
-\end{figure}
+![(\#fig:emgplot2)Rectified EMG signal.](02-chap2_files/figure-docx/emgplot2-1.png)
 
 Then, the signal is usually low-pass filtered, with a cut-off frequency depending on the nature of the study. From there, two main measures can be used to represent the magnitude of the muscle activity^[But see for instance @phinyomark_feature_2012, for a brief overview of other features that can be extracted from the surface EMG signal.]. The first one is the *mean absolute value* (MAV), which is computed over a specific interval and where $|x_{n}|$ is the absolute value of a datum of EMG in the data window.
 
@@ -206,14 +136,7 @@ $$RMS = \sqrt{ \frac{1}{N} \sum_{n=1}^{N} x^{2}_{n} }$$
 
 where $x^{2}_{n}$ is the squared value of each EMG datum and has both physical and physiological meanings. Put broadly, the RMS it taken to reflect the level of the physiological activities in the motor unit during contraction. Both the MAV and the RMS are illustrated in Figure \@ref(fig:emgplot3).
 
-\begin{figure}[H]
-
-{\centering \includegraphics[width=1\linewidth]{02-chap2_files/figure-latex/emgplot3-1} 
-
-}
-
-\caption{Illustration of the MAV (in orange) and RMS (in green) values. These two features are usually highly correlated but differ in magnitude. More precisely, the RMS is proportional to the MAV when the signal has a Gaussian shape.}(\#fig:emgplot3)
-\end{figure}
+![(\#fig:emgplot3)Illustration of the MAV (in orange) and RMS (in green) values. These two features are usually highly correlated but differ in magnitude. More precisely, the RMS is proportional to the MAV when the signal has a Gaussian shape.](02-chap2_files/figure-docx/emgplot3-1.png)
 
 These features provide the *envelope* of the EMG signal and therefore provide insights about the *amplitude* of the EMG signal. This envelope can then be summarised (e.g., via its mean or median) over a period of interest (e.g., during the utterance of some phoneme).
 

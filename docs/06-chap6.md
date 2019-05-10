@@ -14,7 +14,7 @@ This study explores whether the speech motor system is involved in verbal rumina
 
 A large part of our inner conscious experience involves verbal content, with internal monologues and conversations. Inner speech is considered as a major component of conscious experience and cognition [@hubbard_auditory_2010;@klinger_dimensions_1987;@Hurlburt2013]. An important issue concerns the format and nature of inner speech and whether it is better described as a mere evocation of abstract amodal verbal representations or as a concrete motor simulation of actual speech production [for review, see @alderson-day_inner_2015;@loevenbruck_cognitive_2018;@Perrone-Bertolotti2014]. In the first case, inner speech is seen as divorced from bodily experience, and includes, at most, faded auditory representations. In the second case, inner speech is considered as a physical process that unfolds over time, leading to an enactive re-creation of auditory a well as articulatory percepts. The latter hypothesis is interesting in the context of persistent negative and maladaptive forms of inner speech, such as rumination. If this hypothesis is correct, we could expect rumination --as a particular type of inner speech-- to be disrupted by concurrent involvement of the speech muscles. The present study aims at testing this specific idea.
 
-Introspective explorations of the characteristics of inner speech have led to different views on the relative importance of its auditory and articulatory components, and on the involvement of motor processes. It has been suggested successively that speech motor representations would be purely motoric [@Stricker1880], that they would be expressed dominantly in an auditory format [@Egger1881], or that they would consist in a mix of these in the overall population [@Ballet1886]. The intuitive distinction between auditory and motor phenomena is referred to in contemporary research by the terms of *inner ear* and *inner voice*, in line with Baddeley's classic model of working memory [e.g.,@baddeley_exploring_1984; see also @buchsbaum_role_2013]. Baddeley's model relies on a partnership between an *inner ear* (i.e., storage) and an *inner voice* (i.e., subvocal rehearsal), which can be highlighted by selectively blocking either one of these components [e.g.,@smith_role_1995].
+Introspective explorations of the characteristics of inner speech have led to different views on the relative importance of its auditory and articulatory components, and on the involvement of motor processes. It has been suggested successively that speech motor representations would be purely motoric [@stricker_studien_1880], that they would be expressed dominantly in an auditory format [@egger_parole_1881], or that they would consist in a mix of these in the overall population [@ballet_langage_1886]. The intuitive distinction between auditory and motor phenomena is referred to in contemporary research by the terms of *inner ear* and *inner voice*, in line with Baddeley's classic model of working memory [e.g.,@baddeley_exploring_1984; see also @buchsbaum_role_2013]. Baddeley's model relies on a partnership between an *inner ear* (i.e., storage) and an *inner voice* (i.e., subvocal rehearsal), which can be highlighted by selectively blocking either one of these components [e.g.,@smith_role_1995].
 
 <!--
 For @Stricker1880, "speech representations are motor representations", while @Egger1881 believed that auditory representations are dominant in inner speech and that motor representations are not always present. However, as noted by @Ballet1886, these contradictory hypotheses might stem from an over-generalization of their own introspective findings, the former discovering motor feelings and the latter auditory images [@Ballet1886]. In the same vein, @Paulhan1886 claimed that inner speech involves both auditory and motor images, defining motor images as the sensations in the speech organs (larynx, tongue, lips) that sometimes accompany inner speech. Therefore, Paulhan’s notion of *motor images* are in fact related to somatosensory representations rather than to the involvement of actual speech movements (as claimed by Stricker). It remains, however, that a distinction was introduced by 19th century authors between sensory and motor phenomena in inner speech, with sensory phenomena including auditory as well as articulatory (or somatosensory) percepts.
@@ -86,14 +86,7 @@ In order to evaluate trait rumination, participants completed the short version 
 
 
 
-\begin{figure}[H]
-
-{\centering \includegraphics[width=1\linewidth]{06-chap6_files/figure-latex/diagram-1} 
-
-}
-
-\caption{Timeline of the experiment, from top to bottom.}(\#fig:diagram)
-\end{figure}
+![(\#fig:diagram)Timeline of the experiment, from top to bottom.](06-chap6_files/figure-docx/diagram-1.pdf)
 
 ### Data analysis
 
@@ -101,9 +94,9 @@ Statistical analyses were conducted using R version 3.4.3 [@R-base], and are rep
 
 #### Rumination induction
 
-We centered and standardised each predictor in order to facilitate the interpretation of parameters. Data were then analysed using *Induction* (2 modalities, before and after induction, contrast-coded) as a within-subject categorical predictor and *RUM* as a dependent variable in a Bayesian multilevel linear model (BMLM), using the `brms` package [@R-brms_a]^[An introduction to Bayesian statistics is outside the scope of this paper. However, the interested reader is referred to @nalborczyk_introduction_2019 for an introduction to Bayesian multilevel modelling using the `brms` package.]. This model was compared with more complex models including effects of control variables, such as baseline affect state (*PANAS* scores) or the vividness of the memory chosen during the induction (*Vividness* score).
+We centered and standardised each predictor in order to facilitate the interpretation of parameters. Data were then analysed using *Induction* (2 modalities, before and after induction, contrast-coded) as a within-subject categorical predictor and *RUM* as a dependent variable in a Bayesian multilevel linear model (BMLM), using the `brms` package [@R-brms]^[An introduction to Bayesian statistics is outside the scope of this paper. However, the interested reader is referred to @nalborczyk_introduction_2019 for an introduction to Bayesian multilevel modelling using the `brms` package.]. This model was compared with more complex models including effects of control variables, such as baseline affect state (*PANAS* scores) or the vividness of the memory chosen during the induction (*Vividness* score).
 
-Models were compared using the Widely Applicable Information Criterion [WAIC; @watanabe_asymptotic_2010] --a generalisation of the Akaike information criterion [@akaike_new_1974]-- and evidence ratios [@burnham_model_2002;@burnham_aic_2011;@hegyi_using_2011]. The WAIC provides a relative measure of predictive accuracy of the models (the WAIC is an approximation of the out-of-sample deviance of a model) and balances underfitting and overfitting by sanctioning models for their number of parameters. Evidence ratios (ERs) were computed as the ratios of weights: $ER_{ij} = \dfrac{w_{i}}{w_{j}}$, where $w_{i}$ and $w_{j}$ are the Akaike weights of models $i$ and $j$, respectively. These weights can be interpreted as the probability of the model being the best model in terms of out-of-sample prediction [@burnham_model_2002]. Whereas the use of WAIC is appropriate for model comparison and selection, it tells us nothing about the absolute fit of the model. To estimate this fit, we computed the Bayesian $R^2$ for MLMs using the `bayes_R2()` method in the brms package [@R-brms_a].
+Models were compared using the Widely Applicable Information Criterion [WAIC; @watanabe_asymptotic_2010] --a generalisation of the Akaike information criterion [@akaike_new_1974]-- and evidence ratios [@burnham_model_2002;@burnham_aic_2011;@hegyi_using_2011]. The WAIC provides a relative measure of predictive accuracy of the models (the WAIC is an approximation of the out-of-sample deviance of a model) and balances underfitting and overfitting by sanctioning models for their number of parameters. Evidence ratios (ERs) were computed as the ratios of weights: $ER_{ij} = \dfrac{w_{i}}{w_{j}}$, where $w_{i}$ and $w_{j}$ are the Akaike weights of models $i$ and $j$, respectively. These weights can be interpreted as the probability of the model being the best model in terms of out-of-sample prediction [@burnham_model_2002]. Whereas the use of WAIC is appropriate for model comparison and selection, it tells us nothing about the absolute fit of the model. To estimate this fit, we computed the Bayesian $R^2$ for MLMs using the `bayes_R2()` method in the brms package [@R-brms].
 
 Models were fitted using weakly informative priors (see the [supplementary materials](#suppCh6) for code details). Two Markov Chain Monte-Carlo (MCMC) were ran for each model to approximate the posterior distribution, including each 5.000 iterations and a warmup of 2.000 iterations. Posterior convergence was assessed examining trace plots as well as the Gelman-Rubin statistic $\hat{R}$. Constant effect estimates were summarised via their posterior mean and 95% credible interval (CrI), where a credible interval can be considered as the Bayesian analogue of a classical confidence interval. When applicable, we also report Bayes factors (BFs), computed using the Savage-Dickey method, which consists in taking the ratio of the posterior density at the point of interest divided by the prior density at that point. These BFs can be interpreted as an updating factor, from prior knowledge (what we knew before seeing the data) to posterior knowledge (what we know after seeing the data).
 
@@ -121,94 +114,70 @@ The results section follows the data analysis workflow. More precisely, for each
 
 In order to prevent multicollinearity, we estimated the correlation between each pair of continuous predictors. Figure \@ref(fig:correxp1) displays these correlations along with the marginal distribution of each variable. The absence of strong correlations ($r > 0.8$) between any of these variables suggests that they can each be included as control variables in the following statistical models. Summary statistics (mean and standard deviation) for all these variables can be found in Table \@ref(tab:sumstat).
 
-\begin{figure}[H]
-\includegraphics[width=1\linewidth]{06-chap6_files/figure-latex/correxp1-1} \caption{Diagonal: marginal distribution of each variable. Panels above the diagonal: Pearson's correlations between main continuous predictors, along with 95\% CIs. The absolute size of the correlation coefficient is represented by the size of the text (lower coefficients appear as smaller). Panels below the diagonal: scatterplot of each variables pair.}(\#fig:correxp1)
-\end{figure}
+![(\#fig:correxp1)Diagonal: marginal distribution of each variable. Panels above the diagonal: Pearson's correlations between main continuous predictors, along with 95\% CIs. The absolute size of the correlation coefficient is represented by the size of the text (lower coefficients appear as smaller). Panels below the diagonal: scatterplot of each variables pair.](06-chap6_files/figure-docx/correxp1-1.png)
 
 
 
-\begin{lltable}
-\small{
-\begin{longtable}{lcccccc}\noalign{\getlongtablewidth\global\LTcapwidth=\longtablewidth}
-\caption{\label{tab:sumstat}Descriptive statistics (mean and standard deviation) of each recorded variable, for the final sample of participants that were included in the study.}\\
-\toprule
- & \multicolumn{3}{c}{Mouthing} & \multicolumn{3}{c}{Tapping} \\
-\cmidrule(r){2-4} \cmidrule(r){5-7}
-Variables & Baseline & Post-induction & Post-motor & Baseline & Post-induction & Post-motor\\
-\midrule
-RUM & 28.5 (26.49) & 54.66 (25.16) & 45.47 (27.25) & 20.96 (21.82) & 46.77 (25.74) & 43.54 (29.57)\\
-Age & 20.3 (2.65) & - & - & 20.31 (2.53) & - & -\\
-PANASneg & 15.65 (5.67) & - & - & 15.46 (5.08) & - & -\\
-PANASpos & 30.91 (4.48) & - & - & 31.25 (4.4) & - & -\\
-RRSbrooding & 12.2 (2.43) & - & - & 12.06 (2.62) & - & -\\
-RRSreflection & 12.22 (3.22) & - & - & 11.71 (3.26) & - & -\\
-Valence & 23.56 (22.4) & - & - & 37.53 (24.61) & - & -\\
-Verbality & 1.67 (1.18) & - & - & 1.67 (1.26) & - & -\\
-Vividness & 54.17 (28.94) & - & - & 59.78 (24.63) & - & -\\
-\bottomrule
-\end{longtable}
-}
-\end{lltable}
+<caption>(\#tab:sumstat)</caption>
+
+<caption>*Descriptive statistics (mean and standard deviation) of each recorded variable, for the final sample of participants that were included in the study.*</caption>
+
+
+
+Variables          Baseline       Post-induction     Post-motor        Baseline       Post-induction     Post-motor   
+--------------  ---------------  ----------------  ---------------  ---------------  ----------------  ---------------
+RUM              28.5 (26.49)     54.66 (25.16)     45.47 (27.25)    20.96 (21.82)    46.77 (25.74)     43.54 (29.57) 
+Age               20.3 (2.65)           -                 -          20.31 (2.53)           -                 -       
+PANASneg         15.65 (5.67)           -                 -          15.46 (5.08)           -                 -       
+PANASpos         30.91 (4.48)           -                 -           31.25 (4.4)           -                 -       
+RRSbrooding       12.2 (2.43)           -                 -          12.06 (2.62)           -                 -       
+RRSreflection    12.22 (3.22)           -                 -          11.71 (3.26)           -                 -       
+Valence          23.56 (22.4)           -                 -          37.53 (24.61)          -                 -       
+Verbality         1.67 (1.18)           -                 -           1.67 (1.26)           -                 -       
+Vividness        54.17 (28.94)          -                 -          59.78 (24.63)          -                 -       
 
 ### Rumination induction
 
 
 
-To examine the efficiency of the induction procedure (i.e., the effect of *Induction*) while controlling for the other variables (i.e., *Vividness*, *RRSbrooding*, *RRSreflection*, *PANASpos*, and *PANASneg*), we then compared the parsimony of models containing main constant effects and a varying intercept for *Participant*. Model comparison showed that the best model the model with the lowest WAIC) was the model including *Induction*, *PANASpos*, *PANASneg*, *RRSbooding*, and an interaction term between *Induction* and *Vividness* as predictors (see Table \@ref(tab:compexp1)). Fit of the best model was moderate ($R^2$ = 0.668, 95% CrI [0.58, 0.736]).
+To examine the efficiency of the induction procedure (i.e., the effect of *Induction*) while controlling for the other variables (i.e., *Vividness*, *RRSbrooding*, *RRSreflection*, *PANASpos*, and *PANASneg*), we then compared the parsimony of models containing main constant effects and a varying intercept for *Participant*. Model comparison showed that the best model the model with the lowest WAIC) was the model including *Induction*, *PANASpos*, *PANASneg*, *RRSbooding*, and an interaction term between *Induction* and *Vividness* as predictors (see Table \@ref(tab:compexp1)). Fit of the best model was moderate ($R^2$ = 0.667, 95% CrI [0.572, 0.737]).
 
-\begin{lltable}
-\begin{TableNotes}[para]
-\textit{Note.} $pWAIC$ is the number of (effective) parameters in the model. $Int$ = Intercept, $Ind$ = Induction, $Viv$ = Vividness, $RRSbro$ = RRSbrooding, $RRSref$ = RRSreflection. All models include a varying intercept for Participant.
-\end{TableNotes}
-\small{
-\begin{longtable}{lcccc}\noalign{\getlongtablewidth\global\LTcapwidth=\longtablewidth}
-\caption{\label{tab:compexp1}Comparison of models, ordered by WAIC relative to the best model (i.e., the model with the lowest WAIC).}\\
-\toprule
- & \multicolumn{1}{c}{$WAIC$} & \multicolumn{1}{c}{$pWAIC$} & \multicolumn{1}{c}{$\Delta_{WAIC}$} & \multicolumn{1}{c}{$Weight$}\\
-\midrule
-$Int+Ind+PANASpos+PANASneg+Ind:Viv+RRSbro$ & 1856.57 & 61.23 & 0.00 & 0.344\\
-$Int+Ind+PANASpos+PANASneg+Ind:Viv+RRSbro+RRSref$ & 1856.64 & 61.38 & 0.07 & 0.332\\
-$Int+Ind+PANASpos+PANASneg+Ind:Viv+RRSref$ & 1857.23 & 61.48 & 0.66 & 0.247\\
-$Int+Ind+PANASneg+Ind:Viv$ & 1861.28 & 63.57 & 4.71 & 0.033\\
-$Int+Ind+PANASpos+Ind:Viv$ & 1861.72 & 64.22 & 5.15 & 0.026\\
-$Int+Ind+PANASneg$ & 1864.38 & 66.65 & 7.82 & 0.007\\
-$Int+Ind+PANASpos$ & 1864.72 & 62.62 & 8.15 & 0.006\\
-$Int+Ind+Ind:Viv$ & 1865.55 & 63.05 & 8.98 & 0.004\\
-$Int+Ind$ & 1866.75 & 64.86 & 10.18 & 0.002\\
-\bottomrule
-\addlinespace
-\insertTableNotes
-\end{longtable}
-}
-\end{lltable}
+<caption>(\#tab:compexp1)</caption>
 
-Constant effect estimates for the best model are reported in Table \@ref(tab:paramexp1). Based on these values, it seems that *Induction* (i.e., the effects of the rumination induction) increased *RUM* scores by approximately 24.79 points on average (\(d_{av} =\) 1.037, 95% CI [0.748, 1.325]). The main positive effect of *PANASneg* and the main negative effects of *PANASpos* indicate, respectively, that negative baseline mood was associated with higher levels of rumination while positive baseline mood was associated with lower levels of self-reported rumination.
+<caption>*Comparison of models, ordered by WAIC relative to the best model (i.e., the model with the lowest WAIC).*</caption>
 
-\begin{table}[H]
-\begin{center}
-\begin{threeparttable}
-\caption{\label{tab:paramexp1}Coefficient estimates, standard errors (SE), 95\% CrI (Lower, Upper), Rhat and Bayes factor (BF10) for the best model.}
-\small{
-\begin{tabular}{lcccccc}
-\toprule
-Term & \multicolumn{1}{c}{Estimate} & \multicolumn{1}{c}{SE} & \multicolumn{1}{c}{Lower} & \multicolumn{1}{c}{Upper} & \multicolumn{1}{c}{Rhat} & \multicolumn{1}{c}{BF10}\\
-\midrule
-Intercept & 37.787 & 1.928 & 33.985 & 41.575 & 1.00 & 1.293*10\textasciicircum{}16\\
-Induction & 24.796 & 2.157 & 20.422 & 28.887 & 1.00 & -6.637*10\textasciicircum{}19\\
-PANASpos & -6.612 & 1.928 & -10.358 & -2.887 & 1.00 & 48.97\\
-PANASneg & 6.781 & 1.937 & 3.024 & 10.686 & 1.00 & 48.16\\
-RRSbrooding & 2.689 & 1.988 & -1.545 & 6.391 & 1.00 & 0.467\\
-Induction:Vividness & 4.072 & 2.140 & -0.255 & 8.362 & 1.00 & 1.256\\
-\bottomrule
-\addlinespace
-\end{tabular}
-}
-\begin{tablenotes}[para]
-\textit{Note.} As all predictors were centered to the mean for analysis, these coefficients approximate coefficients from simpler models.
-\end{tablenotes}
-\end{threeparttable}
-\end{center}
-\end{table}
+                                                     $WAIC$     $pWAIC$    $\Delta_{WAIC}$    $Weight$ 
+--------------------------------------------------  ---------  ---------  -----------------  ----------
+$Int+Ind+PANASpos+PANASneg+Ind:Viv+RRSbro$           1857.24     61.37          0.00           0.368   
+$Int+Ind+PANASpos+PANASneg+Ind:Viv+RRSbro+RRSref$    1857.69     61.25          0.45           0.294   
+$Int+Ind+PANASpos+PANASneg+Ind:Viv+RRSref$           1858.51     61.78          1.27           0.195   
+$Int+Ind+PANASneg+Ind:Viv$                           1860.84     63.83          3.61           0.061   
+$Int+Ind+PANASpos+Ind:Viv$                           1861.13     64.10          3.89           0.053   
+$Int+Ind+PANASneg$                                   1864.12     66.30          6.89           0.012   
+$Int+Ind+PANASpos$                                   1864.40     62.15          7.17           0.010   
+$Int+Ind+Ind:Viv$                                    1865.41     63.28          8.17           0.006   
+$Int+Ind$                                            1867.26     65.15          10.02          0.002   
+
+<center>*Note.* $pWAIC$ is the number of (effective) parameters in the model. $Int$ = Intercept, $Ind$ = Induction, $Viv$ = Vividness, $RRSbro$ = RRSbrooding, $RRSref$ = RRSreflection. All models include a varying intercept for Participant.</center>
+
+Constant effect estimates for the best model are reported in Table \@ref(tab:paramexp1). Based on these values, it seems that *Induction* (i.e., the effects of the rumination induction) increased *RUM* scores by approximately 24.77 points on average (\(d_{av} =\) 1.037, 95% CI [0.748, 1.325]). The main positive effect of *PANASneg* and the main negative effects of *PANASpos* indicate, respectively, that negative baseline mood was associated with higher levels of rumination while positive baseline mood was associated with lower levels of self-reported rumination.
+
+<caption>(\#tab:paramexp1)</caption>
+
+<caption>*Coefficient estimates, standard errors (SE), 95\% CrI (Lower, Upper), Rhat and Bayes factor (BF10) for the best model.*</caption>
+
+
+
+Term                   Estimate     SE       Lower     Upper     Rhat                BF10             
+--------------------  ----------  -------  ---------  --------  ------  ------------------------------
+Intercept               37.781     1.891    34.060     41.393    1.00    1.071*10\textasciicircum{}16 
+Induction               24.772     2.165    20.322     29.044    1.00    9.02*10\textasciicircum{}16  
+PANASpos                -6.529     1.844    -10.198    -2.801    1.00               198.9             
+PANASneg                6.809      1.941     3.036     10.754    1.00               47.67             
+RRSbrooding             2.716      2.029    -1.208     6.614     1.00               0.463             
+Induction:Vividness     4.069      2.081     0.065     8.444     1.00               1.322             
+
+<center>*Note.* As all predictors were centered to the mean for analysis, these coefficients approximate coefficients from simpler models.</center>
 
 Higher scores on *Vividness* were associated with higher increase in self-reported rumination after induction, as revealed by the positive coefficient of the interaction term. This suggests that participants who recalled a more vivid negative memory tended to show a higher increase in rumination after the induction procedure than participants with a less vivid memory.
 
@@ -216,83 +185,62 @@ Higher scores on *Vividness* were associated with higher increase in self-report
 
 
 
-We then examined the effect of the two motor tasks (articulatory suppression and finger-tapping) on *RUM* while controlling for other variables (i.e., *Vividness*, *RRSbrooding*, *RRSreflection*, *Verbality*, *PANASpos*, and *PANASneg*). Given the group differences on *RUM* score at baseline (i.e., after training), we also included this score as a control variable in our models, as the *RUMb* variable. Based on our hypotheses, we expected that the model comparison would reveal a three-way interaction between *Session*, *Condition* and *Verbality*. However, the best model identified by the WAIC model comparison did not include this interaction as a constant effect. Absolute fit of this model was moderate ($R^2$ = 0.654, 95% CrI [0.558, 0.724]).
+We then examined the effect of the two motor tasks (articulatory suppression and finger-tapping) on *RUM* while controlling for other variables (i.e., *Vividness*, *RRSbrooding*, *RRSreflection*, *Verbality*, *PANASpos*, and *PANASneg*). Given the group differences on *RUM* score at baseline (i.e., after training), we also included this score as a control variable in our models, as the *RUMb* variable. Based on our hypotheses, we expected that the model comparison would reveal a three-way interaction between *Session*, *Condition* and *Verbality*. However, the best model identified by the WAIC model comparison did not include this interaction as a constant effect. Absolute fit of this model was moderate ($R^2$ = 0.652, 95% CrI [0.556, 0.723]).
 
-\begin{lltable}
-\begin{TableNotes}[para]
-\textit{Note.} $K$ is the number of estimated parameters in the model. $Int$ = Intercept, $Cond$ = Condition, $RUMb$ = RUM baseline score, $Verb$ = Verbality, $RRSb$ = RRSbrooding, $RRSr$ = RRSreflection. All models include a constant intercept and a varying intercept for Participant.
-\end{TableNotes}
-\small{
-\begin{longtable}{lcccc}\noalign{\getlongtablewidth\global\LTcapwidth=\longtablewidth}
-\caption{\label{tab:compexp2}Comparison of models, ordered by WAIC relative to the best model (i.e., the model with the lowest WAIC).}\\
-\toprule
- & \multicolumn{1}{c}{$WAIC$} & \multicolumn{1}{c}{$pWAIC$} & \multicolumn{1}{c}{$\Delta_{WAIC}$} & \multicolumn{1}{c}{$Weight$}\\
-\midrule
-$Session+Cond+Session:Cond+RUMb+PANASn+RRSb+RRSr$ & 1857.83 & 64.34 & 0.00 & 0.492\\
-$Session+Cond+RUMb+PANASn+RRSb+RRSr$ & 1859.47 & 63.34 & 1.64 & 0.217\\
-$Session+Cond+Session:Cond+Session:Cond:Verb+RUMb+PANASp+RRSb+RRSr$ & 1860.58 & 64.73 & 2.75 & 0.125\\
-$Session+Cond+Session:Cond+Session:Cond:Verb+RUMb+PANASn+RRSb+RRSr$ & 1860.98 & 64.74 & 3.15 & 0.102\\
-$Session+Cond+Session:Cond$ & 1863.85 & 69.13 & 6.01 & 0.024\\
-$Session+Cond$ & 1863.97 & 68.60 & 6.14 & 0.023\\
-$Session$ & 1865.88 & 68.99 & 8.05 & 0.009\\
-$Session+Cond+Session:Cond:Verb$ & 1866.08 & 69.28 & 8.25 & 0.008\\
-$Null\ model$ & 1878.41 & 67.31 & 20.58 & 0.000\\
-\bottomrule
-\addlinespace
-\insertTableNotes
-\end{longtable}
-}
-\end{lltable}
+<caption>(\#tab:compexp2)</caption>
 
-Parameter values of the best model for the second part of the experiment are reported in Table \@ref(tab:paramexp2). Based on these values, it seems that self-reported rumination decreased after both motor tasks (the coefficient for *Session* is negative), but this decrease was substantially larger in the *Mouthing* condition (\(d_{av} =\) -0.351, 95% CI [-0.735, 0.034]) than in the *Tapping* condition (\(d_{av} =\) -0.117, 95% CI [-0.506, 0.273]), as can be read from the coefficient of the interaction term between *Session* and *Condition* (*Est* = 4.975, *SE* = 4.131, *95% CrI* [-2.771, 13.43]). However, the large uncertainty associated with this result (as expressed by the width of the confidence interval) warrants a careful interpretation of this result, that should be considered as suggestive evidence, rather than conclusive evidence.
+<caption>*Comparison of models, ordered by WAIC relative to the best model (i.e., the model with the lowest WAIC).*</caption>
 
-However, the Bayesian framework provides tools that permit richer inference. First, we can compare the relative weight of the best model (the model with the lowest WAIC) with a similar model without the interaction term (the second model in Table \@ref(tab:compexp2)). This reveals that the model including an interaction term between *Session* and *Condition* is 2.266519 more *credible* than the model without the interaction term, which can be considered as weak but meaningful evidence [@burnham_model_2002].
+                                                                       $WAIC$     $pWAIC$    $\Delta_{WAIC}$    $Weight$ 
+--------------------------------------------------------------------  ---------  ---------  -----------------  ----------
+$Session+Cond+Session:Cond+RUMb+PANASn+RRSb+RRSr$                      1858.43     64.19          0.00           0.355   
+$Session+Cond+RUMb+PANASn+RRSb+RRSr$                                   1858.74     64.30          0.31           0.304   
+$Session+Cond+Session:Cond+Session:Cond:Verb+RUMb+PANASp+RRSb+RRSr$    1859.91     63.51          1.49           0.169   
+$Session+Cond+Session:Cond+Session:Cond:Verb+RUMb+PANASn+RRSb+RRSr$    1860.37     64.22          1.94           0.134   
+$Session+Cond+Session:Cond$                                            1864.26     69.62          5.83           0.019   
+$Session+Cond$                                                         1866.17     68.93          7.74           0.007   
+$Session$                                                              1866.37     68.94          7.94           0.007   
+$Session+Cond+Session:Cond:Verb$                                       1867.18     70.12          8.75           0.004   
+$Null\ model$                                                          1877.59     67.42          19.16          0.000   
 
-Second, we can look at the BF for this particular parameter. As can be seen from Table \@ref(tab:paramexp2), the BF for the interaction term is equal to 1.19, which is evidence for neither the presence or the absence of effect. However, this BF is computed using the Savage-Dickey method^[This method simply consists in taking the ratio of the posterior density at the point of interest divided by the prior density at that point [for a practical introduction, see @wagenmakers_bayesian_2010].] and as such is extremely sensitive to the prior choice. Thus, other priors (for instance a prior that is more peaked on zero) would provide stronger evidence for the interaction effect.
+<center>*Note.* $K$ is the number of estimated parameters in the model. $Int$ = Intercept, $Cond$ = Condition, $RUMb$ = RUM baseline score, $Verb$ = Verbality, $RRSb$ = RRSbrooding, $RRSr$ = RRSreflection. All models include a constant intercept and a varying intercept for Participant.</center>
+
+Parameter values of the best model for the second part of the experiment are reported in Table \@ref(tab:paramexp2). Based on these values, it seems that self-reported rumination decreased after both motor tasks (the coefficient for *Session* is negative), but this decrease was substantially larger in the *Mouthing* condition (\(d_{av} =\) -0.351, 95% CI [-0.735, 0.034]) than in the *Tapping* condition (\(d_{av} =\) -0.117, 95% CI [-0.506, 0.273]), as can be read from the coefficient of the interaction term between *Session* and *Condition* (*Est* = 4.985, *SE* = 4.026, *95% CrI* [-2.702, 13.441]). However, the large uncertainty associated with this result (as expressed by the width of the confidence interval) warrants a careful interpretation of this result, that should be considered as suggestive evidence, rather than conclusive evidence.
+
+However, the Bayesian framework provides tools that permit richer inference. First, we can compare the relative weight of the best model (the model with the lowest WAIC) with a similar model without the interaction term (the second model in Table \@ref(tab:compexp2)). This reveals that the model including an interaction term between *Session* and *Condition* is 1.1691314 more *credible* than the model without the interaction term, which can be considered as weak but meaningful evidence [@burnham_model_2002].
+
+Second, we can look at the BF for this particular parameter. As can be seen from Table \@ref(tab:paramexp2), the BF for the interaction term is equal to 1.31, which is evidence for neither the presence or the absence of effect. However, this BF is computed using the Savage-Dickey method^[This method simply consists in taking the ratio of the posterior density at the point of interest divided by the prior density at that point [for a practical introduction, see @wagenmakers_bayesian_2010].] and as such is extremely sensitive to the prior choice. Thus, other priors (for instance a prior that is more peaked on zero) would provide stronger evidence for the interaction effect.
 
 
 
-\begin{table}[H]
-\begin{center}
-\begin{threeparttable}
-\caption{\label{tab:paramexp2}Coefficient estimates, standard errors (SE), 95\% CrI (Lower, Upper), Rhat and Bayes factor (BF10) for the best model.}
-\small{
-\begin{tabular}{lcccccc}
-\toprule
-Term & \multicolumn{1}{c}{Estimate} & \multicolumn{1}{c}{SE} & \multicolumn{1}{c}{Lower} & \multicolumn{1}{c}{Upper} & \multicolumn{1}{c}{Rhat} & \multicolumn{1}{c}{BF10}\\
-\midrule
-Intercept & 47.554 & 2.000 & 43.712 & 51.590 & 1.000 & 5.169*10\textasciicircum{}16\\
-Session & -5.901 & 2.110 & -10.120 & -1.814 & 1.000 & 10.32\\
-Condition & -0.989 & 3.682 & -8.409 & 6.239 & 1.000 & 0.368\\
-RUMbaseline & 12.854 & 2.287 & 8.718 & 17.372 & 1.001 & -3.695*10\textasciicircum{}17\\
-RRSbrooding & 2.458 & 2.014 & -1.503 & 6.686 & 1.001 & 0.432\\
-RRSreflection & -1.869 & 1.992 & -5.972 & 1.945 & 1.001 & 0.314\\
-PANASneg & 0.517 & 2.239 & -3.930 & 4.890 & 1.001 & 0.227\\
-Session:Condition & 4.975 & 4.131 & -2.771 & 13.430 & 1.000 & 0.837\\
-\bottomrule
-\addlinespace
-\end{tabular}
-}
-\begin{tablenotes}[para]
-\textit{Note.} As all predictors were centered to the mean for analysis, these coefficients approximate coefficients from simpler models.
-\end{tablenotes}
-\end{threeparttable}
-\end{center}
-\end{table}
+<caption>(\#tab:paramexp2)</caption>
 
-The large variation between participants can be appreciated by computing the *intra-class correlation* (ICC), expressed as $\sigma_{intercept}^{2}/(\sigma_{intercept}^{2}+\sigma_{residuals}^{2})$. For the best model, the ICC is equal to 0.524 (95% CrI [0.382, 0.662]), indicating that 52.4% of the variance in the outcome that remains after accounting for the effect of the predictors, is attributable to systematic inter-individual differences.
+<caption>*Coefficient estimates, standard errors (SE), 95\% CrI (Lower, Upper), Rhat and Bayes factor (BF10) for the best model.*</caption>
+
+
+
+Term                 Estimate     SE       Lower     Upper     Rhat                 BF10             
+------------------  ----------  -------  ---------  --------  -------  ------------------------------
+Intercept             47.668     1.865    43.767     51.526    1.000    7.251*10\textasciicircum{}17 
+Session               -5.925     2.229    -10.336    -1.554    1.000               5.002             
+Condition             -1.010     3.774    -8.202     6.474     1.000               0.352             
+RUMbaseline           12.739     2.224     8.177     16.869    1.000    7.191*10\textasciicircum{}16 
+RRSbrooding           2.360      2.080    -1.465     6.597     1.000                0.36             
+RRSreflection         -1.901     2.027    -5.723     2.240     1.000               0.285             
+PANASneg              0.567      2.198    -3.854     4.998     1.000               0.208             
+Session:Condition     4.985      4.026    -2.702     13.441    1.000               0.765             
+
+<center>*Note.* As all predictors were centered to the mean for analysis, these coefficients approximate coefficients from simpler models.</center>
+
+The large variation between participants can be appreciated by computing the *intra-class correlation* (ICC), expressed as $\sigma_{intercept}^{2}/(\sigma_{intercept}^{2}+\sigma_{residuals}^{2})$. For the best model, the ICC is equal to 0.522 (95% CrI [0.38, 0.663]), indicating that 52.2% of the variance in the outcome that remains after accounting for the effect of the predictors, is attributable to systematic inter-individual differences.
 
 Figure \@ref(fig:plotexp1) shows the evolution of the mean *RUM* scores all through the experiment according to each *Session* (Baseline, Post-induction, Post-motor) and *Condition* (Mouthing, Tapping). This figure reveals important inter-individual variability, in all conditions. After the rumination induction, *RUM* score increased in both groups, and decreased after the motor task, with a stronger decrease in the *Mouthing* condition.
 
-\begin{figure}[H]
-\includegraphics[width=1\linewidth]{06-chap6_files/figure-latex/plotexp1-1} \caption{Mean RUM score by Session and Condition, along with violin plots and individual data. Error bars represent 95\% CIs.}(\#fig:plotexp1)
-\end{figure}
+![(\#fig:plotexp1)Mean RUM score by Session and Condition, along with violin plots and individual data. Error bars represent 95\% CIs.](06-chap6_files/figure-docx/plotexp1-1.png)
 
 Figure \@ref(fig:plotverbal) shows the effects of *Verbality* on the relative change (i.e., after - before) in self-reported rumination after both motor activities (i.e., *Mouthing* and *Tapping*). As *Verbality* was centered before analysis, its score cannot be interpreted in absolute terms. However, a high score on this index indicates more verbal than non-verbal (e.g., visual images, non-speech sounds) thoughts, whereas a low score indicates more non-verbal than verbal thoughts. Contrary to our predictions but consistent with the model comparison, this figure depicts a similar relationship between *Verbality* and the change in *RUM* score (between before and after the motor task), according to the Condition.
 
-\begin{figure}[H]
-\includegraphics[width=1\linewidth]{06-chap6_files/figure-latex/plotverbal-1} \caption{Mean RUM relative change after motor activity, as a function of the degree of Verbality, in the mouthing (the green dots and regression line) and finger tapping (the orange dots and regression line) conditions.}(\#fig:plotverbal)
-\end{figure}
+![(\#fig:plotverbal)Mean RUM relative change after motor activity, as a function of the degree of Verbality, in the mouthing (the green dots and regression line) and finger tapping (the orange dots and regression line) conditions.](06-chap6_files/figure-docx/plotverbal-1.png)
 
 ## Discussion
 
@@ -340,7 +288,7 @@ A lot of useful packages have been used for the writing of this paper, among whi
 
 This project was funded by the ANR project INNERSPEECH (grant number ANR-13-BSH2-0003-01). The first author of the manuscript is funded by a doctoral fellowship from Univ. Grenoble Alpes.
 
-## Data Accessibility Statement {suppCh6}
+## Data Accessibility Statement {#suppCh6}
 
 Pre-registered protocol, preprint, data, as well as reproducible code and figures are available at: [https://osf.io/3bh67/](http://osf.io/3bh67).
 
@@ -371,39 +319,30 @@ Raw data from EyeLink\textregistered\ includes gaze on screen spatial coordinate
 
 ### Data analysis
 
-Data were analysed using *Condition* (4 modalities) as a within-subject predictor and the RT as a dependent variable in a generalised MLM with a lognormal distribution for the response. This model included a varying intercept for both *participant* and *item* and was fitted using weakly informative priors and the `brms` package [@R-brms_a].
+Data were analysed using *Condition* (4 modalities) as a within-subject predictor and the RT as a dependent variable in a generalised MLM with a lognormal distribution for the response. This model included a varying intercept for both *participant* and *item* and was fitted using weakly informative priors and the `brms` package [@R-brms].
 
 ### Results
 
 
 
-\begin{table}[H]
-\begin{center}
-\begin{threeparttable}
-\caption{\label{tab:RTestimates}Mean and 95\% CrI of the posterior distribution on the difference between each pair of condition.}
-\small{
-\begin{tabular}{lccc}
-\toprule
-Contrast & \multicolumn{1}{c}{Estimate} & \multicolumn{1}{c}{Lower} & \multicolumn{1}{c}{Upper}\\
-\midrule
-Mouth - Foot & 15.867 & -15.665 & 48.642\\
-Mouth - Finger & -10.922 & -43.482 & 20.050\\
-Foot - Finger & -26.789 & -60.563 & 3.511\\
-Mouth - Control & 50.052 & 19.205 & 81.798\\
-Foot - Control & 34.185 & 2.829 & 64.978\\
-Finger - Control & 60.974 & 28.195 & 90.782\\
-\bottomrule
-\end{tabular}
-}
-\end{threeparttable}
-\end{center}
-\end{table}
+<caption>(\#tab:RTestimates)</caption>
 
-Results of the MLM are reported in Table \@ref(tab:RTestimates) and Figure \@ref(fig:eyetrack), that report the estimated average RT (and it 95% CrI) by condition and for the difference between each pair of conditions. This analysis revealed that all dual tasks induced longer RTs in comparison with the control condition, with the finger-tapping condition inducing the greatest discrepancy as compared to the control condition ($\beta$ = 60.974, 95% CrI [28.195, 90.782]), followed by the mouthing condition ($\beta$ = 50.052, 95% CrI [19.205, 81.798]) and the foot-tapping condition ($\beta$ = 34.185, 95% CrI [2.829, 64.978]). Pairwise comparisons between dual-task conditions revealed that the difference between the mouthing and the finger-tapping conditions was in the opposite direction and slightly smaller ($\beta$ = -10.922, 95% CrI [-43.482, 20.05]) than the difference between the mouthing and the foot-tapping conditions ($\beta$ = 15.867, 95% CrI [-15.665, 48.642]).
+<caption>*Mean and 95\% CrI of the posterior distribution on the difference between each pair of condition.*</caption>
 
-\begin{figure}[H]
-\includegraphics[width=1\linewidth]{06-chap6_files/figure-latex/eyetrack-1} \caption{Left panel: average RT by condition predicted by the model along with 95\% CrIs. Underlying dots represent the average raw RT by participant. Right panel: posterior distribution of the difference between each pair of conditions, along with its mean and 90\% and 95\% CrI.}(\#fig:eyetrack)
-\end{figure}
+
+
+Contrast            Estimate     Lower     Upper  
+-----------------  ----------  ---------  --------
+Mouth - Foot         15.712     -15.007    47.270 
+Mouth - Finger      -10.976     -42.876    20.582 
+Foot - Finger       -26.688     -58.537    6.264  
+Mouth - Control      50.271     19.238     82.124 
+Foot - Control       34.559      3.762     65.861 
+Finger - Control     61.247     30.333     93.142 
+
+Results of the MLM are reported in Table \@ref(tab:RTestimates) and Figure \@ref(fig:eyetrack), that report the estimated average RT (and it 95% CrI) by condition and for the difference between each pair of conditions. This analysis revealed that all dual tasks induced longer RTs in comparison with the control condition, with the finger-tapping condition inducing the greatest discrepancy as compared to the control condition ($\beta$ = 61.247, 95% CrI [30.333, 93.142]), followed by the mouthing condition ($\beta$ = 50.271, 95% CrI [19.238, 82.124]) and the foot-tapping condition ($\beta$ = 34.559, 95% CrI [3.762, 65.861]). Pairwise comparisons between dual-task conditions revealed that the difference between the mouthing and the finger-tapping conditions was in the opposite direction and slightly smaller ($\beta$ = -10.976, 95% CrI [-42.876, 20.582]) than the difference between the mouthing and the foot-tapping conditions ($\beta$ = 15.712, 95% CrI [-15.007, 47.27]).
+
+![(\#fig:eyetrack)Left panel: average RT by condition predicted by the model along with 95\% CrIs. Underlying dots represent the average raw RT by participant. Right panel: posterior distribution of the difference between each pair of conditions, along with its mean and 90\% and 95\% CrI.](06-chap6_files/figure-docx/eyetrack-1.png)
 
 ### Discussion
 
