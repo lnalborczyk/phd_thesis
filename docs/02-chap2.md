@@ -41,7 +41,7 @@ The vocal folds in the larynx vibrate to produce fluctuations in air pressure (s
 
 }
 
-\caption{Human respiratory and phonatory system. Figure from the OpenStax \textit{Anatomy and Physiology} Textbook. Download for free at http://cnx.org/contents/14fb4ad7-39a1-4eee-ab6e-3ef2482e3e22@15.1.}(\#fig:vocal)
+\caption{Human respiratory and phonatory system. Figure from the OpenStax \textit{Anatomy and Physiology} Textbook. Download for free at \url{https://cnx.org/contents/14fb4ad7-39a1-4eee-ab6e-3ef2482e3e22@15.1}.}(\#fig:vocal)
 \end{figure}
 
 The characteristics of the vocal folds (e.g., their length or thickness) influence what is known as the *fundamental frequency* (or F0) of the speech signal, which in turn determines the perceived pitch of the voice. The speech signal can be further decomposed in *resonant frequencies* or *formants*. Interestingly, we can relate changes in the state of the articulatory system with changes in the formant (and especially the F1-F2) space (see Figure \@ref(fig:ipa)). Indeed, the frequency of the first formant (F1) is mostly determined by the height of the tongue body whereas the frequency of the second formant (F2) is mostly determined by the frontness/backness of the tongue body. For instance, when producing the /u/ vowel, the tongue is positioned at the top and in the back of the oral cavity (and the lips are rounded). However, when producing the /a/ vowel, the tongue is positioned at the bottom of the oral activity (and the lips are widely opened).
@@ -103,7 +103,7 @@ The contraction of the skeletal muscles is initiated by electrical impulses that
 
 }
 
-\caption{Illustration of a muscle fiber. Figure from the OpenStax \textit{Anatomy and Physiology} Textbook. Download for free at http://cnx.org/contents/14fb4ad7-39a1-4eee-ab6e-3ef2482e3e22@15.1.}(\#fig:muscle)
+\caption{Illustration of a muscle fiber. Figure from the OpenStax \textit{Anatomy and Physiology} Textbook. Download for free at \url{https://cnx.org/contents/14fb4ad7-39a1-4eee-ab6e-3ef2482e3e22@15.1}.}(\#fig:muscle)
 \end{figure}
 
 The muscle fiber is surrounded by a membrane, the *sarcolemma* (see Figure \@ref(fig:muscle)). Under resting conditions, the voltage inside the membrane is around -90mV, relative to the outside. This voltage results from a particular combination of sodium ($\text{Na}^{+}$), potassium ($\text{K}^{+}$), chloride ($\text{Cl}^{-}$), and other anions. At rest, the concentration of $\text{Na}^{+}$ is relatively high outside the membrane and relatively low inside the membrane. The concentration of $\text{K}^{+}$ follows an opposite pattern, with a greater concentration inside the membrane, and a lower concentration outside the membrane.

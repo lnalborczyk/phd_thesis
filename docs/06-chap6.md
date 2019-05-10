@@ -127,12 +127,10 @@ In order to prevent multicollinearity, we estimated the correlation between each
 
 
 
-\begin{table}[H]
-\begin{center}
-\begin{threeparttable}
-\caption{\label{tab:sumstat}Descriptive statistics (mean and standard deviation) of each recorded variable, for the final sample of participants that were included in the study.}
+\begin{lltable}
 \small{
-\begin{tabular}{lcccccc}
+\begin{longtable}{lcccccc}\noalign{\getlongtablewidth\global\LTcapwidth=\longtablewidth}
+\caption{\label{tab:sumstat}Descriptive statistics (mean and standard deviation) of each recorded variable, for the final sample of participants that were included in the study.}\\
 \toprule
  & \multicolumn{3}{c}{Mouthing} & \multicolumn{3}{c}{Tapping} \\
 \cmidrule(r){2-4} \cmidrule(r){5-7}
@@ -148,48 +146,43 @@ Valence & 23.56 (22.4) & - & - & 37.53 (24.61) & - & -\\
 Verbality & 1.67 (1.18) & - & - & 1.67 (1.26) & - & -\\
 Vividness & 54.17 (28.94) & - & - & 59.78 (24.63) & - & -\\
 \bottomrule
-\end{tabular}
+\end{longtable}
 }
-\end{threeparttable}
-\end{center}
-\end{table}
+\end{lltable}
 
 ### Rumination induction
 
 
 
-To examine the efficiency of the induction procedure (i.e., the effect of *Induction*) while controlling for the other variables (i.e., *Vividness*, *RRSbrooding*, *RRSreflection*, *PANASpos*, and *PANASneg*), we then compared the parsimony of models containing main constant effects and a varying intercept for *Participant*. Model comparison showed that the best model the model with the lowest WAIC) was the model including *Induction*, *PANASpos*, *PANASneg*, *RRSbooding*, and an interaction term between *Induction* and *Vividness* as predictors (see Table \@ref(tab:compexp1)). Fit of the best model was moderate ($R^2$ = 0.668, 95% CrI [0.577, 0.736]).
+To examine the efficiency of the induction procedure (i.e., the effect of *Induction*) while controlling for the other variables (i.e., *Vividness*, *RRSbrooding*, *RRSreflection*, *PANASpos*, and *PANASneg*), we then compared the parsimony of models containing main constant effects and a varying intercept for *Participant*. Model comparison showed that the best model the model with the lowest WAIC) was the model including *Induction*, *PANASpos*, *PANASneg*, *RRSbooding*, and an interaction term between *Induction* and *Vividness* as predictors (see Table \@ref(tab:compexp1)). Fit of the best model was moderate ($R^2$ = 0.668, 95% CrI [0.58, 0.736]).
 
-\begin{table}[H]
-\begin{center}
-\begin{threeparttable}
-\caption{\label{tab:compexp1}Comparison of models, ordered by WAIC relative to the best model (i.e., the model with the lowest WAIC).}
+\begin{lltable}
+\begin{TableNotes}[para]
+\textit{Note.} $pWAIC$ is the number of (effective) parameters in the model. $Int$ = Intercept, $Ind$ = Induction, $Viv$ = Vividness, $RRSbro$ = RRSbrooding, $RRSref$ = RRSreflection. All models include a varying intercept for Participant.
+\end{TableNotes}
 \small{
-\begin{tabular}{lcccc}
+\begin{longtable}{lcccc}\noalign{\getlongtablewidth\global\LTcapwidth=\longtablewidth}
+\caption{\label{tab:compexp1}Comparison of models, ordered by WAIC relative to the best model (i.e., the model with the lowest WAIC).}\\
 \toprule
  & \multicolumn{1}{c}{$WAIC$} & \multicolumn{1}{c}{$pWAIC$} & \multicolumn{1}{c}{$\Delta_{WAIC}$} & \multicolumn{1}{c}{$Weight$}\\
 \midrule
-$Int+Ind+PANASpos+PANASneg+Ind:Viv+RRSbro$ & 1856.45 & 61.15 & 0.00 & 0.520\\
-$Int+Ind+PANASpos+PANASneg+Ind:Viv+RRSbro+RRSref$ & 1858.33 & 61.56 & 1.89 & 0.203\\
-$Int+Ind+PANASpos+PANASneg+Ind:Viv+RRSref$ & 1859.09 & 61.55 & 2.64 & 0.139\\
-$Int+Ind+PANASneg+Ind:Viv$ & 1860.96 & 64.11 & 4.51 & 0.054\\
-$Int+Ind+PANASpos+Ind:Viv$ & 1861.49 & 63.83 & 5.04 & 0.042\\
-$Int+Ind+PANASneg$ & 1863.04 & 62.29 & 6.60 & 0.019\\
-$Int+Ind+PANASpos$ & 1864.00 & 66.14 & 7.56 & 0.012\\
-$Int+Ind+Ind:Viv$ & 1864.35 & 62.91 & 7.91 & 0.010\\
-$Int+Ind$ & 1868.16 & 65.51 & 11.72 & 0.001\\
+$Int+Ind+PANASpos+PANASneg+Ind:Viv+RRSbro$ & 1856.57 & 61.23 & 0.00 & 0.344\\
+$Int+Ind+PANASpos+PANASneg+Ind:Viv+RRSbro+RRSref$ & 1856.64 & 61.38 & 0.07 & 0.332\\
+$Int+Ind+PANASpos+PANASneg+Ind:Viv+RRSref$ & 1857.23 & 61.48 & 0.66 & 0.247\\
+$Int+Ind+PANASneg+Ind:Viv$ & 1861.28 & 63.57 & 4.71 & 0.033\\
+$Int+Ind+PANASpos+Ind:Viv$ & 1861.72 & 64.22 & 5.15 & 0.026\\
+$Int+Ind+PANASneg$ & 1864.38 & 66.65 & 7.82 & 0.007\\
+$Int+Ind+PANASpos$ & 1864.72 & 62.62 & 8.15 & 0.006\\
+$Int+Ind+Ind:Viv$ & 1865.55 & 63.05 & 8.98 & 0.004\\
+$Int+Ind$ & 1866.75 & 64.86 & 10.18 & 0.002\\
 \bottomrule
 \addlinespace
-\end{tabular}
+\insertTableNotes
+\end{longtable}
 }
-\begin{tablenotes}[para]
-\textit{Note.} $pWAIC$ is the number of (effective) parameters in the model. $Int$ = Intercept, $Ind$ = Induction, $Viv$ = Vividness, $RRSbro$ = RRSbrooding, $RRSref$ = RRSreflection. All models include a varying intercept for Participant.
-\end{tablenotes}
-\end{threeparttable}
-\end{center}
-\end{table}
+\end{lltable}
 
-Constant effect estimates for the best model are reported in Table \@ref(tab:paramexp1). Based on these values, it seems that *Induction* (i.e., the effects of the rumination induction) increased *RUM* scores by approximately 24.8 points on average (\(d_{av} =\) 1.037, 95% CI [0.748, 1.325]). The main positive effect of *PANASneg* and the main negative effects of *PANASpos* indicate, respectively, that negative baseline mood was associated with higher levels of rumination while positive baseline mood was associated with lower levels of self-reported rumination.
+Constant effect estimates for the best model are reported in Table \@ref(tab:paramexp1). Based on these values, it seems that *Induction* (i.e., the effects of the rumination induction) increased *RUM* scores by approximately 24.79 points on average (\(d_{av} =\) 1.037, 95% CI [0.748, 1.325]). The main positive effect of *PANASneg* and the main negative effects of *PANASpos* indicate, respectively, that negative baseline mood was associated with higher levels of rumination while positive baseline mood was associated with lower levels of self-reported rumination.
 
 \begin{table}[H]
 \begin{center}
@@ -225,12 +218,13 @@ Higher scores on *Vividness* were associated with higher increase in self-report
 
 We then examined the effect of the two motor tasks (articulatory suppression and finger-tapping) on *RUM* while controlling for other variables (i.e., *Vividness*, *RRSbrooding*, *RRSreflection*, *Verbality*, *PANASpos*, and *PANASneg*). Given the group differences on *RUM* score at baseline (i.e., after training), we also included this score as a control variable in our models, as the *RUMb* variable. Based on our hypotheses, we expected that the model comparison would reveal a three-way interaction between *Session*, *Condition* and *Verbality*. However, the best model identified by the WAIC model comparison did not include this interaction as a constant effect. Absolute fit of this model was moderate ($R^2$ = 0.654, 95% CrI [0.558, 0.724]).
 
-\begin{table}[H]
-\begin{center}
-\begin{threeparttable}
-\caption{\label{tab:compexp2}Comparison of models, ordered by WAIC relative to the best model (i.e., the model with the lowest WAIC).}
+\begin{lltable}
+\begin{TableNotes}[para]
+\textit{Note.} $K$ is the number of estimated parameters in the model. $Int$ = Intercept, $Cond$ = Condition, $RUMb$ = RUM baseline score, $Verb$ = Verbality, $RRSb$ = RRSbrooding, $RRSr$ = RRSreflection. All models include a constant intercept and a varying intercept for Participant.
+\end{TableNotes}
 \small{
-\begin{tabular}{lcccc}
+\begin{longtable}{lcccc}\noalign{\getlongtablewidth\global\LTcapwidth=\longtablewidth}
+\caption{\label{tab:compexp2}Comparison of models, ordered by WAIC relative to the best model (i.e., the model with the lowest WAIC).}\\
 \toprule
  & \multicolumn{1}{c}{$WAIC$} & \multicolumn{1}{c}{$pWAIC$} & \multicolumn{1}{c}{$\Delta_{WAIC}$} & \multicolumn{1}{c}{$Weight$}\\
 \midrule
@@ -245,14 +239,10 @@ $Session+Cond+Session:Cond:Verb$ & 1866.08 & 69.28 & 8.25 & 0.008\\
 $Null\ model$ & 1878.41 & 67.31 & 20.58 & 0.000\\
 \bottomrule
 \addlinespace
-\end{tabular}
+\insertTableNotes
+\end{longtable}
 }
-\begin{tablenotes}[para]
-\textit{Note.} $K$ is the number of estimated parameters in the model. $Int$ = Intercept, $Cond$ = Condition, $RUMb$ = RUM baseline score, $Verb$ = Verbality, $RRSb$ = RRSbrooding, $RRSr$ = RRSreflection. All models include a constant intercept and a varying intercept for Participant.
-\end{tablenotes}
-\end{threeparttable}
-\end{center}
-\end{table}
+\end{lltable}
 
 Parameter values of the best model for the second part of the experiment are reported in Table \@ref(tab:paramexp2). Based on these values, it seems that self-reported rumination decreased after both motor tasks (the coefficient for *Session* is negative), but this decrease was substantially larger in the *Mouthing* condition (\(d_{av} =\) -0.351, 95% CI [-0.735, 0.034]) than in the *Tapping* condition (\(d_{av} =\) -0.117, 95% CI [-0.506, 0.273]), as can be read from the coefficient of the interaction term between *Session* and *Condition* (*Est* = 4.975, *SE* = 4.131, *95% CrI* [-2.771, 13.43]). However, the large uncertainty associated with this result (as expressed by the width of the confidence interval) warrants a careful interpretation of this result, that should be considered as suggestive evidence, rather than conclusive evidence.
 

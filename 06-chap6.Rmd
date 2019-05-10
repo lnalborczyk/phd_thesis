@@ -330,7 +330,11 @@ eff_size_bestmodel_induction <- bayes_R2(bestmodel)
 DF2 <-
     DFclean %>%
     group_by(Session, Condition) %>%
-    summarise(Lower = CI(RUM)[3], Mean = CI(RUM)[2], Upper = CI(RUM)[1]) %>%
+    summarise(
+      Lower = Rmisc::CI(RUM)[3],
+      Mean = Rmisc::CI(RUM)[2],
+      Upper = Rmisc::CI(RUM)[1]
+      ) %>%
     data.frame
 ```
 
@@ -506,7 +510,7 @@ summary_stat3 %>%
     align = c("l", rep("c", 6) ),
     caption = "Descriptive statistics (mean and standard deviation) of each recorded variable, for the final sample of participants that were included in the study.",
     small = TRUE,
-    landscape = FALSE,
+    landscape = TRUE,
     col_spanners = list(`Mouthing` = c(2, 4), `Tapping` = c(5, 7) ),
     escape = FALSE,
     row.names = FALSE,
@@ -540,7 +544,7 @@ apa_table(
     caption = "Comparison of models, ordered by WAIC relative to the best model (i.e., the model with the lowest WAIC).",
     note = "$pWAIC$ is the number of (effective) parameters in the model. $Int$ = Intercept, $Ind$ = Induction, $Viv$ = Vividness, $RRSbro$ = RRSbrooding, $RRSref$ = RRSreflection. All models include a varying intercept for Participant.",
     small = TRUE,
-    landscape = FALSE,
+    landscape = TRUE,
     format.args = list(
         digits = c(2, 2, 2, 3),
         margin = 2,
@@ -837,7 +841,7 @@ apa_table(
     caption = "Comparison of models, ordered by WAIC relative to the best model (i.e., the model with the lowest WAIC).",
     note = "$K$ is the number of estimated parameters in the model. $Int$ = Intercept, $Cond$ = Condition, $RUMb$ = RUM baseline score, $Verb$ = Verbality, $RRSb$ = RRSbrooding, $RRSr$ = RRSreflection. All models include a constant intercept and a varying intercept for Participant.",
     small = TRUE,
-    landscape = FALSE,
+    landscape = TRUE,
         format.args = list(
         digits = c(2, 2, 2, 3),
         margin = 2,
