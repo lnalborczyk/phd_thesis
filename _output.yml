@@ -16,7 +16,7 @@ bookdown::gitbook:
       scroll_highlight: yes
     edit: https://github.com/lnalborczyk/phd_thesis/edit/master/%s
     search: yes
-    download: ["pdf"]
+    #download: ["pdf"]
     highlight: pygments
 
 bookdown::pdf_book:
