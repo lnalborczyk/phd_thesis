@@ -373,7 +373,7 @@ g <- mermaid("
 
     ")
 
-plotly::export(g, file = "mermaid.pdf")
+plotly::export(g, file = "assets/mermaid_ch6.pdf")
 ```
 
 ### Data analysis
