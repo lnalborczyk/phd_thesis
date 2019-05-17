@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.3.22)  16 MAY 2019 10:38
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.3.22)  17 MAY 2019 11:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1890,9 +1890,6 @@ LaTeX Warning: Label `fig:ppcbmod1' multiply defined.
 
 LaTeX Warning: Label `tab:outputbmod3' multiply defined.
 
-
-LaTeX Warning: Label `fig:diagram' multiply defined.
-
 )
 \openout1 = `thesis.aux'.
 
@@ -2175,336 +2172,351 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 Underfull \vbox (badness 4967) has occurred while \output is active []
 
 [13] [14]
-Overfull \hbox (1.19994pt too wide) detected at line 118
+Overfull \hbox (1.19994pt too wide) detected at line 112
  \T1/futs/m/n/12 100
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 119
- \T1/futs/m/n/12 100
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 120
+Overfull \hbox (1.19994pt too wide) detected at line 115
  \T1/futs/m/n/12 101
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 121
+Overfull \hbox (1.19994pt too wide) detected at line 116
+ \T1/futs/m/n/12 102
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 117
+ \T1/futs/m/n/12 102
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 118
  \T1/futs/m/n/12 103
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 124
- \T1/futs/m/n/12 107
+Overfull \hbox (1.19994pt too wide) detected at line 119
+ \T1/futs/m/n/12 105
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 122
+ \T1/futs/m/n/12 109
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 125
+ \T1/futs/m/n/12 113
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 126
+ \T1/futs/m/n/12 117
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 127
- \T1/futs/m/n/12 111
+ \T1/futs/m/n/12 117
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 128
- \T1/futs/m/n/12 115
+Overfull \hbox (2.17195pt too wide) detected at line 128
+ \T1/futs/b/n/12 119
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 129
- \T1/futs/m/n/12 115
+ \T1/futs/m/n/12 119
  []
 
 
-Overfull \hbox (2.17195pt too wide) detected at line 130
- \T1/futs/b/n/12 117
+Overfull \hbox (1.19994pt too wide) detected at line 130
+ \T1/futs/m/n/12 119
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 131
- \T1/futs/m/n/12 117
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 132
- \T1/futs/m/n/12 117
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 133
- \T1/futs/m/n/12 120
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 134
- \T1/futs/m/n/12 120
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 135
- \T1/futs/m/n/12 121
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 139
  \T1/futs/m/n/12 122
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 142
+Overfull \hbox (1.19994pt too wide) detected at line 132
+ \T1/futs/m/n/12 122
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 133
  \T1/futs/m/n/12 123
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 145
+Overfull \hbox (1.19994pt too wide) detected at line 137
  \T1/futs/m/n/12 124
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 146
+Overfull \hbox (1.19994pt too wide) detected at line 140
  \T1/futs/m/n/12 125
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 147
+Overfull \hbox (1.19994pt too wide) detected at line 143
+ \T1/futs/m/n/12 126
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 144
  \T1/futs/m/n/12 127
  []
 
 
+Overfull \hbox (1.19994pt too wide) detected at line 145
+ \T1/futs/m/n/12 129
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 146
+ \T1/futs/m/n/12 132
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 147
+ \T1/futs/m/n/12 138
+ []
+
+
 Overfull \hbox (1.19994pt too wide) detected at line 148
- \T1/futs/m/n/12 130
+ \T1/futs/m/n/12 138
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 149
- \T1/futs/m/n/12 136
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 150
- \T1/futs/m/n/12 136
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 151
- \T1/futs/m/n/12 137
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 154
  \T1/futs/m/n/12 139
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 155
- \T1/futs/m/n/12 140
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 156
- \T1/futs/m/n/12 140
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 157
- \T1/futs/m/n/12 140
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 158
- \T1/futs/m/n/12 140
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 159
- \T1/futs/m/n/12 140
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 160
- \T1/futs/m/n/12 140
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 161
+Overfull \hbox (1.19994pt too wide) detected at line 152
  \T1/futs/m/n/12 141
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 162
- \T1/futs/m/n/12 141
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 163
- \T1/futs/m/n/12 141
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 164
- \T1/futs/m/n/12 141
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 165
+Overfull \hbox (1.19994pt too wide) detected at line 153
  \T1/futs/m/n/12 142
  []
 
 
-Overfull \hbox (2.17195pt too wide) detected at line 166
- \T1/futs/b/n/12 145
+Overfull \hbox (1.19994pt too wide) detected at line 154
+ \T1/futs/m/n/12 142
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 167
- \T1/futs/m/n/12 145
+Overfull \hbox (1.19994pt too wide) detected at line 155
+ \T1/futs/m/n/12 142
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 168
+Overfull \hbox (1.19994pt too wide) detected at line 156
+ \T1/futs/m/n/12 142
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 157
+ \T1/futs/m/n/12 142
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 158
+ \T1/futs/m/n/12 142
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 159
+ \T1/futs/m/n/12 143
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 160
+ \T1/futs/m/n/12 143
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 161
+ \T1/futs/m/n/12 143
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 162
+ \T1/futs/m/n/12 143
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 163
+ \T1/futs/m/n/12 144
+ []
+
+
+Overfull \hbox (2.17195pt too wide) detected at line 164
+ \T1/futs/b/n/12 147
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 165
  \T1/futs/m/n/12 147
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 169
- \T1/futs/m/n/12 147
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 170
- \T1/futs/m/n/12 148
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 175
+Overfull \hbox (1.19994pt too wide) detected at line 166
  \T1/futs/m/n/12 149
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 176
+Overfull \hbox (1.19994pt too wide) detected at line 167
+ \T1/futs/m/n/12 149
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 168
  \T1/futs/m/n/12 150
  []
 
+
+Overfull \hbox (1.19994pt too wide) detected at line 173
+ \T1/futs/m/n/12 151
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 174
+ \T1/futs/m/n/12 152
+ []
+
 [15]
-Overfull \hbox (1.19994pt too wide) detected at line 177
- \T1/futs/m/n/12 151
+Overfull \hbox (1.19994pt too wide) detected at line 175
+ \T1/futs/m/n/12 153
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 178
- \T1/futs/m/n/12 151
+Overfull \hbox (1.19994pt too wide) detected at line 176
+ \T1/futs/m/n/12 153
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 181
- \T1/futs/m/n/12 151
+Overfull \hbox (1.19994pt too wide) detected at line 179
+ \T1/futs/m/n/12 153
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 182
+ \T1/futs/m/n/12 153
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 183
+ \T1/futs/m/n/12 153
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 184
- \T1/futs/m/n/12 151
+ \T1/futs/m/n/12 154
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 185
- \T1/futs/m/n/12 151
+Overfull \hbox (2.17195pt too wide) detected at line 186
+ \T1/futs/b/n/12 159
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 186
- \T1/futs/m/n/12 152
+Overfull \hbox (1.19994pt too wide) detected at line 187
+ \T1/futs/m/n/12 159
  []
 
 
-Overfull \hbox (2.17195pt too wide) detected at line 188
- \T1/futs/b/n/12 157
+Overfull \hbox (1.19994pt too wide) detected at line 188
+ \T1/futs/m/n/12 159
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 189
- \T1/futs/m/n/12 157
+ \T1/futs/m/n/12 159
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 190
- \T1/futs/m/n/12 157
+ \T1/futs/m/n/12 159
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 191
- \T1/futs/m/n/12 157
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 192
- \T1/futs/m/n/12 157
- []
-
-
-Overfull \hbox (2.17195pt too wide) detected at line 193
- \T1/futs/b/n/12 159
+Overfull \hbox (2.17195pt too wide) detected at line 191
+ \T1/futs/b/n/12 161
  []
 
 ) [16] (./thesis.lot
 LaTeX Font Info:    Font shape `T1/futs/bx/sc' in size <12> not available
 (Font)              Font shape `T1/futs/b/sc' tried instead on input line 1.
 
+Overfull \hbox (1.19994pt too wide) detected at line 14
+ \T1/futs/m/n/12 101
+ []
+
+
 Overfull \hbox (1.19994pt too wide) detected at line 15
- \T1/futs/m/n/12 103
+ \T1/futs/m/n/12 105
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 16
- \T1/futs/m/n/12 106
+ \T1/futs/m/n/12 108
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 17
- \T1/futs/m/n/12 109
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 18
- \T1/futs/m/n/12 110
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 19
  \T1/futs/m/n/12 111
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 20
+Overfull \hbox (1.19994pt too wide) detected at line 18
  \T1/futs/m/n/12 112
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 22
- \T1/futs/m/n/12 126
+Overfull \hbox (1.19994pt too wide) detected at line 19
+ \T1/futs/m/n/12 113
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 23
+Overfull \hbox (1.19994pt too wide) detected at line 20
+ \T1/futs/m/n/12 114
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 22
  \T1/futs/m/n/12 128
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 24
+Overfull \hbox (1.19994pt too wide) detected at line 23
  \T1/futs/m/n/12 130
  []
 
 
+Overfull \hbox (1.19994pt too wide) detected at line 24
+ \T1/futs/m/n/12 132
+ []
+
+
 Overfull \hbox (1.19994pt too wide) detected at line 25
- \T1/futs/m/n/12 131
+ \T1/futs/m/n/12 133
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 26
- \T1/futs/m/n/12 134
+ \T1/futs/m/n/12 136
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 27
- \T1/futs/m/n/12 141
+ \T1/futs/m/n/12 143
  []
 
 ) [17] (./thesis.lof
@@ -2550,17 +2562,17 @@ Underfull \vbox (badness 4940) has occurred while \output is active []
 
 [18]
 Overfull \hbox (1.19994pt too wide) detected at line 33
- \T1/futs/m/n/12 102
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 34
  \T1/futs/m/n/12 104
  []
 
 
+Overfull \hbox (1.19994pt too wide) detected at line 34
+ \T1/futs/m/n/12 106
+ []
+
+
 Overfull \hbox (1.19994pt too wide) detected at line 35
- \T1/futs/m/n/12 105
+ \T1/futs/m/n/12 107
  []
 
 
@@ -2568,37 +2580,37 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [19]
 Overfull \hbox (1.19994pt too wide) detected at line 36
- \T1/futs/m/n/12 106
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 37
- \T1/futs/m/n/12 107
- []
-
-
-Overfull \hbox (1.19994pt too wide) detected at line 38
  \T1/futs/m/n/12 108
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 39
+Overfull \hbox (1.19994pt too wide) detected at line 37
+ \T1/futs/m/n/12 109
+ []
+
+
+Overfull \hbox (1.19994pt too wide) detected at line 38
  \T1/futs/m/n/12 110
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 41
- \T1/futs/m/n/12 123
+Overfull \hbox (1.19994pt too wide) detected at line 39
+ \T1/futs/m/n/12 112
  []
 
 
-Overfull \hbox (1.19994pt too wide) detected at line 42
+Overfull \hbox (1.19994pt too wide) detected at line 41
  \T1/futs/m/n/12 125
  []
 
 
+Overfull \hbox (1.19994pt too wide) detected at line 42
+ \T1/futs/m/n/12 127
+ []
+
+
 Overfull \hbox (1.19994pt too wide) detected at line 43
- \T1/futs/m/n/12 135
+ \T1/futs/m/n/12 137
  []
 
 
@@ -2609,17 +2621,17 @@ h vi-o-lin plots and
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 44
- \T1/futs/m/n/12 136
+ \T1/futs/m/n/12 138
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 45
- \T1/futs/m/n/12 142
+ \T1/futs/m/n/12 144
  []
 
 
 Overfull \hbox (1.19994pt too wide) detected at line 47
- \T1/futs/m/n/12 150
+ \T1/futs/m/n/12 152
  []
 
 ) [20]
@@ -2661,81 +2673,161 @@ cal and con-tem-po-rary
  []
 
 
-Underfull \hbox (badness 1776) in paragraph at lines 508--509
+Underfull \hbox (badness 1776) in paragraph at lines 505--506
 \T1/futs/m/n/12 of neg-a-tive con-tent might im-pair cog-ni-tive func-tion-ing 
 and worsen neg-a-tive af-fects.
  []
 
 
-Underfull \hbox (badness 1521) in paragraph at lines 508--509
-\T1/futs/m/n/12 ru-mi-na-tion is de-scribed as a \T1/futs/m/it/12 repet-i-tive 
-\T1/futs/m/n/12 and \T1/futs/m/it/12 pas-sive \T1/futs/m/n/12 think-ing pro-ces
-s that is fo-cused
+Underfull \hbox (badness 2334) in paragraph at lines 505--506
+\T1/futs/m/n/12 might lead to sus-tained neg-a-tive af-fects through-out the da
+y. How-ever, re-search on
+ []
+
+
+Underfull \hbox (badness 1348) in paragraph at lines 505--506
+\T1/futs/m/n/12 pre-dic-tor of the cog-ni-tive and af-fec-tive con-se-quences o
+f repet-i-tive neg-a-tive think-ing.
  []
 
 [4]
-Underfull \hbox (badness 5741) in paragraph at lines 510--511
+Underfull \hbox (badness 5741) in paragraph at lines 507--508
 []\T1/futs/m/n/12 One of the most pro-lific model of ru-mi-na-tion is the re-sp
 onse styles the-ory
  []
 
 
-Underfull \hbox (badness 1248) in paragraph at lines 510--511
+Underfull \hbox (badness 1248) in paragraph at lines 507--508
 \T1/futs/m/n/12 (Nolen-Hoeksema, []1991[]). This the-ory was de-vel-oped to ex-
 plain the re-la-tion be-tween
  []
 
 
-Underfull \hbox (badness 1226) in paragraph at lines 510--511
+Underfull \hbox (badness 1226) in paragraph at lines 507--508
 \T1/futs/m/n/12 ru-mi-na-tion and de-pres-sion, as well as to ac-count for gen-
 der dif-fer-ences in the way
  []
 
 
-Underfull \hbox (badness 2980) in paragraph at lines 510--511
+Underfull \hbox (badness 2980) in paragraph at lines 507--508
 \T1/futs/m/n/12 in-di-vid-u-als re-spond to neg-a-tive af-fects. In-deed, it ha
 s been sug-gested that fe-male
  []
 
 
-Underfull \hbox (badness 1303) in paragraph at lines 512--513
+Underfull \hbox (badness 1303) in paragraph at lines 509--510
 \T1/futs/m/n/12 Watkins & Teas-dale, []2001[]). Sec-ond, ru-mi-na-tion has been
  sug-gested to in-ter-fere with
  []
 
-[5]
-Underfull \hbox (badness 1009) in paragraph at lines 514--515
-\T1/futs/m/n/12 ru-mi-na-tion based on their out-comes. They sug-gested to make
- a dis-tinc-tion be-tween
+
+Underfull \hbox (badness 1616) in paragraph at lines 509--510
+\T1/futs/m/n/12 Lyubomirsky & Nolen-Hoeksema, []1995[]) and clin-i-cally de-pre
+ssed par-tic-i-pants (e.g., E.
  []
 
 
-Underfull \hbox (badness 1173) in paragraph at lines 514--515
+Underfull \hbox (badness 1430) in paragraph at lines 509--510
+\T1/futs/m/n/12 R. Watkins & Moulds, []2005[]). Third, ru-mi-na-tion might also
+ in-ter-fere with mo-ti-va-tion
+ []
+
+
+Underfull \hbox (badness 1389) in paragraph at lines 509--510
+\T1/futs/m/n/12 has been sug-gested to erode so-cial sup-port. For in-stance, N
+olen-Hoeksema & Davis
+ []
+
+
+Underfull \hbox (badness 1478) in paragraph at lines 511--512
+\T1/futs/m/n/12 ru-mi-na-tion based on their out-come. They sug-gested to make 
+a dis-tinc-tion be-tween
+ []
+
+
+Underfull \hbox (badness 1173) in paragraph at lines 511--512
 \T1/futs/m/n/12 ques-tion is not con-clu-sive (Nolen-Hoeksema et al., []2008[])
 . Treynor et al. ([]2003[]) have
  []
+
+[5]
+Underfull \hbox (badness 1424) in paragraph at lines 517--518
+\T1/futs/m/n/12 how ru-mi-na-tion can be con-sid-ered as a sta-ble mode of re-s
+ponse whereas the later
+ []
+
+
+Underfull \vbox (badness 1270) has occurred while \output is active []
 
 [6]
 File: assets/conceptual_space.pdf Graphic file (type pdf)
 <use assets/conceptual_space.pdf>
 
-Underfull \hbox (badness 1132) in paragraph at lines 538--539
-\T1/futs/m/n/12 ru-mi-na-tion is as-so-ci-ated with in-hi-bi-tion deficits with
- mood-congruent (i.e., neg-a-tive)
+Underfull \hbox (badness 1194) in paragraph at lines 530--531
+\T1/futs/m/n/12 of cog-ni-tive bi-ases does ru-mi-na-tion cause? To an-swer the
+se ques-tions, the cog-ni-tive
+ []
+
+
+Underfull \hbox (badness 1237) in paragraph at lines 530--531
+\T1/futs/m/n/12 see Mor & Daches, []2015[]; Gra-hek, Ev-er-aert, Krebs, & Koste
+r, []2018[]; LeMoult & Gotlib,
  []
 
 [7]
-Underfull \hbox (badness 1199) in paragraph at lines 542--543
-[]\T1/futs/m/n/12 As sum-marised by Vugt, Velde, & ESM-MERGE In-ves-ti-ga-tors 
-([]2018[]), the cog-ni-tive
+Underfull \hbox (badness 1360) in paragraph at lines 532--533
+\T1/futs/m/n/12 neg-a-tive mood would ^^P   fa-cil-i-tate^^Q ru-mi-na-tion by n
+ar-row-ing the scope of at-ten-tion. A
+ []
+
+
+Underfull \hbox (badness 1320) in paragraph at lines 534--535
+\T1/futs/m/n/12 some other stud-ies ob-served an im-paired in-hi-bi-tion but in
+-tact switch-ing abil-i-ties in
+ []
+
+
+Underfull \hbox (badness 1210) in paragraph at lines 534--535
+\T1/futs/m/n/12 and non-clin-i-cal par-tic-i-pants (for re-views, see Koster, H
+oorel-beke, On-raedt, Owens, &
+ []
+
+
+Underfull \hbox (badness 1226) in paragraph at lines 536--537
+\T1/futs/m/n/12 the train-ing. Hoorel-beke & Koster ([]2017[]) con-firmed that 
+find-ing by show-ing that an
+ []
+
+
+Underfull \hbox (badness 1635) in paragraph at lines 536--537
+\T1/futs/m/n/12 internet-delivered train-ing of ten ses-sions lead to re-duced 
+lev-els of ru-mi-na-tion and
  []
 
 [8]
+Underfull \hbox (badness 1286) in paragraph at lines 538--539
+\T1/futs/m/n/12 idea that ru-mi-na-tion can be con-sid-ered a mal-adap-tive hab
+it of thought. They show
+ []
+
+
+Underfull \hbox (badness 2573) in paragraph at lines 538--539
+\T1/futs/m/n/12 as-so-cia-tive struc-ture. This model was able to pre-dict the 
+de-cline in cog-ni-tive task
+ []
+
+
+Underfull \hbox (badness 1028) in paragraph at lines 540--541
+\T1/futs/m/n/12 cor-ti-cal struc-tures as-so-ciates with at-ten-tional con-trol
+ and with a hy-per-ac-tiv-ity of the
+ []
+
+[9]
 File: assets/vygotsky.png Graphic file (type bmp)
 <assets/vygotsky.png>
 Missing character: There is no ’ in font futr8t!
 Missing character: There is no ’ in font futr8t!
-[9]
+[10]
 File: assets/reed.png Graphic file (type bmp)
 <assets/reed.png>
 
@@ -2746,15 +2838,15 @@ ver it is not clear that read-ing
 
 File: assets/timeline.pdf Graphic file (type pdf)
 <use assets/timeline.pdf>
-[10]
+
 Underfull \hbox (badness 1496) in paragraph at lines 623--624
 []\T1/futs/m/n/12 The dis-cus-sion of in-ner speech in so-viet Psy-chol-ogy re-
 solved mostly around the
  []
 
-[11]
+[11] [12]
 Missing character: There is no œ in font futr8t!
-[12]
+[13]
 Underfull \hbox (badness 7796) in paragraph at lines 642--643
 []\T1/futs/m/n/12 Huey ([]1968[]) pro-posed that phono-log-i-cal rep-re-sen-ta-
 tions dur-ing read-ing were
@@ -2767,10 +2859,14 @@ Underfull \hbox (badness 2689) in paragraph at lines 663--664
 . In adult hu-mans, its
  []
 
-[13]
+[14]
 Missing character: There is no œ in font futr8t!
 File: assets/loevenbruck.pdf Graphic file (type pdf)
 <use assets/loevenbruck.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[15]
 Missing character: There is no � in font futr8t!
 
 Underfull \hbox (badness 2310) in paragraph at lines 703--704
@@ -2784,7 +2880,7 @@ Underfull \hbox (badness 1655) in paragraph at lines 703--704
 ]). Such ap-par-ent func-tional
  []
 
-[14]
+
 Underfull \hbox (badness 1348) in paragraph at lines 715--716
 []\T1/futs/m/n/12 In his sem-i-nal pa-per, Jean-nerod ([]1994[]) in-tro-duces t
 he idea of a close func-tional
@@ -2796,7 +2892,7 @@ Underfull \hbox (badness 4156) in paragraph at lines 717--718
  con-scious. How-ever,
  []
 
-[15] [16]
+[16] [17]
 Underfull \hbox (badness 1242) in paragraph at lines 739--740
 []\T1/futs/m/n/12 ^^P   Sim-u-la-tion is used here as the off-line re-hearsal o
 f neu-ral net-works in-volved in
@@ -2820,7 +2916,7 @@ Underfull \hbox (badness 1694) in paragraph at lines 743--744
 12 (MST, Jean-nerod, []1994[], []2001[], []2006[]), con-tains the three
  []
 
-[17]
+[18]
 Underfull \hbox (badness 10000) in paragraph at lines 753--754
 
  []
@@ -2850,7 +2946,7 @@ Underfull \hbox (badness 1237) in paragraph at lines 768--769
 is one thing, a se-quence of
  []
 
-[18]
+[19]
 Underfull \hbox (badness 2809) in paragraph at lines 772--774
 []\T1/futs/m/n/12 Imagery is also char-ac-ter-ized by its re-liance on per-cep-
 tual rep-re-sen-ta-tions and
@@ -2869,7 +2965,7 @@ d with \T1/futs/m/it/12 in-ter-nal mod-els \T1/futs/m/n/12 (see Gentsch, We-ber
 , Syn-ofzik,
  []
 
-[19]
+[20]
 Underfull \hbox (badness 1038) in paragraph at lines 797--798
 []\T1/futs/m/n/12 The prob-lem of in-hi-bi-tion (page S106): how come that cove
 rt ac-tions, in spite
@@ -2885,9 +2981,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 801--802
 
  []
 
-[20] [21]
+[21] [22]
 Missing character: There is no œ in font futr8t!
-[22]
+[23] [24
+
+]
 Underfull \hbox (badness 1052) in paragraph at lines 856--857
 \T1/futs/m/n/12 agree with the core steps oc-cur-ring dur-ing speech pro-duc-ti
 on. Willem Lev-elt (Lev-elt,
@@ -2898,9 +2996,7 @@ File: assets/levelt.pdf Graphic file (type pdf)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[23
-
-] [24]
+[25] [26]
 File: assets/vocal.jpg Graphic file (type bmp)
 <assets/vocal.jpg>
 
@@ -2920,13 +3016,13 @@ File: assets/vowels.pdf Graphic file (type pdf)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[25]
+[27]
 File: assets/consonants.png Graphic file (type bmp)
 <assets/consonants.png>
-[26]
+[28]
 File: assets/facial_muscles.pdf Graphic file (type pdf)
 <use assets/facial_muscles.pdf>
-[27]
+[29]
 Underfull \hbox (badness 3536) in paragraph at lines 933--934
 \T1/futs/m/n/12 with the record-ing and anal-y-sis of my-o-elec-tric sig-nals (
 i.e., sig-nals re-sult-ing from
@@ -2949,13 +3045,13 @@ e at []$https : / / cnx . org / contents /
 
 Underfull \vbox (badness 4967) has occurred while \output is active []
 
-[28]
+[30]
 File: assets/mfap.png Graphic file (type bmp)
 <assets/mfap.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[29]
+[31]
 Underfull \hbox (badness 1077) in paragraph at lines 975--976
 []\T1/futs/m/n/12 The \T1/futs/m/it/12 mo-tor unit \T1/futs/m/n/12 is the small
 -est con-trol-lable mus-cu-lar unit. It con-sists in a sin-gle
@@ -2966,7 +3062,7 @@ File: assets/muap.jpg Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[30] [31]
+[32] [33]
 LaTeX Font Info:    Try loading font information for TS1+futs on input line 100
 1.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/fourier/ts1futs.fd
@@ -2987,10 +3083,10 @@ File: 02-chap2_files/figure-latex/emgplot1-1.pdf Graphic file (type pdf)
 
 Underfull \vbox (badness 7595) has occurred while \output is active []
 
-[32]
+[34]
 File: 02-chap2_files/figure-latex/emgplot2-1.pdf Graphic file (type pdf)
 <use 02-chap2_files/figure-latex/emgplot2-1.pdf>
-[33]
+[35]
 Underfull \hbox (badness 1728) in paragraph at lines 1043--1044
 []\T1/futs/m/n/12 where $\FML/futmi/m/it/12 x[]$ \T1/futs/m/n/12 is the squared
  value of each EMG da-tum and has both phys-i-cal and
@@ -3010,13 +3106,13 @@ Underfull \hbox (badness 1688) in paragraph at lines 1062--1063
 ]2004[]; Kline, []2004[]; Lamb-din, []2012[];
  []
 
-[34]
+[36]
 Underfull \hbox (badness 1237) in paragraph at lines 1074--1076
 []\T1/futs/b/n/12 Be thought-ful\T1/futs/m/n/12 : for each anal-y-sis op-por-tu
 -nity (i.e., for each dataset to anal-yse),
  []
 
-[35]
+[37]
 Underfull \hbox (badness 2486) in paragraph at lines 1086--1087
 []\T1/futs/m/n/12 In brief, we tried to move from the point-hypothesis me-chan-
 i-cal test-ing to an
@@ -3035,7 +3131,7 @@ t/12 ^^R\T1/futs/m/n/12 )$ cor-re-sponds to the \T1/futs/m/it/12 prior dis-tri-
 bu-tion\T1/futs/m/n/12 , which spec-i-fies the prior
  []
 
-[36]
+[38]
 Underfull \hbox (badness 10000) in paragraph at lines 1102--1103
 
  []
@@ -3060,10 +3156,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 1120--1121
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[37]
+[39]
 Underfull \vbox (badness 8189) has occurred while \output is active []
 
-[38]
+[40]
 Underfull \hbox (badness 10000) in paragraph at lines 1142--1143
 
  []
@@ -3074,16 +3170,16 @@ Underfull \hbox (badness 1205) in paragraph at lines 1153--1154
 both a the-o-ret-i-cal and an
  []
 
-[39] [40] [41
+[41] [42] [43
 
 
-] [42]
+] [44]
 Underfull \hbox (badness 1371) in paragraph at lines 1166--1167
 \T1/futs/m/n/12 dur-ing ru-mi-na-tion. We mea-sured elec-tromyo-graphic ac-tiv-
 ity over the \T1/futs/m/it/12 or-bic-u-laris oris
  []
 
-[43
+[45
 
 ]
 Underfull \hbox (badness 1635) in paragraph at lines 1173--1174
@@ -3104,7 +3200,7 @@ either increase the head height or redesign the header
 
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
-[44]
+[46]
 Underfull \hbox (badness 1147) in paragraph at lines 1179--1180
 []\T1/futs/m/n/12 These find-ings sug-gest that the pro-cesses in-volved in ove
 rt speech in-clude those
@@ -3113,7 +3209,7 @@ rt speech in-clude those
 
 Underfull \vbox (badness 4291) has occurred while \output is active []
 
-[45]
+[47]
 Underfull \hbox (badness 2376) in paragraph at lines 1185--1186
 \T1/futs/m/n/12 The mea-sure-ment of ru-mi-na-tion as con-cep-tu-al-ized by Nol
 en-Hoeksema ([]1991[]) was
@@ -3155,7 +3251,7 @@ Underfull \vbox (badness 1270) has occurred while \output is active []
 
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
-[46]
+[48]
 Underfull \hbox (badness 1412) in paragraph at lines 1189--1189
 \T1/futs/m/n/10 (Ek-man & Friesen, []1978[]; Sum-it-suji, Mat-sumoto, Tanaka, K
 ashi-wagi, & Kaneko, []1967[]). The ru-mi-na-tion
@@ -3170,10 +3266,10 @@ Underfull \hbox (badness 1859) in paragraph at lines 1193--1194
 i-ated with an in-crease in
  []
 
-[47]
+[49]
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
-[48]
+[50]
 File: assets/face_emg.jpg Graphic file (type bmp)
 <assets/face_emg.jpg>
 
@@ -3182,7 +3278,7 @@ Underfull \hbox (badness 1484) in paragraph at lines 1222--1223
 p-pot, Heeren, Watkins, &
  []
 
-[49]
+[51]
 Missing character: There is no ∼ in font futr8t!
 
 Underfull \hbox (badness 1043) in paragraph at lines 1229--1230
@@ -3200,7 +3296,7 @@ min I.Q. test, which was
 
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
-[50]
+[52]
 Underfull \hbox (badness 1558) in paragraph at lines 1240--1241
 []\T1/futs/m/n/12 The speeches as-so-ci-ated with the three con-di-tions, re-la
 x-ation ses-sions and story
@@ -3224,7 +3320,7 @@ Underfull \hbox (badness 1178) in paragraph at lines 1254--1255
 av-er-age of these mean
  []
 
-[51]
+[53]
 Underfull \hbox (badness 4217) in paragraph at lines 1261--1262
 []\T1/futs/m/n/12 To model EMG am-pli-tude vari-a-tions in re-sponse to the ru-
 mi-na-tion in-duc-tion
@@ -3239,7 +3335,7 @@ g., Hamil-to-nian
 
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
-[52]
+[54]
 Missing character: There is no − in font futr8t!
 Missing character: There is no − in font futr8t!
 Missing character: There is no − in font futr8t!
@@ -3254,7 +3350,7 @@ Missing character: There is no − in font futr8t!
 Missing character: There is no − in font futr8t!
 File: assets/emg_fig1.pdf Graphic file (type pdf)
 <use assets/emg_fig1.pdf>
-[53]
+[55]
 Missing character: There is no − in font futr8t!
 
 Underfull \hbox (badness 1755) in paragraph at lines 1302--1303
@@ -3283,7 +3379,7 @@ File: assets/emg_fig2.pdf Graphic file (type pdf)
 
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
-[54]
+[56]
 Missing character: There is no − in font futr8t!
 Missing character: There is no − in font futr8t!
 File: assets/emg_fig3.pdf Graphic file (type pdf)
@@ -3291,7 +3387,7 @@ File: assets/emg_fig3.pdf Graphic file (type pdf)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[55]
+[57]
 Underfull \hbox (badness 4686) in paragraph at lines 1356--1357
 []\T1/futs/m/n/12 In the first ex-per-i-ment, we ex-am-ined elec-tromyo-graphic
  cor-re-lates of in-duced
@@ -3300,10 +3396,10 @@ Underfull \hbox (badness 4686) in paragraph at lines 1356--1357
 
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
-[56]
+[58]
 Underfull \vbox (badness 1270) has occurred while \output is active []
 
-[57]
+[59]
 Underfull \hbox (badness 7558) in paragraph at lines 1377--1378
 []\T1/futs/m/n/12 Considering both VAS re-sults and the dis-so-ci-a-tion in EMG
  pat-terns, sev-eral
@@ -3318,13 +3414,13 @@ e in lip mus-cle ac-tiv-ity
 
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
-[58]
+[60]
 Underfull \hbox (badness 1184) in paragraph at lines 1388--1389
 \T1/futs/m/n/12 with an in-crease in the ac-tiv-ity of two speech-related mus-c
 les, with-out mod-i-fi-ca-tion
  []
 
-[59]
+[61]
 Underfull \hbox (badness 3219) in paragraph at lines 1394--1395
 \T1/futs/m/n/12 con-sisted ex-clu-sively of women. Al-though this method-olog-i
 -cal choice makes sense
@@ -3348,13 +3444,13 @@ Underfull \vbox (badness 1270) has occurred while \output is active []
 
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
-[60]
+[62]
 Underfull \hbox (badness 3260) in paragraph at lines 1398--1399
 []\T1/futs/m/n/12 In con-clu-sion, this study pro-vides new ev-i-dence for the 
 fa-cial em-bod-i-ment of
  []
 
-[61]
+[63]
 Underfull \hbox (badness 1648) in paragraph at lines 1416--1417
 []\T1/futs/m/n/12 In this first ex-per-i-ment we... Ru-mi-na-tion is pre-dom-i-
 nantly ex-pe-ri-enced in the
@@ -3368,7 +3464,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1416--1417
 
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
-[62]
+[64]
 Underfull \hbox (badness 3439) in paragraph at lines 1427--1427
 [][] [][][]\T1/futs/m/n/10 This ex-per-i-men-tal chap-ter is a sub-mit-ted manu
 script re-for-mat-ted for the need of this the-sis.
@@ -3383,7 +3479,7 @@ Underfull \hbox (badness 1769) in paragraph at lines 1432--1433
 
 Underfull \vbox (badness 8170) has occurred while \output is active []
 
-[63
+[65
 
 ]
 Underfull \hbox (badness 2913) in paragraph at lines 1442--1443
@@ -3394,7 +3490,7 @@ Underfull \hbox (badness 2913) in paragraph at lines 1442--1443
 
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
-[64]
+[66]
 Underfull \hbox (badness 1062) in paragraph at lines 1446--1447
 \T1/futs/m/n/12 is the one be-tween worry and ru-mi-na-tion. On the whole, it i
 s sug-gested that worry
@@ -3402,7 +3498,7 @@ s sug-gested that worry
 
 Missing character: There is no œ in font futr8t!
 Missing character: There is no œ in font futr8t!
-[65]
+[67]
 Underfull \hbox (badness 1609) in paragraph at lines 1457--1458
 \T1/futs/m/n/12 ver-bal and sen-sory el-e-ments, among which vi-sual im-agery (
 Newby & Moulds, []2012[];
@@ -3420,13 +3516,13 @@ Underfull \vbox (badness 4291) has occurred while \output is active []
 
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
-[66]
+[68]
 Underfull \hbox (badness 4366) in paragraph at lines 1466--1467
 []\T1/futs/m/n/12 However, self-report mea-sures of ru-mi-na-tion have sev-eral
  short-com-ings. These
  []
 
-[67]
+[69]
 Underfull \hbox (badness 1005) in paragraph at lines 1481--1482
 \T1/futs/m/n/12 ei-ther ver-bal or vi-sual ru-mi-na-tion was in-duced in par-ti
 c-i-pants by putting them in a
@@ -3435,7 +3531,7 @@ c-i-pants by putting them in a
 
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
-[68]
+[70]
 Underfull \hbox (badness 1158) in paragraph at lines 1493--1494
 \T1/futs/m/n/12 = 19.8823529, SD = 2.0207621). We chose to in-clude only fe-mal
 e par-tic-i-pants in the
@@ -3447,13 +3543,13 @@ Underfull \hbox (badness 1430) in paragraph at lines 1497--1498
 f the OOI mus-cle). We
  []
 
-[69]
+[71]
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
-[70] [71]
+[72] [73]
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
-[72]
+[74]
 Underfull \hbox (badness 1320) in paragraph at lines 1553--1554
 \T1/futs/m/n/12 move-ments, there were a lot of sub-tle move-ments (e.g., bit-i
 ng the lips). The blocks
@@ -3465,7 +3561,7 @@ Underfull \hbox (badness 1320) in paragraph at lines 1562--1563
  Monte Carlo (MCMC) al-go-rithms,
  []
 
-[73]
+[75]
 File: 04-chap4_files/figure-latex/ruminationplot-1.pdf Graphic file (type pdf)
 <use 04-chap4_files/figure-latex/ruminationplot-1.pdf>
 
@@ -3474,7 +3570,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
-[74]
+[76]
 Underfull \hbox (badness 1430) in paragraph at lines 1589--1590
 []\T1/futs/m/n/12 In ac-cor-dance with the pre-reg-is-tered anal-y-sis plan, we
  then fit-ted a mul-ti-vari-ate
@@ -3491,7 +3587,7 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[75]
+[77]
 File: 04-chap4_files/figure-latex/ppcbmod1-1.pdf Graphic file (type pdf)
 <use 04-chap4_files/figure-latex/ppcbmod1-1.pdf>
 
@@ -3500,7 +3596,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
-[76]
+[78]
 Underfull \hbox (badness 1668) in paragraph at lines 1639--1640
 []\T1/futs/m/n/12 The pre-vi-ous fig-ure re-veals that this first model fails t
 o gen-er-ate data that look
@@ -3515,7 +3611,7 @@ Underfull \hbox (badness 1038) in paragraph at lines 1662--1662
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[77]
+[79]
 File: 04-chap4_files/figure-latex/ppcbmod2-1.pdf Graphic file (type pdf)
 <use 04-chap4_files/figure-latex/ppcbmod2-1.pdf>
 
@@ -3524,13 +3620,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
-[78]
+[80]
 File: 04-chap4_files/figure-latex/clusters-1.pdf Graphic file (type pdf)
 <use 04-chap4_files/figure-latex/clusters-1.pdf>
 
 Underfull \vbox (badness 3503) has occurred while \output is active []
 
-[79]
+[81]
 Underfull \hbox (badness 2142) in paragraph at lines 1729--1729
 []\T1/futs/m/n/12 Table 4.4: |[]Cen-ter and size (num-ber of
  []
@@ -3544,7 +3640,7 @@ Underfull \hbox (badness 1038) in paragraph at lines 1757--1757
 
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
-[80]
+[82]
 Underfull \hbox (badness 1874) in paragraph at lines 1771--1772
 []\T1/futs/m/n/12 We rep-re-sent the re-la-tion be-tween self-reported lev-els 
 of state ru-mi-na-tion (af-ter
@@ -3555,7 +3651,7 @@ File: 04-chap4_files/figure-latex/selfemg-1.pdf Graphic file (type pdf)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[81]
+[83]
 Underfull \hbox (badness 1038) in paragraph at lines 1805--1805
 []\T1/futs/m/n/12 Table 4.6: |[]Es-ti-mates from the mul-ti-vari-ate (weighted)
  Skew-Normal
@@ -3573,13 +3669,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
-[82]
+[84]
 Underfull \hbox (badness 1286) in paragraph at lines 1818--1819
 \T1/futs/m/n/12 a weak pos-i-tive cor-re-la-tion be-tween self-reported lev-els
  of state ru-mi-na-tion and the
  []
 
-[83]
+[85]
 Underfull \hbox (badness 6032) in paragraph at lines 1845--1845
 []\T1/futs/m/n/12 Table 4.7: |[]Es-ti-mated changes in self-reported lev-els of
  state
@@ -3599,7 +3695,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
-[84] [85]
+[86] [87]
 Underfull \hbox (badness 1253) in paragraph at lines 1874--1875
 []\T1/futs/m/n/12 To ex-am-ine these hy-pothe-ses, it was cru-cial to first sho
 w that i) the ru-mi-na-tion
@@ -3626,7 +3722,7 @@ et-i-tive thoughts (such as
 
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
-[86]
+[88]
 Missing character: There is no œ in font futr8t!
 Missing character: There is no œ in font futr8t!
 
@@ -3641,7 +3737,7 @@ Underfull \hbox (badness 1028) in paragraph at lines 1889--1890
 s. How-ever, these dif-fer-ent re-sults
  []
 
-[87]
+[89]
 Underfull \hbox (badness 1231) in paragraph at lines 1902--1903
 \T1/futs/m/n/12 com-pared to the non-orofacial re-lax-ation) and we did not ob-
 serve the hy-poth-e-sised
@@ -3650,13 +3746,13 @@ serve the hy-poth-e-sised
 
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
-[88]
+[90]
 Underfull \hbox (badness 1292) in paragraph at lines 1911--1912
 \T1/futs/m/n/12 in-ner speech is more strongly ac-com-pa-nied by pe-riph-eral m
 us-cu-lar ac-ti-va-tion when
  []
 
-[89]
+[91]
 Underfull \hbox (badness 10000) in paragraph at lines 1927--1928
 []\T1/futs/m/n/12 This project was funded by the ANR project IN-NER-SPEECH (gra
 nt num-ber
@@ -3665,7 +3761,7 @@ nt num-ber
 
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
-[90] [91] [92
+[92] [93] [94
 
 ]
 Underfull \hbox (badness 3439) in paragraph at lines 1944--1944
@@ -3691,7 +3787,7 @@ Underfull \hbox (badness 1527) in paragraph at lines 1949--1950
  in-ner speech and to the
  []
 
-[93]
+[95]
 Underfull \hbox (badness 1173) in paragraph at lines 1960--1961
 []\T1/futs/m/n/12 Previous re-search have demon-strated that it is pos-si-ble t
 o record muscle-specific
@@ -3700,7 +3796,7 @@ o record muscle-specific
 
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
-[94]
+[96]
 Missing character: There is no œ in font futr8t!
 
 Underfull \hbox (badness 1454) in paragraph at lines 1969--1970
@@ -3724,10 +3820,10 @@ e ac-tion men-tally. They
 
 Underfull \vbox (badness 7944) has occurred while \output is active []
 
-[95]
+[97]
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
-[96]
+[98]
 Underfull \hbox (badness 1122) in paragraph at lines 1984--1985
 \T1/futs/m/n/12 phone-mic class of the words be-ing covertly ut-tered (e.g., Mc
 Guigan & Dollins, []1989[];
@@ -3739,7 +3835,7 @@ Underfull \hbox (badness 1442) in paragraph at lines 1986--1987
 e whether it is pos-si-ble to
  []
 
-[97]
+[99]
 Missing character: There is no ʒ in font futr8t!
 Missing character: There is no ʒ in font futr8t!
 Missing character: There is no ʁ in font futr8t!
@@ -3768,7 +3864,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2039--2040
 
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
-[98] [99]
+[100] [101]
 Underfull \hbox (badness 3068) in paragraph at lines 2055--2056
 []\T1/futs/m/n/12 Although par-tic-i-pants were ex-plic-itly asked to re-main s
 till dur-ing in-ner speech
@@ -3783,10 +3879,10 @@ swal-low-ing move-ments)
 
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
-[100]
+[102]
 File: 05-chap5_files/figure-latex/generalplot-1.pdf Graphic file (type pdf)
 <use 05-chap5_files/figure-latex/generalplot-1.pdf>
-[101]
+[103]
 Underfull \hbox (badness 1072) in paragraph at lines 2088--2089
 \T1/futs/m/n/12 ac-tiv-ity dur-ing the pro-duc-tion of rounded items in com-par
 -i-son to spread items and
@@ -3798,7 +3894,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
-[102]
+[104]
 Underfull \hbox (badness 1137) in paragraph at lines 2127--2128
 \T1/futs/m/n/12 av-er-age EMG am-pli-tude in each con-di-tion and the cor-re-sp
 ond-ing BF[][][]. This anal-y-sis
@@ -3810,7 +3906,7 @@ Underfull \hbox (badness 1163) in paragraph at lines 2129--2130
 e in-ter-val for each class of
  []
 
-[103]
+[105]
 File: 05-chap5_files/figure-latex/predbmod1-1.pdf Graphic file (type pdf)
 <use 05-chap5_files/figure-latex/predbmod1-1.pdf>
 File: 05-chap5_files/figure-latex/ppcbmod1-1.pdf Graphic file (type pdf)
@@ -3818,13 +3914,13 @@ File: 05-chap5_files/figure-latex/ppcbmod1-1.pdf Graphic file (type pdf)
 
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
-[104]
+[106]
 File: 05-chap5_files/figure-latex/ppcbmod3-1.pdf Graphic file (type pdf)
 <use 05-chap5_files/figure-latex/ppcbmod3-1.pdf>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[105]
+[107]
 Underfull \hbox (badness 1158) in paragraph at lines 2202--2203
 []\T1/futs/m/n/12 The es-ti-mates of this sec-ond model are sum-marised in Ta-b
 le []5.3[] and Fig-ure []5.5[].
@@ -3833,7 +3929,7 @@ le []5.3[] and Fig-ure []5.5[].
 
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
-[106]
+[108]
 File: 05-chap5_files/figure-latex/predbmod3-1.pdf Graphic file (type pdf)
 <use 05-chap5_files/figure-latex/predbmod3-1.pdf>
 
@@ -3842,19 +3938,19 @@ Underfull \hbox (badness 1242) in paragraph at lines 2218--2219
 i-ate to tackle our ini-tial
  []
 
-[107]
+[109]
 File: 05-chap5_files/figure-latex/2Demg-1.pdf Graphic file (type pdf)
 <use 05-chap5_files/figure-latex/2Demg-1.pdf>
 
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
-[108]
+[110]
 File: 05-chap5_files/figure-latex/VarImpOvert-1.pdf Graphic file (type pdf)
 <use 05-chap5_files/figure-latex/VarImpOvert-1.pdf>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[109]
+[111]
 Underfull \hbox (badness 3590) in paragraph at lines 2289--2289
 []\T1/futs/m/n/12 Table 5.5: |[]Con-fu-sion ma-trix with by-class
  []
@@ -3878,7 +3974,7 @@ Underfull \hbox (badness 3590) in paragraph at lines 2309--2309
 
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
-[110] [111]
+[112] [113]
 Missing character: There is no ▇ in font futr8t!
 Missing character: There is no ▃ in font futr8t!
 Missing character: There is no ▂ in font futr8t!
@@ -3920,7 +4016,7 @@ her-ent with pre-vi-ous
 
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
-[112]
+[114]
 Underfull \hbox (badness 1803) in paragraph at lines 2353--2354
 \T1/futs/m/n/12 in dis-crim-inabil-ity high-light that the ab-stract-ness of in
 -ner speech might be flex-i-ble
@@ -3929,7 +4025,7 @@ Underfull \hbox (badness 1803) in paragraph at lines 2353--2354
 
 Underfull \vbox (badness 1163) has occurred while \output is active []
 
-[113]
+[115]
 Underfull \hbox (badness 3138) in paragraph at lines 2357--2358
 \T1/futs/m/n/12 to rea-son-able ac-cu-racy in dis-crim-i-nat-ing classes of non
 -words dur-ing overt speech
@@ -3956,7 +4052,7 @@ ch is to sharpen our
 
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
-[114]
+[116]
 Underfull \hbox (badness 1194) in paragraph at lines 2364--2365
 []\T1/futs/m/n/12 Aside from pre-vi-ously cited pack-ages, sev-eral other pack-
 ages have been used for
@@ -3968,10 +4064,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 2369--2370
 nt num-ber
  []
 
-[115]
+[117]
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
-[116]
+[118]
 Underfull \hbox (badness 2529) in paragraph at lines 2391--2392
 \T1/futs/m/n/12 The mo-tor sim-u-la-tion hy-poth-e-sis con-sid-ers in-ner speec
 h as an ac-tion on its own,
@@ -3990,9 +4086,9 @@ Underfull \hbox (badness 1721) in paragraph at lines 2396--2397
 or-mat and na-ture of in-ner
  []
 
-[117
+[119
 
-] [118]
+] [120]
 Underfull \hbox (badness 1281) in paragraph at lines 2408--2409
 \T1/futs/m/n/12 stud-ies us-ing phys-i-o-log-i-cal mea-sures to eval-u-ate in-n
 er speech pro-duc-tion prop-er-ties.
@@ -4004,16 +4100,16 @@ Underfull \hbox (badness 4366) in paragraph at lines 2410--2411
 lve around a com-mon
  []
 
-[119]
+[121]
 Underfull \vbox (badness 2245) has occurred while \output is active []
 
-[120]
+[122]
 Underfull \hbox (badness 1132) in paragraph at lines 2441--2442
 []\T1/futs/m/n/12 Measures of state ru-mi-na-tion were recorded us-ing a Vi-sua
 l Ana-logue Scale (VAS)
  []
 
-[121]
+[123]
 Underfull \hbox (badness 1533) in paragraph at lines 2455--2456
 []\T1/futs/m/n/12 The ex-per-i-ment took place in-di-vid-u-ally in a quiet and 
 dimmed room. The to-tal
@@ -4033,7 +4129,7 @@ Underfull \hbox (badness 3068) in paragraph at lines 2467--2468
 
 File: 06-chap6_files/figure-latex/diagram-1.pdf Graphic file (type pdf)
 <use 06-chap6_files/figure-latex/diagram-1.pdf>
-[122]
+[124]
 Underfull \hbox (badness 2617) in paragraph at lines 2488--2489
 \T1/futs/m/n/12 in-duc-tion, contrast-coded) as a within-subject cat-e-gor-i-ca
 l pre-dic-tor and \T1/futs/m/it/12 RUM \T1/futs/m/n/12 as a
@@ -4042,7 +4138,7 @@ l pre-dic-tor and \T1/futs/m/it/12 RUM \T1/futs/m/n/12 as a
 
 Underfull \vbox (badness 2582) has occurred while \output is active []
 
-[123]
+[125]
 Underfull \hbox (badness 1028) in paragraph at lines 2490--2491
 []\T1/futs/m/n/12 Models were com-pared us-ing the Widely Ap-pli-ca-ble In-for-
 ma-tion Cri-te-rion (WAIC;
@@ -4060,7 +4156,7 @@ Underfull \hbox (badness 4328) in paragraph at lines 2497--2498
 s, be-fore and af-ter mo-tor ac-tiv-ity, contrast-coded) as a
  []
 
-[124]
+[126]
 File: 06-chap6_files/figure-latex/correxp1-1.pdf Graphic file (type pdf)
 <use 06-chap6_files/figure-latex/correxp1-1.pdf>
 
@@ -4069,7 +4165,7 @@ Underfull \hbox (badness 1194) in paragraph at lines 2510--2510
 tors, along with 95% CIs. The
  []
 
-[125] [126
+[127] [128
 
 ]
 Underfull \hbox (badness 1009) in paragraph at lines 2539--2540
@@ -4078,9 +4174,9 @@ ts/m/n/12 , and an in-ter-ac-tion term be-tween \T1/futs/m/it/12 In-duc-tion \T
 1/futs/m/n/12 and \T1/futs/m/it/12 Vivid-ness \T1/futs/m/n/12 as
  []
 
-[127
+[129
 
-] [128
+] [130
 
 ]
 Underfull \hbox (badness 1661) in paragraph at lines 2595--2596
@@ -4088,9 +4184,9 @@ Underfull \hbox (badness 1661) in paragraph at lines 2595--2596
 were as-so-ci-ated with higher in-crease in self-reported
  []
 
-[129
+[131
 
-] [130
+] [132
 
 ]
 Underfull \hbox (badness 2856) in paragraph at lines 2662--2663
@@ -4100,7 +4196,7 @@ ci-ated by com-put-ing the
 
 File: 06-chap6_files/figure-latex/plotexp1-1.pdf Graphic file (type pdf)
 <use 06-chap6_files/figure-latex/plotexp1-1.pdf>
-[131
+[133
 
 ]
 File: 06-chap6_files/figure-latex/plotverbal-1.pdf Graphic file (type pdf)
@@ -4108,19 +4204,19 @@ File: 06-chap6_files/figure-latex/plotverbal-1.pdf Graphic file (type pdf)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[132]
+[134]
 Underfull \hbox (badness 2818) in paragraph at lines 2679--2680
 []\T1/futs/m/n/12 The pur-pose of the cur-rent study was to in-ves-ti-gate the 
 ef-fects of ar-tic-u-la-tory
  []
 
-[133]
+[135]
 Underfull \hbox (badness 1303) in paragraph at lines 2700--2701
 []\T1/futs/m/n/12 Our pre-dic-tion was that ru-mi-na-tion in ver-bal form would
  be more dis-rupted by
  []
 
-[134] [135]
+[136] [137]
 Underfull \hbox (badness 1226) in paragraph at lines 2711--2712
 []\T1/futs/m/n/12 As sug-gested pre-vi-ously, an al-ter-na-tive way to ex-plain
  the ab-sence of dif-fer-ences
@@ -4138,7 +4234,7 @@ Underfull \hbox (badness 2293) in paragraph at lines 2711--2712
 only when the ar-tic-u-la-tory
  []
 
-[136]
+[138]
 Underfull \hbox (badness 10000) in paragraph at lines 2727--2728
 []\T1/futs/m/n/12 This project was funded by the ANR project IN-NER-SPEECH (gra
 nt num-ber
@@ -4156,16 +4252,16 @@ Underfull \hbox (badness 1418) in paragraph at lines 2752--2753
 graphic pro-ces-sor. A
  []
 
-[137]
+[139]
 Underfull \hbox (badness 1466) in paragraph at lines 2763--2764
 \T1/futs/m/n/12 and fore-head tar-get spa-tial co-or-di-nates, with its dis-tan
 ce from the cam-era. For this
  []
 
-[138]
+[140]
 File: 06-chap6_files/figure-latex/eyetrack-1.pdf Graphic file (type pdf)
 <use 06-chap6_files/figure-latex/eyetrack-1.pdf>
-[139] [140]
+[141] [142]
 Underfull \hbox (badness 3439) in paragraph at lines 2821--2821
 [][] [][][]\T1/futs/m/n/10 This ex-per-i-men-tal chap-ter is a sub-mit-ted manu
 script re-for-mat-ted for the need of this the-sis.
@@ -4190,7 +4286,7 @@ niquely con-tribute to the
  []
 
 Missing character: There is no œ in font futr8t!
-[141
+[143
 
 ]
 Underfull \hbox (badness 1237) in paragraph at lines 2832--2833
@@ -4204,7 +4300,7 @@ Underfull \vbox (badness 1270) has occurred while \output is active []
 
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
-[142]
+[144]
 Underfull \hbox (badness 1077) in paragraph at lines 2842--2843
 \T1/futs/m/n/12 ru-mi-na-tion fol-low-ing a pe-riod of ar-tic-u-la-tory sup-pre
 s-sion than fol-low-ing a pe-riod of
@@ -4216,12 +4312,12 @@ Underfull \hbox (badness 1147) in paragraph at lines 2852--2853
 or ac-tiv-ity be-tween the two
  []
 
-[143]
+[145]
 Missing character: There is no € in font futr8t!
 
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
-[144]
+[146]
 Underfull \hbox (badness 1540) in paragraph at lines 2884--2885
 \T1/futs/m/n/12 par-tic-i-pants filled-in again the BSRI ques-tion-naire to che
 ck whether the ru-mi-na-tion
@@ -4233,26 +4329,26 @@ Underfull \hbox (badness 1371) in paragraph at lines 2886--2887
 u-ate the ef-fects of the stress
  []
 
-File: 07-chap7_files/figure-latex/diagram-1.pdf Graphic file (type pdf)
-<use 07-chap7_files/figure-latex/diagram-1.pdf>
-[145]
+File: 07-chap7_files/figure-latex/diagramCh7-1.pdf Graphic file (type pdf)
+<use 07-chap7_files/figure-latex/diagramCh7-1.pdf>
+[147]
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
-[146]
+[148]
 Underfull \hbox (badness 1102) in paragraph at lines 2907--2908
 []\T1/futs/m/n/12 The re-sults sec-tion is di-vided into two sec-tions in-ves-t
 i-gat-ing the ef-fects of i) the
  []
 
-[147]
+[149]
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
-[148] [149] [150
+[150] [151] [152
 
 
-] [151] [152] [153
+] [153] [154] [155
 
-] [154
+] [156
 
 ]
 Underfull \hbox (badness 1112) in paragraph at lines 3016--3018
@@ -4260,7 +4356,7 @@ Underfull \hbox (badness 1112) in paragraph at lines 3016--3018
 e-pare re-pro-ducible apa jour-nal ar-ti-cles with r
  []
 
-[155]
+[157]
 Underfull \hbox (badness 1502) in paragraph at lines 3046--3048
  \T1/futs/m/it/12 Neu-ropsy-cholo-gia\T1/futs/m/n/12 , \T1/futs/m/it/12 45\T1/f
 uts/m/n/12 (8), 1697--1706. []$https : / / doi . org / 10 . 1016 / j . neuropsy
@@ -4289,7 +4385,7 @@ Underfull \hbox (badness 7308) in paragraph at lines 3076--3078
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[156]
+[158]
 Underfull \hbox (badness 10000) in paragraph at lines 3082--3084
  [][]\T1/futs/m/n/12 Brewer, W. F. (1986). What is au-to-bi-o-graph-i-cal mem-o
 ry? In D. C. Ru-bin (Ed.),
@@ -4335,29 +4431,41 @@ Underfull \hbox (badness 2538) in paragraph at lines 3121--3123
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[157]
+[159]
 Underfull \hbox (badness 1184) in paragraph at lines 3133--3135
  [][]\T1/futs/m/n/12 Conrad, B., & Schönle, P. (1979). Speech and res-pi-ra-tio
 n. \T1/futs/m/it/12 Archiv Für Psy-chi-a-trie Und
  []
 
 
-Underfull \hbox (badness 1152) in paragraph at lines 3169--3171
- [][]\T1/futs/m/n/12 De Luca, C. J., Don-ald Gilmore, L., Kuznetsov, M., & Roy,
- S. H. (2010). Fil-ter-ing the
+Underfull \hbox (badness 1194) in paragraph at lines 3157--3159
+ [][]\T1/futs/m/n/12 Daches, S., Mor, N., & Her-tel, P. (2019). Train-ing to In
+-hibit Neg-a-tive Con-tent Af-fects
+ []
+
+
+Underfull \hbox (badness 2326) in paragraph at lines 3169--3171
+ \T1/futs/m/n/12 and cog-ni-tive con-trol in a mixed an-ti-sac-cade task: Spe-c
+ific ef-fects of de-pres-sive
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[158]
-Underfull \hbox (badness 4765) in paragraph at lines 3178--3180
+[160]
+Underfull \hbox (badness 1152) in paragraph at lines 3178--3180
+ [][]\T1/futs/m/n/12 De Luca, C. J., Don-ald Gilmore, L., Kuznetsov, M., & Roy,
+ S. H. (2010). Fil-ter-ing the
+ []
+
+
+Underfull \hbox (badness 4765) in paragraph at lines 3187--3189
  [][]\T1/futs/m/n/12 Douilliez, C., Philip-pot, P., Heeren, A., Watkins, E. R.,
  & Barnard, P. (2012). The
  []
 
 
-Underfull \hbox (badness 7832) in paragraph at lines 3184--3186
+Underfull \hbox (badness 7832) in paragraph at lines 3193--3195
  [][]\T1/futs/m/n/12 Ehrich, J. (2006). Vy-got-skian In-ner Speech. \T1/futs/m/
 it/12 Aus-tralian Jour-nal of Ed-u-ca-tional &
  []
@@ -4365,55 +4473,58 @@ it/12 Aus-tralian Jour-nal of Ed-u-ca-tional &
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[159]
-Underfull \hbox (badness 4036) in paragraph at lines 3229--3231
+[161]
+Underfull \hbox (badness 4036) in paragraph at lines 3241--3243
  [][]\T1/futs/m/n/12 Fuhrer, R., & Rouil-lon, F. (1989). La ver-sion française 
 de l'échelle CES-D (Cen-ter
  []
 
 
-Underfull \hbox (badness 1147) in paragraph at lines 3229--3231
+Underfull \hbox (badness 1147) in paragraph at lines 3241--3243
  \T1/futs/m/n/12 for Epi-demi-o-logic Studies-Depression Scale). De-scrip-tion 
 et tra-duc-tion de l'échelle
  []
 
 Missing character: There is no ﬂ in font futr8t!
 
-Underfull \hbox (badness 2698) in paragraph at lines 3259--3261
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[162]
+Underfull \hbox (badness 2698) in paragraph at lines 3271--3273
  \T1/futs/m/n/12 from tim-ing er-rors in sim-u-lated reach-ing and grasp-ing. \
 T1/futs/m/it/12 Jour-nal of Ex-per-i-men-tal
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[160]
-Underfull \hbox (badness 1735) in paragraph at lines 3262--3264
+Underfull \hbox (badness 1735) in paragraph at lines 3274--3276
  [][]\T1/futs/m/n/12 Goldwin, M., & Be-har, E. (2012). Con-crete-ness of Id-io-
 graphic Pe-ri-ods of Worry and
  []
 
 
-Underfull \hbox (badness 1112) in paragraph at lines 3268--3270
+Underfull \hbox (badness 1112) in paragraph at lines 3283--3285
  [][]\T1/futs/m/n/12 Grahek, I., Ev-er-aert, J., Krebs, R. M., & Koster, E. H. 
 W. (2018). Cog-ni-tive Con-trol in
  []
 
 
-Underfull \hbox (badness 1668) in paragraph at lines 3268--3270
+Underfull \hbox (badness 1668) in paragraph at lines 3283--3285
  \T1/futs/m/n/12 De-pres-sion: To-ward Clin-i-cal Mod-els In-formed by Cog-ni-t
 ive Neu-ro-science. \T1/futs/m/it/12 Clin-i-cal
  []
 
 Missing character: There is no œ in font futr8t!
 
-Underfull \hbox (badness 3701) in paragraph at lines 3280--3282
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[163]
+Underfull \hbox (badness 3701) in paragraph at lines 3301--3303
  [][]\T1/futs/m/n/12 Grush, R. (2004). The em-u-la-tion the-ory of rep-re-sen-t
 a-tion: Mo-tor con-trol, im-agery,
  []
 
 
-Underfull \hbox (badness 7504) in paragraph at lines 3280--3282
+Underfull \hbox (badness 7504) in paragraph at lines 3301--3303
  \T1/futs/m/n/12 and per-cep-tion. \T1/futs/m/it/12 Be-hav-ioral and Brain Sci-
 ences\T1/futs/m/n/12 , \T1/futs/m/it/12 27\T1/futs/m/n/12 (03). []$https : / / 
 doi . org / 10 . 1017 /
@@ -4421,128 +4532,128 @@ doi . org / 10 . 1017 /
 
 Missing character: There is no � in font futr8t!
 
-Underfull \hbox (badness 2556) in paragraph at lines 3283--3285
+Underfull \hbox (badness 2556) in paragraph at lines 3304--3306
  [][]\T1/futs/m/n/12 Grzes, J., & De-cety, J. (2001). Func-tional anatomy of ex
 -e-cu-tion, men-tal sim-u-la-tion,
  []
 
 
-Underfull \hbox (badness 1635) in paragraph at lines 3283--3285
+Underfull \hbox (badness 1635) in paragraph at lines 3304--3306
  \T1/futs/m/it/12 12\T1/futs/m/n/12 (1), 1--19. []$https : / / doi . org / 10 .
  1002 / 1097-[]0193(200101 ) 12 : 1 % 3C1 :: AID-[]HBM10 % 3E3 . 0 .
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[161]
-Underfull \hbox (badness 1264) in paragraph at lines 3301--3303
+Underfull \hbox (badness 1264) in paragraph at lines 3322--3324
  [][]\T1/futs/m/n/12 Hackmann, A., & Holmes, E. A. (2004). Re-flect-ing on im-a
 gery: A clin-i-cal per-spec-tive
  []
 
 
-Underfull \hbox (badness 1189) in paragraph at lines 3301--3303
+Underfull \hbox (badness 1189) in paragraph at lines 3322--3324
  \T1/futs/m/n/12 and overview of the spe-cial is-sue of \T1/futs/m/it/12 mem-or
 y \T1/futs/m/n/12 on men-tal im-agery and mem-ory in
  []
 
 
-Underfull \hbox (badness 1448) in paragraph at lines 3319--3321
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[164]
+Underfull \hbox (badness 1448) in paragraph at lines 3340--3342
  [][]\T1/futs/m/n/12 Hertel, P. (2004). Mem-ory for Emo-tional and Nonemo-tiona
 l Events in De-pres-sion: A
  []
 
 
-Underfull \hbox (badness 2005) in paragraph at lines 3343--3345
+Underfull \hbox (badness 2005) in paragraph at lines 3367--3369
  \T1/futs/m/n/12 ru-mi-na-tion in ev-ery-day life: Ad-vanc-ing re-search ap-pro
 aches to study ru-mi-na-tion.
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[162]
-Underfull \hbox (badness 2080) in paragraph at lines 3352--3354
+Underfull \hbox (badness 2080) in paragraph at lines 3376--3378
  \T1/futs/m/n/12 speak-ing. \T1/futs/m/it/12 Con-scious-ness and Cog-ni-tion\T1
 /futs/m/n/12 , \T1/futs/m/it/12 22\T1/futs/m/n/12 (4), 1477--1494. []$https : /
  / doi . org / 10 . 1016 / j .
  []
 
 
-Underfull \hbox (badness 1521) in paragraph at lines 3358--3360
+Underfull \hbox (badness 1521) in paragraph at lines 3382--3384
  [][]\T1/futs/m/n/12 Jacobson, E. (1931). Elec-tri-cal mea-sure-ments of neu-ro
 -mus-cu-lar states dur-ing men-tal
  []
 
 
-Underfull \hbox (badness 2608) in paragraph at lines 3367--3369
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[165]
+Underfull \hbox (badness 2608) in paragraph at lines 3391--3393
  [][]\T1/futs/m/n/12 Jeannerod, M. (1994). The rep-re-sent-ing brain: Neu-ral c
 or-re-lates of mo-tor in-ten-tion
  []
 
 
-Underfull \hbox (badness 2735) in paragraph at lines 3367--3369
+Underfull \hbox (badness 2735) in paragraph at lines 3391--3393
  \T1/futs/m/n/12 and im-agery. \T1/futs/m/it/12 Be-hav-ioral and Brain Sci-ence
 s\T1/futs/m/n/12 , \T1/futs/m/it/12 17\T1/futs/m/n/12 (02), 187. []$https : / /
  doi . org / 10 . 1017 /
  []
 
 
-Underfull \hbox (badness 1052) in paragraph at lines 3376--3378
+Underfull \hbox (badness 1052) in paragraph at lines 3400--3402
  [][]\T1/futs/m/n/12 Jeannerod, M. (2001). Neu-ral Sim-u-la-tion of Ac-tion: A 
 Uni-fy-ing Mech-a-nism for Mo-tor
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[163]
-Underfull \hbox (badness 2443) in paragraph at lines 3391--3393
+Underfull \hbox (badness 2443) in paragraph at lines 3415--3417
  [][]\T1/futs/m/n/12 Joormann, J., & Gotlib, I. H. (2010). Emo-tion reg-u-la-ti
 on in de-pres-sion: Re-la-tion to
  []
 
 
-Underfull \hbox (badness 1648) in paragraph at lines 3391--3393
+Underfull \hbox (badness 1648) in paragraph at lines 3415--3417
  \T1/futs/m/n/12 cog-ni-tive in-hi-bi-tion. \T1/futs/m/it/12 Cog-ni-tion & Emo-
 tion\T1/futs/m/n/12 , \T1/futs/m/it/12 24\T1/futs/m/n/12 (2), 281--298. []$http
 s : / / doi . org / 10 . 1080 /
  []
 
 
-Underfull \hbox (badness 4366) in paragraph at lines 3409--3411
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[166]
+Underfull \hbox (badness 4366) in paragraph at lines 3433--3435
  [][]\T1/futs/m/n/12 Kapur, A., Ka-pur, S., & Maes, P. (2018). Al-terEgo: A Per
 -son-al-ized Wear-able Silent
  []
 
 
-Underfull \hbox (badness 3168) in paragraph at lines 3409--3411
+Underfull \hbox (badness 3168) in paragraph at lines 3433--3435
  \T1/futs/m/n/12 Speech In-ter-face. In \T1/futs/m/it/12 Pro-ceed-ings of the 2
 018 Con-fer-ence on Hu-man In-for-ma-tion
  []
 
 
-Underfull \hbox (badness 4416) in paragraph at lines 3427--3429
+Underfull \hbox (badness 4416) in paragraph at lines 3451--3453
  [][]\T1/futs/m/n/12 Klinger, E., & Cox, W. M. (1987). Di-men-sions of Thought 
 Flow in Ev-ery-day Life.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3427--3429
+Underfull \hbox (badness 10000) in paragraph at lines 3451--3453
  \T1/futs/m/it/12 Imag-i-na-tion, Cog-ni-tion and Per-son-al-ity\T1/futs/m/n/12
  , \T1/futs/m/it/12 7\T1/futs/m/n/12 (2), 105--128. []$https : / / doi . org / 
 10 . 2190 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3433--3435
+Underfull \hbox (badness 10000) in paragraph at lines 3457--3459
  \T1/futs/m/n/12 de-pres-sive ru-mi-na-tion from a cog-ni-tive sci-ence per-spe
 c-tive: The im-paired
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3433--3435
+Underfull \hbox (badness 10000) in paragraph at lines 3457--3459
  \T1/futs/m/n/12 dis-en-gage-ment hy-poth-e-sis. \T1/futs/m/it/12 Clin-i-cal Ps
 y-chol-ogy Re-view\T1/futs/m/n/12 , \T1/futs/m/it/12 31\T1/futs/m/n/12 (1), 138
 --145. []$https :
@@ -4551,20 +4662,20 @@ y-chol-ogy Re-view\T1/futs/m/n/12 , \T1/futs/m/it/12 31\T1/futs/m/n/12 (1), 138
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[164]
-Underfull \hbox (badness 2903) in paragraph at lines 3451--3453
+[167]
+Underfull \hbox (badness 2903) in paragraph at lines 3478--3480
  [][]\T1/futs/m/n/12 Lam, D., Schuck, N., Smith, N., Farmer, A., & Check-ley, S
 . (2003). Re-sponse style,
  []
 
 
-Underfull \hbox (badness 6876) in paragraph at lines 3466--3468
+Underfull \hbox (badness 6876) in paragraph at lines 3493--3495
  [][]\T1/futs/m/n/12 Lawrence, H. R., Haigh, E. A. P., Siegle, G. J., & Schwart
 z-Mette, R. A. (2018).
  []
 
 
-Underfull \hbox (badness 2142) in paragraph at lines 3472--3474
+Underfull \hbox (badness 2142) in paragraph at lines 3499--3501
  [][]\T1/futs/m/n/12 Lemoult, J., & Joor-mann, J. (2014). De-pres-sive ru-mi-na
 -tion al-ters cor-ti-sol de-cline in
  []
@@ -4572,67 +4683,67 @@ Underfull \hbox (badness 2142) in paragraph at lines 3472--3474
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[165]
-Underfull \hbox (badness 2027) in paragraph at lines 3496--3498
+[168]
+Underfull \hbox (badness 2027) in paragraph at lines 3523--3525
  [][]\T1/futs/m/n/12 Logie, R. H., & Bad-de-ley, A. D. (1987). Cog-ni-tive Pro-
 cesses in Count-ing. \T1/futs/m/it/12 Jour-nal of
  []
 
 
-Underfull \hbox (badness 1817) in paragraph at lines 3499--3501
+Underfull \hbox (badness 1817) in paragraph at lines 3526--3528
  [][]\T1/futs/m/n/12 Lüdecke, D. (2018). \T1/futs/m/it/12 Sjs-tats: Col-lec-tio
 n of con-ve-nient func-tions for com-mon sta-tis-ti-cal
  []
 
 
-Underfull \hbox (badness 1199) in paragraph at lines 3508--3510
+Underfull \hbox (badness 1199) in paragraph at lines 3535--3537
  [][]\T1/futs/m/n/12 Lyubomirsky, S., & Nolen-Hoeksema, S. (1995). Ef-fects of 
 self-focused ru-mi-na-tion on
  []
 
 Missing character: There is no œ in font futr8t!
 
-Underfull \hbox (badness 10000) in paragraph at lines 3511--3513
+Underfull \hbox (badness 10000) in paragraph at lines 3538--3540
  [][]\T1/futs/m/n/12 Lvenbruck, H. (2018). What the neu-rocog-ni-tive study of 
 in-ner lan-guage
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3511--3513
+Underfull \hbox (badness 10000) in paragraph at lines 3538--3540
  \T1/futs/m/n/12 re-veals about our in-ner space. In S. Smadja & P.-L. Pa-toine
  (Eds.),
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3511--3513
+Underfull \hbox (badness 10000) in paragraph at lines 3538--3540
  \T1/futs/m/it/12 Épistém-o-cri-tique, n° 18 : Lan-gage in-térieur - Es-paces i
 n-térieurs / In-ner
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3511--3513
+Underfull \hbox (badness 10000) in paragraph at lines 3538--3540
  \T1/futs/m/it/12 Speech - In-ner Space \T1/futs/m/n/12 (Vol. XVIII). Re-trieve
 d from []$http : / / epistemocritique . org /
  []
 
 Missing character: There is no œ in font futr8t!
 
-Underfull \hbox (badness 1616) in paragraph at lines 3514--3516
+Underfull \hbox (badness 1616) in paragraph at lines 3541--3543
  [][]\T1/futs/m/n/12 Lvenbruck, H., Grand-champ, R., Rapin, L., Nal-bor-czyk, L
 ., Do-hen, M., Per-rier, P., ...
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[166]
-Underfull \hbox (badness 2269) in paragraph at lines 3532--3534
+Underfull \hbox (badness 2269) in paragraph at lines 3559--3561
  \T1/futs/m/n/12 In-ven-tory (BSRI): Val-i-da-tion and Psy-cho-me-t-ric Eval-u-
 a-tion. \T1/futs/m/it/12 Cog-ni-tive Ther-apy and
  []
 
 
-Underfull \hbox (badness 1762) in paragraph at lines 3541--3543
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[169]
+Underfull \hbox (badness 1762) in paragraph at lines 3568--3570
  \T1/futs/m/n/12 of phono-log-i-cal cod-ing. \T1/futs/m/it/12 Brain and Cog-ni-
 tion\T1/futs/m/n/12 , \T1/futs/m/it/12 1\T1/futs/m/n/12 (1), 50--70. []$https :
  / / doi . org / 10 . 1016 /
@@ -4641,121 +4752,117 @@ tion\T1/futs/m/n/12 , \T1/futs/m/it/12 1\T1/futs/m/n/12 (1), 50--70. []$https :
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[167]
-Underfull \hbox (badness 1067) in paragraph at lines 3580--3582
+[170]
+Underfull \hbox (badness 1067) in paragraph at lines 3607--3609
  [][]\T1/futs/m/n/12 Mor, N., & Daches, S. (2015). Ru-mi-na-tive Think-ing: Les
 sons Learned From Cog-ni-tive
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3580--3582
+Underfull \hbox (badness 10000) in paragraph at lines 3607--3609
  \T1/futs/m/n/12 Train-ing. \T1/futs/m/it/12 Clin-i-cal Psy-cho-log-i-cal Sci-e
 nce\T1/futs/m/n/12 , \T1/futs/m/it/12 3\T1/futs/m/n/12 (4), 574--592. []$https 
 : / / doi . org / 10 . 1177 /
  []
 
 
-Underfull \hbox (badness 1609) in paragraph at lines 3586--3588
+Underfull \hbox (badness 1609) in paragraph at lines 3613--3615
  \T1/futs/m/n/12 clin-i-cal and non-clin-i-cal adults. \T1/futs/m/it/12 Re-vue 
 d'Épidémiologie et de Santé Publique\T1/futs/m/n/12 , \T1/futs/m/it/12 59\T1/fu
 ts/m/n/12 (5),
  []
 
 
-Underfull \hbox (badness 2717) in paragraph at lines 3589--3591
+Underfull \hbox (badness 2717) in paragraph at lines 3616--3618
  [][]\T1/futs/m/n/12 Moulton, S. T., & Koss-lyn, S. M. (2009). Imag-in-ing pre-
 dic-tions: Men-tal im-agery as
  []
 
 Missing character: There is no œ in font futr8t!
 
-Underfull \hbox (badness 2469) in paragraph at lines 3595--3597
+Underfull \hbox (badness 2469) in paragraph at lines 3622--3624
  [][]\T1/futs/m/n/12 Nalborczyk, L., Batailler, C., Lven-bruck, H., Vi-lain, A.
 , & Bürkner, P.-C. (2019a). An
  []
 
 Missing character: There is no œ in font futr8t!
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[168]
 Missing character: There is no œ in font futr8t!
 
-Underfull \hbox (badness 8019) in paragraph at lines 3613--3615
+Underfull \hbox (badness 8019) in paragraph at lines 3640--3642
  [][]\T1/futs/m/n/12 Nicenboim, B., & Va-sishth, S. (2016). Sta-tis-ti-cal meth
 -ods for lin-guis-tic re-search:
  []
 
 
-Underfull \hbox (badness 1642) in paragraph at lines 3616--3618
+Underfull \hbox (badness 1642) in paragraph at lines 3643--3645
  \T1/futs/m/n/12 asym-me-tries in emo-tional ex-pres-sion with three-dimensiona
 l com-put-er-ized im-age
  []
 
 
-Underfull \hbox (badness 1005) in paragraph at lines 3619--3621
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[171]
+Underfull \hbox (badness 1005) in paragraph at lines 3646--3648
  [][]\T1/futs/m/n/12 Nicholls, M. E. R., & Searle, D. A. (2006). Asym-me-tries 
 for the vi-sual ex-pres-sion and
  []
 
 
-Underfull \hbox (badness 6758) in paragraph at lines 3628--3630
+Underfull \hbox (badness 6758) in paragraph at lines 3655--3657
  [][]\T1/futs/m/n/12 Nolen-Hoeksema, S. (2000). The role of ru-mi-na-tion in de
 -pres-sive dis-or-ders and
  []
 
 
-Underfull \hbox (badness 3601) in paragraph at lines 3634--3636
+Underfull \hbox (badness 3601) in paragraph at lines 3661--3663
  [][]\T1/futs/m/n/12 Nolen-Hoeksema, S., & Mor-row, J. (1991). A Prospec-tive S
 tudy of De-pres-sion and
  []
 
 
-Underfull \hbox (badness 3590) in paragraph at lines 3634--3636
+Underfull \hbox (badness 3590) in paragraph at lines 3661--3663
  \T1/futs/m/n/12 Post-trau-matic Stress Symp-toms Af-ter a Nat-u-ral Dis-as-ter
 : The 1989 Loma Pri-eta
  []
 
 
-Underfull \hbox (badness 1668) in paragraph at lines 3640--3642
+Underfull \hbox (badness 1668) in paragraph at lines 3667--3669
  [][]\T1/futs/m/n/12 Nolen-Hoeksema, S., Wisco, B. E., & Lyubomirsky, S. (2008)
 . Re-think-ing Ru-mi-na-tion.
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[169]
-Underfull \hbox (badness 4156) in paragraph at lines 3652--3654
+Underfull \hbox (badness 4156) in paragraph at lines 3679--3681
  \T1/futs/m/n/12 Mech-a-nisms Un-der-ly-ing Mo-tor Im-agery? A Crit-i-cal Re-vi
 ew. \T1/futs/m/it/12 Fron-tiers in Hu-man
  []
 
 
-Underfull \hbox (badness 3428) in paragraph at lines 3676--3678
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[172]
+Underfull \hbox (badness 3428) in paragraph at lines 3703--3705
  [][]\T1/futs/m/n/12 Pedersen, T. L. (2018). \T1/futs/m/it/12 Ggforce: Ac-cel-e
 r-at-ing 'gg-plot2'\T1/futs/m/n/12 . Re-trieved from []$https : / / CRAN .
  []
 
 
-Underfull \hbox (badness 1210) in paragraph at lines 3679--3681
+Underfull \hbox (badness 1210) in paragraph at lines 3706--3708
  [][]\T1/futs/m/n/12 Penney, A. M., Miedema, V. C., & Maz-ma-nian, D. (2015). I
 n-tel-li-gence and emo-tional
  []
 
 Missing character: There is no œ in font futr8t!
 
-Underfull \hbox (badness 1596) in paragraph at lines 3682--3684
+Underfull \hbox (badness 1596) in paragraph at lines 3709--3711
  \T1/futs/m/n/12 per-for-mance, and its re-la-tion to self-monitoring. \T1/futs
 /m/it/12 Be-havioural Brain Re-search\T1/futs/m/n/12 , \T1/futs/m/it/12 261\T1/
 futs/m/n/12 ,
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[170]
-Underfull \hbox (badness 2781) in paragraph at lines 3688--3690
+Underfull \hbox (badness 2781) in paragraph at lines 3715--3717
  \T1/futs/m/n/12 and Re-duc-tion of Wavelet Trans-form Co-ef-fi-cients for EMG 
 Pat-tern Clas-si-fi-ca-tion.
  []
@@ -4763,38 +4870,38 @@ Pat-tern Clas-si-fi-ca-tion.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[171]
+[173]
 Missing character: There is no œ in font futr8t!
 
-Underfull \hbox (badness 1675) in paragraph at lines 3736--3738
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[174]
+Underfull \hbox (badness 1675) in paragraph at lines 3763--3765
  \T1/futs/m/n/12 repli-ca-tion. \T1/futs/m/it/12 Be-haviour Re-search and Ther-
 apy\T1/futs/m/n/12 , \T1/futs/m/it/12 15\T1/futs/m/n/12 , 185--191. []$https : 
 / / doi . org / 10 . 1016 /
  []
 
 
-Underfull \hbox (badness 2401) in paragraph at lines 3739--3741
+Underfull \hbox (badness 2401) in paragraph at lines 3766--3768
  [][]\T1/futs/m/n/12 Robinson, M. S., & Al-loy, L. B. (2003). Neg-a-tive cog-ni
 -tive styles and stress-reactive
  []
 
 
-Underfull \hbox (badness 1742) in paragraph at lines 3745--3747
+Underfull \hbox (badness 1742) in paragraph at lines 3772--3774
  [][]\T1/futs/m/n/12 Rossini, P. M. (1999). Cor-ti-cospinal Ex-citabil-ity Mod-
 u-la-tion to Hand Mus-cles Dur-ing
  []
 
 
-Underfull \hbox (badness 1173) in paragraph at lines 3751--3753
+Underfull \hbox (badness 1173) in paragraph at lines 3778--3780
  [][]\T1/futs/m/n/12 Saito, S. (1997). When ar-tic-u-la-tory sup-pres-sion does
  not sup-press the ac-tiv-ity of the
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[172]
-Underfull \hbox (badness 10000) in paragraph at lines 3766--3768
+Underfull \hbox (badness 10000) in paragraph at lines 3793--3795
  \T1/futs/m/n/12 Hy-poth-e-sis Test-ing With Bayes Fac-tors: Ef-fi-ciently Test
 -ing Mean Dif-fer-ences.
  []
@@ -4802,66 +4909,75 @@ Underfull \hbox (badness 10000) in paragraph at lines 3766--3768
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[173]
-Underfull \hbox (badness 10000) in paragraph at lines 3817--3819
+[175]
+Underfull \hbox (badness 2941) in paragraph at lines 3841--3843
+ \T1/futs/m/n/12 dis-po-si-tion is as-so-ci-ated with im-paired at-ten-tional d
+is-en-gage-ment from neg-a-tive
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[176]
+Underfull \hbox (badness 10000) in paragraph at lines 3850--3852
  [][]\T1/futs/m/n/12 Sumitsuji, N., Mat-sumoto, K., Tanaka, M., Kashi-wagi, T.,
  & Kaneko, Z. (1967).
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3820--3822
+Underfull \hbox (badness 10000) in paragraph at lines 3853--3855
  \T1/futs/m/n/12 (3rd ed., pp. 267--300). Cam-bridge: Cam-bridge Uni-ver-sity P
 ress. Re-trieved
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3820--3822
+Underfull \hbox (badness 10000) in paragraph at lines 3853--3855
  \T1/futs/m/n/12 from []$https : / / www . cambridge . org / core / books / han
 dbook-[]of-[]psychophysiology /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3826--3828
+Underfull \hbox (badness 10000) in paragraph at lines 3859--3861
  [][]\T1/futs/m/n/12 Topolinski, S., & Strack, F. (2009). Mo-tor-mouth : Mere E
 x-po-sure De-pends on
  []
 
 
-Underfull \hbox (badness 1210) in paragraph at lines 3826--3828
+Underfull \hbox (badness 1210) in paragraph at lines 3859--3861
  \T1/futs/m/n/12 Stimulus-Specific Mo-tor Sim-u-la-tions. \T1/futs/m/it/12 Jour
 -nal of Ex-per-i-men-tal Psy-chol-ogy: Learn-ing,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3844--3846
+Underfull \hbox (badness 10000) in paragraph at lines 3877--3879
  \T1/futs/m/n/12 from anarthria. \T1/futs/m/it/12 Cog-ni-tive Neu-ropsy-chol-og
 y\T1/futs/m/n/12 , \T1/futs/m/it/12 4\T1/futs/m/n/12 (1), 55--77. []$https : / 
 / doi . org / 10 . 1080 /
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[174]
-Underfull \hbox (badness 1394) in paragraph at lines 3853--3855
+Underfull \hbox (badness 1394) in paragraph at lines 3886--3888
  [][]\T1/futs/m/n/12 Vugt, M. K. van, Velde, M. van der, & ESM-MERGE In-ves-ti-
 ga-tors. (2018). How Does
  []
 
 
-Underfull \hbox (badness 2529) in paragraph at lines 3871--3873
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[177]
+Underfull \hbox (badness 2529) in paragraph at lines 3904--3906
  [][]\T1/futs/m/n/12 Watanabe, S. (2010). Asymp-totic Equiv-a-lence of Bayes Cr
 oss Val-i-da-tion and Widely
  []
 
 
-Underfull \hbox (badness 1590) in paragraph at lines 3871--3873
+Underfull \hbox (badness 1590) in paragraph at lines 3904--3906
  \T1/futs/m/n/12 Ap-pli-ca-ble In-for-ma-tion Cri-te-rion in Sin-gu-lar Learn-i
 ng The-ory. \T1/futs/m/it/12 Jour-nal of Ma-chine
  []
 
 
-Underfull \hbox (badness 1939) in paragraph at lines 3892--3894
+Underfull \hbox (badness 1939) in paragraph at lines 3925--3927
  [][]\T1/futs/m/n/12 Watkins, E. R., & Nolen-Hoeksema, S. (2014). A habit-goal 
 frame-work of de-pres-sive
  []
@@ -4869,23 +4985,19 @@ frame-work of de-pres-sive
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[175]
-Underfull \hbox (badness 1577) in paragraph at lines 3922--3924
+[178]
+Underfull \hbox (badness 1577) in paragraph at lines 3958--3960
  [][]\T1/futs/m/n/12 Woody, M. L., McGeary, J. E., & Gibb, B. E. (2014). Brood-
 ing ru-mi-na-tion and heart
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[176]
-
 Class memoir Warning: The material used in the headers is too large
 (28.99998pt) for the given head height (14.5pt), it is recommended to
 either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 3941.
+(in both cases you will find help in the memoir manual). on input line 3977.
 
-[177]
+[179]
 \tf@toc=\write8
 \openout8 = `thesis.toc'.
 
@@ -4895,11 +5007,11 @@ either increase the head height or redesign the header
 \tf@lof=\write10
 \openout10 = `thesis.lof'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3941.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 3941.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3977.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 3977.
 (./thesis.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 3941.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3941.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 3977.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3977.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: B4FE48B80E5B7AE1894AC0224C080151.
@@ -4909,11 +5021,11 @@ LaTeX Warning: There were multiply-defined labels.
  ) 
 Here is how much of TeX's memory you used:
  46119 strings out of 492970
- 889897 string characters out of 6133938
- 1214090 words of memory out of 5000000
- 49430 multiletter control sequences out of 15000+600000
+ 889862 string characters out of 6133938
+ 1214028 words of memory out of 5000000
+ 49429 multiletter control sequences out of 15000+600000
  745174 words of font info for 180 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  64i,19n,96p,10447b,783s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.pdf (197 pages).
+Output written on thesis.pdf (199 pages).
