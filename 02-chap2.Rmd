@@ -77,7 +77,7 @@ A muscle is a collection of fibers that can vary in length, orientation, diamete
 
 The contraction of the skeletal muscles is initiated by electrical impulses that propagate from the central nervous system to the muscle via the $\alpha$-motoneurons. Interestingly, many (both larger and smaller) muscles are partitioned, with each portion having a specific role for the muscle function. Moreover, there is no one-to-one mapping between populations of motor neurons and muscle compartments. In other words, one population of motoneurons may innervate several compartments and reciprocally, several populations of motoneurons may innervate the same muscle compartment. Therefore, interpreting the EMG signal requires to be aware whether the recorded signal is characteristic of a whole muscle' activity or of a specific muscle compartment [@kamen_essentials_2010].
 
-```{r muscle, out.width = "50%", fig.cap = "Illustration of a muscle fiber. Figure from the OpenStax \\textit{Anatomy and Physiology} Textbook. Download for free at \\url{https://cnx.org/contents/14fb4ad7-39a1-4eee-ab6e-3ef2482e3e22@15.1}."}
+```{r muscle, out.width = "50%", fig.cap = "Illustration of a skeletal muscle, muscle fascicle and muscle fiber. Figure from the OpenStax \\textit{Anatomy and Physiology} Textbook. Download for free at \\url{https://cnx.org/contents/14fb4ad7-39a1-4eee-ab6e-3ef2482e3e22@15.1}."}
 knitr::include_graphics("assets/muscle.jpg")
 ```
 
