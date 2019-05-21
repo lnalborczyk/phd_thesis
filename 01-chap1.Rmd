@@ -17,7 +17,7 @@ knitr::opts_chunk$set(
 
 \initial{A}s you read these words, you might notice the presence of an inner voice. This phenomenon, albeit occurring on a daily basis, usually remains unnoticed until we pay attention to it. However, if I ask you to focus on that little voice while reading these lines, you would probably be able to provide a relatively fine-grained description of this phenomenon. Whose voice is it? Is it yours? Is it gendered? It is usually possible to examine these aspects as well as lower-level features such as the tone, pitch, tempo, or virtually any sensory aspect of this voice. This first set of basic observations already provides us with some important insights. First, if we can think about our *inner speech*, then it should be something different from "thinking" itself (where thinking is used in its broadest sense to refer to any sort of mental episode). Rather, inner speech can be construed as *a* vehicle for conscious thought.^[We will not delve into the touchy question of the role inner speech plays in theories of consciousness [but see @carruthers_language_1996;@dennett_consciousness_1991].] Second, the phenomenological observations we can make about our inner voice reveal that inner speech is (or might be) accompanied by sensory percepts (e.g., speech sounds, kinaesthetic feelings). It thus raises another set of fascinating questions about the origin and nature of inner speech percepts. Where do these percepts come from? Why do they look like the one we experience when we speak overtly?
 
-This first set of questions refer to the *nature* of inner speech, that is, to *what* it is. In the present work, we are mostly concerned with these questions. Another set of issues revolve around the question of the *functions* of inner speech, that is, *what it is for*. The influential Vygotskian theory of inner speech development suggests that inner speech evolves from so-called *egocentric speech* (i.e., self-addressed overt speech) during childhood. As such, for the present purpose, we assume that the functions of inner speech are inherited from those of egocentric speech via a process of progressive internalisation. The specific features of this internalisation process are worthy of investigation on their own (and we briefly discuss them later on). However, we are mostly interested here in the *what is* (i.e., the nature) question. Thus, we will only sparsely address the question of the functions of inner speech.
+This first set of questions refer to the *nature* of inner speech, that is, to *what* it is. In the present work, we are mostly concerned with these questions. Another set of issues revolve around the question of the *functions* of inner speech, that is, *what it is for*. The influential Vygotskian theory of inner speech development suggests that inner speech evolves from so-called *egocentric speech* (i.e., self-addressed overt speech or *private speech*) during childhood. As such, for the present purpose, we assume that the functions of inner speech are inherited from those of egocentric speech via a process of progressive internalisation. The specific features of this internalisation process are worthy of investigation on their own (and we briefly discuss them later on). However, we are mostly interested here in the *what is* (i.e., the nature) question. Thus, we will only sparsely address the question of the functions of inner speech.
 
 That being said, we think a lot can be learned about inner speech by looking at situations in which these functions deviate from their original trajectory. These *dysfunctions*  are instances of inner speech where its (functional or adaptive) functions, such as problem-solving, self-regulation or planning do not work as intended. These dysfunctional instances of inner speech may include auditory verbal hallucinations [AVHs; for a detailed investigation of the relation between inner speech and AVHs, see @Rapin2011], where the sense of agency (i.e., who is the author of the internal speech) is impaired, or repetitive negative thinking such as worry or rumination, where the ability to control (or to disengage from) negative thoughts is impaired. In the present work, we investigate (some of) the psychophysiological correlates of rumination, starting with the theoretical assumption that rumination can be considered as a form of inner speech. Therefore, we study rumination as we would study inner speech, with the potential of refining our understanding of both rumination and inner speech.
 
@@ -99,29 +99,83 @@ Some of the few studies specifically manipulating verbal and visual rumination w
 Although not directly focused on rumination, the task developed by @holmes_causal_2008 is quite inspiring in designing a protocol for exploring rumination in different modalities. These authors aimed to compare verbal and imagery processing in terms of their differential effects on emotion. They noticed that previous procedures provided verbal descriptions of the events that needed to be processed verbally or visually. The authors argued that with such descriptions, the imagery condition has an additional processing mode in comparison to the. Their proposed solution was to combine pictorial and verbal cues and to ask participants to integrate them into either a sentence or an image.
 -->
 
-To sum up, although rumination might be expressed in different modalities, it is usually expressed in a verbal form. Therefore, we suggest that *verbal* rumination migh be considered as a form of inner speech. To understand what this implies for the study of rumination, we now turn to a brief historical overview of inner speech research. This historical tour will allow us to introduce the experimental tools that have been used to investigate inner speech. We will then present the main theoretical perspectives on inner speech and discuss its analogies with the broader phenomenon of motor imagery. Finally, we will discuss how surface electromyography can be used to investigate rumination as a form of inner speech.
+To sum up, although rumination might be expressed in different modalities, it is usually expressed in a verbal form. Therefore, we suggest that *verbal* rumination migh be considered as a form of inner speech. To understand what this assumption implies for the study of rumination, we now turn to a brief historical overview of inner speech research. This historical tour will allow us to introduce the experimental tools that have been used to investigate inner speech. We will then present the main theoretical perspectives on inner speech and discuss its analogies with the broader phenomenon of motor imagery. Finally, we will discuss how surface electromyography can be used to investigate rumination as a form of inner speech.
 
 ## What is that little voice inside my head?
 
 ### Brief historical overview of inner speech investigations
 
-As noted by @vygotsky_thought_2012, the term of inner speech has been used to described somehow different phenomena. @vygotsky_thought_2012 suggest that the term of inner speech has initially been employed to refer to "verbal memory", citing for example the "silent recital ofa peom known by heart" (p.238). Indeed, @cardaillac_etudes_1830 earlier said: "la parole intérieure n'est que le souvenir de la sensation que produit la parole extérieure" [quoted in @egger_parole_1881, p.53].^[Which can be translated by "inner speech is only the memory of the sensation produced by external speech".] The earlier investigations of inner indeed seem to revolve around the quesiton of knowing how words were reproduced in memory.... auditory, visual or motor images...
+#### History of ideas
 
-A second perspective on inner speech sees it as truncated inner speech, that is, "speech minus sounds" of "subvocal speech" (Watson)... Sechenov called it a reflex...
+There is something paradoxical with inner speech. While we^[Or most of us... see hurlburt work...] experience it on a daily basis, the precise nature is still poorly understood. To begin with a definition, by inner speech we refer to the activity of silently talking to oneself. This activity has been given many other names, such as covert speech, subvocal speech, verbal thinking, internal monologue, internal dialogue, speech imagery, auditory verbal imagery, silent talk, and so on [@morin_inner_2009]. The large number of names to designate the phenomeomn of inner speech might be explained by its fragmentary nature. On others words, we might have sevral names to designate it because it refers to differents phenomena, or to differnt forms of the more general action of talking to oneself silently...
+
+As noted by @vygotsky_thought_2012, the term of inner speech has been used to describe somehow different phenomena. @vygotsky_thought_2012 suggest that the term of inner speech has initially been employed to refer to "verbal memory", citing for example the "silent recital of a peom known by heart" (p.238). Indeed, @cardaillac_etudes_1830 earlier said: "la parole intérieure n'est que le souvenir de la sensation que produit la parole extérieure" [quoted in @egger_parole_1881, p.53].^[Which can be translated by "inner speech is only the memory of the sensation produced by external speech".] The earlier investigations of inner indeed seem to revolve around the quesiton of knowing how words were reproduced in memory.... auditory, visual or motor images...
+
+... inner speaking and inner hearing @Hurlburt2013... inner voice and inner ear in memory research... difference between imagination and imagery (see Wlkinson & Fernuhough 2017)...
+
+A second perspective on inner speech sees it as truncated inner speech, that is, "speech minus sounds" of "subvocal speech" [@watson_psychology_1919]. In ine with his refelxology theory of thought, Sechenov called inner speech a reflex and wrote that "I never think directly in words, but always instead in mùuscular sensation which accompany my thought in the form of a conversation" [cited in @sokolov_inner_1972, p.4]. It should be noted however, as highlighted by @sokolov_inner_1972, that the behaviorist approach and the reflex approach differ in that the former consider that inner speech "originate" from peripheral muscular activations whereas the later consider inner speech to result from central (cerebral) processes...^[We discuss this distinction in more details later under the disguise of the centralist versus peripheralist debate.]
+
+The question of the relation and intertwinnment of thought and language is one of the most enduring philsophical question... egyptians, location of thought in the mouth... [an anecdote related in @egger_parole_1881, p.XX]... @sokolov_inner_1972 notes that ancient thinkers, by noticing a relation between thoughts and words, and between words and breathing, used to think that thoughts and wors originated in the lungs. @sokolov_inner_1972 quots as an examples Socrates, in Plato's Phaedrus, who said that "his chest is full of thoughts"...
+
+Based on his own introspections, @stricker_studien_1880 reported that he was not able to mentally produce speech sounds without making movements ith the articulators. He also reported not being able to produce two different speech sounds, or to produce speech sounds that were incongruent with movement of the articulators. For instance, he suggested an experiment [inspired from...]...
+
+However, @paulhan_langage_1886 replied that he was able to produce (innerly) the vowel 1 and maintan the image of other vowels and that he was able to imagine the sound of any vowel without motor actions or feelings (images). Maybe this debats illustrates the limitations of the introspective method...which gives birht to experimental methods atthe beginning of the last century... for instance @reed_existence_1916 desrbies an apparatus to examine tongue movements (see Figure XX) and an experiment to examine the inovlvment of inner spech (and speech motor processes) in thinking...
+
+```{r reed, out.width = "50%", fig.cap = "Figure 1 \\& 2 from Reed (1916), describing the apparatus used to record tongue movement during thinking and inner speech."}
+knitr::include_graphics("assets/reed.png")
+```
+
+...@james_principles_1890... going beyond introspection and looking for the "stamp of objective certainty" [@reed_existence_1916]... See @reed_existence_1916 for an historical perspective... this initial suggestion (by watson) lead to a fruitful line of research about the muscular bases and/or correlates of thought and inner speech...for instance, @reed_existence_1916 observed that participnts were moving their tongue and lips (and sometimes whispering) while reading...
 
 According to @vygotsky_thought_2012, a third interpretation of inner speech would refer, following Kurt Goldstein, to everything that "prcedes the motor act of speaking"...
 
+Historical perspective on the exploration of the role of motor processes in inner speech, from @sokolov_inner_1972. Dodge (1898) anesthetised his lips and tongue and ralised that is not impact on his inner speech. Curtis (1899) and Courten (1902) recorded laryngeal movements using a pneumatic drum and a kymograph while his participants recited verses or were reading. They observed that laryngeal movement were not always present and depended on what was being read and/or produced, as well as on the "degree of understanding"...
+
 There might be a variety of forms [@rosenthal_voix_2012]... for instance, @egger_parole_1881 makes a distinction between the "variétés vives" (translation) of inner speech that look like external speech and the more "passive" forms of inner speech... different forms (see saint-paul, 1982)...
+
+<!-- \begin{landscape} -->
+
+```{r timeline, out.width = "100%", fig.cap = "Non-exhaustive overview of contemporary inner speech research from 1850 to present days."}
+knitr::include_graphics("assets/timeline.pdf")
+```
+
+<!-- \end{landscape} -->
+
+...
+
+#### History of methods...
+
+Like most psychological phenomena, the study of inner speech started with introspective observations [@morin_inner_2009]. Blah blah ...see morin & uttl... recording of private speech of children in naturalistic environments (e.g., in the classrom) or in the laboratory. Moreover, think out loud methods have been devleoped, where participants are asked to (overtly) produce their though while being engaged in some task. A problem of this method is related to the re-expansion [@fernyhough_alien_2004]... we discuss this issue further later...
+
+Thought listing... thought sampling... descriptive experience sampling method... notebooks...
+
+Physiological mesurements...
+
+Neuroanatomy of inner speech production...
 
 <!--
 ...descriptive experience sampling, from Hulrburt, described in https://epistemocritique.org/investigating-inner-speech-a-new-protocole-linguistic-and-inner-speech-fact-le-langage-interieur-un-nouveau-protocole-denquete-fait-linguistique-et-fait-endophasique/)... La méthode du psychologue américain Russell Hurlburt, qu’il créée dans les années 1970 et appelle Descriptive Experience Sampling (DES), a ouvert une sorte de refondation des études sur l’endophasie. Le participant est doté d’une machine qui sonne aléatoirement huit fois par jour. Lorsque le son retentit, le participant, s’il le peut, note ce qui se passait à l’instant dans sa vie intérieure. Au bout de trois ou cinq jours (maximum huit), l’expérience s’arrête et un entretien a lieu en face à face, pour que le participant puisse expliciter et contextualiser ses notations. Après un recul sous l’ère structuraliste, l’introduction d’un facteur aléatoire dans la méthode d’investigation fonde l’espoir d’une scientificité de la démarche plus démontrable et suscite un regain d’intérêt à travers plusieurs disciplines, notamment les neurosciences. L’idée est de supprimer au maximum tout biais subjectif, d’objectiver en quelque sorte la vie intérieure. De plus, le fait que l’entretien ait lieu après l’expérience laisse libre champ au participant, qui n’a pas en tête la moindre catégorisation venant de l’équipe de recherche. L’inconvénient de cette méthode reste le petit nombre d’occurrences conservées (six sur huit, par jour, sur un maximum de huit jours), assez peu représentatives de la vie intérieure. Cependant, ces expérimentations ont été menées depuis maintenant plus de quarante ans, si bien que les résultats ont pu être corroborés ou rectifiés au fil du temps. La somme des données offre désormais un aperçu extrêmement significatif (voir Hurlburt 2011 pour une synthèse)...
 -->
 
-Development... @watson_psychology_1919, Piaget (1923), Vyogtsky (1934)...
+### The production of inner speech
+
+How do we produce speech ?
+
+### The development of inner speech
+
+Development... @watson_psychology_1919, Piaget (1923), Vyogtsky (1934)... development of AVHs... two propositions highlighted by @fernyhough_alien_2004: either a disruption of internalisation (in the devleopment) or a re-expansion model...
+
+@fernyhough_alien_2004 extends the three-levels Vygostkian model of inner speech devlopment (external speech, egocentric speech, inner speech) to a four-level model, from external dialogue to private speech, expanded inner speech and condensed inner speech. @fernyhough_alien_2004 notes that this model describe stages in the development of inner speech (during childhoohd) but also the movements "between the levels at any given point in time"...
+
+```{r fernyhough, out.width = "75%", fig.cap = "Stages of internalisation. Figure from Fernyhough (2004)."}
+knitr::include_graphics("assets/fernyhough_model_2004.pdf")
+```
+
+Interestingly, some transitions between levels can be executed. For instance, under demanding cognitive conditions, we can observe transitions between levels, with condensed inner speech going back to expanded inner speech and even dialogic private speech through a process of "re-expansion". This idea is supported by studies showing an progressive externalisation of inner speech under cognitively demanding situations [e.g.,@sokolov_inner_1972].
 
 Soviet psychology... Marxist psychology... Akhutina (2003) highlights a distinction between the study of inner speech (and speech production in general) in the west based on linguistics and chomsky work, and its origin in Marxist psychology in the east, where language is to be though in relation to its usages...
 
-Vygostky essential properties of inner speech: i) abbreviation, the phonetic aspect is "diminished", reduced, "In inner speech we do not need to pronounce a word in its entirety. We understand, by virtue of our very intention, what word we wanted to say... Strictly speaking, inner speech is almost wordless" (Vygotsky, 1956, p. 368). ii) predicativeness, "Psychologically, inner speech consists of predicates only"; "the subject of our inner reason is always present in our thought"; it is always implicitly understood (Vygotsky, 1956, pp. 364, 365), iii) it has a semantic structure of its own: predominance of *sense* over *meaning*^[Referring to Paulhan's distinction between the dictionary *meaning* of a word on one hand, and the individual *sense* of a word which acquired by usage, on the other hand.], it is idiomatic, agglutination of semantic units, etc.
+Vygostky essential properties of inner speech: i) abbreviation, the phonetic aspect is "diminished", reduced, "In inner speech we do not need to pronounce a word in its entirety. We understand, by virtue of our very intention, what word we wanted to say... Strictly speaking, inner speech is almost wordless" (Vygotsky, 1956, p. 368). ii) predicativeness, "Psychologically, inner speech consists of predicates only"; "the subject of our inner reason is always present in our thought"; it is always implicitly understood (Vygotsky, 1956, pp. 364, 365), iii) it has a semantic structure of its own: predominance of *sense* over *meaning*^[Referring to Paulhan's distinction between the dictionary *meaning* of a word on one hand, and the individual *sense* of a word which acquired by usage, on the other hand.], it is idiomatic, agglutination of semantic units, and *infusion of sense* into a word (a word in inner speech becomes "loaded" with more associaitons thant in conventional use).
 
 Therefore, for Vygostky, it follows that the passage from inner speech to overt speech consists not in simply "vocalising" inner speech but in *restructuring* inner speech (e.g., retrieving a yntax proper to overt speech, retrieveing the phonetic structure, etc)...
 
@@ -141,35 +195,15 @@ For Luria (1956), a verbal utterance usually starts with a *motive*^[This includ
 
 @watson_psychology_1919 suggested that thought was rooted in (overt) speech, with maturation leading from speech to thought.. this hypothesis also applied to reading, with beginning reader overtly reading and progessively silently reading...
 
-See reed 1916 for an historical perspective... this initial suggestion (by watson) lead to a fruitful line of research about the muscular bases and/or correlates of thought and inner speech...for instance, Reed (1916) observed that participnts were moving their tongue and lips (and sometimes whispering) while reading...
+### The multiple varieties of inner speech
 
-In a small monograph, @stricker_studien_1880 reported that... however, Paulhan (1886) replied that he was able to produce (innerly) the vowel 1 and maintan the image of other vowels and that he was able to imagine the sound of any vowel without motor actions or feelings (images). Maybe this debats illustrates the limitations of the introspective method...which gives birht to experimental methods atthe beginning of the last century... for instance reed (1916) desrbies an apparatus to examine tongue movements (see Figure XX) and an experiment to examine the inovlvment of inner spech (and speech motor processes) in thinking...
-
-```{r reed, out.width = "50%", fig.cap = "Figure 1 \\& 2 from Reed (1916), describing the apparatus used to record tongue movement during thinking and inner speech."}
-knitr::include_graphics("assets/reed.png")
-```
-
-Faaborg-Anderson and Edfeldt (1958) found that activity in vocal musculature increased with difficulty of text [see also @sokolov_inner_1972]... however it is not clear that reading always entails inner speech and (or more precisely), that inner speech always involve "sub-articulation"...discuss counter-examples by the "anesthesists" [e.g.,@smith_lack_1947]...
-
-Historical perspective on the exploration of the role of motor processes in inner speech, from @sokolov_inner_1972. Dodge (1898) anesthetised his lips and tongue and ralised that is not impact on his inner speech. Curtis (1899) and Courten (1902) recorded laryngeal movements using a pneumatic drum and a kymograph while his participants recited verses or were reading. They observed that laryngeal movement were not always present and depended on what was being read and/or produced, as well as on the "degree of understanding"...
-
-<!--
-\begin{landscape}
--->
-
-```{r timeline, out.width = "100%", fig.cap = "Non-exhaustive overview of contemporary inner speech research from 1850 to present days."}
-knitr::include_graphics("assets/timeline.pdf")
-```
-
-<!--
-\end{landscape}
--->
+@faaborg-andersen_electromyography_1958 found that activity in vocal musculature increased with difficulty of text [see also @sokolov_inner_1972]... however it is not clear that reading always entails inner speech and (or more precisely), that inner speech always involve "sub-articulation"...discuss counter-examples by the "anesthesists" [e.g.,@smith_lack_1947]...
 
 @jacobson_electrical_1931 used a galvanometer to record action potentials of tongue and lips muscles and observed small musles contraction during inner speech production, "as if words were pronounced in a rapid and abbreviated manner" [cited in @sokolov_inner_1972, p.45].
 
 The discussion of inner speech in soviet Psychology resolved mostly around the issue of the functions of inner speech. The work of Lev Vygotsky and PP Blonsky (for instance) culminted in si suggesting that inner speech is speech "to oneself" and "for oneself". Interestingly, Vygotsky rejected both the verbal memory view of inner speech (i.e., inner speech is simply the retrieval of acoustic, optic or motor images of words) and the behaviourist view of inner speech as merely a soundless form ox external speech (à la Watson). For Vygotsy, the most dtermining factors of inner speech are its semantic features...
 
-Concerning the development of inner speech, Vygostky considered that inner speech likely dervies from the *egocentric speech*^[According to Piaget, the egocentric speech is a conversation of the child aloud with herself.] of the preschool child. This lead Vygostky to claim a functional equivalence between egocentric speech and internal speech, the later resulting from a progressive internalisation of the former...
+Concerning the development of inner speech, Vygostky considered that inner speech likely dervies from the so-called *egocentric speech*^[According to Piaget, the egocentric speech is a conversation of the child aloud with herself.] of the preschool child. This lead Vygostky to claim a functional equivalence between egocentric speech and internal speech, the later resulting from a progressive internalisation of the former...
 
 Vygostky... high *predicativeness* of inner speech (no subject), because we know what we are talking about... abbreviateness...
 
@@ -193,15 +227,17 @@ Argument about phonological activation during reading, see @abramson_what_1997, 
 
 ...whereas studies have showed that children can store verbal information, the active (silent) rehearsal of verbal information seems somehow "deficient" before the age of 7 years [e.g.,@flavell_spontaneous_1966]... which is coherent with the Vygostkian predictions discussed earlier...
 
-...recent attempt to integrate the verbal working memory and language literatures... Buchsbaum & D'Esposito (2019)...
+...recent attempt to integrate the verbal working memory and language literatures [@buchsbaum_sensorimotor_2019]...
 
-#### MVTV Cohen (1986)
+#### Motor theories of voluntary thinking
 
-...
+The *motor theory of voluntary thinking* [MTVT, @cohen_motor_1986]... notes that a critical aspect of motor theories is that they rely on peripheral motor feedback (i.e., afferent feedback from the contraction of the muscles. Hoewver, he then suggest that although motor feedback might be necessay at the initial stages of an internalised action (as inner speech), these feedbacks might becore unnecessary through repeated associations that would "short-circuit connections within the central nervous system" [@cohen_motor_1986, p.21]... the MTVT suggests that mtor activity would be necessary for meantal experiences without external sensatio (i.e., for imagery or thoughts). Building on @washburn_1916 definition of kinaethetic images... suggests that inner speech (or rather, the sensory percepts associated with inner speech) might be explained by its associations with motor activity. Indeed, according to @cohen_motor_1986, "associations between one's voice and kinesthetic sensations from one's speech musculature are very specific, consistent, and frequently repeated" (p.22). Therefore, slight (unconscious) contractions of the speech musculature might evoke speech auditory images. In support of this idea, Cohen reports the results of an interesting epxeirment lead by Hefferline & Perera (1963): "when the subject occasionnaly emitted an invisibly small thumb twitch (detected electromyographically), he received a tone as a signal to press a key. After several conditioning sessions, the tone was progressively diminished to zero. The subject nevertheless cotonued to press the key whenever he emitted a thumb twitch, and he reported that he still heard the tone."... Cohen then moves to a presentation of the motor theory of attention, according to which motor activity allows oneself to emphasise (or weight) one aspct of perception over another... The MTVT, while not suggesting that motor activity for any sort of mental image or thought, suggests that motor feedback *can* evoke mental images and thoughts (e.g., via the principle of association discussed above) and that motor activity is reponsible for forthe experience of volition in thinking. This idea is consistent with self-monitoriing models and motor control model of inner speech production. The MVT suggests that thoughts that are experienced voluntary (e.g., rehearsing a novel phone number) are accompanid by motor activity whereas non voluntary thoughts (e.g., intrusive thoughts or ruminative thoughts) are not. Interestingly, Cohen also suggests that "a thought may appear to be effortless because no motor activation is involved, or because the motor activity is of an automatic nature" (p.27)...
 
-#### Predictive models
+The hierarchical model of mental practice [@mackay_problem_1981]...
 
-...
+#### Predictive account of inner speech
+
+AVHs model... frith...guire...rapin...speech production mechanisms...
 
 Speech production involves the fine-grained coordination of more than 100 muscles in the upper part of the body [@simonyan_laryngeal_2011]. In adult humans, its covert counterpart (i.e., *inner speech* or *verbal imagery*) has developed to allow the full reconstruction of usual overt speech situations. In the same way as visual imagery allows to mentally examine visual scenes, *verbal imagery* can be used as an internal tool, allowing --amongst other things-- to rehearse or to prepare past and future speech situations [for a review, see @Perrone-Bertolotti2014]. In consideration of its self-evident motoric nature, a parallel can be drawn between verbal imagery and other forms of motor imagery (e.g., imagined walking or imagined writing). As such, inner speech studies might benefit from insights gained from the study of motor imagery and the field of motor cognition [e.g.,@haggard_conscious_2005;@jeannerod_motor_2006].
 
@@ -211,11 +247,9 @@ Let’s consider the analogy between speaking and playing an instrument (e.g., t
 
 This view is somehow consistent with the Vygotskian view of inner speech as internalised egocentric (or private) speech but it proposes a formal mechanism to explain it...
 
-#### Loevenbruck et al., HMOSAIC
-
 @loevenbruck_cognitive_2018...
 
-```{r loevenbruck, out.width = "75%", fig.cap = "Predictive control account of inner speech production. Figure from Loevenbruck et al. (2018)."}
+```{r loevenbruck, out.width = "100%", fig.cap = "Predictive control account of inner speech production. Figure from Loevenbruck et al. (2018)."}
 knitr::include_graphics("assets/loevenbruck.pdf")
 ```
 

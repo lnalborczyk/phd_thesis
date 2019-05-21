@@ -82,7 +82,7 @@ For instance, large muscles have hundreds of motor units and an invervation rati
 
 The *motor unit* is the smallest controllable muscular unit. It consists in a single $\alpha$-motoneuron, its neuromuscular junction, and all the muscle fibers it innervates. The number of motor units and their *innervation ratio* (i.e., the number of muscle fibers per motor unit) can vary by muscle. Because a single motoneuron can innervate multiple muscle fibers, the firing of a single motoneuron results in the simultaneous discharge of many muscle fibers. The *motor unit action potential* (MUAP) is the electric field resulting from the sum of the electric fields emitted by each fiber of the motor unit. In other words, it represents the spatiotemporal summation of individual MAPs originating from muscle fibers that are sufficiently close to a given electrode. This generates a *train* of MUAPs, called *motor unit action potential trains* (MUAPTs). The mixture of MUAPTs coming from different motor units constitute the raw EMG signal (cf. Figure \@ref(fig:muap)).
 
-![(\#fig:muap)Motor unit action potential representation (Figure from De Luca et al., 2006).](assets/muap.jpg)
+![(\#fig:muap)Motor unit action potential representation (figure from De Luca et al., 2006).](assets/muap.jpg)
 
 To sum up, the EMG signal results from a mixture of recruited motor units: it is composed of the sum of several to many MUAPTs. This signal can vary considerably because of factors such as the muscle length [@babault_effect_2003], the distance between the muscle fiber (of interest) and the electrode, the fiber length or the muscle temperature. In the next section, we discuss in more details how this signal can be acquired.
 
