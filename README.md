@@ -1,9 +1,15 @@
+# Understanding rumination as a form of inner speech: probing the role of motor processes
+
+An online (and a PDF) version of the thesis is available there: https://www.barelysignificant.com/phd_thesis/
+
+## Abstract
+
+...
+
+## Technical notes
+
 My dissertation is a book based on R Markdown and **bookdown**
-(<https://github.com/rstudio/bookdown>, <https://bookdown.org/>).
-
-## Notes
-
-This bookdown project was originally a fork of the demo book
+(<https://github.com/rstudio/bookdown>, <https://bookdown.org/>). This bookdown project was originally a fork of the demo book
 (<https://github.com/rstudio/bookdown-demo>) and is largely inspired by Tristan Mahr's own dissertation: <https://github.com/tjmahr/dissertation/blob/master/README.md>.
 
 Some things I have changed from previous versions of the template.
