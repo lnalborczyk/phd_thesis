@@ -38,7 +38,14 @@ So far, we have defined rumination as either a trait, a stable and habitual mode
 
 Another line of research is interested in the cognitive correlates of the deficits and biases associated with rumination [e.g.,@joormann_emotion_2010;@Koster2011]. One of the central feature of rumination is its perseverative nature [@mor_ruminative_2015]. As suggested by @christoff_mind-wandering_2016, rumination and other forms of thoughts can be considered in a common conceptual space (see Figure \@ref(fig:conceptual)). This space is built upon two dimensions: the *deliberate constraints* dimension and the *automatic constraints* one. These dimensions represent two general mechanisms that allow constraining the contents of mental states and the transitions between them. The first constrain correspond to a deliberate process and is implemented through *cognitive control* [@miller_prefontral_2000].^[Cognitive control refers to a set of mental processes allowing flexible adaptation of cognition and behaviour in accordance to one's current goals [@braver_variable_2012;@friedman_unity_2017]. We use the terms of cognitive control, executive control or executive functions in an interchangeable manner.] The second constrain is referring to more automatic processes like sensory afferences (e.g., visual or auditory saliency). In this framework, rumination is characterised by the highest level of automatic constraints and is spread all along the *deliberate constraints* dimension. In other words, rumination is characterised by a strong automaticity, which is is coherent with the mental habit view of rumination discussed in the previous section.
 
-![(\#fig:conceptual)Conceptual space of different types of thought according to deliberate and automatic constraints (Figure from Christoff et al., 2016).](assets/conceptual_space.pdf)
+\begin{figure}
+
+{\centering \includegraphics[width=0.75\linewidth]{assets/conceptual_space} 
+
+}
+
+\caption{Conceptual space of different types of thought according to deliberate and automatic constraints (Figure from Christoff et al., 2016).}(\#fig:conceptual)
+\end{figure}
 
 Accordingly, cognitive theories of rumination have tried to describe the cognitive mechanisms that are associated with rumination and its perseverative nature. These approaches try to answer questions such as: What are the cognitive underpinnings of the tendency to ruminate? What kind of cognitive biases does rumination cause? To answer these questions, the cognitive control processes that are the most often investigated in relation to depression (and rumination) are the ability of i) inhibiting irrelevant content or a prepotent answer, ii) shifting between tasks and iii) updating current working memory content [for reviews, see @mor_ruminative_2015;@grahek_cognitive_2018;@lemoult_depression:_2019]. @linville_attention_1996 first suggested that deficits in attention inhibition may underlie rumination. This proposition was later confirmed and refined by Joorman and colleagues [e.g.,@joormann_emotion_2010;@joormann_cognitive_2007;@joormann_emotion_2014], who shown that rumination is associated with biases in multiple inhibitory processes. They shown that rumination is associated with inhibition deficits with mood-congruent (i.e., negative) material. More precisely, it is proposed that rumination is associated with a decreased ability to limit the access of irrelevant negative information (inhibition) and to discard negative irrelevant information (updating). @Koster2011 proposed that rumination would be the result of a combination of impaired conflict signalling and impaired attentional control. A conflict usually emerges when self-evaluative negative thinking is cued by internal or external stressors and conflicts with an individual's goals. According to this model, it is an impaired conflict signalling *and* an impaired ability to *disengage* attention from self-relevant negative information that explains prolonged ruminative thinking. This idea has been since corroborated by experimental work showing that difficulty disengaging attention was associated with rumination [e.g.,@grafton_stuck_2016;@southworth_heightened_2017] and by a recent meta-analysis [@zetsche_shedding_2018].
 
@@ -126,7 +133,14 @@ Somehow consistently with that idea, @stricker_studien_1880 reported (based on h
 
 In an attempt to reconcile the view of @stricker_studien_1880 for whom inner speech was purely motor with the view of @paulhan_langage_1886 and @egger_parole_1881, @ballet_langage_1886 suggested [as @james_principles_1890], that these authors probably generalised to the population what they observed on themselves. Ballet then asserted that the predominance of motor over sensory representations (or the reverse) might be a question of individual differences. We might add that the relative predominance of motor or sensory representations during inner speech might also be due to individual differences in the phenomenological sensitivity to some specific representation (some might be very acute in discriminating similar auditory images while not being able to discriminate similar visual images) and to contextual differences.^[Indeed, as we will discuss further later, it is very much probable that the predominance of some sort of representation over other forms might be contingent on contextual demands. In other words, depending on the task to be realised, the motoric and sensory aspects of inner speech might be weighted differently.] Nonetheless, for many authors, this debate highlighted the limitations of the introspective method [e.g.,@reed_existence_1916]. To be able to decide between different individual experiences and interpretations, some researchers therefore tried to find more objective methods to assess inner speech, or as put by @reed_existence_1916, to go beyond introspection and to start looking for "the stamp of objective certainty". With this ambitious goal in mind, @reed_existence_1916 describes an apparatus he used to examine tongue movements (see Figure \@ref(fig:reed)). Reed then reports the results of an experiment aiming to examine the involvement of inner speech (and speech motor processes) in thinking.
 
-![(\#fig:reed)Figure 1 \& 2 from Reed (1916) describing the apparatus used to record tongue movement during thinking and inner speech.](assets/reed.png)
+\begin{figure}
+
+{\centering \includegraphics[width=0.5\linewidth]{assets/reed} 
+
+}
+
+\caption{Figure 1 \& 2 from Reed (1916) describing the apparatus used to record tongue movement during thinking and inner speech.}(\#fig:reed)
+\end{figure}
 
 @reed_existence_1916 observed that while reading, his participants were moving their tongue and lips (and were sometimes whispering). These observations, in addition to the behaviorist revolution in Psychology paved the way for new lines of research. The initial suggestion of @watson_psychology_1913 that "thought processes are really motor habits in the larynx" lead to a fruitful line of research about the muscular bases and/or correlates of thought and inner speech. @sokolov_inner_1972 gives an overview of the experiments carried out at the beginning of the XXth century in that perspective. For instance, @dodge_motorischen_1896 anesthetised his lips and tongue and realised that it did not have any impact on his inner speech. @curtis_automatic_1900 and @courten_involuntary_1902 recorded laryngeal movements using a pneumatic drum and a kymograph while their participants recited verses or were reading. They observed that laryngeal movements were not always present and depended on what was being read and/or produced, as well as on the "degree of understanding" of the participant [for further references, see @sokolov_inner_1972, p.43-45].
 
@@ -150,7 +164,7 @@ Fundamentally, Vygostky believed that language was a psychological tool and that
 In other words, for Vygotsky, inner speech inherits the function of private (overt) speech, as it results from the progressive internalisation of private speech, and occurs in the same context and with the same goal (or function).
 -->
 
-However and importantly, this internalisation process does not only entail a movement from the outside to the inside but also entails a transformation of speech, or, as put by Vygotsky, an "internal reconstruction of an external operation". Therefore, for Vygostky, it follows that the passage from inner speech to overt speech consists not in simply "vocalising" inner speech but in *restructuring* inner speech (e.g., retrieving a syntax proper to overt speech, retrieving the phonetic structure, etc). According to Vygostky, inner speech is described by some essential properties such as: i) *abbreviation*: the phonetic aspect is "diminished", reduced, "In inner speech we do not need to pronounce a word in its entirety. We understand, by virtue of our very intention, what word we wanted to say [...] Strictly speaking, inner speech is almost wordless" (Vygotsky, 1956, p. 368), ii) *predicativeness*, "Psychologically, inner speech consists of predicates only"; "the subject of our inner reason is always present in our thought"; it is always implicitly understood (Vygotsky, 1956, pp. 364, 365), iii) it has a semantic structure of its own: predominance of *sense* over *meaning*^[Referring to Paulhan's distinction between the dictionary *meaning* of a word on one hand, and the individual *sense* of a word which is acquired by usage, on the other hand.], it is idiomatic, agglutination of semantic units (several words can be "merged" into a single word), and *infusion of sense* into a word (a word in inner speech becomes "loaded" with more associaitons thant in conventional use).
+However and importantly, this internalisation process does not *only* entail a movement from the outside to the inside but also entails a transformation of speech, or, as put by Vygotsky, an "internal reconstruction of an external operation". Therefore, for Vygostky, it follows that the passage from inner speech to overt speech consists not in simply "vocalising" inner speech but in *restructuring* inner speech (e.g., retrieving a syntax proper to overt speech, retrieving the phonetic structure, etc). According to @vygotsky_thought_2012, inner speech is described by some essential properties such as: i) *abbreviation*: the phonetic aspect is "diminished", reduced, "In inner speech we do not need to pronounce a word in its entirety. We understand, by virtue of our very intention, what word we wanted to say [...] Strictly speaking, inner speech is almost wordless", ii) *predicativeness*, "Psychologically, inner speech consists of predicates only"; "the subject of our inner reason is always present in our thought"; it is always implicitly understood, iii) it has a semantic structure of its own: predominance of *sense* over *meaning*^[Referring to Paulhan's distinction between the dictionary *meaning* of a word on one hand, and the individual *sense* of a word which is acquired by usage, on the other hand.], it is idiomatic, agglutination of semantic units (several words can be "merged" into a single word), and *infusion of sense* into a word (a word in inner speech becomes "loaded" with more associaitons thant in conventional use).
 
 <!--
 > Predication is the natural form of inner speech; psychologically it consists of predicates only. It is as much a law of inner speech to omit subjects as it is a law of written speech to contain both subjects and predicates. (Vygotsky, 1986, p. 243)
@@ -166,15 +180,26 @@ For Luria (1956), a verbal utterance usually starts with a *motive*^[This includ
 *Copy-pasted from @akhutina_role_2003: The way was paved for this hypothesis by Soviet psychology and its notion of the multilevel structure of inner speech (Anan’ev, 1946, 1960; Sokolov, 1959, 1968). In Anan’ev’s view, one of the indisputable postulates of inner-speech theory is “that inner speech is a process that varies in terms of its readiness to be transformed into external speech.” For Anan’ev, inner speech has the following phases...*
 -->
 
-@fernyhough_alien_2004 recently proposed an extension of Vygotsky's three-level model of inner speech development (i.e., external speech, egocentric speech, inner speech) to a four-level model, from external dialogue to private speech, expanded inner speech and condensed inner speech (see Figure \@ref(fig:fernyhough)). @fernyhough_alien_2004 notes that this model describe stages in the development of inner speech (during childhoohd) but alsomovements "between the levels at any given point in time". Indeed, it is possible to "move" between levels under certain conditions. For instance, in cognitively demanding conditions, we can observe transitions between levels, with condensed inner speech going back to expanded inner speech and even dialogic private speech through a process of "re-expansion". This idea is supported by studies showing an progressive externalisation of inner speech under cognitively demanding situations [e.g.,@sokolov_inner_1972].
+@fernyhough_alien_2004 recently proposed an extension of Vygotsky's three-level model of inner speech development (i.e., external speech, egocentric speech, inner speech) to a four-level model, from external dialogue to private speech, expanded inner speech and condensed inner speech (see Figure \@ref(fig:fernyhough)). @fernyhough_alien_2004 notes that this model describe stages in the development of inner speech (during childhood) but also movements "between the levels at any given point in time". Indeed, it is possible to "move" between levels under certain conditions. For instance, in cognitively demanding conditions, we can observe transitions between levels, with condensed inner speech being transformed to expanded inner speech and even dialogic private speech through a process of "re-expansion". This idea is supported by many studies showing an progressive externalisation of inner speech under cognitively demanding situations [e.g.,@sokolov_inner_1972].
 
-![(\#fig:fernyhough)Stages of internalisation. Figure from Fernyhough (2004).](assets/fernyhough_model_2004.pdf)
+\begin{figure}
 
-Development of AVHs... two propositions highlighted by @fernyhough_alien_2004: either a disruption of internalisation (in the devleopment) or a re-expansion model...
+{\centering \includegraphics[width=0.75\linewidth]{assets/fernyhough_model_2004} 
+
+}
+
+\caption{Stages of internalisation. Figure from Fernyhough (2004).}(\#fig:fernyhough)
+\end{figure}
+
+<!--
+Based on this model, @fernyhough_alien_2004 formulated two propositions to explain the development of auditory verbal hallucinations (AVHs). First, AVHs might be caused by a disruption of the normal processed of internalisation during development... Second, AVHs would result from re-expanded inner speech under conditions of stress or cognitive challenge...
+-->
+
+To sum up, it is suggested that inner speech (in the adult mind) is the result of a progressive internalisation. This internalisation process covers different stages or expressions of speech from social speech, self-addressed speech (private speech or egocentric speech) to inner speech (first in a very expanded form and then in a more condensed form). Being an internalised version of private speech, inner speech is hypothesised to be attached with the same functions as private speech. In other words, adults use inner speech (i.e., silent self-adressed speech) with the same goals as they previously used (during childhood) overt private speech. Importantly, this internalisation process does not only entail an internalisation but also a transformation of the way speech is produced or expressed: the characteristics of inner speech are distinguishable from the characteristics of overt (private) speech. Interestingly, these different levels (or stages) in the internalisation process, in addition to describing stages of development, also describe the "movements" that can be performed between levels or stages. More precisely, externalisation of inner speech would entail the inverse transformation that has been applied during the internalisation of private speech. In the next section, we come back to our historical perspective by reviewing inner speech research that has been carried out in the second part of the XXth century, before turning to an overview of the main theoretical perspectives on inner speech production.
 
 #### Inner speech research in the second part of the XXth century
 
-Following the pionneering work from @jacobson_electrical_1931...in the second part of the XXth century...The first investigation of covert behaviour using electromyography (EMG)^[See Chapter 2 for a brief introduction to (surface) electromyogaphy.]... 
+Following the pioneering work from @jacobson_electrical_1931...in the second part of the XXth century...The first investigation of covert behaviour using electromyography (EMG)^[See Chapter 2 for a brief introduction to (surface) electromyogaphy.]... 
 
 History of big ides and big names on inner speech: introspection (egger, stricker, ballet), behavioural revolution (james, watson), russian period (vygotsky, sokolov), cybernetic (mackay, mguiguuan, cohen)...
 
@@ -184,7 +209,9 @@ Thought listing... thought sampling... descriptive experience sampling method...
 
 Evidence from mental chronometry and temporal equivalence... [e.g.,@landauer_rate_1962] showing that it takes approximately the same amount of time to say the alphabet or series of numbers aloud and to think them to himself...On the rate of inner speech as compared to overt speech, see @anderson_speech_1982, @mackay_problem_1981...it would be 15% to 20% faster than overt speech [@coltheart_phonological_1999]...
 
+<!--
 There might be a variety of forms [@rosenthal_voix_2012]... for instance, @egger_parole_1881 makes a distinction between the "variétés vives" (translation) of inner speech that look like external speech and the more "passive" forms of inner speech... different forms (see saint-paul, 1982)...
+-->
 
 @faaborg-andersen_electromyography_1958 found that activity in vocal musculature increased with difficulty of text [see also @sokolov_inner_1972]... however it is not clear that reading always entails inner speech and (or more precisely), that inner speech always involve "sub-articulation"...discuss counter-examples by the "anesthesists" [e.g.,@smith_lack_1947]...
 
@@ -198,7 +225,14 @@ Physiological mesurements... neuroanatomy of inner speech production... decoding
 
 \begin{landscape}
 
-![(\#fig:timeline)Non-exhaustive overview of contemporary inner speech research from 1850 to present days.](assets/timeline.pdf)
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{assets/timeline} 
+
+}
+
+\caption{Non-exhaustive overview of contemporary inner speech research from 1850 to present days.}(\#fig:timeline)
+\end{figure}
 
 \end{landscape}
 
@@ -270,7 +304,14 @@ Let’s consider the analogy between speaking and playing an instrument (e.g., p
 
 This view is somehow consistent with the Vygotskian view of inner speech as internalised egocentric (or private) speech but it proposes a formal mechanism to explain it. More precisely, what is internalised is an internal model (or a hierarchy of paired internal models). This internalisation is a slow and gradual process... @loevenbruck_cognitive_2018...
 
-![(\#fig:loevenbruck)Predictive control account of inner speech production. Figure from Loevenbruck et al. (2018).](assets/loevenbruck.pdf)
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{assets/loevenbruck} 
+
+}
+
+\caption{Predictive control account of inner speech production. Figure from Loevenbruck et al. (2018).}(\#fig:loevenbruck)
+\end{figure}
 
 ...re-explaining @cohen_motor_1986 data and models in terms of @loevenbruck_cognitive_2018 model...
 
