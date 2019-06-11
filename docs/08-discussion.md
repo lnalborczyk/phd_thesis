@@ -6,7 +6,7 @@
 
 ...
 
-## Benchmarks for theories of inner speech
+## Implications for theories of inner speech
 
 A revised verson of @mackay_constraints_1992 constraints...
 

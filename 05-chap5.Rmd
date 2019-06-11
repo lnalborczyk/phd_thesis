@@ -1,6 +1,6 @@
 # Muscle-specific electromyographic correlates of inner speech production
 
-Summary of the research...^[This experimental chapter is a submitted manuscript reformatted for the need of this thesis. Pre-registered protocol, preprint, data, as well as reproducible code and figures are available at: [https://osf.io/czer4/](https://osf.io/czer4/).]
+\initial{S}ummary of the research...^[This experimental chapter is a submitted manuscript reformatted for the need of this thesis. Pre-registered protocol, preprint, data, as well as reproducible code and figures are available at: [https://osf.io/czer4/](https://osf.io/czer4/).]
 
 ```{r setupCH5, include = FALSE, message = FALSE, warning = FALSE, results = "hide"}
 library(wordcountaddin)
@@ -24,9 +24,6 @@ knitr::opts_chunk$set(
   cache = TRUE, echo = FALSE, warning = FALSE, message = FALSE,
   out.width = "100%"
   )
-
-# counting words in the current .Rmd file
-wordcount <- word_count(knitr::current_input() )
 ```
 
 <!-- NB: You can add comments using these tags -->

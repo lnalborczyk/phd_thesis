@@ -1,6 +1,6 @@
 # Articulatory suppression effects on induced rumination
 
-Summary of the research...^[This experimental chapter is a submited manuscript reformatted for the need of this thesis. Pre-registered protocol, preprint, data, as well as reproducible code and figures are available at: [https://osf.io/3bh67/](https://osf.io/3bh67/).]
+\initial{S}ummary of the research...^[This experimental chapter is a submited manuscript reformatted for the need of this thesis. Pre-registered protocol, preprint, data, as well as reproducible code and figures are available at: [https://osf.io/3bh67/](https://osf.io/3bh67/).]
 
 ```{r setupCH6, include = FALSE, message = FALSE, warning = FALSE, results = "hide"}
 library(wordcountaddin)
@@ -27,9 +27,6 @@ knitr::opts_chunk$set(
   cache = TRUE, echo = FALSE, warning = FALSE, message = FALSE,
   out.width = "100%"
   )
-
-# counting words in the current .Rmd file
-wordcount <- word_count(knitr::current_input() )
 ```
 
 <!-- NB: You can add comments using these tags -->
@@ -128,7 +125,7 @@ Additionally, participants answered questions about the modality of the thoughts
 
 In the first part of the experiment, ruminative thoughts were induced using a classical induction procedure. Then a motor task was executed. Participants were randomly allocated to one of two conditions. In the *Mouthing* condition, the task consisted of repetitively making mouth opening-closing movements at a comfortable pace. This condition was selected as it is commonly used in articulatory suppression studies [e.g.,@baddeley_exploring_1984]. As a control, a finger-tapping condition was used (the *Tapping* condition), that consisted of tapping on the desk with the index finger of the dominant hand at a comfortable pace.
 
-Although finger-tapping tasks are generally considered as good control conditions when using speech motor tasks, since they are comparable in terms of general attentional demands, it may be that orofacial gestures are intrinsically more complex than manual gestures [i.e., more costly, @emerson_role_2003]. To discard the possibility that orofacial gestures (related to the *Mouthing* condition) would be cognitively more demanding than manual ones (related to the *Tapping* condition), we designed a pretest experiment in order to compare the two interference motor tasks used in the main experiment. Results of this control experiment showed no difference on reaction times during a visual search task between the two interference tasks (i.e., mouthing and finger-tapping). Full details are provided in Appendix A.
+Although finger-tapping tasks are generally considered as good control conditions when using speech motor tasks, since they are comparable in terms of general attentional demands, it may be that orofacial gestures are intrinsically more complex than manual gestures [i.e., more costly, @emerson_role_2003]. To discard the possibility that orofacial gestures (related to the *Mouthing* condition) would be cognitively more demanding than manual ones (related to the *Tapping* condition), we designed a pretest experiment in order to compare the two interference motor tasks used in the main experiment. Results of this control experiment showed no difference on reaction times during a visual search task between the two interference tasks (i.e., mouthing and finger-tapping). Full details are provided in Appendix \@ref(appendix-eyetracking).
 
 ### Procedure
 
@@ -1048,151 +1045,6 @@ This project was funded by the ANR project INNERSPEECH (grant number ANR-13-BSH2
 ## Data Accessibility Statement {#suppCh6}
 
 Pre-registered protocol, preprint, data, as well as reproducible code and figures are available at: [https://osf.io/3bh67/](http://osf.io/3bh67).
-
-## Appendix A. Eye-tracking control experiment
-
-The purpose of this control experiment was to check whether the two motor tasks used in the main experiment, namely, finger tapping and articulatory suppression (mouthing) were equivalent in terms of task difficulty or general dual-task demand [@emerson_role_2003]. Participants performed a computer-based visual search task (i.e., finding a T among an array of Ls), adapted from @treisman_feature-integration_1980 paradigm (see below for details).
-
-### Sample
-
-Twenty-four participants (Mean age = 19.46, SD = 1.18, Min-Max = 18-21, 21 females, 21 right-handed), drawn from the same population (i.e., undergraduate psychology students) as the main experiment took part in this eye-tracking pretest.
-
-### Sample size
-
-As we aimed to compare four conditions (i.e., visual search (VS) task alone, VS + finger tapping, VS + foot tapping and VS + mouth movements), we recruited 24 participants in order to have at least one participant per order in our random counter-balanced repeated measures design ($n = k!$ where $n$ is the number of possible orders of conditions for $k$ conditions, then $n =4 != 24$).
-
-### Material
-
-Experiment took place individually in a dark room. Participants had to seat in front of a 22 inches, Iyama Vision Master Pro 513-MA203DT CRT Monitor (resolution: 1024x768 pixels, refresh rate: 85 Hz) with a NVIDIA GeForce 9800 GTX+ graphic processor. A camera-based eye-tracker (EyeLink\textregistered\ 1000 from SR Research) with a sampling rate of 250 Hz and a minimum accuracy of 0.5° was used, in the pupil-corneal reflection tracking mode. Participants were positioned on a seat so as to keep distance from the camera to the forehead target between 50 and 60 cm. A five-point calibration was completed before presenting stimuli, at the beginning of each condition.
-
-### Procedure
-
-The target (the letter "T") was presented at each trial, either on the right or on the left of the central vertical axis of the grid. The grid was an array of 6*6 items. Each stimulus was displayed until the participant response (maximum duration in case of no response: 5 seconds). Each grid of letters was preceded by a central fixation circle, that was displayed for 500ms after the participant moved his/her gaze towards it. In order to give their response ("left" or "right"), participants had to gaze towards a large filled gray circle, situated either on the left or on the right side of the grid. Each participant went through each condition, in a random order. A first general training session was proposed, at the beginning of the experiment, using ten items that were not used subsequently in the four conditions. Each condition was composed of 90 trials (45 left and 45 right), knowing that the first ten trials of each condition were considered as training trials and thus not included in analysis. All participants were filmed in order to ensure that they effectively performed the motor activity. 
-Our measure of interest was the delay between the apparition of the grid and the participant's response (the time at which his/her gaze reached the response circle), below referred to as "response time" (RT).
-
-### Data preprocessing
-
-Raw data from EyeLink\textregistered\ includes gaze on screen spatial coordinates, pupil diameter and forehead target spatial coordinates, with its distance from the camera. For this experiment, since only RTs (in ms) of correct trials are interesting, invalid trials (when no response has been given) and wrong responses were removed from the analysis.
-
-### Data analysis
-
-Data were analysed using *Condition* (4 modalities) as a within-subject predictor and the RT as a dependent variable in a generalised MLM with a lognormal distribution for the response. This model included a varying intercept for both *participant* and *item* and was fitted using weakly informative priors and the `brms` package [@R-brms].
-
-### Results
-
-```{r model_control, results = "hide", warning = FALSE}
-##############################
-# Importing eyetracking data #
-##############################
-
-eye_track_data <- read.csv(
-  here::here("data", "ch6", "eyetracking_control.csv"),
-  header = TRUE, sep = ","
-  )[, - 1]
-
-####################
-# Fiting the model #
-####################
-
-model1 <- brm(
-    RT ~ 1 + Condition + (1|Participant) + (1|Item),
-    family = lognormal(),
-    data = eye_track_data,
-    chains = 2, cores = parallel::detectCores(),
-    warmup = 2000, iter = 5000
-    )
-```
-
-```{r RTestimates, results = "asis"}
-########################
-# pairwise comparisons #
-########################
-
-pairwise <-
-    eye_track_data %>%
-    modelr::data_grid(Condition) %>%
-    add_fitted_draws(model1, re_formula = NA) %>%
-    compare_levels(.value, by = Condition) %>%
-    mean_hdi() %>%
-    arrange(rev(Condition) ) %>%
-    select(Contrast = Condition, Estimate = .value, Lower = .lower, Upper = .upper) %>%
-    mutate_if(is.numeric, round, 3) %>%
-    data.frame
-
-apa_table(
-    pairwise,
-    placement = "H",
-    align = c("l", "c", "c", "c"),
-    caption = "Mean and 95\\% CrI of the posterior distribution on the difference between each pair of condition.",
-    note = NULL,
-    small = TRUE,
-    format.args = list(
-        digits = c(3, 3, 3),
-        margin = 2,
-        decimal.mark = ".", big.mark = ""),
-    escape = FALSE
-    )
-```
-
-Results of the MLM are reported in Table \@ref(tab:RTestimates) and Figure \@ref(fig:eyetrack), that report the estimated average RT (and it 95% CrI) by condition and for the difference between each pair of conditions. This analysis revealed that all dual tasks induced longer RTs in comparison with the control condition, with the finger-tapping condition inducing the greatest discrepancy as compared to the control condition (`r glue_data(pairwise %>% filter(Contrast == "Finger - Control"), "$\\beta$ = {Estimate}, 95% CrI [{Lower}, {Upper}]")`), followed by the mouthing condition (`r glue_data(pairwise %>% filter(Contrast == "Mouth - Control"), "$\\beta$ = {Estimate}, 95% CrI [{Lower}, {Upper}]")`) and the foot-tapping condition (`r glue_data(pairwise %>% filter(Contrast == "Foot - Control"), "$\\beta$ = {Estimate}, 95% CrI [{Lower}, {Upper}]")`). Pairwise comparisons between dual-task conditions revealed that the difference between the mouthing and the finger-tapping conditions was in the opposite direction and slightly smaller (`r glue_data(pairwise %>% filter(Contrast == "Mouth - Finger"), "$\\beta$ = {Estimate}, 95% CrI [{Lower}, {Upper}]")`) than the difference between the mouthing and the foot-tapping conditions (`r glue_data(pairwise %>% filter(Contrast == "Mouth - Foot"), "$\\beta$ = {Estimate}, 95% CrI [{Lower}, {Upper}]")`).
-
-```{r eyetrack, fig.pos = "H", fig.width = 12, fig.height = 6, fig.cap = "Left panel: average RT by condition predicted by the model along with 95\\% CrIs. Underlying dots represent the average raw RT by participant. Right panel: posterior distribution of the difference between each pair of conditions, along with its mean and 90\\% and 95\\% CrI."}
-#########################################
-# plotting raw data + model predictions #
-#########################################
-
-p1 <-
-    eye_track_data %>%
-    group_by(Condition, Participant) %>%
-    dplyr::summarise(RT = mean(RT) ) %>%
-    ungroup %>%
-    ggplot(aes(x = Condition, y = RT, fill = Condition) ) +
-    # plot raw data
-    geom_violin(show.legend = FALSE, alpha = 0.2, colour = "white") +
-    geom_quasirandom(
-        data = eye_track_data %>% group_by(Condition, Participant) %>% dplyr::summarise(RT = mean(RT) ) %>% ungroup,
-        aes(x = Condition, y = RT, fill = Condition),
-        size = 2, alpha = 0.8, shape = 21, width = 0.2,
-        inherit.aes = FALSE, show.legend = FALSE
-        ) +
-    # add model predictions
-    geom_pointrange(
-        data = marginal_effects(model1, points = TRUE)$Condition,
-        aes(x = effect1__, fill = effect1__, y = estimate__, ymin = lower__, ymax = upper__),
-        shape = 21, fatten = 3, size = 2, alpha = 1, show.legend = FALSE
-        ) +
-    theme_minimal(base_size = 12) +
-    labs(y = "Response time (in ms)") +
-    scale_colour_brewer(palette = "Dark2", direction = -1) +
-    scale_fill_brewer(palette = "Dark2", direction = -1)
-
-##################################
-# tidybayes pair-wise comparison #
-##################################
-
-p2 <-
-    eye_track_data %>%
-    modelr::data_grid(Condition) %>%
-    add_fitted_draws(model1, re_formula = NA) %>%
-    compare_levels(.value, by = Condition) %>%
-    ggplot(aes(x = .value, y = Condition) ) +
-    geom_vline(xintercept = 0, linetype = 2) +
-    geom_halfeyeh(alpha = 0.1, .width = c(.9, .95) ) +
-    theme_minimal(base_size = 12) +
-    theme(legend.position = "none") +
-    labs(x = "Response time difference (in ms)", y = "")
-
-##########################
-# putting plots together #
-##########################
-
-p1 + p2
-
-```
-
-### Discussion
-
-This control experiment shows that there is no apparent difference (or a negligible one) in terms of attentional demand between the two motor tasks used in the main experiment (i.e., finger-tapping and mouthing), although performing a dual motor task (of any type) does seem costly, because of the observed difference between the control condition and the mean of the three others conditions. These results are in line with the results obtained by @cefidekhanie_interaction_2014 in their control experiment.
 
 <!-- create a new page for the summary -->
 \newpage

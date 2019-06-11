@@ -1,6 +1,6 @@
 # Examining the involvement of the speech motor system during rumination: a dual-task investigation
 
-Summary of the research...^[This experimental chapter is a submitted manuscript reformatted for the need of this thesis. Pre-registered protocol, preprint, data, as well as reproducible code and figures are available at: [https://osf.io/8ab2d/](https://osf.io/8ab2d/).]
+\initial{S}ummary of the research...^[This experimental chapter is a submitted manuscript reformatted for the need of this thesis. Pre-registered protocol, preprint, data, as well as reproducible code and figures are available at: [https://osf.io/8ab2d/](https://osf.io/8ab2d/).]
 
 
 
@@ -72,14 +72,7 @@ After filling-in the consent form, participants watched a series of short (aroun
 
 At the end of the experiment, all participants went through a positive mood induction (remembering and reliving a positive memory) to attenuate the effects of the stress induction. Finally, participants were fully debriefed about the goals of the study. The entire experiment was video-monitored using a Sony HANDYCAM video camera to check whether the participants effectively completed the task. In addition, the experimenter was able to monitor the participant's performance during the experiment through a one-way mirror (located behind the participant). This procedure is summarised in Figure \@ref(fig:diagram).
 
-\begin{figure}[H]
-
-{\centering \includegraphics[width=0.66\linewidth]{07-chap7_files/figure-latex/diagramCh7-1} 
-
-}
-
-\caption{Timeline of the experiment, from top to bottom.}(\#fig:diagramCh7)
-\end{figure}
+![(\#fig:diagramCh7)Timeline of the experiment, from top to bottom.](07-chap7_files/figure-docx/diagramCh7-1.pdf)
 
 ### Data analysis
 

@@ -1,6 +1,6 @@
 # Muscle-specific electromyographic correlates of inner speech production
 
-Summary of the research...^[This experimental chapter is a submitted manuscript reformatted for the need of this thesis. Pre-registered protocol, preprint, data, as well as reproducible code and figures are available at: [https://osf.io/czer4/](https://osf.io/czer4/).]
+\initial{S}ummary of the research...^[This experimental chapter is a submitted manuscript reformatted for the need of this thesis. Pre-registered protocol, preprint, data, as well as reproducible code and figures are available at: [https://osf.io/czer4/](https://osf.io/czer4/).]
 
 
 
@@ -102,33 +102,26 @@ The experiment was video-monitored using a Sony HDR-CX240E video camera to track
 
 We selected ten rounded and ten spread bi-syllabic nonwords (see Table \@ref(tab:words)). Each class of nonwords was specifically designed to either induce a greater activation of the lip muscle (rounded items) or a greater activation of the zygomaticus muscle (spread items). Rounded items consisted in the repetition of a syllable containing a bilabial consonant followed by a rounded vowel, whereas spread items consisted in the repetition of a syllable containing a lingual consonant followed by a spread vowel.
 
-\begin{table}[H]
-\begin{center}
-\begin{threeparttable}
-\caption{\label{tab:words}List of bisyllabic nonwords used in the test session.}
-\begin{tabular}{cc}
-\toprule
-rounded items & \multicolumn{1}{c}{spread items}\\
-\midrule
-/mumu/ & /gigi/\\
-/pupu/ & /sese/\\
-/fofo/ & /lele/\\
-/mymy/ & /sisi\\
-/pypy/ & /didi/\\
-/byby/ & /nini/\\
-/vøvø/ & /ʒiʒi/*\\
-/pøpø/ & /lili/\\
-/bøbø/ & /ʁiʁi/\\
-/mɔ̃mɔ̃/ & /gege/\\
-\bottomrule
-\addlinespace
-\end{tabular}
-\begin{tablenotes}[para]
-\textit{Note.} *Because the production of /ʒiʒi/ requires a protrusion of the lips, this item theoretically slightly deviates from other items of this class.
-\end{tablenotes}
-\end{threeparttable}
-\end{center}
-\end{table}
+<caption>(\#tab:words)</caption>
+
+<caption>*List of bisyllabic nonwords used in the test session.*</caption>
+
+
+
+ rounded items    spread items 
+---------------  --------------
+    /mumu/           /gigi/    
+    /pupu/           /sese/    
+    /fofo/           /lele/    
+    /mymy/           /sisi     
+    /pypy/           /didi/    
+    /byby/           /nini/    
+    /vøvø/          /ʒiʒi/*    
+    /pøpø/           /lili/    
+    /bøbø/           /ʁiʁi/    
+    /mɔ̃mɔ̃/           /gege/    
+
+<center>*Note.* *Because the production of /ʒiʒi/ requires a protrusion of the lips, this item theoretically slightly deviates from other items of this class.</center>
 
 ### Procedure
 
@@ -154,14 +147,7 @@ To foreshadow the results, we did not observe such a clear dissociation between 
 
 Before to move to the statistical results, we represent the distribution of the whole dataset, by class, by condition and by muscle for the two main muscles of interest (OOI and ZYG) in Figure \@ref(fig:generalplot). More precisely, the first row of this figure represents the distribution of the standardised EMG scores in the inner speech condition, the second row depicts the distribution of these scores in the listening condition, whereas the third row depicts the distribution of the standardised EMG scores in the overt speech condition. The first column depicts the distribution of the standardised EMG scores recorded over the OOI muscle whereas the second one represents the distribution of the standardised EMG scores recorded over the ZYG muscle. Each individual data point is represented as a vertical bar along the x-axis of each panel whereas the vertical coloured line represents the class-specific median. Additionally, a vertical dashed line is plotted at zero, which represents the baseline level. Thus, a positive value on the x-axis represents EMG standardised scores that are higher than baseline^[We also created a `shiny` application [@R-shiny] allowing for further visual exploration of the data by muscle, by condition, and by participant, in the 3D space formed by three (to be chosen) muscles. This application is available online (https://barelysignificant.shinyapps.io/3d_plotly/) and the associated code is available in the OSF repository ([https://osf.io/czer4](https://osf.io/czer4)).].
 
-\begin{figure}[H]
-
-{\centering \includegraphics[width=1\linewidth]{05-chap5_files/figure-latex/generalplot-1} 
-
-}
-
-\caption{Distribution of standardised EMG scores by class and by muscle. The first row corresponds to the inner speech condition, the second one to the listening condition, and the third one to the overt speech condition. The first column depicts the EMG amplitude recorded over the OOI muscle while the second column represents the EMG amplitude recorded over the ZYG muscle. Each individual data point is represented as a vertical bar along the x-axis. The vertical coloured line represents the by-class median.}(\#fig:generalplot)
-\end{figure}
+![(\#fig:generalplot)Distribution of standardised EMG scores by class and by muscle. The first row corresponds to the inner speech condition, the second one to the listening condition, and the third one to the overt speech condition. The first column depicts the EMG amplitude recorded over the OOI muscle while the second column represents the EMG amplitude recorded over the ZYG muscle. Each individual data point is represented as a vertical bar along the x-axis. The vertical coloured line represents the by-class median.](05-chap5_files/figure-docx/generalplot-1.png)
 
 ### Confirmatory (preregistered) analyses
 
@@ -171,66 +157,43 @@ We then compared the standardised EMG amplitude $\delta$ for each muscle in each
 
 
 
-\begin{table}[H]
-\begin{center}
-\begin{threeparttable}
-\caption{\label{tab:outputbmod1}Estimates from the Gaussian BMLM concerning the OOI and the ZYG.}
-\small{
-\begin{tabular}{llllllll}
-\toprule
-Response & \multicolumn{1}{c}{Term} & \multicolumn{1}{c}{Estimate} & \multicolumn{1}{c}{SE} & \multicolumn{1}{c}{Lower} & \multicolumn{1}{c}{Upper} & \multicolumn{1}{c}{Rhat} & \multicolumn{1}{c}{BF01}\\
-\midrule
-OOI & Inner Speech & 1.87 & 0.42 & 1.02 & 2.66 & 1.00 & 0.02\\
-OOI & Listening & 1.73 & 0.37 & 1.03 & 2.48 & 1.00 & 0.00\\
-OOI & Overt Speech & 16.19 & 1.96 & 12.38 & 19.95 & 1.00 & 0.00\\
-OOI & Inner Speech x Class & 0.11 & 0.19 & -0.28 & 0.47 & 1.00 & 43.73\\
-OOI & Listening x Class & -0.14 & 0.27 & -0.67 & 0.38 & 1.00 & 32.53\\
-OOI & Overt Speech x Class & 0.70 & 0.27 & 0.18 & 1.22 & 1.00 & 1.29\\
-ZYG & Inner Speech & 0.01 & 0.04 & -0.07 & 0.10 & 1.00 & 237.72\\
-ZYG & Listening & 0.02 & 0.04 & -0.06 & 0.10 & 1.00 & 218.90\\
-ZYG & Overt Speech & 1.77 & 0.22 & 1.32 & 2.23 & 1.00 & 0.00\\
-ZYG & Inner Speech x Class & 0.01 & 0.03 & -0.05 & 0.06 & 1.00 & 360.68\\
-ZYG & Listening x Class & 0.00 & 0.04 & -0.08 & 0.08 & 1.00 & 263.36\\
-ZYG & Overt Speech x Class & 1.35 & 0.04 & 1.27 & 1.42 & 1.00 & 0.00\\
-\bottomrule
-\addlinespace
-\end{tabular}
-}
-\begin{tablenotes}[para]
-\textit{Note.} For each muscle (response), the first three lines represent the estimated average
+<caption>(\#tab:outputbmod1)</caption>
+
+<caption>*Estimates from the Gaussian BMLM concerning the OOI and the ZYG.*</caption>
+
+
+
+Response   Term                   Estimate   SE     Lower   Upper   Rhat   BF01   
+---------  ---------------------  ---------  -----  ------  ------  -----  -------
+OOI        Inner Speech           1.87       0.42   1.02    2.66    1.00   0.02   
+OOI        Listening              1.73       0.37   1.03    2.48    1.00   0.00   
+OOI        Overt Speech           16.19      1.96   12.38   19.95   1.00   0.00   
+OOI        Inner Speech x Class   0.11       0.19   -0.28   0.47    1.00   43.73  
+OOI        Listening x Class      -0.14      0.27   -0.67   0.38    1.00   32.53  
+OOI        Overt Speech x Class   0.70       0.27   0.18    1.22    1.00   1.29   
+ZYG        Inner Speech           0.01       0.04   -0.07   0.10    1.00   237.72 
+ZYG        Listening              0.02       0.04   -0.06   0.10    1.00   218.90 
+ZYG        Overt Speech           1.77       0.22   1.32    2.23    1.00   0.00   
+ZYG        Inner Speech x Class   0.01       0.03   -0.05   0.06    1.00   360.68 
+ZYG        Listening x Class      0.00       0.04   -0.08   0.08    1.00   263.36 
+ZYG        Overt Speech x Class   1.35       0.04   1.27    1.42    1.00   0.00   
+
+<center>*Note.* For each muscle (response), the first three lines represent the estimated average
 amplitude in each condition, and its standard error (SE).
 The three subsequent rows represent the estimated average difference between the two classes
 of nonwords in each condition (i.e., the interaction effect). The 'Lower' and 'Upper' columns
     contain the lower and upper bounds of the 95\% CrI, while the 'Rhat' column reports the Gelman-Rubin statistic.
-    The last column reports the Bayes factor in favour of the null hypothesis (BF01).
-\end{tablenotes}
-\end{threeparttable}
-\end{center}
-\end{table}
+    The last column reports the Bayes factor in favour of the null hypothesis (BF01).</center>
 
 The results of this model are summarised in Table \@ref(tab:outputbmod1). This table reports the estimated average EMG amplitude in each condition and the corresponding BF^[As they are not the main focus of interest here and for the sake of clarity, descriptive results for the other two facial muscles and for the forearm muscle are reported in the supplementary materials.]. This analysis revealed that the EMG amplitude of the OOI was higher than baseline (the standardised score was above zero) in every condition whereas it was only the case in the overt speech condition for the ZYG. Crucially, we did not observe the hypothesised difference according to the class of nonwords on the OOI during inner speech production ($\beta$ = 0.108, 95% CrI [-0.281, 0.466], BF~01~ = 43.727) nor on the ZYG ($\beta$ = 0.007, 95% CrI [-0.047, 0.057], BF~01~ = 360.677).
 
 Figure \@ref(fig:predbmod1) depicts these results by representing the distribution of the raw data (coloured dots) along with the predictions from this model. The black dots and vertical intervals represent the predicted mean and associated 95% credible interval for each class of non-word, each condition and for the OOI and the ZYG. Coherently with Table \@ref(tab:outputbmod1), this figure shows that the fitted model predicts no noticeable differences between the two classes of non-words in any condition for the OOI muscle. However, it predicts a higher average EMG amplitude associated with the rounded item as compared to the spread items in the overt speech condition for the ZYG muscle.
 
-\begin{figure}[H]
-
-{\centering \includegraphics[width=1\linewidth]{05-chap5_files/figure-latex/predbmod1-1} 
-
-}
-
-\caption{Raw data along with posterior predictions of the first model for the OOI and the ZYG muscles. Dots represent the mean prediction of this model by condition, while the vertical error bars represent the 95\% credible intervals around the mean.}(\#fig:predbmod1)
-\end{figure}
+![(\#fig:predbmod1)Raw data along with posterior predictions of the first model for the OOI and the ZYG muscles. Dots represent the mean prediction of this model by condition, while the vertical error bars represent the 95\% credible intervals around the mean.](05-chap5_files/figure-docx/predbmod1-1.png)
 
 Before proceeding further with the interpretation of the results, it is essential to check the quality of this first model. A useful diagnostic of the model's predictive abilities is known as *posterior predictive checking* (PPC) and consists in comparing observed data to data simulated from the posterior distribution [e.g.,@gelman_bayesian_2013]. The idea behind PPC is that a good model should be able to generate data that resemble the observed data [@gabry_visualization_2019]. In this vein, Figure \@ref(fig:ppcbmod1) represents the distribution of the whole dataset (across all participants and conditions) by muscle (the dark blue line) along with the distribution of hypothetical datasets generated from the posterior distribution of the model (the light blue lines). As can be seen from this Figure, the distributions of the data generated from the model differ considerably from the distribution of the observed data. Therefore, in the next section, we turn to a more appropriate model for these data.
 
-\begin{figure}[H]
-
-{\centering \includegraphics[width=1\linewidth]{05-chap5_files/figure-latex/ppcbmod1-1} 
-
-}
-
-\caption{Posterior predictive checking for the first model concerning the OOI and ZYG muscles. The dark blue line represents the distribution of the raw data (across all conditions) while light blue lines are dataset generated from the posterior distribution.}(\#fig:ppcbmod1)
-\end{figure}
+![(\#fig:ppcbmod1)Posterior predictive checking for the first model concerning the OOI and ZYG muscles. The dark blue line represents the distribution of the raw data (across all conditions) while light blue lines are dataset generated from the posterior distribution.](05-chap5_files/figure-docx/ppcbmod1-1.png)
 
 <!--
 ### Bayesian multivariate multilevel Skew-Normal model
@@ -239,63 +202,40 @@ The previous figure reveals an important failure of the first model, as it fails
 
 
 
-\begin{figure}[H]
-
-{\centering \includegraphics[width=1\linewidth]{05-chap5_files/figure-latex/ppcbmod2-1} 
-
-}
-
-\caption{Posterior predictive checking for the second model concerning the OOI and ZYG muscles. The dark blue line represents the distribution of the raw data while light blue lines are dataset generated from the posterior distribution.}(\#fig:ppcbmod2)
-\end{figure}
+![(\#fig:ppcbmod2)Posterior predictive checking for the second model concerning the OOI and ZYG muscles. The dark blue line represents the distribution of the raw data while light blue lines are dataset generated from the posterior distribution.](05-chap5_files/figure-docx/ppcbmod2-1.png)
 
 The results of this second model are summarised in Table \@ref(tab:outputbmod2) and Figure \@ref(fig:predbmod2).
 
-\begin{table}[H]
-\begin{center}
-\begin{threeparttable}
-\caption{\label{tab:outputbmod2}Estimates from the Skew-normal BMLM concerning the OOI and the ZYG.}
-\small{
-\begin{tabular}{llllllll}
-\toprule
-Response & \multicolumn{1}{c}{Term} & \multicolumn{1}{c}{Estimate} & \multicolumn{1}{c}{SE} & \multicolumn{1}{c}{Lower} & \multicolumn{1}{c}{Upper} & \multicolumn{1}{c}{Rhat} & \multicolumn{1}{c}{BF01}\\
-\midrule
-OOI & Inner Speech & 7.80 & 0.14 & 7.53 & 8.09 & 1.00 & 0.00\\
-OOI & Listening & 7.75 & 0.14 & 7.46 & 8.01 & 1.00 & 0.00\\
-OOI & Overt Speech & 12.14 & 0.11 & 11.93 & 12.36 & 1.00 & 0.00\\
-OOI & Inner Speech x Class & 0.05 & 0.15 & -0.25 & 0.33 & 1.00 & 64.33\\
-OOI & Listening x Class & -0.04 & 0.21 & -0.45 & 0.38 & 1.00 & 45.52\\
-OOI & Overt Speech x Class & 1.65 & 0.19 & 1.27 & 2.03 & 1.00 & 0.00\\
-ZYG & Inner Speech & 0.61 & 0.02 & 0.58 & 0.64 & 1.00 & 0.00\\
-ZYG & Listening & 0.60 & 0.02 & 0.58 & 0.64 & 1.00 & 0.00\\
-ZYG & Overt Speech & 1.33 & 0.01 & 1.31 & 1.36 & 1.00 & 0.00\\
-ZYG & Inner Speech x Class & 0.01 & 0.02 & -0.04 & 0.05 & 1.00 & 431.60\\
-ZYG & Listening x Class & 0.00 & 0.03 & -0.06 & 0.06 & 1.00 & 325.28\\
-ZYG & Overt Speech x Class & 0.71 & 0.03 & 0.65 & 0.76 & 1.00 & 0.00\\
-\bottomrule
-\addlinespace
-\end{tabular}
-}
-\begin{tablenotes}[para]
-\textit{Note.} For each muscle (response), the first three lines represent the estimated average
+<caption>(\#tab:outputbmod2)</caption>
+
+<caption>*Estimates from the Skew-normal BMLM concerning the OOI and the ZYG.*</caption>
+
+
+
+Response   Term                   Estimate   SE     Lower   Upper   Rhat   BF01   
+---------  ---------------------  ---------  -----  ------  ------  -----  -------
+OOI        Inner Speech           7.80       0.14   7.53    8.09    1.00   0.00   
+OOI        Listening              7.75       0.14   7.46    8.01    1.00   0.00   
+OOI        Overt Speech           12.14      0.11   11.93   12.36   1.00   0.00   
+OOI        Inner Speech x Class   0.05       0.15   -0.25   0.33    1.00   64.33  
+OOI        Listening x Class      -0.04      0.21   -0.45   0.38    1.00   45.52  
+OOI        Overt Speech x Class   1.65       0.19   1.27    2.03    1.00   0.00   
+ZYG        Inner Speech           0.61       0.02   0.58    0.64    1.00   0.00   
+ZYG        Listening              0.60       0.02   0.58    0.64    1.00   0.00   
+ZYG        Overt Speech           1.33       0.01   1.31    1.36    1.00   0.00   
+ZYG        Inner Speech x Class   0.01       0.02   -0.04   0.05    1.00   431.60 
+ZYG        Listening x Class      0.00       0.03   -0.06   0.06    1.00   325.28 
+ZYG        Overt Speech x Class   0.71       0.03   0.65    0.76    1.00   0.00   
+
+<center>*Note.* For each muscle (response), the first three lines represent the estimated average
 amplitude in each condition, and its standard error (SE).
 The three subsequent rows represent the estimated average difference between the two classes
 of nonwords in each condition (i.e., the interaction effect). The 'Lower' and 'Upper' columns
-    contain the lower and upper bounds of the 95\% CrI, while the 'Rhat' column reports the Gelman-Rubin statistic.
-\end{tablenotes}
-\end{threeparttable}
-\end{center}
-\end{table}
+    contain the lower and upper bounds of the 95\% CrI, while the 'Rhat' column reports the Gelman-Rubin statistic.</center>
 
 According to this second model, the EMG amplitude of the OOI was higher than baseline (the standardised score was above zero) in every condition whereas it was only the case in the overt speech condition for the ZYG. We did not observed the hypothesised difference according to the class of nonwords on the OOI during inner speech production ($\beta$ = 0.046, 95% CrI [-0.25, 0.329], BF~01~ = 64.331) nor on the ZYG ($\beta$ = 0.007, 95% CrI [-0.035, 0.048], BF~01~ = 431.595).
 
-\begin{figure}[H]
-
-{\centering \includegraphics[width=1\linewidth]{05-chap5_files/figure-latex/predbmod2-1} 
-
-}
-
-\caption{Raw data along with posterior predictions of the second model for the OOI and the ZYG muscles. Dots represent the mean prediction of this model by condition (concerning the location parameter) whereas the vertical error bars represent the 95\% credible intervals.}(\#fig:predbmod2)
-\end{figure}
+![(\#fig:predbmod2)Raw data along with posterior predictions of the second model for the OOI and the ZYG muscles. Dots represent the mean prediction of this model by condition (concerning the location parameter) whereas the vertical error bars represent the 95\% credible intervals.](05-chap5_files/figure-docx/predbmod2-1.png)
 
 -->
 
@@ -305,62 +245,39 @@ The previous figure reveals an important failure of the first model, as it fails
 
 
 
-\begin{figure}[H]
+![(\#fig:ppcbmod3)Posterior predictive checking for the Skew-Normal model concerning the OOI and ZYG muscles. The dark blue line represents the distribution of the raw data while light blue lines are dataset generated from the posterior distribution.](05-chap5_files/figure-docx/ppcbmod3-1.png)
 
-{\centering \includegraphics[width=1\linewidth]{05-chap5_files/figure-latex/ppcbmod3-1} 
+<caption>(\#tab:outputbmod3)</caption>
 
-}
+<caption>*Estimates from the distributional Skew-Normal model concerning the OOI and the ZYG.*</caption>
 
-\caption{Posterior predictive checking for the Skew-Normal model concerning the OOI and ZYG muscles. The dark blue line represents the distribution of the raw data while light blue lines are dataset generated from the posterior distribution.}(\#fig:ppcbmod3)
-\end{figure}
 
-\begin{table}[H]
-\begin{center}
-\begin{threeparttable}
-\caption{\label{tab:outputbmod3}Estimates from the distributional Skew-Normal model concerning the OOI and the ZYG.}
-\small{
-\begin{tabular}{llllllll}
-\toprule
-Response & \multicolumn{1}{c}{Term} & \multicolumn{1}{c}{Estimate} & \multicolumn{1}{c}{SE} & \multicolumn{1}{c}{Lower} & \multicolumn{1}{c}{Upper} & \multicolumn{1}{c}{Rhat} & \multicolumn{1}{c}{BF01}\\
-\midrule
-OOI & Inner Speech & 2.35 & 0.04 & 2.28 & 2.44 & 1.00 & 0.00\\
-OOI & Listening & 2.12 & 0.04 & 2.04 & 2.19 & 1.00 & 0.00\\
-OOI & Overt Speech & 17.38 & 0.21 & 16.97 & 17.78 & 1.00 & 0.00\\
-OOI & Inner Speech x Class & 0.04 & 0.03 & -0.02 & 0.10 & 1.00 & 118.39\\
-OOI & Listening x Class & -0.02 & 0.04 & -0.09 & 0.06 & 1.00 & 237.23\\
-OOI & Overt Speech x Class & 1.64 & 0.18 & 1.28 & 1.99 & 1.00 & 0.00\\
-ZYG & Inner Speech & 0.04 & 0.00 & 0.02 & 0.04 & 1.00 & 0.00\\
-ZYG & Listening & 0.04 & 0.01 & 0.03 & 0.05 & 1.00 & 0.00\\
-ZYG & Overt Speech & 1.91 & 0.02 & 1.86 & 1.95 & 1.00 & 0.00\\
-ZYG & Inner Speech x Class & 0.00 & 0.01 & -0.01 & 0.02 & 1.00 & 1,089.34\\
-ZYG & Listening x Class & 0.00 & 0.01 & -0.02 & 0.02 & 1.00 & 856.03\\
-ZYG & Overt Speech x Class & 0.64 & 0.03 & 0.58 & 0.70 & 1.00 & 0.00\\
-\bottomrule
-\addlinespace
-\end{tabular}
-}
-\begin{tablenotes}[para]
-\textit{Note.} For each muscle (response), the first three lines represent the estimated average
+
+Response   Term                   Estimate   SE     Lower   Upper   Rhat   BF01     
+---------  ---------------------  ---------  -----  ------  ------  -----  ---------
+OOI        Inner Speech           2.35       0.04   2.28    2.44    1.00   0.00     
+OOI        Listening              2.12       0.04   2.04    2.19    1.00   0.00     
+OOI        Overt Speech           17.38      0.21   16.97   17.78   1.00   0.00     
+OOI        Inner Speech x Class   0.04       0.03   -0.02   0.10    1.00   118.39   
+OOI        Listening x Class      -0.02      0.04   -0.09   0.06    1.00   237.23   
+OOI        Overt Speech x Class   1.64       0.18   1.28    1.99    1.00   0.00     
+ZYG        Inner Speech           0.04       0.00   0.02    0.04    1.00   0.00     
+ZYG        Listening              0.04       0.01   0.03    0.05    1.00   0.00     
+ZYG        Overt Speech           1.91       0.02   1.86    1.95    1.00   0.00     
+ZYG        Inner Speech x Class   0.00       0.01   -0.01   0.02    1.00   1,089.34 
+ZYG        Listening x Class      0.00       0.01   -0.02   0.02    1.00   856.03   
+ZYG        Overt Speech x Class   0.64       0.03   0.58    0.70    1.00   0.00     
+
+<center>*Note.* For each muscle (response), the first three lines represent the estimated average
 amplitude in each condition, and its standard error (SE).
 The three subsequent rows represent the estimated average difference between the two classes
 of nonwords in each condition (i.e., the interaction effect). The 'Lower' and 'Upper' columns
     contain the lower and upper bounds of the 95\% CrI, while the 'Rhat' column reports the Gelman-Rubin statistic.
-    The last column reports the Bayes factor in favour of the null hypothesis (BF01).
-\end{tablenotes}
-\end{threeparttable}
-\end{center}
-\end{table}
+    The last column reports the Bayes factor in favour of the null hypothesis (BF01).</center>
 
 The estimates of this second model are summarised in Table \@ref(tab:outputbmod3) and Figure \@ref(fig:predbmod3). According to this model, the EMG amplitude of the OOI was higher than baseline (the estimated standardised score was above zero) in every condition whereas it was only the case in the overt speech condition for the ZYG. We did not observe the hypothesised difference according to the class of nonwords during inner speech production, neither on the OOI  ($\beta$ = 0.043, 95% CrI [-0.015, 0.103], BF~01~ = 118.391) nor on the ZYG ($\beta$ = 0.005, 95% CrI [-0.011, 0.021], BF~01~ = 1089.341).
 
-\begin{figure}[H]
-
-{\centering \includegraphics[width=1\linewidth]{05-chap5_files/figure-latex/predbmod3-1} 
-
-}
-
-\caption{Raw data along with posterior predictions of the third model for the OOI and the ZYG muscles. Dots represent the mean prediction of this model by condition (concerning the location parameter) whereas the vertical error bars represent the 95\% credible intervals.}(\#fig:predbmod3)
-\end{figure}
+![(\#fig:predbmod3)Raw data along with posterior predictions of the third model for the OOI and the ZYG muscles. Dots represent the mean prediction of this model by condition (concerning the location parameter) whereas the vertical error bars represent the 95\% credible intervals.](05-chap5_files/figure-docx/predbmod3-1.png)
 
 Predictions from this model are visually represented in Figure \@ref(fig:predbmod3). This figure differs from Figure \@ref(fig:predbmod1) (showing the predictions of the Gaussian model) in that the second model (the Skew-normal model) predicts shifts in location for both the OOI and the ZYG muscles according the class of non-word in overt speech prediction. In contrast, the first model (the Gaussian model) predicted a by-class difference only for the ZYG muscle.
 
@@ -368,14 +285,7 @@ Predictions from this model are visually represented in Figure \@ref(fig:predbmo
 
 In the previous section, we tried to predict the average EMG amplitude by condition on each single muscle. Although this approach was appropriate to tackle our initial research question (i.e., can we distinguish muscle-specific EMG correlates of inner speech production?), it is not optimal to answer more general questions such as "can we predict the content of inner speech based on the available EMG data?". In Figure \@ref(fig:2Demg), we depict the distribution of the by-word averaged EMG scores in the 2D space formed by the OOI and the ZYG muscles. This figure reveals that although different nonwords produced in overt speech seem difficult to discriminate on the basis of a single muscle (cf. Figure \@ref(fig:generalplot)), it seems easier to discriminate them in the space formed by two muscles (here OOI and ZYG). More precisely, the two classes of nonwords seem to form two separate clusters in the overt speech condition, but these clusters do not seem discriminable in the inner speech or in the listening condition.
 
-\begin{figure}[H]
-
-{\centering \includegraphics[width=1\linewidth]{05-chap5_files/figure-latex/2Demg-1} 
-
-}
-
-\caption{Average EMG activity for each nonword in each condition, in the 2D space formed by the OOI and the ZYG.}(\#fig:2Demg)
-\end{figure}
+![(\#fig:2Demg)Average EMG activity for each nonword in each condition, in the 2D space formed by the OOI and the ZYG.](05-chap5_files/figure-docx/2Demg-1.pdf)
 
 In other words, it is easier to discriminate these signals in the multidimensional space of all speech muscles, rather than by considering each muscle independently. Thus, we used a supervised machine learning algorithm aiming to classify speech signals according to the class of nonwords. Broadly, the machine learning approach seeks to find a relationship between an input $X$ (e.g., EMG recordings over the four facial muscles) and an output $Y$ (e.g., the class of nonwords). Once trained, it allows predicting a value of the output based on some input values, whose prediction can be evaluated against new observations.
 
@@ -389,34 +299,20 @@ We first tried to predict the class of nonwords produced in overt speech, based 
 
 
 
-\begin{table}[H]
-\begin{center}
-\begin{threeparttable}
-\caption{\label{tab:CMovert}Confusion matrix with by-class error for the overt speech condition.}
-\begin{tabular}{cccc}
-\toprule
- & \multicolumn{2}{c}{Reference}  &\\
-\cmidrule(r){2-3}
-Prediction & \multicolumn{1}{c}{rounded} & \multicolumn{1}{c}{spread} & \multicolumn{1}{c}{class.error}\\
-\midrule
-rounded & 971 & 165 & 0.145\\
-spread & 204 & 956 & 0.176\\
-\bottomrule
-\end{tabular}
-\end{threeparttable}
-\end{center}
-\end{table}
+<caption>(\#tab:CMovert)</caption>
+
+<caption>*Confusion matrix with by-class error for the overt speech condition.*</caption>
+
+
+
+ Prediction    rounded    spread    class.error 
+------------  ---------  --------  -------------
+  rounded        971       165         0.145    
+   spread        204       956         0.176    
 
 This analysis revealed an overall classification accuracy of 0.841, 95% CI [0.809, 0.87]. The relative importance of each feature (i.e., each muscle) for prediction is represented in Figure \@ref(fig:VarImpOvert).
 
-\begin{figure}[H]
-
-{\centering \includegraphics[width=1\linewidth]{05-chap5_files/figure-latex/VarImpOvert-1} 
-
-}
-
-\caption{Scaled variable importance for overt speech classification.}(\#fig:VarImpOvert)
-\end{figure}
+![(\#fig:VarImpOvert)Scaled variable importance for overt speech classification.](05-chap5_files/figure-docx/VarImpOvert-1.png)
 
 This figure reveals that the muscles containing most information to discriminate the two classes of nonwords are the ZYG and the OOI, whereas, as predicted, forehead muscles do not seem to strongly contribute to predictive accuracy during overt speech production.
 
@@ -426,45 +322,31 @@ We then applied the same strategy (the same algorithm) to the signals recorded i
 
 
 
-\begin{table}[H]
-\begin{center}
-\begin{threeparttable}
-\caption{\label{tab:CMinner}Confusion matrix with by-class classification error for the inner speech condition.}
-\begin{tabular}{cccc}
-\toprule
- & \multicolumn{2}{c}{Reference}  &\\
-\cmidrule(r){2-3}
-Prediction & \multicolumn{1}{c}{rounded} & \multicolumn{1}{c}{spread} & \multicolumn{1}{c}{class.error}\\
-\midrule
-rounded & 460 & 550 & 0.545\\
-spread & 517 & 532 & 0.493\\
-\bottomrule
-\end{tabular}
-\end{threeparttable}
-\end{center}
-\end{table}
+<caption>(\#tab:CMinner)</caption>
+
+<caption>*Confusion matrix with by-class classification error for the inner speech condition.*</caption>
+
+
+
+ Prediction    rounded    spread    class.error 
+------------  ---------  --------  -------------
+  rounded        460       550         0.545    
+   spread        517       532         0.493    
 
 This analysis revealed an overall classification accuracy of 0.508, 95% CI [0.464, 0.552] in the inner speech condition, which indicates that the RF algorithm did not allow discriminating the two classes of nonwords better than random guessing.
 
 
 
-\begin{table}[H]
-\begin{center}
-\begin{threeparttable}
-\caption{\label{tab:CMlistening}Confusion matrix with by-class classification error for the listening condition.}
-\begin{tabular}{cccc}
-\toprule
- & \multicolumn{2}{c}{Reference}  &\\
-\cmidrule(r){2-3}
-Prediction & \multicolumn{1}{c}{rounded} & \multicolumn{1}{c}{spread} & \multicolumn{1}{c}{class.error}\\
-\midrule
-rounded & 512 & 517 & 0.502\\
-spread & 525 & 490 & 0.517\\
-\bottomrule
-\end{tabular}
-\end{threeparttable}
-\end{center}
-\end{table}
+<caption>(\#tab:CMlistening)</caption>
+
+<caption>*Confusion matrix with by-class classification error for the listening condition.*</caption>
+
+
+
+ Prediction    rounded    spread    class.error 
+------------  ---------  --------  -------------
+  rounded        512       517         0.502    
+   spread        525       490         0.517    
 
 This analysis similarly revealed an overall classification accuracy of 0.488, 95% CI [0.444, 0.533] in the listening condition.
 
@@ -480,27 +362,20 @@ To answer the first question, we began by comparing our results to results obtai
 
 
 
-\begin{table}[H]
-\begin{center}
-\begin{threeparttable}
-\caption{\label{tab:eskes}Standardised EMG amplitude recorded over the OOI and the ZYG during overt speech production of rounded versus spread vowels in Eskes et al. (2017).}
-\begin{tabular}{ccccccc}
-\toprule
-Muscle & \multicolumn{1}{c}{Item} & \multicolumn{1}{c}{Observations} & \multicolumn{1}{c}{Mean} & \multicolumn{1}{c}{SD} & \multicolumn{1}{c}{Median} & \multicolumn{1}{c}{Histogram}\\
-\midrule
-OOI & rounded & 50 & 59.7 & 60.09 & 42.03 & ▇▃▂▁▁▁▁▁\\
-OOI & spread & 50 & 22.15 & 11.92 & 20.65 & ▇▆▇▂▂▂▁▁\\
-ZYG & rounded & 50 & 7.39 & 3.78 & 6.27 & ▇▅▃▁▁▁▁▁\\
-ZYG & spread & 50 & 10.15 & 6.2 & 7.99 & ▇▆▂▂▁▁▁▁\\
-\bottomrule
-\addlinespace
-\end{tabular}
-\begin{tablenotes}[para]
-\textit{Note.} The number of observations is given by the number of vowels to be pronunced in each category (2) times the number of repetitions (5) times the number of participants (5), for a total of 50 observations per cell. 
-\end{tablenotes}
-\end{threeparttable}
-\end{center}
-\end{table}
+<caption>(\#tab:eskes)</caption>
+
+<caption>*Standardised EMG amplitude recorded over the OOI and the ZYG during overt speech production of rounded versus spread vowels in Eskes et al. (2017).*</caption>
+
+
+
+ Muscle     Item      Observations    Mean      SD      Median    Histogram 
+--------  ---------  --------------  -------  -------  --------  -----------
+  OOI      rounded         50         59.7     60.09    42.03     ▇▃▂▁▁▁▁▁  
+  OOI      spread          50         22.15    11.92    20.65     ▇▆▇▂▂▂▁▁  
+  ZYG      rounded         50         7.39     3.78      6.27     ▇▅▃▁▁▁▁▁  
+  ZYG      spread          50         10.15     6.2      7.99     ▇▆▂▂▁▁▁▁  
+
+<center>*Note.* The number of observations is given by the number of vowels to be pronunced in each category (2) times the number of repetitions (5) times the number of participants (5), for a total of 50 observations per cell. </center>
 
 We notice that @eskes_predicting_2017 have indeed observed the dissociation we initially predicted, that is, that the EMG amplitude recorded over the OOI was higher during the pronunciation of rounded vowels than during pronunciation of spread vowels, while the reverse pattern was observed concerning the ZYG^[Paired-samples Wilcoxon signed rank tests revealed a significant shift in location (pseudomedian) between rounded and spread items for the OOI ($\beta$ = 24.12, 95% CI [15.19, 40.77], V = 1184, p < .001) with rounded items being associated with a higher location than spread items. This analysis revealed a significant shift in the inverse direction concerning the ZYG ($\beta$ = -1.51, 95% CI [-2.94, -0.48], V = 275, p < .001).]. However, one crucial difference between @eskes_predicting_2017 design and ours is the complexity of the linguistic material. Whereas @eskes_predicting_2017 used single phonemes, we chose to use bisyllabic nonwords to increase the ecological validity of the paradigm. Although these nonwords were specifically created to theoretically increase the engagement of either the OOI or the ZYG (see section \@ref(nonwords)), it is reasonable to expect differences in the average EMG amplitude between the phoneme and the (non)word level. More precisely, we expect the *average* EMG amplitude associated with the production of a given phoneme (e.g., /y/) to be impacted by the production of the consonant (e.g., /b/) it is paired with, due to coarticulation. More generally, we could hypothesise that the difference between the *average* EMG amplitude recorded during the production of the phoneme /i/ and during the production of the phoneme /y/ could be reduced when these phonemes are coarticulated in CV or CVCV sequences like /byby/ or /didi/. In other words, we might expect an interaction effect between the structure of the to-be produced speech sequence (either a single vowel or a CV/CVCV sequence) and the class of the vowel. This is coherent with previous findings showing that the muscular activity associated with vowels production is strongly influenced by the surrounding consonants in CVC sequences [e.g.,@fromkin_neuro-muscular_1966]. Thus, further investigations should focus on how the average EMG amplitude is impacted by coarticulation during the production of CVCV sequences.
 

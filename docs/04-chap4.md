@@ -1,6 +1,6 @@
 # Dissociating facial electromyographic correlates of visual and verbal induced rumination
 
-Summary of the research...^[This experimental chapter is a submitted manuscript reformatted for the need of this thesis. Pre-registered protocol, preprint, data, as well as reproducible code and figures are available at: [https://osf.io/c9pag/](https://osf.io/c9pag/).]
+\initial{S}ummary of the research...^[This experimental chapter is a submitted manuscript reformatted for the need of this thesis. Pre-registered protocol, preprint, data, as well as reproducible code and figures are available at: [https://osf.io/c9pag/](https://osf.io/c9pag/).]
 
 
 
@@ -146,14 +146,7 @@ The results section is divided into two sections investigating the effects of i)
 
 We represent the standardised EMG amplitude during the rumination period for each facial muscle in Figure \@ref(fig:ruminationplot). This figure reveals that the average standardised EMG amplitude was higher than baseline after the rumination induction for both the OOI and FRO muscles, while it was at the baseline level (on average) for the ZYG and lower than baseline for the NCK. Overall, this figures does not show any group (modality-specific) differences (detailed numerical descriptive statistics are reported in the [supplementary materials](#suppCh4)).
 
-\begin{figure}[H]
-
-{\centering \includegraphics[width=1\linewidth]{04-chap4_files/figure-latex/ruminationplot-1} 
-
-}
-
-\caption{Standardised EMG amplitude during the rumination period. The coloured dots represent the mean standardised EMG amplitude by participant and by type of induction. The boxplot represents the median as well as the first and third quartiles. Note: the y-axis differs between the two rows.}(\#fig:ruminationplot)
-\end{figure}
+![(\#fig:ruminationplot)Standardised EMG amplitude during the rumination period. The coloured dots represent the mean standardised EMG amplitude by participant and by type of induction. The boxplot represents the median as well as the first and third quartiles. Note: the y-axis differs between the two rows.](04-chap4_files/figure-docx/ruminationplot-1.png)
 
 #### Confirmatory (preregistered) analyses
 
@@ -161,50 +154,34 @@ In accordance with the preregistered analysis plan, we then fitted a multivariat
 
 
 
-\begin{table}[H]
-\begin{center}
-\begin{threeparttable}
-\caption{\label{tab:outputbmod1}Estimates from the multivariate Gaussian model.}
-\small{
-\begin{tabular}{lccccccc}
-\toprule
-Response & \multicolumn{1}{c}{Term} & \multicolumn{1}{c}{Estimate} & \multicolumn{1}{c}{SE} & \multicolumn{1}{c}{Lower} & \multicolumn{1}{c}{Upper} & \multicolumn{1}{c}{Rhat} & \multicolumn{1}{c}{BF01}\\
-\midrule
-ZYG & Intercept & -0.054 & 0.033 & -0.120 & 0.011 & 1.000 & 8.251\\
-ZYG & group & 0.065 & 0.066 & -0.066 & 0.193 & 1.000 & 9.332\\
-OOI & Intercept & 1.022 & 0.183 & 0.656 & 1.378 & 1.000 & <0.001\\
-OOI & group & 0.209 & 0.341 & -0.466 & 0.904 & 1.000 & 2.469\\
-NEK & Intercept & -0.002 & 0.023 & -0.050 & 0.043 & 1.000 & 41.497\\
-NEK & group & 0.042 & 0.046 & -0.050 & 0.132 & 1.000 & 13.642\\
-FRO & Intercept & 1.504 & 0.184 & 1.131 & 1.861 & 1.000 & <0.001\\
-FRO & group & -0.178 & 0.346 & -0.869 & 0.516 & 1.000 & 2.535\\
-FCR & Intercept & -0.036 & 0.036 & -0.107 & 0.037 & 1.000 & 17.464\\
-FCR & group & 0.092 & 0.072 & -0.048 & 0.235 & 1.000 & 6.094\\
-\bottomrule
-\addlinespace
-\end{tabular}
-}
-\begin{tablenotes}[para]
-\textit{Note.} For each muscle (response), the first line represents the estimated average
+<caption>(\#tab:outputbmod1)</caption>
+
+<caption>*Estimates from the multivariate Gaussian model.*</caption>
+
+
+
+Response      Term       Estimate     SE      Lower     Upper    Rhat      BF01  
+---------  -----------  ----------  -------  --------  -------  -------  --------
+ZYG         Intercept     -0.054     0.033    -0.120    0.011    1.000    8.251  
+ZYG           group       0.065      0.066    -0.066    0.193    1.000    9.332  
+OOI         Intercept     1.022      0.183    0.656     1.378    1.000    <0.001 
+OOI           group       0.209      0.341    -0.466    0.904    1.000    2.469  
+NEK         Intercept     -0.002     0.023    -0.050    0.043    1.000    41.497 
+NEK           group       0.042      0.046    -0.050    0.132    1.000    13.642 
+FRO         Intercept     1.504      0.184    1.131     1.861    1.000    <0.001 
+FRO           group       -0.178     0.346    -0.869    0.516    1.000    2.535  
+FCR         Intercept     -0.036     0.036    -0.107    0.037    1.000    17.464 
+FCR           group       0.092      0.072    -0.048    0.235    1.000    6.094  
+
+<center>*Note.* For each muscle (response), the first line represents the estimated average
 amplitude after the rumination induction and its standard error (SE). The second line
-represents the estimated average difference between the two types of induction (verbal vs. visual). The 'Lower' and 'Upper' columns contain the lower and upper bounds of the 95\% CrI, whereas the 'Rhat' column reports the Gelman-Rubin statistic. The last column reports the BF in favour of the null hypothesis.
-\end{tablenotes}
-\end{threeparttable}
-\end{center}
-\end{table}
+represents the estimated average difference between the two types of induction (verbal vs. visual). The 'Lower' and 'Upper' columns contain the lower and upper bounds of the 95\% CrI, whereas the 'Rhat' column reports the Gelman-Rubin statistic. The last column reports the BF in favour of the null hypothesis.</center>
 
 This analysis revealed that the average EMG amplitude of both the OOI and the FRO muscles was estimated to be higher than baseline (the standardised score was above zero) after rumination induction. However, it was not the case for the ZYG, NCK, and FCR muscles. We did not observe the hypothesised difference according to the type of induction on the OOI ($\beta$ = 0.209, 95% CrI [-0.466, 0.904], BF~01~ = 2.469) nor on the FRO ($\beta$ = -0.178, 95% CrI [-0.869, 0.516], BF~01~ = 2.535).
 
 However, before to proceed further with the interpretation of the results, it is essential to check the validity of this first model. A useful diagnostic of the model's predictive abilities is known as *posterior predictive checking* (PPC) and consists in comparing observed data to data simulated from the posterior distribution [e.g.,@gelman_bayesian_2013]. Results from this procedure are represented in Figure \@ref(fig:ppcbmod1).
 
-\begin{figure}[H]
-
-{\centering \includegraphics[width=1\linewidth]{04-chap4_files/figure-latex/ppcbmod1-1} 
-
-}
-
-\caption{Posterior predictive checking for the first model concerning the OOI and FRO muscles. The dark blue line represents the distribution of the raw data while light blue lines are dataset generated from the posterior distribution.}(\#fig:ppcbmod1)
-\end{figure}
+![(\#fig:ppcbmod1)Posterior predictive checking for the first model concerning the OOI and FRO muscles. The dark blue line represents the distribution of the raw data while light blue lines are dataset generated from the posterior distribution.](04-chap4_files/figure-docx/ppcbmod1-1.png)
 
 #### Exploratory analyses
 
@@ -212,182 +189,124 @@ The previous figure reveals that this first model fails to generate data that lo
 
 
 
-\begin{table}[H]
-\begin{center}
-\begin{threeparttable}
-\caption{\label{tab:outputbmod2}Estimates from the multivariate (weighted) Skew-Normal model.}
-\small{
-\begin{tabular}{lccccccc}
-\toprule
-Response & \multicolumn{1}{c}{Term} & \multicolumn{1}{c}{Estimate} & \multicolumn{1}{c}{SE} & \multicolumn{1}{c}{Lower} & \multicolumn{1}{c}{Upper} & \multicolumn{1}{c}{Rhat} & \multicolumn{1}{c}{BF01}\\
-\midrule
-ZYG & Intercept & -0.035 & 0.040 & -0.112 & 0.048 & 1.000 & 16.401\\
-ZYG & group & 0.087 & 0.066 & -0.045 & 0.220 & 1.000 & 6.443\\
-OOI & Intercept & 1.195 & 0.170 & 0.855 & 1.542 & 1.000 & <0.001\\
-OOI & group & -0.073 & 0.247 & -0.565 & 0.450 & 1.000 & 4.013\\
-NEK & Intercept & -0.005 & 0.031 & -0.065 & 0.058 & 1.000 & 31.357\\
-NEK & group & 0.026 & 0.054 & -0.084 & 0.131 & 1.000 & 16.084\\
-FRO & Intercept & 1.537 & 0.210 & 1.133 & 1.968 & 1.000 & <0.001\\
-FRO & group & -0.030 & 0.313 & -0.700 & 0.588 & 1.000 & 3.194\\
-FCR & Intercept & 0.003 & 0.040 & -0.076 & 0.087 & 1.000 & 24.682\\
-FCR & group & 0.111 & 0.071 & -0.026 & 0.257 & 1.000 & 4.109\\
-\bottomrule
-\addlinespace
-\end{tabular}
-}
-\begin{tablenotes}[para]
-\textit{Note.} For each muscle (response), the first line represents the estimated average
+<caption>(\#tab:outputbmod2)</caption>
+
+<caption>*Estimates from the multivariate (weighted) Skew-Normal model.*</caption>
+
+
+
+Response      Term       Estimate     SE      Lower     Upper    Rhat      BF01  
+---------  -----------  ----------  -------  --------  -------  -------  --------
+ZYG         Intercept     -0.035     0.040    -0.112    0.048    1.000    16.401 
+ZYG           group       0.087      0.066    -0.045    0.220    1.000    6.443  
+OOI         Intercept     1.195      0.170    0.855     1.542    1.000    <0.001 
+OOI           group       -0.073     0.247    -0.565    0.450    1.000    4.013  
+NEK         Intercept     -0.005     0.031    -0.065    0.058    1.000    31.357 
+NEK           group       0.026      0.054    -0.084    0.131    1.000    16.084 
+FRO         Intercept     1.537      0.210    1.133     1.968    1.000    <0.001 
+FRO           group       -0.030     0.313    -0.700    0.588    1.000    3.194  
+FCR         Intercept     0.003      0.040    -0.076    0.087    1.000    24.682 
+FCR           group       0.111      0.071    -0.026    0.257    1.000    4.109  
+
+<center>*Note.* For each muscle (response), the first line represents the estimated average
 amplitude after the rumination induction and its standard error (SE). The second line
-represents the estimated average difference between the two types of induction (verbal vs. visual). The 'Lower' and 'Upper' columns contain the lower and upper bounds of the 95\% CrI, whereas the 'Rhat' column reports the Gelman-Rubin statistic. The last column reports the BF in favour of the null hypothesis.
-\end{tablenotes}
-\end{threeparttable}
-\end{center}
-\end{table}
+represents the estimated average difference between the two types of induction (verbal vs. visual). The 'Lower' and 'Upper' columns contain the lower and upper bounds of the 95\% CrI, whereas the 'Rhat' column reports the Gelman-Rubin statistic. The last column reports the BF in favour of the null hypothesis.</center>
 
 This analysis revealed that the average EMG amplitude of both the OOI and the FRO muscles was estimated to be higher than baseline (the standardised score was above zero) after rumination induction. However, it was not the case for the ZYG, NCK and FCR muscles. We did not observe the hypothesised difference according to the type of induction on the OOI ($\beta$ = -0.073, 95% CrI [-0.565, 0.45], BF~01~ = 4.013) nor on the FRO ($\beta$ = -0.03, 95% CrI [-0.7, 0.588], BF~01~ = 3.194). The posterior predictive checks for this model are presented in Figure \@ref(fig:ppcbmod2) and indicate that this model seems to better accommodate the specificities of the collected data.
 
-\begin{figure}[H]
-
-{\centering \includegraphics[width=1\linewidth]{04-chap4_files/figure-latex/ppcbmod2-1} 
-
-}
-
-\caption{Posterior predictive checking for the Skew-Normal model concerning the OOI and FRO muscles. The dark blue line represents the distribution of the raw data while light blue lines are dataset generated from the posterior distribution.}(\#fig:ppcbmod2)
-\end{figure}
+![(\#fig:ppcbmod2)Posterior predictive checking for the Skew-Normal model concerning the OOI and FRO muscles. The dark blue line represents the distribution of the raw data while light blue lines are dataset generated from the posterior distribution.](04-chap4_files/figure-docx/ppcbmod2-1.png)
 
 ##### Cluster analyses
 
 The results of the previous analyses do not corroborate the hypothesis according to which the average EMG amplitude recorded over the speech muscles should be higher in the group that underwent the verbal rumination induction, as compared to the non-verbal rumination induction. However, we might wonder whether the rumination induction was actually efficient in inducing different modalities of ruminative thoughts. To answer this question, we first report the average self-reported levels of either verbal or visual thoughts during the rumination period in Table \@ref(tab:verbalvisual).
 
-\begin{table}[H]
-\begin{center}
-\begin{threeparttable}
-\caption{\label{tab:verbalvisual}Mean and SE of self-reported levels of either verbal or visual thoughts at the end of the rumination period.}
-\begin{tabular}{lccc}
-\toprule
-Group & Verbal VAS & Visual VAS & Sample size\\
-\midrule
-verbal & 87.45 (2.86) & 31.67 (4.38) & 44\\
-visual & 83.92 (4.04) & 30 (4.53) & 41\\
-\bottomrule
-\end{tabular}
-\end{threeparttable}
-\end{center}
-\end{table}
+<caption>(\#tab:verbalvisual)</caption>
+
+<caption>*Mean and SE of self-reported levels of either verbal or visual thoughts at the end of the rumination period.*</caption>
+
+
+
+Group      Verbal VAS      Visual VAS     Sample size 
+-------  --------------  --------------  -------------
+verbal    87.45 (2.86)    31.67 (4.38)        44      
+visual    83.92 (4.04)     30 (4.53)          41      
 
 Considering that both groups showed a similar ratio of verbal/non-verbal thoughts (see Table \@ref(tab:verbalvisual)), we used these self-reports to define a posteriori groups of participants that reported more verbal (or non-verbal) ruminations. To this end, we used a cluster analysis (2D k-means) to define two groups (clusters) in the space of the two VASs that have been used to assess the amount of verbal and non-verbal thoughts during the rumination period (see Figure \@ref(fig:clusters)).
 
-\begin{figure}[H]
-
-{\centering \includegraphics[width=0.75\linewidth]{04-chap4_files/figure-latex/clusters-1} 
-
-}
-
-\caption{Results of the cluster analysis. The centroid of each cluster is represented by a circle and a central cross. The green cluster represents 'verbal ruminators' while the orange one represents 'non-verbal ruminators'.}(\#fig:clusters)
-\end{figure}
+![(\#fig:clusters)Results of the cluster analysis. The centroid of each cluster is represented by a circle and a central cross. The green cluster represents 'verbal ruminators' while the orange one represents 'non-verbal ruminators'.](04-chap4_files/figure-docx/clusters-1.png)
 
 As can be seen from Figure \@ref(fig:clusters) and from Table \@ref(tab:clustertable), this analysis revealed two groups of participants that were either *relatively* i) high on the verbal VAS and low on the visual one or ii) high on the visual VAS and low on the verbal one.
 
-\begin{table}[H]
-\begin{center}
-\begin{threeparttable}
-\caption{\label{tab:clustertable}Center and size (number of participants) of the two clusters identified by the k-means algorithm.}
-\begin{tabular}{cccc}
-\toprule
-Cluster & Verbal VAS & Visual VAS & Size\\
-\midrule
-1 & 93.55 & 11.77 & 53\\
-2 & 72.81 & 62.49 & 32\\
-\bottomrule
-\end{tabular}
-\end{threeparttable}
-\end{center}
-\end{table}
+<caption>(\#tab:clustertable)</caption>
+
+<caption>*Center and size (number of participants) of the two clusters identified by the k-means algorithm.*</caption>
+
+
+
+ Cluster    Verbal VAS    Visual VAS    Size 
+---------  ------------  ------------  ------
+    1         93.55         11.77        53  
+    2         72.81         62.49        32  
 
 We then fitted the same model as we previously did but using the cluster (instead of the "group") as a predictor to assess the influence of the nature of ruminative thoughts on each muscle' standardised EMG amplitude. Estimations from this model are reported in Table \@ref(tab:outputbmod3) and revealed no evidence for a difference between clusters on any muscle (i.e., the $BF_{01}$ for the effect of *cluster* was superior to 1 for every muscle).
 
 
 
-\begin{table}[H]
-\begin{center}
-\begin{threeparttable}
-\caption{\label{tab:outputbmod3}Estimates from the multivariate (weighted) Skew-Normal model based on the k-means clusters.}
-\small{
-\begin{tabular}{lccccccc}
-\toprule
-Response & \multicolumn{1}{c}{Term} & \multicolumn{1}{c}{Estimate} & \multicolumn{1}{c}{SE} & \multicolumn{1}{c}{Lower} & \multicolumn{1}{c}{Upper} & \multicolumn{1}{c}{Rhat} & \multicolumn{1}{c}{BF01}\\
-\midrule
-ZYG & Intercept & -0.032 & 0.041 & -0.110 & 0.053 & 1.000 & 17.005\\
-ZYG & cluster & -0.005 & 0.069 & -0.148 & 0.131 & 1.000 & 14.664\\
-OOI & Intercept & 1.196 & 0.174 & 0.855 & 1.553 & 1.000 & <0.001\\
-OOI & cluster & -0.037 & 0.253 & -0.571 & 0.485 & 1.000 & 3.915\\
-NEK & Intercept & 0.004 & 0.031 & -0.056 & 0.066 & 1.000 & 32.501\\
-NEK & cluster & -0.071 & 0.052 & -0.177 & 0.037 & 1.000 & 7.382\\
-FRO & Intercept & 1.626 & 0.210 & 1.210 & 2.047 & 1.000 & <0.001\\
-FRO & cluster & -0.584 & 0.348 & -1.302 & 0.102 & 1.000 & 0.708\\
-FCR & Intercept & 0.004 & 0.042 & -0.078 & 0.090 & 1.000 & 24.173\\
-FCR & cluster & 0.018 & 0.073 & -0.127 & 0.163 & 1.000 & 13.835\\
-\bottomrule
-\addlinespace
-\end{tabular}
-}
-\begin{tablenotes}[para]
-\textit{Note.} For each muscle (response), the first line represents the estimated average
+<caption>(\#tab:outputbmod3)</caption>
+
+<caption>*Estimates from the multivariate (weighted) Skew-Normal model based on the k-means clusters.*</caption>
+
+
+
+Response      Term       Estimate     SE      Lower     Upper    Rhat      BF01  
+---------  -----------  ----------  -------  --------  -------  -------  --------
+ZYG         Intercept     -0.032     0.041    -0.110    0.053    1.000    17.005 
+ZYG          cluster      -0.005     0.069    -0.148    0.131    1.000    14.664 
+OOI         Intercept     1.196      0.174    0.855     1.553    1.000    <0.001 
+OOI          cluster      -0.037     0.253    -0.571    0.485    1.000    3.915  
+NEK         Intercept     0.004      0.031    -0.056    0.066    1.000    32.501 
+NEK          cluster      -0.071     0.052    -0.177    0.037    1.000    7.382  
+FRO         Intercept     1.626      0.210    1.210     2.047    1.000    <0.001 
+FRO          cluster      -0.584     0.348    -1.302    0.102    1.000    0.708  
+FCR         Intercept     0.004      0.042    -0.078    0.090    1.000    24.173 
+FCR          cluster      0.018      0.073    -0.127    0.163    1.000    13.835 
+
+<center>*Note.* For each muscle (response), the first line represents the estimated average
 amplitude after the rumination induction and its standard error (SE). The second line
-represents the estimated average difference between the two types of induction (verbal vs. visual). The 'Lower' and 'Upper' columns contain the lower and upper bounds of the 95\% CrI, whereas the 'Rhat' column reports the Gelman-Rubin statistic. The last column reports the BF in favour of the null hypothesis.
-\end{tablenotes}
-\end{threeparttable}
-\end{center}
-\end{table}
+represents the estimated average difference between the two types of induction (verbal vs. visual). The 'Lower' and 'Upper' columns contain the lower and upper bounds of the 95\% CrI, whereas the 'Rhat' column reports the Gelman-Rubin statistic. The last column reports the BF in favour of the null hypothesis.</center>
 
 ##### Relation between self-reports and EMG amplitude
 
 We represent the relation between self-reported levels of state rumination (after induction) and the EMG amplitude (of the four facial muscles) changes from baseline to post-induction in Figure \@ref(fig:selfemg). This figure reveals an overall positive association between the level of self-reported state rumination after induction and the increase in EMG amplitude from baseline to post-induction on the FRO muscle, but not substantial relation concerning the other muscles.
 
-\begin{figure}[H]
-
-{\centering \includegraphics[width=1\linewidth]{04-chap4_files/figure-latex/selfemg-1} 
-
-}
-
-\caption{Relation between self-reported levels of state rumination (on the x-axis) and standardised EMG amplitude after the rumination induction (on the y-axis). The dots represent individual observations, whose size varies with the percentage of signal that was kept after removing artefacts. The black line represents the regression line with its 95\% CI.}(\#fig:selfemg)
-\end{figure}
+![(\#fig:selfemg)Relation between self-reported levels of state rumination (on the x-axis) and standardised EMG amplitude after the rumination induction (on the y-axis). The dots represent individual observations, whose size varies with the percentage of signal that was kept after removing artefacts. The black line represents the regression line with its 95\% CI.](04-chap4_files/figure-docx/selfemg-1.png)
 
 To further analyse the relationship between self-reported levels of state rumination and standardised EMG amplitude, we fitted a weighted multivariate Skew-Normal model (as previously). Estimations from this model are reported in Table \@ref(tab:outputbmod4).
 
 
 
-\begin{table}[H]
-\begin{center}
-\begin{threeparttable}
-\caption{\label{tab:outputbmod4}Estimates from the multivariate (weighted) Skew-Normal model assessing the relation between self-reported levels of state rumination and standardised EMG amplitude.}
-\small{
-\begin{tabular}{lccccccc}
-\toprule
-Response & \multicolumn{1}{c}{Term} & \multicolumn{1}{c}{Estimate} & \multicolumn{1}{c}{SE} & \multicolumn{1}{c}{Lower} & \multicolumn{1}{c}{Upper} & \multicolumn{1}{c}{Rhat} & \multicolumn{1}{c}{BF01}\\
-\midrule
-ZYG & Intercept & -0.032 & 0.041 & -0.112 & 0.051 & 1.000 & 17.092\\
-ZYG & bsri & 0.004 & 0.034 & -0.061 & 0.070 & 1.000 & 29.882\\
-OOI & Intercept & 1.187 & 0.170 & 0.860 & 1.536 & 1.000 & <0.001\\
-OOI & bsri & -0.063 & 0.130 & -0.321 & 0.195 & 1.000 & 7.061\\
-NEK & Intercept & -0.006 & 0.030 & -0.063 & 0.058 & 1.000 & 33.05\\
-NEK & bsri & 0.030 & 0.030 & -0.027 & 0.092 & 1.000 & 19.442\\
-FRO & Intercept & 1.523 & 0.208 & 1.126 & 1.957 & 1.000 & <0.001\\
-FRO & bsri & 0.283 & 0.192 & -0.097 & 0.660 & 1.000 & 1.805\\
-FCR & Intercept & 0.000 & 0.041 & -0.079 & 0.086 & 1.000 & 24.845\\
-FCR & bsri & 0.048 & 0.035 & -0.023 & 0.116 & 1.000 & 11.079\\
-\bottomrule
-\addlinespace
-\end{tabular}
-}
-\begin{tablenotes}[para]
-\textit{Note.} For each muscle (response), the first line represents the estimated average
+<caption>(\#tab:outputbmod4)</caption>
+
+<caption>*Estimates from the multivariate (weighted) Skew-Normal model assessing the relation between self-reported levels of state rumination and standardised EMG amplitude.*</caption>
+
+
+
+Response      Term       Estimate     SE      Lower     Upper    Rhat      BF01  
+---------  -----------  ----------  -------  --------  -------  -------  --------
+ZYG         Intercept     -0.032     0.041    -0.112    0.051    1.000    17.092 
+ZYG           bsri        0.004      0.034    -0.061    0.070    1.000    29.882 
+OOI         Intercept     1.187      0.170    0.860     1.536    1.000    <0.001 
+OOI           bsri        -0.063     0.130    -0.321    0.195    1.000    7.061  
+NEK         Intercept     -0.006     0.030    -0.063    0.058    1.000    33.05  
+NEK           bsri        0.030      0.030    -0.027    0.092    1.000    19.442 
+FRO         Intercept     1.523      0.208    1.126     1.957    1.000    <0.001 
+FRO           bsri        0.283      0.192    -0.097    0.660    1.000    1.805  
+FCR         Intercept     0.000      0.041    -0.079    0.086    1.000    24.845 
+FCR           bsri        0.048      0.035    -0.023    0.116    1.000    11.079 
+
+<center>*Note.* For each muscle (response), the first line represents the estimated average
 amplitude after the rumination induction and its standard error (SE). The second line
-represents the estimated relation between self-reported levels of state rumination and standardised EMG amplitude. As the BSRI scores have been centered and standardised, this estimate approximate a correlation coefficient. The 'Lower' and 'Upper' columns contain the lower and upper bounds of the 95\% CrI, whereas the 'Rhat' column reports the Gelman-Rubin statistic. The last column reports the BF in favour of the null hypothesis.
-\end{tablenotes}
-\end{threeparttable}
-\end{center}
-\end{table}
+represents the estimated relation between self-reported levels of state rumination and standardised EMG amplitude. As the BSRI scores have been centered and standardised, this estimate approximate a correlation coefficient. The 'Lower' and 'Upper' columns contain the lower and upper bounds of the 95\% CrI, whereas the 'Rhat' column reports the Gelman-Rubin statistic. The last column reports the BF in favour of the null hypothesis.</center>
 
 This analysis revealed a weak positive association between self-reported levels of state rumination (BSRI score) after induction and the standardised EMG amplitude recorded over the FRO muscle ($\beta$ = 0.283, 95% CrI [-0.097, 0.66], BF~01~ = 1.805). This analysis revealed no evidence for an association between self-reported levels of state rumination and the standardised EMG amplitude recorded over the other muscles.
 
@@ -405,42 +324,26 @@ To analyse this interaction effect, we fitted a Gaussian model with a constant e
 
 
 
-\begin{table}[H]
-\begin{center}
-\begin{threeparttable}
-\caption{\label{tab:outputbmod5}Estimated changes in self-reported levels of state rumination (BSRI scores).}
-\small{
-\begin{tabular}{lcccccc}
-\toprule
-Term & \multicolumn{1}{c}{Estimate} & \multicolumn{1}{c}{SE} & \multicolumn{1}{c}{Lower} & \multicolumn{1}{c}{Upper} & \multicolumn{1}{c}{Rhat} & \multicolumn{1}{c}{BF01}\\
-\midrule
-Intercept & -92.07 & 13.72 & -119.37 & -64.96 & 1.00 & <0.001\\
-group & 0.94 & 27.06 & -50.68 & 55.06 & 1.00 & 3.69\\
-relax\_type & 25.09 & 26.75 & -29.34 & 76.67 & 1.00 & 2.405\\
-group:relax\_type & 25.45 & 47.88 & -73.75 & 118.19 & 1.00 & 1.846\\
-\bottomrule
-\addlinespace
-\end{tabular}
-}
-\begin{tablenotes}[para]
-\textit{Note.} For each effect, the 'Estimate' reports the estimated change in BSRI scores, followed by its standard error (SE). The 'Lower' and 'Upper' columns contain the lower and upper bounds of the 95\% CrI, whereas the 'Rhat' column reports the Gelman-Rubin statistic. The last column reports the BF in favour of the null hypothesis.
-\end{tablenotes}
-\end{threeparttable}
-\end{center}
-\end{table}
+<caption>(\#tab:outputbmod5)</caption>
+
+<caption>*Estimated changes in self-reported levels of state rumination (BSRI scores).*</caption>
+
+
+
+Term                 Estimate     SE       Lower     Upper     Rhat     BF01  
+------------------  ----------  -------  ---------  --------  ------  --------
+Intercept             -92.07     13.72    -119.37    -64.96    1.00    <0.001 
+group                  0.94      27.06    -50.68     55.06     1.00     3.69  
+relax\_type           25.09      26.75    -29.34     76.67     1.00    2.405  
+group:relax\_type     25.45      47.88    -73.75     118.19    1.00    1.846  
+
+<center>*Note.* For each effect, the 'Estimate' reports the estimated change in BSRI scores, followed by its standard error (SE). The 'Lower' and 'Upper' columns contain the lower and upper bounds of the 95\% CrI, whereas the 'Rhat' column reports the Gelman-Rubin statistic. The last column reports the BF in favour of the null hypothesis.</center>
 
 This analysis revealed a general decrease in self-reported levels of state rumination after relaxation ($\beta$ = -92.069, 95% CrI [-119.371, -64.96], BF~01~ < 0.001) but no substantial interaction effect with the relaxation type or the induction type (all $BF_{01}$ were superior to 1). As two-way and three-way interaction terms are difficult to interpret numerically, we represent the raw data along with the model predictions in Figure \@ref(fig:plotrelaxbsri). This Figure supports the conclusion that we did not observe any interaction effects (the line were parallel and with similar slopes across panels).
 
 
 
-\begin{figure}[H]
-
-{\centering \includegraphics[width=1\linewidth]{04-chap4_files/figure-latex/plotrelaxbsri-1} 
-
-}
-
-\caption{Self-reported levels of state rumination (BSRI score) by condition. The left panel depicts results in the orofacial relaxation group while the right panel depicts results in the arm relaxation group. Verbal ruminators are represented in green whereas non-verbal ruminators are represented in orange. Individual observations (each participant) are represented by the smaller coloured dots whereas estimated means and 95\% CrI are represented by the bigger surimposed coloured circles and vertical error bars.}(\#fig:plotrelaxbsri)
-\end{figure}
+![(\#fig:plotrelaxbsri)Self-reported levels of state rumination (BSRI score) by condition. The left panel depicts results in the orofacial relaxation group while the right panel depicts results in the arm relaxation group. Verbal ruminators are represented in green whereas non-verbal ruminators are represented in orange. Individual observations (each participant) are represented by the smaller coloured dots whereas estimated means and 95\% CrI are represented by the bigger surimposed coloured circles and vertical error bars.](04-chap4_files/figure-docx/plotrelaxbsri-1.png)
 
 The three way interaction term (the last line of Table \@ref(tab:outputbmod5)) indicates that the interaction between condition (time) and the type of relaxation was slightly different according to the type of induction type ($\beta$ = 25.447, 95% CrI [-73.748, 118.19], BF~01~ = 1.846). However, the large uncertainty associated with this three-way interaction effect (as expressed by the SE and the width of the credible interval) prevents any strong conclusion. Moreover, the sign of the BF supports the null hypothesis (although weakly in magnitude).
 

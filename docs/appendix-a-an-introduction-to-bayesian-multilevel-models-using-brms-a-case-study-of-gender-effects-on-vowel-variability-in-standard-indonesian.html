@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>A Appendix A. An Introduction to Bayesian Multilevel Models Using brms: A Case Study of Gender Effects on Vowel Variability in Standard Indonesian | Understanding rumination as a form of inner speech</title>
+  <meta name="description" content="A Appendix A. An Introduction to Bayesian Multilevel Models Using brms: A Case Study of Gender Effects on Vowel Variability in Standard Indonesian | Understanding rumination as a form of inner speech" />
+  <meta name="generator" content="bookdown 0.9.17 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="A Appendix A. An Introduction to Bayesian Multilevel Models Using brms: A Case Study of Gender Effects on Vowel Variability in Standard Indonesian | Understanding rumination as a form of inner speech" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="A Appendix A. An Introduction to Bayesian Multilevel Models Using brms: A Case Study of Gender Effects on Vowel Variability in Standard Indonesian | Understanding rumination as a form of inner speech" />
+  
+  
+  
+
+<meta name="author" content="" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="discussion-and-perspectives.html">
+<link rel="next" href="references.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a></li>
+<li class="part"><span><b>I Theoretical chapters</b></span></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Theoretical framework</a><ul>
+<li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#rumination-theories-and-measures"><i class="fa fa-check"></i><b>1.1</b> Rumination: theories and measures</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="intro.html"><a href="intro.html#theoretical-perspectives-on-rumination"><i class="fa fa-check"></i><b>1.1.1</b> Theoretical perspectives on rumination</a></li>
+<li class="chapter" data-level="1.1.2" data-path="intro.html"><a href="intro.html#measures-of-rumination"><i class="fa fa-check"></i><b>1.1.2</b> Measures of rumination</a></li>
+<li class="chapter" data-level="1.1.3" data-path="intro.html"><a href="intro.html#on-the-verbal-and-sensory-properties-of-rumination"><i class="fa fa-check"></i><b>1.1.3</b> On the verbal and sensory properties of rumination</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#what-is-that-little-voice-inside-my-head"><i class="fa fa-check"></i><b>1.2</b> What is that little voice inside my head?</a><ul>
+<li class="chapter" data-level="1.2.1" data-path="intro.html"><a href="intro.html#historical-overview-of-inner-speech-investigations-the-evolution-of-ideas-and-methods"><i class="fa fa-check"></i><b>1.2.1</b> Historical overview of inner speech investigations: the evolution of ideas and methods</a></li>
+<li class="chapter" data-level="1.2.2" data-path="intro.html"><a href="intro.html#theoretical-perspectives-on-inner-speech-production-simulation-emulation-and-prediction"><i class="fa fa-check"></i><b>1.2.2</b> Theoretical perspectives on inner speech production: simulation, emulation and prediction</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="intro.html"><a href="intro.html#theoretical-perspective-on-motor-imagery"><i class="fa fa-check"></i><b>1.3</b> Theoretical perspective on motor imagery</a><ul>
+<li class="chapter" data-level="1.3.1" data-path="intro.html"><a href="intro.html#overt-and-imagined-actions"><i class="fa fa-check"></i><b>1.3.1</b> Overt and imagined actions</a></li>
+<li class="chapter" data-level="1.3.2" data-path="intro.html"><a href="intro.html#the-motor-simulation-theory"><i class="fa fa-check"></i><b>1.3.2</b> The motor simulation theory</a></li>
+<li class="chapter" data-level="1.3.3" data-path="intro.html"><a href="intro.html#emulation-and-internal-models"><i class="fa fa-check"></i><b>1.3.3</b> Emulation and internal models</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="intro.html"><a href="intro.html#electromyography-of-covert-actions"><i class="fa fa-check"></i><b>1.4</b> Electromyography of covert actions</a><ul>
+<li class="chapter" data-level="1.4.1" data-path="intro.html"><a href="intro.html#explaining-the-muscular-activity-during-motor-imagery"><i class="fa fa-check"></i><b>1.4.1</b> Explaining the muscular activity during motor imagery</a></li>
+<li class="chapter" data-level="1.4.2" data-path="intro.html"><a href="intro.html#controversial-findings"><i class="fa fa-check"></i><b>1.4.2</b> Controversial findings</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="chap2.html"><a href="chap2.html"><i class="fa fa-check"></i><b>2</b> Methodological framework</a><ul>
+<li class="chapter" data-level="2.1" data-path="chap2.html"><a href="chap2.html#speech-production-mechanisms"><i class="fa fa-check"></i><b>2.1</b> Speech production mechanisms</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="chap2.html"><a href="chap2.html#psychological-aspects-of-speech-production"><i class="fa fa-check"></i><b>2.1.1</b> Psychological aspects of speech production</a></li>
+<li class="chapter" data-level="2.1.2" data-path="chap2.html"><a href="chap2.html#biomechanical-aspects-of-speech-production"><i class="fa fa-check"></i><b>2.1.2</b> Biomechanical aspects of speech production</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="chap2.html"><a href="chap2.html#a-brief-introduction-to-electromyography"><i class="fa fa-check"></i><b>2.2</b> A brief introduction to electromyography</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="chap2.html"><a href="chap2.html#nature-of-the-emg-signal"><i class="fa fa-check"></i><b>2.2.1</b> Nature of the EMG signal</a></li>
+<li class="chapter" data-level="2.2.2" data-path="chap2.html"><a href="chap2.html#emg-instrumentation-and-recording"><i class="fa fa-check"></i><b>2.2.2</b> EMG instrumentation and recording</a></li>
+<li class="chapter" data-level="2.2.3" data-path="chap2.html"><a href="chap2.html#emg-signal-processing"><i class="fa fa-check"></i><b>2.2.3</b> EMG signal processing</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="chap2.html"><a href="chap2.html#statistical-modelling-and-statistical-inference"><i class="fa fa-check"></i><b>2.3</b> Statistical modelling and statistical inference</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="chap2.html"><a href="chap2.html#limitations-of-the-standard-statistical-approach-in-psychology"><i class="fa fa-check"></i><b>2.3.1</b> Limitations of the standard statistical approach in Psychology</a></li>
+<li class="chapter" data-level="2.3.2" data-path="chap2.html"><a href="chap2.html#our-statistical-approach"><i class="fa fa-check"></i><b>2.3.2</b> Our statistical approach</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="chap2.html"><a href="chap2.html#overview-of-the-following-chapters"><i class="fa fa-check"></i><b>2.4</b> Overview of the following chapters</a></li>
+</ul></li>
+<li class="part"><span><b>II Experimental chapters</b></span></li>
+<li class="chapter" data-level="3" data-path="orofacial-electromyographic-correlates-of-induced-verbal-rumination.html"><a href="orofacial-electromyographic-correlates-of-induced-verbal-rumination.html"><i class="fa fa-check"></i><b>3</b> Orofacial electromyographic correlates of induced verbal rumination</a><ul>
+<li class="chapter" data-level="3.1" data-path="orofacial-electromyographic-correlates-of-induced-verbal-rumination.html"><a href="orofacial-electromyographic-correlates-of-induced-verbal-rumination.html#abstract"><i class="fa fa-check"></i><b>3.1</b> Abstract</a></li>
+<li class="chapter" data-level="3.2" data-path="orofacial-electromyographic-correlates-of-induced-verbal-rumination.html"><a href="orofacial-electromyographic-correlates-of-induced-verbal-rumination.html#introduction"><i class="fa fa-check"></i><b>3.2</b> Introduction</a></li>
+<li class="chapter" data-level="3.3" data-path="orofacial-electromyographic-correlates-of-induced-verbal-rumination.html"><a href="orofacial-electromyographic-correlates-of-induced-verbal-rumination.html#methods"><i class="fa fa-check"></i><b>3.3</b> Methods</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="orofacial-electromyographic-correlates-of-induced-verbal-rumination.html"><a href="orofacial-electromyographic-correlates-of-induced-verbal-rumination.html#participants"><i class="fa fa-check"></i><b>3.3.1</b> Participants</a></li>
+<li class="chapter" data-level="3.3.2" data-path="orofacial-electromyographic-correlates-of-induced-verbal-rumination.html"><a href="orofacial-electromyographic-correlates-of-induced-verbal-rumination.html#material"><i class="fa fa-check"></i><b>3.3.2</b> Material</a></li>
+<li class="chapter" data-level="3.3.3" data-path="orofacial-electromyographic-correlates-of-induced-verbal-rumination.html"><a href="orofacial-electromyographic-correlates-of-induced-verbal-rumination.html#procedure"><i class="fa fa-check"></i><b>3.3.3</b> Procedure</a></li>
+<li class="chapter" data-level="3.3.4" data-path="orofacial-electromyographic-correlates-of-induced-verbal-rumination.html"><a href="orofacial-electromyographic-correlates-of-induced-verbal-rumination.html#data-processing-and-analysis"><i class="fa fa-check"></i><b>3.3.4</b> Data processing and analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="orofacial-electromyographic-correlates-of-induced-verbal-rumination.html"><a href="orofacial-electromyographic-correlates-of-induced-verbal-rumination.html#results"><i class="fa fa-check"></i><b>3.4</b> Results</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="orofacial-electromyographic-correlates-of-induced-verbal-rumination.html"><a href="orofacial-electromyographic-correlates-of-induced-verbal-rumination.html#experiment-1-rumination-induction-1"><i class="fa fa-check"></i><b>3.4.1</b> Experiment 1: rumination induction</a></li>
+<li class="chapter" data-level="3.4.2" data-path="orofacial-electromyographic-correlates-of-induced-verbal-rumination.html"><a href="orofacial-electromyographic-correlates-of-induced-verbal-rumination.html#experiment-2-rumination-reduction-by-relaxation-1"><i class="fa fa-check"></i><b>3.4.2</b> Experiment 2: rumination reduction by relaxation</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="orofacial-electromyographic-correlates-of-induced-verbal-rumination.html"><a href="orofacial-electromyographic-correlates-of-induced-verbal-rumination.html#discussion"><i class="fa fa-check"></i><b>3.5</b> Discussion</a><ul>
+<li class="chapter" data-level="3.5.1" data-path="orofacial-electromyographic-correlates-of-induced-verbal-rumination.html"><a href="orofacial-electromyographic-correlates-of-induced-verbal-rumination.html#experiment-1"><i class="fa fa-check"></i><b>3.5.1</b> Experiment 1</a></li>
+<li class="chapter" data-level="3.5.2" data-path="orofacial-electromyographic-correlates-of-induced-verbal-rumination.html"><a href="orofacial-electromyographic-correlates-of-induced-verbal-rumination.html#experiment-2"><i class="fa fa-check"></i><b>3.5.2</b> Experiment 2</a></li>
+<li class="chapter" data-level="3.5.3" data-path="orofacial-electromyographic-correlates-of-induced-verbal-rumination.html"><a href="orofacial-electromyographic-correlates-of-induced-verbal-rumination.html#general-discussion"><i class="fa fa-check"></i><b>3.5.3</b> General discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="3.6" data-path="orofacial-electromyographic-correlates-of-induced-verbal-rumination.html"><a href="orofacial-electromyographic-correlates-of-induced-verbal-rumination.html#acknowledgements"><i class="fa fa-check"></i><b>3.6</b> Acknowledgements</a></li>
+<li class="chapter" data-level="3.7" data-path="orofacial-electromyographic-correlates-of-induced-verbal-rumination.html"><a href="orofacial-electromyographic-correlates-of-induced-verbal-rumination.html#suppCH3"><i class="fa fa-check"></i><b>3.7</b> Supplementary data</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="dissociating-facial-electromyographic-correlates-of-visual-and-verbal-induced-rumination.html"><a href="dissociating-facial-electromyographic-correlates-of-visual-and-verbal-induced-rumination.html"><i class="fa fa-check"></i><b>4</b> Dissociating facial electromyographic correlates of visual and verbal induced rumination</a><ul>
+<li class="chapter" data-level="4.1" data-path="dissociating-facial-electromyographic-correlates-of-visual-and-verbal-induced-rumination.html"><a href="dissociating-facial-electromyographic-correlates-of-visual-and-verbal-induced-rumination.html#abstract-1"><i class="fa fa-check"></i><b>4.1</b> Abstract</a></li>
+<li class="chapter" data-level="4.2" data-path="dissociating-facial-electromyographic-correlates-of-visual-and-verbal-induced-rumination.html"><a href="dissociating-facial-electromyographic-correlates-of-visual-and-verbal-induced-rumination.html#introduction-1"><i class="fa fa-check"></i><b>4.2</b> Introduction</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="dissociating-facial-electromyographic-correlates-of-visual-and-verbal-induced-rumination.html"><a href="dissociating-facial-electromyographic-correlates-of-visual-and-verbal-induced-rumination.html#rumination-its-definition-functions-and-consequences"><i class="fa fa-check"></i><b>4.2.1</b> Rumination: its definition, functions and consequences</a></li>
+<li class="chapter" data-level="4.2.2" data-path="dissociating-facial-electromyographic-correlates-of-visual-and-verbal-induced-rumination.html"><a href="dissociating-facial-electromyographic-correlates-of-visual-and-verbal-induced-rumination.html#the-nature-of-ruminative-thoughts"><i class="fa fa-check"></i><b>4.2.2</b> The nature of ruminative thoughts</a></li>
+<li class="chapter" data-level="4.2.3" data-path="dissociating-facial-electromyographic-correlates-of-visual-and-verbal-induced-rumination.html"><a href="dissociating-facial-electromyographic-correlates-of-visual-and-verbal-induced-rumination.html#inducing-rumination-in-a-controlled-environment"><i class="fa fa-check"></i><b>4.2.3</b> Inducing rumination in a controlled environment</a></li>
+<li class="chapter" data-level="4.2.4" data-path="dissociating-facial-electromyographic-correlates-of-visual-and-verbal-induced-rumination.html"><a href="dissociating-facial-electromyographic-correlates-of-visual-and-verbal-induced-rumination.html#the-present-study"><i class="fa fa-check"></i><b>4.2.4</b> The present study</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="dissociating-facial-electromyographic-correlates-of-visual-and-verbal-induced-rumination.html"><a href="dissociating-facial-electromyographic-correlates-of-visual-and-verbal-induced-rumination.html#methods-1"><i class="fa fa-check"></i><b>4.3</b> Methods</a><ul>
+<li class="chapter" data-level="4.3.1" data-path="dissociating-facial-electromyographic-correlates-of-visual-and-verbal-induced-rumination.html"><a href="dissociating-facial-electromyographic-correlates-of-visual-and-verbal-induced-rumination.html#participants-1"><i class="fa fa-check"></i><b>4.3.1</b> Participants</a></li>
+<li class="chapter" data-level="4.3.2" data-path="dissociating-facial-electromyographic-correlates-of-visual-and-verbal-induced-rumination.html"><a href="dissociating-facial-electromyographic-correlates-of-visual-and-verbal-induced-rumination.html#material-1"><i class="fa fa-check"></i><b>4.3.2</b> Material</a></li>
+<li class="chapter" data-level="4.3.3" data-path="dissociating-facial-electromyographic-correlates-of-visual-and-verbal-induced-rumination.html"><a href="dissociating-facial-electromyographic-correlates-of-visual-and-verbal-induced-rumination.html#procedure-1"><i class="fa fa-check"></i><b>4.3.3</b> Procedure</a></li>
+<li class="chapter" data-level="4.3.4" data-path="dissociating-facial-electromyographic-correlates-of-visual-and-verbal-induced-rumination.html"><a href="dissociating-facial-electromyographic-correlates-of-visual-and-verbal-induced-rumination.html#emg-signal-processing-1"><i class="fa fa-check"></i><b>4.3.4</b> EMG signal processing</a></li>
+<li class="chapter" data-level="4.3.5" data-path="dissociating-facial-electromyographic-correlates-of-visual-and-verbal-induced-rumination.html"><a href="dissociating-facial-electromyographic-correlates-of-visual-and-verbal-induced-rumination.html#data-analysis"><i class="fa fa-check"></i><b>4.3.5</b> Data analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="dissociating-facial-electromyographic-correlates-of-visual-and-verbal-induced-rumination.html"><a href="dissociating-facial-electromyographic-correlates-of-visual-and-verbal-induced-rumination.html#results-1"><i class="fa fa-check"></i><b>4.4</b> Results</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="dissociating-facial-electromyographic-correlates-of-visual-and-verbal-induced-rumination.html"><a href="dissociating-facial-electromyographic-correlates-of-visual-and-verbal-induced-rumination.html#effects-of-the-rumination-induction-and-rumination-modality"><i class="fa fa-check"></i><b>4.4.1</b> Effects of the rumination induction and rumination modality</a></li>
+<li class="chapter" data-level="4.4.2" data-path="dissociating-facial-electromyographic-correlates-of-visual-and-verbal-induced-rumination.html"><a href="dissociating-facial-electromyographic-correlates-of-visual-and-verbal-induced-rumination.html#effects-of-the-relaxation"><i class="fa fa-check"></i><b>4.4.2</b> Effects of the relaxation</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="dissociating-facial-electromyographic-correlates-of-visual-and-verbal-induced-rumination.html"><a href="dissociating-facial-electromyographic-correlates-of-visual-and-verbal-induced-rumination.html#discussion-1"><i class="fa fa-check"></i><b>4.5</b> Discussion</a><ul>
+<li class="chapter" data-level="4.5.1" data-path="dissociating-facial-electromyographic-correlates-of-visual-and-verbal-induced-rumination.html"><a href="dissociating-facial-electromyographic-correlates-of-visual-and-verbal-induced-rumination.html#inducing-rumination-in-different-modalities"><i class="fa fa-check"></i><b>4.5.1</b> Inducing rumination in different modalities</a></li>
+<li class="chapter" data-level="4.5.2" data-path="dissociating-facial-electromyographic-correlates-of-visual-and-verbal-induced-rumination.html"><a href="dissociating-facial-electromyographic-correlates-of-visual-and-verbal-induced-rumination.html#modality-specific-and-effector-specific-relaxation-effects"><i class="fa fa-check"></i><b>4.5.2</b> Modality-specific and effector-specific relaxation effects</a></li>
+<li class="chapter" data-level="4.5.3" data-path="dissociating-facial-electromyographic-correlates-of-visual-and-verbal-induced-rumination.html"><a href="dissociating-facial-electromyographic-correlates-of-visual-and-verbal-induced-rumination.html#conclusions"><i class="fa fa-check"></i><b>4.5.3</b> Conclusions</a></li>
+</ul></li>
+<li class="chapter" data-level="4.6" data-path="dissociating-facial-electromyographic-correlates-of-visual-and-verbal-induced-rumination.html"><a href="dissociating-facial-electromyographic-correlates-of-visual-and-verbal-induced-rumination.html#suppCh4"><i class="fa fa-check"></i><b>4.6</b> Supplementary materials</a></li>
+<li class="chapter" data-level="4.7" data-path="dissociating-facial-electromyographic-correlates-of-visual-and-verbal-induced-rumination.html"><a href="dissociating-facial-electromyographic-correlates-of-visual-and-verbal-induced-rumination.html#acknowledgements-1"><i class="fa fa-check"></i><b>4.7</b> Acknowledgements</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="muscle-specific-electromyographic-correlates-of-inner-speech-production.html"><a href="muscle-specific-electromyographic-correlates-of-inner-speech-production.html"><i class="fa fa-check"></i><b>5</b> Muscle-specific electromyographic correlates of inner speech production</a><ul>
+<li class="chapter" data-level="5.1" data-path="muscle-specific-electromyographic-correlates-of-inner-speech-production.html"><a href="muscle-specific-electromyographic-correlates-of-inner-speech-production.html#abstract-2"><i class="fa fa-check"></i><b>5.1</b> Abstract</a></li>
+<li class="chapter" data-level="5.2" data-path="muscle-specific-electromyographic-correlates-of-inner-speech-production.html"><a href="muscle-specific-electromyographic-correlates-of-inner-speech-production.html#introduction-2"><i class="fa fa-check"></i><b>5.2</b> Introduction</a></li>
+<li class="chapter" data-level="5.3" data-path="muscle-specific-electromyographic-correlates-of-inner-speech-production.html"><a href="muscle-specific-electromyographic-correlates-of-inner-speech-production.html#inner-speech-as-motor-imagery-of-speech"><i class="fa fa-check"></i><b>5.3</b> Inner speech as motor imagery of speech</a></li>
+<li class="chapter" data-level="5.4" data-path="muscle-specific-electromyographic-correlates-of-inner-speech-production.html"><a href="muscle-specific-electromyographic-correlates-of-inner-speech-production.html#electromyographic-correlates-of-covert-actions"><i class="fa fa-check"></i><b>5.4</b> Electromyographic correlates of covert actions</a></li>
+<li class="chapter" data-level="5.5" data-path="muscle-specific-electromyographic-correlates-of-inner-speech-production.html"><a href="muscle-specific-electromyographic-correlates-of-inner-speech-production.html#methods-2"><i class="fa fa-check"></i><b>5.5</b> Methods</a><ul>
+<li class="chapter" data-level="5.5.1" data-path="muscle-specific-electromyographic-correlates-of-inner-speech-production.html"><a href="muscle-specific-electromyographic-correlates-of-inner-speech-production.html#participants-2"><i class="fa fa-check"></i><b>5.5.1</b> Participants</a></li>
+<li class="chapter" data-level="5.5.2" data-path="muscle-specific-electromyographic-correlates-of-inner-speech-production.html"><a href="muscle-specific-electromyographic-correlates-of-inner-speech-production.html#material-2"><i class="fa fa-check"></i><b>5.5.2</b> Material</a></li>
+<li class="chapter" data-level="5.5.3" data-path="muscle-specific-electromyographic-correlates-of-inner-speech-production.html"><a href="muscle-specific-electromyographic-correlates-of-inner-speech-production.html#procedure-2"><i class="fa fa-check"></i><b>5.5.3</b> Procedure</a></li>
+<li class="chapter" data-level="5.5.4" data-path="muscle-specific-electromyographic-correlates-of-inner-speech-production.html"><a href="muscle-specific-electromyographic-correlates-of-inner-speech-production.html#emg-signal-processing-2"><i class="fa fa-check"></i><b>5.5.4</b> EMG signal processing</a></li>
+<li class="chapter" data-level="5.5.5" data-path="muscle-specific-electromyographic-correlates-of-inner-speech-production.html"><a href="muscle-specific-electromyographic-correlates-of-inner-speech-production.html#data-analysis-1"><i class="fa fa-check"></i><b>5.5.5</b> Data analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="5.6" data-path="muscle-specific-electromyographic-correlates-of-inner-speech-production.html"><a href="muscle-specific-electromyographic-correlates-of-inner-speech-production.html#results-2"><i class="fa fa-check"></i><b>5.6</b> Results</a><ul>
+<li class="chapter" data-level="5.6.1" data-path="muscle-specific-electromyographic-correlates-of-inner-speech-production.html"><a href="muscle-specific-electromyographic-correlates-of-inner-speech-production.html#confirmatory-preregistered-analyses-1"><i class="fa fa-check"></i><b>5.6.1</b> Confirmatory (preregistered) analyses</a></li>
+<li class="chapter" data-level="5.6.2" data-path="muscle-specific-electromyographic-correlates-of-inner-speech-production.html"><a href="muscle-specific-electromyographic-correlates-of-inner-speech-production.html#exploratory-non-preregistered-analyses"><i class="fa fa-check"></i><b>5.6.2</b> Exploratory (non-preregistered) analyses</a></li>
+</ul></li>
+<li class="chapter" data-level="5.7" data-path="muscle-specific-electromyographic-correlates-of-inner-speech-production.html"><a href="muscle-specific-electromyographic-correlates-of-inner-speech-production.html#discussion-2"><i class="fa fa-check"></i><b>5.7</b> Discussion</a></li>
+<li class="chapter" data-level="5.8" data-path="muscle-specific-electromyographic-correlates-of-inner-speech-production.html"><a href="muscle-specific-electromyographic-correlates-of-inner-speech-production.html#suppCh5"><i class="fa fa-check"></i><b>5.8</b> Supplementary materials</a></li>
+<li class="chapter" data-level="5.9" data-path="muscle-specific-electromyographic-correlates-of-inner-speech-production.html"><a href="muscle-specific-electromyographic-correlates-of-inner-speech-production.html#acknowledgements-2"><i class="fa fa-check"></i><b>5.9</b> Acknowledgements</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="articulatory-suppression-effects-on-induced-rumination.html"><a href="articulatory-suppression-effects-on-induced-rumination.html"><i class="fa fa-check"></i><b>6</b> Articulatory suppression effects on induced rumination</a><ul>
+<li class="chapter" data-level="6.1" data-path="articulatory-suppression-effects-on-induced-rumination.html"><a href="articulatory-suppression-effects-on-induced-rumination.html#abstract-3"><i class="fa fa-check"></i><b>6.1</b> Abstract</a></li>
+<li class="chapter" data-level="6.2" data-path="articulatory-suppression-effects-on-induced-rumination.html"><a href="articulatory-suppression-effects-on-induced-rumination.html#introduction-3"><i class="fa fa-check"></i><b>6.2</b> Introduction</a></li>
+<li class="chapter" data-level="6.3" data-path="articulatory-suppression-effects-on-induced-rumination.html"><a href="articulatory-suppression-effects-on-induced-rumination.html#methods-3"><i class="fa fa-check"></i><b>6.3</b> Methods</a><ul>
+<li class="chapter" data-level="6.3.1" data-path="articulatory-suppression-effects-on-induced-rumination.html"><a href="articulatory-suppression-effects-on-induced-rumination.html#sample"><i class="fa fa-check"></i><b>6.3.1</b> Sample</a></li>
+<li class="chapter" data-level="6.3.2" data-path="articulatory-suppression-effects-on-induced-rumination.html"><a href="articulatory-suppression-effects-on-induced-rumination.html#material-3"><i class="fa fa-check"></i><b>6.3.2</b> Material</a></li>
+<li class="chapter" data-level="6.3.3" data-path="articulatory-suppression-effects-on-induced-rumination.html"><a href="articulatory-suppression-effects-on-induced-rumination.html#procedure-3"><i class="fa fa-check"></i><b>6.3.3</b> Procedure</a></li>
+<li class="chapter" data-level="6.3.4" data-path="articulatory-suppression-effects-on-induced-rumination.html"><a href="articulatory-suppression-effects-on-induced-rumination.html#data-analysis-2"><i class="fa fa-check"></i><b>6.3.4</b> Data analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="articulatory-suppression-effects-on-induced-rumination.html"><a href="articulatory-suppression-effects-on-induced-rumination.html#results-3"><i class="fa fa-check"></i><b>6.4</b> Results</a><ul>
+<li class="chapter" data-level="6.4.1" data-path="articulatory-suppression-effects-on-induced-rumination.html"><a href="articulatory-suppression-effects-on-induced-rumination.html#correlation-matrix-between-main-predictors-and-control-variables"><i class="fa fa-check"></i><b>6.4.1</b> Correlation matrix between main predictors and control variables</a></li>
+<li class="chapter" data-level="6.4.2" data-path="articulatory-suppression-effects-on-induced-rumination.html"><a href="articulatory-suppression-effects-on-induced-rumination.html#rumination-induction-3"><i class="fa fa-check"></i><b>6.4.2</b> Rumination induction</a></li>
+<li class="chapter" data-level="6.4.3" data-path="articulatory-suppression-effects-on-induced-rumination.html"><a href="articulatory-suppression-effects-on-induced-rumination.html#articulatory-suppression-effects-on-induced-rumination-1"><i class="fa fa-check"></i><b>6.4.3</b> Articulatory suppression effects on induced rumination</a></li>
+</ul></li>
+<li class="chapter" data-level="6.5" data-path="articulatory-suppression-effects-on-induced-rumination.html"><a href="articulatory-suppression-effects-on-induced-rumination.html#discussion-3"><i class="fa fa-check"></i><b>6.5</b> Discussion</a><ul>
+<li class="chapter" data-level="6.5.1" data-path="articulatory-suppression-effects-on-induced-rumination.html"><a href="articulatory-suppression-effects-on-induced-rumination.html#rumination-induction-4"><i class="fa fa-check"></i><b>6.5.1</b> Rumination induction</a></li>
+<li class="chapter" data-level="6.5.2" data-path="articulatory-suppression-effects-on-induced-rumination.html"><a href="articulatory-suppression-effects-on-induced-rumination.html#articulatory-suppression-effects-1"><i class="fa fa-check"></i><b>6.5.2</b> Articulatory suppression effects</a></li>
+</ul></li>
+<li class="chapter" data-level="6.6" data-path="articulatory-suppression-effects-on-induced-rumination.html"><a href="articulatory-suppression-effects-on-induced-rumination.html#acknowledgements-3"><i class="fa fa-check"></i><b>6.6</b> Acknowledgements</a></li>
+<li class="chapter" data-level="6.7" data-path="articulatory-suppression-effects-on-induced-rumination.html"><a href="articulatory-suppression-effects-on-induced-rumination.html#funding-information"><i class="fa fa-check"></i><b>6.7</b> Funding information</a></li>
+<li class="chapter" data-level="6.8" data-path="articulatory-suppression-effects-on-induced-rumination.html"><a href="articulatory-suppression-effects-on-induced-rumination.html#suppCh6"><i class="fa fa-check"></i><b>6.8</b> Data Accessibility Statement</a></li>
+<li class="chapter" data-level="6.9" data-path="articulatory-suppression-effects-on-induced-rumination.html"><a href="articulatory-suppression-effects-on-induced-rumination.html#appendix-a.-eye-tracking-control-experiment"><i class="fa fa-check"></i><b>6.9</b> Appendix A. Eye-tracking control experiment</a><ul>
+<li class="chapter" data-level="6.9.1" data-path="articulatory-suppression-effects-on-induced-rumination.html"><a href="articulatory-suppression-effects-on-induced-rumination.html#sample-1"><i class="fa fa-check"></i><b>6.9.1</b> Sample</a></li>
+<li class="chapter" data-level="6.9.2" data-path="articulatory-suppression-effects-on-induced-rumination.html"><a href="articulatory-suppression-effects-on-induced-rumination.html#sample-size"><i class="fa fa-check"></i><b>6.9.2</b> Sample size</a></li>
+<li class="chapter" data-level="6.9.3" data-path="articulatory-suppression-effects-on-induced-rumination.html"><a href="articulatory-suppression-effects-on-induced-rumination.html#material-4"><i class="fa fa-check"></i><b>6.9.3</b> Material</a></li>
+<li class="chapter" data-level="6.9.4" data-path="articulatory-suppression-effects-on-induced-rumination.html"><a href="articulatory-suppression-effects-on-induced-rumination.html#procedure-4"><i class="fa fa-check"></i><b>6.9.4</b> Procedure</a></li>
+<li class="chapter" data-level="6.9.5" data-path="articulatory-suppression-effects-on-induced-rumination.html"><a href="articulatory-suppression-effects-on-induced-rumination.html#data-preprocessing"><i class="fa fa-check"></i><b>6.9.5</b> Data preprocessing</a></li>
+<li class="chapter" data-level="6.9.6" data-path="articulatory-suppression-effects-on-induced-rumination.html"><a href="articulatory-suppression-effects-on-induced-rumination.html#data-analysis-3"><i class="fa fa-check"></i><b>6.9.6</b> Data analysis</a></li>
+<li class="chapter" data-level="6.9.7" data-path="articulatory-suppression-effects-on-induced-rumination.html"><a href="articulatory-suppression-effects-on-induced-rumination.html#results-4"><i class="fa fa-check"></i><b>6.9.7</b> Results</a></li>
+<li class="chapter" data-level="6.9.8" data-path="articulatory-suppression-effects-on-induced-rumination.html"><a href="articulatory-suppression-effects-on-induced-rumination.html#discussion-4"><i class="fa fa-check"></i><b>6.9.8</b> Discussion</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="examining-the-involvement-of-the-speech-motor-system-during-rumination-a-dual-task-investigation.html"><a href="examining-the-involvement-of-the-speech-motor-system-during-rumination-a-dual-task-investigation.html"><i class="fa fa-check"></i><b>7</b> Examining the involvement of the speech motor system during rumination: a dual-task investigation</a><ul>
+<li class="chapter" data-level="7.1" data-path="examining-the-involvement-of-the-speech-motor-system-during-rumination-a-dual-task-investigation.html"><a href="examining-the-involvement-of-the-speech-motor-system-during-rumination-a-dual-task-investigation.html#introduction-4"><i class="fa fa-check"></i><b>7.1</b> Introduction</a></li>
+<li class="chapter" data-level="7.2" data-path="examining-the-involvement-of-the-speech-motor-system-during-rumination-a-dual-task-investigation.html"><a href="examining-the-involvement-of-the-speech-motor-system-during-rumination-a-dual-task-investigation.html#methods-4"><i class="fa fa-check"></i><b>7.2</b> Methods</a><ul>
+<li class="chapter" data-level="7.2.1" data-path="examining-the-involvement-of-the-speech-motor-system-during-rumination-a-dual-task-investigation.html"><a href="examining-the-involvement-of-the-speech-motor-system-during-rumination-a-dual-task-investigation.html#participants-3"><i class="fa fa-check"></i><b>7.2.1</b> Participants</a></li>
+<li class="chapter" data-level="7.2.2" data-path="examining-the-involvement-of-the-speech-motor-system-during-rumination-a-dual-task-investigation.html"><a href="examining-the-involvement-of-the-speech-motor-system-during-rumination-a-dual-task-investigation.html#material-5"><i class="fa fa-check"></i><b>7.2.2</b> Material</a></li>
+<li class="chapter" data-level="7.2.3" data-path="examining-the-involvement-of-the-speech-motor-system-during-rumination-a-dual-task-investigation.html"><a href="examining-the-involvement-of-the-speech-motor-system-during-rumination-a-dual-task-investigation.html#procedure-5"><i class="fa fa-check"></i><b>7.2.3</b> Procedure</a></li>
+<li class="chapter" data-level="7.2.4" data-path="examining-the-involvement-of-the-speech-motor-system-during-rumination-a-dual-task-investigation.html"><a href="examining-the-involvement-of-the-speech-motor-system-during-rumination-a-dual-task-investigation.html#data-analysis-4"><i class="fa fa-check"></i><b>7.2.4</b> Data analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="examining-the-involvement-of-the-speech-motor-system-during-rumination-a-dual-task-investigation.html"><a href="examining-the-involvement-of-the-speech-motor-system-during-rumination-a-dual-task-investigation.html#results-5"><i class="fa fa-check"></i><b>7.3</b> Results</a><ul>
+<li class="chapter" data-level="7.3.1" data-path="examining-the-involvement-of-the-speech-motor-system-during-rumination-a-dual-task-investigation.html"><a href="examining-the-involvement-of-the-speech-motor-system-during-rumination-a-dual-task-investigation.html#thinking-style-induction-1"><i class="fa fa-check"></i><b>7.3.1</b> Thinking-style induction</a></li>
+<li class="chapter" data-level="7.3.2" data-path="examining-the-involvement-of-the-speech-motor-system-during-rumination-a-dual-task-investigation.html"><a href="examining-the-involvement-of-the-speech-motor-system-during-rumination-a-dual-task-investigation.html#articulatory-suppression-effects-2"><i class="fa fa-check"></i><b>7.3.2</b> Articulatory suppression effects</a></li>
+</ul></li>
+<li class="chapter" data-level="7.4" data-path="examining-the-involvement-of-the-speech-motor-system-during-rumination-a-dual-task-investigation.html"><a href="examining-the-involvement-of-the-speech-motor-system-during-rumination-a-dual-task-investigation.html#discussion-5"><i class="fa fa-check"></i><b>7.4</b> Discussion</a></li>
+<li class="chapter" data-level="7.5" data-path="examining-the-involvement-of-the-speech-motor-system-during-rumination-a-dual-task-investigation.html"><a href="examining-the-involvement-of-the-speech-motor-system-during-rumination-a-dual-task-investigation.html#supp"><i class="fa fa-check"></i><b>7.5</b> Supplementary materials</a></li>
+<li class="chapter" data-level="7.6" data-path="examining-the-involvement-of-the-speech-motor-system-during-rumination-a-dual-task-investigation.html"><a href="examining-the-involvement-of-the-speech-motor-system-during-rumination-a-dual-task-investigation.html#acknowledgements-4"><i class="fa fa-check"></i><b>7.6</b> Acknowledgements</a></li>
+</ul></li>
+<li class="part"><span><b>III Discussion and conclusions</b></span></li>
+<li class="chapter" data-level="8" data-path="discussion-and-perspectives.html"><a href="discussion-and-perspectives.html"><i class="fa fa-check"></i><b>8</b> Discussion and perspectives</a><ul>
+<li class="chapter" data-level="8.1" data-path="discussion-and-perspectives.html"><a href="discussion-and-perspectives.html#summary-of-the-results"><i class="fa fa-check"></i><b>8.1</b> Summary of the results</a></li>
+<li class="chapter" data-level="8.2" data-path="discussion-and-perspectives.html"><a href="discussion-and-perspectives.html#benchmarks-for-theories-of-inner-speech"><i class="fa fa-check"></i><b>8.2</b> Benchmarks for theories of inner speech</a></li>
+<li class="chapter" data-level="8.3" data-path="discussion-and-perspectives.html"><a href="discussion-and-perspectives.html#limitations-and-ways-forward"><i class="fa fa-check"></i><b>8.3</b> Limitations and ways forward</a></li>
+<li class="chapter" data-level="8.4" data-path="discussion-and-perspectives.html"><a href="discussion-and-perspectives.html#conclusions-1"><i class="fa fa-check"></i><b>8.4</b> Conclusions</a></li>
+</ul></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="A" data-path="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html"><a href="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html"><i class="fa fa-check"></i><b>A</b> Appendix A. An Introduction to Bayesian Multilevel Models Using brms: A Case Study of Gender Effects on Vowel Variability in Standard Indonesian</a><ul>
+<li class="chapter" data-level="A.1" data-path="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html"><a href="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html#abstract-4"><i class="fa fa-check"></i><b>A.1</b> Abstract</a></li>
+<li class="chapter" data-level="A.2" data-path="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html"><a href="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html#introduction-5"><i class="fa fa-check"></i><b>A.2</b> Introduction</a><ul>
+<li class="chapter" data-level="A.2.1" data-path="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html"><a href="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html#bayesian-data-analysis"><i class="fa fa-check"></i><b>A.2.1</b> Bayesian data analysis</a></li>
+<li class="chapter" data-level="A.2.2" data-path="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html"><a href="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html#MLM"><i class="fa fa-check"></i><b>A.2.2</b> Multilevel modelling</a></li>
+<li class="chapter" data-level="A.2.3" data-path="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html"><a href="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html#software-programs"><i class="fa fa-check"></i><b>A.2.3</b> Software programs</a></li>
+</ul></li>
+<li class="chapter" data-level="A.3" data-path="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html"><a href="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html#application-example"><i class="fa fa-check"></i><b>A.3</b> Application example</a><ul>
+<li class="chapter" data-level="A.3.1" data-path="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html"><a href="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html#data-pre-processing"><i class="fa fa-check"></i><b>A.3.1</b> Data pre-processing</a></li>
+<li class="chapter" data-level="A.3.2" data-path="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html"><a href="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html#constant-effect-of-gender-on-vowel-production-variability"><i class="fa fa-check"></i><b>A.3.2</b> Constant effect of gender on vowel production variability</a></li>
+<li class="chapter" data-level="A.3.3" data-path="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html"><a href="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html#shrink"><i class="fa fa-check"></i><b>A.3.3</b> Varying intercept model</a></li>
+<li class="chapter" data-level="A.3.4" data-path="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html"><a href="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html#including-a-correlation-between-varying-intercept-and-varying-slope"><i class="fa fa-check"></i><b>A.3.4</b> Including a correlation between varying intercept and varying slope</a></li>
+<li class="chapter" data-level="A.3.5" data-path="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html"><a href="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html#varying-intercept-and-varying-slope-model-interaction-between-subject-and-vowel"><i class="fa fa-check"></i><b>A.3.5</b> Varying intercept and varying slope model, interaction between subject and vowel</a></li>
+</ul></li>
+<li class="chapter" data-level="A.4" data-path="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html"><a href="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html#model-comparison"><i class="fa fa-check"></i><b>A.4</b> Model comparison</a></li>
+<li class="chapter" data-level="A.5" data-path="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html"><a href="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html#comparison-of-brms-and-lme4-estimations"><i class="fa fa-check"></i><b>A.5</b> Comparison of <code>brms</code> and <code>lme4</code> estimations</a></li>
+<li class="chapter" data-level="A.6" data-path="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html"><a href="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html#inference-and-conclusions"><i class="fa fa-check"></i><b>A.6</b> Inference and conclusions</a></li>
+<li class="chapter" data-level="A.7" data-path="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html"><a href="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html#suppApp"><i class="fa fa-check"></i><b>A.7</b> Supplementary materials</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank"> Powered by bookdown </a></li>
+<li><a href="http://www.barelysignificant.com" target="blank"> Ladislas Nalborczyk </a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Understanding rumination as a form of inner speech</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="appendix-a.-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian" class="section level1">
+<h1><span class="header-section-number">A</span> Appendix A. An Introduction to Bayesian Multilevel Models Using brms: A Case Study of Gender Effects on Vowel Variability in Standard Indonesian</h1>
+<div id="abstract-4" class="section level2">
+<h2><span class="header-section-number">A.1</span> Abstract</h2>
+<p>Bayesian multilevel models are increasingly used to overcome the limitations of frequentist approaches in the analysis of complex structured data. This paper introduces Bayesian multilevel modelling for the specific analysis of speech data, using the brms package developed in R. In this tutorial, we provide a practical introduction to Bayesian multilevel modelling, by reanalysing a phonetic dataset containing formant (F1 and F2) values for five vowels of Standard Indonesian (ISO 639-3:ind), as spoken by eight speakers (four females), with several repetitions of each vowel. We first give an introductory overview of the Bayesian framework and multilevel modelling. We then show how Bayesian multilevel models can be fitted using the probabilistic programming language Stan and the R package brms, which provides an intuitive formula syntax. Through this tutorial, we demonstrate some of the advantages of the Bayesian framework for statistical modelling and provide a detailed case study, with complete source code for full reproducibility of the analyses (<a href="https://osf.io/dpzcb/" class="uri">https://osf.io/dpzcb/</a>).</p>
+<!-- NB: You can add comments using these tags -->
+</div>
+<div id="introduction-5" class="section level2">
+<h2><span class="header-section-number">A.2</span> Introduction</h2>
+<p>The last decade has witnessed noticeable changes in the way experimental data are analysed in phonetics, psycholinguistics, and speech sciences in general. In particular, there has been a shift from analysis of variance (ANOVA) to <em>linear mixed models</em>, also known as <em>hierarchical models</em> or <em>multilevel models</em> (MLMs), spurred by the spreading use of data-oriented programming languages such as <code>R</code> <span class="citation">(R Core Team, <a href="references.html#ref-R-base" role="doc-biblioref">2018</a>)</span>, and by the enthusiasm of its active and ever growing community. This shift has been further sustained by the current transition in data analysis in social sciences, with researchers evolving from a widely criticised point-hypothesis mechanical testing <span class="citation">(e.g., Bakan, <a href="references.html#ref-bakan_test_1966" role="doc-biblioref">1966</a>; Gigerenzer, <a href="references.html#ref-Gigerenzer2004" role="doc-biblioref">2004</a>; Kline, <a href="references.html#ref-Kline2004" role="doc-biblioref">2004</a>; Lambdin, <a href="references.html#ref-Lambdin2012" role="doc-biblioref">2012</a>; Trafimow et al., <a href="references.html#ref-trafimow_manipulating_2018" role="doc-biblioref">2018</a>)</span> to an approach that emphasises parameter estimation, model comparison, and continuous model expansion <span class="citation">(e.g., Cumming, <a href="references.html#ref-Cumming2012" role="doc-biblioref">2012</a>, <a href="references.html#ref-cumming_new_2014" role="doc-biblioref">2014</a>; <span class="citeproc-not-found" data-reference-id="McElreath2016"><strong>???</strong></span>; Gelman et al., <a href="references.html#ref-gelman_bayesian_2013" role="doc-biblioref">2013</a>; Gelman &amp; Hill, <a href="references.html#ref-gelman_data_2006" role="doc-biblioref">2006</a>; Kruschke, <a href="references.html#ref-kruschke_doing_2015" role="doc-biblioref">2015</a>; Kruschke &amp; Liddell, <a href="references.html#ref-kruschke_bayesian_2018-1" role="doc-biblioref">2018</a><a href="references.html#ref-kruschke_bayesian_2018-1" role="doc-biblioref">b</a>, <a href="references.html#ref-kruschke_bayesian_2018" role="doc-biblioref">2018</a><a href="references.html#ref-kruschke_bayesian_2018" role="doc-biblioref">a</a>)</span>.</p>
+<p>MLMs offer great flexibility in the sense that they can model statistical phenomena that occur on different levels. This is done by fitting models that include both constant and varying effects (sometimes referred to as <em>fixed</em> and <em>random</em> effects). Among other advantages, this makes it possible to generalise the results to unobserved levels of the <em>groups</em> existing in the data <span class="citation">(e.g., stimulus or participant, <span class="citeproc-not-found" data-reference-id="Janssen2012"><strong>???</strong></span>)</span>. The multilevel strategy can be especially useful when dealing with repeated measurements (e.g., when measurements are nested into participants) or with unequal sample sizes, and more generally, when handling complex dependency structures in the data. Such complexities are frequently found in the kind of experimental designs used in speech science studies, for which MLMs are therefore particularly well suited.</p>
+<p>The standard MLM is usually fitted in a frequentist framework, with the <code>lme4</code> package <span class="citation">(Bates, Maechler, Bolker, &amp; Walker, <a href="references.html#ref-R-lme4" role="doc-biblioref">2018</a>)</span> in R <span class="citation">(R Core Team, <a href="references.html#ref-R-base" role="doc-biblioref">2018</a>)</span>. However, when one tries to include the maximal varying effect structure, this kind of model tends either not to converge, or to give aberrant estimations of the correlation between varying effects <span class="citation">(e.g., <span class="citeproc-not-found" data-reference-id="Bates2015"><strong>???</strong></span>)</span><a href="#fn49" class="footnote-ref" id="fnref49"><sup>49</sup></a>. Yet, fitting the maximal varying effect structure has been explicitly recommended <span class="citation">(e.g., <span class="citeproc-not-found" data-reference-id="Barr2013"><strong>???</strong></span>)</span>. In contrast, the maximal varying effect structure can generally be fitted in a Bayesian framework <span class="citation">(<span class="citeproc-not-found" data-reference-id="Bates2015"><strong>???</strong></span>; <span class="citeproc-not-found" data-reference-id="Sorensen2016"><strong>???</strong></span>; <span class="citeproc-not-found" data-reference-id="Nicenboim2016"><strong>???</strong></span>; <span class="citeproc-not-found" data-reference-id="Eager2017"><strong>???</strong></span>)</span>.</p>
+<p>Another advantage of Bayesian statistical modelling is that it fits the way researchers intuitively understand statistical results. Widespread misinterpretations of frequentist statistics (like p-values and confidence intervals) are often attributable to the wrong interpretation of these statistics as resulting from a Bayesian analysis <span class="citation">(e.g., <span class="citeproc-not-found" data-reference-id="Dienes2011"><strong>???</strong></span>; <span class="citeproc-not-found" data-reference-id="Kruschke2017b"><strong>???</strong></span>; <span class="citeproc-not-found" data-reference-id="Morey2016"><strong>???</strong></span>; Gigerenzer, <a href="references.html#ref-Gigerenzer2004" role="doc-biblioref">2004</a>; Hoekstra, Morey, Rouder, &amp; Wagenmakers, <a href="references.html#ref-Hoekstra2014" role="doc-biblioref">2014</a>)</span>. However, the intuitive nature of the Bayesian approach might arguably be hidden by the predominance of frequentist teaching in undergraduate statistical courses.</p>
+<p>Moreover, the Bayesian approach offers a natural solution to the problem of multiple comparisons, when the situation is adequately modelled in a multilevel framework <span class="citation">(<span class="citeproc-not-found" data-reference-id="Gelman2012"><strong>???</strong></span>; Scott &amp; Berger, <a href="references.html#ref-scott_bayes_2010" role="doc-biblioref">2010</a>)</span>, and allows <em>a priori</em> knowledge to be incorporated in data analysis via the prior distribution. The latter feature is particularily relevant when dealing with contraint parameters or for the purpose of incorporating expert knowledge.</p>
+<p>The aim of the current paper is to introduce Bayesian multilevel models, and to provide an accessible and illustrated hands-on tutorial for analysing typical phonetic data. This paper will be structured in two main parts. First, we will briefly introduce the Bayesian approach to data analysis and the multilevel modelling strategy. Second, we will illustrate how Bayesian MLMs can be implemented in R by using the <code>brms</code> package <span class="citation">(Bürkner, <a href="references.html#ref-R-brms" role="doc-biblioref">2018</a>)</span> to reanalyse a dataset from <span class="citation">(<span class="citeproc-not-found" data-reference-id="McCloy2014"><strong>???</strong></span>)</span> available in the <code>phonR</code> package <span class="citation">(McCloy, <a href="references.html#ref-R-phonR" role="doc-biblioref">2016</a>)</span>. We will fit Bayesian MLMs of increasing complexity, going step by step, providing explanatory figures and making use of the tools available in the <code>brms</code> package for model checking and model comparison. We will then compare the results obtained in a Bayesian framework using <code>brms</code> with the results obtained using frequentist MLMs fitted with <code>lme4</code>. Throughout the paper, we will also provide comments and recommendations about the feasability and the relevance of such analysis for the researcher in speech sciences.</p>
+<div id="bayesian-data-analysis" class="section level3">
+<h3><span class="header-section-number">A.2.1</span> Bayesian data analysis</h3>
+<p>The Bayesian approach to data analysis differs from the frequentist one in that each parameter of the model is considered as a random variable (contrary to the frequentist approach which considers parameter values as unknown and fixed quantities), and by the explicit use of probability to model the uncertainty <span class="citation">(<span class="citeproc-not-found" data-reference-id="Gelman2013"><strong>???</strong></span>)</span>. The two approaches also differ in their conception of what <em>probability</em> is. In the Bayesian framework, probability refers to the experience of uncertainty, while in the frequentist framework it refers to the limit of a relative frequency (i.e., the relative frequency of an event when the number of trials approaches infinity). A direct consequence of these two differences is that Bayesian data analysis allows researchers to discuss the probability of a parameter (or a vector of parameters) <span class="math inline">\(\theta\)</span>, given a set of data <span class="math inline">\(y\)</span>:</p>
+<p><span class="math display">\[p(\theta|y) = \frac{p(y|\theta)p(\theta)}{p(y)}\]</span></p>
+
+<p>Using this equation (known as Bayes’ theorem), a probability distribution <span class="math inline">\(p(\theta|y)\)</span> can be derived (called the <em>posterior distribution</em>), that reflects knowledge about the parameter, given the data and the prior information. This distribution is the goal of any Bayesian analysis and contains all the information needed for inference.</p>
+<p>The term <span class="math inline">\(p(\theta)\)</span> corresponds to the <em>prior distribution</em>, which specifies the prior information about the parameters (i.e., what is known about <span class="math inline">\(\theta\)</span> before observing the data) as a probability distribution. The left hand of the numerator <span class="math inline">\(p(y|\theta)\)</span> represents the <em>likelihood</em>, also called the <em>sampling distribution</em> or <em>generative model</em>, and is the function through which the data affect the posterior distribution. The likelihood function indicates how likely the data are to appear, for each possible value of <span class="math inline">\(\theta\)</span>.</p>
+<p>Finally, <span class="math inline">\(p(y)\)</span> is called the <em>marginal likelihood</em>. It is meant to normalise the posterior distribution, that is, to scale it in the “probability world”. It gives the “probability of the data”, summing over all values of <span class="math inline">\(\theta\)</span> and is described by <span class="math inline">\(p(y) = \sum_{\theta} p(\theta) p(y|\theta)\)</span> for discrete parameters, and by <span class="math inline">\(p(y) = \int p(\theta) p(y|\theta) d\theta\)</span> in the case of continuous parameters.</p>
+<p>All this pieced together shows that the result of a Bayesian analysis, namely the posterior distribution <span class="math inline">\(p(\theta|y)\)</span>, is given by the product of the information contained in the data (i.e., the likelihood) and the information available before observing the data (i.e., the prior). This constitutes the crucial principle of Bayesian inference, which can be seen as an updating mechanism <span class="citation">(as detailed for instance in <span class="citeproc-not-found" data-reference-id="Kruschke2017b"><strong>???</strong></span>)</span>. To sum up, Bayes’ theorem allows a prior state of knowledge to be updated to a posterior state of knowledge, which represents a compromise between the prior knowledge and the empirical evidence.</p>
+<p>The process of Bayesian analysis usually involves three steps that begin with setting up a probability model for all the entities at hand, then computing the posterior distribution, and finally evaluating the fit and the relevance of the model <span class="citation">(<span class="citeproc-not-found" data-reference-id="Gelman2013"><strong>???</strong></span>)</span>. In the context of linear regression, for instance, the first step would require to specify a likelihood function for the data and a prior distribution for each parameter of interest (e.g., the intercept or the slope). We will go through these three steps in more details in the application section, but we will first give a brief overview of the multilevel modelling strategy.</p>
+</div>
+<div id="MLM" class="section level3">
+<h3><span class="header-section-number">A.2.2</span> Multilevel modelling</h3>
+<p>MLMs can be considered as “multilevel” for at least two reasons. First, an MLM can generally be conceived as a regression model in which the parameters are themselves modelled as outcomes of another regression model. The parameters of this second-level regression are known as <em>hyperparameters</em>, and are also estimated from the data <span class="citation">(<span class="citeproc-not-found" data-reference-id="Gelman2007"><strong>???</strong></span>)</span>. Second, the multilevel structure can arise from the data itself, for instance when one tries to model the second-language speech intelligibility of a child, who is considered within a particular class, itself considered within a particular school. In such cases, the hierarchical structure of the data itself calls for hierarchical modelling. In both conceptions, the number of levels that can be handled by MLMs is virtually unlimited <span class="citation">(<span class="citeproc-not-found" data-reference-id="McElreath2016"><strong>???</strong></span>)</span>. When we use the term <em>multilevel</em> in the following, we will refer to the structure of the model, rather than to the structure of the data, as non-nested data can also be modelled in a multilevel framework.</p>
+<p>As briefly mentioned earlier, MLMs offer several advantages compared to single-level regression models, as they can handle the dependency between units of analysis from the same group (e.g., several observations from the same participant). In other words, they can account for the fact that, for instance, several observations are not independent, as they relate to the same participant. This is achieved by partitioning the total variance into variation due to the groups (level-2) and to the individual (level-1). As a result, such models provide an estimation of the variance component for the second level (i.e., the variability of the participant-specific estimates) or higher levels, which can inform us about the generalisability of the findings <span class="citation">(<span class="citeproc-not-found" data-reference-id="Janssen2012"><strong>???</strong></span>; <span class="citeproc-not-found" data-reference-id="McElreath2016"><strong>???</strong></span>)</span>.</p>
+<p>Multilevel modelling allows both <em>fixed</em> and <em>random</em> effects to be incorporated. However, as pointed out by <span class="citation">(<span class="citeproc-not-found" data-reference-id="Gelman2005"><strong>???</strong></span>)</span>, we can find at least five different (and sometimes contradictory) ways of defining the meaning of the terms <em>fixed</em> and <em>random</em> effects. Moreover, <span class="citation">(<span class="citeproc-not-found" data-reference-id="Gelman2007"><strong>???</strong></span>)</span> remarked that what is usually called a <em>fixed</em> effect can generally be conceived as a <em>random</em> effect with a null variance. In order to use a consistent vocabulary, we follow the recommendations of <span class="citation">(<span class="citeproc-not-found" data-reference-id="Gelman2007"><strong>???</strong></span>)</span> and avoid these terms. We instead use the more explicit terms <em>constant</em> and <em>varying</em> to designate effects that are constant, or that vary by groups<a href="#fn50" class="footnote-ref" id="fnref50"><sup>50</sup></a>.</p>
+<p>A question one is frequently faced with in multilevel modelling is to know which parameters should be considered as varying, and which parameters should be considered as constant. A practical answer is provided by <span class="citation">(<span class="citeproc-not-found" data-reference-id="McElreath2016"><strong>???</strong></span>)</span>, who states that “any batch of parameters with <em>exchangeable</em> index values can be and probably should be pooled”. For instance, if we are interested in the categorisation of native versus non-native phonemes and if for each phoneme in each category there are multiple audio stimuli (e.g., multiple repetitions of the same phoneme), and if we do not have any reason to think that, for each phoneme, audio stimuli may differ in intelligibility in any systematic way, then repetitions of the same phoneme should be pooled together. The essential feature of this strategy is that <em>exchangeability</em> of the lower units (i.e., the multiple repetitions of the same phoneme) is achieved by conditioning on indicator variables (i.e., the phonemes) that represent groupings in the population <span class="citation">(<span class="citeproc-not-found" data-reference-id="Gelman2013"><strong>???</strong></span>)</span>.</p>
+<p>To sum up, multilevel models are useful as soon as there are predictors at different levels of variation <span class="citation">(<span class="citeproc-not-found" data-reference-id="Gelman2013"><strong>???</strong></span>)</span>. One important aspect is that this varying-coefficients approach allows each subgroup to have a different mean outcome level, while still estimating the global mean outcome level. In an MLM, these two estimations inform each other in a way that leads to the phenomenon of <em>shrinkage</em>, that will be discussed in more detail below (see section <a href="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html#shrink">A.3.3</a>).</p>
+<p>As an illustration, we will build an MLM starting from the ordinary linear regression model, and trying to predict an outcome <span class="math inline">\(y_{i}\)</span> (e.g., second-language (L2) speech-intelligibility) by a linear combination of an intercept <span class="math inline">\(\alpha\)</span> and a slope <span class="math inline">\(\beta\)</span> that quantifies the influence of a predictor <span class="math inline">\(x_{i}\)</span> (e.g., the number of lessons received in this second language):</p>
+<p><span class="math display">\[
+\begin{aligned}
+y_{i} &amp;\sim \mathrm{Normal}(\mu_{i}, \sigma_{e}) \\
+\mu_{i} &amp;= \alpha + \beta x_{i} \\
+\end{aligned}
+\]</span></p>
+
+<p>This notation is strictly equivalent to the (maybe more usual) following notation:</p>
+<p><span class="math display">\[
+\begin{aligned}
+y_{i} &amp;= \alpha + \beta x_{i} + \epsilon_{i} \\
+\epsilon_{i} &amp;\sim \mathrm{Normal}(0,\sigma_e)
+\end{aligned}
+\]</span></p>
+
+<p>We prefer to use the first notation as it generalises better to more complex models, as we will see later. In Bayesian terms, these two lines describe the <em>likelihood</em> of the model, which is the assumption made about the generative process from which the data is issued. We make the assumption that the outcomes <span class="math inline">\(y_{i}\)</span> are normally distributed around a mean <span class="math inline">\(\mu_{i}\)</span> with some error <span class="math inline">\(\sigma_{e}\)</span>. This is equivalent to saying that the errors are normally distributed around <span class="math inline">\(0\)</span>, as illustrated by the above equivalence. Then, we can extend this model to the following multilevel model, adding a varying intercept:</p>
+<p><span class="math display">\[
+\begin{aligned}
+y_{i} &amp;\sim \mathrm{Normal}(\mu_{i}, \sigma_{e}) \\
+\mu_{i} &amp;= \alpha_{j[i]} + \beta x_{i} \\
+\alpha_{j} &amp;\sim \mathrm{Normal}(\alpha, \sigma_{\alpha}) \\
+\end{aligned}
+\]</span></p>
+
+<p>where we use the notation <span class="math inline">\(\alpha_{j[i]}\)</span> to indicate that each group <span class="math inline">\(j\)</span> (e.g., class) is given a unique intercept, issued from a Gaussian distribution centered on <span class="math inline">\(\alpha\)</span>, the grand intercept<a href="#fn51" class="footnote-ref" id="fnref51"><sup>51</sup></a>, meaning that there might be different mean scores for each class. From this notation we can see that in addition to the residual standard deviation <span class="math inline">\(\sigma_{e}\)</span>, we are now estimating one more variance component <span class="math inline">\(\sigma_{\alpha}\)</span>, which is the standard deviation of the distribution of varying intercepts. We can interpret the variation of the parameter <span class="math inline">\(\alpha\)</span> between groups <span class="math inline">\(j\)</span> by considering the <em>intra-class correlation</em> (ICC) <span class="math inline">\(\sigma_{\alpha}^{2} / (\sigma_{\alpha}^{2} + \sigma_{e}^{2})\)</span>, which goes to <span class="math inline">\(0\)</span>, if the grouping conveys no information, and to <span class="math inline">\(1\)</span>, if all observations in a group are identical <span class="citation">(<span class="citeproc-not-found" data-reference-id="Gelman2007"><strong>???</strong></span>)</span>.</p>
+<p>The third line is called a <em>prior</em> distribution in the Bayesian framework. This prior distribution describes the population of intercepts, thus modelling the dependency between these parameters.</p>
+<p>Following the same strategy, we can add a varying slope, allowed to vary according to the group <span class="math inline">\(j\)</span>:</p>
+<p><span class="math display">\[
+\begin{aligned}
+y_{i} &amp;\sim \mathrm{Normal}(\mu_{i}, \sigma_{e}) \\
+\mu_{i} &amp;= \alpha_{j[i]} + \beta_{j[i]} x_{i} \\
+\alpha_{j} &amp;\sim \mathrm{Normal}(\alpha, \sigma_{\alpha}) \\
+\beta_{j} &amp;\sim \mathrm{Normal}(\beta, \sigma_{\beta}) \\
+\end{aligned}
+\]</span></p>
+
+<p>Indicating that the effect of the number of lessons on L2 speech intelligibility is allowed to differ from one class to another (i.e., the effect of the number of lessons might be more beneficial to some classes than others). These varying slopes are assigned a prior distribution centered on the grand slope <span class="math inline">\(\beta\)</span>, and with standard deviation <span class="math inline">\(\sigma_{\beta}\)</span>.</p>
+<p>In this introductory section, we have presented the foundations of Bayesian analysis and multilevel modelling. Bayes’ theorem allows prior knowledge about parameters to be updated according to the information conveyed by the data, while MLMs allow complex dependency structures to be modelled. We now move to a detailed case study in order to illustrate these concepts.</p>
+
+</div>
+<div id="software-programs" class="section level3">
+<h3><span class="header-section-number">A.2.3</span> Software programs</h3>
+<p><span class="citation">(<span class="citeproc-not-found" data-reference-id="Sorensen2016"><strong>???</strong></span>)</span> provided a detailed and accessible introduction to Bayesian MLMs (BMLMs) applied to linguistics, using the probabilistic language <code>Stan</code> <span class="citation">(<span class="citeproc-not-found" data-reference-id="Stan"><strong>???</strong></span>)</span>. However, discovering BMLMs and the <code>Stan</code> language all at once might seem a little overwhelming, as <code>Stan</code> can be difficult to learn for users that are not experienced with programming languages. As an alternative, we introduce the <code>brms</code> package <span class="citation">(Bürkner, <a href="references.html#ref-R-brms" role="doc-biblioref">2018</a>)</span>, that implements BMLMs in <code>R</code>, using <code>Stan</code> under the hood, with an <code>lme4</code>-like syntax. Hence, the syntax required by <code>brms</code> will not surprise the researcher familiar with <code>lme4</code>, as models of the following form:</p>
+<p><span class="math display">\[
+\begin{aligned}
+y_{i} &amp;\sim \mathrm{Normal}(\mu_{i}, \sigma_{e}) \\
+\mu_{i} &amp;= \alpha + \alpha_{subject[i]} + \beta x_{i} \\
+\end{aligned}
+\]</span></p>
+
+<p>are specified in <code>brms</code> (as in <code>lme4</code>) with: <code>y ~ 1 + x + (1|subject)</code>. In addition to linear regression models, <code>brms</code> allows generalised linear and non-linear multilevel models to be fitted, and comes with a great variety of distribution and link functions. For instance, <code>brms</code> allows fitting robust linear regression models, or modelling dichotomous and categorical outcomes using logistic and ordinal regression models. The flexibility of <code>brms</code> also allows for distributional models (i.e., models that include simultaneous predictions of all response parameters), Gaussian processes or non-linear models to be fitted, among others. More information about the diversity of models that can be fitted with <code>brms</code> and their implementation is provided in <span class="citation">Bürkner (<a href="references.html#ref-R-brms" role="doc-biblioref">2018</a>)</span> and <span class="citation">(<span class="citeproc-not-found" data-reference-id="Burkner2017a"><strong>???</strong></span>)</span>.</p>
+</div>
+</div>
+<div id="application-example" class="section level2">
+<h2><span class="header-section-number">A.3</span> Application example</h2>
+<p>To illustrate the use of BMLMs, we reanalysed a dataset from <span class="citation">(<span class="citeproc-not-found" data-reference-id="McCloy2014"><strong>???</strong></span>)</span>, available in the <code>phonR</code> package <span class="citation">(McCloy, <a href="references.html#ref-R-phonR" role="doc-biblioref">2016</a>)</span>. This dataset contains formant (F1 and F2) values for five vowels of Standard Indonesian (ISO 639-3:ind), as spoken by eight speakers (four females), with approximately 45 repetitions of each vowel. The research question we investigated here is the effect of gender on vowel production variability.</p>
+<div id="data-pre-processing" class="section level3">
+<h3><span class="header-section-number">A.3.1</span> Data pre-processing</h3>
+<p>Our research question was about the different amount of variability in the respective vowel productions of male and female speakers, due to cognitive or social differences. To answer this question, we first needed to get rid of the differences in vowel production that are due to physiological differences between males and females (e.g., shorter vocal tract length for females). More generally, we needed to eliminate the inter-individual differences due to physiological characteristics in our groups of participants. For that purpose, we first applied the Watt &amp; Fabricius formant normalisation technique <span class="citation">(<span class="citeproc-not-found" data-reference-id="Watt2002"><strong>???</strong></span>)</span>. The principle of this method is to calculate for each speaker a “centre of gravity” <span class="math inline">\(S\)</span> in the F1/F2 plane, from the formant values of point vowels [i, a , u], and to express the formant values of each observation as ratios of the value of <span class="math inline">\(S\)</span> for that formant.</p>
+<div class="figure" style="text-align: center"><span id="fig:vowelplot-ref"></span>
+<img src="99-appendix_brms_files/figure-html/vowelplot-ref-1.pdf" alt="Euclidean distances between each observation and the centres of gravity corresponding to each vowel across all participants, by gender (top row: female, bottom row: male) and by vowel (in column), in the normalised F1-F2 plane. The grey background plots represent the individual data collapsed for all individuals (male and female) and all vowels. Note that, for the sake of clarity, this figure represents a unique center of gravity for each vowel for all participants, whereas in the analysis, one center of gravity was used for each vowel and each participant." width="100%" />
+<p class="caption">
+Figure A.1: Euclidean distances between each observation and the centres of gravity corresponding to each vowel across all participants, by gender (top row: female, bottom row: male) and by vowel (in column), in the normalised F1-F2 plane. The grey background plots represent the individual data collapsed for all individuals (male and female) and all vowels. Note that, for the sake of clarity, this figure represents a unique center of gravity for each vowel for all participants, whereas in the analysis, one center of gravity was used for each vowel and each participant.
+</p>
+</div>
+<p>Then, for each vowel and participant, we computed the Euclidean distance between each observation and the centre of gravity of the whole set of observations in the F1-F2 plane for that participant and that vowel. The data obtained by this process are illustrated in Figure <a href="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html#fig:vowelplot-ref">A.1</a>, and a sample of the final dataset can be found in Table <a href="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html#tab:datavis">A.1</a>.</p>
+<caption>
+<span id="tab:datavis">Table A.1: </span>
+</caption>
+<caption>
+<em>Ten randomly picked rows from the data.</em>
+</caption>
+<table>
+<thead>
+<tr class="header">
+<th align="center">subj</th>
+<th align="center">gender</th>
+<th align="center">vowel</th>
+<th align="center">f1</th>
+<th align="center">f2</th>
+<th align="center">f1norm</th>
+<th align="center">f2norm</th>
+<th align="center">distance</th>
+<th align="center">repetition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">M04</td>
+<td align="center">m</td>
+<td align="center">/u/</td>
+<td align="center">340</td>
+<td align="center">562</td>
+<td align="center">0.808</td>
+<td align="center">0.372</td>
+<td align="center">0.235</td>
+<td align="center">27</td>
+</tr>
+<tr class="even">
+<td align="center">F04</td>
+<td align="center">f</td>
+<td align="center">/a/</td>
+<td align="center">930</td>
+<td align="center">1499</td>
+<td align="center">1.719</td>
+<td align="center">0.852</td>
+<td align="center">0.264</td>
+<td align="center">24</td>
+</tr>
+<tr class="odd">
+<td align="center">M04</td>
+<td align="center">m</td>
+<td align="center">/a/</td>
+<td align="center">476</td>
+<td align="center">1296</td>
+<td align="center">1.131</td>
+<td align="center">0.858</td>
+<td align="center">0.249</td>
+<td align="center">30</td>
+</tr>
+<tr class="even">
+<td align="center">M03</td>
+<td align="center">m</td>
+<td align="center">/i/</td>
+<td align="center">387</td>
+<td align="center">2094</td>
+<td align="center">0.929</td>
+<td align="center">1.398</td>
+<td align="center">0.192</td>
+<td align="center">21</td>
+</tr>
+<tr class="odd">
+<td align="center">M01</td>
+<td align="center">m</td>
+<td align="center">/o/</td>
+<td align="center">466</td>
+<td align="center">1030</td>
+<td align="center">1.122</td>
+<td align="center">0.671</td>
+<td align="center">0.047</td>
+<td align="center">8</td>
+</tr>
+<tr class="even">
+<td align="center">M04</td>
+<td align="center">m</td>
+<td align="center">/e/</td>
+<td align="center">561</td>
+<td align="center">2004</td>
+<td align="center">1.333</td>
+<td align="center">1.326</td>
+<td align="center">0.146</td>
+<td align="center">10</td>
+</tr>
+<tr class="odd">
+<td align="center">M03</td>
+<td align="center">m</td>
+<td align="center">/u/</td>
+<td align="center">356</td>
+<td align="center">935</td>
+<td align="center">0.855</td>
+<td align="center">0.624</td>
+<td align="center">0.050</td>
+<td align="center">36</td>
+</tr>
+<tr class="even">
+<td align="center">M03</td>
+<td align="center">m</td>
+<td align="center">/i/</td>
+<td align="center">300</td>
+<td align="center">2089</td>
+<td align="center">0.720</td>
+<td align="center">1.395</td>
+<td align="center">0.065</td>
+<td align="center">11</td>
+</tr>
+<tr class="odd">
+<td align="center">F08</td>
+<td align="center">f</td>
+<td align="center">/a/</td>
+<td align="center">533</td>
+<td align="center">1446</td>
+<td align="center">0.951</td>
+<td align="center">0.805</td>
+<td align="center">0.618</td>
+<td align="center">33</td>
+</tr>
+<tr class="even">
+<td align="center">F08</td>
+<td align="center">f</td>
+<td align="center">/i/</td>
+<td align="center">413</td>
+<td align="center">2539</td>
+<td align="center">0.737</td>
+<td align="center">1.414</td>
+<td align="center">0.086</td>
+<td align="center">28</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="constant-effect-of-gender-on-vowel-production-variability" class="section level3">
+<h3><span class="header-section-number">A.3.2</span> Constant effect of gender on vowel production variability</h3>
+<p>We then built a first model with constant effects only and vague priors on <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span>, the intercept and the slope. We contrast-coded <code>gender</code> (f = -0.5, m = 0.5). Our dependent variable was therefore the distance from each individual vowel centre of gravity, which we will refer to as <em>formant distance</em> in the following. The formal model can be expressed as:</p>
+<p><span class="math display">\[
+\begin{aligned}
+\text{distance}_{i} &amp;\sim \mathrm{Normal}(\mu_{i}, \sigma_{e}) \\
+\mu_{i} &amp;= \alpha + \beta \times \text{gender}_{i} \\
+\alpha &amp;\sim \mathrm{Normal}(0, 10) \\
+\beta &amp;\sim \mathrm{Normal}(0, 10) \\
+\sigma_{e} &amp;\sim \mathrm{HalfCauchy}(10) \\
+\end{aligned}
+\]</span></p>
+
+<p>where the first two lines of the model describe the likelihood and the linear model<a href="#fn52" class="footnote-ref" id="fnref52"><sup>52</sup></a>. The next three lines define the prior distribution for each parameter of the model, where <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span> are given a vague (weakly informative) Gaussian prior centered on <span class="math inline">\(0\)</span>, and the residual variation is given a Half-Cauchy prior <span class="citation">(<span class="citeproc-not-found" data-reference-id="Gelman2006"><strong>???</strong></span>; Polson &amp; Scott, <a href="references.html#ref-polson_half-cauchy_2012" role="doc-biblioref">2012</a>)</span>, thus restricting the range of possible values to positive ones. As depicted in Figure <a href="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html#fig:priorsbmod1">A.2</a>, the <span class="math inline">\(\mathrm{Normal}(0,10)\)</span> prior is weakly informative in the sense that it grants a relative high weight to <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span> values, between -25 and 25. This corresponds to very large (given the scale of our data) values for, respectively, the mean distance value <span class="math inline">\(\alpha\)</span>, and the mean difference between males and females <span class="math inline">\(\beta\)</span>. The <span class="math inline">\(\mathrm{HalfCauchy}(10)\)</span> prior placed on <span class="math inline">\(\sigma_{e}\)</span> also allows very large values of <span class="math inline">\(\sigma_{e}\)</span>, as represented in the right panel of Figure <a href="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html#fig:priorsbmod1">A.2</a>.</p>
+<div class="figure" style="text-align: center"><span id="fig:priorsbmod1"></span>
+<img src="99-appendix_brms_files/figure-html/priorsbmod1-1.pdf" alt="Prior distributions used in the first model, for $\alpha$ and $\beta$ (left panel) and for the residual variation $\sigma_{e}$ (right panel)." width="100%" />
+<p class="caption">
+Figure A.2: Prior distributions used in the first model, for <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span> (left panel) and for the residual variation <span class="math inline">\(\sigma_{e}\)</span> (right panel).
+</p>
+</div>
+<p>These priors can be specified in numerous ways (see <code>?set_prior</code> for more details), among which the following:</p>
+<pre class="sourceCode r"><code class="sourceCode r">prior1 &lt;-<span class="st"> </span><span class="kw">c</span>(
+    <span class="kw">prior</span>(<span class="kw">normal</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> Intercept),
+    <span class="kw">prior</span>(<span class="kw">normal</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> b, <span class="dt">coef =</span> gender),
+    <span class="kw">prior</span>(<span class="kw">cauchy</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> sigma)
+    )</code></pre>
+<p>where a prior can be defined over a class of parameters (e.g., for all variance components, using the <code>sd</code> class) or for a specific one, for instance as above by specifying the coefficient (<code>coef</code>) to which the prior corresponds (here the slope of the constant effect of gender).</p>
+<p>The model can be fitted with <code>brms</code> with the following command:</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(brms)
+
+bmod1 &lt;-<span class="st"> </span><span class="kw">brm</span>(
+        distance <span class="op">~</span><span class="st"> </span>gender,
+        <span class="dt">data =</span> indo, <span class="dt">family =</span> <span class="kw">gaussian</span>(),
+        <span class="dt">prior =</span> prior1,
+        <span class="dt">warmup =</span> <span class="dv">2000</span>, <span class="dt">iter =</span> <span class="dv">5000</span>
+    )</code></pre>
+<p>where <code>distance</code> is the distance from the centre of gravity. The <code>iter</code> argument serves to specify the total number of iterations of the Markov Chain Monte Carlo (MCMC) algorithm, and the <code>warmup</code> argument specifies the number of iterations that are run at the beginning of the process to “calibrate” the MCMC, so that only <code>iter - warmup</code> iterations are retained in the end to approximate the shape of the posterior distribution <span class="citation">(for more details, see <span class="citeproc-not-found" data-reference-id="McElreath2016"><strong>???</strong></span>)</span>.</p>
+<p>Figure <a href="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html#fig:plotbmod1">A.3</a> depicts the estimations of this first model for the intercept <span class="math inline">\(\alpha\)</span>, the slope <span class="math inline">\(\beta\)</span>, and the residual standard deviation <span class="math inline">\(\sigma_{e}\)</span>. The left part of the plot shows histograms of draws taken from the posterior distribution, and from which several summaries can be computed (e.g., mean, mode, quantiles). The right part of Figure <a href="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html#fig:plotbmod1">A.3</a> shows the behaviour of the two simulations (i.e., the two chains) used to approximate the posterior distribution, where the x-axis represents the number of iterations and the y-axis the value of the parameter. This plot reveals one important aspect of the simulations that should be checked, known as <em>mixing</em>. A chain is considered well mixed if it explores many different values for the target parameters and does not stay in the same region of the parameter space. This feature can be evaluated by checking that these plots, usually referred to as <em>trace plots</em>, show random scatter around a mean value (they look like a “fat hairy caterpillar”).</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(tidyverse)
+
+bmod1 <span class="op">%&gt;%</span>
+<span class="st">    </span><span class="kw">plot</span>(
+        <span class="dt">combo =</span> <span class="kw">c</span>(<span class="st">&quot;hist&quot;</span>, <span class="st">&quot;trace&quot;</span>), <span class="dt">widths =</span> <span class="kw">c</span>(<span class="dv">1</span>, <span class="fl">1.5</span>),
+        <span class="dt">theme =</span> <span class="kw">theme_bw</span>(<span class="dt">base_size =</span> <span class="dv">10</span>)
+        )</code></pre>
+<div class="figure" style="text-align: center"><span id="fig:plotbmod1"></span>
+<img src="99-appendix_brms_files/figure-html/plotbmod1-1.pdf" alt="Histograms of posterior samples and trace plots of the intercept, the slope for gender and the standard deviation of the residuals of the constant effects model." width="100%" />
+<p class="caption">
+Figure A.3: Histograms of posterior samples and trace plots of the intercept, the slope for gender and the standard deviation of the residuals of the constant effects model.
+</p>
+</div>
+<p>The estimations obtained for this first model are summarised in Table <a href="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html#tab:sumbmod1">A.2</a>, which includes the mean, the standard error (SE), and the lower and upper bounds of the 95% credible interval (CrI)<a href="#fn53" class="footnote-ref" id="fnref53"><sup>53</sup></a> of the posterior distribution for each parameter. As <code>gender</code> was contrast-coded before the analysis (f = -0.5, m = 0.5), the intercept <span class="math inline">\(\alpha\)</span> corresponds to the grand mean of the formant distance over all participants and has its mean around 0.1632715. The estimate of the slope (<span class="math inline">\(\beta =\)</span> -0.0422085) suggests that females are more variable than males in the way they pronounce vowels, while the 95% CrI can be interpreted in a way that there is a <span class="math inline">\(0.95\)</span> probability that the value of the intercept lies in the [-0.0513942, -0.03287] interval.</p>
+<caption>
+<span id="tab:sumbmod1">Table A.2: </span>
+</caption>
+<caption>
+<em>Posterior mean, standard error, 95% credible interval and <span class="math inline">\(\hat{R}\)</span>
+statistic for each parameter of the constant effect model bmod1.</em>
+</caption>
+<table>
+<thead>
+<tr class="header">
+<th align="center">parameter</th>
+<th align="center">mean</th>
+<th align="center">SE</th>
+<th align="center">lower bound</th>
+<th align="center">upper bound</th>
+<th align="center">Rhat</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math inline">\(\alpha\)</span></td>
+<td align="center">0.163</td>
+<td align="center">0.002</td>
+<td align="center">0.159</td>
+<td align="center">0.168</td>
+<td align="center">1.000</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(\beta\)</span></td>
+<td align="center">-0.042</td>
+<td align="center">0.005</td>
+<td align="center">-0.051</td>
+<td align="center">-0.033</td>
+<td align="center">1.000</td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(\sigma_{e}\)</span></td>
+<td align="center">0.098</td>
+<td align="center">0.002</td>
+<td align="center">0.095</td>
+<td align="center">0.102</td>
+<td align="center">1.000</td>
+</tr>
+</tbody>
+</table>
+<p>The <code>Rhat</code> value corresponds to the <em>potential scale reduction factor</em> <span class="math inline">\(\hat{R}\)</span> <span class="citation">(<span class="citeproc-not-found" data-reference-id="Gelman1992"><strong>???</strong></span>)</span>, that provides information about the convergence of the algorithm. This index can be conceived as equivalent to the F-ratio in ANOVA. It compares the between-chains variability (i.e., the extent to which different chains differ one from each other) to the within-chain variability (i.e., how widely a chain explores the parameter space), and, as such, gives an index of the convergence of the chains. An overly large between-chains variance (as compared to the within-chain variability) would be a sign that chain-specific characteristics, like the starting value of the algorithm, have a strong influence on the final result. Ideally, the value of <code>Rhat</code> should be close to 1, and should not exceed 1.1. Otherwise, one might consider running more iterations or defining stronger priors <span class="citation">(<span class="citeproc-not-found" data-reference-id="Gelman2013"><strong>???</strong></span>; Bürkner, <a href="references.html#ref-R-brms" role="doc-biblioref">2018</a>)</span>.</p>
+</div>
+<div id="shrink" class="section level3">
+<h3><span class="header-section-number">A.3.3</span> Varying intercept model</h3>
+<p>The first model can be improved by taking into account the dependency between vowel formant measures for each participant. This is handled in MLMs by specifying unique intercepts <span class="math inline">\(\alpha_{subject[i]}\)</span> and by assigning them a common prior distribution. This strategy corresponds to the following by-subject varying-intercept model, <code>bmod2</code>:</p>
+<p><span class="math display">\[
+\begin{aligned}
+\text{distance}_{i} &amp;\sim \mathrm{Normal}(\mu_{i}, \sigma_{e}) \\
+\mu_{i} &amp;= \alpha + \alpha_{subject[i]} + \beta \times \text{gender}_{i} \\
+\alpha_{subject} &amp;\sim \mathrm{Normal}(0, \sigma_{subject}) \\
+\alpha &amp;\sim \mathrm{Normal}(0, 10) \\
+\beta &amp;\sim \mathrm{Normal}(0, 10) \\
+\sigma_{subject} &amp;\sim \mathrm{HalfCauchy}(10) \\
+\sigma_{e} &amp;\sim \mathrm{HalfCauchy}(10) \\
+\end{aligned}
+\]</span></p>
+
+<p>This model can be fitted with <code>brms</code> with the following command (where we specify the HalfCauchy prior on <span class="math inline">\(\sigma_{subject}\)</span> by applying it on parameters of class <code>sd</code>):</p>
+<pre class="sourceCode r"><code class="sourceCode r">prior2 &lt;-<span class="st"> </span><span class="kw">c</span>(
+    <span class="kw">prior</span>(<span class="kw">normal</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> Intercept),
+    <span class="kw">prior</span>(<span class="kw">normal</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> b, <span class="dt">coef =</span> gender),
+    <span class="kw">prior</span>(<span class="kw">cauchy</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> sd),
+    <span class="kw">prior</span>(<span class="kw">cauchy</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> sigma)
+    )
+
+bmod2 &lt;-<span class="st"> </span><span class="kw">brm</span>(
+    distance <span class="op">~</span><span class="st"> </span>gender <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span><span class="op">|</span>subj),
+    <span class="dt">data =</span> indo, <span class="dt">family =</span> <span class="kw">gaussian</span>(),
+    <span class="dt">prior =</span> prior2,
+    <span class="dt">warmup =</span> <span class="dv">2000</span>, <span class="dt">iter =</span> <span class="dv">10000</span>
+    )</code></pre>
+<p>As described in the first part of the present paper, we now have two sources of variation in the model: the standard deviation of the residuals <span class="math inline">\(\sigma_{e}\)</span> and the standard deviation of the by-subject varying intercepts <span class="math inline">\(\sigma_{subject}\)</span>. The latter represents the standard deviation of the population of varying intercepts, and is also learned from the data. It means that the estimation of each unique intercept will inform the estimation of the population of intercepts, which, in return, will inform the estimation of the other intercepts. We call this sharing of information between groups the <em>partial pooling</em> strategy, in comparison with the <em>no pooling</em> strategy, where each intercept is estimated independently, and with the <em>complete pooling</em> strategy, in which all intercepts are given the same value <span class="citation">(<span class="citeproc-not-found" data-reference-id="Gelman2007"><strong>???</strong></span>; <span class="citeproc-not-found" data-reference-id="Gelman2013"><strong>???</strong></span>; <span class="citeproc-not-found" data-reference-id="McElreath2016"><strong>???</strong></span>)</span>. This is one of the most essential features of MLMs, and what leads to better estimations than single-level regression models for repeated measurements or unbalanced sample sizes. This pooling of information is made apparent through the phenomenon of <em>shrinkage</em>, which is illustrated in Figure <a href="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html#fig:ranefplotbmod2">A.4</a>, and later on, in Figure <a href="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html#fig:shrinkageplot">A.6</a>.</p>
+<p>Figure <a href="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html#fig:ranefplotbmod2">A.4</a> shows the posterior distribution as estimated by this second model for each participant, in relation to the raw mean of its category (i.e., females or males), represented by the vertical dashed lines. We can see for instance that participants <code>M02</code> and <code>F09</code> have smaller average distance than the means of their groups, while participants <code>M03</code> and <code>F08</code> have larger ones. The arrows represent the amount of <em>shrinkage</em>, that is, the deviation between the mean in the raw data (represented by a cross underneath each density) and the estimated mean of the posterior distribution (represented by the peak of the arrow). As shown in Figure <a href="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html#fig:ranefplotbmod2">A.4</a>, this <em>shrinkage</em> is always directed toward the mean of the considered group (i.e., females or males) and the amount of <em>shrinkage</em> is determined by the deviation of the individual mean from its group mean. This mechanism acts like a safeguard against overfitting, preventing the model from overly trusting each individual datum.</p>
+<div class="figure" style="text-align: center"><span id="fig:ranefplotbmod2"></span>
+<img src="99-appendix_brms_files/figure-html/ranefplotbmod2-1.pdf" alt="Posterior distributions by subject, as estimated by the `bmod2` model. The vertical dashed lines represent the means of the formant distances for the female and male groups. Crosses represent the mean of the raw data, for each participant. Arrows represent the amount of shrinkage, between the raw mean and the estimation of the model (the mean of the posterior distribution)." width="100%" />
+<p class="caption">
+Figure A.4: Posterior distributions by subject, as estimated by the <code>bmod2</code> model. The vertical dashed lines represent the means of the formant distances for the female and male groups. Crosses represent the mean of the raw data, for each participant. Arrows represent the amount of shrinkage, between the raw mean and the estimation of the model (the mean of the posterior distribution).
+</p>
+</div>
+<p>The marginal posterior distribution of each parameter obtained with <code>bmod2</code> is summarised in Table <a href="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html#tab:sumbmod2">A.3</a>, where the <code>Rhat</code> values close to <span class="math inline">\(1\)</span> suggest that the model has converged. We see that the estimates of <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span> are similar to the estimates of the first model, except that the SE is now slightly larger. This result might seem surprising at first sight, as we expected to improve the first model by adding a by-subject varying intercept. In fact, it reveals an underestimation of the SE when using the first model. Indeed, the first model assumes independence of observations, which is violated in our case. This highlights the general need for careful consideration of the model’s assumptions when interpreting its estimations. The first model seemingly gives highly certain estimates, but these estimations are only valid in the “independence of observations” world <span class="citation">(see also the distinction between the <em>small world</em> and the <em>large world</em> in <span class="citeproc-not-found" data-reference-id="McElreath2016"><strong>???</strong></span>)</span>. Moreover, estimating an intercept by subject (as in the second model) increases the precision of estimation, but it also makes the average estimation less certain, thus resulting in a larger SE.</p>
+<caption>
+<span id="tab:sumbmod2">Table A.3: </span>
+</caption>
+<caption>
+<em>Posterior mean, standard error, 95% credible interval and <span class="math inline">\(\hat{R}\)</span>
+statistic for each parameter of model bmod2 with a varying intercept by subject.</em>
+</caption>
+<table>
+<thead>
+<tr class="header">
+<th align="center">parameter</th>
+<th align="center">mean</th>
+<th align="center">SE</th>
+<th align="center">lower bound</th>
+<th align="center">upper bound</th>
+<th align="center">Rhat</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math inline">\(\alpha\)</span></td>
+<td align="center">0.163</td>
+<td align="center">0.006</td>
+<td align="center">0.150</td>
+<td align="center">0.176</td>
+<td align="center">1.000</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(\beta\)</span></td>
+<td align="center">-0.042</td>
+<td align="center">0.013</td>
+<td align="center">-0.068</td>
+<td align="center">-0.016</td>
+<td align="center">1.000</td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(\sigma_{subject}\)</span></td>
+<td align="center">0.015</td>
+<td align="center">0.007</td>
+<td align="center">0.006</td>
+<td align="center">0.034</td>
+<td align="center">1.000</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(\sigma_{e}\)</span></td>
+<td align="center">0.098</td>
+<td align="center">0.002</td>
+<td align="center">0.095</td>
+<td align="center">0.101</td>
+<td align="center">1.000</td>
+</tr>
+</tbody>
+</table>
+<p>This model (<code>bmod2</code>), however, is still not adequate to describe the data, as the dependency between repetitions of each vowel is not taken into account. In <code>bmod3</code>, we added a by-vowel varying intercept, thus also allowing each vowel to have a different general level of variability.</p>
+<p><span class="math display">\[
+\begin{aligned}
+\text{distance}_{i} &amp;\sim \mathrm{Normal}(\mu_{i}, \sigma_{e}) \\
+\mu_{i} &amp;= \alpha + \alpha_{subject[i]} + \alpha_{vowel[i]} + \beta \times \text{gender}_{i} \\
+\alpha_{subj} &amp;\sim \mathrm{Normal}(0, \sigma_{subject}) \\
+\alpha_{vowel} &amp;\sim \mathrm{Normal}(0, \sigma_{vowel}) \\
+\alpha &amp;\sim \mathrm{Normal}(0, 10) \\
+\beta &amp;\sim \mathrm{Normal}(0, 10) \\
+\sigma_{e} &amp;\sim \mathrm{HalfCauchy}(10) \\
+\sigma_{subject} &amp;\sim \mathrm{HalfCauchy}(10) \\
+\sigma_{vowel} &amp;\sim \mathrm{HalfCauchy}(10) \\
+\end{aligned}
+\]</span></p>
+
+<p>This model can be fitted with <code>brms</code> with the following command:</p>
+<pre class="sourceCode r"><code class="sourceCode r">prior3 &lt;-<span class="st"> </span><span class="kw">c</span>(
+    <span class="kw">prior</span>(<span class="kw">normal</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> Intercept),
+    <span class="kw">prior</span>(<span class="kw">normal</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> b, <span class="dt">coef =</span> gender),
+    <span class="kw">prior</span>(<span class="kw">cauchy</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> sd),
+    <span class="kw">prior</span>(<span class="kw">cauchy</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> sigma)
+    )
+
+bmod3 &lt;-<span class="st"> </span><span class="kw">brm</span>(
+    distance <span class="op">~</span><span class="st"> </span>gender <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span><span class="op">|</span>subj) <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span><span class="op">|</span>vowel),
+    <span class="dt">data =</span> indo, <span class="dt">family =</span> <span class="kw">gaussian</span>(),
+    <span class="dt">prior =</span> prior3,
+    <span class="dt">warmup =</span> <span class="dv">2000</span>, <span class="dt">iter =</span> <span class="dv">10000</span>
+    )</code></pre>
+<p>where the same Half-Cauchy is specified for the two varying intercepts, by applying it directly to the <code>sd</code> class.</p>
+<caption>
+<span id="tab:sumbmod3">Table A.4: </span>
+</caption>
+<caption>
+<em>Posterior mean, standard error, 95% credible interval and <span class="math inline">\(\hat{R}\)</span>
+statistic for each parameter of model bmod3 with a varying intercept by subject and by vowel.</em>
+</caption>
+<table>
+<thead>
+<tr class="header">
+<th align="center">parameter</th>
+<th align="center">mean</th>
+<th align="center">SE</th>
+<th align="center">lower bound</th>
+<th align="center">upper bound</th>
+<th align="center">Rhat</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math inline">\(\alpha\)</span></td>
+<td align="center">0.164</td>
+<td align="center">0.044</td>
+<td align="center">0.085</td>
+<td align="center">0.250</td>
+<td align="center">1.001</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(\beta\)</span></td>
+<td align="center">-0.042</td>
+<td align="center">0.014</td>
+<td align="center">-0.069</td>
+<td align="center">-0.014</td>
+<td align="center">1.000</td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(\sigma_{subject}\)</span></td>
+<td align="center">0.017</td>
+<td align="center">0.008</td>
+<td align="center">0.007</td>
+<td align="center">0.036</td>
+<td align="center">1.000</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(\sigma_{vowel}\)</span></td>
+<td align="center">0.076</td>
+<td align="center">0.051</td>
+<td align="center">0.031</td>
+<td align="center">0.216</td>
+<td align="center">1.000</td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(\sigma_{e}\)</span></td>
+<td align="center">0.088</td>
+<td align="center">0.001</td>
+<td align="center">0.085</td>
+<td align="center">0.091</td>
+<td align="center">1.000</td>
+</tr>
+</tbody>
+</table>
+<p>The marginal posterior distribution of each parameter is summarised in Table <a href="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html#tab:sumbmod3">A.4</a>. We can compute the intra-class correlation (ICC, see section <a href="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html#MLM">A.2.2</a>) to estimate the relative variability associated with each varying effect: <span class="math inline">\(ICC_{subject}\)</span> is equal to 0.0339892 and <span class="math inline">\(ICC_{vowel}\)</span> is equal to 0.4291962. The rather high ICC for vowels suggests that observations are highly correlated within each vowel, thus stressing the relevance of allocating a unique intercept by vowel<a href="#fn54" class="footnote-ref" id="fnref54"><sup>54</sup></a>.</p>
+</div>
+<div id="including-a-correlation-between-varying-intercept-and-varying-slope" class="section level3">
+<h3><span class="header-section-number">A.3.4</span> Including a correlation between varying intercept and varying slope</h3>
+<p>One can legitimately question the assumption that the differences between male and female productions are identical for each vowel. To explore this issue, we thus added a varying slope for the effect of gender, allowing it to vary by vowel. Moreover, we can exploit the correlation between the baseline level of variability by vowel, and the amplitude of the difference between males and females in pronouncing them. For instance, we can observe that the pronunciation of /a/ is more variable in general. We might want to know whether females tend to pronounce vowels that are situated at a specific location in the F1-F2 plane with less variability than males. In other words, we might be interested in knowing whether the effect of <code>gender</code> is correlated with the baseline level of variability. This is equivalent to investigating the <em>dependency</em>, or the correlation between the varying intercepts and the varying slopes. We thus estimated this correlation by modelling <span class="math inline">\(\alpha_{vowel}\)</span> and <span class="math inline">\(\beta_{vowel}\)</span> as issued from the same multivariate normal distribution (a multivariate normal distribution is a generalisation of the usual normal distribution to more than one dimension), centered on <span class="math inline">\(0\)</span> and with some covariance matrix <span class="math inline">\(\textbf{S}\)</span>, as specified on the third line of the following model:</p>
+<p><span class="math display">\[
+\begin{aligned}
+\text{distance}_{i} &amp;\sim \mathrm{Normal}(\mu_{i}, \sigma_{e}) \\
+\mu_{i} &amp;= \alpha + \alpha_{subject[i]} + \alpha_{vowel[i]} + (\beta + \beta_{vowel[i]}) \times \text{gender}_{i} \\
+\begin{bmatrix}
+\alpha_{\text{vowel}} \\
+\beta_{\text{vowel}} \\
+\end{bmatrix}
+&amp;\sim \mathrm{MVNormal}\bigg(\begin{bmatrix} 0 \\ 0 \end{bmatrix}, \textbf{S}\bigg) \\
+\textbf{S} &amp;=
+\begin{pmatrix}
+\sigma_{\alpha_{vowel}}^{2} &amp; \sigma_{\alpha_{vowel}}\sigma_{\beta{vowel}} \rho \\
+\sigma_{\alpha_{vowel}}\sigma_{\beta{vowel}} \rho &amp; \sigma_{\beta_{vowel}}^{2} \\
+\end{pmatrix} \\
+\alpha_{subject} &amp;\sim \mathrm{Normal}(0, \sigma_{subject}) \\
+\alpha &amp;\sim \mathrm{Normal}(0, 10) \\
+\beta &amp;\sim \mathrm{Normal}(0, 10) \\
+\sigma_{e} &amp;\sim \mathrm{HalfCauchy}(10) \\
+\sigma_{\alpha_{vowel}} &amp;\sim \mathrm{HalfCauchy}(10) \\
+\sigma_{\beta_{vowel}} &amp;\sim \mathrm{HalfCauchy}(10) \\
+\sigma_{subject} &amp;\sim \mathrm{HalfCauchy}(10) \\
+\textbf{R} &amp;\sim \mathrm{LKJcorr}(2) \\
+\end{aligned}
+\]</span></p>
+
+<p>where <span class="math inline">\(\textbf{R}\)</span> is the correlation matrix <span class="math inline">\(\textbf{R} = \begin{pmatrix} 1 &amp; \rho \\ \rho &amp; 1 \end{pmatrix}\)</span> and <span class="math inline">\(\rho\)</span> is the correlation between intercepts and slopes, used in the computation of <span class="math inline">\(\textbf{S}\)</span>. This matrix is given the LKJ-Correlation prior <span class="citation">(<span class="citeproc-not-found" data-reference-id="Lewandowski2009"><strong>???</strong></span>)</span> with a parameter <span class="math inline">\(\zeta\)</span> (zeta) that controls the strength of the correlation<a href="#fn55" class="footnote-ref" id="fnref55"><sup>55</sup></a>. When <span class="math inline">\(\zeta = 1\)</span>, the prior distribution on the correlation is uniform between <span class="math inline">\(-1\)</span> and <span class="math inline">\(1\)</span>. When <span class="math inline">\(\zeta &gt; 1\)</span>, the prior distribution is peaked around a zero correlation, while lower values of <span class="math inline">\(\zeta\)</span> (<span class="math inline">\(0 &lt; \zeta &lt; 1\)</span>) allocate more weight to extreme values (i.e., close to -1 and 1) of <span class="math inline">\(\rho\)</span> (see Figure <a href="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html#fig:lkj">A.5</a>).</p>
+<div class="figure" style="text-align: center"><span id="fig:lkj"></span>
+<img src="99-appendix_brms_files/figure-html/lkj-1.pdf" alt="Visualisation of the LKJ prior for different values of the shape parameter $\zeta$." width="100%" />
+<p class="caption">
+Figure A.5: Visualisation of the LKJ prior for different values of the shape parameter <span class="math inline">\(\zeta\)</span>.
+</p>
+</div>
+<pre class="sourceCode r"><code class="sourceCode r">prior4 &lt;-<span class="st"> </span><span class="kw">c</span>(
+    <span class="kw">prior</span>(<span class="kw">normal</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> Intercept),
+    <span class="kw">prior</span>(<span class="kw">normal</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> b, <span class="dt">coef =</span> gender),
+    <span class="kw">prior</span>(<span class="kw">cauchy</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> sd),
+    <span class="kw">prior</span>(<span class="kw">cauchy</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> sigma),
+    <span class="kw">prior</span>(<span class="kw">lkj</span>(<span class="dv">2</span>), <span class="dt">class =</span> cor)
+    )
+
+bmod4 &lt;-<span class="st"> </span><span class="kw">brm</span>(
+    distance <span class="op">~</span><span class="st"> </span>gender <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span><span class="op">|</span>subj) <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span> <span class="op">+</span><span class="st"> </span>gender<span class="op">|</span>vowel),
+    <span class="dt">data =</span> indo, <span class="dt">family =</span> <span class="kw">gaussian</span>(),
+    <span class="dt">prior =</span> prior4,
+    <span class="dt">warmup =</span> <span class="dv">2000</span>, <span class="dt">iter =</span> <span class="dv">10000</span>
+    )</code></pre>
+<p>Estimates of this model are summarised in Table <a href="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html#tab:sumbmod4">A.5</a>. This summary reveals a negative correlation between the intercepts and slopes for vowels, meaning that vowels with a large “baseline level of variability” (i.e., with a large average <code>distance</code> value) tend to be pronounced with more variability by females than by males. However, we notice that this model’s estimation of <span class="math inline">\(\beta\)</span> is even more uncertain than that of the previous models, as shown by the associated standard error and the width of the credible interval.</p>
+<caption>
+<span id="tab:sumbmod4">Table A.5: </span>
+</caption>
+<caption>
+<em>Posterior mean, standard error, 95% credible interval and <span class="math inline">\(\hat{R}\)</span>
+statistic for each parameter of model bmod4 with a varying intercept and varying slope by vowel.</em>
+</caption>
+<table>
+<thead>
+<tr class="header">
+<th align="center">parameter</th>
+<th align="center">mean</th>
+<th align="center">SE</th>
+<th align="center">lower bound</th>
+<th align="center">upper bound</th>
+<th align="center">Rhat</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math inline">\(\alpha\)</span></td>
+<td align="center">0.163</td>
+<td align="center">0.036</td>
+<td align="center">0.091</td>
+<td align="center">0.232</td>
+<td align="center">1.000</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(\beta\)</span></td>
+<td align="center">-0.042</td>
+<td align="center">0.029</td>
+<td align="center">-0.101</td>
+<td align="center">0.016</td>
+<td align="center">1.000</td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(\sigma_{subject}\)</span></td>
+<td align="center">0.017</td>
+<td align="center">0.008</td>
+<td align="center">0.007</td>
+<td align="center">0.037</td>
+<td align="center">1.000</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(\sigma_{\alpha_{vowel}}\)</span></td>
+<td align="center">0.068</td>
+<td align="center">0.046</td>
+<td align="center">0.029</td>
+<td align="center">0.174</td>
+<td align="center">1.001</td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(\sigma_{\beta_{vowel}}\)</span></td>
+<td align="center">0.052</td>
+<td align="center">0.032</td>
+<td align="center">0.022</td>
+<td align="center">0.130</td>
+<td align="center">1.001</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(\rho\)</span></td>
+<td align="center">-0.491</td>
+<td align="center">0.360</td>
+<td align="center">-0.951</td>
+<td align="center">0.369</td>
+<td align="center">1.000</td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(\sigma_{e}\)</span></td>
+<td align="center">0.086</td>
+<td align="center">0.001</td>
+<td align="center">0.084</td>
+<td align="center">0.089</td>
+<td align="center">1.000</td>
+</tr>
+</tbody>
+</table>
+<p>Figure <a href="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html#fig:shrinkageplot">A.6</a> illustrates the negative correlation between the by-vowel intercepts and the by-vowel slopes, meaning that vowels that tend to have higher “baseline variability” (i.e., /e/, /o/, /a/), tend to show a stronger effect of <code>gender</code>. This figure also illustrates the amount of shrinkage, here in the parameter space. We can see that the <em>partial pooling</em> estimate is shrunk somewhere between the <em>no pooling</em> estimate and the <em>complete pooling</em> estimate (i.e., the grand mean). This illustrates again the mechanism by which MLMs balance the risk of overfitting and underfitting <span class="citation">(<span class="citeproc-not-found" data-reference-id="McElreath2016"><strong>???</strong></span>)</span>.</p>
+<div class="figure" style="text-align: center"><span id="fig:shrinkageplot"></span>
+<img src="99-appendix_brms_files/figure-html/shrinkageplot-1.pdf" alt="Shrinkage of estimates in the parameter space, due to the pooling of information between clusters (based on the `bmod4` model). The ellipses represent the contours of the bivariate distribution, at different degrees of confidence 0.1, 0.3, 0.5 and 0.7." width="100%" />
+<p class="caption">
+Figure A.6: Shrinkage of estimates in the parameter space, due to the pooling of information between clusters (based on the <code>bmod4</code> model). The ellipses represent the contours of the bivariate distribution, at different degrees of confidence 0.1, 0.3, 0.5 and 0.7.
+</p>
+</div>
+</div>
+<div id="varying-intercept-and-varying-slope-model-interaction-between-subject-and-vowel" class="section level3">
+<h3><span class="header-section-number">A.3.5</span> Varying intercept and varying slope model, interaction between subject and vowel</h3>
+<p>So far, we modelled varying effects of subjects and vowels. In this study, these varying factors were crossed, meaning that every subject had to pronounce every vowel. Let us now imagine a situation in which Subject 4 systematically mispronounced the /i/ vowel. This would be a source of systematic variation over replicates which is not considered in the model (<code>bmod4</code>), because this model can only adjust parameters for either vowel or participant, but not for a specific vowel for a specific participant.</p>
+<p>In building the next model, we added a varying intercept for the interaction between subject and vowel, that is, we created an index variable that allocates a unique value at each crossing of the two variables (e.g., Subject1-vowel/a/, Subject1-vowel/i/, etc.), resulting in <span class="math inline">\(8 \times 5 = 40\)</span> intercepts to be estimated <span class="citation">(for a review of multilevel modeling in various experimental designs, see <span class="citeproc-not-found" data-reference-id="Judd2017"><strong>???</strong></span>)</span>. This varying intercept for the interaction between subject and vowel represents the systematic variation associated with a specific subject pronouncing a specific vowel. This model can be written as follows, for any observation <span class="math inline">\(i\)</span>:</p>
+<p><span class="math display">\[
+\begin{aligned}
+\text{distance}_{i} &amp;\sim \mathrm{Normal}(\mu_{i}, \sigma_{e}) \\
+\mu_{i} &amp;= \alpha + \alpha_{subject[i]} + \alpha_{vowel[i]} + \alpha_{subject:vowel[i]} + (\beta + \beta_{vowel[i]}) \times \text{gender}_{i} \\
+\begin{bmatrix}
+\alpha_{\text{vowel}} \\
+\beta_{\text{vowel}} \\
+\end{bmatrix}
+&amp;\sim \mathrm{MVNormal}\bigg(\begin{bmatrix} 0 \\ 0 \end{bmatrix}, \textbf{S}\bigg) \\
+\textbf{S} &amp;=
+\begin{pmatrix}
+\sigma_{\alpha_{vowel}}^{2} &amp; \sigma_{\alpha_{vowel}}\sigma_{\beta{vowel}} \rho \\
+\sigma_{\alpha_{vowel}}\sigma_{\beta{vowel}} \rho &amp; \sigma_{\beta_{vowel}}^{2} \\
+\end{pmatrix} \\
+\alpha_{subject} &amp;\sim \mathrm{Normal}(0, \sigma_{subject}) \\
+\alpha_{subject:vowel} &amp;\sim \mathrm{Normal}(0, \sigma_{subject:vowel}) \\
+\alpha &amp;\sim \mathrm{Normal}(0, 10) \\
+\beta &amp;\sim \mathrm{Normal}(0, 10) \\
+\sigma_{e} &amp;\sim \mathrm{HalfCauchy}(10) \\
+\sigma_{subject} &amp;\sim \mathrm{HalfCauchy}(10) \\
+\sigma_{subject:vowel} &amp;\sim \mathrm{HalfCauchy}(10) \\
+\sigma_{\alpha_{vowel}} &amp;\sim \mathrm{HalfCauchy}(10) \\
+\sigma_{\beta_{vowel}} &amp;\sim \mathrm{HalfCauchy}(10) \\
+\textbf{R} &amp;\sim \mathrm{LKJcorr}(2) \\
+\end{aligned}
+\]</span>
+</p>
+<p>This model can be fitted with the following command:</p>
+<pre class="sourceCode r"><code class="sourceCode r">prior5 &lt;-<span class="st"> </span><span class="kw">c</span>(
+    <span class="kw">prior</span>(<span class="kw">normal</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> Intercept),
+    <span class="kw">prior</span>(<span class="kw">normal</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> b, <span class="dt">coef =</span> gender),
+    <span class="kw">prior</span>(<span class="kw">cauchy</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> sd),
+    <span class="kw">prior</span>(<span class="kw">cauchy</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> sigma),
+    <span class="kw">prior</span>(<span class="kw">lkj</span>(<span class="dv">2</span>), <span class="dt">class =</span> cor)
+    )
+
+bmod5 &lt;-<span class="st"> </span><span class="kw">brm</span>(
+    distance <span class="op">~</span><span class="st"> </span>gender <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span><span class="op">|</span>subj) <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span> <span class="op">+</span><span class="st"> </span>gender<span class="op">|</span>vowel) <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span><span class="op">|</span>subj<span class="op">:</span>vowel),
+    <span class="dt">data =</span> indo, <span class="dt">family =</span> <span class="kw">gaussian</span>(),
+    <span class="dt">prior =</span> prior5,
+    <span class="dt">warmup =</span> <span class="dv">2000</span>, <span class="dt">iter =</span> <span class="dv">10000</span>
+    )</code></pre>
+<p>Estimates of this model are summarised in Table <a href="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html#tab:sumbmod5">A.6</a>. From this table, we first notice that the more varying effects we add, the more the model is uncertain about the estimation of <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span>, which can be explained in the same way as in section 2.2. Second, we see the opposite pattern for <span class="math inline">\(\sigma_{e}\)</span>, the residuals standard deviation, which has decreased by a considerable amount compared to the first model, indicating a better fit.</p>
+<caption>
+<span id="tab:sumbmod5">Table A.6: </span>
+</caption>
+<caption>
+<em>Posterior mean, standard error, 95% credible interval and <span class="math inline">\(\hat{R}\)</span>
+statistic for each parameter of model bmod5 with a varying intercept and a
+varying slope by vowel and a varying intercept for the interaction between subject and vowel.</em>
+</caption>
+<table>
+<thead>
+<tr class="header">
+<th align="center">parameter</th>
+<th align="center">mean</th>
+<th align="center">SE</th>
+<th align="center">lower bound</th>
+<th align="center">upper bound</th>
+<th align="center">Rhat</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math inline">\(\alpha\)</span></td>
+<td align="center">0.163</td>
+<td align="center">0.037</td>
+<td align="center">0.091</td>
+<td align="center">0.236</td>
+<td align="center">1.000</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(\beta\)</span></td>
+<td align="center">-0.042</td>
+<td align="center">0.030</td>
+<td align="center">-0.099</td>
+<td align="center">0.019</td>
+<td align="center">1.001</td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(\sigma_{subject}\)</span></td>
+<td align="center">0.011</td>
+<td align="center">0.009</td>
+<td align="center">0.000</td>
+<td align="center">0.032</td>
+<td align="center">1.000</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(\sigma_{subject:vowel}\)</span></td>
+<td align="center">0.024</td>
+<td align="center">0.004</td>
+<td align="center">0.016</td>
+<td align="center">0.034</td>
+<td align="center">1.000</td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(\sigma_{\alpha_{vowel}}\)</span></td>
+<td align="center">0.070</td>
+<td align="center">0.046</td>
+<td align="center">0.029</td>
+<td align="center">0.185</td>
+<td align="center">1.001</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(\sigma_{\beta_{vowel}}\)</span></td>
+<td align="center">0.049</td>
+<td align="center">0.035</td>
+<td align="center">0.013</td>
+<td align="center">0.137</td>
+<td align="center">1.000</td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(\rho\)</span></td>
+<td align="center">-0.436</td>
+<td align="center">0.374</td>
+<td align="center">-0.945</td>
+<td align="center">0.443</td>
+<td align="center">1.000</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(\sigma_{e}\)</span></td>
+<td align="center">0.085</td>
+<td align="center">0.001</td>
+<td align="center">0.082</td>
+<td align="center">0.088</td>
+<td align="center">1.000</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="model-comparison" class="section level2">
+<h2><span class="header-section-number">A.4</span> Model comparison</h2>
+<p>Once we have built a set of models, we need to know which model is the more accurate and should be used to draw conclusions. It might be a little tricky to select the model that has the better absolute fit on the actual data (using for instance <span class="math inline">\(R^{2}\)</span>), as this model will not necessarily perform as well on new data. Instead, we might want to choose the model that has the best predictive abilities, that is, the model that performs the best when it comes to predicting data that have not yet been observed. We call this ability the out-of-sample predictive performance of the model <span class="citation">(<span class="citeproc-not-found" data-reference-id="McElreath2016"><strong>???</strong></span>)</span>. When additional data is not available, cross-validation techniques can be used to obtain an approximation of the model’s predictive abilities, among which the Bayesian leave-one-out-cross-validation <span class="citation">(LOO-CV, <span class="citeproc-not-found" data-reference-id="Vehtari2016"><strong>???</strong></span>)</span>. Another useful tool, and asymptotically equivalent to the LOO-CV, is the Watanabe Akaike Information Criterion <span class="citation">(WAIC, <span class="citeproc-not-found" data-reference-id="Watanabe2010"><strong>???</strong></span>)</span>, which can be conceived as a generalisation of the Akaike Information Criterion <span class="citation">(AIC, <span class="citeproc-not-found" data-reference-id="Akaike1974"><strong>???</strong></span>)</span><a href="#fn56" class="footnote-ref" id="fnref56"><sup>56</sup></a>.</p>
+<p>Both WAIC and LOO-CV indexes are easily computed in <code>brms</code> with the <code>WAIC</code> and the <code>LOO</code> functions, where <span class="math inline">\(n\)</span> models can be compared with the following call: <code>LOO(model1, model2, ..., modeln)</code>. These functions also provide an estimate of the uncertainty associated with these indexes (in the form of a SE), as well as a difference score <span class="math inline">\(\Delta \text{LOOIC}\)</span>, which is computed by taking the difference between each pair of information criteria. The <code>WAIC</code> and the <code>LOO</code> functions also provide a SE for these delta values (<span class="math inline">\(\Delta \text{SE}\)</span>). A comparison of the five models we fitted can be found in Table <a href="#tab:modelcomparison"><strong>??</strong></a>.</p>
+<p>We see from Table <a href="#tab:modelcomparison"><strong>??</strong></a> that <code>bmod5</code> (i.e., the last model) is performing much better than the other models, as it has the lower LOOIC. We then based our conclusions (see last section) on the estimations of this model. We also notice that each addition to the initial model brought improvement in terms of predictive accuracy, as the set of models is ordered from the first to the last model. This should not be taken as a general rule though, as successive additions made to an original model could also lead to <em>overfitting</em>, corresponding to a situation in which the model is over-specified in regards to the data, which makes the model good to explain the data at hand, but very bad to predict non-observed data. In such cases, information criteria and indexes that rely exclusively on goodness-of-fit (such as <span class="math inline">\(R^{2}\)</span>) would point to different conclusions.</p>
+</div>
+<div id="comparison-of-brms-and-lme4-estimations" class="section level2">
+<h2><span class="header-section-number">A.5</span> Comparison of <code>brms</code> and <code>lme4</code> estimations</h2>
+<p>Figure <a href="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html#fig:compestim">A.7</a> illustrates the comparison of <code>brms</code> (Bayesian approach) and <code>lme4</code> (frequentist approach) estimates for the last model (<code>bmod5</code>), fitted in <code>lme4</code> with the following command.</p>
+<pre class="sourceCode r"><code class="sourceCode r">lmer_model &lt;-<span class="st"> </span><span class="kw">lmer</span>(
+    distance <span class="op">~</span><span class="st"> </span>gender <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span><span class="op">|</span>subj) <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span> <span class="op">+</span><span class="st"> </span>gender<span class="op">|</span>vowel) <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span><span class="op">|</span>subj<span class="op">:</span>vowel),
+    <span class="dt">REML =</span> <span class="ot">FALSE</span>, <span class="dt">data =</span> indo
+    )</code></pre>
+<p>Densities represent the posterior distribution as estimated by <code>brms</code> along with 95% credible intervals, while the crosses underneath represent the <em>maximum likelihood estimate</em> (MLE) from <code>lme4</code> along with 95% confidence intervals, obtained with parametric bootstrapping.</p>
+<div class="figure" style="text-align: center"><span id="fig:compestim"></span>
+<img src="99-appendix_brms_files/figure-html/compestim-1.pdf" alt="Comparison of estimations from `brms` and `lme4`. Dots represent means of posterior distribution along with 95\% CrIs, as estimated by the `bmod5` model. Crosses represent estimations of `lme4` along with bootstrapped 95\% CIs." width="100%" />
+<p class="caption">
+Figure A.7: Comparison of estimations from <code>brms</code> and <code>lme4</code>. Dots represent means of posterior distribution along with 95% CrIs, as estimated by the <code>bmod5</code> model. Crosses represent estimations of <code>lme4</code> along with bootstrapped 95% CIs.
+</p>
+</div>
+<p>We can see that the estimations of <code>brms</code> and <code>lme4</code> are for the most part very similar. The differences we observe for <span class="math inline">\(\sigma_{\alpha_{vowel}}\)</span> and <span class="math inline">\(\sigma_{\beta_{vowel}}\)</span> might be explained by the skewness of the posterior distribution. Indeed, in these cases (i.e., when the distribution is not symmetric), the mode of the distribution would better coincide with the <code>lme4</code> estimate. This figure also illustrates a limitation of frequentist MLMs that we discussed in the first part of the current paper. If we look closely at the estimates of <code>lme4</code>, we can notice that the MLE for the correlation <span class="math inline">\(\rho\)</span> is at its boundary, as <span class="math inline">\(\rho = -1\)</span>. This might be interpreted in (at least) two ways. The first interpretation is what <span class="citation">(<span class="citeproc-not-found" data-reference-id="Eager2017"><strong>???</strong></span>)</span> call the <em>parsimonious convergence hypothesis</em> (PCH) and consists in saying that this aberrant estimation is caused by the over-specification of the random structure <span class="citation">(e.g., <span class="citeproc-not-found" data-reference-id="Bates2015"><strong>???</strong></span>)</span>. In other words, this would correspond to a model that contains too many varying effects to be “supported” by a certain dataset (but this does not mean that with more data, this model would not be a correct model). However, the PCH has been questioned by <span class="citation">(<span class="citeproc-not-found" data-reference-id="Eager2017"><strong>???</strong></span>)</span>, who have shown that under conditions of unbalanced datasets, non-linear models fitted with <code>lme4</code> provided more prediction errors than Bayesian models fitted with <code>Stan</code>. The second interpretation considers failures of convergence as a problem of frequentist MLMs <em>per se</em>, which is resolved in the Bayesian framework by using weakly informative priors (i.e., the LKJ prior) for the correlation between varying effects <span class="citation">(e.g., <span class="citeproc-not-found" data-reference-id="Eager2017"><strong>???</strong></span>; <span class="citeproc-not-found" data-reference-id="Nicenboim2016"><strong>???</strong></span>)</span>, and by using the full posterior for inference.</p>
+<p>One feature of the Bayesian MLM in this kind of situation is to provide an estimate of the correlation that incorporates the uncertainty caused by the weak amount of data (i.e., by widening the posterior distribution). Thus, the <code>brms</code> estimate of the correlation coefficient has its posterior mean at <span class="math inline">\(\rho = -0.433\)</span>, but this estimate comes with a huge uncertainty, as expressed by the width of the credible interval (<span class="math inline">\(95\% \ \text{CrI} = [-0.946,0.454]\)</span>).</p>
+</div>
+<div id="inference-and-conclusions" class="section level2">
+<h2><span class="header-section-number">A.6</span> Inference and conclusions</h2>
+<p>Regarding our initial question, which was to know whether there is a gender effect on vowel production variability in standard Indonesian, we can base our conclusions on several parameters and indices. However, the discrepancies between the different models we fitted deserve some discussion first. As already pointed out previously, if we had based our conclusions on the results of the first model (i.e., the model with constant effects only), we would have confidently concluded on a positive effect of gender. However, when we included the appropriate error terms in the model to account for repeated measurements by subject and by vowel, as well as for the by-vowel specific effect of gender, the large variability of this effect among vowels lead the model to adjust its estimation of <span class="math inline">\(\beta\)</span>, resulting in more uncertainty about it. The last model then estimated a value of <span class="math inline">\(\beta =\)</span> -0.04202 with quite a large uncertainty (<span class="math inline">\(95 \% \ \text{CrI} =\)</span> [-0.0990293, 0.0192665]), and considering <span class="math inline">\(0\)</span> as well as some positive values as credible. This result alone makes it difficult to reach any definitive conclusion concerning the presence or absence of a gender effect on the variability of vowels pronunciation in Indonesian, and should be considered (at best) as suggestive.</p>
+<p>Nevertheless, it is useful to recall that in the Bayesian framework, the results of our analysis is a (posterior) probability distribution which can be, as such, summarised in multiple ways. This distribution is plotted in Figure <a href="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html#fig:postsamples">A.8</a>, which also shows the mean and the 95% CrI, as well as the proportion of the distribution below and above a particular value<a href="#fn57" class="footnote-ref" id="fnref57"><sup>57</sup></a>. This figure reveals that <span class="math inline">\(94.1\%\)</span> of the distribution is below <span class="math inline">\(0\)</span>, which can be interpreted as suggesting that there is a <span class="math inline">\(0.94\)</span> probability that males have a lower mean formant distance than females (recall that female was coded as -0.5 and male as 0.5), given the data at hand, and the model.</p>
+<div class="figure" style="text-align: center"><span id="fig:postsamples"></span>
+<img src="99-appendix_brms_files/figure-html/postsamples-1.pdf" alt="Histogram of posterior samples of the slope for gender, as estimated by the last model." width="100%" />
+<p class="caption">
+Figure A.8: Histogram of posterior samples of the slope for gender, as estimated by the last model.
+</p>
+</div>
+<p>This quantity can be easily computed from the posterior samples:</p>
+<pre class="sourceCode r"><code class="sourceCode r">post &lt;-<span class="st"> </span><span class="kw">posterior_samples</span>(bmod5) <span class="co"># extracting posterior samples</span>
+<span class="kw">mean</span>(post<span class="op">$</span>b_gender <span class="op">&lt;</span><span class="st"> </span><span class="dv">0</span>) <span class="co"># computing p(beta&lt;0)</span></code></pre>
+<pre><code>## [1] 0.9401875</code></pre>
+<p>Of course, this estimate can (and should) be refined using more data from several experiments, with more speakers. In this line, it should be pointed out that <code>brms</code> can easily be used to extend the multilevel strategy to meta-analyses <span class="citation">(e.g., <span class="citeproc-not-found" data-reference-id="Burkner2017"><strong>???</strong></span>; <span class="citeproc-not-found" data-reference-id="Williams2017"><strong>???</strong></span>)</span>. Its flexibility makes it possible to fit multilevel hierarchical Bayesian models at two, three, or more levels, enabling researchers to model the heterogeneity between studies as well as dependencies between experiments of the same study, or between studies carried out by the same research team. Such a modelling strategy is usually equivalent to the ordinary frequentist random-effect meta-analysis models, while offering all the benefits inherent to the Bayesian approach.</p>
+<p>Another useful source of information comes from the examination of effects sizes. One of the most used criteria is Cohen’s <span class="math inline">\(d\)</span> standardized effect size, that expresses the difference between two groups in terms of their pooled standard deviation:</p>
+<p><span class="math display">\[
+\text{Cohen&#39;s d} = \frac{\mu_{1}-\mu_{2}}{\sigma_{pooled}}=\frac{\mu_{1}-\mu_{2}}{\sqrt{\frac{\sigma_{1}^{2}+\sigma_{2}^{2}}{2}}}
+\]</span></p>
+
+<p>However, as the total variance is partitioned into multiple sources of variation in MLMs, there is no unique way of computing a standardised effect size. While several approaches have been suggested (e.g., dividing the mean difference by the standard deviation of the residuals), the more consensual one involves taking into account all of the variance sources of the model <span class="citation">(<span class="citeproc-not-found" data-reference-id="Hedges2007"><strong>???</strong></span>)</span>. One such index is called the <span class="math inline">\(\delta_{t}\)</span> (where the <span class="math inline">\(t\)</span> stands for “total”), and is given by the estimated difference between group means, divided by the square root of the sum of all variance components:</p>
+<p><span class="math display">\[\delta_{t} = \frac{\beta}{\sqrt{\sigma_{subject}^{2} + \sigma_{subject:vowel}^{2} + \sigma_{\alpha_{vowel}}^{2} + \sigma_{\beta_{vowel}}^{2} + \sigma^{2}}}\]</span></p>
+
+<p>As this effect size is dependent on the parameters estimated by the model, one can derive a probability distribution for this index as well. This is easily done in <code>R</code>, computing it from the posterior samples:</p>
+<pre class="sourceCode r"><code class="sourceCode r">delta_t &lt;-
+<span class="st">    </span><span class="co"># extracting posterior samples from bmod5</span>
+<span class="st">    </span><span class="kw">posterior_samples</span>(bmod5, <span class="dt">pars =</span> <span class="kw">c</span>(<span class="st">&quot;^b_&quot;</span>, <span class="st">&quot;sd_&quot;</span>, <span class="st">&quot;sigma&quot;</span>) ) <span class="op">%&gt;%</span>
+<span class="st">    </span><span class="co"># taking the square of each variance component</span>
+<span class="st">    </span><span class="kw">mutate_at</span>(<span class="dt">.vars =</span> <span class="dv">3</span><span class="op">:</span><span class="dv">7</span>, <span class="dt">.funs =</span> <span class="kw">funs</span>(.<span class="op">^</span><span class="dv">2</span>) ) <span class="op">%&gt;%</span>
+<span class="st">    </span><span class="co"># dividing the slope estimate by the square root of the sum of</span>
+<span class="st">    </span><span class="co"># all variance components</span>
+<span class="st">    </span><span class="kw">mutate</span>(<span class="dt">delta =</span> b_gender <span class="op">/</span><span class="st"> </span><span class="kw">sqrt</span>(<span class="kw">rowSums</span>(.[<span class="dv">3</span><span class="op">:</span><span class="dv">7</span>]) ) )</code></pre>
+<p>This distribution is plotted in Figure <a href="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html#fig:postdhist">A.9</a>, and reveals the large uncertainty associated with the estimation of <span class="math inline">\(\delta_{t}\)</span>.</p>
+<div class="figure" style="text-align: center"><span id="fig:postdhist"></span>
+<img src="99-appendix_brms_files/figure-html/postdhist-1.pdf" alt="Posterior distribution of $\delta_{t}$." width="100%" />
+<p class="caption">
+Figure A.9: Posterior distribution of <span class="math inline">\(\delta_{t}\)</span>.
+</p>
+</div>
+<p>In the same fashion, undirected effect sizes (e.g., <span class="math inline">\(R^{2}\)</span>) can be computed directly from the posterior samples, or included in the model specification as a parameter of the model, in a way that at each iteration of the MCMC, a value of the effect size is sampled, resulting in an estimation of its full posterior distribution <span class="citation">(see for instance <span class="citeproc-not-found" data-reference-id="Gelman2006b"><strong>???</strong></span> for measures of explained variance in MLMs and <span class="citation">@Marsman2017</span> for calculations in ANOVA designs)</span>. A Bayesian version of the <span class="math inline">\(R^{2}\)</span> is also available in <code>brms</code> using the <code>bayes_R2</code> method, for which the calculations are based on <span class="citation">(<span class="citeproc-not-found" data-reference-id="Gelman2017"><strong>???</strong></span>)</span>.</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">bayes_R2</span>(bmod5)</code></pre>
+<pre><code>##     Estimate  Est.Error      Q2.5     Q97.5
+## R2 0.2958986 0.01555751 0.2644045 0.3257582</code></pre>
+<p>In brief, we found a weak effect of gender on vowel production variability in Indonesian (<span class="math inline">\(\beta =\)</span> -0.04202, <span class="math inline">\(\ 95 \% \ \text{CrI} =\)</span> [-0.0990293, 0.0192665], <span class="math inline">\(\ \delta_{t} =\)</span> -0.3442561, <span class="math inline">\(\ 95 \% \ \text{CrI} = [-0.78, 0.11]\)</span>), this effect being associated with a large uncertainty (as expressed by the width of the credible interval). This result seems to show that females tend to pronounce vowels with more variability than males, while the variation observed across vowels (as suggested by <span class="math inline">\(\sigma_{\beta_{vowel}}\)</span>) suggests that there might exist substantial inter-vowel variability, that should be subsequently properly studied. A follow-up analysis specifically designed to test the effect of gender on each vowel should help better describe inter-vowel variability (we give an example of such an analysis in the <a href="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html#suppApp">supplementary materials</a>).</p>
+<p>To sum up, we hope that this introductive tutorial has helped the reader to understand the foundational ideas of Bayesian MLMs, and to appreciate how straightforward the interpretation of the results is. Moreover, we hope to have demonstrated that although Bayesian data analysis may still sometimes (wrongfully) sound difficult to grasp and to use, the development of recent tools like <code>brms</code> helps to build and fit Bayesian MLMs in an intuitive way. We believe that this shift in practice will allow more reliable statistical inferences to be drawn from empirical research.</p>
+</div>
+<div id="suppApp" class="section level2">
+<h2><span class="header-section-number">A.7</span> Supplementary materials</h2>
+<p>Supplementary materials, reproducible code and figures are available at: <a href="https://osf.io/dpzcb">https://osf.io/dpzcb</a>. A lot of useful packages have been used for the writing of this paper, among which the <code>papaja</code> and <code>knitr</code> packages for writing and formatting <span class="citation">(Aust &amp; Barth, <a href="references.html#ref-R-papaja" role="doc-biblioref">2018</a>; Xie, <a href="references.html#ref-R-knitr" role="doc-biblioref">2018</a>)</span>, the <code>ggplot2</code>, <code>viridis</code>, <code>ellipse</code>, <code>BEST</code>, and <code>ggridges</code> packages for plotting <span class="citation">(Garnier, <a href="references.html#ref-R-viridis" role="doc-biblioref">2018</a>; Kruschke &amp; Meredith, <a href="references.html#ref-R-BEST" role="doc-biblioref">2018</a>; Murdoch &amp; Chow, <a href="references.html#ref-R-ellipse" role="doc-biblioref">2018</a>; Wickham et al., <a href="references.html#ref-R-ggplot2" role="doc-biblioref">2018</a>; Wilke, <a href="references.html#ref-R-ggridges" role="doc-biblioref">2018</a>)</span>, as well as the <code>tidyverse</code> and <code>broom</code> packages for code writing and formatting <span class="citation">(Robinson, <a href="references.html#ref-R-broom" role="doc-biblioref">2018</a>; Wickham, <a href="references.html#ref-R-tidyverse" role="doc-biblioref">2017</a>)</span>.</p>
+
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="49">
+<li id="fn49"><p>In this context, the <em>maximal varying effect structure</em> means that any potential source of systematic influence should be explicitly modelled, by adding appropriate varying effects.<a href="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html#fnref49" class="footnote-back">↩</a></p></li>
+<li id="fn50"><p>Note that MLMs are sometimes called <em>mixed models</em>, as models that comprise both <em>fixed</em> and <em>random</em> effects.<a href="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html#fnref50" class="footnote-back">↩</a></p></li>
+<li id="fn51"><p>Acknowledging that these individual intercepts can also be seen as adjustments to the grand intercept <span class="math inline">\(\alpha\)</span>, that are specific to group <span class="math inline">\(j\)</span>.<a href="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html#fnref51" class="footnote-back">↩</a></p></li>
+<li id="fn52"><p>Note that –for the sake of simplicity– throughout this tutorial we use a Normal likelihood, but other (better) alternatives would include using skew-normal or log-normal models, which are implemented in <code>brms</code> with the <code>skew_normal</code> and <code>lognormal</code> families. We provide examples in the <a href="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html#suppApp">supplementary materials</a>.<a href="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html#fnref52" class="footnote-back">↩</a></p></li>
+<li id="fn53"><p>Where a credible interval is the Bayesian analogue of a classical confidence interval, except that probability statements can be made based upon it (e.g., “given the data and our prior assumptions, there is a 0.95 probability that this interval encompasses the population value <span class="math inline">\(\theta\)</span>”).<a href="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html#fnref53" class="footnote-back">↩</a></p></li>
+<li id="fn54"><p>But please note that we do not mean to suggest that the varying intercept for subjects should be removed because its ICC is low.<a href="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html#fnref54" class="footnote-back">↩</a></p></li>
+<li id="fn55"><p>The LKJ prior is the default prior for correlation matrices in <code>brms</code>.<a href="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html#fnref55" class="footnote-back">↩</a></p></li>
+<li id="fn56"><p>More details on model comparison using cross-validation techniques can be found in <span class="citation">(<span class="citeproc-not-found" data-reference-id="Nicenboim2016"><strong>???</strong></span>)</span>. See also <span class="citation">(<span class="citeproc-not-found" data-reference-id="Gelman2014"><strong>???</strong></span>)</span> for a complete comparison of information criteria.<a href="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html#fnref56" class="footnote-back">↩</a></p></li>
+<li id="fn57"><p>We compare the distribution with <span class="math inline">\(0\)</span> here, but it should be noted that this comparison could be made with whatever value.<a href="appendix-a-an-introduction-to-bayesian-multilevel-models-using-brms-a-case-study-of-gender-effects-on-vowel-variability-in-standard-indonesian.html#fnref57" class="footnote-back">↩</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="discussion-and-perspectives.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/lnalborczyk/phd_thesis/edit/master/99-appendix_brms.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["thesis.pdf"],
+"toc": {
+"collapse": "none / section / subsection",
+"scroll_highlight": true
+},
+"search": true,
+"highlight": "pygments"
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

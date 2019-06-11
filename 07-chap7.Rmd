@@ -1,6 +1,6 @@
 # Examining the involvement of the speech motor system during rumination: a dual-task investigation
 
-Summary of the research...^[This experimental chapter is a submitted manuscript reformatted for the need of this thesis. Pre-registered protocol, preprint, data, as well as reproducible code and figures are available at: [https://osf.io/8ab2d/](https://osf.io/8ab2d/).]
+\initial{S}ummary of the research...^[This experimental chapter is a submitted manuscript reformatted for the need of this thesis. Pre-registered protocol, preprint, data, as well as reproducible code and figures are available at: [https://osf.io/8ab2d/](https://osf.io/8ab2d/).]
 
 ```{r setupCH7, include = FALSE, message = FALSE, warning = FALSE, results = "hide"}
 library(wordcountaddin)
@@ -27,9 +27,6 @@ opts_chunk$set(
     cache = TRUE, echo = FALSE, warning = FALSE, message = FALSE,
     out.width = "100%", fig.align = "center"
     )
-
-# counting words in the current .Rmd file
-wordcount <- word_count(current_input() )
 ```
 
 <!-- NB: You can add comments using these tags -->
