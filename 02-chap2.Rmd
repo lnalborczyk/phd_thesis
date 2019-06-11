@@ -9,25 +9,9 @@ knitr::opts_chunk$set(
 
 \initial{I}n this chapter we briefly introduce some of the key concepts related to the methods we used in our work. More precisely, we cover the technical concepts related to speech production mechanisms, to electromyography and to our statistical approach. Finally, we give an overview of the following chapters.
 
-## Speech production mechanisms
+## Biomechanical aspects of speech production
 
-### Psychological aspects of speech production
-
-How do we (humans) produce speech? At a biomechanical level, producing speech means coordinating a complex dynamic system (i.e., the ensemble of speech muscles and organs) to produce slight perturbations of the air flow (sound waves). At a psychological level, speech production can be said to consist in the translation of thoughts into speech, with the goal of communicating information. Before being communicated however, the information of interest is submitted to several important transformations.
-
-Although speech production is an everyday phenomenon, the way this process is exactly performed is still the subject of lively debates. However, current models generally agree with the core steps occurring during speech production. Willem Levelt [@levelt_speaking:_1989;@brown_producing_2000] proposed an influential psycholinguistic model of speech production (see Figure \@ref(fig:levelt)). According to this model, speech production can be described at three levels: *conceptualisation*, *formulation* and *articulation*. The first step is managed by a component called the *conceptualizer*, and consists in selecting a conceptual message to be produced (*message generation*). In other words, the speaker conceives a comunicative intention that she wishes to reveal to an interlocutor. This *preverbal message* is then forwarded to another component, the *formulator*, that handles both *grammatical encoding* (i.e., selecting the appropriate word or *lemma*) and *phonological encoding* (i.e., selecting the appropriate speech sounds).
-
-```{r levelt, out.width = "100%", fig.cap = "Illustration of Levelt's (1989, 2000) model of speech production."}
-knitr::include_graphics("assets/levelt.pdf")
-```
-
-During *grammatical encoding*, *lemmas* are retrieved from the *lexicon* and are ordered in a syntactical appropriate way, giving the message its *surface structure*. During *phonological encoding*, the message is given its phonetic or articulatory characteristics. At this stage, phonemes are grouped into pronounceable syllables. Then, each syllable is associated with an *articulatory program*, composed of an ensemble of *articulatory gestures* (i.e., coordinative structures of movements). These articulatory programs are stored in the *syllabary*. In brief, the *formulator* component transforms a *preverbal message* into a linguistic object. Finally, the phonetic plan^[Interestingly, in this model the phonetic plan is thought to correspond to inner speech.] is forwarded to the *articulator*, responsible for the activation of *articulatory gestures*, to be executed by the speech *articulators* (e.g., tongue, lips, jaw).
-
-This model permits to explain how a communicative intention is transformed into speech acts. However, it does not explicitly account for how speech acts are executed by the articulators. In the next section, we briefly introduce some of the cores principles related to the biomechanics of speech production.
-
-### Biomechanical aspects of speech production
-
-#### Vocal apparatus
+### Vocal apparatus
 
 Speech production requires the involvement of more than 100 muscles in the face, the neck and the chest [@simonyan_laryngeal_2011]. The activity of these muscles is coordinated to produce an air flow moving from the lungs to the oral and nasal cavities, via the trachea, the larynx and the pharynx (see Figure \@ref(fig:vocal)). Broadly speaking, speech production can be said to consist essentially in i) *phonation*, which refers to the manipulation of the air flow and to the vibration of the vocal folds and ii) *articulation*, which refers to movements of the *articulators*. The action of the *articulators* (e.g., lips, tongue) is to shape the oral and nasal cavities, resulting in modifications of the sound waves and in the production of different vowels.
 
@@ -35,7 +19,7 @@ Speech production requires the involvement of more than 100 muscles in the face,
 The vocal folds in the larynx vibrate to produce fluctuations in air pressure (sound waves). These sounds waves are subsequently modified by the position and shape of the mouth, the lips, the tongue, and other speech organs.
 -->
 
-```{r vocal, out.width = "75%", fig.cap = "Human respiratory and phonatory system. Figure from the OpenStax \\textit{Anatomy and Physiology} Textbook. Download for free at \\url{https://cnx.org/contents/14fb4ad7-39a1-4eee-ab6e-3ef2482e3e22@15.1}."}
+```{r vocal, out.width = "50%", fig.cap = "Human respiratory and phonatory system. Figure from the OpenStax \\textit{Anatomy and Physiology} Textbook. Download for free at \\url{https://cnx.org/contents/14fb4ad7-39a1-4eee-ab6e-3ef2482e3e22@15.1}."}
 knitr::include_graphics("assets/vocal.jpg")
 ```
 
@@ -53,7 +37,7 @@ knitr::include_graphics("assets/consonants.png")
 
 To sum up, besides from being an essential communication tool for humans, speech production is also a complex motor action, involving the fine-grained coordination of numerous muscles. In the next section, we discuss in more details the specific facial muscles that were of interest in the present work.
 
-#### Orofacial speech muscles
+### Orofacial speech muscles
 
 In our work, we were especially interested in the activity of some of the orofacial muscles (i.e., the muscles situated around the mouth). More precisely, we studied the activity of the *orbicularis oris inferior* (OOI), the *orbicularis oris superior* (OOS), and the *zygomaticus major* (ZYG) muscles (cf. Figure \@ref(fig:facial)). Contrary to what was assumed until recently, the *orblicularis oris* muscle is not a sphincter muscle but is instead a complex of several distinct muscles that interlace in a way that gives the *orbicularis oris* complex its circular aspect. Among these muscles, the OOS and the OOI are placed above and below (respectively) the mouth and are responsible for rounding or protruding the lips. More precisely, the OOS is responsible for lowering the upper lip whereas the OOI is responsible for elevating the lower lip. The ZYG muscle has its origin on the zygomatic bone and inserts at the labial commissure (the angle of the mouth) where it meets with fibers of the *levator anguli oris* and *orbicularis oris* muscles. Together with the *levator anguli oris*, it serves to move the labial commissure upwards and laterally, and is involved in laughing and more generally in pleasant reactions and positive emotions. It is also involved in speech production, especially during the production of *spread* sounds, that is, sounds that require a wide aperture of the mouth (e.g., /i/).
 
@@ -237,7 +221,7 @@ Bayesian statistics can simply be presented as an application of probability the
 
 \end{mybox}
 
-We also use *multilevel models* (also known as *mixed-models*) to handle complex dependency structures and to obtain more precise estimates. A more accurate description of Bayesian multilevel models is outside the scope of this introductory section but the interested reader is redirected toward several existing tutorial papers [e.g.,@nalborczyk_introduction_2019;@nicenboim_statistical_2016;@sorensen_bayesian_2016]. Throughout this work, we also make use of several tools with very distinct properties and uses. For instance, we use Bayes factors (BFs) to quantify the relative evidence for a statistical hypothesis (see Box \ref{BF}), we use information criteria to assess the predictive abilities of our models (see Box \ref{IC}), we use posterior predictive checks as well as a diagnostics tools (e.g., convergence indexes, trace plots) to assess the validity of our models, and we use summary statistics when appropriate to convey the meaning of the main results.
+We also use *multilevel models* (also known as *mixed-models*) to handle complex dependency structures and to obtain more precise estimates. A more accurate description of Bayesian multilevel models is outside the scope of this introductory section but the interested reader is redirected toward several existing tutorial papers [e.g.,@nalborczyk_introduction_2019;@nicenboim_statistical_2016;@sorensen_bayesian_2016] and Appendix \@ref(appendix-brms). Throughout this work, we also make use of several tools with very distinct properties and uses. For instance, we use Bayes factors (BFs) to quantify the relative evidence for a statistical hypothesis (see Box \ref{BF}), we use information criteria to assess the predictive abilities of our models (see Box \ref{IC}), we use posterior predictive checks as well as a diagnostics tools (e.g., convergence indexes, trace plots) to assess the validity of our models, and we use summary statistics when appropriate to convey the meaning of the main results.
 
 \vspace{2mm}
 
