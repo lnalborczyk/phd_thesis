@@ -1,9 +1,9 @@
 --- 
 title: Understanding rumination as a form of inner speech
 author: "" # Ladislas Nalborczyk
-date: "" #"2019-06-11"
+date: "" #"2019-06-12"
 
-documentclass: memoir # book # reedthesis
+documentclass: memoir # using the memoir package
 # classoption: a4paper,12pt,oneside,oldfontcommands # memoir class options
 classoption: a4paper,12pt,twoside,openright,oldfontcommands # memoir class options
 
