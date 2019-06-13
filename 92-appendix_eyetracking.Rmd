@@ -26,7 +26,7 @@ knitr::opts_chunk$set(
   )
 ```
 
-The purpose of this control experiment was to check whether the two motor tasks used in the main experiment presented in CHapter 6, namely, finger tapping and articulatory suppression (mouthing) were equivalent in terms of task difficulty or general dual-task demand [@emerson_role_2003]. Participants performed a computer-based visual search task (i.e., finding a T among an array of Ls), adapted from @treisman_feature-integration_1980 paradigm (see below for details).
+The purpose of this control experiment was to check whether the two motor tasks used in the main experiment presented in Chapter \@ref(chap6), namely, finger tapping and articulatory suppression (mouthing) were equivalent in terms of task difficulty or general dual-task demand [@emerson_role_2003]. Participants performed a computer-based visual search task (i.e., finding a T among an array of Ls), adapted from @treisman_feature-integration_1980 paradigm (see below for details).
 
 ## Sample
 
@@ -38,7 +38,7 @@ As we aimed to compare four conditions (i.e., visual search (VS) task alone, VS 
 
 ## Material
 
-Experiment took place individually in a dark room. Participants had to seat in front of a 22 inches, Iyama Vision Master Pro 513-MA203DT CRT Monitor (resolution: 1024x768 pixels, refresh rate: 85 Hz) with a NVIDIA GeForce 9800 GTX+ graphic processor. A camera-based eye-tracker (EyeLink\textregistered\ 1000 from SR Research) with a sampling rate of 250 Hz and a minimum accuracy of 0.5° was used, in the pupil-corneal reflection tracking mode. Participants were positioned on a seat so as to keep distance from the camera to the forehead target between 50 and 60 cm. A five-point calibration was completed before presenting stimuli, at the beginning of each condition.
+Experiment took place individually in a dark room. Participants had to seat in front of a 22 inches, Iyama Vision Master Pro 513-MA203DT CRT Monitor (resolution: 1024x768 pixels, refresh rate: 85 Hz) with a NVIDIA GeForce 9800 GTX+ graphic processor. A camera-based eye-tracker (EyeLink\textregistered\ 1000 from SR Research) with a sampling rate of 250 Hz and a minimum accuracy of 0.5\textdegree was used, in the pupil-corneal reflection tracking mode. Participants were positioned on a seat so as to keep distance from the camera to the forehead target between 50 and 60cm. A five-point calibration was completed before presenting stimuli, at the beginning of each condition.
 
 ## Procedure
 

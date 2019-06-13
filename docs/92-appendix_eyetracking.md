@@ -2,7 +2,7 @@
 
 
 
-The purpose of this control experiment was to check whether the two motor tasks used in the main experiment presented in CHapter 6, namely, finger tapping and articulatory suppression (mouthing) were equivalent in terms of task difficulty or general dual-task demand [@emerson_role_2003]. Participants performed a computer-based visual search task (i.e., finding a T among an array of Ls), adapted from @treisman_feature-integration_1980 paradigm (see below for details).
+The purpose of this control experiment was to check whether the two motor tasks used in the main experiment presented in Chapter \@ref(chap6), namely, finger tapping and articulatory suppression (mouthing) were equivalent in terms of task difficulty or general dual-task demand [@emerson_role_2003]. Participants performed a computer-based visual search task (i.e., finding a T among an array of Ls), adapted from @treisman_feature-integration_1980 paradigm (see below for details).
 
 ## Sample
 
@@ -14,7 +14,7 @@ As we aimed to compare four conditions (i.e., visual search (VS) task alone, VS 
 
 ## Material
 
-Experiment took place individually in a dark room. Participants had to seat in front of a 22 inches, Iyama Vision Master Pro 513-MA203DT CRT Monitor (resolution: 1024x768 pixels, refresh rate: 85 Hz) with a NVIDIA GeForce 9800 GTX+ graphic processor. A camera-based eye-tracker (EyeLink\textregistered\ 1000 from SR Research) with a sampling rate of 250 Hz and a minimum accuracy of 0.5° was used, in the pupil-corneal reflection tracking mode. Participants were positioned on a seat so as to keep distance from the camera to the forehead target between 50 and 60 cm. A five-point calibration was completed before presenting stimuli, at the beginning of each condition.
+Experiment took place individually in a dark room. Participants had to seat in front of a 22 inches, Iyama Vision Master Pro 513-MA203DT CRT Monitor (resolution: 1024x768 pixels, refresh rate: 85 Hz) with a NVIDIA GeForce 9800 GTX+ graphic processor. A camera-based eye-tracker (EyeLink\textregistered\ 1000 from SR Research) with a sampling rate of 250 Hz and a minimum accuracy of 0.5\textdegree was used, in the pupil-corneal reflection tracking mode. Participants were positioned on a seat so as to keep distance from the camera to the forehead target between 50 and 60cm. A five-point calibration was completed before presenting stimuli, at the beginning of each condition.
 
 ## Procedure
 
@@ -33,24 +33,33 @@ Data were analysed using *Condition* (4 modalities) as a within-subject predicto
 
 
 
-<caption>(\#tab:RTestimates)</caption>
+\begin{table}[H]
+\begin{center}
+\begin{threeparttable}
+\caption{\label{tab:RTestimates}Mean and 95\% CrI of the posterior distribution on the difference between each pair of condition.}
+\small{
+\begin{tabular}{lccc}
+\toprule
+Contrast & \multicolumn{1}{c}{Estimate} & \multicolumn{1}{c}{Lower} & \multicolumn{1}{c}{Upper}\\
+\midrule
+Mouth - Foot & 15.825 & -16.392 & 47.835\\
+Mouth - Finger & -10.700 & -43.334 & 23.250\\
+Foot - Finger & -26.524 & -56.556 & 5.458\\
+Mouth - Control & 50.504 & 17.643 & 81.777\\
+Foot - Control & 34.679 & 2.370 & 64.790\\
+Finger - Control & 61.203 & 28.925 & 93.014\\
+\bottomrule
+\end{tabular}
+}
+\end{threeparttable}
+\end{center}
+\end{table}
 
-<caption>*Mean and 95\% CrI of the posterior distribution on the difference between each pair of condition.*</caption>
+Results of the MLM are reported in Table \@ref(tab:RTestimates) and Figure \@ref(fig:eyetrack), that report the estimated average RT (and it 95% CrI) by condition and for the difference between each pair of conditions. This analysis revealed that all dual tasks induced longer RTs in comparison with the control condition, with the finger-tapping condition inducing the greatest discrepancy as compared to the control condition ($\beta$ = 61.203, 95% CrI [28.925, 93.014]), followed by the mouthing condition ($\beta$ = 50.504, 95% CrI [17.643, 81.777]) and the foot-tapping condition ($\beta$ = 34.679, 95% CrI [2.37, 64.79]). Pairwise comparisons between dual-task conditions revealed that the difference between the mouthing and the finger-tapping conditions was in the opposite direction and slightly smaller ($\beta$ = -10.7, 95% CrI [-43.334, 23.25]) than the difference between the mouthing and the foot-tapping conditions ($\beta$ = 15.825, 95% CrI [-16.392, 47.835]).
 
-
-
-Contrast            Estimate     Lower     Upper  
------------------  ----------  ---------  --------
-Mouth - Foot         15.573     -16.181    46.382 
-Mouth - Finger      -11.051     -43.890    19.655 
-Foot - Finger       -26.624     -58.330    4.608  
-Mouth - Control      50.274     17.100     80.315 
-Foot - Control       34.701      4.699     65.730 
-Finger - Control     61.325     31.707     95.112 
-
-Results of the MLM are reported in Table \@ref(tab:RTestimates) and Figure \@ref(fig:eyetrack), that report the estimated average RT (and it 95% CrI) by condition and for the difference between each pair of conditions. This analysis revealed that all dual tasks induced longer RTs in comparison with the control condition, with the finger-tapping condition inducing the greatest discrepancy as compared to the control condition ($\beta$ = 61.325, 95% CrI [31.707, 95.112]), followed by the mouthing condition ($\beta$ = 50.274, 95% CrI [17.1, 80.315]) and the foot-tapping condition ($\beta$ = 34.701, 95% CrI [4.699, 65.73]). Pairwise comparisons between dual-task conditions revealed that the difference between the mouthing and the finger-tapping conditions was in the opposite direction and slightly smaller ($\beta$ = -11.051, 95% CrI [-43.89, 19.655]) than the difference between the mouthing and the foot-tapping conditions ($\beta$ = 15.573, 95% CrI [-16.181, 46.382]).
-
-![(\#fig:eyetrack)Left panel: average RT by condition predicted by the model along with 95\% CrIs. Underlying dots represent the average raw RT by participant. Right panel: posterior distribution of the difference between each pair of conditions, along with its mean and 90\% and 95\% CrI.](92-appendix_eyetracking_files/figure-docx/eyetrack-1.png)
+\begin{figure}[H]
+\includegraphics[width=1\linewidth]{92-appendix_eyetracking_files/figure-latex/eyetrack-1} \caption{Left panel: average RT by condition predicted by the model along with 95\% CrIs. Underlying dots represent the average raw RT by participant. Right panel: posterior distribution of the difference between each pair of conditions, along with its mean and 90\% and 95\% CrI.}(\#fig:eyetrack)
+\end{figure}
 
 ## Discussion
 

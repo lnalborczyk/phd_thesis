@@ -1,4 +1,4 @@
-# Muscle-specific electromyographic correlates of inner speech production
+# Muscle-specific electromyographic correlates of inner speech production {#chap5}
 
 \initial{S}ummary of the research...^[This experimental chapter is a submitted manuscript reformatted for the need of this thesis. Pre-registered protocol, preprint, data, as well as reproducible code and figures are available at: [https://osf.io/czer4/](https://osf.io/czer4/).]
 

@@ -134,7 +134,9 @@ Indicating that the effect of the number of lessons on L2 speech intelligibility
 
 In this introductory section, we have presented the foundations of Bayesian analysis and multilevel modelling. Bayes' theorem allows prior knowledge about parameters to be updated according to the information conveyed by the data, while MLMs allow complex dependency structures to be modelled. We now move to a detailed case study in order to illustrate these concepts.
 
-\begin{tcolorbox}[title = Box 1. Where are my random effects ?]
+\vspace{2mm}
+
+\begin{mybox}[label = random]{Where are my random effects ?}
 
 In the Bayesian framework, every unknown quantity is considered as a random variable that we can describe using probability distributions. As a consequence, there is no such thing as a "fixed effect" or a "random effects distribution" in a Bayesian framework. However, these semantic quarrels disappear when we write down the model.
 
@@ -162,7 +164,7 @@ $$
 
 where the parameters of this prior are learned from the data. As we have seen, the same mathematical entity can be conceived either as a "random effects distribution" or as a prior distribution, depending on the framework.
 
-\end{tcolorbox}
+\end{mybox}
 
 ### Software programs
 
@@ -1018,56 +1020,77 @@ Once we have built a set of models, we need to know which model is the more accu
 
 Both WAIC and LOO-CV indexes are easily computed in `brms` with the `WAIC` and the `LOO` functions, where $n$ models can be compared with the following call: `LOO(model1, model2, ..., modeln)`. These functions also provide an estimate of the uncertainty associated with these indexes (in the form of a SE), as well as a difference score $\Delta \text{LOOIC}$, which is computed by taking the difference between each pair of information criteria. The `WAIC` and the `LOO` functions also provide a SE for these delta values ($\Delta \text{SE}$). A comparison of the five models we fitted can be found in Table \@ref(tab:modelcomparison).
 
-```{r modelcomparison, eval = FALSE, results = "asis", message = FALSE, warning = FALSE}
-comp <- brms::LOO(bmod1, bmod2, bmod3, bmod4, bmod5, cores = parallel::detectCores() )
-ic <- names(comp[[1]])[7]
-mat <- matrix(0, nrow = length(comp) - 1, ncol = 2)
-dimnames(mat) <- list(names(comp)[1:length(comp) - 1], c(toupper(ic), "SE") )
+```{r modelcomparison, eval = TRUE, results = "asis", message = FALSE, warning = FALSE}
+#comp <- brms::LOO(bmod1, bmod2, bmod3, bmod4, bmod5, cores = parallel::detectCores() )
+#ic <- "loo" # names(comp[[1]])[7]
+#mat <- matrix(0, nrow = length(comp) - 1, ncol = 2)
+#dimnames(mat) <- list(names(comp)[1:length(comp) - 1], c(toupper(ic), "SE") )
 
-for (i in 1:(length(comp) - 1) ) {
-    
-    mat[i, ] <- c(comp[[i]][[ic]], comp[[i]][[paste0("se_", ic)]])
+#loo1 <- waic(bmod1)
+#loo2 <- waic(bmod2)
+#comp <- loo::loo_compare(loo1, loo2, simplify = FALSE)
 
-}
+#bmod1 <- add_loo(bmod1)
+#bmod2 <- add_loo(bmod2)
 
-dSE <- data.frame(comp[[6]])
-dSE <- dSE[grep("bmod5", rownames(dSE) ), ] %>% arrange(LOOIC)
+comp <- loo_compare(loo(bmod1), loo(bmod2), loo(bmod3), loo(bmod4), loo(bmod5) ) # simplify = FALSE
+
+comp2 <- comp %>%
+  data.frame %>%
+  rownames_to_column("model") %>%
+  select(model, looic, se_looic) %>%
+  mutate(looic_diff = looic - min(looic) )
+
+# mat <- comp[[2]]
+# 
+# for (i in 1:(length(comp) - 1) ) {
+#     
+#     mat[i, ] <- c(comp[[i]][[ic]], comp[[i]][[paste0("se_", ic)]])
+# 
+# }
+# 
+# dSE <- data.frame(comp[[6]])
+# dSE <- dSE[grep("bmod5", rownames(dSE) ), ] %>% arrange(LOOIC)
 
 library(rlang)
 
-comp2 <-
-    mat %>%
-    data.frame %>%
-    mutate(Model = rownames(.) ) %>%
-    arrange(LOOIC) %>%
-    mutate(dLOOIC = LOOIC - min(LOOIC) ) %>%
-    select(Model, LOOIC, SE, dLOOIC) %>%
-    mutate(dSE = c(0, dSE[, 2]) ) %>%
-    mutate_at(.vars = 2:5, .funs = funs(round(., 2) ) ) %>%
-    mutate("right side of the formula" = lapply(.$Model,
+# comp2 <-
+#     mat %>%
+#     data.frame %>%
+#     mutate(Model = rownames(.) ) %>%
+#     arrange(LOOIC) %>%
+#     mutate(dLOOIC = LOOIC - min(LOOIC) ) %>%
+#     select(Model, LOOIC, SE, dLOOIC) %>%
+#     mutate(dSE = c(0, dSE[, 2]) ) %>%
+
+comp3 <- comp2 %>%
+    mutate_at(.vars = 2:4, .funs = funs(round(., 2) ) ) %>%
+    mutate("right side of the formula" = lapply(.$model,
         function(x) deparse(f_rhs(as.formula(formula(get(x) ) ) ) ) )
         )
 
-colnames(comp2)[4] <- paste0("$\\Delta$", "LOOIC")
-colnames(comp2)[5] <- paste0("$\\Delta$", "SE")
+colnames(comp3) <- c("Model", "LOOIC", "SE", paste0("$\\Delta$", "LOOIC"), "right side of the formula")
 
-comp2[, 6] <- comp2[, 6] %>% unlist
+#colnames(comp2)[4] <- paste0("$\\Delta$", "LOOIC")
+#colnames(comp2)[5] <- paste0("$\\Delta$", "SE")
+
+#comp2[, 6] <- comp2[, 6] %>% unlist
 #comp2 %>% write.csv(., file = "Table_7.csv", row.names = FALSE)
 
 apa_table(
-    comp2,
+    comp3,
     placement = "H",
-    align = c("c", "c", "c", "c", "c", "r"),
+    align = c("c", "c", "c", "c", "r"),
     caption = "Model comparison with LOOIC.",
     note = NULL,
     small = TRUE,
-    landscape = TRUE,
+    #landscape = TRUE,
     escape = FALSE,
     format.args = list(
         digits = 2,
         margin = 2,
         decimal.mark = ".", big.mark = "")
-    )
+  )
 ```
 
 We see from Table \@ref(tab:modelcomparison) that `bmod5` (i.e., the last model) is performing much better than the other models, as it has the lower LOOIC. We then based our conclusions (see last section) on the estimations of this model. We also notice that each addition to the initial model brought improvement in terms of predictive accuracy, as the set of models is ordered from the first to the last model. This should not be taken as a general rule though, as successive additions made to an original model could also lead to *overfitting*, corresponding to a situation in which the model is over-specified in regards to the data, which makes the model good to explain the data at hand, but very bad to predict non-observed data. In such cases, information criteria and indexes that rely exclusively on goodness-of-fit (such as $R^{2}$) would point to different conclusions.
@@ -1191,9 +1214,9 @@ One feature of the Bayesian MLM in this kind of situation is to provide an estim
 
 ## Inference and conclusions
 
-Regarding our initial question, which was to know whether there is a gender effect on vowel production variability in standard Indonesian, we can base our conclusions on several parameters and indices. However, the discrepancies between the different models we fitted deserve some discussion first. As already pointed out previously, if we had based our conclusions on the results of the first model (i.e., the model with constant effects only), we would have confidently concluded on a positive effect of gender. However, when we included the appropriate error terms in the model to account for repeated measurements by subject and by vowel, as well as for the by-vowel specific effect of gender, the large variability of this effect among vowels lead the model to adjust its estimation of $\beta$, resulting in more uncertainty about it. The last model then estimated a value of $\beta =$ `r fixef(bmod5)[2, 1]` with quite a large uncertainty ($95 \% \ \text{CrI} =$ [`r fixef(bmod5)[2, 3]`, `r fixef(bmod5)[2, 4]`]), and considering $0$ as well as some positive values as credible. This result alone makes it difficult to reach any definitive conclusion concerning the presence or absence of a gender effect on the variability of vowels pronunciation in Indonesian, and should be considered (at best) as suggestive.
+Regarding our initial question, which was to know whether there is a gender effect on vowel production variability in standard Indonesian, we can base our conclusions on several parameters and indices. However, the discrepancies between the different models we fitted deserve some discussion first. As already pointed out previously, if we had based our conclusions on the results of the first model (i.e., the model with constant effects only), we would have confidently concluded on a positive effect of gender. However, when we included the appropriate error terms in the model to account for repeated measurements by subject and by vowel, as well as for the by-vowel specific effect of gender, the large variability of this effect among vowels lead the model to adjust its estimation of $\beta$, resulting in more uncertainty about it. The last model then estimated a value of $\beta =$ `r round(fixef(bmod5)[2, 1], 3)` with quite a large uncertainty ($95 \% \ \text{CrI} =$ [`r round(fixef(bmod5)[2, 3], 3)`, `r round(fixef(bmod5)[2, 4], 3)`]), and considering $0$ as well as some positive values as credible. This result alone makes it difficult to reach any definitive conclusion concerning the presence or absence of a gender effect on the variability of vowels pronunciation in Indonesian, and should be considered (at best) as suggestive.
 
-Nevertheless, it is useful to recall that in the Bayesian framework, the results of our analysis is a (posterior) probability distribution which can be, as such, summarised in multiple ways. This distribution is plotted in Figure \@ref(fig:postsamples), which also shows the mean and the 95% CrI, as well as the proportion of the distribution below and above a particular value^[We compare the distribution with $0$ here, but it should be noted that this comparison could be made with whatever value.]. This figure reveals that $94.1\%$ of the distribution is below $0$, which can be interpreted as suggesting that there is a $0.94$ probability that males have a lower mean formant distance than females (recall that female was coded as -0.5 and male as 0.5), given the data at hand, and the model.
+Nevertheless, it is useful to recall that in the Bayesian framework, the results of our analysis is a (posterior) probability distribution which can be, as such, summarised in multiple ways. This distribution is plotted in Figure \@ref(fig:postsamples), which also shows the mean and the 95% CrI, as well as the proportion of the distribution below and above a particular value^[We compare the distribution with $0$ here, but it should be noted that this comparison could be made with whatever value.]. This figure reveals that around $94\%$ of the distribution is below $0$, which can be interpreted as suggesting that there is a $0.94$ probability that males have a lower mean formant distance than females (recall that female was coded as -0.5 and male as 0.5), given the data at hand, and the model.
 
 ```{r postsamples, dev = "pdf", dpi = 300, fig.pos = "H", fig.cap = "Histogram of posterior samples of the slope for gender, as estimated by the last model."}
 posterior_samples(bmod5)$b_gender %>%
@@ -1224,7 +1247,9 @@ $$
 
 However, as the total variance is partitioned into multiple sources of variation in MLMs, there is no unique way of computing a standardised effect size. While several approaches have been suggested (e.g., dividing the mean difference by the standard deviation of the residuals), the more consensual one involves taking into account all of the variance sources of the model [@hedges_effect_2007]. One such index is called the $\delta_{t}$ (where the $t$ stands for "total"), and is given by the estimated difference between group means, divided by the square root of the sum of all variance components:
 
-$$\delta_{t} = \frac{\beta}{\sqrt{\sigma_{subject}^{2} + \sigma_{subject:vowel}^{2} + \sigma_{\alpha_{vowel}}^{2} + \sigma_{\beta_{vowel}}^{2} + \sigma^{2}}}$$
+$$
+\delta_{t} = \frac{\beta}{\sqrt{\sigma_{subject}^{2} + \sigma_{subject:vowel}^{2} + \sigma_{\alpha_{vowel}}^{2} + \sigma_{\beta_{vowel}}^{2} + \sigma^{2}}}
+$$
 
 \vspace{5mm}
 
@@ -1258,7 +1283,7 @@ In the same fashion, undirected effect sizes (e.g., $R^{2}$) can be computed dir
 bayes_R2(bmod5)
 ```
 
-In brief, we found a weak effect of gender on vowel production variability in Indonesian ($\beta =$ `r fixef(bmod5)[2, 1]`, $\ 95 \% \ \text{CrI} =$ [`r fixef(bmod5)[2, 3]`, `r fixef(bmod5)[2, 4]`], $\ \delta_{t} =$ `r mean(delta_t$delta)`, $\ 95 \% \ \text{CrI} = [-0.78, 0.11]$), this effect being associated with a large uncertainty (as expressed by the width of the credible interval). This result seems to show that females tend to pronounce vowels with more variability than males, while the variation observed across vowels (as suggested by $\sigma_{\beta_{vowel}}$) suggests that there might exist substantial inter-vowel variability, that should be subsequently properly studied. A follow-up analysis specifically designed to test the effect of gender on each vowel should help better describe inter-vowel variability (we give an example of such an analysis in the [supplementary materials](#suppApp)). 
+In brief, we found a weak effect of gender on vowel production variability in Indonesian ($\beta =$ `r round(fixef(bmod5)[2, 1], 3)`, $\ 95 \% \ \text{CrI} =$ [`r round(fixef(bmod5)[2, 3], 3)`, `r round(fixef(bmod5)[2, 4], 3)`], $\ \delta_{t} =$ `r round(mean(delta_t$delta), 3)`, $\ 95 \% \ \text{CrI} = [-0.81, 0.10]$), this effect being associated with a large uncertainty (as expressed by the width of the credible interval). This result seems to show that females tend to pronounce vowels with more variability than males, while the variation observed across vowels (as suggested by $\sigma_{\beta_{vowel}}$) suggests that there might exist substantial inter-vowel variability, that should be subsequently properly studied. A follow-up analysis specifically designed to test the effect of gender on each vowel should help better describe inter-vowel variability (we give an example of such an analysis in the [supplementary materials](#suppApp)). 
 
 To sum up, we hope that this introductive tutorial has helped the reader to understand the foundational ideas of Bayesian MLMs, and to appreciate how straightforward the interpretation of the results is. Moreover, we hope to have demonstrated that although Bayesian data analysis may still sometimes (wrongfully) sound difficult to grasp and to use, the development of recent tools like `brms` helps to build and fit Bayesian MLMs in an intuitive way. We believe that this shift in practice will allow more reliable statistical inferences to be drawn from empirical research.
 

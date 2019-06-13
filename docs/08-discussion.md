@@ -1,6 +1,6 @@
 # (PART) Discussion and conclusions {-}
 
-# Discussion and perspectives
+# Discussion and perspectives {#chap8}
 
 ## Summary of the results
 

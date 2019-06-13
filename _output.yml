@@ -12,7 +12,7 @@ bookdown::gitbook:
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank"> Powered by bookdown </a></li>
         <li><a href="http://www.barelysignificant.com" target="blank"> Ladislas Nalborczyk </a></li>
-      collapse: none / section / subsection
+      collapse: none # section / subsection
       scroll_highlight: yes
     edit: https://github.com/lnalborczyk/phd_thesis/edit/master/%s
     search: yes
@@ -29,7 +29,10 @@ bookdown::pdf_book:
   dev: "cairo_pdf"
   toc: false # deactivates default table of contents
   highlight: pygments # code highlighting
-  pandoc_args: [ "--csl", "./csl/apa6.csl" ] # specifies the csl file to be used
+  pandoc_args: [
+    "--csl", "./csl/apa6.csl" # specifies the csl file to be used
+    #"--filter", "./assets/fix_special_characters.R" # filter out all special characters
+    ]
 
 bookdown::word_document2:
   pandoc_args: [

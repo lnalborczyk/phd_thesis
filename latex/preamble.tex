@@ -4,12 +4,12 @@
 
 %\usepackage{natbib} % using natbib to be able to use \cite* functions
 
-%\usepackage[utf8]{inputenc} % special characters with pdflatex
 %\usepackage[latin1]{inputenc} % special characters with pdflatex
+%\usepackage[utf8]{inputenc} % special characters with pdflatex
 %\inputencoding{latin1} % special characters with pdflatex
 
-%\usepackage[T1]{fontenc} % special characters with pdflatex
-%\usepackage{fontspec} % special characters with xelatex
+%\usepackage[T1]{fontenc} % special characters with xelatex
+\usepackage{fontspec} % special characters with xelatex
 
 \usepackage{pdflscape} % figures in landscape mode
 \usepackage{tikz}
@@ -35,6 +35,7 @@
 \usepackage{tabu}
 \usepackage{array}
 \usepackage[gen]{eurosym}
+\usepackage{gensymb} % for degree symbol
 \usepackage{subfig}
 \usepackage{stackrel,amssymb}
 \usepackage{textcomp}
@@ -44,8 +45,6 @@
 \usepackage[none]{hyphenat} % remove hyphenation
 
 \usepackage[a4paper]{./cover/cover_page} % specifies the path to the cover page template
-
-% \usepackage{appendix} % for appendix
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Below is the by-default configuration of bookdown-demo            %
@@ -113,8 +112,7 @@
 % apply and enforce the layout
 %\checkandfixthelayout
 
-% ensure single spacing
-\frenchspacing
+\frenchspacing % ensure single spacing
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Chapter style (taken and slightly modified from Lars Madsen Memoir Chapter) %

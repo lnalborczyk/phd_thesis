@@ -107,7 +107,9 @@ Indicating that the effect of the number of lessons on L2 speech intelligibility
 
 In this introductory section, we have presented the foundations of Bayesian analysis and multilevel modelling. Bayes' theorem allows prior knowledge about parameters to be updated according to the information conveyed by the data, while MLMs allow complex dependency structures to be modelled. We now move to a detailed case study in order to illustrate these concepts.
 
-\begin{tcolorbox}[title = Box 1. Where are my random effects ?]
+\vspace{2mm}
+
+\begin{mybox}[label = random]{Where are my random effects ?}
 
 In the Bayesian framework, every unknown quantity is considered as a random variable that we can describe using probability distributions. As a consequence, there is no such thing as a "fixed effect" or a "random effects distribution" in a Bayesian framework. However, these semantic quarrels disappear when we write down the model.
 
@@ -135,7 +137,7 @@ $$
 
 where the parameters of this prior are learned from the data. As we have seen, the same mathematical entity can be conceived either as a "random effects distribution" or as a prior distribution, depending on the framework.
 
-\end{tcolorbox}
+\end{mybox}
 
 ### Software programs
 
@@ -162,28 +164,42 @@ To illustrate the use of BMLMs, we reanalysed a dataset from @mccloy_phonetic_20
 
 Our research question was about the different amount of variability in the respective vowel productions of male and female speakers, due to cognitive or social differences. To answer this question, we first needed to get rid of the differences in vowel production that are due to physiological differences between males and females (e.g., shorter vocal tract length for females). More generally, we needed to eliminate the inter-individual differences due to physiological characteristics in our groups of participants. For that purpose, we first applied the Watt & Fabricius formant normalisation technique [@watt_evaluation_2002]. The principle of this method is to calculate for each speaker a "centre of gravity" $S$ in the F1/F2 plane, from the formant values of point vowels [i, a , u], and to express the formant values of each observation as ratios of the value of $S$ for that formant.
 
-![(\#fig:vowelplot-ref)Euclidean distances between each observation and the centres of gravity corresponding to each vowel across all participants, by gender (top row: female, bottom row: male) and by vowel (in column), in the normalised F1-F2 plane. The grey background plots represent the individual data collapsed for all individuals (male and female) and all vowels. Note that, for the sake of clarity, this figure represents a unique center of gravity for each vowel for all participants, whereas in the analysis, one center of gravity was used for each vowel and each participant.](91-appendix_brms_files/figure-docx/vowelplot-ref-1.pdf)
+\begin{figure}[H]
+
+{\centering \includegraphics[width=1\linewidth]{91-appendix_brms_files/figure-latex/vowelplot-ref-1} 
+
+}
+
+\caption{Euclidean distances between each observation and the centres of gravity corresponding to each vowel across all participants, by gender (top row: female, bottom row: male) and by vowel (in column), in the normalised F1-F2 plane. The grey background plots represent the individual data collapsed for all individuals (male and female) and all vowels. Note that, for the sake of clarity, this figure represents a unique center of gravity for each vowel for all participants, whereas in the analysis, one center of gravity was used for each vowel and each participant.}(\#fig:vowelplot-ref)
+\end{figure}
 
 Then, for each vowel and participant, we computed the Euclidean distance between each observation and the centre of gravity of the whole set of observations in the F1-F2 plane for that participant and that vowel. The data obtained by this process are illustrated in Figure \@ref(fig:vowelplot-ref), and a sample of the final dataset can be found in Table \@ref(tab:datavis).
 
-<caption>(\#tab:datavis)</caption>
-
-<caption>*Ten randomly picked rows from the data.*</caption>
-
-
-
- subj    gender    vowel    f1      f2     f1norm    f2norm    distance    repetition 
-------  --------  -------  -----  ------  --------  --------  ----------  ------------
- M04       m        /a/     608    1285    1.444     0.851      0.132          12     
- F02       f        /o/     832    1132    1.522     0.608      0.283          21     
- M03       m        /u/     430    1198    1.032     0.800      0.250          10     
- M04       m        /u/     395    1307    0.938     0.865      0.286          15     
- M03       m        /o/     467    1014    1.121     0.677      0.146          11     
- F04       f        /i/     338    2576    0.625     1.465      0.141          3      
- M04       m        /i/     274    2292    0.651     1.517      0.175          34     
- F09       f        /e/     654    1772    1.318     1.068      0.247          22     
- F04       f        /o/     657    1146    1.215     0.652      0.066          42     
- M02       m        /i/     331    2374    0.708     1.532      0.113          5      
+\begin{table}[H]
+\begin{center}
+\begin{threeparttable}
+\caption{\label{tab:datavis}Ten randomly picked rows from the data.}
+\small{
+\begin{tabular}{ccccccccc}
+\toprule
+subj & \multicolumn{1}{c}{gender} & \multicolumn{1}{c}{vowel} & \multicolumn{1}{c}{f1} & \multicolumn{1}{c}{f2} & \multicolumn{1}{c}{f1norm} & \multicolumn{1}{c}{f2norm} & \multicolumn{1}{c}{distance} & \multicolumn{1}{c}{repetition}\\
+\midrule
+F08 & f & /a/ & 985 & 1509 & 1.758 & 0.840 & 0.226 & 11\\
+M02 & m & /o/ & 459 & 906 & 0.982 & 0.585 & 0.230 & 2\\
+F04 & f & /a/ & 944 & 1598 & 1.745 & 0.909 & 0.272 & 40\\
+F08 & f & /o/ & 725 & 1077 & 1.294 & 0.600 & 0.194 & 28\\
+M04 & m & /u/ & 395 & 1307 & 0.938 & 0.865 & 0.286 & 15\\
+M02 & m & /a/ & 489 & 1485 & 1.046 & 0.959 & 0.430 & 8\\
+M02 & m & /u/ & 374 & 947 & 0.800 & 0.611 & 0.064 & 2\\
+F09 & f & /e/ & 422 & 2223 & 0.851 & 1.339 & 0.302 & 4\\
+F04 & f & /u/ & 461 & 677 & 0.852 & 0.385 & 0.156 & 7\\
+M04 & m & /i/ & 303 & 2241 & 0.720 & 1.483 & 0.101 & 20\\
+\bottomrule
+\end{tabular}
+}
+\end{threeparttable}
+\end{center}
+\end{table}
 
 ### Constant effect of gender on vowel production variability
 
@@ -203,7 +219,14 @@ $$
 
 where the first two lines of the model describe the likelihood and the linear model^[Note that --for the sake of simplicity-- throughout this tutorial we use a Normal likelihood, but other (better) alternatives would include using skew-normal or log-normal models, which are implemented in `brms` with the `skew_normal` and `lognormal` families. We provide examples in the [supplementary materials](#suppApp).]. The next three lines define the prior distribution for each parameter of the model, where $\alpha$ and $\beta$ are given a vague (weakly informative) Gaussian prior centered on $0$, and the residual variation is given a Half-Cauchy prior [@gelman_prior_2006;@polson_half-cauchy_2012], thus restricting the range of possible values to positive ones. As depicted in Figure \@ref(fig:priorsbmod1), the $\mathrm{Normal}(0,10)$ prior is weakly informative in the sense that it grants a relative high weight to $\alpha$ and $\beta$ values, between -25 and 25. This corresponds to very large (given the scale of our data) values for, respectively, the mean distance value $\alpha$, and the mean difference between males and females $\beta$. The $\mathrm{HalfCauchy}(10)$ prior placed on $\sigma_{e}$ also allows very large values of $\sigma_{e}$, as represented in the right panel of Figure \@ref(fig:priorsbmod1).
 
-![(\#fig:priorsbmod1)Prior distributions used in the first model, for $\alpha$ and $\beta$ (left panel) and for the residual variation $\sigma_{e}$ (right panel).](91-appendix_brms_files/figure-docx/priorsbmod1-1.pdf)
+\begin{figure}[H]
+
+{\centering \includegraphics[width=1\linewidth]{91-appendix_brms_files/figure-latex/priorsbmod1-1} 
+
+}
+
+\caption{Prior distributions used in the first model, for $\alpha$ and $\beta$ (left panel) and for the residual variation $\sigma_{e}$ (right panel).}(\#fig:priorsbmod1)
+\end{figure}
 
 These priors can be specified in numerous ways (see `?set_prior` for more details), among which the following:
 
@@ -251,22 +274,36 @@ bmod1 %>%
         )
 ```
 
-![(\#fig:plotbmod1)Histograms of posterior samples and trace plots of the intercept, the slope for gender and the standard deviation of the residuals of the constant effects model.](91-appendix_brms_files/figure-docx/plotbmod1-1.pdf)
+\begin{figure}[H]
 
-The estimations obtained for this first model are summarised in Table \@ref(tab:sumbmod1), which includes the mean, the standard error (SE), and the lower and upper bounds of the 95% credible interval (CrI)^[Where a credible interval is the Bayesian analogue of a classical confidence interval, except that probability statements can be made based upon it (e.g., "given the data and our prior assumptions, there is a 0.95 probability that this interval encompasses the population value $\theta$").] of the posterior distribution for each parameter. As `gender` was contrast-coded before the analysis (f = -0.5, m = 0.5), the intercept $\alpha$ corresponds to the grand mean of the formant distance over all participants and has its mean around 0.1633088. The estimate of the slope ($\beta =$ -0.0422485) suggests that females are more variable than males in the way they pronounce vowels, while the 95% CrI can be interpreted in a way that there is a $0.95$ probability that the value of the intercept lies in the [-0.0513305, -0.0329269] interval.
+{\centering \includegraphics[width=1\linewidth]{91-appendix_brms_files/figure-latex/plotbmod1-1} 
 
-<caption>(\#tab:sumbmod1)</caption>
+}
 
-<caption>*Posterior mean, standard error, 95\% credible interval and $\hat{R}$
-    statistic for each parameter of the constant effect model bmod1.*</caption>
+\caption{Histograms of posterior samples and trace plots of the intercept, the slope for gender and the standard deviation of the residuals of the constant effects model.}(\#fig:plotbmod1)
+\end{figure}
 
+The estimations obtained for this first model are summarised in Table \@ref(tab:sumbmod1), which includes the mean, the standard error (SE), and the lower and upper bounds of the 95% credible interval (CrI)^[Where a credible interval is the Bayesian analogue of a classical confidence interval, except that probability statements can be made based upon it (e.g., "given the data and our prior assumptions, there is a 0.95 probability that this interval encompasses the population value $\theta$").] of the posterior distribution for each parameter. As `gender` was contrast-coded before the analysis (f = -0.5, m = 0.5), the intercept $\alpha$ corresponds to the grand mean of the formant distance over all participants and has its mean around 0.1633377. The estimate of the slope ($\beta =$ -0.0422273) suggests that females are more variable than males in the way they pronounce vowels, while the 95% CrI can be interpreted in a way that there is a $0.95$ probability that the value of the intercept lies in the [-0.0513364, -0.0330469] interval.
 
-
-  parameter       mean      SE      lower bound    upper bound    Rhat  
---------------  --------  -------  -------------  -------------  -------
-   $\alpha$      0.163     0.002       0.159          0.168       1.000 
-   $\beta$       -0.042    0.005      -0.051         -0.033       1.000 
- $\sigma_{e}$    0.098     0.002       0.095          0.102       1.001 
+\begin{table}[H]
+\begin{center}
+\begin{threeparttable}
+\caption{\label{tab:sumbmod1}Posterior mean, standard error, 95\% credible interval and $\hat{R}$
+    statistic for each parameter of the constant effect model bmod1.}
+\small{
+\begin{tabular}{cccccc}
+\toprule
+parameter & \multicolumn{1}{c}{mean} & \multicolumn{1}{c}{SE} & \multicolumn{1}{c}{lower bound} & \multicolumn{1}{c}{upper bound} & \multicolumn{1}{c}{Rhat}\\
+\midrule
+$\alpha$ & 0.163 & 0.002 & 0.159 & 0.168 & 1.000\\
+$\beta$ & -0.042 & 0.005 & -0.051 & -0.033 & 1.000\\
+$\sigma_{e}$ & 0.098 & 0.002 & 0.095 & 0.102 & 1.000\\
+\bottomrule
+\end{tabular}
+}
+\end{threeparttable}
+\end{center}
+\end{table}
 
 The `Rhat` value corresponds to the *potential scale reduction factor* $\hat{R}$ [@gelman_inference_1992], that provides information about the convergence of the algorithm. This index can be conceived as equivalent to the F-ratio in ANOVA. It compares the between-chains variability (i.e., the extent to which different chains differ one from each other) to the within-chain variability (i.e., how widely a chain explores the parameter space), and, as such, gives an index of the convergence of the chains. An overly large between-chains variance (as compared to the within-chain variability) would be a sign that chain-specific characteristics, like the starting value of the algorithm, have a strong influence on the final result. Ideally, the value of `Rhat` should be close to 1, and should not exceed 1.1. Otherwise, one might consider running more iterations or defining stronger priors [@R-brms;@gelman_bayesian_2013].
 
@@ -315,21 +352,37 @@ As described in the first part of the present paper, we now have two sources of 
 
 Figure \@ref(fig:ranefplotbmod2) shows the posterior distribution as estimated by this second model for each participant, in relation to the raw mean of its category (i.e., females or males), represented by the vertical dashed lines. We can see for instance that participants `M02` and `F09` have smaller average distance than the means of their groups, while participants `M03` and `F08` have larger ones. The arrows represent the amount of *shrinkage*, that is, the deviation between the mean in the raw data (represented by a cross underneath each density) and the estimated mean of the posterior distribution (represented by the peak of the arrow). As shown in Figure \@ref(fig:ranefplotbmod2), this *shrinkage* is always directed toward the mean of the considered group (i.e., females or males) and the amount of *shrinkage* is determined by the deviation of the individual mean from its group mean. This mechanism acts like a safeguard against overfitting, preventing the model from overly trusting each individual datum.
 
-![(\#fig:ranefplotbmod2)Posterior distributions by subject, as estimated by the `bmod2` model. The vertical dashed lines represent the means of the formant distances for the female and male groups. Crosses represent the mean of the raw data, for each participant. Arrows represent the amount of shrinkage, between the raw mean and the estimation of the model (the mean of the posterior distribution).](91-appendix_brms_files/figure-docx/ranefplotbmod2-1.pdf)
+\begin{figure}[H]
+
+{\centering \includegraphics[width=1\linewidth]{91-appendix_brms_files/figure-latex/ranefplotbmod2-1} 
+
+}
+
+\caption{Posterior distributions by subject, as estimated by the `bmod2` model. The vertical dashed lines represent the means of the formant distances for the female and male groups. Crosses represent the mean of the raw data, for each participant. Arrows represent the amount of shrinkage, between the raw mean and the estimation of the model (the mean of the posterior distribution).}(\#fig:ranefplotbmod2)
+\end{figure}
 
 The marginal posterior distribution of each parameter obtained with `bmod2` is summarised in Table \@ref(tab:sumbmod2), where the `Rhat` values close to $1$ suggest that the model has converged. We see that the estimates of $\alpha$ and $\beta$ are similar to the estimates of the first model, except that the SE is now slightly larger. This result might seem surprising at first sight, as we expected to improve the first model by adding a by-subject varying intercept. In fact, it reveals an underestimation of the SE when using the first model. Indeed, the first model assumes independence of observations, which is violated in our case. This highlights the general need for careful consideration of the model's assumptions when interpreting its estimations. The first model seemingly gives highly certain estimates, but these estimations are only valid in the "independence of observations" world [see also the distinction between the *small world* and the *large world* in @mcelreath_statistical_2016]. Moreover, estimating an intercept by subject (as in the second model) increases the precision of estimation, but it also makes the average estimation less certain, thus resulting in a larger SE.
 
-<caption>(\#tab:sumbmod2)</caption>
-
-<caption>*Posterior mean, standard error, 95\% credible interval and $\hat{R}$
-    statistic for each parameter of model bmod2 with a varying intercept by subject.*</caption>
-
-     parameter          mean      SE      lower bound    upper bound    Rhat  
---------------------  --------  -------  -------------  -------------  -------
-      $\alpha$         0.163     0.007       0.149          0.176       1.001 
-      $\beta$          -0.042    0.013      -0.069         -0.016       1.000 
- $\sigma_{subject}$    0.016     0.008       0.006          0.036       1.001 
-    $\sigma_{e}$       0.098     0.002       0.095          0.101       1.000 
+\begin{table}[H]
+\begin{center}
+\begin{threeparttable}
+\caption{\label{tab:sumbmod2}Posterior mean, standard error, 95\% credible interval and $\hat{R}$
+    statistic for each parameter of model bmod2 with a varying intercept by subject.}
+\small{
+\begin{tabular}{cccccc}
+\toprule
+parameter & \multicolumn{1}{c}{mean} & \multicolumn{1}{c}{SE} & \multicolumn{1}{c}{lower bound} & \multicolumn{1}{c}{upper bound} & \multicolumn{1}{c}{Rhat}\\
+\midrule
+$\alpha$ & 0.163 & 0.007 & 0.150 & 0.176 & 1.000\\
+$\beta$ & -0.042 & 0.013 & -0.069 & -0.016 & 1.000\\
+$\sigma_{subject}$ & 0.016 & 0.008 & 0.006 & 0.035 & 1.000\\
+$\sigma_{e}$ & 0.098 & 0.002 & 0.095 & 0.101 & 1.000\\
+\bottomrule
+\end{tabular}
+}
+\end{threeparttable}
+\end{center}
+\end{table}
 
 This model (`bmod2`), however, is still not adequate to describe the data, as the dependency between repetitions of each vowel is not taken into account. In `bmod3`, we added a by-vowel varying intercept, thus also allowing each vowel to have a different general level of variability.
 
@@ -372,20 +425,29 @@ bmod3 <- brm(
 
 where the same Half-Cauchy is specified for the two varying intercepts, by applying it directly to the `sd` class.
 
-<caption>(\#tab:sumbmod3)</caption>
+\begin{table}[H]
+\begin{center}
+\begin{threeparttable}
+\caption{\label{tab:sumbmod3}Posterior mean, standard error, 95\% credible interval and $\hat{R}$
+    statistic for each parameter of model bmod3 with a varying intercept by subject and by vowel.}
+\small{
+\begin{tabular}{cccccc}
+\toprule
+parameter & \multicolumn{1}{c}{mean} & \multicolumn{1}{c}{SE} & \multicolumn{1}{c}{lower bound} & \multicolumn{1}{c}{upper bound} & \multicolumn{1}{c}{Rhat}\\
+\midrule
+$\alpha$ & 0.164 & 0.041 & 0.087 & 0.246 & 1.000\\
+$\beta$ & -0.042 & 0.014 & -0.069 & -0.015 & 1.000\\
+$\sigma_{subject}$ & 0.016 & 0.008 & 0.007 & 0.036 & 1.001\\
+$\sigma_{vowel}$ & 0.075 & 0.051 & 0.031 & 0.200 & 1.002\\
+$\sigma_{e}$ & 0.088 & 0.002 & 0.085 & 0.091 & 1.000\\
+\bottomrule
+\end{tabular}
+}
+\end{threeparttable}
+\end{center}
+\end{table}
 
-<caption>*Posterior mean, standard error, 95\% credible interval and $\hat{R}$
-    statistic for each parameter of model bmod3 with a varying intercept by subject and by vowel.*</caption>
-
-     parameter          mean      SE      lower bound    upper bound    Rhat  
---------------------  --------  -------  -------------  -------------  -------
-      $\alpha$         0.164     0.039       0.086          0.241       1.001 
-      $\beta$          -0.042    0.013      -0.068         -0.014       1.001 
- $\sigma_{subject}$    0.016     0.008       0.007          0.036       1.001 
-  $\sigma_{vowel}$     0.076     0.048       0.031          0.197       1.000 
-    $\sigma_{e}$       0.088     0.002       0.085          0.091       1.000 
-
-The marginal posterior distribution of each parameter is summarised in Table \@ref(tab:sumbmod3). We can compute the intra-class correlation (ICC, see section \@ref(MLM)) to estimate the relative variability associated with each varying effect: $ICC_{subject}$ is equal to 0.0336199 and $ICC_{vowel}$ is equal to 0.4246206. The rather high ICC for vowels suggests that observations are highly correlated within each vowel, thus stressing the relevance of allocating a unique intercept by vowel^[But please note that we do not mean to suggest that the varying intercept for subjects should be removed because its ICC is low.].
+The marginal posterior distribution of each parameter is summarised in Table \@ref(tab:sumbmod3). We can compute the intra-class correlation (ICC, see section \@ref(MLM)) to estimate the relative variability associated with each varying effect: $ICC_{subject}$ is equal to 0.0339265 and $ICC_{vowel}$ is equal to 0.4232396. The rather high ICC for vowels suggests that observations are highly correlated within each vowel, thus stressing the relevance of allocating a unique intercept by vowel^[But please note that we do not mean to suggest that the varying intercept for subjects should be removed because its ICC is low.].
 
 ### Including a correlation between varying intercept and varying slope
 
@@ -420,7 +482,14 @@ $$
 
 where $\textbf{R}$ is the correlation matrix $\textbf{R} = \begin{pmatrix} 1 & \rho \\ \rho & 1 \end{pmatrix}$ and $\rho$ is the correlation between intercepts and slopes, used in the computation of $\textbf{S}$. This matrix is given the LKJ-Correlation prior [@lewandowski_generating_2009] with a parameter $\zeta$ (zeta) that controls the strength of the correlation^[The LKJ prior is the default prior for correlation matrices in `brms`.]. When $\zeta = 1$, the prior distribution on the correlation is uniform between $-1$ and $1$. When $\zeta > 1$, the prior distribution is peaked around a zero correlation, while lower values of $\zeta$ ($0 < \zeta < 1$) allocate more weight to extreme values (i.e., close to -1 and 1) of $\rho$ (see Figure \@ref(fig:lkj)).
 
-![(\#fig:lkj)Visualisation of the LKJ prior for different values of the shape parameter $\zeta$.](91-appendix_brms_files/figure-docx/lkj-1.pdf)
+\begin{figure}[H]
+
+{\centering \includegraphics[width=1\linewidth]{91-appendix_brms_files/figure-latex/lkj-1} 
+
+}
+
+\caption{Visualisation of the LKJ prior for different values of the shape parameter $\zeta$.}(\#fig:lkj)
+\end{figure}
 
 
 ```r
@@ -444,26 +513,42 @@ bmod4 <- brm(
 
 Estimates of this model are summarised in Table \@ref(tab:sumbmod4). This summary reveals a negative correlation between the intercepts and slopes for vowels, meaning that vowels with a large "baseline level of variability" (i.e., with a large average `distance` value) tend to be pronounced with more variability by females than by males. However, we notice that this model's estimation of $\beta$ is even more uncertain than that of the previous models, as shown by the associated standard error and the width of the credible interval.
 
-<caption>(\#tab:sumbmod4)</caption>
-
-<caption>*Posterior mean, standard error, 95\% credible interval and $\hat{R}$
-    statistic for each parameter of model bmod4 with a varying intercept and varying slope by vowel.*</caption>
-
-         parameter             mean      SE      lower bound    upper bound    Rhat  
----------------------------  --------  -------  -------------  -------------  -------
-         $\alpha$             0.163     0.036       0.096          0.234       1.000 
-          $\beta$             -0.042    0.032      -0.103          0.020       1.000 
-    $\sigma_{subject}$        0.017     0.008       0.007          0.037       1.000 
- $\sigma_{\alpha_{vowel}}$    0.067     0.041       0.030          0.173       1.001 
- $\sigma_{\beta_{vowel}}$     0.054     0.035       0.022          0.142       1.001 
-          $\rho$              -0.489    0.362      -0.948          0.384       1.000 
-       $\sigma_{e}$           0.086     0.001       0.084          0.089       1.000 
+\begin{table}[H]
+\begin{center}
+\begin{threeparttable}
+\caption{\label{tab:sumbmod4}Posterior mean, standard error, 95\% credible interval and $\hat{R}$
+    statistic for each parameter of model bmod4 with a varying intercept and varying slope by vowel.}
+\small{
+\begin{tabular}{cccccc}
+\toprule
+parameter & \multicolumn{1}{c}{mean} & \multicolumn{1}{c}{SE} & \multicolumn{1}{c}{lower bound} & \multicolumn{1}{c}{upper bound} & \multicolumn{1}{c}{Rhat}\\
+\midrule
+$\alpha$ & 0.163 & 0.034 & 0.094 & 0.231 & 1.000\\
+$\beta$ & -0.042 & 0.031 & -0.101 & 0.018 & 1.000\\
+$\sigma_{subject}$ & 0.016 & 0.008 & 0.007 & 0.036 & 1.000\\
+$\sigma_{\alpha_{vowel}}$ & 0.067 & 0.041 & 0.029 & 0.165 & 1.000\\
+$\sigma_{\beta_{vowel}}$ & 0.053 & 0.034 & 0.022 & 0.139 & 1.000\\
+$\rho$ & -0.494 & 0.354 & -0.952 & 0.366 & 1.000\\
+$\sigma_{e}$ & 0.086 & 0.001 & 0.084 & 0.089 & 1.000\\
+\bottomrule
+\end{tabular}
+}
+\end{threeparttable}
+\end{center}
+\end{table}
 
 Figure \@ref(fig:shrinkageplot) illustrates the negative correlation between the by-vowel intercepts and the by-vowel slopes, meaning that vowels that tend to have higher "baseline variability" (i.e., /e/, /o/, /a/), tend to show a stronger effect of `gender`. This figure also illustrates the amount of shrinkage, here in the parameter space. We can see that the *partial pooling* estimate is shrunk somewhere between the *no pooling* estimate and the *complete pooling* estimate (i.e., the grand mean). This illustrates again the mechanism by which MLMs balance the risk of overfitting and underfitting [@mcelreath_statistical_2016].
 
 
 
-![(\#fig:shrinkageplot)Shrinkage of estimates in the parameter space, due to the pooling of information between clusters (based on the `bmod4` model). The ellipses represent the contours of the bivariate distribution, at different degrees of confidence 0.1, 0.3, 0.5 and 0.7.](91-appendix_brms_files/figure-docx/shrinkageplot-1.pdf)
+\begin{figure}[H]
+
+{\centering \includegraphics[width=1\linewidth]{91-appendix_brms_files/figure-latex/shrinkageplot-1} 
+
+}
+
+\caption{Shrinkage of estimates in the parameter space, due to the pooling of information between clusters (based on the `bmod4` model). The ellipses represent the contours of the bivariate distribution, at different degrees of confidence 0.1, 0.3, 0.5 and 0.7.}(\#fig:shrinkageplot)
+\end{figure}
 
 ### Varying intercept and varying slope model, interaction between subject and vowel
 
@@ -523,22 +608,31 @@ bmod5 <- brm(
 
 Estimates of this model are summarised in Table \@ref(tab:sumbmod5). From this table, we first notice that the more varying effects we add, the more the model is uncertain about the estimation of $\alpha$ and $\beta$, which can be explained in the same way as in section 2.2. Second, we see the opposite pattern for $\sigma_{e}$, the residuals standard deviation, which has decreased by a considerable amount compared to the first model, indicating a better fit.
 
-<caption>(\#tab:sumbmod5)</caption>
-
-<caption>*Posterior mean, standard error, 95\% credible interval and $\hat{R}$
+\begin{table}[H]
+\begin{center}
+\begin{threeparttable}
+\caption{\label{tab:sumbmod5}Posterior mean, standard error, 95\% credible interval and $\hat{R}$
     statistic for each parameter of model bmod5 with a varying intercept and a
-    varying slope by vowel and a varying intercept for the interaction between subject and vowel.*</caption>
-
-         parameter             mean      SE      lower bound    upper bound    Rhat  
----------------------------  --------  -------  -------------  -------------  -------
-         $\alpha$             0.164     0.038       0.093          0.237       1.000 
-          $\beta$             -0.042    0.030      -0.100          0.017       1.000 
-    $\sigma_{subject}$        0.012     0.009       0.001          0.033       1.001 
- $\sigma_{subject:vowel}$     0.024     0.004       0.016          0.034       1.000 
- $\sigma_{\alpha_{vowel}}$    0.069     0.045       0.028          0.185       1.000 
- $\sigma_{\beta_{vowel}}$     0.050     0.035       0.013          0.137       1.000 
-          $\rho$              -0.427    0.377      -0.941          0.430       1.000 
-       $\sigma_{e}$           0.085     0.001       0.082          0.088       1.000 
+    varying slope by vowel and a varying intercept for the interaction between subject and vowel.}
+\small{
+\begin{tabular}{cccccc}
+\toprule
+parameter & \multicolumn{1}{c}{mean} & \multicolumn{1}{c}{SE} & \multicolumn{1}{c}{lower bound} & \multicolumn{1}{c}{upper bound} & \multicolumn{1}{c}{Rhat}\\
+\midrule
+$\alpha$ & 0.164 & 0.038 & 0.094 & 0.240 & 1.000\\
+$\beta$ & -0.043 & 0.033 & -0.104 & 0.018 & 1.001\\
+$\sigma_{subject}$ & 0.012 & 0.009 & 0.001 & 0.033 & 1.000\\
+$\sigma_{subject:vowel}$ & 0.024 & 0.004 & 0.016 & 0.034 & 1.002\\
+$\sigma_{\alpha_{vowel}}$ & 0.069 & 0.044 & 0.029 & 0.180 & 1.001\\
+$\sigma_{\beta_{vowel}}$ & 0.051 & 0.038 & 0.013 & 0.144 & 1.000\\
+$\rho$ & -0.424 & 0.383 & -0.945 & 0.473 & 1.000\\
+$\sigma_{e}$ & 0.085 & 0.001 & 0.082 & 0.088 & 1.000\\
+\bottomrule
+\end{tabular}
+}
+\end{threeparttable}
+\end{center}
+\end{table}
 
 ## Model comparison
 
@@ -546,7 +640,26 @@ Once we have built a set of models, we need to know which model is the more accu
 
 Both WAIC and LOO-CV indexes are easily computed in `brms` with the `WAIC` and the `LOO` functions, where $n$ models can be compared with the following call: `LOO(model1, model2, ..., modeln)`. These functions also provide an estimate of the uncertainty associated with these indexes (in the form of a SE), as well as a difference score $\Delta \text{LOOIC}$, which is computed by taking the difference between each pair of information criteria. The `WAIC` and the `LOO` functions also provide a SE for these delta values ($\Delta \text{SE}$). A comparison of the five models we fitted can be found in Table \@ref(tab:modelcomparison).
 
-
+\begin{table}[H]
+\begin{center}
+\begin{threeparttable}
+\caption{\label{tab:modelcomparison}Model comparison with LOOIC.}
+\small{
+\begin{tabular}{ccccr}
+\toprule
+Model & \multicolumn{1}{c}{LOOIC} & \multicolumn{1}{c}{SE} & \multicolumn{1}{c}{$\Delta$LOOIC} & \multicolumn{1}{c}{right side of the formula}\\
+\midrule
+bmod5 & -3590.81 & 68.14 & 0.00 & gender + (1 | subj) + (1 + gender | vowel) + (1 | subj:vowel)\\
+bmod4 & -3536.69 & 66.92 & 54.12 & gender + (1 | subj) + (1 + gender | vowel)\\
+bmod3 & -3477.13 & 67.17 & 113.68 & gender + (1 | subj) + (1 | vowel)\\
+bmod2 & -3114.21 & 65.25 & 476.60 & gender + (1 | subj)\\
+bmod1 & -3100.99 & 66.74 & 489.83 & gender\\
+\bottomrule
+\end{tabular}
+}
+\end{threeparttable}
+\end{center}
+\end{table}
 
 We see from Table \@ref(tab:modelcomparison) that `bmod5` (i.e., the last model) is performing much better than the other models, as it has the lower LOOIC. We then based our conclusions (see last section) on the estimations of this model. We also notice that each addition to the initial model brought improvement in terms of predictive accuracy, as the set of models is ordered from the first to the last model. This should not be taken as a general rule though, as successive additions made to an original model could also lead to *overfitting*, corresponding to a situation in which the model is over-specified in regards to the data, which makes the model good to explain the data at hand, but very bad to predict non-observed data. In such cases, information criteria and indexes that rely exclusively on goodness-of-fit (such as $R^{2}$) would point to different conclusions.
 
@@ -566,7 +679,14 @@ Densities represent the posterior distribution as estimated by `brms` along with
 
 
 
-![(\#fig:compestim)Comparison of estimations from `brms` and `lme4`. Dots represent means of posterior distribution along with 95\% CrIs, as estimated by the `bmod5` model. Crosses represent estimations of `lme4` along with bootstrapped 95\% CIs.](91-appendix_brms_files/figure-docx/compestim-1.pdf)
+\begin{figure}[H]
+
+{\centering \includegraphics[width=1\linewidth]{91-appendix_brms_files/figure-latex/compestim-1} 
+
+}
+
+\caption{Comparison of estimations from `brms` and `lme4`. Dots represent means of posterior distribution along with 95\% CrIs, as estimated by the `bmod5` model. Crosses represent estimations of `lme4` along with bootstrapped 95\% CIs.}(\#fig:compestim)
+\end{figure}
 
 We can see that the estimations of `brms` and `lme4` are for the most part very similar. The differences we observe for $\sigma_{\alpha_{vowel}}$ and $\sigma_{\beta_{vowel}}$ might be explained by the skewness of the posterior distribution. Indeed, in these cases (i.e., when the distribution is not symmetric), the mode of the distribution would better coincide with the `lme4` estimate. This figure also illustrates a limitation of frequentist MLMs that we discussed in the first part of the current paper. If we look closely at the estimates of `lme4`, we can notice that the MLE for the correlation $\rho$ is at its boundary, as $\rho = -1$. This might be interpreted in (at least) two ways. The first interpretation is what @eager_mixed_2017 call the *parsimonious convergence hypothesis* (PCH) and consists in saying that this aberrant estimation is caused by the over-specification of the random structure [e.g.,@bates_parsimonious_2015]. In other words, this would correspond to a model that contains too many varying effects to be "supported" by a certain dataset (but this does not mean that with more data, this model would not be a correct model). However, the PCH has been questioned by @eager_mixed_2017, who have shown that under conditions of unbalanced datasets, non-linear models fitted with `lme4` provided more prediction errors than Bayesian models fitted with `Stan`. The second interpretation considers failures of convergence as a problem of frequentist MLMs *per se*, which is resolved in the Bayesian framework by using weakly informative priors (i.e., the LKJ prior) for the correlation between varying effects [e.g.,@eager_mixed_2017;@nicenboim_statistical_2016], and by using the full posterior for inference.
 
@@ -574,11 +694,18 @@ One feature of the Bayesian MLM in this kind of situation is to provide an estim
 
 ## Inference and conclusions
 
-Regarding our initial question, which was to know whether there is a gender effect on vowel production variability in standard Indonesian, we can base our conclusions on several parameters and indices. However, the discrepancies between the different models we fitted deserve some discussion first. As already pointed out previously, if we had based our conclusions on the results of the first model (i.e., the model with constant effects only), we would have confidently concluded on a positive effect of gender. However, when we included the appropriate error terms in the model to account for repeated measurements by subject and by vowel, as well as for the by-vowel specific effect of gender, the large variability of this effect among vowels lead the model to adjust its estimation of $\beta$, resulting in more uncertainty about it. The last model then estimated a value of $\beta =$ -0.0419857 with quite a large uncertainty ($95 \% \ \text{CrI} =$ [-0.1004022, 0.0168433]), and considering $0$ as well as some positive values as credible. This result alone makes it difficult to reach any definitive conclusion concerning the presence or absence of a gender effect on the variability of vowels pronunciation in Indonesian, and should be considered (at best) as suggestive.
+Regarding our initial question, which was to know whether there is a gender effect on vowel production variability in standard Indonesian, we can base our conclusions on several parameters and indices. However, the discrepancies between the different models we fitted deserve some discussion first. As already pointed out previously, if we had based our conclusions on the results of the first model (i.e., the model with constant effects only), we would have confidently concluded on a positive effect of gender. However, when we included the appropriate error terms in the model to account for repeated measurements by subject and by vowel, as well as for the by-vowel specific effect of gender, the large variability of this effect among vowels lead the model to adjust its estimation of $\beta$, resulting in more uncertainty about it. The last model then estimated a value of $\beta =$ -0.043 with quite a large uncertainty ($95 \% \ \text{CrI} =$ [-0.104, 0.018]), and considering $0$ as well as some positive values as credible. This result alone makes it difficult to reach any definitive conclusion concerning the presence or absence of a gender effect on the variability of vowels pronunciation in Indonesian, and should be considered (at best) as suggestive.
 
-Nevertheless, it is useful to recall that in the Bayesian framework, the results of our analysis is a (posterior) probability distribution which can be, as such, summarised in multiple ways. This distribution is plotted in Figure \@ref(fig:postsamples), which also shows the mean and the 95% CrI, as well as the proportion of the distribution below and above a particular value^[We compare the distribution with $0$ here, but it should be noted that this comparison could be made with whatever value.]. This figure reveals that $94.1\%$ of the distribution is below $0$, which can be interpreted as suggesting that there is a $0.94$ probability that males have a lower mean formant distance than females (recall that female was coded as -0.5 and male as 0.5), given the data at hand, and the model.
+Nevertheless, it is useful to recall that in the Bayesian framework, the results of our analysis is a (posterior) probability distribution which can be, as such, summarised in multiple ways. This distribution is plotted in Figure \@ref(fig:postsamples), which also shows the mean and the 95% CrI, as well as the proportion of the distribution below and above a particular value^[We compare the distribution with $0$ here, but it should be noted that this comparison could be made with whatever value.]. This figure reveals that around $94\%$ of the distribution is below $0$, which can be interpreted as suggesting that there is a $0.94$ probability that males have a lower mean formant distance than females (recall that female was coded as -0.5 and male as 0.5), given the data at hand, and the model.
 
-![(\#fig:postsamples)Histogram of posterior samples of the slope for gender, as estimated by the last model.](91-appendix_brms_files/figure-docx/postsamples-1.pdf)
+\begin{figure}[H]
+
+{\centering \includegraphics[width=1\linewidth]{91-appendix_brms_files/figure-latex/postsamples-1} 
+
+}
+
+\caption{Histogram of posterior samples of the slope for gender, as estimated by the last model.}(\#fig:postsamples)
+\end{figure}
 
 This quantity can be easily computed from the posterior samples:
 
@@ -589,7 +716,7 @@ mean(post$b_gender < 0) # computing p(beta<0)
 ```
 
 ```
-## [1] 0.940125
+## [1] 0.9398125
 ```
 
 Of course, this estimate can (and should) be refined using more data from several experiments, with more speakers. In this line, it should be pointed out that `brms` can easily be used to extend the multilevel strategy to meta-analyses [e.g.,@burkner_intranasal_2017;@williams_effects_2017]. Its flexibility makes it possible to fit multilevel hierarchical Bayesian models at two, three, or more levels, enabling researchers to model the heterogeneity between studies as well as dependencies between experiments of the same study, or between studies carried out by the same research team. Such a modelling strategy is usually equivalent to the ordinary frequentist random-effect meta-analysis models, while offering all the benefits inherent to the Bayesian approach.
@@ -604,7 +731,9 @@ $$
 
 However, as the total variance is partitioned into multiple sources of variation in MLMs, there is no unique way of computing a standardised effect size. While several approaches have been suggested (e.g., dividing the mean difference by the standard deviation of the residuals), the more consensual one involves taking into account all of the variance sources of the model [@hedges_effect_2007]. One such index is called the $\delta_{t}$ (where the $t$ stands for "total"), and is given by the estimated difference between group means, divided by the square root of the sum of all variance components:
 
-$$\delta_{t} = \frac{\beta}{\sqrt{\sigma_{subject}^{2} + \sigma_{subject:vowel}^{2} + \sigma_{\alpha_{vowel}}^{2} + \sigma_{\beta_{vowel}}^{2} + \sigma^{2}}}$$
+$$
+\delta_{t} = \frac{\beta}{\sqrt{\sigma_{subject}^{2} + \sigma_{subject:vowel}^{2} + \sigma_{\alpha_{vowel}}^{2} + \sigma_{\beta_{vowel}}^{2} + \sigma^{2}}}
+$$
 
 \vspace{5mm}
 
@@ -624,7 +753,14 @@ delta_t <-
 
 This distribution is plotted in Figure \@ref(fig:postdhist), and reveals the large uncertainty associated with the estimation of $\delta_{t}$.
 
-![(\#fig:postdhist)Posterior distribution of $\delta_{t}$.](91-appendix_brms_files/figure-docx/postdhist-1.pdf)
+\begin{figure}[H]
+
+{\centering \includegraphics[width=1\linewidth]{91-appendix_brms_files/figure-latex/postdhist-1} 
+
+}
+
+\caption{Posterior distribution of $\delta_{t}$.}(\#fig:postdhist)
+\end{figure}
 
 In the same fashion, undirected effect sizes (e.g., $R^{2}$) can be computed directly from the posterior samples, or included in the model specification as a parameter of the model, in a way that at each iteration of the MCMC, a value of the effect size is sampled, resulting in an estimation of its full posterior distribution [see for instance @gelman_bayesian_2006 for measures of explained variance in MLMs and @marsman_bayesian_2019 for calculations in ANOVA designs]. A Bayesian version of the $R^{2}$ is also available in `brms` using the `bayes_R2` method, for which the calculations are based on @gelman_r-squared_2018.
 
@@ -634,11 +770,11 @@ bayes_R2(bmod5)
 ```
 
 ```
-##     Estimate  Est.Error      Q2.5     Q97.5
-## R2 0.2958565 0.01582852 0.2642942 0.3263874
+##     Estimate Est.Error      Q2.5     Q97.5
+## R2 0.2960156  0.015844 0.2649795 0.3265445
 ```
 
-In brief, we found a weak effect of gender on vowel production variability in Indonesian ($\beta =$ -0.0419857, $\ 95 \% \ \text{CrI} =$ [-0.1004022, 0.0168433], $\ \delta_{t} =$ -0.3431054, $\ 95 \% \ \text{CrI} = [-0.78, 0.11]$), this effect being associated with a large uncertainty (as expressed by the width of the credible interval). This result seems to show that females tend to pronounce vowels with more variability than males, while the variation observed across vowels (as suggested by $\sigma_{\beta_{vowel}}$) suggests that there might exist substantial inter-vowel variability, that should be subsequently properly studied. A follow-up analysis specifically designed to test the effect of gender on each vowel should help better describe inter-vowel variability (we give an example of such an analysis in the [supplementary materials](#suppApp)). 
+In brief, we found a weak effect of gender on vowel production variability in Indonesian ($\beta =$ -0.043, $\ 95 \% \ \text{CrI} =$ [-0.104, 0.018], $\ \delta_{t} =$ -0.347, $\ 95 \% \ \text{CrI} = [-0.81, 0.10]$), this effect being associated with a large uncertainty (as expressed by the width of the credible interval). This result seems to show that females tend to pronounce vowels with more variability than males, while the variation observed across vowels (as suggested by $\sigma_{\beta_{vowel}}$) suggests that there might exist substantial inter-vowel variability, that should be subsequently properly studied. A follow-up analysis specifically designed to test the effect of gender on each vowel should help better describe inter-vowel variability (we give an example of such an analysis in the [supplementary materials](#suppApp)). 
 
 To sum up, we hope that this introductive tutorial has helped the reader to understand the foundational ideas of Bayesian MLMs, and to appreciate how straightforward the interpretation of the results is. Moreover, we hope to have demonstrated that although Bayesian data analysis may still sometimes (wrongfully) sound difficult to grasp and to use, the development of recent tools like `brms` helps to build and fit Bayesian MLMs in an intuitive way. We believe that this shift in practice will allow more reliable statistical inferences to be drawn from empirical research.
 
