@@ -50,7 +50,7 @@ To investigate articulatory suppression effects in the context of rumination, a 
 
 ### Material
 
-The experiment was programmed with OpenSesame software [@mathot_opensesame:_2012] and stimuli were displayed on a DELL latitude E6500 computer screen.
+The experiment was programmed with OpenSesame software [@mathot_opensesame_2012] and stimuli were displayed on a DELL latitude E6500 computer screen.
 
 #### Questionaires
 
@@ -352,7 +352,7 @@ Pre-registered protocol, preprint, data, as well as reproducible code and figure
 
 \begin{summary}{Summary of Chapter\getcurrentref{chapter}}
 
-Blah blah...
+TBD...
 
 \end{summary}
 

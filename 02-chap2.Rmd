@@ -45,7 +45,7 @@ In our work, we were especially interested in the activity of some of the orofac
 knitr::include_graphics("assets/facial_muscles.pdf")
 ```
 
-For sensors placement, we followed guidelines and recommendations from @fridlund_guidelines_1986. In addition to speech-related orofacial muscles, we also routinely recorded the activity of other facial muscles such as the *frontalis* muscle (FRO) in Chapter 3, 4, 5, and the *corrugator supercilii* muscle (COR) in Chapter 5. The activity of these muscles was monitored to control for non speech-related facial muscular activity [as recommended by @garrity_electromyography:_1977].
+For sensors placement, we followed guidelines and recommendations from @fridlund_guidelines_1986. In addition to speech-related orofacial muscles, we also routinely recorded the activity of other facial muscles such as the *frontalis* muscle (FRO) in Chapter 3, 4, 5, and the *corrugator supercilii* muscle (COR) in Chapter 5. The activity of these muscles was monitored to control for non speech-related facial muscular activity [as recommended by @garrity_electromyography_1977].
 
 There are several ways to probe the involvement of specific articulators in a given speech production task. For instance, it is possible to selectively interfere with the activity of some articulators (or groups of articulators) to demonstrate their essential involvement in this particular task. It is also possible to record the activity of facial muscles peripherally using surface electromyography, without interfering with (or with minimal interference to) the natural course of the speech production process. In the next section, we briefly introduce some core concepts of electromyography.
 
