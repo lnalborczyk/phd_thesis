@@ -1,3 +1,13 @@
+library(tidyverse)
+library(bibtex)
+
+#bib <- read.bib("bib/thesis.bib")
+#new_bib <- gsub("Å", "\\oe", bib)
+#write.bib(new_bib, "bib/thesis2.bib")
+
+raw_text <- readLines("bib/thesis.bib")
+new_text <- gsub("\\oe", "\\\\oe", raw_text)
+writeLines(new_text, con = "bib/thesis.bib")
 
 from panflute import *
 

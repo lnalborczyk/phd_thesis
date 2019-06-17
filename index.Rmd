@@ -18,7 +18,7 @@ bibliography: [bib/thesis.bib, bib/packages.bib]
 # csl: apa6.csl # does not work in the YAML, see instead _output.yml
 ---
 
-`r if (knitr::is_html_output()) '# Welcome {-}'`
+`r if (knitr::is_html_output() ) '# Welcome {-}'`
 
 ```{r welcome, include = identical(knitr:::pandoc_to(), "html"), results = "asis", echo = FALSE}
 cat(

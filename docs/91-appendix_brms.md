@@ -762,7 +762,7 @@ This distribution is plotted in Figure \@ref(fig:postdhist), and reveals the lar
 \caption{Posterior distribution of $\delta_{t}$.}(\#fig:postdhist)
 \end{figure}
 
-In the same fashion, undirected effect sizes (e.g., $R^{2}$) can be computed directly from the posterior samples, or included in the model specification as a parameter of the model, in a way that at each iteration of the MCMC, a value of the effect size is sampled, resulting in an estimation of its full posterior distribution [see for instance @gelman_bayesian_2006 for measures of explained variance in MLMs and @marsman_bayesian_2019 for calculations in ANOVA designs]. A Bayesian version of the $R^{2}$ is also available in `brms` using the `bayes_R2` method, for which the calculations are based on @gelman_r-squared_2018.
+In the same fashion, undirected effect sizes (e.g., $R^{2}$) can be computed directly from the posterior samples, or included in the model specification as a parameter of the model, in a way that at each iteration of the MCMC, a value of the effect size is sampled, resulting in an estimation of its full posterior distribution.^[See for instance @gelman_bayesian_2006, for measures of explained variance in MLMs and @marsman_bayesian_2019, for calculations in ANOVA designs.] A Bayesian version of the $R^{2}$ is also available in `brms` using the `bayes_R2` method, for which the calculations are based on @gelman_r-squared_2018.
 
 
 ```r
