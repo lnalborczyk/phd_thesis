@@ -6,7 +6,7 @@
 
 ...
 
-## Implications for theories of inner speech
+## Theoretical implications of the results
 
 ...
 
