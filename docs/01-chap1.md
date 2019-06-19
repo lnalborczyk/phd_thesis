@@ -307,7 +307,7 @@ Whereas studies have showed that children can store verbal information, the acti
 
 Cf. recent attempt to integrate the verbal working memory and language literatures [@buchsbaum_sensorimotor_2019]...
 
-Inner speech as a form of motor imagery, see Carruthers (2014), Carruthers, P. (2014). On central cognition. Philos. Stud. 170, 143–162. doi: 10.1007/s11098-013-0171-1 
+Inner speech as a form of motor imagery, see Carruthers (2014), Carruthers, P. (2014). On central cognition. Philos. Stud. 170, 143–162. doi: 10.1007/s11098-013-0171-1
 
 #### The motor theory of voluntary thinking
 
@@ -331,9 +331,19 @@ This idea is consistent with work showing a greater implication of the speech mo
 
 #### Predictive and motor control account(s) of inner speech
 
-Speech production requires the fine-grained timing and coordination of complex sequences of movements and can be considered as such a other forms of motor actions (cf. biomechanical aspects of speech production in Chapter \@ref(chap2)). Blah blah... [for an introduction to motor control models and a review of speech motor control models, see @parrell_current_2019]...
+Speech production requires the fine-grained timing and coordination of complex sequences of movements (cf. biomechanical aspects of speech production in Chapter \@ref(chap2)) and can therefore be considered in a common conceptual framework as with other forms of motor actions. Complex motor actions have been successfully modelled in a motor control framework [e.g.,@kawato_hierarchical_1987;@kawato_internal_1999;@wolpert_internal_1995;@wolpert_computational_1997]. Models from this framework describe how the central nervous system and the musculoskeletal system interact in order perform motor actions. These models have been applied to speech production and describe how humans generate speech acts from speech intentions [for an introduction to motor control models and a review of speech motor control models, see @parrell_current_2019].
 
-AVHs model... frith...guire...@Rapin2011 and @Rapin2013 used surface electromyography to investigate the motor correlates of AVHs in patient with schizophrenia... @oppenheim_inner_2013... see also @tian_mental_2012, @tian_mental_2010, and @tian_mental_2016...
+![(\#fig:motorcontrol)A forward model of motor control. Figure adapted from Rapin et al. (2013).](assets/motor_control.pdf)
+
+Motor control models generally assume two types of interacting *internal models*: a *forward model* that is used to predict the consequences of some planned action and an *inverse model* that is used to compute (to predict) the necessary movements to attain some goal (cf. Box \@ref(model)). As can be seen from this Figure, the inverse model  is first used to compute the necessary motor commands to attain the intended state (e.g., producing the /i/ vowel). When motor commands (represented on the bottom left) are sent to the motor system, a copy of these motor commands (known as the *efference copy*) is sent to a second internal model (a forward model) that predicts the consequences of these motor commands. This predicted sensory feedback, known as the *corollary discharge* (i.e., what is expected to happen if the motor commands were to be executed), is then compared to actual sensory feedback (the sensory consequences of actual motor actions) by a *comparator*. This comparison is responsible for perceptual attenuation in the case of self-generated action.^[That's the reason why we can not tickle ourselves. Because when we deliberately produce an action we formulate a prediction of the sensory consequences of this action, the actual sensory consequences of this action (when it matches with our predictions) are attenuated.] This predictions (the corollary discharge) also allows for correction before the actual sensory feedback is even available tothe central nervous system. Some authors [e.g.,@frith_role_1996;@feinberg_efference_1978] have also suggested that a defective predictive system...
+
+<!--
+
+These internal models have been postulated to be located in the cerebellum [@ito_control_2008], although...
+
+-->
+
+Interestingly, the *efference copy* is not only useful for coordinating and correcting ongoing actions but also but hypothesised to play a role in the feeling of  *agentivity* (i.e., the feeling of being the agent of some action).  can arise from (internal) comparisons between actual movements and predicted movements. Reciprocally, perturbations of the normal course... AVHs model... frith... mcguire... @Rapin2011 and @Rapin2013 used surface electromyography to investigate the motor correlates of AVHs in patient with schizophrenia... @oppenheim_inner_2013... see also @tian_mental_2012, @tian_mental_2010, and @tian_mental_2016...
 
 What evidence for internal models during inner speech? @gerrans_feeling_2015...evidence for the corollary discharge and sensory attenuation during inner speech [e.g.,@ford_electrophysiological_2004;@tian_imagined_2018;@whitford_neurophysiological_2017]... imagined speech view vs. actual speech view...
 
@@ -347,13 +357,11 @@ Speech production involves the fine-grained coordination of more than 100 muscle
 
 Broadly speaking, an \textit{internal model} can be said to correspond to any neural representation of the external world (Ito, 2008). In the context of motor control (the planning and control of movements), an internal model is an internal (neural and/or cognitive) model representing the dynamics of a movement. This sort of mental model is formed and adjusted through learning, that is, as a movement is repeated. To put it simply, an internal model is a mental representation of the dynamics of a movement.\\
 
-Two sorts of internal models are generally postulated. First, \textit{forward models} are representing the dynamics of a movement and allow for predictions about the outcome of a planned or ongoing action. In other words, they permit to anticipate the next step of a movement (and to correct for potential errors), based on a representation of the usual (i.e., learned) movement dynamics. Second, \textit{inverse models} are representing the \textit{inverse} of a movement dynamics and permit to compute (predict) the necessary movements to attain a certain motoric goal.
+Two sorts of internal models are generally postulated. First, \textit{forward models} are representing the dynamics of a movement and allow for predictions about the outcome of a planned or ongoing action. In other words, they permit to anticipate the next step of a movement (and to correct for potential errors), based on a representation of the usual (i.e., learned) movement dynamics. Second, \textit{inverse models} are representing the \textit{inverse} of a movement dynamics and permit to compute the necessary movements to attain a certain motoric goal.
 
 \end{mybox}
 
-In the framework of motor control, these internal models have been postulated to be located in the cerebellum [@ito_control_2008], although...
-
-The model of wilful (voluntary) inner speech production introduced in @loevenbruck_cognitive_2018 goes one step further and, by building on the models of speech motor control [e.g.,@houde_speech_2011;@wolpert_internal_1995], describes inner speech as "multi-modal acts with multi-sensory percepts stemming from coarse multi-sensory goals" (see Figure \@ref(fig:loevenbruck). In other words, the auditory and kinaesthetic sensations perceived during inner speech prediction are assumed to be the predicted sensory consequences of speech motor acts, emulated by internal forward models, that use the efference copies issued from an inverse model [this proposal shares similarities with the emulation model of motor imagery discussed earlier, @grush_emulation_2004].
+By building on previous motor control models of speech production [e.g.,@houde_speech_2011;@wolpert_internal_1995] and on a previous models of motor control applied to inner speech in the context of schizophrenia [e.g.,@Rapin2011;@Rapin2013], @loevenbruck_cognitive_2018 recently introduced a novel model of (deliberate) inner speech. In this model, @loevenbruck_cognitive_2018 describe inner speech as "multi-modal acts with multi-sensory percepts stemming from coarse multi-sensory goals" (cf. Figure \@ref(fig:loevenbruck). In other words, the auditory and kinaesthetic sensations perceived during inner speech prediction are assumed to be the predicted sensory consequences of speech motor acts, emulated by internal forward models, that use the efference copies issued from an inverse model [this proposal shares similarities with the emulation model of motor imagery discussed later, @grush_emulation_2004]...
 
 <!--
 
@@ -367,19 +375,17 @@ Re-explaining @cohen_motor_1986 data and models in terms of @loevenbruck_cogniti
 
 ![(\#fig:epistemocritique)Predictive control account of inner speech production. Figure from L\oe venbruck (2019).](assets/loevenbruck_epistemocritique.png)
 
-...
 
-![(\#fig:condialint1)Predictive control account of inner speech production. Figure from Grandchamp et al. (submitted).](assets/Grandchamp2019_fig1.pdf)
 
-...
 
-![(\#fig:condialint2)Predictive control account of inner speech production. Figure from Grandchamp et al. (submitted).](assets/Grandchamp2019_fig2.pdf)
 
-...
+Describe épistémocritique's model here...
 
 Let’s consider the analogy between speaking and playing an instrument (e.g., playing the piano). Learning how to play the piano can be said to consist essentially in learning and coordinating complex and fine-grained motor sequences that produce in turn sensory (e.g., kinesthaetic, auditory, visual) feedback to the producer of the action (the agent). It seems that (from a certain level of analysis), the act of speech can be paralleled with the act of playing an instrument in that it consists in the coordination of complex movements that result in some modifications of the environment, that in turn generate sensory feedbacks (e.g., kinesthaetic, auditory) for the agent. Thus, pursuing the analogy, we could argue that the relation between playing an instrument and imagining playing an instrument is similar to the relation between producing speech and imagining speaking (i.e., producing inner speech).
 
 This view on the relation between inner speech and overt speech is somehow consistent with Vygotsky's position of inner speech as internalised egocentric speech but it proposes a formal mechanism to explain how overt speech develops into inner speech. More precisely, we might speculate that what is internalised during childhood is an internal model (or a hierarchy of paired internal models). This internalisation is a slow and gradual process and might be similar to the internalisation of other types of motor actions. Considering inner speech as *a* form of motor action brings some interesting insights. Indeed, if speech production can be broadly described as the coordinated sequence of (groups of) muscular movements that result in some predictable sensory consequences (e.g., auditory, visual, kinesthesic or somesthesic feelings), then it can be compared to other actions. In that sense, the process of speech internalisation, as the process of "internalised walking", might follow the same general steps. This process can be broadly defined as the learning of the mapping between some muscular commands (or patterns of muscular commands) and the associated sensory consequences. Learning these associations result in the elaboration of an internal model, permitting to predict ongoing actions, but also to simulate these actions in the absence of any overt movement. In that sense, the process of inner speech might be considered under the broad category of imagined actions (motor imagery).
+
+<!--
 
 ## Theoretical perspectives on motor imagery
 
@@ -452,7 +458,9 @@ One important difference between the emulation theory of motor imagery and the M
 
 Action representation and internal models, see @jeannerod_representing_1994 and @wolpert_internal_1995, Wolpert & Gharamani (2000)...
 
-### Explaining the muscular activity during motor imagery
+-->
+
+### Explaining the muscular activity during inner speech
 
 ...in the hierarchical model of mental practice [@mackay_problem_1981], peripheral muscular activity during motor imagery (or inner speech) is interpreted as a "priming" of the (lower-level) nodes, associate with (higher-level) "mental nodes"...
 
