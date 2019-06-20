@@ -4,7 +4,7 @@
 
 
 
-\initial{A}dd a summary of the research and brief introduction to this first empirical chapter here...^[This experimental chapter is a published paper reformatted for the need of this thesis. Source: Nalborczyk, L., Perrone-Bertolotti, M., Baeyens, C., Grandchamp, R., Polosan, M., Spinelli, E., ... L\oe venbruck, H. (2017). Orofacial Electromyographic Correlates of Induced Verbal Rumination. *Biological Psychology, 127*, 53-63. https://dx.doi.org/10.1016/j.biopsycho.2017.04.013.]
+\initial{S}ummary of the research...^[This experimental chapter is a published paper reformatted for the need of this thesis. Source: Nalborczyk, L., Perrone-Bertolotti, M., Baeyens, C., Grandchamp, R., Polosan, M., Spinelli, E., ... L\oe venbruck, H. (2017). Orofacial Electromyographic Correlates of Induced Verbal Rumination. *Biological Psychology, 127*, 53-63. https://dx.doi.org/10.1016/j.biopsycho.2017.04.013.]
 
 ## Abstract
 
