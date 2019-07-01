@@ -200,7 +200,7 @@ Pre-registered protocol, open data, supplementary analyses as well as reproducib
 
 ## Acknowledgements
 
-This project was funded by ... The first author is funded by a PhD fellowship from Univ. Grenoble Alpes.
+This project was funded by ... The first author is funded by a PhD fellowship from Univ. Grenoble Alpes. We also thank Kim Rens for her help during data collection.
 
 <!-- create a new page for the summary -->
 \newpage
