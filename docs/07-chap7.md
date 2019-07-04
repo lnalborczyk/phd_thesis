@@ -72,7 +72,14 @@ After filling-in the consent form, participants watched a series of short (aroun
 
 At the end of the experiment, all participants went through a positive mood induction (remembering and reliving a positive memory) to attenuate the effects of the stress induction. Finally, participants were fully debriefed about the goals of the study. The entire experiment was video-monitored using a Sony HANDYCAM video camera to check whether the participants effectively completed the task. In addition, the experimenter was able to monitor the participant's performance during the experiment through a one-way mirror (located behind the participant). This procedure is summarised in Figure \@ref(fig:diagram).
 
-![(\#fig:diagramCh7)Timeline of the experiment, from top to bottom.](07-chap7_files/figure-docx/diagramCh7-1.pdf)
+\begin{figure}[H]
+
+{\centering \includegraphics[width=0.66\linewidth]{07-chap7_files/figure-latex/diagramCh7-1} 
+
+}
+
+\caption{Timeline of the experiment, from top to bottom.}(\#fig:diagramCh7)
+\end{figure}
 
 ### Data analysis
 
