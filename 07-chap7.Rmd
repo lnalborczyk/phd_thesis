@@ -5,6 +5,8 @@
 ```{r setupCH7, include = FALSE, message = FALSE, warning = FALSE, results = "hide"}
 library(wordcountaddin)
 library(DiagrammeR)
+library(hrbrthemes)
+library(ggbeeswarm)
 library(tidybayes)
 library(tidyverse)
 library(patchwork)
@@ -61,12 +63,12 @@ In the present study, we aimed to investigate whether rumination involves articu
 
 ## Methods
 
-```{r importdata, eval = FALSE, results = "hide", warning = FALSE}
+```{r importdata, results = "hide", warning = FALSE}
 ################################
 # Importing and reshaping data #
 ################################
 
-df <- read.csv(here("paper", "data_merged.csv"), header = TRUE, sep = ",")
+df <- read.csv(here("data", "ch7", "data_merged.csv"), header = TRUE, sep = ",")
 
 # number of people that were higher than the BDI-II threshold (not included in the study)
 depressive <- 0
@@ -78,7 +80,7 @@ In the *Methods* and *Data analysis* sections, we report how we determined our s
 
 We used the *Sequential Bayes Factor* procedure as introduced in @schonbrodt_sequential_2017 to determine our sample size. We defined a statistical threshold as $BF_{10} = 10$ and $BF_{10} = \dfrac{1}{10}$ (i.e., $BF_{01} = 10$) on the effect of interest. More precisely, we were interested in the difference in self-reported state rumination after the period of motor activity between the two rumination groups. In order to prevent potential experimenter and demand biases during sequential testing, the experimenter was blind to Bayes factors computed on previous participants [@beffara_fully_2019]. All statistical analyses have been automated and a single instruction was returned to the experimenter (i.e., "keep recruiting participants" or "stop the recruitment"). We fixed the minimum sample size to 100 participants (i.e., around 25 participants per group) to avoid early terminations of the sequential procedure and the maximum sample size to four weeks of experiment, including in total 255 potential time slots.
 
-This sampling procedure resulted in the inclusion of XX participants. These participants were all female Dutch-speaking right-handed undergraduate students in Psychology at Ghent University (Mean age = XX, SD = XX). They were recruited via an online platform and were given 10€ in exchange for their participation. Each participant provided consent to participate and the present study was approved by the local ethical committee of the Psychology department at Ghent University.
+At the time of the writing, we were not able to conduct this procedure until its end. We currently have data for `r n_distinct(df$participant)` participants. These participants were all female Dutch-speaking right-handed undergraduate students in Psychology at Ghent University (Mean age = `r round(mean(df$age), 2)`, SD = `r round(sd(df$age), 2)`). They were recruited via an online platform and were given 10\euro\ in exchange for their participation. Each participant provided consent to participate and the present study was approved by the local ethical committee of the Psychology department at Ghent University.
 
 ### Material
 
@@ -100,7 +102,7 @@ In the articulatory suppression condition, participants were asked to open an op
 
 ### Procedure
 
-Upon arriving at the laboratory, participants were asked whether they had recently been involved in a traffic accident. No participant was excluded on this basis. Participants then completed the BDI-II-NL questionnaire. XX participants were excluded on the basis of a BDI-II-NL score greater than 29. Afterwards, participants were given a brief verbal overview of the experiment by the experimenter, before the experimenter definitely leaves the room. The participant then started the experiment on a computer. The experiment was programmed with the OpenSesame software program [@mathot_opensesame_2012].
+Upon arriving at the laboratory, participants were asked whether they had recently been involved in a traffic accident. No participant was excluded on this basis. Participants then completed the BDI-II-NL questionnaire. No participant was excluded on the basis of a BDI-II-NL score greater than 29. Afterwards, participants were given a brief verbal overview of the experiment by the experimenter, before the experimenter definitely leaves the room. The participant then started the experiment on a computer. The experiment was programmed with the OpenSesame software program [@mathot_opensesame_2012].
 
 After filling-in the consent form, participants watched a series of short (around 30s each) neutral video clips for a total duration of 5mn in order to neutralise pre-existing mood differences between participants [@marchetti_brief_2018;@samson_eliciting_2015]. Then, participants filled-in baseline measurements of state rumination (BSRI) and state affects (PANAS). Afterwards, participants went through either a rumination or a problem-solving thinking induction, as described previously. Following this induction, participants filled-in again the BSRI questionnaire to check whether the rumination induction was successful in inducing rumination. Participants in each group were then randomly allocated to either a 5-min articulatory suppression condition (gum-chewing) or a 5-min finger-tapping condition, resulting in four groups of participants. Following the motor activity, participants filled-in again both the BSRI and the PANAS questionnaires. Then, participants filled-in the RRS questionnaire to assess their propensity to ruminate in daily life.
 
@@ -164,23 +166,470 @@ plotly::export(g, file = "assets/mermaid_ch7.pdf")
 
 Statistical analyses were conducted using `R` version 3.5.0 [@R-base], and are reported with the `papaja` [@R-papaja] and `knitr` [@R-knitr] packages.
 
-To model state rumination and affect in response to the thinking-style induction and the articulatory suppression manipulation, we fitted a series of Bayesian regression models^[An introduction to Bayesian statistical modelling is outside the scope of the current paper but the interested reader is referred to @nalborczyk_introduction_2019, for an introduction to Bayesian multilevel modelling using the `brms` package.]. These analyses were conducted using the `brms` package [@R-brms], an implementation of Bayesian multilevel models that employs the probabilistic programming language `Stan` [@carpenter_stan_2017]. Four chains were run for each model, including each 10,000 iterations and a warmup of 2,000 iterations. Posterior convergence was assessed examining autocorrelation and trace plots, as well as the Gelman-Rubin statistic. Constant effects estimates were summarised via their posterior mean and 95% credible interval (CrI), where a credible interval interval can be considered as the Bayesian analogue of a classical confidence interval, except that it can be interpreted in a probabilistic way [contrary to confidence intervals, @nalborczyk_pragmatism_2019]. When applicable, we also report Bayes factors (BFs) computed using the Savage-Dickey method^[This method simply consists in taking the ratio of the posterior density at the point of interest divided by the prior density at that point [@wagenmakers_bayesian_2010].]. These BFs can be interpreted as updating factors, from prior knowledge (what we knew before seeing the data) to posterior knowledge (what we know after seeing the data).
+To model state rumination and affect in response to the thinking-style induction and the articulatory suppression manipulation, we fitted a series of Bayesian regression models^[An introduction to Bayesian statistical modelling is outside the scope of the current paper but the interested reader is referred to @nalborczyk_introduction_2019, for an introduction to Bayesian multilevel modelling using the `brms` package.]. These analyses were conducted using the `brms` package [@R-brms], an implementation of Bayesian multilevel models that employs the probabilistic programming language `Stan` [@carpenter_stan_2017]. Four chains were run for each model, including each 10,000 iterations and a warmup of 2,000 iterations. Posterior convergence was assessed examining autocorrelation and trace plots, as well as the Gelman-Rubin statistic. Constant effects estimates were summarised via their posterior mean and 95% credible interval (CrI), where a credible interval interval can be considered as the Bayesian analogue of a classical confidence interval, except that it can be interpreted in a probabilistic way [contrary to confidence intervals, @nalborczyk_pragmatism_2019]. When applicable, we also report Bayes factors (BFs) computed using the Savage-Dickey method.^[This method simply consists in taking the ratio of the posterior density at the point of interest divided by the prior density at that point [@wagenmakers_bayesian_2010].] These BFs can be interpreted as updating factors, from prior knowledge (what we knew before seeing the data) to posterior knowledge (what we know after seeing the data).
 
 ## Results
 
-The results section is divided into two sections investigating the effects of i) the thinking-style induction and ii) the interaction between the effect of the thinking-style induction (rumination vs. problem-solving) and the effect of the motor activity (chewing vs. finger-tapping). Each section is further divided into two subsections reporting either confirmatory (preregistered) or exploratory (non-preregistered) analyses.
+The results section is divided into two sections investigating the effects of i) the thinking-style induction and ii) the interaction between the effect of the thinking-style induction (rumination vs. problem-solving) and the effect of the motor activity (chewing vs. finger-tapping). Each section is further divided into two subsections reporting either confirmatory (preregistered) or exploratory (non-preregistered) analyses (when relevant).
+
+Importantly, as data collection is still ongoing (it will continue next semester), these analyses should be considered as very preliminary. The number of observations (participants) per condition is displayed in Table \@ref(tab:sampleszize).
+
+```{r sampleszize, results = "asis"}
+df %>%
+    group_by(thinking_mode, motor_activity) %>%
+    summarise(sample_size = n_distinct(participant) ) %>%
+    apa_table(
+        placement = "H",
+        align = c("l", "l", "c"),
+        caption = "Current sample size per group.",
+        small = FALSE,
+        col.names = c("Thinking mode", "Motor activity", "Sample size"),
+        escape = TRUE
+      )
+```
 
 ### Thinking-style induction
 
-#### Confirmatory analyses
+```{r, results = "hide", warning = FALSE}
+######################
+# MLMs for induction #
+######################
 
-...
+df_induction <- df %>%
+  filter(session != "motor") %>%
+  mutate(
+    session = ifelse(session == "baseline", -0.5, 0.5),
+    thinking_mode = ifelse(thinking_mode == "rumination", 0.5, -0.5),
+    RRSbrooding = scale(RRSbrooding) %>% as.numeric,
+    BDI.II = scale(BDI.II) %>% as.numeric
+    )
 
-#### Exploratory analyses
+priors_induction <- c(
+    prior(normal(0, 100), class = Intercept),
+    prior(normal(0, 10), class = b),
+    prior(exponential(0.01), class = sigma),
+    prior(exponential(0.01), class = sd)
+    )
+
+M1_induction <- brm(
+    bsri ~ 1 + session + (1|participant),
+    family = gaussian(),
+    prior = priors_induction,
+    data = df_induction,
+    sample_prior = TRUE,
+    cores = parallel::detectCores(),
+    chains = 2, warmup = 2000, iter = 5000,
+    control = list(adapt_delta = 0.95)
+    )
+
+M2_induction <- brm(
+    bsri ~ 1 + session * thinking_mode + (1|participant),
+    family = gaussian(),
+    prior = priors_induction,
+    data = df_induction,
+    sample_prior = TRUE,
+    cores = parallel::detectCores(),
+    chains = 2, warmup = 2000, iter = 5000,
+    control = list(adapt_delta = 0.95)
+    )
+
+M3_induction <- brm(
+    bsri ~ 1 + session * BDI.II + (1|participant),
+    family = gaussian(),
+    prior = priors_induction,
+    data = df_induction,
+    sample_prior = TRUE,
+    cores = parallel::detectCores(),
+    chains = 2, warmup = 2000, iter = 5000,
+    control = list(adapt_delta = 0.95)
+    )
+
+M4_induction <- brm(
+    bsri ~ 1 + session * thinking_mode + BDI.II + (1|participant),
+    family = gaussian(),
+    prior = priors_induction,
+    data = df_induction,
+    sample_prior = TRUE,
+    cores = parallel::detectCores(),
+    chains = 2, warmup = 2000, iter = 5000,
+    control = list(adapt_delta = 0.95)
+    )
+
+M5_induction <- brm(
+    bsri ~ 1 + session * thinking_mode + RRSbrooding + (1|participant),
+    family = gaussian(),
+    prior = priors_induction,
+    data = df_induction,
+    sample_prior = TRUE,
+    cores = parallel::detectCores(),
+    chains = 2, warmup = 2000, iter = 5000,
+    control = list(adapt_delta = 0.95)
+    )
+
+M6_induction <- brm(
+    bsri ~ 1 + session + BDI.II + (1|participant),
+    family = gaussian(),
+    prior = priors_induction,
+    data = df_induction,
+    sample_prior = TRUE,
+    cores = parallel::detectCores(),
+    chains = 2, warmup = 2000, iter = 5000,
+    control = list(adapt_delta = 0.95)
+    )
+
+M7_induction <- brm(
+    bsri ~ 1 + session + RRSbrooding + (1|participant),
+    family = gaussian(),
+    prior = priors_induction,
+    data = df_induction,
+    sample_prior = TRUE,
+    cores = parallel::detectCores(),
+    chains = 2, warmup = 2000, iter = 5000,
+    control = list(adapt_delta = 0.95)
+    )
+
+M8_induction <- brm(
+    bsri ~ 1 + session * RRSbrooding + (1|participant),
+    family = gaussian(),
+    prior = priors_induction,
+    data = df_induction,
+    sample_prior = TRUE,
+    cores = parallel::detectCores(),
+    chains = 2, warmup = 2000, iter = 5000,
+    control = list(adapt_delta = 0.95)
+    )
+
+M9_induction <- brm(
+    bsri ~ 1 + session * RRSbrooding + session * BDI.II + (1|participant),
+    family = gaussian(),
+    prior = priors_induction,
+    data = df_induction,
+    sample_prior = TRUE,
+    cores = parallel::detectCores(),
+    chains = 2, warmup = 2000, iter = 5000,
+    control = list(adapt_delta = 0.95)
+    )
+
+##########################
+# Model comparison table #
+##########################
+
+source(here::here("code", "compare_waic.R") )
+
+WAIC_table_induction <- compare_waic(
+    M1_induction, M2_induction, M3_induction, M4_induction, M5_induction,
+    M6_induction, M7_induction, M8_induction, M9_induction
+    )
+
+WAIC_table_induction <- WAIC_table_induction@output[, 1:4]
+
+bestmodel <- get(as.character(rownames(WAIC_table_induction[1] ) ) )
+
+rownames(WAIC_table_induction) <- c(
+    "$Int+Ind+RRSbro+BDI+Ind:RRSbro+Ind:BDI$",
+    "$Int+Ind+RRSbro+Ind:RRSbro$",
+    "$Int+Ind+BDI+Ind:BDI$",
+    "$Int+Ind+BDI$",
+    "$Int+Ind+Think+Ind:Think+BDI$",
+    "$Int+Ind+RRSbro$",
+    "$Int+Ind+Think+Ind:Think+RRSbro$",
+    "$Int+Ind$",
+    "$Int+Ind+Think+Ind:Think$"
+    )
+
+colnames(WAIC_table_induction) <- c("$WAIC$", "$pWAIC$", "$\\Delta_{WAIC}$", "$Weight$")
+
+##############################################
+# Preparing summary table for the best model #
+##############################################
+
+parameters1 <- 
+    tidy_stan(bestmodel, prob = 0.95, typical = "mean", digits = 3) %>%
+    # removing ration and mcse
+    select(-ratio, -mcse) %>%
+    data.frame %>%
+    # rename columns
+    magrittr::set_colnames(
+        c("Term", "Estimate", "SE", "Lower", "Upper", "Rhat")
+        ) %>%
+    # replace dots by two-dots
+    mutate(Term = str_replace(Term, "session.", "session:") ) %>%
+    mutate(Term = str_replace(Term, "b_", "") ) %>%
+    filter(Term != "sigma") %>%
+    # compute BF for each effect
+    mutate(
+        BF10 = (1 / hypothesis(bestmodel, glue("{Term} = 0") )$
+            hypothesis$Evid.Ratio) %>% round(., 3),
+        Term = c(
+          "Intercept", "Session", "RRSbrooding", "BDI.II",
+          "Session x RRSbrooding", "Session x BDI.II"
+          )
+      )
+
+# compute effect size for the best model (Bayesian R-squared)
+eff_size_bestmodel_induction <- bayes_R2(bestmodel)
+```
+
+To examine the efficiency of the induction procedure (i.e., the effects of time, coded as *Session*, and the effects of the thinking mode, coded as *Think*) while controlling for the other variables (i.e., *RRSbrooding* and *BDI.II*), we then compared the parsimony of models containing main constant effects and a varying intercept for *Participant*. Model comparison showed that the best model (i.e., the model with the lowest WAIC) was the model including *Session*, *RRSbooding*, *BDI.II*, and an interaction term between *Session* and *RRSbrooding* and between *Session* and *BDI.II* (see Table \@ref(tab:compexp1)). Fit of the best model was moderate (`r glue_data(eff_size_bestmodel_induction %>% data.frame %>% round(., 3), "$R^{2}$ = {Estimate}, 95% CrI [{Q2.5}, {Q97.5}]")`).
+
+```{r compexp1, results = "asis"}
+apa_table(
+    WAIC_table_induction,
+    placement = "H",
+    align = c("l", "c", "c", "c", "c"),
+    caption = "Comparison of models, ordered by WAIC relative to the best model (i.e., the model with the lowest WAIC).",
+    note = "$pWAIC$ is the number of effective parameters in the model. $Int$ = Intercept, $Ind$ = Induction, $RRSbro$ = RRSbrooding, $BDI$ = BDI-II score. All models include a varying intercept by participant.",
+    small = TRUE,
+    landscape = TRUE,
+    format.args = list(
+        digits = c(2, 2, 2, 3),
+        margin = 2,
+        decimal.mark = ".", big.mark = ""
+        ),
+    escape = FALSE) 
+```
+
+Constant effect estimates for the best model are reported in Table \@ref(tab:paramexp1). Based on these values, it seems that *Session* (i.e., the effect of the rumination induction) increased self-reported rumination state (i.e., BSRI sum score) by approximately `r round(parameters1[2, 2], 2)` points on average (`r glue_data(parameters1 %>% data.frame %>% dplyr::filter(Term == "Session") , "$\\beta$ = {Estimate}, 95% CrI [{Lower}, {Upper}], $BF10$ = {BF10}")`). The main positive effect of *BDI.II* and *RRSbrooding* indicate higher BDI-II and RRS brooding subscale scores were associated with higher self-reported state rumination scores overall. The interaction between *Session* and *RRSbrooding* reveals that higher scores on the brooding subscale of the RRS were associated with higher increase of self-reported state rumination from baseline to post-induction (`r glue_data(parameters1 %>% data.frame %>% dplyr::filter(Term == "Session x RRSbrooding") , "$\\beta$ = {Estimate}, 95% CrI [{Lower}, {Upper}], $BF10$ = {BF10}")`).
+
+```{r paramexp1, results = "asis"}
+####################################
+# format BFs in table
+##############################
+
+changeSciNot <- function (n) {
+    
+  output <- formatC(n, format = "g", digits = 4)
+  output <- sub("e", "*10^", output) # Replace e with 10^
+  output <- sub("\\+0?", "", output) # Remove + symbol and leading zeros on expoent, if > 1
+  output <- sub("-0?", "-", output) # Leaves - symbol but removes leading zeros on exponent, if < 1
+  output
+
+}
+
+apa_table(
+    parameters1 %>% mutate(BF10 = changeSciNot(BF10) ),
+    placement = "H",
+    align = c("l", "c", "c", "c", "c", "c", "c"),
+    caption = "Coefficient estimates, standard errors (SE), 95% CrI (Lower, Upper), Rhat and Bayes factor (BF10) for the best model.",
+    note = "As all predictors were centered to the mean for analysis, these coefficients approximate coefficients from simpler models.",
+    small = TRUE,
+    digits = 3,
+    escape = TRUE,
+    format.args = list(
+        digits = c(3, 3, 3, 3, 2),
+        #format = c("f", "f", "f", "f", "f", "g"), # scientific notation
+        #width = c(3, 3, 3, 3, 3, 3, 3),
+        margin = 2
+        #decimal.mark = ".", big.mark = ""
+        )
+    )
+```
+
+The model comparison revealed that the models including an interaction between the effect of time (*Session*) and the effect of the thinking-style (i.e., rumination vs. problem-solving) were not ranked among the best models according to their WAIC (cf. Table \@ref(tab:compexp1)). However, for completeness, we report below the estimations from the last model, including an effect for time, thinking-style, and an interaction between the two.
+
+```{r ParamInteraction, results = "asis"}
+##############################################
+# Preparing summary table for the best model #
+##############################################
+
+parameters_interaction <- 
+    tidy_stan(M2_induction, prob = 0.95, typical = "mean", digits = 3) %>%
+    # removing ration and mcse
+    select(-ratio, -mcse) %>%
+    data.frame %>%
+    # rename columns
+    magrittr::set_colnames(
+        c("Term", "Estimate", "SE", "Lower", "Upper", "Rhat")
+        ) %>%
+    # replace dots by two-dots
+    mutate(Term = str_replace(Term, "session.", "session:") ) %>%
+    mutate(Term = str_replace(Term, "b_", "") ) %>%
+    filter(Term != "sigma") %>%
+    # compute BF for each effect
+    mutate(
+        BF10 = (1 / hypothesis(M2_induction, glue("{Term} = 0") )$
+            hypothesis$Evid.Ratio) %>% round(., 3),
+        Term = c(
+          "Intercept", "Session", "Thinking mode",
+          "Session x Thinking mode"
+          )
+      )
+
+apa_table(
+    parameters_interaction %>% mutate(BF10 = changeSciNot(BF10) ),
+    placement = "H",
+    align = c("l", "c", "c", "c", "c", "c", "c"),
+    caption = "Coefficient estimates, standard errors (SE), 95% CrI (Lower, Upper), Rhat and Bayes factor (BF10) for the model including an interaction between session and thinking-style.",
+    note = "As all predictors were centered to the mean for analysis, these coefficients approximate coefficients from simpler models.",
+    small = TRUE,
+    digits = 3,
+    escape = TRUE,
+    format.args = list(
+        digits = c(3, 3, 3, 3, 2),
+        #format = c("f", "f", "f", "f", "f", "g"), # scientific notation
+        #width = c(3, 3, 3, 3, 3, 3, 3),
+        margin = 2
+        #decimal.mark = ".", big.mark = ""
+        )
+    )
+```
 
 ...
 
 ### Articulatory suppression effects
+
+...
+
+```{r, fig.align = "center", fig.width = 10, fig.height = 8, fig.cap = "Average self-reported levels of state rumination (BSRI sum score) throughout the experiment, that is, by session, thinking style and type of motor activity. Smaller dots represent individual scores."}
+#####################
+# plotting the data #
+#####################
+
+df %>%
+    # standardising BSRI self-reports by baseline level
+    group_by(participant) %>%
+    # mutate(bsri = bsri - first(bsri) ) %>%
+    ungroup %>%
+    # keeping only self-reports at the end of the experiment
+    # filter(session == "motor") %>%
+    # plotting self-reports by session and group
+    ggplot(
+        aes(
+            x = session, y = bsri, group = motor_activity,
+            colour = motor_activity, fill = motor_activity
+            )
+        ) +
+    # horizontal line at zero (baseline level)
+    # geom_hline(yintercept = 0, linetype = 3, alpha = 0.8) +
+    # violin plots
+    geom_violin(
+        aes(x = session, group = interaction(session, motor_activity) ),
+        scale = "count",
+        alpha = 0.2,
+        colour = "white",
+        position = position_dodge(0.5),
+        #adjust = 0.8,
+        #draw_quantiles = 0.5,
+        show.legend = FALSE
+        ) +
+    # plotting individual data points
+    geom_quasirandom(
+        pch = 21,
+        colour = "white",
+        dodge.width = 0.5,
+        size = 2.5,
+        alpha = 0.5
+        ) +
+    # plotting means and confidence intervals
+    stat_summary(
+        fun.y = mean,
+        geom = "line", size = 1, linetype = 2,
+        position = position_dodge(0.5),
+        show.legend = FALSE
+        ) +
+    stat_summary(
+        fun.data = mean_cl_normal,
+        geom = "errorbar", size = 1, width = 0,
+        fun.args = list(mult = 1.96),
+        show.legend = FALSE,
+        position = position_dodge(0.5)
+        ) +
+    stat_summary(
+        fun.y = "mean", geom = "point",
+        colour = "black", shape = 21, size = 5,
+        position = position_dodge(0.5),
+        show.legend = TRUE
+        ) +
+    # facetting by thinking-style
+    facet_wrap(~thinking_mode, ncol = 1) +
+    # fancy ggplot2 theme
+    theme_minimal(base_size = 12) +
+    # color scheme
+    scale_colour_brewer(palette = "Dark2") +
+    scale_fill_brewer(palette = "Dark2") +
+    # labels
+    labs(
+        fill = "Motor activity",
+        colour = "Motor activity",
+        #title = "Self-reported levels of state rumination throughout the experiment",
+        #subtitle = "BSRI score by session, thinking style and type of motor activity",
+        x = "Time of measurement",
+        y = "Self-reported levels of state rumination (BSRI score)"
+        )
+```
+
+```{r, fig.align = "center", fig.width = 10, fig.height = 8, fig.cap = "Average self-reported levels of state negative affects (PANAS) by thinking style and type of motor activity at the beginning (baseline) and end (motor) of the experiment. Smaller dots represent individual scores."}
+df %>%
+    # standardising BSRI self-reports by baseline level
+    group_by(participant) %>%
+    # mutate(PANASneg = PANASneg - first(PANASneg) ) %>%
+    ungroup %>%
+    # keeping only self-reports at the end of the experiment
+    # filter(session == "motor") %>%
+    # removing post-induction stage
+    filter(session != "induction") %>%
+    # plotting self-reports by session and group
+    ggplot(
+        aes(
+            x = session, y = PANASneg, group = motor_activity,
+            colour = motor_activity, fill = motor_activity
+        )
+    ) +
+    # horizontal line at zero (baseline level)
+    # geom_hline(yintercept = 0, linetype = 3, alpha = 0.8) +
+    # violin plots
+    geom_violin(
+        aes(x = session, group = interaction(session, motor_activity) ),
+        scale = "count", alpha = 0.15,
+        colour = "white",
+        position = position_dodge(0.5),
+        #adjust = 0.8,
+        #draw_quantiles = 0.5,
+        show.legend = FALSE
+        ) +
+    # plotting individual data points
+    geom_quasirandom(
+        pch = 21,
+        colour = "white",
+        dodge.width = 0.5,
+        size = 2.5,
+        alpha = 0.5
+        ) +
+    # plotting means and confidence intervals
+    stat_summary(
+        fun.y = mean,
+        geom = "line", size = 1, linetype = 2,
+        position = position_dodge(0.5),
+        show.legend = FALSE
+        ) +
+    stat_summary(
+        fun.data = mean_cl_normal,
+        geom = "errorbar", size = 1, width = 0,
+        fun.args = list(mult = 1.96),
+        show.legend = FALSE,
+        position = position_dodge(0.5)
+        ) +
+    stat_summary(
+        fun.y = "mean", geom = "point",
+        colour = "black", shape = 21, size = 5,
+        position = position_dodge(0.5),
+        show.legend = TRUE
+        ) +
+    # facetting by thinking-style
+    facet_wrap(~thinking_mode, ncol = 1) +
+    # fancy ggplot2 theme
+    theme_minimal(base_size = 12) +
+    # color scheme
+    scale_colour_brewer(palette = "Dark2") +
+    scale_fill_brewer(palette = "Dark2") +
+    # labels
+    labs(
+        fill = "Motor activity",
+        colour = "Motor activity",
+        x = "Time of measurement",
+        y = "Self-reported levels of negative affects (PANAS score)"
+    )
+```
 
 #### Confirmatory analyses
 
@@ -192,7 +641,7 @@ The results section is divided into two sections investigating the effects of i)
 
 ## Discussion
 
-...
+The discussion section will be completed once data will be fully gathered and analysed.
 
 ## Supplementary materials {#supp}
 
@@ -200,10 +649,9 @@ Pre-registered protocol, open data, supplementary analyses as well as reproducib
 
 ## Acknowledgements
 
-This project was funded by ... The first author is funded by a PhD fellowship from Univ. Grenoble Alpes. We also thank Kim Rens for her help during data collection.
+The first author is funded by a PhD fellowship from Univ. Grenoble Alpes. We also thank Kim Rens for her help during data collection.
 
-<!-- create a new page for the summary -->
-\newpage
+\newpage <!-- create a new page for the summary -->
 
 <!-- center the box vertically, with a parameter to specify the ratio of space above to space below -->
 \begin{vplace}[1]

@@ -471,7 +471,7 @@
 
 \chapter*{Preface}
 
-\initial{T}his work has been conducted in the context of a joint PhD between Univ. Grenoble Alpes (Grenoble, France) and Ghent University (Ghent, Belgium) and has been funded by Univ. Grenoble Alpes (previously UPMF). The present thesis is presented as a collection of eight chapters, with two introductory chapters, five empirical chapters and a final discussion chapter. The underlying code as well as an online version of this is thesis is available at: \url{https://github.com/lnalborczyk/phd_thesis}.
+\initial{T}his work has been conducted in the context of a joint PhD between Univ. Grenoble Alpes (Grenoble, France) and Ghent University (Ghent, Belgium) and has been funded by Univ. Grenoble Alpes (previously UPMF). The present thesis is presented as a collection of eight chapters, with two introductory chapters, five empirical chapters and a final discussion chapter. The underlying code as well as an online version of this thesis is available at: \url{https://github.com/lnalborczyk/phd_thesis}.
 
 \newpage
 \blankpage
@@ -2817,7 +2817,7 @@ In the \emph{Methods} and \emph{Data analysis} sections, we report how we determ
 
 We used the \emph{Sequential Bayes Factor} procedure as introduced in Schönbrodt et al. (\protect\hyperlink{ref-schonbrodt_sequential_2017}{2017}) to determine our sample size. We defined a statistical threshold as \(BF_{10} = 10\) and \(BF_{10} = \dfrac{1}{10}\) (i.e., \(BF_{01} = 10\)) on the effect of interest. More precisely, we were interested in the difference in self-reported state rumination after the period of motor activity between the two rumination groups. In order to prevent potential experimenter and demand biases during sequential testing, the experimenter was blind to Bayes factors computed on previous participants (Beffara, Bret, \& Nalborczyk, \protect\hyperlink{ref-beffara_fully_2019}{2019}). All statistical analyses have been automated and a single instruction was returned to the experimenter (i.e., \enquote{keep recruiting participants} or \enquote{stop the recruitment}). We fixed the minimum sample size to 100 participants (i.e., around 25 participants per group) to avoid early terminations of the sequential procedure and the maximum sample size to four weeks of experiment, including in total 255 potential time slots.
 
-This sampling procedure resulted in the inclusion of XX participants. These participants were all female Dutch-speaking right-handed undergraduate students in Psychology at Ghent University (Mean age = XX, SD = XX). They were recruited via an online platform and were given 10€ in exchange for their participation. Each participant provided consent to participate and the present study was approved by the local ethical committee of the Psychology department at Ghent University.
+At the time of the writing, we were not able to conduct this procedure until its end. We currently have data for 42 participants. These participants were all female Dutch-speaking right-handed undergraduate students in Psychology at Ghent University (Mean age = 21.26, SD = 2.28). They were recruited via an online platform and were given 10\euro~in exchange for their participation. Each participant provided consent to participate and the present study was approved by the local ethical committee of the Psychology department at Ghent University.
 
 \hypertarget{material-4}{%
 \subsection{Material}\label{material-4}}
@@ -2845,7 +2845,7 @@ In the articulatory suppression condition, participants were asked to open an op
 \hypertarget{procedure-4}{%
 \subsection{Procedure}\label{procedure-4}}
 
-Upon arriving at the laboratory, participants were asked whether they had recently been involved in a traffic accident. No participant was excluded on this basis. Participants then completed the BDI-II-NL questionnaire. XX participants were excluded on the basis of a BDI-II-NL score greater than 29. Afterwards, participants were given a brief verbal overview of the experiment by the experimenter, before the experimenter definitely leaves the room. The participant then started the experiment on a computer. The experiment was programmed with the OpenSesame software program (Mathôt et al., \protect\hyperlink{ref-mathot_opensesame_2012}{2012}).
+Upon arriving at the laboratory, participants were asked whether they had recently been involved in a traffic accident. No participant was excluded on this basis. Participants then completed the BDI-II-NL questionnaire. No participant was excluded on the basis of a BDI-II-NL score greater than 29. Afterwards, participants were given a brief verbal overview of the experiment by the experimenter, before the experimenter definitely leaves the room. The participant then started the experiment on a computer. The experiment was programmed with the OpenSesame software program (Mathôt et al., \protect\hyperlink{ref-mathot_opensesame_2012}{2012}).
 
 After filling-in the consent form, participants watched a series of short (around 30s each) neutral video clips for a total duration of 5mn in order to neutralise pre-existing mood differences between participants (Marchetti et al., \protect\hyperlink{ref-marchetti_brief_2018}{2018}; Samson, Kreibig, Soderstrom, Wade, \& Gross, \protect\hyperlink{ref-samson_eliciting_2015}{2015}). Then, participants filled-in baseline measurements of state rumination (BSRI) and state affects (PANAS). Afterwards, participants went through either a rumination or a problem-solving thinking induction, as described previously. Following this induction, participants filled-in again the BSRI questionnaire to check whether the rumination induction was successful in inducing rumination. Participants in each group were then randomly allocated to either a 5-min articulatory suppression condition (gum-chewing) or a 5-min finger-tapping condition, resulting in four groups of participants. Following the motor activity, participants filled-in again both the BSRI and the PANAS questionnaires. Then, participants filled-in the RRS questionnaire to assess their propensity to ruminate in daily life.
 
@@ -2865,15 +2865,142 @@ At the end of the experiment, all participants went through a positive mood indu
 
 Statistical analyses were conducted using \texttt{R} version 3.5.0 (R Core Team, \protect\hyperlink{ref-R-base}{2018}), and are reported with the \texttt{papaja} (Aust \& Barth, \protect\hyperlink{ref-R-papaja}{2018}) and \texttt{knitr} (Xie, \protect\hyperlink{ref-R-knitr}{2018}) packages.
 
-To model state rumination and affect in response to the thinking-style induction and the articulatory suppression manipulation, we fitted a series of Bayesian regression models\footnote{An introduction to Bayesian statistical modelling is outside the scope of the current paper but the interested reader is referred to Nalborczyk et al. (\protect\hyperlink{ref-nalborczyk_introduction_2019}{2019}\protect\hyperlink{ref-nalborczyk_introduction_2019}{a}), for an introduction to Bayesian multilevel modelling using the \texttt{brms} package.}. These analyses were conducted using the \texttt{brms} package (Bürkner, \protect\hyperlink{ref-R-brms}{2018}), an implementation of Bayesian multilevel models that employs the probabilistic programming language \texttt{Stan} (Carpenter et al., \protect\hyperlink{ref-carpenter_stan_2017}{2017}). Four chains were run for each model, including each 10,000 iterations and a warmup of 2,000 iterations. Posterior convergence was assessed examining autocorrelation and trace plots, as well as the Gelman-Rubin statistic. Constant effects estimates were summarised via their posterior mean and 95\% credible interval (CrI), where a credible interval interval can be considered as the Bayesian analogue of a classical confidence interval, except that it can be interpreted in a probabilistic way (contrary to confidence intervals, Nalborczyk et al., \protect\hyperlink{ref-nalborczyk_pragmatism_2019}{2019}\protect\hyperlink{ref-nalborczyk_pragmatism_2019}{b}). When applicable, we also report Bayes factors (BFs) computed using the Savage-Dickey method\footnote{This method simply consists in taking the ratio of the posterior density at the point of interest divided by the prior density at that point (Wagenmakers et al., \protect\hyperlink{ref-wagenmakers_bayesian_2010}{2010}).}. These BFs can be interpreted as updating factors, from prior knowledge (what we knew before seeing the data) to posterior knowledge (what we know after seeing the data).
+To model state rumination and affect in response to the thinking-style induction and the articulatory suppression manipulation, we fitted a series of Bayesian regression models\footnote{An introduction to Bayesian statistical modelling is outside the scope of the current paper but the interested reader is referred to Nalborczyk et al. (\protect\hyperlink{ref-nalborczyk_introduction_2019}{2019}\protect\hyperlink{ref-nalborczyk_introduction_2019}{a}), for an introduction to Bayesian multilevel modelling using the \texttt{brms} package.}. These analyses were conducted using the \texttt{brms} package (Bürkner, \protect\hyperlink{ref-R-brms}{2018}), an implementation of Bayesian multilevel models that employs the probabilistic programming language \texttt{Stan} (Carpenter et al., \protect\hyperlink{ref-carpenter_stan_2017}{2017}). Four chains were run for each model, including each 10,000 iterations and a warmup of 2,000 iterations. Posterior convergence was assessed examining autocorrelation and trace plots, as well as the Gelman-Rubin statistic. Constant effects estimates were summarised via their posterior mean and 95\% credible interval (CrI), where a credible interval interval can be considered as the Bayesian analogue of a classical confidence interval, except that it can be interpreted in a probabilistic way (contrary to confidence intervals, Nalborczyk et al., \protect\hyperlink{ref-nalborczyk_pragmatism_2019}{2019}\protect\hyperlink{ref-nalborczyk_pragmatism_2019}{b}). When applicable, we also report Bayes factors (BFs) computed using the Savage-Dickey method.\footnote{This method simply consists in taking the ratio of the posterior density at the point of interest divided by the prior density at that point (Wagenmakers et al., \protect\hyperlink{ref-wagenmakers_bayesian_2010}{2010}).} These BFs can be interpreted as updating factors, from prior knowledge (what we knew before seeing the data) to posterior knowledge (what we know after seeing the data).
 
 \hypertarget{results-4}{%
 \section{Results}\label{results-4}}
 
-The results section is divided into two sections investigating the effects of i) the thinking-style induction and ii) the interaction between the effect of the thinking-style induction (rumination vs.~problem-solving) and the effect of the motor activity (chewing vs.~finger-tapping). Each section is further divided into two subsections reporting either confirmatory (preregistered) or exploratory (non-preregistered) analyses.
+The results section is divided into two sections investigating the effects of i) the thinking-style induction and ii) the interaction between the effect of the thinking-style induction (rumination vs.~problem-solving) and the effect of the motor activity (chewing vs.~finger-tapping). Each section is further divided into two subsections reporting either confirmatory (preregistered) or exploratory (non-preregistered) analyses (when relevant).
+
+Importantly, as data collection is still ongoing (it will continue next semester), these analyses should be considered as very preliminary. The number of observations (participants) per condition is displayed in Table \ref{tab:sampleszize}.
+
+\begin{table}[H]
+\begin{center}
+\begin{threeparttable}
+\caption{\label{tab:sampleszize}Current sample size per group.}
+\begin{tabular}{llc}
+\toprule
+Thinking mode & Motor activity & Sample size\\
+\midrule
+problem-solving & chewing & 14\\
+problem-solving & tapping & 8\\
+rumination & chewing & 11\\
+rumination & tapping & 9\\
+\bottomrule
+\end{tabular}
+\end{threeparttable}
+\end{center}
+\end{table}
 
 \hypertarget{thinking-style-induction-1}{%
 \subsection{Thinking-style induction}\label{thinking-style-induction-1}}
+
+To examine the efficiency of the induction procedure (i.e., the effects of time, coded as \emph{Session}, and the effects of the thinking mode, coded as \emph{Think}) while controlling for the other variables (i.e., \emph{RRSbrooding} and \emph{BDI.II}), we then compared the parsimony of models containing main constant effects and a varying intercept for \emph{Participant}. Model comparison showed that the best model (i.e., the model with the lowest WAIC) was the model including \emph{Session}, \emph{RRSbooding}, \emph{BDI.II}, and an interaction term between \emph{Session} and \emph{RRSbrooding} and between \emph{Session} and \emph{BDI.II} (see Table \ref{tab:compexp1}). Fit of the best model was moderate (\(R^2\) = 0.444, 95\% CrI {[}0.111, 0.638{]}).
+
+\begin{lltable}
+\begin{TableNotes}[para]
+\textit{Note.} $pWAIC$ is the number of effective parameters in the model. $Int$ = Intercept, $Ind$ = Induction, $RRSbro$ = RRSbrooding, $BDI$ = BDI-II score. All models include a varying intercept by participant.
+\end{TableNotes}
+\small{
+\begin{longtable}{lcccc}\noalign{\getlongtablewidth\global\LTcapwidth=\longtablewidth}
+\caption{\label{tab:compexp1}Comparison of models, ordered by WAIC relative to the best model (i.e., the model with the lowest WAIC).}\\
+\toprule
+ & \multicolumn{1}{c}{$WAIC$} & \multicolumn{1}{c}{$pWAIC$} & \multicolumn{1}{c}{$\Delta_{WAIC}$} & \multicolumn{1}{c}{$Weight$}\\
+\midrule
+$Int+Ind+RRSbro+BDI+Ind:RRSbro+Ind:BDI$ & 1049.64 & 19.29 & 0.00 & 0.806\\
+$Int+Ind+RRSbro+Ind:RRSbro$ & 1053.82 & 25.09 & 4.18 & 0.100\\
+$Int+Ind+BDI+Ind:BDI$ & 1054.67 & 19.13 & 5.03 & 0.065\\
+$Int+Ind+BDI$ & 1057.47 & 16.84 & 7.83 & 0.016\\
+$Int+Ind+Think+Ind:Think+BDI$ & 1058.12 & 17.24 & 8.47 & 0.012\\
+$Int+Ind+RRSbro$ & 1063.62 & 22.76 & 13.97 & 0.001\\
+$Int+Ind+Think+Ind:Think+RRSbro$ & 1064.74 & 22.73 & 15.10 & 0.000\\
+$Int+Ind$ & 1066.71 & 25.82 & 17.07 & 0.000\\
+$Int+Ind+Think+Ind:Think$ & 1067.67 & 26.24 & 18.03 & 0.000\\
+\bottomrule
+\addlinespace
+\insertTableNotes
+\end{longtable}
+}
+\end{lltable}
+
+Constant effect estimates for the best model are reported in Table \ref{tab:paramexp1}. Based on these values, it seems that \emph{Session} (i.e., the effect of the rumination induction) increased self-reported rumination state (i.e., BSRI sum score) by approximately 10.73 points on average (\(\beta\) = 10.734, 95\% CrI {[}-8.164, 28.959{]}, \(BF10\) = 1.75). The main positive effect of \emph{BDI.II} and \emph{RRSbrooding} indicate higher BDI-II and RRS brooding subscale scores were associated with higher self-reported state rumination scores overall. The interaction between \emph{Session} and \emph{RRSbrooding} reveals that higher scores on the brooding subscale of the RRS were associated with higher increase of self-reported state rumination from baseline to post-induction (\(\beta\) = 1.617, 95\% CrI {[}-17.369, 19.502{]}, \(BF10\) = 0.936).
+
+\begin{table}[H]
+\begin{center}
+\begin{threeparttable}
+\caption{\label{tab:paramexp1}Coefficient estimates, standard errors (SE), 95\% CrI (Lower, Upper), Rhat and Bayes factor (BF10) for the best model.}
+\small{
+\begin{tabular}{lcccccc}
+\toprule
+Term & \multicolumn{1}{c}{Estimate} & \multicolumn{1}{c}{SE} & \multicolumn{1}{c}{Lower} & \multicolumn{1}{c}{Upper} & \multicolumn{1}{c}{Rhat} & \multicolumn{1}{c}{BF10}\\
+\midrule
+Intercept & 79.073 & 29.753 & 14.994 & 138.678 & 1.000 & 75.01\\
+Session & 3.423 & 10.109 & -15.075 & 22.567 & 1.000 & 1.075\\
+RRSbrooding & 10.217 & 5.391 & -0.287 & 20.632 & 1.000 & 3.016\\
+BDI.II & 9.934 & 2.032 & 5.745 & 13.832 & 1.001 & 1.138*10\textasciicircum{}11\\
+Session x RRSbrooding & 9.041 & 5.783 & -3.196 & 19.796 & 1.000 & 1.977\\
+Session x BDI.II & 0.851 & 2.920 & -5.224 & 6.286 & 1.000 & 0.304\\
+\bottomrule
+\addlinespace
+\end{tabular}
+}
+\begin{tablenotes}[para]
+\textit{Note.} As all predictors were centered to the mean for analysis, these coefficients approximate coefficients from simpler models.
+\end{tablenotes}
+\end{threeparttable}
+\end{center}
+\end{table}
+
+The model comparison revealed that the models including an interaction between the effect of time (\emph{Session}) and the effect of the thinking-style (i.e., rumination vs.~problem-solving) were not ranked among the best models according to their WAIC (cf.~Table \ref{tab:compexp1}). However, for completeness, we report below the estimations from the last model, including an effect for time, thinking-style, and an interaction between the two.
+
+\begin{table}[H]
+\begin{center}
+\begin{threeparttable}
+\caption{\label{tab:ParamInteraction}Coefficient estimates, standard errors (SE), 95\% CrI (Lower, Upper), Rhat and Bayes factor (BF10) for the model including an interaction between session and thinking-style.}
+\small{
+\begin{tabular}{lcccccc}
+\toprule
+Term & \multicolumn{1}{c}{Estimate} & \multicolumn{1}{c}{SE} & \multicolumn{1}{c}{Lower} & \multicolumn{1}{c}{Upper} & \multicolumn{1}{c}{Rhat} & \multicolumn{1}{c}{BF10}\\
+\midrule
+Intercept & 223.111 & 21.995 & 178.253 & 264.272 & 1.001 & -9.146*10\textasciicircum{}137\\
+Session & 11.002 & 9.712 & -8.360 & 29.975 & 1.000 & 1.886\\
+Thinking mode & -0.574 & 9.405 & -18.686 & 17.981 & 1.000 & 0.93\\
+Session x Thinking mode & 0.043 & 9.873 & -19.754 & 19.672 & 1.000 & 1.009\\
+\bottomrule
+\addlinespace
+\end{tabular}
+}
+\begin{tablenotes}[para]
+\textit{Note.} As all predictors were centered to the mean for analysis, these coefficients approximate coefficients from simpler models.
+\end{tablenotes}
+\end{threeparttable}
+\end{center}
+\end{table}
+
+\ldots{}
+
+\hypertarget{articulatory-suppression-effects-2}{%
+\subsection{Articulatory suppression effects}\label{articulatory-suppression-effects-2}}
+
+\ldots{}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{07-chap7_files/figure-latex/unnamed-chunk-2-1} 
+
+}
+
+\caption{Average self-reported levels of state rumination (BSRI sum score) throughout the experiment, that is, by session, thinking style and type of motor activity. Smaller dots represent individual scores.}\label{fig:unnamed-chunk-2}
+\end{figure}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{07-chap7_files/figure-latex/unnamed-chunk-3-1} 
+
+}
+
+\caption{Self-reported levels of state negative affects (PANAS) by thinking style and type of motor activity at the beginning (baseline) and end (motor) of the experiment. Smaller dots represent individual scores.}\label{fig:unnamed-chunk-3}
+\end{figure}
 
 \hypertarget{confirmatory-analyses}{%
 \subsubsection{Confirmatory analyses}\label{confirmatory-analyses}}
@@ -2885,23 +3012,10 @@ The results section is divided into two sections investigating the effects of i)
 
 \ldots{}
 
-\hypertarget{articulatory-suppression-effects-2}{%
-\subsection{Articulatory suppression effects}\label{articulatory-suppression-effects-2}}
-
-\hypertarget{confirmatory-analyses-1}{%
-\subsubsection{Confirmatory analyses}\label{confirmatory-analyses-1}}
-
-\ldots{}
-
-\hypertarget{exploratory-analyses-2}{%
-\subsubsection{Exploratory analyses}\label{exploratory-analyses-2}}
-
-\ldots{}
-
 \hypertarget{discussion-4}{%
 \section{Discussion}\label{discussion-4}}
 
-\ldots{}
+The discussion section will be completed once data will be fully gathered and analysed.
 
 \hypertarget{supp}{%
 \section{Supplementary materials}\label{supp}}
@@ -2911,7 +3025,7 @@ Pre-registered protocol, open data, supplementary analyses as well as reproducib
 \hypertarget{acknowledgements-4}{%
 \section{Acknowledgements}\label{acknowledgements-4}}
 
-This project was funded by \ldots{} The first author is funded by a PhD fellowship from Univ. Grenoble Alpes. We also thank Kim Rens for her help during data collection.
+The first author is funded by a PhD fellowship from Univ. Grenoble Alpes. We also thank Kim Rens for her help during data collection.
 
 \newpage
 
