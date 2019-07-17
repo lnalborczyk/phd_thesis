@@ -5,7 +5,6 @@
 ```{r setupCH7, include = FALSE, message = FALSE, warning = FALSE, results = "hide"}
 library(wordcountaddin)
 library(DiagrammeR)
-library(hrbrthemes)
 library(ggbeeswarm)
 library(tidybayes)
 library(tidyverse)
@@ -32,6 +31,10 @@ opts_chunk$set(
 ```
 
 <!-- NB: You can add comments using these tags -->
+
+## Abstract
+
+This study explores whether the speech motor system is involved in verbal rumination... Pre-registered protocol, preprint, data, as well as reproducible code and figures are available at: https://osf.io/8ab2d/.
 
 ## Introduction
 
@@ -170,9 +173,7 @@ To model state rumination and affect in response to the thinking-style induction
 
 ## Results
 
-The results section is divided into two sections investigating the effects of i) the thinking-style induction and ii) the interaction between the effect of the thinking-style induction (rumination vs. problem-solving) and the effect of the motor activity (chewing vs. finger-tapping). Each section is further divided into two subsections reporting either confirmatory (preregistered) or exploratory (non-preregistered) analyses (when relevant).
-
-Importantly, as data collection is still ongoing (it will continue next semester), these analyses should be considered as very preliminary. The number of observations (participants) per condition is displayed in Table \@ref(tab:sampleszize).
+The results section is divided into two sections investigating the effects of i) the thinking-style induction and ii) the interaction between the effect of the thinking-style induction (rumination vs. problem-solving) and the effect of the motor activity (chewing vs. finger-tapping) on self-reported state rumination and negative affects. Importantly, as data collection is still ongoing (it will continue next semester), these analyses should be considered as *very preliminary*. The number of observations (participants) per condition is reported in Table \@ref(tab:sampleszize).
 
 ```{r sampleszize, results = "asis"}
 df %>%
@@ -205,8 +206,8 @@ df_induction <- df %>%
     )
 
 priors_induction <- c(
-    prior(normal(0, 100), class = Intercept),
-    prior(normal(0, 10), class = b),
+    prior(normal(400, 200), class = Intercept),
+    prior(normal(0, 100), class = b),
     prior(exponential(0.01), class = sigma),
     prior(exponential(0.01), class = sd)
     )
@@ -326,15 +327,15 @@ WAIC_table_induction <- WAIC_table_induction@output[, 1:4]
 bestmodel <- get(as.character(rownames(WAIC_table_induction[1] ) ) )
 
 rownames(WAIC_table_induction) <- c(
-    "$Int+Ind+RRSbro+BDI+Ind:RRSbro+Ind:BDI$",
-    "$Int+Ind+RRSbro+Ind:RRSbro$",
-    "$Int+Ind+BDI+Ind:BDI$",
-    "$Int+Ind+BDI$",
-    "$Int+Ind+Think+Ind:Think+BDI$",
-    "$Int+Ind+RRSbro$",
-    "$Int+Ind+Think+Ind:Think+RRSbro$",
-    "$Int+Ind$",
-    "$Int+Ind+Think+Ind:Think$"
+    "$Int+Session+BDI$",
+    "$Int+Session+BDI+Session:BDI$",
+    "$Int+Session+RRSbro+BDI+Session:RRSbro+Session:BDI$",
+    "$Int+Session+Think+Session:Think+BDI$",
+    "$Int+Session+RRSbro$",
+    "$Int+Session+RRSbro+Session:RRSbro$",
+    "$Int+Session+Think+Session:Think+RRSbro$",
+    "$Int+Session$",
+    "$Int+Session+Think+Session:Think$"
     )
 
 colnames(WAIC_table_induction) <- c("$WAIC$", "$pWAIC$", "$\\Delta_{WAIC}$", "$Weight$")
@@ -361,8 +362,8 @@ parameters1 <-
         BF10 = (1 / hypothesis(bestmodel, glue("{Term} = 0") )$
             hypothesis$Evid.Ratio) %>% round(., 3),
         Term = c(
-          "Intercept", "Session", "RRSbrooding", "BDI.II",
-          "Session x RRSbrooding", "Session x BDI.II"
+          "Intercept", "Session", "BDI.II" #RRSbrooding", "BDI.II",
+          #"Session x RRSbrooding", "Session x BDI.II"
           )
       )
 
@@ -370,7 +371,7 @@ parameters1 <-
 eff_size_bestmodel_induction <- bayes_R2(bestmodel)
 ```
 
-To examine the efficiency of the induction procedure (i.e., the effects of time, coded as *Session*, and the effects of the thinking mode, coded as *Think*) while controlling for the other variables (i.e., *RRSbrooding* and *BDI.II*), we then compared the parsimony of models containing main constant effects and a varying intercept for *Participant*. Model comparison showed that the best model (i.e., the model with the lowest WAIC) was the model including *Session*, *RRSbooding*, *BDI.II*, and an interaction term between *Session* and *RRSbrooding* and between *Session* and *BDI.II* (see Table \@ref(tab:compexp1)). Fit of the best model was moderate (`r glue_data(eff_size_bestmodel_induction %>% data.frame %>% round(., 3), "$R^{2}$ = {Estimate}, 95% CrI [{Q2.5}, {Q97.5}]")`).
+To examine the efficiency of the induction procedure (i.e., the effects of time, coded as *Session*, and the effects of the thinking-style, coded as *Think*) while controlling for the other variables (i.e., *RRSbrooding* and *BDI.II*), we then compared the parsimony of several models containing different combinations of constant effects and a varying intercept for *Participant*. Model comparison showed that the best model (i.e., the model with the lowest WAIC) was the model including *Session* and *BDI.II* as predictors (see Table \@ref(tab:compexp1)). Fit of the best model was moderate (`r glue_data(eff_size_bestmodel_induction %>% data.frame %>% round(., 3), "$R^{2}$ = {Estimate}, 95% CrI [{Q2.5}, {Q97.5}]")`).
 
 ```{r compexp1, results = "asis"}
 apa_table(
@@ -386,10 +387,10 @@ apa_table(
         margin = 2,
         decimal.mark = ".", big.mark = ""
         ),
-    escape = FALSE) 
+    escape = FALSE)
 ```
 
-Constant effect estimates for the best model are reported in Table \@ref(tab:paramexp1). Based on these values, it seems that *Session* (i.e., the effect of the rumination induction) increased self-reported rumination state (i.e., BSRI sum score) by approximately `r round(parameters1[2, 2], 2)` points on average (`r glue_data(parameters1 %>% data.frame %>% dplyr::filter(Term == "Session") , "$\\beta$ = {Estimate}, 95% CrI [{Lower}, {Upper}], $BF10$ = {BF10}")`). The main positive effect of *BDI.II* and *RRSbrooding* indicate higher BDI-II and RRS brooding subscale scores were associated with higher self-reported state rumination scores overall. The interaction between *Session* and *RRSbrooding* reveals that higher scores on the brooding subscale of the RRS were associated with higher increase of self-reported state rumination from baseline to post-induction (`r glue_data(parameters1 %>% data.frame %>% dplyr::filter(Term == "Session x RRSbrooding") , "$\\beta$ = {Estimate}, 95% CrI [{Lower}, {Upper}], $BF10$ = {BF10}")`).
+Constant effect estimates from the best model are reported in Table \@ref(tab:paramexp1). Based on these values, it seems that *Session* (i.e., the effect of the rumination induction) increased self-reported state rumination (i.e., the BSRI sum score) by approximately `r round(parameters1[2, 2], 2)` points on average (`r glue_data(parameters1 %>% data.frame %>% dplyr::filter(Term == "Session") , "$\\beta$ = {Estimate}, 95% CrI [{Lower}, {Upper}], $BF10$ = {BF10}")`). The main positive effect of *BDI.II* indicates that higher BDI-II scores were associated with higher self-reported state rumination scores on average.
 
 ```{r paramexp1, results = "asis"}
 ####################################
@@ -410,7 +411,7 @@ apa_table(
     parameters1 %>% mutate(BF10 = changeSciNot(BF10) ),
     placement = "H",
     align = c("l", "c", "c", "c", "c", "c", "c"),
-    caption = "Coefficient estimates, standard errors (SE), 95% CrI (Lower, Upper), Rhat and Bayes factor (BF10) for the best model.",
+    caption = "Coefficient estimates, standard errors (SE), 95% CrI (Lower, Upper), Rhat, and Bayes factor (BF10) for the best model.",
     note = "As all predictors were centered to the mean for analysis, these coefficients approximate coefficients from simpler models.",
     small = TRUE,
     digits = 3,
@@ -425,13 +426,9 @@ apa_table(
     )
 ```
 
-The model comparison revealed that the models including an interaction between the effect of time (*Session*) and the effect of the thinking-style (i.e., rumination vs. problem-solving) were not ranked among the best models according to their WAIC (cf. Table \@ref(tab:compexp1)). However, for completeness, we report below the estimations from the last model, including an effect for time, thinking-style, and an interaction between the two.
+Model comparison revealed that the models including an interaction term between the effect of time (*Session*) and the effect of the thinking-style (i.e., rumination vs. problem-solving) were not ranked among the best models according to their WAIC (cf. Table \@ref(tab:compexp1)). However, for completeness, we report the estimations from the model including an effect of time, an effect of thinking-style, and an interaction between these two predictors (see Table \@ref(tab:ParamInteraction)).
 
 ```{r ParamInteraction, results = "asis"}
-##############################################
-# Preparing summary table for the best model #
-##############################################
-
 parameters_interaction <- 
     tidy_stan(M2_induction, prob = 0.95, typical = "mean", digits = 3) %>%
     # removing ration and mcse
@@ -459,7 +456,7 @@ apa_table(
     parameters_interaction %>% mutate(BF10 = changeSciNot(BF10) ),
     placement = "H",
     align = c("l", "c", "c", "c", "c", "c", "c"),
-    caption = "Coefficient estimates, standard errors (SE), 95% CrI (Lower, Upper), Rhat and Bayes factor (BF10) for the model including an interaction between session and thinking-style.",
+    caption = "Coefficient estimates, standard errors (SE), 95% CrI (Lower, Upper), Rhat, and Bayes factor (BF10) for the model including an interaction between session and thinking-style.",
     note = "As all predictors were centered to the mean for analysis, these coefficients approximate coefficients from simpler models.",
     small = TRUE,
     digits = 3,
@@ -474,13 +471,236 @@ apa_table(
     )
 ```
 
-...
+This analysis revealed that both the thinking-style (i.e., rumination vs. problem-solving) and the interaction between time and tinking-style have a negligible effect on self-reported state rumination (`r glue_data(parameters_interaction %>% data.frame %>% dplyr::filter(Term == "Session x Thinking mode"), "$\\beta$ = {Estimate}, 95% CrI [{Lower}, {Upper}], $BF10$ = {BF10}")`). In other words, the rumination induction was not associated with more self-reported state rumination than the problem-solving induction (although more rumination was reported after induction than before on average).
 
 ### Articulatory suppression effects
 
-...
+#### Self-reported state rumination
 
-```{r, fig.align = "center", fig.width = 10, fig.height = 8, fig.cap = "Average self-reported levels of state rumination (BSRI sum score) throughout the experiment, that is, by session, thinking style and type of motor activity. Smaller dots represent individual scores."}
+```{r, results = "hide", warning = FALSE}
+######################
+# MLMs for induction #
+######################
+
+df_motor <- df %>%
+  filter(session != "baseline") %>%
+  mutate(
+    session = ifelse(session == "induction", -0.5, 0.5),
+    thinking_mode = ifelse(thinking_mode == "rumination", 0.5, -0.5),
+    motor_activity = ifelse(motor_activity == "tapping", 0.5, -0.5),
+    RRSbrooding = scale(RRSbrooding) %>% as.numeric,
+    BDI.II = scale(BDI.II) %>% as.numeric,
+    verbal = scale(verbal) %>% as.numeric
+    )
+
+priors_motor <- c(
+    prior(normal(400, 200), class = Intercept),
+    prior(normal(0, 100), class = b),
+    prior(exponential(0.01), class = sigma),
+    prior(exponential(0.01), class = sd)
+    )
+
+M1_motor <- brm(
+    bsri ~ 1 + session + (1|participant),
+    family = gaussian(),
+    prior = priors_motor,
+    data = df_motor,
+    sample_prior = TRUE,
+    cores = parallel::detectCores(),
+    chains = 2, warmup = 2000, iter = 5000,
+    control = list(adapt_delta = 0.95)
+    )
+
+M2_motor <- brm(
+    bsri ~ 1 + session * thinking_mode + (1|participant),
+    family = gaussian(),
+    prior = priors_motor,
+    data = df_motor,
+    sample_prior = TRUE,
+    cores = parallel::detectCores(),
+    chains = 2, warmup = 2000, iter = 5000,
+    control = list(adapt_delta = 0.95)
+    )
+
+M3_motor <- brm(
+    bsri ~ 1 + session * motor_activity + (1|participant),
+    family = gaussian(),
+    prior = priors_motor,
+    data = df_motor,
+    sample_prior = TRUE,
+    cores = parallel::detectCores(),
+    chains = 2, warmup = 2000, iter = 5000,
+    control = list(adapt_delta = 0.95)
+    )
+
+M4_motor <- brm(
+    bsri ~ 1 + session * thinking_mode * motor_activity + (1|participant),
+    family = gaussian(),
+    prior = priors_motor,
+    data = df_motor,
+    sample_prior = TRUE,
+    cores = parallel::detectCores(),
+    chains = 2, warmup = 2000, iter = 5000,
+    control = list(adapt_delta = 0.95)
+    )
+
+M5_motor <- brm(
+    bsri ~ 1 + session * thinking_mode * motor_activity * verbal + (1|participant),
+    family = gaussian(),
+    prior = priors_motor,
+    data = df_motor,
+    sample_prior = TRUE,
+    cores = parallel::detectCores(),
+    chains = 2, warmup = 2000, iter = 5000,
+    control = list(adapt_delta = 0.95)
+    )
+
+M6_motor <- brm(
+    bsri ~ 1 + session * motor_activity * verbal + (1|participant),
+    family = gaussian(),
+    prior = priors_motor,
+    data = df_motor,
+    sample_prior = TRUE,
+    cores = parallel::detectCores(),
+    chains = 2, warmup = 2000, iter = 5000,
+    control = list(adapt_delta = 0.95)
+    )
+
+##########################
+# Model comparison table #
+##########################
+
+source(here::here("code", "compare_waic.R") )
+
+WAIC_table_motor <- compare_waic(
+    M1_motor, M2_motor, M3_motor, M4_motor, M5_motor, M6_motor
+    )
+
+WAIC_table_motor <- WAIC_table_motor@output[, 1:4]
+
+bestmodel <- get(as.character(rownames(WAIC_table_motor[1] ) ) )
+
+rownames(WAIC_table_motor) <- c(
+    "$Int+Session$",
+    "$Int+Session+Think+Session:Think$",
+    "$Int+Session+Motor+Verbal+Session:Motor+Session:Verbal+Session:Motor:Verbal$",
+    "$Int+Session+Motor+Session:Motor$",
+    "$Int+Session+Motor+Think+Session:Motor+Session:Think+Session:Motor:Think$",
+    "$Full\\ model$"
+    )
+
+colnames(WAIC_table_motor) <- c("$WAIC$", "$pWAIC$", "$\\Delta_{WAIC}$", "$Weight$")
+
+##############################################
+# Preparing summary table for the best model #
+##############################################
+
+parameters2 <- 
+    tidy_stan(M6_motor, prob = 0.95, typical = "mean", digits = 3) %>%
+    # removing ration and mcse
+    select(-ratio, -mcse) %>%
+    data.frame %>%
+    # rename columns
+    magrittr::set_colnames(
+        c("Term", "Estimate", "SE", "Lower", "Upper", "Rhat")
+        ) %>%
+    # replace dots by two-dots
+    mutate(Term = str_replace(Term, "session.", "session:") ) %>%
+    mutate(Term = str_replace(Term, "activity.", "activity:") ) %>%
+    mutate(Term = str_replace(Term, "b_", "") ) %>%
+    filter(Term != "sigma") %>%
+    # compute BF for each effect
+    mutate(
+        BF10 = (1 / hypothesis(M6_motor, glue("{Term} = 0") )$
+            hypothesis$Evid.Ratio) %>% round(., 3),
+        Term = c(
+          "Intercept", "Session", "Motor activity", "Verbality",
+          "Session x Motor activity", "Session x Verbality",
+          "Motor activity x Verbality", "Session x Motor activity x Verbality"
+          )
+      )
+
+# compute effect size for the best model (Bayesian R-squared)
+eff_size_bestmodel_motor <- bayes_R2(bestmodel)
+```
+
+We then examined the effect of the two motor tasks (gum-chewing vs. finger-tapping) on both self-reported state rumination (BSRI) and self-reported negative affects (the negative dimension of the PANAS), while controlling for the amount of verbal thoughts reported by the participant. Based on our hypotheses, we expected that the model comparison would reveal a three-way interaction between Session, Thinking-style and the type of motor activity. However, the best model identified by the WAIC model comparison did not include this interaction as a constant effect (see Table \@ref(tab:compexp2)). Fit of the best model was moderate (`r glue_data(eff_size_bestmodel_motor %>% data.frame %>% round(., 3), "$R^{2}$ = {Estimate}, 95% CrI [{Q2.5}, {Q97.5}]")`).
+
+```{r compexp2, results = "asis"}
+apa_table(
+    WAIC_table_motor,
+    placement = "H",
+    align = c("l", "c", "c", "c", "c"),
+    caption = "Comparison of models, ordered by WAIC relative to the best model (i.e., the model with the lowest WAIC).",
+    note = "$pWAIC$ is the number of effective parameters in the model. $Int$ = Intercept, $Ind$ = Induction, $RRSbro$ = RRSbrooding, $BDI$ = BDI-II score. All models include a varying intercept by participant.",
+    small = TRUE,
+    landscape = TRUE,
+    format.args = list(
+        digits = c(2, 2, 2, 3),
+        margin = 2,
+        decimal.mark = ".", big.mark = ""
+        ),
+    escape = FALSE)
+```
+
+However, because we are interested in estimating the effect of each predictor (and because the amount of data is very low), we report the estimations from the model including an effect of time, motor activity, verbality, as well as two-way and three-way interactions between these predictors. Constant effect estimates for this model are reported in Table \@ref(tab:paramexp2). Based on these values, it seems that the overall self-reported levels of state rumination did not decrease after motor activity (`r glue_data(parameters2 %>% data.frame %>% dplyr::filter(Term == "Session") , "$\\beta$ = {Estimate}, 95% CrI [{Lower}, {Upper}], $BF10$ = {BF10}")`). However, *Verbality* (i.e., the amount of verbal thoughts) was positively associated with state rumination on average (`r glue_data(parameters2 %>% data.frame %>% dplyr::filter(Term == "Verbality") , "$\\beta$ = {Estimate}, 95% CrI [{Lower}, {Upper}], $BF10$ = {BF10}")`). Interestingly, the interaction between session, motor activity, and verbality indicates that a higher amount of verbal thoughts was associated with a *different* interaction between session and motor activity (`r glue_data(parameters2 %>% data.frame %>% dplyr::filter(Term == "Session x Motor activity x Verbality") , "$\\beta$ = {Estimate}, 95% CrI [{Lower}, {Upper}], $BF10$ = {BF10}")`). As three-way interaction effects are better understood visually, we depict this effect in Figure \@ref(fig:interactionplot). This figure shows that higher amounts of verbal thoughts were associated with lower levels of self-reported state rumination in the chewing group and higher levels of self-reported state rumination in the finger-tapping group (as we predicted). However, the estimation of this effect is very uncertain due to the low sample size (as expressed by the large standard error) and should be therefore considered cautiously.^[Moreover, the relation between the verbal scale and the change in self-reported state rumination following the motor activity looks only vaguely linear, which should make us cautious about the interpretation of the linear estimates.] The overall evolution of self-reported state rumination throughout the experiment by condition is depicted in Figure \@ref(fig:bsriplot).
+
+```{r paramexp2, results = "asis"}
+apa_table(
+    parameters2 %>% mutate(BF10 = changeSciNot(BF10) ),
+    placement = "H",
+    align = c("l", "c", "c", "c", "c", "c", "c"),
+    caption = "Coefficient estimates, standard errors (SE), 95% CrI (Lower, Upper), Rhat and Bayes factor (BF10) for the best model.",
+    note = "As all predictors were centered to the mean for analysis, these coefficients approximate coefficients from simpler models.",
+    small = TRUE,
+    digits = 3,
+    escape = TRUE,
+    format.args = list(
+        digits = c(3, 3, 3, 3, 2),
+        margin = 2
+        )
+    )
+```
+
+```{r interactionplot, fig.align = "center", fig.width = 10, fig.height = 8, fig.cap = "Interaction between session, motor activity, and verbality. The x-axis represents the amount of verbal thoughts reported by the participant. The y-axis represents differences in self-reported state rumination from after the induction to after the motor activity. Dots represent individual scores."}
+df %>%
+  # removing baseline condition
+  filter(session != "baseline") %>%
+  # standardising BSRI self-reports by post-induction level (motor - post-induction)
+  group_by(participant) %>%
+  mutate(bsri = bsri - first(bsri) ) %>%
+  ungroup %>%
+  mutate(verbal = scale(verbal) ) %>%
+  # keeping only self-reports at the end of the experiment
+  filter(session == "motor") %>%
+  # plotting self-reports by session and group
+  ggplot(
+    aes(
+      x = verbal, y = bsri, group = motor_activity,
+      colour = motor_activity, fill = motor_activity
+    )
+  ) +
+  # horizontal line at zero (baseline level)
+  geom_hline(yintercept = 0, linetype = 2) +
+  # indidivual data points
+  geom_point(pch = 21, colour = "black", size = 3, alpha = 0.8) +
+  # regression line by motor activity
+  geom_smooth(method = "lm", alpha = 0.4, show.legend = FALSE) +
+  # fancy ggplot2 theme
+  theme_minimal(base_size = 12) +
+  # color scheme
+  scale_colour_brewer(palette = "Dark2") +
+  scale_fill_brewer(palette = "Dark2") +
+  # labels
+  labs(
+    fill = "Motor activity",
+    colour = "Motor activity",
+    x = "Centered and standardised amount of verbal thoughts",
+    y = "Difference in self-reported levels of state rumination (post-motor - post-induction)"
+    )
+```
+
+```{r bsriplot, fig.align = "center", fig.width = 10, fig.height = 8, fig.cap = "Average self-reported levels of state rumination (BSRI sum score) throughout the experiment, by thinking-style and type of motor activity. Smaller dots represent individual scores."}
 #####################
 # plotting the data #
 #####################
@@ -551,14 +771,16 @@ df %>%
     labs(
         fill = "Motor activity",
         colour = "Motor activity",
-        #title = "Self-reported levels of state rumination throughout the experiment",
-        #subtitle = "BSRI score by session, thinking style and type of motor activity",
         x = "Time of measurement",
         y = "Self-reported levels of state rumination (BSRI score)"
         )
 ```
 
-```{r, fig.align = "center", fig.width = 10, fig.height = 8, fig.cap = "Average self-reported levels of state negative affects (PANAS) by thinking style and type of motor activity at the beginning (baseline) and end (motor) of the experiment. Smaller dots represent individual scores."}
+#### Self-reported negative affects
+
+In addition to the self-reported levels of state rumination after each type of motor activity, we were also interested in the self-reported levels of state negative affects. More precisely, we expected an interaction between the type of motor activity (chewing vs. finger-tapping) and the thinking-style (rumination vs. problem-solving). Indeed, as both rumination and problem-solving are expected to recruit inner speech to some extent, we expected both thinking styles to be affected by articulatory suppression (i.e., by gum-chewing). Because rumination is expected to have detrimental effects on mood (assessed via the PANAS score) and problem-solving is expected to have "less detrimental" effects (in comparison to rumination), interferring with these thinking styles should reduce their effect on mood. To assess this effect, we examined the interaciton effect between thinking-style and motor activity on the change in negative affects from baseline to after the motor activity (in other words, on the baseline-normalised PANAS score). These data are depicted in Figure \@ref(fig:panasplot).
+
+```{r panasplot, fig.align = "center", fig.width = 10, fig.height = 8, fig.cap = "Average self-reported levels of state negative affects (PANAS) by thinking style and type of motor activity at the beginning (baseline) and end (motor) of the experiment. Smaller dots represent individual scores. NB: colouring and facetting factors have been reversed as compared to the BSRI figure to better highlight the interaction effect."}
 df %>%
     # standardising BSRI self-reports by baseline level
     group_by(participant) %>%
@@ -571,15 +793,15 @@ df %>%
     # plotting self-reports by session and group
     ggplot(
         aes(
-            x = session, y = PANASneg, group = motor_activity,
-            colour = motor_activity, fill = motor_activity
+            x = session, y = PANASneg, group = thinking_mode,
+            colour = thinking_mode, fill = thinking_mode
         )
     ) +
     # horizontal line at zero (baseline level)
     # geom_hline(yintercept = 0, linetype = 3, alpha = 0.8) +
     # violin plots
     geom_violin(
-        aes(x = session, group = interaction(session, motor_activity) ),
+        aes(x = session, group = interaction(session, thinking_mode) ),
         scale = "count", alpha = 0.15,
         colour = "white",
         position = position_dodge(0.5),
@@ -615,8 +837,8 @@ df %>%
         position = position_dodge(0.5),
         show.legend = TRUE
         ) +
-    # facetting by thinking-style
-    facet_wrap(~thinking_mode, ncol = 1) +
+    # facetting by motor_activity
+    facet_wrap(~motor_activity, ncol = 1) +
     # fancy ggplot2 theme
     theme_minimal(base_size = 12) +
     # color scheme
@@ -624,20 +846,211 @@ df %>%
     scale_fill_brewer(palette = "Dark2") +
     # labels
     labs(
-        fill = "Motor activity",
-        colour = "Motor activity",
+        fill = "Thinking-style",
+        colour = "Thinking-style",
         x = "Time of measurement",
         y = "Self-reported levels of negative affects (PANAS score)"
     )
 ```
 
-#### Confirmatory analyses
+As previously, we compared several models to examine our hypotheses. Based on our hypotheses, we expected that the model comparison would reveal a three-way interaction between Thinking-style and the type of motor activity. However, the best model identified by the WAIC model comparison did not include this interaction as a constant effect (see Table \@ref(tab:compexp2panas)).
 
-...
+```{r, results = "hide", warning = FALSE}
+######################
+# MLMs for induction #
+######################
 
-#### Exploratory analyses
+df_motor_panas <- df %>%
+  # removing baseline condition
+  filter(session != "induction") %>%
+  # standardising BSRI self-reports by post-induction level (motor - post-induction)
+  group_by(participant) %>%
+  mutate(panas = PANASneg - first(PANASneg) ) %>%
+  ungroup %>%
+  mutate(verbal = scale(verbal) ) %>%
+  # keeping only self-reports at the end of the experiment
+  filter(session == "motor") %>% 
+  mutate(
+    thinking_mode = ifelse(thinking_mode == "rumination", 0.5, -0.5),
+    motor_activity = ifelse(motor_activity == "tapping", 0.5, -0.5),
+    verbal = scale(verbal) %>% as.numeric
+    )
 
-...
+priors_motor_panas_null <- c(
+    prior(normal(0, 50), class = Intercept),
+    #prior(normal(0, 10), class = b),
+    prior(exponential(0.01), class = sigma)
+    #prior(exponential(0.01), class = sd)
+    )
+
+priors_motor_panas <- c(
+    prior(normal(0, 50), class = Intercept),
+    prior(normal(0, 10), class = b),
+    prior(exponential(0.01), class = sigma)
+    #prior(exponential(0.01), class = sd)
+    )
+
+M1_motor_panas <- brm(
+    panas ~ 1,
+    family = gaussian(),
+    prior = priors_motor_panas_null,
+    data = df_motor_panas,
+    sample_prior = TRUE,
+    cores = parallel::detectCores(),
+    chains = 2, warmup = 2000, iter = 5000,
+    control = list(adapt_delta = 0.95)
+    )
+
+M2_motor_panas <- brm(
+    panas ~ 1 + thinking_mode,
+    family = gaussian(),
+    prior = priors_motor_panas,
+    data = df_motor_panas,
+    sample_prior = TRUE,
+    cores = parallel::detectCores(),
+    chains = 2, warmup = 2000, iter = 5000,
+    control = list(adapt_delta = 0.95)
+    )
+
+M3_motor_panas <- brm(
+    panas ~ 1 + motor_activity,
+    family = gaussian(),
+    prior = priors_motor_panas,
+    data = df_motor_panas,
+    sample_prior = TRUE,
+    cores = parallel::detectCores(),
+    chains = 2, warmup = 2000, iter = 5000,
+    control = list(adapt_delta = 0.95)
+    )
+
+M4_motor_panas <- brm(
+    panas ~ 1 + thinking_mode * motor_activity,
+    family = gaussian(),
+    prior = priors_motor_panas,
+    data = df_motor_panas,
+    sample_prior = TRUE,
+    cores = parallel::detectCores(),
+    chains = 2, warmup = 2000, iter = 5000,
+    control = list(adapt_delta = 0.95)
+    )
+
+M5_motor_panas <- brm(
+    panas ~ 1 + motor_activity * verbal,
+    family = gaussian(),
+    prior = priors_motor_panas,
+    data = df_motor_panas,
+    sample_prior = TRUE,
+    cores = parallel::detectCores(),
+    chains = 2, warmup = 2000, iter = 5000,
+    control = list(adapt_delta = 0.95)
+    )
+
+M6_motor_panas <- brm(
+    panas ~ 1 + thinking_mode * motor_activity * verbal,
+    family = gaussian(),
+    prior = priors_motor_panas,
+    data = df_motor_panas,
+    sample_prior = TRUE,
+    cores = parallel::detectCores(),
+    chains = 2, warmup = 2000, iter = 5000,
+    control = list(adapt_delta = 0.95)
+    )
+
+##########################
+# Model comparison table #
+##########################
+
+source(here::here("code", "compare_waic.R") )
+
+WAIC_table_motor_panas <- compare_waic(
+    M1_motor_panas, M2_motor_panas, M3_motor_panas,
+    M4_motor_panas, M5_motor_panas, M6_motor_panas
+    )
+
+WAIC_table_motor_panas <- WAIC_table_motor_panas@output[, 1:4]
+
+bestmodel_panas <- get(as.character(rownames(WAIC_table_motor_panas[1] ) ) )
+
+rownames(WAIC_table_motor_panas) <- c(
+    "$Int$",
+    "$Int+Think$",
+    "$Int+Motor$",
+    "$Int+Think+Motor+Think:Motor$",
+    "$Int+Motor+Verbal+Motor:Verbal$",
+    "$Full\\ model$"
+    )
+
+colnames(WAIC_table_motor_panas) <- c("$WAIC$", "$pWAIC$", "$\\Delta_{WAIC}$", "$Weight$")
+
+##############################################
+# Preparing summary table for the best model #
+##############################################
+
+parameters_panas <- 
+    tidy_stan(M6_motor_panas, prob = 0.95, typical = "mean", digits = 3) %>%
+    # removing ration and mcse
+    select(-ratio, -mcse) %>%
+    data.frame %>%
+    # rename columns
+    magrittr::set_colnames(
+        c("Term", "Estimate", "SE", "Lower", "Upper", "Rhat")
+        ) %>%
+    # replace dots by two-dots
+    mutate(Term = str_replace(Term, "mode.", "mode:") ) %>%
+    mutate(Term = str_replace(Term, "session.", "session:") ) %>%
+    mutate(Term = str_replace(Term, "activity.", "activity:") ) %>%
+    mutate(Term = str_replace(Term, "b_", "") ) %>%
+    filter(Term != "sigma") %>%
+    # compute BF for each effect
+    mutate(
+        BF10 = (1 / hypothesis(M6_motor_panas, glue("{Term} = 0") )$
+            hypothesis$Evid.Ratio) %>% round(., 3),
+        Term = c(
+          "Intercept", "Thinking-style", "Motor activity", "Verbality",
+          "Thinking-style x Motor activity", "Thinking-style x Verbality",
+          "Motor activity x Verbality", "Thinking-style x Motor activity x Verbality"
+          )
+      )
+
+# compute effect size for the best model (Bayesian R-squared)
+eff_size_bestmodel_motor_panas <- bayes_R2(M6_motor_panas)
+```
+
+```{r compexp2panas, results = "asis"}
+apa_table(
+    WAIC_table_motor_panas,
+    placement = "H",
+    align = c("l", "c", "c", "c", "c"),
+    caption = "Comparison of models, ordered by WAIC relative to the best model (i.e., the model with the lowest WAIC).",
+    note = "$pWAIC$ is the number of effective parameters in the model. $Int$ = Intercept, $Ind$ = Induction, $RRSbro$ = RRSbrooding, $BDI$ = BDI-II score. All models include a varying intercept by participant.",
+    small = TRUE,
+    landscape = TRUE,
+    format.args = list(
+        digits = c(2, 2, 2, 3),
+        margin = 2,
+        decimal.mark = ".", big.mark = ""
+        ),
+    escape = FALSE)
+```
+
+However, because we are interested in estimating the effect of each predictor (and because these analyses are still preliminary), we report the estimations from the full model (i.e., the model including an effect of thinking-style, motor activity and verbality as well as all possible interaction effects) in Table \@ref(tab:paramexp2panas). Based on these values, it seems that self-reported levels of negative affects increased from baseline to the end of the experiment (`r glue_data(parameters_panas %>% data.frame %>% dplyr::filter(Term == "Intercept"), "$\\beta$ = {Estimate}, 95% CrI [{Lower}, {Upper}], $BF10$ = {BF10}")`). Moreover, the rumination induction lead to a greater increase in negative affects than the problem-solving induction (`r glue_data(parameters_panas %>% data.frame %>% dplyr::filter(Term == "Thinking-style") , "$\\beta$ = {Estimate}, 95% CrI [{Lower}, {Upper}], $BF10$ = {BF10}")`), and the chewing groups also showed a greater increase in negative affects as compared to the finger-tapping groups (`r glue_data(parameters_panas %>% data.frame %>% dplyr::filter(Term == "Motor activity"), "$\\beta$ = {Estimate}, 95% CrI [{Lower}, {Upper}], $BF10$ = {BF10}")`). Interestingly, the interaction between thinking-style and motor activity indicates that the effect of the motor activity on the change in negative affect was different according to the thinking-style (`r glue_data(parameters_panas %>% data.frame %>% dplyr::filter(Term == "Thinking-style x Motor activity"), "$\\beta$ = {Estimate}, 95% CrI [{Lower}, {Upper}], $BF10$ = {BF10}")`). As three-way interaction effects are better understood visually, we depict this effect in Figure \@ref(fig:panasplot). This figure shows that the effect of the thinking-style on the change in self-reported state negative affects (i.e., the difference in steepness of the regression lines) was different according to the type of motor activity, with a stronger effect of the thinking-style in the finger-tapping condition than in the chewing condition (as we predicted). However, the estimation of these effects is very uncertain due to the low sample size (as expressed by the large standard error) and should therefore be considered cautiously.
+
+```{r paramexp2panas, results = "asis"}
+apa_table(
+    parameters_panas %>% mutate(BF10 = changeSciNot(BF10) ),
+    placement = "H",
+    align = c("l", "c", "c", "c", "c", "c", "c"),
+    caption = "Coefficient estimates, standard errors (SE), 95% CrI (Lower, Upper), Rhat, and Bayes factor (BF10) for the best model.",
+    note = "As all predictors were centered to the mean for analysis, these coefficients approximate coefficients from simpler models.",
+    small = TRUE,
+    digits = 3,
+    escape = TRUE,
+    format.args = list(
+        digits = c(3, 3, 3, 3, 2),
+        margin = 2
+        )
+    )
+```
 
 ## Discussion
 
@@ -649,7 +1062,7 @@ Pre-registered protocol, open data, supplementary analyses as well as reproducib
 
 ## Acknowledgements
 
-The first author is funded by a PhD fellowship from Univ. Grenoble Alpes. We also thank Kim Rens for her help during data collection.
+The first author is funded by a PhD fellowship from Univ. Grenoble Alpes. We thank Kim Rens for her help during data collection.
 
 \newpage <!-- create a new page for the summary -->
 
