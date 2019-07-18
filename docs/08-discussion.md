@@ -2,11 +2,64 @@
 
 # Discussion and perspectives {#chap8}
 
+\initial{S}everal lines of research have suggested that inner speech may involve speech motor processes. This work includes introspective and phenomenological studies, mental chronometry studies, motor interference studies, modelling work as well as neurophysiological and psychophysiological studies (see our short historical review in Chapter \@ref(intro)). However, the involvement of motor processes during inner speech is highly variable between individuals, tasks, and studies. Therefore, it seems reasonable to assume that inner speech comes in different *varieties* that may involve motor processes to a variable degree. We examined this idea by studying the involvement of the speech motor system during induced rumination, a negative and repetitive form of inner speech. In addition to shedding light upon the nature of inner speech, this work may offer new theoretical and experimental tools to assess the presence and persistence of ruminative thoughts.
+
+<!--
+More precisely, we used surface electromyography and articulatory suppression to quantify the involvement of the speech motor system during verbal and non-verbal induced rumination.
+-->
+
 ## Summary of the results
 
 ...
 
 ## Theoretical implications of the results
+
+### Epistemological interlude
+
+In order to fully apprehend the theoretical implications of these results, it might be useful to first clearly articulate the logical argument(s) elaborated in the present work. In the first part of the present work (the EMG studies presented in Chapter \@ref(chap3) and \@ref(chap4)), the logical argument was as follows: *if* verbal rumination is a form of inner speech, *then* rumination should be accompanied by peripheral muscular activity in the speech muscles. However, going from this substantive hypothesis to the conclusion (i.e., connecting theory to observations) actually necessitate the use of *auxiliary hypotheses*... Elucidating these auxiliary assumptions, the actual logical argument from Part I can be restated as follows^[We recognise that this formulation may still be incomplete as some additional auxiliary or instrumental hypotheses may still be incorporated in order to draw a more exhaustive picture of the argument.]:
+
+- *Theoretical assumption ($T$)*: Verbal rumination is a form of inner speech
+
+  - *Auxiliary hypothesis 1 ($A_{1}$)*: Some forms of inner speech involve the motor simulation of speech production
+  - *Auxiliary hypothesis 2 ($A_{2}$)*: The simulation mechanism recruits neural networks engaged in (overt) execution
+  - *Auxiliary hypothesis 3 ($A_{3}$)*: The motor commands generated during simulation are only partially inhibited
+  - *Instrumental hypothesis 1 ($I_{1}$)*: Surface electromyography is a reliable tool to peripherally record partially inhibited motor commands
+  - *Ceteris paribus clause ($C$)*: We assume there is no other factor exerting an appreciable influence that could obfuscate the main effect of interest
+
+- *Conclusion*: Therefore, rumination should be accompanied by peripheral muscular activity (EMG traces) in the speech muscles
+
+In other words, we say that if the ensemble of premises $p$ entails the conclusion $q$, stating $p$ suffices to conclude $q$ (modus ponens).
+
+\[
+  \begin{array}{ r l }
+               & p \rightarrow q \\
+               & p \\
+    \cline{2-2}
+    \therefore & q
+  \end{array}
+\]
+
+From there, observing $q$ does not allow to infer $p$ (affirming the consequent fallacy) but not observing $p$ ($\lnot p$) allows inferring not $p$ ($\lnot p$) via the modus tollens. However, not observing $q$ does not permit to refute the substantive hypothesis $T$. Rather, not observing $q$ only allows for the refutation of $p$, the *conjunction* of all premises described in the above argument (i.e., $T \land A_{1} \land A_{2} \land A_{3} \land I_{1} \land C$). Put formally, negating the conjunction of premises is logically equivalent to stating a disjunction of the conjuncts [i.e., either one or the other of the premises is false; @meehl_appraising_1990]. Therefore, not observing $q$ only allows for a refutation of $p$ to an extent that is function of the (im)plausibility of the other conjuncts in $p$ (i.e., $A_{1}$, $A_{2}$, $A_{3}$, $I_{1}$, and $C$).
+
+Similarly, the logical argument from the second part (i.e., the relaxation experiments presented in Chapter \@ref(chap3) and \@ref(chap4) as well as the articulatory suppression studies presented in Chapter \@ref(chap6) and \@ref(chap7)) was of the following form: *if* verbal rumination is a form of inner speech, *then*, a disruption of the speech motor system should disrupt rumination. Again, this argument may be restated in a more detailed form as follows:
+
+- *Theoretical assumption ($T$)*: Verbal rumination is a form of inner speech
+
+  - *Auxiliary hypothesis 1 ($A_{1}$)*: Some forms of inner speech involve the motor simulation of speech production
+  - *Auxiliary hypothesis 2 ($A_{2}$)*: The simulation mechanism recruits neural networks engaged in (overt) execution
+  - *Ceteris paribus clause ($C$)*: We assume there is no other factor exerting an appreciable influence that could obfuscate the main effect of interest
+
+- *Conclusion*: Therefore, a disruption of the speech motor system should disrupt rumination
+
+In other words, using the same reasoning as before, we say that not observing the conclusion $q$ only counts as a refutation of $p$ to an extent that is function of the (im)plausibility of the other conjuncts $p$. The question remains to know how we could assess the plausibility...
+
+Interestingly, @gershman_how_2019 suggested a way to numerically assess the plausibility of auxiliary hypotheses in order to quantify the plausibility in core theoretical assumptions and conclusions... In other words, we would need to "assign credit or blame to central hypotheses vs. auxiliary hypotheses" [@gershman_how_2019]... suggests a Bayesian framework for induction, allowing to assess the plausibility...
+
+### Implication of these results for inner speech theories
+
+...
+
+### Implication of these results for rumination theories
 
 ...
 
@@ -14,7 +67,7 @@
 
 A revised verson of @mackay_constraints_1992 constraints...
 
-Condensation in rumination, look into think-aloud protocols (e.g. Lyubomirsky et al., 1999) ??
+Condensation in rumination, look into think-aloud protocols (e.g. Lyubomirsky et al., 1999) ?
 
 Différence entre petit effet homogène (dominant) et > effet hétéogène, réf aux travaux de haaf et rouder, further work should probably explore the domnancy of the effect
 
@@ -32,13 +85,13 @@ Posterior prob of central hypo and auxiliary hypo ? Computing them via Bayes the
 
 How to overcome (bad) mental habits ? From Hertel (2004, page 209): In short, the best antidote to maladaptive habits is a new set of habits—not the opposite sort of habits recommended by Pollyanna and the teachings of Norman Vincent Peale (1956) and not the habits of suppression as recommended by certain grandmothers but the habits of thought control.
 
-Describe model of van vugt… suractivation of neagtive memory chunks ? Alternatively, rumination can be seen in a Bayesian framework as overdetermined priors… or lack of flexibility.
+Describe model of van vugt... suractivation of neagtive memory chunks ? Alternatively, rumination can be seen in a Bayesian framework as overdetermined priors… or lack of flexibility.
 
 Mental habit = low control (automaticity). Habits become habits through learning and association, in the same way a poem can be learned by heart… both can be more and more strongly internalised in a similar way…
 
 See fitzgerald et al. (2014): how habits are created ? Through model comparison and model averaging, simpler model (habits models) are favoured over time
 
-From Dolan & Doyan (2014): Model-free control is computationally efficient, since it re- places computation (i.e., the burdensome simulation of future states) with memory (i.e., stored discounted values of expected future reward); however, the forward-looking nature of the pre- diction error makes it statistically inefficient (Daw et al., 2005).
+From Dolan & Doyan (2014): Model-free control is computationally efficient, since it replaces computation (i.e., the burdensome simulation of future states) with memory (i.e., stored discounted values of expected future reward); however, the forward-looking nature of the pre- diction error makes it statistically inefficient (Daw et al., 2005).
 
 >> More automatic inner speech relies more on associate memory-based processes while less automatic (more intentional / deliberate) relies more on deliberate simulation mechanisms. Why ? Because habitual motor action relies on memory-based stored association (mappings) between motor command and sensory consequences. 
 
@@ -55,6 +108,6 @@ Perspectives: AFM ou IFM ? Ouverture vers post-doc et mécanismes inhibiteurs
 
 ...
 
-## Conclusions
+## Conclusion
 
 ...

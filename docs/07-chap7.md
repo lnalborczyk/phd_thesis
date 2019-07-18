@@ -1,14 +1,10 @@
 # Examining the involvement of the speech motor system during rumination: a dual-task investigation {#chap7}
 
-\initial{S}ummary of the research...^[This experimental chapter is a submitted manuscript reformatted for the need of this thesis. Pre-registered protocol, preprint, data, as well as reproducible code and figures are available at: [https://osf.io/8ab2d/](https://osf.io/8ab2d/).]
-
 
 
 <!-- NB: You can add comments using these tags -->
 
-## Abstract
-
-This study explores whether the speech motor system is involved in verbal rumination... Pre-registered protocol, preprint, data, as well as reproducible code and figures are available at: https://osf.io/8ab2d/.
+\initial{I}t has been suggested that verbal rumination may be considered as a form of inner speech and may therefore involve the speech motor system. This study explores whether the speech motor system is involved in verbal rumination by examining the effects of articulatory suppression (via gum-chewing) on two forms of induced repetitive thoughts (rumination and problem-solving), following the presentation of a stressor. We expected that (unconstrained) rumination would lead to sustained negative affects following a stressor whereas (unconstrained) problem-solving would lead to less detrimental effects on mood (in comparison to rumination). However, if motor processes are involved during rumination and problem-solving, articulatory suppression should dampen the differential effects of rumination and problem-solving on mood. At the time of the writing, data collection is still ongoing and the analyses presented in this chapter are therefore very preliminary. However, data collected so far suggest that articulatory suppression (gum-chewing) is indeed associated with a weaker difference in the effects of rumination versus problem-solving on state negative affects.^[This experimental chapter is a working manuscript reformatted for the need of this thesis. Pre-registered protocol, preprint, data, as well as reproducible code and figures will be made available at: [https://osf.io/8ab2d/](https://osf.io/8ab2d/).]
 
 ## Introduction
 
@@ -76,7 +72,7 @@ After filling-in the consent form, participants watched a series of short (aroun
 
 At the end of the experiment, all participants went through a positive mood induction (remembering and reliving a positive memory) to attenuate the effects of the stress induction. Finally, participants were fully debriefed about the goals of the study. The entire experiment was video-monitored using a Sony HANDYCAM video camera to check whether the participants effectively completed the task. In addition, the experimenter was able to monitor the participant's performance during the experiment through a one-way mirror (located behind the participant). This procedure is summarised in Figure \@ref(fig:diagram).
 
-![(\#fig:diagramCh7)Timeline of the experiment, from top to bottom.](thesis-chapter7-17-07-19_files/figure-docx/diagramCh7-1.pdf)
+![(\#fig:diagramCh7)Timeline of the experiment, from top to bottom.](07-chap7_files/figure-docx/diagramCh7-1.pdf)
 
 ### Data analysis
 
@@ -105,7 +101,7 @@ rumination        tapping                9
 
 
 
-To examine the efficiency of the induction procedure (i.e., the effects of time, coded as *Session*, and the effects of the thinking-style, coded as *Think*) while controlling for the other variables (i.e., *RRSbrooding* and *BDI.II*), we then compared the parsimony of several models containing different combinations of constant effects and a varying intercept for *Participant*. Model comparison showed that the best model (i.e., the model with the lowest WAIC) was the model including *Session* and *BDI.II* as predictors (see Table \@ref(tab:compexp1)). Fit of the best model was moderate ($R^2$ = 0.572, 95% CrI [0.362, 0.71]).
+To examine the efficiency of the induction procedure (i.e., the effects of time, coded as *Session*, and the effects of the thinking-style, coded as *Think*) while controlling for the other variables (i.e., *RRSbrooding* and *BDI.II*), we then compared the parsimony of several models containing different combinations of constant effects and a varying intercept for *Participant*. Model comparison showed that the best model (i.e., the model with the lowest WAIC) was the model including *Session* and *BDI.II* as predictors (see Table \@ref(tab:compexp1)). Fit of the best model was moderate ($R^2$ = 0.582, 95% CrI [0.388, 0.714]).
 
 <caption>(\#tab:compexp1)</caption>
 
@@ -113,19 +109,19 @@ To examine the efficiency of the induction procedure (i.e., the effects of time,
 
                                                        $WAIC$     $pWAIC$    $\Delta_{WAIC}$    $Weight$ 
 ----------------------------------------------------  ---------  ---------  -----------------  ----------
-$Int+Session+BDI$                                      1047.88     20.73          0.00           0.431   
-$Int+Session+BDI+Session:BDI$                          1050.06     21.09          2.18           0.145   
-$Int+Session+RRSbro+BDI+Session:RRSbro+Session:BDI$    1050.09     21.00          2.21           0.143   
-$Int+Session+Think+Session:Think+BDI$                  1050.58     21.90          2.69           0.112   
-$Int+Session+RRSbro$                                   1050.86     24.70          2.98           0.097   
-$Int+Session+RRSbro+Session:RRSbro$                    1053.53     27.41          5.65           0.026   
-$Int+Session+Think+Session:Think+RRSbro$               1054.01     25.22          6.12           0.020   
-$Int+Session$                                          1054.06     25.85          6.18           0.020   
-$Int+Session+Think+Session:Think$                      1056.09     27.98          8.20           0.007   
+$Int+Session+BDI$                                      1046.46     20.95          0.00           0.583   
+$Int+Session+BDI+Session:BDI$                          1049.28     21.79          2.82           0.143   
+$Int+Session+RRSbro+BDI+Session:RRSbro+Session:BDI$    1049.91     21.48          3.45           0.104   
+$Int+Session+Think+Session:Think+BDI$                  1050.59     20.68          4.13           0.074   
+$Int+Session+RRSbro$                                   1051.53     25.14          5.07           0.046   
+$Int+Session+RRSbro+Session:RRSbro$                    1053.54     25.77          7.08           0.017   
+$Int+Session+Think+Session:Think+RRSbro$               1053.58     27.39          7.12           0.017   
+$Int+Session$                                          1054.03     25.78          7.57           0.013   
+$Int+Session+Think+Session:Think$                      1056.63     28.27          10.17          0.004   
 
 <center>*Note.* $pWAIC$ is the number of effective parameters in the model. $Int$ = Intercept, $Ind$ = Induction, $RRSbro$ = RRSbrooding, $BDI$ = BDI-II score. All models include a varying intercept by participant.</center>
 
-Constant effect estimates from the best model are reported in Table \@ref(tab:paramexp1). Based on these values, it seems that *Session* (i.e., the effect of the rumination induction) increased self-reported state rumination (i.e., the BSRI sum score) by approximately 73.94 points on average ($\beta$ = 73.936, 95% CrI [26.528, 118.302], $BF10$ = 44.644). The main positive effect of *BDI.II* indicates that higher BDI-II scores were associated with higher self-reported state rumination scores on average.
+Constant effect estimates from the best model are reported in Table \@ref(tab:paramexp1). Based on these values, it seems that *Session* (i.e., the effect of the rumination induction) increased self-reported state rumination (i.e., the BSRI sum score) by approximately 74.26 points on average ($\beta$ = 74.261, 95% CrI [27.508, 116.99], $BF10$ = 36.581). The main positive effect of *BDI.II* indicates that higher BDI-II scores were associated with higher self-reported state rumination scores on average.
 
 <caption>(\#tab:paramexp1)</caption>
 
@@ -135,9 +131,9 @@ Constant effect estimates from the best model are reported in Table \@ref(tab:pa
 
 Term         Estimate      SE       Lower      Upper     Rhat                 BF10             
 ----------  ----------  --------  ---------  ---------  -------  ------------------------------
-Intercept    235.037     15.870    202.945    267.563    1.001    5.994*10\textasciicircum{}15 
-Session       73.936     23.033    26.528     118.302    1.000               44.64             
-BDI.II        94.448     15.640    64.040     127.430    1.000    1.758*10\textasciicircum{}8  
+Intercept    235.328     15.807    205.579    267.975    1.000    1.799*10\textasciicircum{}18 
+Session       74.261     23.050    27.508     116.990    1.000               36.58             
+BDI.II        94.774     16.085    65.035     127.975    1.000    5.832*10\textasciicircum{}14 
 
 <center>*Note.* As all predictors were centered to the mean for analysis, these coefficients approximate coefficients from simpler models.</center>
 
@@ -149,16 +145,16 @@ Model comparison revealed that the models including an interaction term between 
 
 
 
-Term                       Estimate      SE       Lower      Upper     Rhat                 BF10             
-------------------------  ----------  --------  ---------  ---------  -------  ------------------------------
-Intercept                  236.052     22.938    193.767    281.433    1.000    1.327*10\textasciicircum{}16 
-Session                     74.388     21.470    29.428     117.421    1.000               25.93             
-Thinking mode               -9.359     39.012    -83.365    70.695     1.000               0.409             
-Session x Thinking mode     3.671      42.797    -86.213    84.102     1.000               0.439             
+Term                       Estimate      SE       Lower      Upper     Rhat                BF10             
+------------------------  ----------  --------  ---------  ---------  -------  -----------------------------
+Intercept                  235.274     21.786    192.245    278.950    1.000    1.46*10\textasciicircum{}21 
+Session                     74.039     22.529    29.536     118.827    1.000               22.45            
+Thinking mode              -10.300     40.748    -86.104    74.336     1.001               0.419            
+Session x Thinking mode     3.686      40.500    -75.218    84.342     1.000               0.412            
 
 <center>*Note.* As all predictors were centered to the mean for analysis, these coefficients approximate coefficients from simpler models.</center>
 
-This analysis revealed that both the thinking-style (i.e., rumination vs. problem-solving) and the interaction between time and tinking-style have a negligible effect on self-reported state rumination ($\beta$ = 3.671, 95% CrI [-86.213, 84.102], $BF10$ = 0.439). In other words, the rumination induction was not associated with more self-reported state rumination than the problem-solving induction (although more rumination was reported after induction than before on average).
+This analysis revealed that both the thinking-style (i.e., rumination vs. problem-solving) and the interaction between time and thinking-style have a negligible effect on self-reported state rumination ($\beta$ = 3.686, 95% CrI [-75.218, 84.342], $BF10$ = 0.412). In other words, the rumination induction was not associated with more self-reported state rumination than the problem-solving induction (although more rumination was reported after induction than before on average).
 
 ### Articulatory suppression effects
 
@@ -166,7 +162,7 @@ This analysis revealed that both the thinking-style (i.e., rumination vs. proble
 
 
 
-We then examined the effect of the two motor tasks (gum-chewing vs. finger-tapping) on both self-reported state rumination (BSRI) and self-reported negative affects (the negative dimension of the PANAS), while controlling for the amount of verbal thoughts reported by the participant. Based on our hypotheses, we expected that the model comparison would reveal a three-way interaction between Session, Thinking-style and the type of motor activity. However, the best model identified by the WAIC model comparison did not include this interaction as a constant effect (see Table \@ref(tab:compexp2)). Fit of the best model was moderate ($R^2$ = 0.73, 95% CrI [0.594, 0.81]).
+We then examined the effect of the two motor tasks (gum-chewing vs. finger-tapping) on both self-reported state rumination (BSRI) and self-reported negative affects (the negative dimension of the PANAS), while controlling for the amount of verbal thoughts reported by the participant. Based on our hypotheses, we expected that the model comparison would reveal a three-way interaction between Session, Thinking-style and the type of motor activity. However, the best model identified by the WAIC model comparison did not include this interaction as a constant effect (see Table \@ref(tab:compexp2)). Fit of the best model was moderate ($R^2$ = 0.729, 95% CrI [0.601, 0.808]).
 
 <caption>(\#tab:compexp2)</caption>
 
@@ -174,16 +170,16 @@ We then examined the effect of the two motor tasks (gum-chewing vs. finger-tappi
 
                                                                                 $WAIC$     $pWAIC$    $\Delta_{WAIC}$    $Weight$ 
 -----------------------------------------------------------------------------  ---------  ---------  -----------------  ----------
-$Int+Session$                                                                   1019.39     30.06          0.00           0.402   
-$Int+Session+Think+Session:Think$                                               1020.04     30.49          0.65           0.291   
-$Int+Session+Motor+Verbal+Session:Motor+Session:Verbal+Session:Motor:Verbal$    1021.36     30.29          1.97           0.150   
-$Int+Session+Motor+Session:Motor$                                               1021.85     30.58          2.46           0.117   
-$Int+Session+Motor+Think+Session:Motor+Session:Think+Session:Motor:Think$       1024.92     31.42          5.53           0.025   
-$Full\ model$                                                                   1026.12     32.25          6.73           0.014   
+$Int+Session$                                                                   1019.24     29.89          0.00           0.410   
+$Int+Session+Think+Session:Think$                                               1020.55     30.70          1.31           0.213   
+$Int+Session+Motor+Verbal+Session:Motor+Session:Verbal+Session:Motor:Verbal$    1020.89     30.38          1.65           0.180   
+$Int+Session+Motor+Session:Motor$                                               1021.04     30.42          1.80           0.167   
+$Int+Session+Motor+Think+Session:Motor+Session:Think+Session:Motor:Think$       1025.79     31.32          6.55           0.016   
+$Full\ model$                                                                   1025.98     32.42          6.74           0.014   
 
 <center>*Note.* $pWAIC$ is the number of effective parameters in the model. $Int$ = Intercept, $Ind$ = Induction, $RRSbro$ = RRSbrooding, $BDI$ = BDI-II score. All models include a varying intercept by participant.</center>
 
-However, because we are interested in estimating the effect of each predictor (and because the amount of data is very low), we report the estimations from the model including an effect of time, motor activity, verbality, as well as two-way and three-way interactions between these predictors. Constant effect estimates for this model are reported in Table \@ref(tab:paramexp2). Based on these values, it seems that the overall self-reported levels of state rumination did not decrease after motor activity ($\beta$ = 0.696, 95% CrI [-38.696, 36.31], $BF10$ = 0.188). However, *Verbality* (i.e., the amount of verbal thoughts) was positively associated with state rumination on average ($\beta$ = 67.544, 95% CrI [23.805, 108.712], $BF10$ = 17.596). Interestingly, the interaction between session, motor activity, and verbality indicates that a higher amount of verbal thoughts was associated with a *different* interaction between session and motor activity ($\beta$ = 51.876, 95% CrI [-18.103, 125.514], $BF10$ = 0.98). As three-way interaction effects are better understood visually, we depict this effect in Figure \@ref(fig:interactionplot). This figure shows that higher amounts of verbal thoughts were associated with lower levels of self-reported state rumination in the chewing group and higher levels of self-reported state rumination in the finger-tapping group (as we predicted). However, the estimation of this effect is very uncertain due to the low sample size (as expressed by the large standard error) and should be therefore considered cautiously.^[Moreover, the relation between the verbal scale and the change in self-reported state rumination following the motor activity looks only vaguely linear, which should make us cautious about the interpretation of the linear estimates.] The overall evolution of self-reported state rumination throughout the experiment by condition is depicted in Figure \@ref(fig:bsriplot).
+However, because we are interested in estimating the effect of each predictor (and because the amount of data is very low), we report the estimations from the model including an effect of time, motor activity, verbality, as well as two-way and three-way interactions between these predictors. Constant effect estimates for this model are reported in Table \@ref(tab:paramexp2). Based on these values, it seems that the overall self-reported levels of state rumination did not decrease after motor activity ($\beta$ = 0.61, 95% CrI [-38.553, 36.052], $BF10$ = 0.196). However, *Verbality* (i.e., the amount of verbal thoughts) was positively associated with state rumination on average ($\beta$ = 66.676, 95% CrI [21.286, 108.294], $BF10$ = 15.347). Interestingly, the interaction between session, motor activity, and verbality indicates that a higher amount of verbal thoughts was associated with a *different* interaction between session and motor activity ($\beta$ = 51.603, 95% CrI [-16.981, 123.99], $BF10$ = 1.009). As three-way interaction effects are better understood visually, we depict this effect in Figure \@ref(fig:interactionplot). This figure shows that higher amounts of verbal thoughts were associated with lower levels of self-reported state rumination in the chewing group and higher levels of self-reported state rumination in the finger-tapping group (as we predicted). However, the estimation of this effect is very uncertain due to the low sample size (as expressed by the large standard error) and should be therefore considered cautiously.^[Moreover, the relation between the verbal scale and the change in self-reported state rumination following the motor activity looks only vaguely linear, which should make us cautious about the interpretation of the linear estimates.] The overall evolution of self-reported state rumination throughout the experiment by condition is depicted in Figure \@ref(fig:bsriplot).
 
 <caption>(\#tab:paramexp2)</caption>
 
@@ -193,26 +189,26 @@ However, because we are interested in estimating the effect of each predictor (a
 
 Term                                    Estimate      SE       Lower      Upper     Rhat                 BF10             
 -------------------------------------  ----------  --------  ---------  ---------  -------  ------------------------------
-Intercept                               280.801     21.976    237.186    321.557    1.000    6.164*10\textasciicircum{}15 
-Session                                  0.696      18.756    -38.696    36.310     1.000               0.188             
-Motor activity                           48.199     40.042    -33.183    126.079    1.001                0.81             
-Verbality                                67.544     21.287    23.805     108.712    1.000                17.6             
-Session x Motor activity                 -7.981     35.493    -78.173    63.108     1.000               0.378             
-Session x Verbality                      -6.824     18.849    -45.483    30.389     1.000               0.197             
-Motor activity x Verbality               39.281     40.474    -44.875    115.496    1.001               0.674             
-Session x Motor activity x Verbality     51.876     35.808    -18.103    125.514    1.000                0.98             
+Intercept                               280.929     22.294    236.380    325.639    1.001    9.426*10\textasciicircum{}16 
+Session                                  0.610      19.076    -38.553    36.052     1.000               0.196             
+Motor activity                           46.755     41.209    -35.609    126.047    1.000               0.816             
+Verbality                                66.676     21.404    21.286     108.294    1.000               15.35             
+Session x Motor activity                 -8.433     35.771    -78.695    61.435     1.000               0.377             
+Session x Verbality                      -6.620     18.059    -43.949    29.026     1.000               0.204             
+Motor activity x Verbality               38.326     40.451    -45.277    113.198    1.001               0.641             
+Session x Motor activity x Verbality     51.603     35.084    -16.981    123.990    1.000               1.009             
 
 <center>*Note.* As all predictors were centered to the mean for analysis, these coefficients approximate coefficients from simpler models.</center>
 
-![(\#fig:interactionplot)Interaction between session, motor activity, and verbality. The x-axis represents the amount of verbal thoughts reported by the participant. The y-axis represents differences in self-reported state rumination from after the induction to after the motor activity. Dots represent individual scores.](thesis-chapter7-17-07-19_files/figure-docx/interactionplot-1.png)
+![(\#fig:interactionplot)Interaction between session, motor activity, and verbality. The x-axis represents the amount of verbal thoughts reported by the participant. The y-axis represents differences in self-reported state rumination from after the induction to after the motor activity. Dots represent individual scores.](07-chap7_files/figure-docx/interactionplot-1.png)
 
-![(\#fig:bsriplot)Average self-reported levels of state rumination (BSRI sum score) throughout the experiment, by thinking-style and type of motor activity. Smaller dots represent individual scores.](thesis-chapter7-17-07-19_files/figure-docx/bsriplot-1.png)
+![(\#fig:bsriplot)Average self-reported levels of state rumination (BSRI sum score) throughout the experiment, by thinking-style and type of motor activity. Smaller dots represent individual scores.](07-chap7_files/figure-docx/bsriplot-1.png)
 
 #### Self-reported negative affects
 
-In addition to the self-reported levels of state rumination after each type of motor activity, we were also interested in the self-reported levels of state negative affects. More precisely, we expected an interaction between the type of motor activity (chewing vs. finger-tapping) and the thinking-style (rumination vs. problem-solving). Indeed, as both rumination and problem-solving are expected to recruit inner speech to some extent, we expected both thinking styles to be affected by articulatory suppression (i.e., by gum-chewing). Because rumination is expected to have detrimental effects on mood (assessed via the PANAS score) and problem-solving is expected to have "less detrimental" effects (in comparison to rumination), interferring with these thinking styles should reduce their effect on mood. To assess this effect, we examined the interaciton effect between thinking-style and motor activity on the change in negative affects from baseline to after the motor activity (in other words, on the baseline-normalised PANAS score). These data are depicted in Figure \@ref(fig:panasplot).
+In addition to the self-reported levels of state rumination after each type of motor activity, we were also interested in the self-reported levels of state negative affects. More precisely, we expected an interaction between the type of motor activity (chewing vs. finger-tapping) and the thinking-style (rumination vs. problem-solving). Indeed, as both rumination and problem-solving are expected to recruit inner speech to some extent, we expected both thinking styles to be affected by articulatory suppression (i.e., by gum-chewing). Because rumination is expected to have detrimental effects on mood (assessed via the PANAS score) and problem-solving is expected to have "less detrimental" effects (in comparison to rumination), interfering with these thinking styles should reduce their effect on mood. To assess this effect, we examined the interaction effect between thinking-style and motor activity on the change in negative affects from baseline to after the motor activity (in other words, on the baseline-normalised PANAS score). These data are depicted in Figure \@ref(fig:panasplot).
 
-![(\#fig:panasplot)Average self-reported levels of state negative affects (PANAS) by thinking style and type of motor activity at the beginning (baseline) and end (motor) of the experiment. Smaller dots represent individual scores. NB: colouring and facetting factors have been reversed as compared to the BSRI figure to better highlight the interaction effect.](thesis-chapter7-17-07-19_files/figure-docx/panasplot-1.png)
+![(\#fig:panasplot)Average self-reported levels of state negative affects (PANAS) by thinking style and type of motor activity at the beginning (baseline) and end (motor) of the experiment. Smaller dots represent individual scores. NB: colouring and facetting factors have been reversed as compared to the BSRI figure to better highlight the interaction effect.](07-chap7_files/figure-docx/panasplot-1.png)
 
 As previously, we compared several models to examine our hypotheses. Based on our hypotheses, we expected that the model comparison would reveal a three-way interaction between Thinking-style and the type of motor activity. However, the best model identified by the WAIC model comparison did not include this interaction as a constant effect (see Table \@ref(tab:compexp2panas)).
 
@@ -224,16 +220,16 @@ As previously, we compared several models to examine our hypotheses. Based on ou
 
                                    $WAIC$    $pWAIC$    $\Delta_{WAIC}$    $Weight$ 
 --------------------------------  --------  ---------  -----------------  ----------
-$Int$                              264.53     3.48           0.00           0.414   
-$Int+Think$                        265.04     4.40           0.51           0.320   
-$Int+Motor$                        266.39     4.44           1.86           0.163   
-$Int+Think+Motor+Think:Motor$      268.72     5.62           4.18           0.051   
-$Int+Motor+Verbal+Motor:Verbal$    268.78     5.99           4.25           0.049   
-$Full\ model$                      274.38     8.16           9.85           0.003   
+$Int$                              264.57     3.53           0.00           0.418   
+$Int+Think$                        265.35     4.52           0.78           0.283   
+$Int+Motor$                        266.23     4.38           1.66           0.182   
+$Int+Think+Motor+Think:Motor$      268.42     5.53           3.84           0.061   
+$Int+Motor+Verbal+Motor:Verbal$    268.73     5.97           4.16           0.052   
+$Full\ model$                      274.33     8.15           9.76           0.003   
 
 <center>*Note.* $pWAIC$ is the number of effective parameters in the model. $Int$ = Intercept, $Ind$ = Induction, $RRSbro$ = RRSbrooding, $BDI$ = BDI-II score. All models include a varying intercept by participant.</center>
 
-However, because we are interested in estimating the effect of each predictor (and because these analyses are still preliminary), we report the estimations from the full model (i.e., the model including an effect of thinking-style, motor activity and verbality as well as all possible interaction effects) in Table \@ref(tab:paramexp2panas). Based on these values, it seems that self-reported levels of negative affects increased from baseline to the end of the experiment ($\beta$ = 2.022, 95% CrI [0.128, 3.95], $BF10$ = 0.728). Moreover, the rumination induction lead to a greater increase in negative affects than the problem-solving induction ($\beta$ = 1.903, 95% CrI [-1.952, 5.42], $BF10$ = 0.323), and the chewing groups also showed a greater increase in negative affects as compared to the finger-tapping groups ($\beta$ = 1.062, 95% CrI [-2.722, 4.856], $BF10$ = 0.217). Interestingly, the interaction between thinking-style and motor activity indicates that the effect of the motor activity on the change in negative affect was different according to the thinking-style ($\beta$ = 1.305, 95% CrI [-5.923, 7.858], $BF10$ = 0.368). As three-way interaction effects are better understood visually, we depict this effect in Figure \@ref(fig:panasplot). This figure shows that the effect of the thinking-style on the change in self-reported state negative affects (i.e., the difference in steepness of the regression lines) was different according to the type of motor activity, with a stronger effect of the thinking-style in the finger-tapping condition than in the chewing condition (as we predicted). However, the estimation of these effects is very uncertain due to the low sample size (as expressed by the large standard error) and should therefore be considered cautiously.
+However, because we are interested in estimating the effect of each predictor (and because these analyses are still preliminary), we report the estimations from the full model (i.e., the model including an effect of thinking-style, motor activity and verbality as well as all possible interaction effects) in Table \@ref(tab:paramexp2panas). Based on these values, it seems that self-reported levels of negative affects increased from baseline to the end of the experiment ($\beta$ = 2.047, 95% CrI [0.269, 3.937], $BF10$ = 1.114). Moreover, the rumination induction lead to a greater increase in negative affects than the problem-solving induction ($\beta$ = 1.928, 95% CrI [-1.831, 5.585], $BF10$ = 0.317), and the chewing groups also showed a greater increase in negative affects as compared to the finger-tapping groups ($\beta$ = 1.073, 95% CrI [-2.565, 4.753], $BF10$ = 0.222). Interestingly, the interaction between thinking-style and motor activity indicates that the effect of the motor activity on the change in negative affect was different according to the thinking-style ($\beta$ = 1.316, 95% CrI [-5.548, 8.37], $BF10$ = 0.37). As three-way interaction effects are better understood visually, we depict this effect in Figure \@ref(fig:panasplot). This figure shows that the effect of the thinking-style on the change in self-reported state negative affects (i.e., the difference in steepness of the regression lines) was different according to the type of motor activity, with a stronger effect of the thinking-style in the finger-tapping condition than in the chewing condition (as we predicted). However, the estimation of these effects is very uncertain due to the low sample size (as expressed by the large standard error) and should therefore be considered cautiously.
 
 <caption>(\#tab:paramexp2panas)</caption>
 
@@ -243,14 +239,14 @@ However, because we are interested in estimating the effect of each predictor (a
 
 Term                                           Estimate     SE      Lower     Upper    Rhat     BF10  
 --------------------------------------------  ----------  -------  --------  -------  -------  -------
-Intercept                                       2.022      0.959    0.128     3.950    1.000    0.728 
-Thinking-style                                  1.903      1.796    -1.952    5.420    1.000    0.323 
-Motor activity                                  1.062      1.884    -2.722    4.856    1.001    0.217 
-Verbality                                       0.806      0.950    -1.167    2.588    1.000    0.137 
-Thinking-style x Motor activity                 1.305      3.457    -5.923    7.858    1.000    0.368 
-Thinking-style x Verbality                      1.427      1.820    -2.321    5.029    1.000    0.248 
-Motor activity x Verbality                      0.803      1.788    -2.797    4.507    1.000    0.19  
-Thinking-style x Motor activity x Verbality     0.506      3.474    -6.341    7.694    1.000    0.337 
+Intercept                                       2.047      0.934    0.269     3.937    1.000    1.114 
+Thinking-style                                  1.928      1.819    -1.831    5.585    1.000    0.317 
+Motor activity                                  1.073      1.849    -2.565    4.753    1.000    0.222 
+Verbality                                       0.808      0.941    -1.135    2.713    1.000    0.138 
+Thinking-style x Motor activity                 1.316      3.480    -5.548    8.370    1.000    0.37  
+Thinking-style x Verbality                      1.428      1.819    -2.236    5.186    1.000    0.26  
+Motor activity x Verbality                      0.805      1.836    -2.749    4.639    1.000    0.21  
+Thinking-style x Motor activity x Verbality     0.522      3.502    -6.240    7.855    1.000    0.357 
 
 <center>*Note.* As all predictors were centered to the mean for analysis, these coefficients approximate coefficients from simpler models.</center>
 

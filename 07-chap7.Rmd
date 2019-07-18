@@ -1,7 +1,5 @@
 # Examining the involvement of the speech motor system during rumination: a dual-task investigation {#chap7}
 
-\initial{S}ummary of the research...^[This experimental chapter is a submitted manuscript reformatted for the need of this thesis. Pre-registered protocol, preprint, data, as well as reproducible code and figures are available at: [https://osf.io/8ab2d/](https://osf.io/8ab2d/).]
-
 ```{r setupCH7, include = FALSE, message = FALSE, warning = FALSE, results = "hide"}
 library(wordcountaddin)
 library(DiagrammeR)
@@ -32,9 +30,7 @@ opts_chunk$set(
 
 <!-- NB: You can add comments using these tags -->
 
-## Abstract
-
-This study explores whether the speech motor system is involved in verbal rumination... Pre-registered protocol, preprint, data, as well as reproducible code and figures are available at: https://osf.io/8ab2d/.
+\initial{I}t has been suggested that verbal rumination may be considered as a form of inner speech and may therefore involve the speech motor system. This study explores whether the speech motor system is involved in verbal rumination by examining the effects of articulatory suppression (via gum-chewing) on two forms of induced repetitive thoughts (rumination and problem-solving), following the presentation of a stressor. We expected that (unconstrained) rumination would lead to sustained negative affects following a stressor whereas (unconstrained) problem-solving would lead to less detrimental effects on mood (in comparison to rumination). However, if motor processes are involved during rumination and problem-solving, articulatory suppression should dampen the differential effects of rumination and problem-solving on mood. At the time of the writing, data collection is still ongoing and the analyses presented in this chapter are therefore very preliminary. However, data collected so far suggest that articulatory suppression (gum-chewing) is indeed associated with a weaker difference in the effects of rumination versus problem-solving on state negative affects.^[This experimental chapter is a working manuscript reformatted for the need of this thesis. Pre-registered protocol, preprint, data, as well as reproducible code and figures will be made available at: [https://osf.io/8ab2d/](https://osf.io/8ab2d/).]
 
 ## Introduction
 
@@ -471,7 +467,7 @@ apa_table(
     )
 ```
 
-This analysis revealed that both the thinking-style (i.e., rumination vs. problem-solving) and the interaction between time and tinking-style have a negligible effect on self-reported state rumination (`r glue_data(parameters_interaction %>% data.frame %>% dplyr::filter(Term == "Session x Thinking mode"), "$\\beta$ = {Estimate}, 95% CrI [{Lower}, {Upper}], $BF10$ = {BF10}")`). In other words, the rumination induction was not associated with more self-reported state rumination than the problem-solving induction (although more rumination was reported after induction than before on average).
+This analysis revealed that both the thinking-style (i.e., rumination vs. problem-solving) and the interaction between time and thinking-style have a negligible effect on self-reported state rumination (`r glue_data(parameters_interaction %>% data.frame %>% dplyr::filter(Term == "Session x Thinking mode"), "$\\beta$ = {Estimate}, 95% CrI [{Lower}, {Upper}], $BF10$ = {BF10}")`). In other words, the rumination induction was not associated with more self-reported state rumination than the problem-solving induction (although more rumination was reported after induction than before on average).
 
 ### Articulatory suppression effects
 
@@ -778,7 +774,7 @@ df %>%
 
 #### Self-reported negative affects
 
-In addition to the self-reported levels of state rumination after each type of motor activity, we were also interested in the self-reported levels of state negative affects. More precisely, we expected an interaction between the type of motor activity (chewing vs. finger-tapping) and the thinking-style (rumination vs. problem-solving). Indeed, as both rumination and problem-solving are expected to recruit inner speech to some extent, we expected both thinking styles to be affected by articulatory suppression (i.e., by gum-chewing). Because rumination is expected to have detrimental effects on mood (assessed via the PANAS score) and problem-solving is expected to have "less detrimental" effects (in comparison to rumination), interferring with these thinking styles should reduce their effect on mood. To assess this effect, we examined the interaciton effect between thinking-style and motor activity on the change in negative affects from baseline to after the motor activity (in other words, on the baseline-normalised PANAS score). These data are depicted in Figure \@ref(fig:panasplot).
+In addition to the self-reported levels of state rumination after each type of motor activity, we were also interested in the self-reported levels of state negative affects. More precisely, we expected an interaction between the type of motor activity (chewing vs. finger-tapping) and the thinking-style (rumination vs. problem-solving). Indeed, as both rumination and problem-solving are expected to recruit inner speech to some extent, we expected both thinking styles to be affected by articulatory suppression (i.e., by gum-chewing). Because rumination is expected to have detrimental effects on mood (assessed via the PANAS score) and problem-solving is expected to have "less detrimental" effects (in comparison to rumination), interfering with these thinking styles should reduce their effect on mood. To assess this effect, we examined the interaction effect between thinking-style and motor activity on the change in negative affects from baseline to after the motor activity (in other words, on the baseline-normalised PANAS score). These data are depicted in Figure \@ref(fig:panasplot).
 
 ```{r panasplot, fig.align = "center", fig.width = 10, fig.height = 8, fig.cap = "Average self-reported levels of state negative affects (PANAS) by thinking style and type of motor activity at the beginning (baseline) and end (motor) of the experiment. Smaller dots represent individual scores. NB: colouring and facetting factors have been reversed as compared to the BSRI figure to better highlight the interaction effect."}
 df %>%

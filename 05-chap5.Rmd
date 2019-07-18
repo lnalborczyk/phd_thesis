@@ -1,7 +1,5 @@
 # Muscle-specific electromyographic correlates of inner speech production {#chap5}
 
-\initial{S}ummary of the research...^[This experimental chapter is a submitted manuscript reformatted for the need of this thesis. Pre-registered protocol, preprint, data, as well as reproducible code and figures are available at: [https://osf.io/czer4/](https://osf.io/czer4/).]
-
 ```{r setupCH5, include = FALSE, message = FALSE, warning = FALSE, results = "hide"}
 library(wordcountaddin)
 library(tidyverse)
@@ -28,9 +26,7 @@ knitr::opts_chunk$set(
 
 <!-- NB: You can add comments using these tags -->
 
-## Abstract
-
-Although having a long history of scrutiny in experimental psychology, it is still controversial whether inner speech (covert speech) production is accompanied by peripheral muscular activity in the speech muscles. We address this question by briefly reviewing previous findings related to the phenomenon of inner speech and to the broader phenomenon of motor imagery. We then present the results of a preregistered experiment looking at the electromyographic correlates of both overt speech and inner speech production of two classes of nonwords. An automatic classification approach was undertaken to discriminate these signals according to the class of nonword to be uttered. Although this approach lead to reasonable accuracy rates during overt speech production, it failed to discriminate inner speech content based on surface electromyography signals. We discuss these results in relation to other recent results and suggest alternative ways to test the engagement of the speech motor system during inner speech production. Pre-registered protocol, preprint, data, as well as reproducible code and figures are available at: https://osf.io/czer4/.
+\initial{D}espite a long history of scrutiny in experimental psychology, it is still controversial whether inner speech (covert speech) production is accompanied by peripheral muscular activity in the speech muscles. We address this question by briefly reviewing previous findings related to the phenomenon of inner speech and to the broader phenomenon of motor imagery. We then present the results of a preregistered experiment looking at the electromyographic correlates of both overt speech and inner speech production of two classes of nonwords. An automatic classification approach was undertaken to discriminate these signals according to the class of nonword to be uttered. Although this approach lead to reasonable accuracy rates during overt speech production, it failed to discriminate inner speech content based on surface electromyography signals. We discuss these results in relation to other recent results and suggest alternative ways to test the engagement of the speech motor system during inner speech production. Pre-registered protocol, preprint, data, as well as reproducible code and figures are available at: https://osf.io/czer4/.^[This experimental chapter is a submitted manuscript reformatted for the need of this thesis. Pre-registered protocol, preprint, data, as well as reproducible code and figures are available at: [https://osf.io/czer4/](https://osf.io/czer4/).]
 
 ## Introduction
 
@@ -1021,7 +1017,7 @@ Predictions from this model are visually represented in Figure \@ref(fig:predbmo
 
 In the previous section, we tried to predict the average EMG amplitude by condition on each single muscle. Although this approach was appropriate to tackle our initial research question (i.e., can we distinguish muscle-specific EMG correlates of inner speech production?), it is not optimal to answer more general questions such as "can we predict the content of inner speech based on the available EMG data?". In Figure \@ref(fig:2Demg), we depict the distribution of the by-word averaged EMG scores in the 2D space formed by the OOI and the ZYG muscles. This figure reveals that although different nonwords produced in overt speech seem difficult to discriminate on the basis of a single muscle (cf. Figure \@ref(fig:generalplot)), it seems easier to discriminate them in the space formed by two muscles (here OOI and ZYG). More precisely, the two classes of nonwords seem to form two separate clusters in the overt speech condition, but these clusters do not seem discriminable in the inner speech or in the listening condition.
 
-```{r 2Demg, fig.pos = "H", dev = "cairo_pdf", fig.align = "center", fig.width = 7, fig.height = 6, fig.cap = "Average EMG activity for each nonword in each condition, in the 2D space formed by the OOI and the ZYG."}
+```{r 2Demg, fig.pos = "H", dev = "cairo_pdf", fig.align = "center", fig.width = 7, fig.height = 6, fig.cap = "Average EMG amplitude for each nonword in each condition, in the two-dimensional space formed by the OOI and ZYG muscles."}
 # retrieving words and ordering them by alphabetic order
 # words2 <- c(words[, 1], words[, 2]) %>% sort
 
@@ -1034,7 +1030,7 @@ levels(df$mot) <- c(
 # plotting it
 
 df %>%
-    group_by(item, condition) %>%
+    group_by(mot, item, condition) %>%
     summarise_at(vars(OOI:FCR), mean) %>%
     ungroup %>%
     # rename conditions for plotting purposes
@@ -1046,18 +1042,14 @@ df %>%
     stat_ellipse(geom = "polygon", alpha = 0.5, show.legend = FALSE) +
     # plotting each word
     geom_point(pch = 21, colour = "black", size = 2, alpha = 0.8, show.legend = FALSE) +
-    # geom_label_repel(
-    #     aes(label = mot), force = 10,
-    #     fontface = "bold", color = "white",
-    #     segment.colour = "black", segment.alpha = 0.5, show.legend = FALSE
-    #     ) +
+    geom_label_repel(
+        aes(label = mot), force = 10,
+        fontface = "bold", color = "white",
+        segment.colour = "black", segment.alpha = 0.5, show.legend = FALSE
+        ) +
     # facetting by condition
     facet_wrap(~condition, scales = "free", ncol = 3) +
-    theme_minimal(base_size = 11) +
-    # hrbrthemes::theme_ipsum(
-    #     base_family = "Helvetica", base_size = 12,
-    #     axis_title_size = 12, axis_text_size = 10
-    #     ) +
+    theme_minimal(base_size = 12) +
     # color scheme
     scale_colour_brewer(palette = "Dark2") +
     scale_fill_brewer(palette = "Dark2")
