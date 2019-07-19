@@ -7,12 +7,13 @@
 
 
 This manually sets the header for this unnumbered chapter.
-\markboth{References}{References}
 
 \singlespacing
 \sloppy
 
 -->
+
+\markboth{References}{References}
 
 \noindent
 \setlength{\parindent}{-0.20in}

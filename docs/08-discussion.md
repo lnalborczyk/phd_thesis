@@ -2,6 +2,8 @@
 
 # Discussion and perspectives {#chap8}
 
+
+
 \initial{S}everal lines of research have suggested that inner speech may involve speech motor processes. This work includes introspective and phenomenological studies, mental chronometry studies, motor interference studies, modelling work as well as neurophysiological and psychophysiological studies (see our short historical review in Chapter \@ref(intro)). However, the involvement of motor processes during inner speech is highly variable between individuals, tasks, and studies. Therefore, it seems reasonable to assume that inner speech comes in different *varieties* that may involve motor processes to a variable degree. We examined this idea by studying the involvement of the speech motor system during induced rumination, a negative and repetitive form of inner speech. In addition to shedding light upon the nature of inner speech, this work may offer new theoretical and experimental tools to assess the presence and persistence of ruminative thoughts.
 
 <!--
@@ -16,7 +18,7 @@ More precisely, we used surface electromyography and articulatory suppression to
 
 ### Epistemological interlude
 
-In order to fully apprehend the theoretical implications of these results, it might be useful to first clearly articulate the logical argument(s) elaborated in the present work. In the first part of the present work (the EMG studies presented in Chapter \@ref(chap3) and \@ref(chap4)), the logical argument was as follows: *if* verbal rumination is a form of inner speech, *then* rumination should be accompanied by peripheral muscular activity in the speech muscles. However, going from this substantive hypothesis to the conclusion (i.e., connecting theory to observations) actually necessitate the use of *auxiliary hypotheses*... Elucidating these auxiliary assumptions, the actual logical argument from Part I can be restated as follows^[We recognise that this formulation may still be incomplete as some additional auxiliary or instrumental hypotheses may still be incorporated in order to draw a more exhaustive picture of the argument.]:
+In order to fully apprehend the theoretical implications of these results, it might be useful to first clearly articulate the logical argument elaborated throughout the present work. In the first part of the present work (the EMG studies presented in Chapter \@ref(chap3) and \@ref(chap4)), the logical argument was as follows: *if* verbal rumination is a form of inner speech, *then* rumination should be accompanied by peripheral muscular activity in the speech muscles. However, going from the substantive hypothesis (verbal rumination is a form of inner speech) to the conclusion (i.e., connecting theory to observations) actually requires the use of *auxiliary hypotheses* or *assumptions*. Elucidating these auxiliary assumptions, the actual logical argument from the first part can be restated as follows^[We recognise that this formulation may still be incomplete as some additional auxiliary or instrumental hypotheses may still be incorporated in order to draw a more exhaustive picture of the argument.]:
 
 - *Theoretical assumption ($T$)*: Verbal rumination is a form of inner speech
 
@@ -28,7 +30,7 @@ In order to fully apprehend the theoretical implications of these results, it mi
 
 - *Conclusion*: Therefore, rumination should be accompanied by peripheral muscular activity (EMG traces) in the speech muscles
 
-In other words, we say that if the ensemble of premises $p$ entails the conclusion $q$, stating $p$ suffices to conclude $q$ (modus ponens).
+In other words, we say that if the ensemble of premises $p$ is true, it should follow that $q$ is true. Therefore, stating $p$ suffices to conclude $q$ (modus ponens).
 
 \[
   \begin{array}{ r l }
@@ -51,9 +53,21 @@ Similarly, the logical argument from the second part (i.e., the relaxation exper
 
 - *Conclusion*: Therefore, a disruption of the speech motor system should disrupt rumination
 
-In other words, using the same reasoning as before, we say that not observing the conclusion $q$ only counts as a refutation of $p$ to an extent that is function of the (im)plausibility of the other conjuncts $p$. The question remains to know how we could assess the plausibility...
+In other words, using the same reasoning as before, we say that not observing the conclusion $q$ only counts as a refutation of $p$ to an extent that is function of the (im)plausibility of the other conjuncts $p$. The question remains to know how we could assess the plausibility of each conjunct to examine the validaity of the substantive hypothesis. Interestingly, @strevens_bayesian_2001 suggested a way to numerically assess the plausibility of auxiliary hypotheses in order to quantify the plausibility in core theoretical assumptions and conclusions. Reformulating the problem os one of assigning "credit or blame to central hypotheses vs. auxiliary hypotheses" [@gershman_how_2019], @strevens_bayesian_2001 suggests a Bayesian framework for induction. Let $h$ denotes the substantive hypothesis, $a$ denotes the auxiliary hypothesis, and $d$ denote the data. After observing the data $d$, the prior probability of the conjunct $ha$ ($p(ha)$) is updated to the posterior distribution $p(ha|d)$ according to Bayes' rule:
 
-Interestingly, @gershman_how_2019 suggested a way to numerically assess the plausibility of auxiliary hypotheses in order to quantify the plausibility in core theoretical assumptions and conclusions... In other words, we would need to "assign credit or blame to central hypotheses vs. auxiliary hypotheses" [@gershman_how_2019]... suggests a Bayesian framework for induction, allowing to assess the plausibility...
+$$
+P(h a | d) = \frac{P(d | h a) P(h a)}{P(d | h a) P(h a)+P(d | \neg(h a)) P(\neg(h a))},
+$$
+
+where $p(d|ha)$ is the *likelihood* of the data under $ha$, and $\lnot (ha)$ denotes the negation of $ha$. From there, marginalising over all possible auxiliary hypotheses, the sum rule of probability allows us to obtain the updated belief about the substantive hypothesis:
+
+$$P(h | d) = P(h a | d) + P(h \neg a | d).$$
+Similarly, the marginal posterior over the auxiliary is given by:
+
+$$P(a | d) = P(h a | d) + P(\neg h a | d).$$
+...[for more details, see @gershman_how_2019;@strevens_bayesian_2001].
+
+
 
 ### Implication of these results for inner speech theories
 

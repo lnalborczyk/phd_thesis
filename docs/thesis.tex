@@ -3145,10 +3145,10 @@ TBD...
 \hypertarget{theoretical-implications-of-the-results}{%
 \section{Theoretical implications of the results}\label{theoretical-implications-of-the-results}}
 
-\hypertarget{epistemolgical-interlude}{%
-\subsection{Epistemolgical interlude}\label{epistemolgical-interlude}}
+\hypertarget{epistemological-interlude}{%
+\subsection{Epistemological interlude}\label{epistemological-interlude}}
 
-In order to fully apprehend the theoretical implications of these results, it might be useful to first clearly articulate the logical argument(s) elaborated in the present work. In the first part of the present work (the EMG studies presented in Chapter \ref{chap3} and \ref{chap4}), the logical argument was as follows: \emph{if} verbal rumination is a form of inner speech, \emph{then} rumination should be accompanied by peripheral muscular activity in the speech muscles. However, going from this substantive hypothesis to the conclusion (i.e., connecting theory to observations) actually necessitate the use of \emph{auxiliary hypotheses}\ldots{} Elucidating these auxiliary assumptions, the actual logical argument from Part I can be restated as follows\footnote{We recognise that this formulation may still be incomplete as some additional auxiliary or instrumental hypotheses may still be incorporated in order to draw a more exhaustive picture of the argument.}:
+In order to fully apprehend the theoretical implications of these results, it might be useful to first clearly articulate the logical argument elaborated throughout the present work. In the first part of the present work (the EMG studies presented in Chapter \ref{chap3} and \ref{chap4}), the logical argument was as follows: \emph{if} verbal rumination is a form of inner speech, \emph{then} rumination should be accompanied by peripheral muscular activity in the speech muscles. However, going from the substantive hypothesis (verbal rumination is a form of inner speech) to the conclusion (i.e., connecting theory to observations) actually requires the use of \emph{auxiliary hypotheses} or \emph{assumptions}. Elucidating these auxiliary assumptions, the actual logical argument from the first part can be restated as follows\footnote{We recognise that this formulation may still be incomplete as some additional auxiliary or instrumental hypotheses may still be incorporated in order to draw a more exhaustive picture of the argument.}:
 
 \begin{itemize}
 \item
@@ -3171,7 +3171,7 @@ In order to fully apprehend the theoretical implications of these results, it mi
   \emph{Conclusion}: Therefore, rumination should be accompanied by peripheral muscular activity (EMG traces) in the speech muscles
 \end{itemize}
 
-In other words, we say that if the ensemble of premises \(p\) entails the conclusion \(q\), stating \(p\) suffices to conclude \(q\) (modus ponens).
+In other words, we say that if the ensemble of premises \(p\) is true, it should follow that \(q\) is true. Therefore, stating \(p\) suffices to conclude \(q\) (modus ponens).
 
 \[
   \begin{array}{ r l }
@@ -3203,9 +3203,19 @@ Similarly, the logical argument from the second part (i.e., the relaxation exper
   \emph{Conclusion}: Therefore, a disruption of the speech motor system should disrupt rumination
 \end{itemize}
 
-In other words, using the same reasoning as before, we say that not observing the conclusion \(q\) only counts as a refutation of \(p\) to an extent that is function of the (im)plausibility of the other conjuncts \(p\). The question remains to know how we could assess the plausibility\ldots{}
+In other words, using the same reasoning as before, we say that not observing the conclusion \(q\) only counts as a refutation of \(p\) to an extent that is function of the (im)plausibility of the other conjuncts \(p\). The question remains to know how we could assess the plausibility of each conjunct to examine the validaity of the substantive hypothesis. Interestingly, Strevens (\protect\hyperlink{ref-strevens_bayesian_2001}{2001}) suggested a way to numerically assess the plausibility of auxiliary hypotheses in order to quantify the plausibility in core theoretical assumptions and conclusions. Reformulating the problem os one of assigning \enquote{credit or blame to central hypotheses vs.~auxiliary hypotheses} (Gershman, \protect\hyperlink{ref-gershman_how_2019}{2019}), Strevens (\protect\hyperlink{ref-strevens_bayesian_2001}{2001}) suggests a Bayesian framework for induction. Let \(h\) denotes the substantive hypothesis, \(a\) denotes the auxiliary hypothesis, and \(d\) denote the data. After observing the data \(d\), the prior probability of the conjunct \(ha\) (\(p(ha)\)) is updated to the posterior distribution \(p(ha|d)\) according to Bayes' rule:
 
-Interestingly, Gershman (\protect\hyperlink{ref-gershman_how_2019}{2019}) suggested a way to numerically assess the plausibility of auxiliary hypotheses in order to quantify the plausibility in core theoretical assumptions and conclusions\ldots{} In other words, we would need to \enquote{assign credit or blame to central hypotheses vs.~auxiliary hypotheses} (Gershman, \protect\hyperlink{ref-gershman_how_2019}{2019})\ldots{} suggests a Bayesian framework for induction, allowing to assess the plausibility\ldots{}
+\[
+P(h a | d) = \frac{P(d | h a) P(h a)}{P(d | h a) P(h a)+P(d | \neg(h a)) P(\neg(h a))},
+\]
+
+where \(p(d|ha)\) is the \emph{likelihood} of the data under \(ha\), and \(\lnot (ha)\) denotes the negation of \(ha\). From there, marginalising over all possible auxiliary hypotheses, the sum rule of probability allows us to obtain the updated belief about the substantive hypothesis:
+
+\[P(h | d) = P(h a | d) + P(h \neg a | d).\]
+Similarly, the marginal posterior over the auxiliary is given by:
+
+\[P(a | d) = P(h a | d) + P(\neg h a | d).\]
+\ldots{}(for more details, see Gershman, \protect\hyperlink{ref-gershman_how_2019}{2019}; Strevens, \protect\hyperlink{ref-strevens_bayesian_2001}{2001}).
 
 \hypertarget{implication-of-these-results-for-inner-speech-theories}{%
 \subsection{Implication of these results for inner speech theories}\label{implication-of-these-results-for-inner-speech-theories}}
@@ -4093,6 +4103,8 @@ This control experiment shows that there is no apparent difference (or a negligi
 \hypertarget{references}{%
 \chapter*{References}\label{references}}
 \addcontentsline{toc}{chapter}{References}
+
+\markboth{References}{References}
 
 \noindent
 \setlength{\parindent}{-0.20in}
@@ -5191,6 +5203,9 @@ Stinear, C. M. (2010). Corticospinal facilitation during motor imagery. In A. Gu
 
 \leavevmode\hypertarget{ref-stober_worry_1998}{}%
 Stöber, J. (1998). Worry, problem elaboration and suppression of imagery: The role of concreteness. \emph{Behaviour Research and Therapy}, \emph{36}(7-8), 751--756. \url{https://doi.org/10.1016/S0005-7967(98)00027-8}
+
+\leavevmode\hypertarget{ref-strevens_bayesian_2001}{}%
+Strevens, M. (2001). The Bayesian Treatment of Auxiliary Hypotheses. \emph{The British Journal for the Philosophy of Science}, \emph{52}(3), 515--537. \url{https://doi.org/10.1093/bjps/52.3.515}
 
 \leavevmode\hypertarget{ref-stricker_studien_1880}{}%
 Stricker, S. (1880). \emph{Studien Über die Sprachvorstellungen}. Wien: Braumüller.
