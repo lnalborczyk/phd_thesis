@@ -25,13 +25,13 @@ More precisely, we used surface electromyography and articulatory suppression to
 
 ## Summary of the results
 
-...
+As argued in Chapter \@ref(intro), the guiding assumption underlying this work was that (verbal) rumination may be considered as a form of inner speech. Honouring that assumption, we studied induced rumination with the tools and methods used to investigate the phenomenon of inner speech. In the first experimental chapter (Chapter \@ref(chap3)), we used surface EMG to assess the predictions of two competing views of inner speech production. According to the *motor simulation view*, inner speech would be similar to overt speech, except that final execution of the speech actions is inhibited. Therefore, it should be possible to record peripheral muscular activation in the speech muscles during inner speech. According to the *abstraction view*, the level of truncation between overt speech and inner speech would be higher in the sense that inner speech would not include articulatory features. Therefore, under this view, it is not expected to record peripheral muscular activation in the speech muscles during inner speech. We observed that the...
 
 ## Theoretical implications of the results
 
 ### Epistemological interlude
 
-In order to fully apprehend the theoretical implications of these results, it might be useful to first clearly articulate the logical argument elaborated throughout the present work. In the first part of the present work (the EMG studies presented in Chapter \@ref(chap3) and \@ref(chap4)), the logical argument was as follows: *if* verbal rumination is a form of inner speech, *then* rumination should be accompanied by peripheral muscular activity in the speech muscles. However, going from the substantive hypothesis (verbal rumination is a form of inner speech) to the conclusion (i.e., connecting theory to observations) actually requires the use of *auxiliary hypotheses* or *assumptions*. Elucidating these auxiliary assumptions, the actual logical argument from the first part can be restated as follows^[We recognise that this formulation may still be incomplete as some additional auxiliary or instrumental hypotheses may still be incorporated in order to draw a more exhaustive picture of the argument.]:
+In order to fully apprehend the theoretical implications of these results, it might be useful to first clearly articulate the logical argument elaborated throughout the present work. In the first part (the EMG studies presented in Chapter \@ref(chap3) and \@ref(chap4)), the logical argument was as follows: *if* verbal rumination is a form of inner speech, *then* rumination should be accompanied by peripheral muscular activity in the speech muscles. However, going from the substantive hypothesis (verbal rumination is a form of inner speech) to the experimental prediction (i.e., connecting theory to observations) actually requires the use of *auxiliary hypotheses* or *assumptions*. Elucidating these auxiliary assumptions, the actual logical argument from the first part can be restated as follows^[We recognise that this formulation may still be incomplete as some additional auxiliary or instrumental hypotheses may still be incorporated in order to draw a more exhaustive picture of the argument.]:
 
 - *Theoretical assumption ($T$)*: Verbal rumination is a form of inner speech
 
@@ -39,22 +39,19 @@ In order to fully apprehend the theoretical implications of these results, it mi
   - *Auxiliary hypothesis 2 ($A_{2}$)*: The simulation mechanism recruits neural networks engaged in (overt) execution
   - *Auxiliary hypothesis 3 ($A_{3}$)*: The motor commands generated during simulation are only partially inhibited
   - *Instrumental hypothesis 1 ($I_{1}$)*: Surface electromyography is a reliable tool to peripherally record partially inhibited motor commands
-  - *Ceteris paribus clause ($C$)*: We assume there is no other factor exerting an appreciable influence that could obfuscate the main effect of interest
+  - *Ceteris paribus clause ($C_{p}$)*: We assume there is no other factor exerting an appreciable influence that could obfuscate the main effect of interest
 
-- *Conclusion*: Therefore, rumination should be accompanied by peripheral muscular activity (EMG traces) in the speech muscles
+- *Prediction*: Induced rumination should be accompanied by peripheral muscular activity (EMG traces) in the speech muscles
 
-In other words, we say that if the ensemble of premises $p$ is true, it should follow that $q$ is true. Therefore, stating $p$ suffices to conclude $q$ (modus ponens).
+In other words, we say that if the ensemble of premises $p$ (i.e., the conjunction of the theoretical assumption, auxiliary hypotheses, etc.) is true, it should follow that $q$ is true. Therefore, stating $p$ suffices to conclude $q$ (modus ponens), that is, $p$ entails $q$. To be even more precise, when we test a theory predicting that if $O_{1}$ (some experimental manipulation or predictor variable), then $O_{2}$ (some observation or measured variable), what we actually say is that this relation holds *if and only if* all the conjuncts above are true. Thus, the logical structure of an empirical test of a theory can be described as the following conceptual formula [@meehl_appraising_1990;@harlow_problem_1997]:
 
-\[
-  \begin{array}{ r l }
-               & p \rightarrow q \\
-               & p \\
-    \cline{2-2}
-    \therefore & q
-  \end{array}
-\]
+$$
+(T \land A_{1} \land A_2 \land A_{3} \land I_{1} \land C_{p} \land C_{n}) \to (O_{1} \supset O_{2})
+$$
 
-From there, observing $q$ does not allow to infer $p$ (affirming the consequent fallacy) but not observing $p$ ($\lnot p$) allows inferring not $p$ ($\lnot p$) via the modus tollens. However, not observing $q$ does not permit to refute the substantive hypothesis $T$. Rather, not observing $q$ only allows for the refutation of $p$, the *conjunction* of all premises described in the above argument (i.e., $T \land A_{1} \land A_{2} \land A_{3} \land I_{1} \land C$). Put formally, negating the conjunction of premises is logically equivalent to stating a disjunction of the conjuncts [i.e., either one or the other of the premises is false; @meehl_appraising_1990]. Therefore, not observing $q$ only allows for a refutation of $p$ to an extent that is function of the (im)plausibility of the other conjuncts in $p$ (i.e., $A_{1}$, $A_{2}$, $A_{3}$, $I_{1}$, and $C$).
+where the "$\land$" are conjunctions ("and"), the arrow "$\to$" denotes deduction ("follows that ..."), and the horseshoe "$\supset$" is the material conditional ("If $O_{1}$, Then $O_{2}$"). $A_{t}$ is a conjunction of auxiliary theories, $C_{p}$ is a *ceteribus paribus* clause (i.e., we assume there is no other factor exerting an appreciable influence that could obfuscate the main effect of interest), $I_{1}$ is an auxiliary theory regarding instruments, and $C_{n}$ is a statement about experimentally realised conditions (i.e., we assume that there is no systematic error/noise in the experimental settings).
+
+In other words, we imply that a conjunction of all the elements on the left-side (including our substantive theory $T$) does imply the right side of the arrow, that is, "if $O1$, then $O2$". From there, observing $q$ (where $q$ represents the right-side of the above formula) does not allow inferring $p$ (affirming the consequent fallacy) but not observing $p$ ($\lnot p$) allows inferring not $p$ ($\lnot p$) via the modus tollens. However, not observing $q$ does not permit to refute the substantive hypothesis $T$ alone. Rather, not observing $q$ only allows for the refutation of $p$, the *conjunction* of all elements described above (i.e., $T \land A_{1} \land A_2 \land A_{3} \land I_{1} \land C_{p} \land C_{n}$). Put formally, negating the conjunction is logically equivalent to stating a disjunction of the conjuncts [i.e., either one or the other of the conjuncts is false; @meehl_appraising_1990]. Therefore, not observing $q$ only allows for a refutation of $p$ to an extent that is function of the (im)plausibility of the other conjuncts in $p$ (i.e., $A_{1}$, $A_{2}$, $A_{3}$, $I_{1}$, $C_{p}$ and $C_{n}$). To sum up, failing to observe a predicted outcome does not necessarily mean that the theory itself is wrong, but rather that the conjunction of the theory and the underlying assumptions at hand are invalid [@lakatos_falsification_1976;@meehl_appraising_1990;@harlow_problem_1997].
 
 Similarly, the logical argument from the second part (i.e., the relaxation experiments presented in Chapter \@ref(chap3) and \@ref(chap4) as well as the articulatory suppression studies presented in Chapter \@ref(chap6) and \@ref(chap7)) was of the following form: *if* verbal rumination is a form of inner speech, *then*, a disruption of the speech motor system should disrupt rumination. Again, this argument may be restated in a more detailed form as follows:
 
@@ -62,11 +59,11 @@ Similarly, the logical argument from the second part (i.e., the relaxation exper
 
   - *Auxiliary hypothesis 1 ($A_{1}$)*: Some forms of inner speech involve the motor simulation of speech production
   - *Auxiliary hypothesis 2 ($A_{2}$)*: The simulation mechanism recruits neural networks engaged in (overt) execution
-  - *Ceteris paribus clause ($C$)*: We assume there is no other factor exerting an appreciable influence that could obfuscate the main effect of interest
+  - *Ceteris paribus clause ($C_{p}$)*: We assume there is no other factor exerting an appreciable influence that could obfuscate the main effect of interest
 
-- *Conclusion*: Therefore, a disruption of the speech motor system should disrupt rumination
+- *Prediction*: A disruption of the speech motor system should disrupt rumination
 
-In other words, using the same reasoning as before, we say that not observing the conclusion $q$ only counts as a refutation of $p$ to an extent that is function of the (im)plausibility of the other conjuncts $p$. The question remains to know how we could assess the plausibility of each conjunct to examine the validaity of the substantive hypothesis. Interestingly, @strevens_bayesian_2001 suggested a way to numerically assess the plausibility of auxiliary hypotheses in order to quantify the plausibility in core theoretical assumptions and conclusions. Reformulating the problem os one of assigning "credit or blame to central hypotheses vs. auxiliary hypotheses" [@gershman_how_2019], @strevens_bayesian_2001 suggests a Bayesian framework for induction. Let $h$ denotes the substantive hypothesis, $a$ denotes the auxiliary hypothesis, and $d$ denote the data. After observing the data $d$, the prior probability of the conjunct $ha$ ($p(ha)$) is updated to the posterior distribution $p(ha|d)$ according to Bayes' rule:
+In other words, using the same reasoning as before, we say that not observing $q$ only counts as a refutation of $T$ to an extent that is function of the (im)plausibility of the other conjuncts in $p$. The question remains to know how we could assess the plausibility of each conjunct in order to examine the validity of the substantive hypothesis. Interestingly, @strevens_bayesian_2001 discusses a Bayesian solution to this problem (known as the Duhem-Quine problem in philosophy of science). Reformulating the problem as one of assigning "credit or blame to central hypotheses vs. auxiliary hypotheses" [@gershman_how_2019], Strevens suggests a Bayesian framework for confirmation. Let $h$ denotes the substantive hypothesis, $a$ denotes the auxiliary hypothesis, and $d$ denote the data. After observing the data $d$, the prior probability of the conjunct $ha$ (i.e., $p(ha)$) is updated to the posterior distribution $p(ha|d)$ according to Bayes' rule:
 
 $$
 P(h a | d) = \frac{P(d | h a) P(h a)}{P(d | h a) P(h a)+P(d | \neg(h a)) P(\neg(h a))},
@@ -78,28 +75,29 @@ $$P(h | d) = P(h a | d) + P(h \neg a | d).$$
 Similarly, the marginal posterior over the auxiliary is given by:
 
 $$P(a | d) = P(h a | d) + P(\neg h a | d).$$
-...[for more details, see @gershman_how_2019;@strevens_bayesian_2001].
+To sum up, although failing to observe an outcome predicted by a substantive theory cannot count as a strict falsification of that theory, a Bayesian confirmationist framework permits to assess the plausibility of each conjunct separately and to guide the rational updating of knowledge in the light of incoming data [for more details, see @gershman_how_2019;@strevens_bayesian_2001]. In the next section, we revisit our results, keeping these concepts in mind, in order to assess the plausibility of each conjunct and the evolution of these plausibilities throughout the data accumulated in our work.
 
 ```{r, eval = FALSE}
-# Reproducing fig in Gershman (2019)
-prior <- 0.5
-likelihood <- 1
-posterior <- ( (1 - likelihood) / (1 - likelihood * prior ) ) * prior
-posterior
+# Reproducing Figure 1 from Gershman (2019) and Strevens (2001)
 
 prior <- seq(from = 0, to = 1, length.out = 101)
-likelihood <- seq(from = 0, to = 1, length.out = 101)
-grid <- crossing(prior, likelihood)
-grid$posterior <- ( (1 - likelihood) / (1 - likelihood * prior ) ) * prior
+auxiliary <- seq(from = 0, to = 1, length.out = 101)
+grid <- crossing(prior, auxiliary)
+grid$posterior <- grid$prior * (1 - grid$auxiliary) / (1 - grid$auxiliary * grid$prior)
 
 grid %>%
   na.omit %>%
   filter(prior %in% c(0.4, 0.6, 0.8) ) %>%
-  ggplot(aes(x = likelihood, y = posterior / prior, colour = as.factor(prior) ) ) +
-  geom_line() +
-  theme_minimal() +
+  ggplot(aes(x = auxiliary, y = posterior / prior, colour = as.factor(prior) ) ) +
+  #geom_abline(intercept = 1, slope = - 1, linetype = 3, size = 0.5) +
+  geom_line(size = 0.75) +
+  theme_bw(base_size = 12) +
   labs(x = "p(a|h)", y = "p(h|d)/p(h)", colour = "p(h)")
 ```
+
+### Re-reading our results
+
+...
 
 ### Implication of these results for inner speech theories
 
