@@ -4,8 +4,6 @@
 
 <!-- NB: You can add comments using these tags -->
 
-## Abstract
-
 Bayesian multilevel models are increasingly used to overcome the limitations of frequentist approaches in the analysis of complex structured data. This paper introduces Bayesian multilevel modelling for the specific analysis of speech data, using the brms package developed in `R`. In this tutorial, we provide a practical introduction to Bayesian multilevel modelling, by reanalysing a phonetic dataset containing formant (F1 and F2) values for five vowels of Standard Indonesian (ISO 639-3:ind), as spoken by eight speakers (four females), with several repetitions of each vowel. We first give an introductory overview of the Bayesian framework and multilevel modelling. We then show how Bayesian multilevel models can be fitted using the probabilistic programming language `Stan` and the `R` package `brms`, which provides an intuitive formula syntax. Through this tutorial, we demonstrate some of the advantages of the Bayesian framework for statistical modelling and provide a detailed case study, with complete source code for full reproducibility of the analyses (https://osf.io/dpzcb/).^[This chapter is a published paper reformatted for the need of this thesis. Source: Nalborczyk, L., Batailler, C., L\oe venbruck, H., Vilain, A., & Bürkner, P.-C. (2019). An Introduction to Bayesian Multilevel Models Using brms: A Case Study of Gender Effects on Vowel Variability in Standard Indonesian. *Journal of Speech, Language, and Hearing Research, 62*(5), 1225-1242. https://doi.org/10.1044/2018_JSLHR-S-18-0006.]
 
 ## Introduction

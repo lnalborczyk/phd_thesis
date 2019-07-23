@@ -112,7 +112,7 @@ In trying to separate these two views, @gregory_inner_2017 first notes that, phe
 
 While we will not directly assess the empirical arguments in favour of either the *imagined speech* or the *actual speech* view of inner speech, we wanted to give the reader a clear definition of what we mean by "inner speech" and to present the two main conceptions about the nature of inner speech. We think these two conceptions and the arguments that have been advanced in favour or against each view are worthy to keep in mind while reviewing the empirical evidence on the topic. In the next section, we will briefly review the historical development of ideas and methods used to describe inner speech, before turning to a description of the developmental mechanisms of inner speech and to contemporary neurocognitive models of inner speech production.
 
-### Historical overview of inner speech investigations{#inner-speech-history}
+### Historical overview of inner speech investigations {#inner-speech-history}
 
 #### From introspection to experimental psychology
 
@@ -332,7 +332,7 @@ These observations support the idea that motor activity (and kinaesthetic feedba
 
 > "In order to rehearse a telephone number one would simply 'speak' the numbers covertly -- that is, activate the appropriate speech motor patterns, but too slightly to produce audible speech. To take the case of rehearsing a telephone number a step further, consider that the person is being distracted by loud music. Because the music would be competing for his attention, he would have to increase the amplitude of his rehearsal by increasing the speech motor activity, perhaps ot the point of making actual lip and tongue movements. Were the music loud he might have to speak the numbers aloud so that the numbers would capture enough of his awareness to remain in his short-term memory."
 
-This idea is consistent with work showing a greater implication of the speech motor system during cognitively demanding tasks [e.g.,@sokolov_inner_1972;@mcguigan_effects_1968] and provides a mechanism to explain these observations (but see our own theoretical interpretation in the next section). To sum up, the MTVT suggests that all voluntary images and thoughts are associated with motor activity and that "deliberate inner speech is based^[NB: "based" is used here in a developmental sense (cf. the beginning of this section).] on the appropriate covert activity in the speech musculature" [@cohen_motor_1986, p.45-46].
+This idea is consistent with some work showing a greater implication of the speech motor system during cognitively demanding tasks [e.g.,@sokolov_inner_1972;@mcguigan_effects_1968] and provides a mechanism to explain these observations (but see our own theoretical interpretation in the next section). To sum up, the MTVT suggests that all voluntary images and thoughts are associated with motor activity and that "deliberate inner speech is based^[NB: "based" is used here in a developmental sense (cf. the beginning of this section).] on the appropriate covert activity in the speech musculature" [@cohen_motor_1986, p.45-46].
 
 <!--
 

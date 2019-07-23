@@ -2,7 +2,7 @@
 
 
 
-\epigraph{"[...] we have been brainwashed by Fisherian statistics into thinking that refutation of $H_{0}$ is a powerful way of testing substantive theories".}{Meehl, P. (1986)}
+\epigraph{"[...] we have been brainwashed by Fisherian statistics into thinking that refutation of $H_{0}$ is a powerful way of testing substantive theories"}{Meehl, P. (1986)}
 
 \initial{I}n this chapter we briefly introduce some of the key concepts related to the methods we used in our work. More precisely, we cover the technical concepts related to speech production mechanisms, to electromyography and to our statistical approach. Finally, we give an overview of the following chapters.
 
