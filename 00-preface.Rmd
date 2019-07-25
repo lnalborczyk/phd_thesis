@@ -16,7 +16,10 @@ In Chapter 6, we switched to another strategy and instead of examining the perip
 In Chapter 7, we used the same strategy (articulatory suppression) to examine the role of the speech motor system in rumination. We used a protocol similar to the protocol we used in Chapter 6, except that we used better measures of state rumination, a proper control condition and a more naturalistic form of articulatory suppression (chewing). In addition to rumination, we induced another form of (more adaptive) repetitive thinking: problem-solving. We then compared the effects of articulatory suppression versus finger-tapping on the two thinking styles. Preliminary results suggest that chewing did not disrupt rumination (or problem-solving) more than finger-tapping.
 
 Finally, in Chapter 8, we discuss the overall findings and suggest ways forward from both an experimental and a theoretical perspective.
--->
 
 \newpage
 \blankpage
+
+-->
+
+\clearemptydoublepage

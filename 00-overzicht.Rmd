@@ -1,5 +1,10 @@
 \chapter*{Overzicht}
 
-\initial{T}o be detailed...
+\initial{R}umination is bekend als een overwegend verbaal proces en is voorgesteld om als zodanig te worden beschouwd als een disfunctionele vorm van innerlijke spraak. Anderzijds bleek uit onderzoek naar de psychofysiologie van innerlijke spraak dat de neurale processen die betrokken zijn bij openlijke spraak en innerlijke spraak veel op elkaar lijken. Dit is coherent met het idee dat sommige vormen van innerlijke spraak kunnen worden beschouwd als een soort simulatie van openlijke spraak, net zoals ingebeelde acties kunnen worden beschouwd als het resultaat van een simulatie van de bijbehorende openlijke actie (bijvoorbeeld wandelen en dacht aan wandelen). Met andere woorden, de motorsimulatiehypothese suggereert dat het spraakmotorsysteem ook moet worden betrokken bij de productie van innerlijke spraak. De bijbehorende hypothese zou kunnen worden getrokken volgens welke de productie van innerlijke spraak (en herkauwen) moet worden verstoord door een verstoring van het spraakmotorische systeem. We hebben een reeks van vijf onderzoeken uitgevoerd om de rol van het spraakmotorsysteem bij het herkauwen te onderzoeken. Over het algemeen benadrukken onze resultaten dat hoewel verbale herkauwers als een vorm van innerlijke spraak kunnen worden beschouwd, het misschien niet specifiek het spraakmotorische systeem betreft. Meer in het bijzonder stellen we dat herkauwen kan worden beschouwd als een bijzonder sterk gecondenseerde vorm van innerlijke spraak waarbij geen volledig gespecificeerde articulerende kenmerken zijn betrokken. We bespreken deze bevindingen in relatie tot het gewoonte-doel-raamwerk van depressieve herkauwing en we bespreken de implicaties van deze bevindingen voor theorieën over innerlijke spraakproductie.
 
-\afterpage{\blankpage}
+\vspace{\baselineskip}
+
+**Trefworden**: herkauwen; innerlijke spraak; motorische beelden; electromyografie; articulatoire onderdrukking
+
+<!-- \afterpage{\blankpage} -->
+\clearemptydoublepage
