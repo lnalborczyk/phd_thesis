@@ -1,6 +1,6 @@
 # Understanding rumination as a form of inner speech: probing the role of motor processes
 
-An online (and a PDF) version of the thesis is available there: https://www.barelysignificant.com/phd_thesis/
+An online (and a PDF) version of the thesis is available at https://www.barelysignificant.com/phd_thesis/.
 
 ## Abstract
 
