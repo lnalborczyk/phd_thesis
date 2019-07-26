@@ -26,7 +26,7 @@ There is strong interest in the examination of physiological correlates of rumin
 
 In order to overcome these difficulties, some authors have attempted to quantify state rumination and trait rumination more objectively, by recording physiological or neuroanatomical correlates of rumination [for a review, see @papageorgiou_physiological_2003]. Peripheral physiological manifestations (e.g., pupil dilation, blood pressure, cardiac rhythm, cardiac variability) have been examined during induced or chronic rumination. @vickers_effects_2003 have observed an increase in systolic blood pressure after rumination induction, suggesting the involvement of the autonomic nervous system in rumination. Moreover, galvanic skin response has shown to be increased after a rumination induction, in highly anxious women [@sigmon_impact_2000]. According to @papageorgiou_physiological_2003, disrupted autonomic activity could provide a reliable physiological correlate of rumination. In this line, @Key2008 have observed a diminution of the high-frequency component of heart rate variability (HF-HRV) after rumination induction in people with a low tendency to ruminate [see also @woody_brooding_2014]. A consistent link between perseverative cognition and decreased HRV was also found in a meta-analysis conducted by @Ottaviani2015. Based on these positive results and on suggestions that labial EMG activity may accompany inner speech and therefore rumination, our aim was to examine facial EMG as a potential correlate of rumination and HRV as an index to examine concurrent validity.
 
-In addition to labial muscular activity, we also recorded forehead muscular activity (i.e., *frontalis* muscle) because of its implication in prototypical expression of sadness [e.g.,@ekman_facial_1978;@kohler_differences_2004], reactions to unpleasant stimuli [@Jancke1996], and anxiety or negative emotional state [@conrad_muscle_2007]^[The *corrugator supercilii* was another potential site, as it is sensitive to negative emotions. However, it has been claimed to be mostly activated for strong emotions such as fear/terror, anger/rage and sadness/grief [@ekman_facial_1978;@sumitsuji_electromyographic_1967]. The rumination induction used in this study was designed to have participants self-reflect and brood over their failure at the I.Q. test. It was not meant to induce such strong emotions. Several studies have reported increased activity in the *frontalis* muscle at rest in anxious or generalized anxiety disorder patients [for a review, see @conrad_muscle_2007]. We expected the type of emotional state induced by rumination to be closer to anxiety or worry than to strong emotions like fear, anger or grief. It was therefore more appropriate to record non-speech facial activity in the *frontalis* rather than in the *corrugator.*]. Our hypothesis was that *frontalis* activity could be an accurate electromyographic correlate of induced rumination, as a negatively valenced mental process.
+In addition to labial muscular activity, we also recorded forehead muscular activity (i.e., *frontalis* muscle) because of its implication in prototypical expression of sadness [e.g.,@ekman_facial_1978;@kohler_differences_2004], reactions to unpleasant stimuli [@Jancke1996], and anxiety or negative emotional state [@conrad_muscle_2007].^[The *corrugator supercilii* was another potential site, as it is sensitive to negative emotions. However, it has been claimed to be mostly activated for strong emotions such as fear/terror, anger/rage and sadness/grief [@ekman_facial_1978;@sumitsuji_electromyographic_1967]. The rumination induction used in this study was designed to have participants self-reflect and brood over their failure at the I.Q. test. It was not meant to induce such strong emotions. Several studies have reported increased activity in the *frontalis* muscle at rest in anxious or generalized anxiety disorder patients [for a review, see @conrad_muscle_2007]. We expected the type of emotional state induced by rumination to be closer to anxiety or worry than to strong emotions like fear, anger or grief. It was therefore more appropriate to record non-speech facial activity in the *frontalis* rather than in the *corrugator.*] Our hypothesis was that *frontalis* activity could be an accurate electromyographic correlate of induced rumination, as a negatively valenced mental process.
 
 In this study, we were also interested in the effects of relaxation on induced rumination. Using a relaxation procedure targeted on muscles involved in speech production is a further way to test the reciprocity of the link between inner speech (verbal rumination) and orofacial muscle activity. If verbal rumination is a kind of action, then its production should be modulated in return by the effects of relaxation on speech effectors. This idea is supported by the results of (among others) @cefidekhanie_interaction_2014, who have observed substantial perturbations of inner speech production while participants had to realize forced movements of the articulators.
 
@@ -38,7 +38,7 @@ In Experiment 2, in order to assess the reciprocity of the rumination and orofac
 
 ### Participants
 
-Because of the higher prevalence of rumination in women than in men [see @Johnson2013, for a recent meta-analysis], we chose to include female participants only. Seventy-two female undergraduate students from Univ. Grenoble Alpes, native French speaking, participated in our study. One participant presenting aberrant data (probably due to inadequate sensor sticking) was removed from analyses. Final sample consisted of seventy-one undergraduate female students (M~age~ = 20.58, SD~age~ = 4.99). They were recruited by e-mail diffusion lists and participated in the experiment for course credits. They did not know the goals of the study. The cover story presented the research as aiming at validating a new I.Q. test, more sensitive to personality profiles. Participants reported having no neurologic or psychiatric medical history, no language disorder, no hearing deficit, and taking no medication. Each participant gave written consent and this study has been approved by the local ethical committee (CERNI, N° 2015-03-03-61).
+Because of the higher prevalence of rumination in women than in men [see @Johnson2013, for a recent meta-analysis], we chose to include female participants only. Seventy-two female undergraduate students from Univ. Grenoble Alpes, native French speaking, participated in our study. One participant presenting aberrant data (probably due to inadequate sensor sticking) was removed from analyses. Final sample consisted of seventy-one undergraduate female students (M~age~ = 20.58, SD~age~ = 4.99). They were recruited by e-mail diffusion lists and participated in the experiment for course credits. They did not know the goals of the study. The cover story presented the research as aiming at validating a new I.Q. test, more sensitive to personality profiles. Participants reported having no neurologic or psychiatric medical history, no language disorder, no hearing deficit, and taking no medication. Each participant gave written consent and this study has been approved by the local ethical committee (CERNI, N\textdegree \ 2015-03-03-61).
 
 ### Material
 
@@ -76,7 +76,7 @@ EMG signal pre-processing was carried out using Labchart 8. The EMG data were hi
 
 Although we specifically asked participants to remain silent and not to move during EMG data collection, tiny facial movements (such as biting one’s lips) or vocal productions sometimes occurred. Periods with such facial movement or vocal production were excluded from the analysis. To do this, visual inspection of audio, video, and EMG signal was performed. Specifically, for the EMG signals, we compared two methods of signal selection. The first one consisted of setting a threshold on the absolute value of the EMG signal and portions of signals above this threshold were removed. This threshold was empirically chosen using visual inspection of a few samples and set to the mean EMG value plus 6 SDs. The second method consisted of manually removing periods of time that included visually obvious bursts of EMG activity, corresponding to overt contraction [as in @rapin_emg_2013]. Based on samples from a few participants, the comparisons between these two methods showed that the automatic threshold method was somewhat less sensitive to overt movements. Therefore, the second method was used, as it was more conservative and less prone to leave data related to irrelevant overt movements.
 
-After pre-processing, EMG data were exported from Labchart software to Matlab r2014a (Version 8.3.0.532, www.mathworks.fr). For each EMG signal, mean values were computed under Matlab, using 200 ms sliding windows. The average of these mean values were calculated for each recording session (baseline, after induction and after relaxation/induction). This provided a score for each muscle of interest (OOS, OOI, FCR, FRO) in each Session (Baseline, Post-Induction, Post-Relaxation) for each participant^[Because of constraints attributable to the design of our experiment, we were not able to perform conventional control measures (e.g., time of the day, food consumption, sport activity, smoking habits, etc.). Moreover, in our study, periods of signal recording had to be shorter than usual HRV analysis time periods (cf. methodology section). Although recent studies suggest that "ultrashort term" HRV analysis seems to correlate quite well with HRV analysis performed on longer periods of time [@brisinda_comparison_2013;@Salahuddin2007], we cannot exclude that our measurements might be unreliable. For these reasons, we chose not to present HRV results in this report and to focus on EMG results as well as subjective reports of rumination.].
+After pre-processing, EMG data were exported from Labchart software to Matlab r2014a (Version 8.3.0.532, www.mathworks.fr). For each EMG signal, mean values were computed under Matlab, using 200 ms sliding windows. The average of these mean values were calculated for each recording session (baseline, after induction and after relaxation/induction). This provided a score for each muscle of interest (OOS, OOI, FCR, FRO) in each Session (Baseline, Post-Induction, Post-Relaxation) for each participant.^[Because of constraints attributable to the design of our experiment, we were not able to perform conventional control measures (e.g., time of the day, food consumption, sport activity, smoking habits, etc.). Moreover, in our study, periods of signal recording had to be shorter than usual HRV analysis time periods (cf. methodology section). Although recent studies suggest that "ultrashort term" HRV analysis seems to correlate quite well with HRV analysis performed on longer periods of time [@brisinda_comparison_2013;@Salahuddin2007], we cannot exclude that our measurements might be unreliable. For these reasons, we chose not to present HRV results in this report and to focus on EMG results as well as subjective reports of rumination.]
 
 #### Statistical analyses
 
@@ -84,7 +84,7 @@ Absolute EMG values are not meaningful as muscle activation is never null, even 
 
 To model EMG amplitude variations in response to the rumination induction (Experiment 1) and relaxation (Experiment 2), we used a bayesian multivariate regression model with the natural logarithm of the EMG amplitude (expressed in % of baseline level) as an outcome, in an intercept-only model (in Experiment 1), and using Condition (Orofacial, Arm or Story) as a categorical predictor in Experiment 2. We used the same strategy (two multivariate models) to analyse VAS scores (expressed in relative changes) along the two experiments.
 
-These analyses were conducted using RStudio (RStudio Team, 2018) and the `brms` package [@R-brms], an `R` implementation of Bayesian multilevel models that employs the probabilistic programming language `Stan` [@carpenter_stan_2017]. Stan implements gradient-based Markov Chain Monte Carlo (MCMC) algorithms (e.g., Hamiltonian Monte-Carlo), which allow yielding posterior distributions that are straightforward to use for interval estimation around all parameters. Two MCMC simulations (or "chains") were run for each model, including 100,000 iterations, a warmup of 10,000 iterations, and a thinning interval of 10. Posterior convergence was assessed examining autocorrelation and trace plots, as well as the Gelman-Rubin statistic. Fixed effects were estimated via the posterior mean and 95% highest density intervals (HDIs), where an HDI interval is the Bayesian analogue of a classical confidence interval^[While not suffering from the misunderstandings associated with frequentist confidence intervals [for more details, see for instance @morey_fallacy_2015].].
+These analyses were conducted using RStudio (RStudio Team, 2018) and the `brms` package [@R-brms], an `R` implementation of Bayesian multilevel models that employs the probabilistic programming language `Stan` [@carpenter_stan_2017]. Stan implements gradient-based Markov Chain Monte Carlo (MCMC) algorithms (e.g., Hamiltonian Monte-Carlo), which allow yielding posterior distributions that are straightforward to use for interval estimation around all parameters. Two MCMC simulations (or "chains") were run for each model, including 100,000 iterations, a warmup of 10,000 iterations, and a thinning interval of 10. Posterior convergence was assessed examining autocorrelation and trace plots, as well as the Gelman-Rubin statistic. Fixed effects were estimated via the posterior mean and 95% highest density intervals (HDIs), where an HDI interval is the Bayesian analogue of a classical confidence interval.^[While not suffering from the misunderstandings associated with frequentist confidence intervals [for more details, see for instance @morey_fallacy_2015].]
 
 This strategy allowed us to examine posterior probability distribution on each parameter of interest (i.e., effects of session and condition on each response variable). When applicable, we also report evidence ratios (ERs), computed using the hypothesis function of the `brms` package [@R-brms]. These evidence ratios are simply the posterior probability under a hypothesis against its alternative [@R-brms]. We also report summary statistics (mean and HDI) of Cohen’s d effect sizes, computed from the posterior samples.
 
@@ -116,11 +116,20 @@ In order to check whether the propensity to ruminate could predict the effects o
 
 #### Correlations between EMG amplitudes and VAS scores
 
-Correlations between EMG amplitudes and VAS scores were examined using the `BayesianFirstAid` package [@R-BayesianFirstAid], using 15,000 iterations for each correlation coefficient. Both estimated correlation coefficients ($\rho$s) and 95% HDIs are reported in Table XX.
+Correlations between EMG amplitudes and VAS scores were examined using the `BayesianFirstAid` package [@R-BayesianFirstAid], using 15,000 iterations for each correlation coefficient. Both estimated correlation coefficients ($\rho$s) and 95% HDIs are reported in Table \@ref(tab:table1).
+
+<caption>(\#tab:table1)</caption>
+
+<caption>*Estimated correlation coefficients and 95\% HDIs between EMG amplitude evolutions and VAS relative changes.*</caption>
 
 
 
-<!-- insert table 1 here -->
+VAS/Muscle   OOS                   OOI                    FCR                    FRO                 
+-----------  --------------------  ---------------------  ---------------------  --------------------
+Brooding     -0.03 [-0.27, 0.20]   0.11 [-0.12, 0.34]     -0.26 [-0.47, −0.03]   0.11 [-0.13, 0.36]  
+Feelings     -0.07 [-0.32, 0.18]   0.01 [-0.24, 0.25]     -0.20 [-0.43, 0.04]    -0.05 [-0.29, 0.19] 
+Focused      -0.18 [-0.41, 0.06]   -0.26 [-0.47, −0.03]   -0.07 [-0.31, 0.18]    0.01 [-0.24, 0.26]  
+Problems     0.11 [-0.14, 0.34]    -0.01 [-0.25, 0.23]    -0.09 [-0.33, 0.15]    0.26 [0.02, 0.50]   
 
 ### Experiment 2: rumination reduction by relaxation
 
@@ -128,7 +137,28 @@ In the second experiment, we aimed at comparing the evolution in EMG activity an
 
 #### Self-reported rumination measures: VAS scores
 
-Posterior means and 95% HDIs of the VAS scores in each condition of experiment 2 are represented in Figure XX and Table XX.
+Posterior means and 95% HDIs of the VAS scores in each condition of experiment 2 are represented in Figure \@ref(fig:resultsemgfig2) and Table \@ref(tab:table2).
+
+<caption>(\#tab:table2)</caption>
+
+<caption>*Posterior means and 95\% HDIs for each VAS in each condition.*</caption>
+
+
+
+VAS        Condition   β [95\% HDI]              d [95\% HDI]         
+---------  ----------  ------------------------  ---------------------
+Feelings   Orofacial   7.84 [-0.34, 16.05]       0.38 [-0.02, 0.80]   
+           Arm         4.60 [-3.78, 13]          0.22 [-0.21, 0.62]   
+           Story       -5.33 [-13.41, 2.89]      -0.26 [-0.68, 0.12]  
+Problems   Orofacial   −15.24 [-23.89, −6.50]    -0.70 [-1.11, −0.28] 
+           Arm         -4.23 [-13.15, 4.69]      -0.19 [-0.59, 0.22]  
+           Story       -9.19 [-17.90, −0.39]     -0.42 [-0.83, −0.02] 
+Brooding   Orofacial   -20.40 [-28.78, −11.97]   -0.97 [-1.41, −0.55] 
+           Arm         -10.42 [-18.87, −1.93]    -0.50 [-0.90, −0.07] 
+           Story       -15.16 [-23.48, −6.83]    -0.72 [-1.12, −0.30] 
+Focused    Orofacial   17.03 [7.37, 20.67]       0.72 [0.29, 1.14]    
+           Arm         11.19 [1.56, 20.89]       0.48 [0.05, 0.88]    
+           Story       -14.94 [-24.64, −5.32]    -0.64 [-1.05, −0.22] 
 
 In order to compare the effects of the two kind of relaxation on the VAS scores, we then used the `hypothesis()` function of the `brms` package that allows deriving evidence ratios (ER). These evidence ratios are simply the posterior probability under a hypothesis (e.g., the hypothesis that the Orofacial relaxation session would be more effective in reducing self-reported rumination than the Arm relaxation session) against its alternative [@R-brms].
 
@@ -138,17 +168,34 @@ Concerning the Problems VAS, the decrease observed in the Orofacial condition wa
 
 ![(\#fig:resultsemgfig2)Posterior mean and 95\% credible intervals for the VAS score (expressed in relative change from post-induction level).](assets/emg_fig2.pdf)
 
-<!-- insert table 2 here -->
-
 #### EMG
 
-Posterior means and 95% HDIs of the EMG amplitude in each condition of experiment 2 are represented in Figure XX and reported in Table XX. We used the same strategy as before to compare the effects of the two kinds of relaxation on the EMG amplitudes.
+Posterior means and 95% HDIs of the EMG amplitude in each condition of experiment 2 are represented in Figure \@ref(fig:resultsemgfig3) and reported in Table \@ref(tab:table3). We used the same strategy as before to compare the effects of the two kinds of relaxation on the EMG amplitudes.
+
+<caption>(\#tab:table3)</caption>
+
+<caption>*Posterior means and 95\% HDIs for each muscle in each condition.*</caption>
+
+
+
+Muscle   Condition   β [95\% HDI]             d [95\% HDI]         
+-------  ----------  -----------------------  ---------------------
+OOS      Orofacial   69.80 [56.96, 83.62]     -0.92 [-1.54, −0.32] 
+         Arm         98 [79.83, 117.71]       -0.07 [-0.48, 0.32]  
+         Story       109.54 [89.05, 130.74]   0.16 [-0.21, 0.49]   
+OOI      Orofacial   71.05 [52.67, 90.71]     -0.62 [-1.24, −0.08] 
+         Arm         100.43 [74.05, 128.68]   -0.03 [-0.42, 0.34]  
+         Story       89.94 [66.54, 114]       -0.19 [-0.63, 0.22]  
+FCR      Orofacial   97.01 [93.12, 100.89]    -0.32 [-0.75, 0.10]  
+         Arm         98.46 [94.51, 102.48]    -0.16 [-0.58, 0.25]  
+         Story       99.24 [95.26, 103.18]    -0.08 [-0.48, 0.32]  
+FRO      Orofacial   59.22 [48.18, 70.93]     -1.44 [-2.20, −0.70] 
+         Arm         61.31 [49.69, 73.82]     -1.32 [-2.08, −0.61] 
+         Story       98.31 [80.19, 117.29]    -0.06 [-0.46, 0.32]  
 
 Concerning the OOS, the observed decrease in the Orofacial condition was more pronounced than in the Arm condition (Est = −0.34, SE = 0.14, ER10 = 140.73), as well as concerning the OOI (Est = −0.35, SE = 0.19, ER10 = 29.46), while we observed no noticeable differences between the two kinds of relaxation concerning the EMG amplitude of the FRO (Est = -0.04, SE = 0.14, ER10 = 1.53).
 
-![(\#fig:resultsemgfig3)Posterior mean and 95\% credible intervals for the VAS score (expressed in relative change from post-induction level).](assets/emg_fig3.pdf)
-
-<!-- insert table 2 here -->
+![(\#fig:resultsemgfig3)Posterior mean and 95\% credible intervals for the the EMG amplitude (expressed in percentage of baseline level, left panel).](assets/emg_fig3.pdf)
 
 ## Discussion
 
