@@ -8,7 +8,7 @@ Nous avons mené une série de cinq études visant à sonder le rôle du systèm
 
 \vspace{\baselineskip}
 
-**Mots-clés**: rumination; parole intérieure; imagerie motrice; électromyographie; suppression articulatoire
+**Mots-clés**: ruminations; parole intérieure; imagerie motrice; électromyographie; suppression articulatoire
 
 <!-- \afterpage{\blankpage} -->
 \clearemptydoublepage
