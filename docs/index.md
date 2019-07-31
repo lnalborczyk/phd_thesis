@@ -1,7 +1,7 @@
 --- 
 title: Understanding rumination as a form of inner speech
 author: "" # Ladislas Nalborczyk
-date: "" #"2019-07-30"
+date: "" #"2019-07-31"
 
 documentclass: memoir # using the memoir package
 # classoption: a4paper,12pt,oneside,oldfontcommands # memoir class options
@@ -17,14 +17,6 @@ bibliography: [bib/thesis.bib, bib/packages.bib]
 # biblio-style: apalike # needs to be commented in order to use the apa6.csl instead
 # csl: apa6.csl # does not work in the YAML, see instead _output.yml
 ---
-
-<!--
-
-
-
--->
-
-
 
 
 
