@@ -1,4 +1,4 @@
-\documentclass[a4paper,12pt,twoside,openright,oldfontcommands]{memoir}
+\documentclass[a4paper,12pt,twoside,openright,oldfontcommands,final]{memoir}
 \usepackage{lmodern}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
@@ -124,20 +124,36 @@
 % Loading relevant packages %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\usepackage{natbib} % using natbib to be able to use \cite* functions
-
 %\usepackage[latin1]{inputenc} % special characters with pdflatex
 %\usepackage[utf8]{inputenc} % special characters with pdflatex
 %\inputencoding{latin1} % special characters with pdflatex
 
-\usepackage{fontspec} % special characters (e.g., accents) with xelatex
+%\documentclass[]{apa6}
+%\usepackage[american]{babel}
+%\usepackage{csquotes}
+%\usepackage[style=apa]{biblatex}
+%\usepackage{apacite}
+%\usepackage{natbib}
+%\bibliographystyle{apa6}
+%\usepackage[apacite]{natbib}
+
+\usepackage{fontspec} % special characters (e.g., accents) with xelatex or luatex
+
+%\usepackage[mathletters]{ucs}
+%\usepackage[utf8x]{inputenc}
+%\usepackage{polyglossia}
+%\usepackage{uni8}
+%\usepackage{xunicode}
+%\usepackage{unicode} % does not exist anymore (replaced by "ucs")
+%\usepackage{unixode}
+%\usepackage{ucs} % new name of unicode package
 
 \usepackage{pdflscape} % figures in landscape mode
 \usepackage{tikz}
 \usepackage{lscape}
 \usepackage{indentfirst}
 \usepackage{float}
-\usepackage[flushleft]{threeparttable}
+\usepackage[flushleft]{threeparttable} % allows for three part tables with a specified notes section
 \usepackage[fulladjust]{marginnote}
 \usepackage{tcolorbox}
 \usepackage{pdfpages}
@@ -155,7 +171,7 @@
 \usepackage{lscape}
 \usepackage{tabu}
 \usepackage{array}
-\usepackage[gen]{eurosym}
+\usepackage[gen]{eurosym} % for € symbol
 \usepackage{gensymb} % for degree symbol
 \usepackage{subfig}
 \usepackage{stackrel,amssymb}
@@ -3339,21 +3355,19 @@ To sum up this section, our results suggest that some forms of inner speech (e.g
 \hypertarget{implication-of-these-results-for-rumination-theories}{%
 \subsection{Implication of these results for rumination theories}\label{implication-of-these-results-for-rumination-theories}}
 
-One of the most noticeable property of ruminative thoughts is their repetitiveness. Everyone knows the feeling of being trapped in a chain of endless thoughts. In addition to being repetitive, \emph{most} ruminative episodes are intrusive (i.e., they begin without awareness). In Chapter \ref{intro}, we briefly presented the habit-goal framework of depressive rumination introduced in Watkins \& Nolen-Hoeksema (\protect\hyperlink{ref-watkins_habit-goal_2014}{2014}). This theoretical framework provides an elegant integration of the accounts explaining how rumination may start and how it is maintained. It is built on the idea that rumination could be considered as a \emph{mental habit} (Hertel, \protect\hyperlink{ref-hertel_memory_2004}{2004}). In classical conditioning and learning theories, a habit is formed when a response is repetitively associated with a stimulus (and when this association is reinforced). An important aspect of habits is their automaticity and the lack of awareness. Indeed, habitual responses may be evoked \enquote{automatically} (i.e., without conscious effort) by contextual cues. Moreover, as habits are usually slow to learn, they are also slow to unlearn (i.e., they are relatively stable over time). The habit-goal framework considers rumination as a form of habitual response to goal-state discrepancies that occur frequently and repetitively in the same emotional context (i.e., depressed mood). Therefore, this framework permits to explain how rumination, while being originally triggered by state-goal discrepancies, might become independent of these goals through repetition. After learning, rumination might simply be \enquote{evoked} by contextual cues (e.g., negative mood). This would partially explain why rumination, as a habitual response, is particularly difficult to interrupt. As discussed in the previous section, considering rumination explicitly as a form of habit also permit to explain why rumination can be considered as a form of inner speech that does not involve the speech motor system. Therefore, our results can be taken as corroboration of the habit-goal framework of depressive rumination (more precisely, our findings do not contradict the habit-goal framework of rumination).
+One of the most noticeable property of ruminative thoughts is their repetitiveness. Everyone knows the feeling of being trapped in a chain of endless thoughts. Moreover, the initiation of rumination is often \emph{automatic} (cf.~our previous discussion of the meaning of automatic in this context). In Chapter \ref{intro}, we briefly presented the habit-goal framework of depressive rumination introduced in Watkins \& Nolen-Hoeksema (\protect\hyperlink{ref-watkins_habit-goal_2014}{2014}). This theoretical framework provides an elegant integration of accounts explaining how rumination starts and how it is maintained. It is built on the idea that rumination could be considered as a \emph{mental habit} (Hertel, \protect\hyperlink{ref-hertel_memory_2004}{2004}). More formally, in conditioning theories, a habit is formed when a response is repetitively associated with a stimulus (and when this association is reinforced). In other words, a stimulus-response (S-R) habit is learnt when some behaviour is contingent on some stimulus. Importantly, habits are automatic behaviours: they lack awareness, they are mentally efficient and are often difficult to control. Moreover, as habits are usually slow to learn, they are also slow to unlearn (i.e., they are relatively stable over time). The habit-goal framework considers rumination as a form of habitual response to goal-state discrepancies that occur frequently and repetitively in the same emotional context (i.e., depressed mood). Put simply, rumination can be considered as a habitual response (behaviour) to an emotional context (depressed mood). Therefore, this framework permits to explain how rumination, while being originally triggered by state-goal discrepancies, might become independent of these goals through repetition of this association. After learning, rumination might simply be \enquote{evoked} by contextual cues (e.g., negative mood). This would partially explain why rumination, as a habitual response, is particularly difficult to interrupt. As discussed in the previous section, considering rumination explicitly as a form of habit also permit to explain why rumination can be considered as a form of inner speech that does not involve the speech motor system. Therefore, our results can be taken as corroboration of the habit-goal framework of depressive rumination (more precisely, our findings do not contradict the habit-goal framework of rumination).
 
-According to consensual models of inner speech development and production, there would be a continuum of \enquote{externalisation} from condensed inner speech to expanded inner speech\ldots{} Condensation in rumination, look into think-aloud protocols (e.g., Lyubomirsky, Tucker, Caldwell, \& Berg, \protect\hyperlink{ref-lyubomirsky_why_1999}{1999})\ldots{}
+According to consensual models of inner speech development and production, different forms of inner speech seat on a continuum from condensed inner speech to expanded inner speech (and to overt speech). This continuum is often discretised and discussed in terms of several levels such as \enquote{condensed inner speech} and \enquote{expanded inner speech} (e.g., Fernyhough, \protect\hyperlink{ref-fernyhough_alien_2004}{2004}), although condensation might be more faithfully described as a continuous dimension (e.g., Grandchamp et al., \protect\hyperlink{ref-grandchamp_neurocognitive_2019}{2019}). As discussed previously, it is usually assumed that most internalised\footnote{We use \enquote{internalised} here to mean the opposite of \enquote{externalised} in the way we used it a few pages before, that is, a form of inner speech that does not recruit the speech motor system.} forms of inner speech are also more condensed. These forms of inner speech are structurally different from overt speech or expanded inner speech as they contain more abbreviation, are more predicative, and so on (cf.~section section \ref{development}). Therefore, based on our conclusion that verbal rumination is neither necessarily nor specifically associated with activity in the speech muscles, we expect rumination to be similar to other forms of condensed inner speech and to show similar structural properties. How could this hypothesis be examined? It is tempting to look into think-aloud protocols, where participants are asked to think aloud during some task. For instance, Lyubomirsky, Tucker, Caldwell, \& Berg (\protect\hyperlink{ref-lyubomirsky_why_1999}{1999}) examined the phenomenology of ruminative thoughts by asking participants to \enquote{ruminate outloud}. They observed that rumination is generally associated with an overly negative tone, increased self-criticism and self-blame, reduced confidence, optimism, and perceived control. Although this kind of protocol may be suitable to examine the emotional content of \enquote{outloud rumination}, it is not appropriate to examine the syntactical properties of rumination, as outloud rumination is expected to significantly differ from silent rumination. Indeed, as highlighted by Fernyhough (\protect\hyperlink{ref-fernyhough_alien_2004}{2004}), classical models of inner speech development and production proposes that the specified levels do not only represent stages of developments but also determines movements during production. More precisely, externalising inner speech leads to a \enquote{re-structuration} of inner speech (or a ``reconstruction'', cf.~Sokolov, \protect\hyperlink{ref-sokolov_inner_1972}{1972}), therefore erasing properties of condensed inner speech. In other words, it is not possible to observe outloud rumination to examine the properties of silent rumination, as externalising rumination is expected to change the properties of rumination. Another possibility is to rely more on the self-reports of participants trained to identify the syntactical properties of their (ruminative) thoughts (e.g., Hurlburt et al., \protect\hyperlink{ref-Hurlburt2013}{2013}; Smadja, \protect\hyperlink{ref-smadja_parole_2019}{2019}). Complementary information may also be gathered by combining several sources of neuroimaging and psychophysiological data to identify biological markers of the different forms of inner speech.
 
 We considered rumination as a habit and discussed how this view could account for our results\ldots{} but our results are based on \emph{induced} rumination. Therefore, how can we talk about automatically evoked phenomenon based on induced rumination\ldots?
 
-Mental habit = low control (automaticity). Habits become habits through learning and association, in the same way a poem can be learned by heart\ldots{} both can be more and more strongly internalised in a similar way\ldots{} How to overcome (bad) mental habits? From Hertel (\protect\hyperlink{ref-hertel_memory_2004}{2004}):
+Mental habit = low control (automaticity). Habits become habits through learning and association, in the same way a poem can be learned by heart\ldots{} both can be more and more strongly internalised in a similar way\ldots{} How to overcome mental habits? Hertel (\protect\hyperlink{ref-hertel_memory_2004}{2004}) suggested that the best way to overcome mental habits is not to merely oppose them controlled procedures (e.g., cognitive control) but to train new habits through controlled practice:
 
 \begin{quote}
 \enquote{In short, the best antidote to maladaptive habits is a new set of habits---not the opposite sort of habits recommended by Pollyanna and the teachings of Norman Vincent Peale (1956) and not the habits of suppression as recommended by certain grandmothers but the habits of thought control.} (page 209)
 \end{quote}
 
-In other words\ldots{} Hertel (\protect\hyperlink{ref-hertel_memory_2004}{2004}) gives several\ldots{} This view of rumination also has implications for rumination-focused therapies (see discussion in Watkins \& Nolen-Hoeksema, \protect\hyperlink{ref-watkins_habit-goal_2014}{2014})\ldots{}
-
-Describe model of van Vugt et al. (\protect\hyperlink{ref-van_vugt_how_2018}{2018})\ldots{} suractivation of negative memory chunks ? Alternatively, rumination can be seen in a Bayesian framework as overdetermined priors\ldots{} or lack of flexibility.
+For instance, mindfulness trainings avoid the shortcomings of thought suppression by acknowledging the presence of unwanted thoughts and by redirecting attention away from it (e.g., to breathing). Hertel (\protect\hyperlink{ref-hertel_memory_2004}{2004}) gives several\ldots{} This view of rumination also has implications for rumination-focused therapies (see discussion in Watkins \& Nolen-Hoeksema, \protect\hyperlink{ref-watkins_habit-goal_2014}{2014})\ldots{}
 
 \hypertarget{methodological-limitations-and-ways-forward}{%
 \section{Methodological limitations and ways forward}\label{methodological-limitations-and-ways-forward}}

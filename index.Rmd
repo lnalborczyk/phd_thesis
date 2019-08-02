@@ -4,26 +4,24 @@ author: "" # Ladislas Nalborczyk
 date: "" #"`r Sys.Date()`"
 
 documentclass: memoir # using the memoir package
-# classoption: a4paper,12pt,oneside,oldfontcommands # memoir class options
-classoption: a4paper,12pt,twoside,openright,oldfontcommands # memoir class options
+#classoption: letterpaper,10pt,twoside,onecolumn,openright,final # memoir class default options
+classoption: a4paper,12pt,twoside,openright,oldfontcommands,final # memoir class options
 
-lot: false # list of tables
-lof: false # list of figures
+lot: false # deactivating the default list of tables
+lof: false # deactivating the default list of figures
 
 site: bookdown::bookdown_site
 
 link-citations: yes
 bibliography: [bib/thesis.bib, bib/packages.bib]
-# biblio-style: apalike # needs to be commented in order to use the apa6.csl instead
-# csl: apa6.csl # does not work in the YAML, see instead _output.yml
+#biblio-style: apacite # apalike # needs to be commented in order to use the apa6.csl instead
+#csl: apa6.csl # does not work in the YAML, see instead _output.yml
 ---
 
 `r if (knitr::is_html_output() ) '# Abstract {-}'`
 
 ```{r abstract, include = identical(knitr:::pandoc_to(), "html"), results = "asis", echo = FALSE}
-cat(
-  "Rumination is known to be a predominantly verbal process and has been proposed to be considered as such as a dysfunctional form of inner speech. On the other hand, research on the psychophysiology of inner speech revealed that the neural processes involved in overt speech and inner speech tend to be very similar. This is coherent with the idea that some forms of inner speech could be considered as a kind of simulation of overt speech, in the same way as imagined actions can be considered as the result of a simulation of the corresponding overt action (e.g., walking and imagined walking). In other words, the motor simulation hypothesis suggests that the speech motor system should be involved as well during inner speech production. The corollary hypothesis might be drawn, according to which the production of inner speech (and rumination) should be disrupted by a disruption of the speech motor system. We conducted a series of five studies aiming to probe the role of the speech motor system in rumination. Overall, our results highlight that although verbal rumination may be considered as a form of inner speech, it might not specifically involve the speech motor system. More precisely, we argue that rumination might be considered as a particularly strongly condensed form of inner speech that does not involve fully specified articulatory features. We discuss these findings in relation to the habit-goal framework of depressive rumination and we discuss the implications of these findings for theories of inner speech production."
-  )
+cat("Rumination is known to be a predominantly verbal process and has been proposed to be considered as such as a dysfunctional form of inner speech. On the other hand, research on the psychophysiology of inner speech revealed that the neural processes involved in overt speech and inner speech tend to be very similar. This is coherent with the idea that some forms of inner speech could be considered as a kind of simulation of overt speech, in the same way as imagined actions can be considered as the result of a simulation of the corresponding overt action (e.g., walking and imagined walking). In other words, the motor simulation hypothesis suggests that the speech motor system should be involved as well during inner speech production. The corollary hypothesis might be drawn, according to which the production of inner speech (and rumination) should be disrupted by a disruption of the speech motor system. We conducted a series of five studies aiming to probe the role of the speech motor system in rumination. Overall, our results highlight that although verbal rumination may be considered as a form of inner speech, it might not specifically involve the speech motor system. More precisely, we argue that rumination might be considered as a particularly strongly condensed form of inner speech that does not involve fully specified articulatory features. We discuss these findings in relation to the habit-goal framework of depressive rumination and we discuss the implications of these findings for theories of inner speech production.")
 ```
 
 ```{r writebib, eval = FALSE, include = FALSE, warning = FALSE}

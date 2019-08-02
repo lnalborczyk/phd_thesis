@@ -2,20 +2,36 @@
 % Loading relevant packages %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\usepackage{natbib} % using natbib to be able to use \cite* functions
-
 %\usepackage[latin1]{inputenc} % special characters with pdflatex
 %\usepackage[utf8]{inputenc} % special characters with pdflatex
 %\inputencoding{latin1} % special characters with pdflatex
 
-\usepackage{fontspec} % special characters (e.g., accents) with xelatex
+%\documentclass[]{apa6}
+%\usepackage[american]{babel}
+%\usepackage{csquotes}
+%\usepackage[style=apa]{biblatex}
+%\usepackage{apacite}
+%\usepackage{natbib}
+%\bibliographystyle{apa6}
+%\usepackage[apacite]{natbib}
+
+\usepackage{fontspec} % special characters (e.g., accents) with xelatex or luatex
+
+%\usepackage[mathletters]{ucs}
+%\usepackage[utf8x]{inputenc}
+%\usepackage{polyglossia}
+%\usepackage{uni8}
+%\usepackage{xunicode}
+%\usepackage{unicode} % does not exist anymore (replaced by "ucs")
+%\usepackage{unixode}
+%\usepackage{ucs} % new name of unicode package
 
 \usepackage{pdflscape} % figures in landscape mode
 \usepackage{tikz}
 \usepackage{lscape}
 \usepackage{indentfirst}
 \usepackage{float}
-\usepackage[flushleft]{threeparttable}
+\usepackage[flushleft]{threeparttable} % allows for three part tables with a specified notes section
 \usepackage[fulladjust]{marginnote}
 \usepackage{tcolorbox}
 \usepackage{pdfpages}
@@ -33,7 +49,7 @@
 \usepackage{lscape}
 \usepackage{tabu}
 \usepackage{array}
-\usepackage[gen]{eurosym}
+\usepackage[gen]{eurosym} % for € symbol
 \usepackage{gensymb} % for degree symbol
 \usepackage{subfig}
 \usepackage{stackrel,amssymb}
