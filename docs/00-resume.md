@@ -10,5 +10,9 @@ Nous avons mené une série de cinq études visant à sonder le rôle du systèm
 
 **Mots-clés**: ruminations; parole intérieure; imagerie motrice; électromyographie; suppression articulatoire
 
-<!-- \afterpage{\blankpage} -->
+<!--
+\afterpage{\blankpage}
 \clearemptydoublepage
+-->
+
+\afterpage{\blankpage}

@@ -3,8 +3,8 @@ bookdown::gitbook: # generating the gitbook (html) version of the thesis
   author: Ladislas Nalborczyk
   date: "`r Sys.Date()`"
   github-repo: lnalborczyk/phd_thesis
-  citation_package: none # needs to be "none" in order to use the csl file
-  pandoc_args: [ "--csl", "./csl/apa6.csl" ] # specifies the csl file to be used
+  citation_package: none # natbib or biblatex - needs to be "none" in order to use the csl file
+  pandoc_args: ["--csl", "./csl/apa6.csl"] # specifies the csl file to be used
   split_bib: false # if true, adds references at the end of each chapter
   #split_by: chapter # "none" creates only one html file
   config:
@@ -24,21 +24,18 @@ bookdown::pdf_book: # generating the pdf version of the thesis
     in_header: latex/preamble.tex # defines style and latex options
     before_body: latex/before_body.tex # defines cover page
   latex_engine: xelatex # xelatex or lualatex
-  citation_package: none # needs to be "none" in order to use the csl file
+  citation_package: none # natbib or biblatex - needs to be "none" (using pandoc-citeproc) in order to use the csl file
   keep_tex: true # keeps the .tex file
   toc_appendix: true # adds the appendix part to the toc
   dev: "cairo_pdf" # plotting device
   toc: false # deactivates default table of contents
   highlight: pygments # code highlighting
-  pandoc_args: [
-    "--csl", "./csl/apa6.csl" # specifies the csl file to be used
-    #"--filter", "./assets/fix-special-characters-references.R" # filter out all special characters
-    ]
+  pandoc_args: ["--csl", "./csl/apa6.csl"] # specifies the csl file to be used
 
-bookdown::word_document2: # generating the word version of the thesis
-  pandoc_args: [
-    "--csl", "./csl/apa6.csl",
-    "--bibliography", "./bib/packages.bib",
-    "--bibliography", "./bib/thesis.bib",
-    "--filter", "pandoc-citeproc"
-  ]
+# bookdown::word_document2: # generating the word version of the thesis
+#   pandoc_args: [
+#     "--csl", "./csl/apa6.csl",
+#     "--bibliography", "./bib/packages.bib",
+#     "--bibliography", "./bib/thesis.bib",
+#     "--filter", "pandoc-citeproc"
+#     ]

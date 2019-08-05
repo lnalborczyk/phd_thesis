@@ -10,5 +10,9 @@ We conducted a series of five studies aiming to probe the role of the speech mot
 
 **Key-words**: rumination; inner speech; motor imagery; electromyography; articulatory suppression
 
-<!-- \afterpage{\blankpage} -->
+<!--
+\afterpage{\blankpage}
 \clearemptydoublepage
+-->
+
+\afterpage{\blankpage}

@@ -17,9 +17,11 @@ In Chapter 7, we used the same strategy (articulatory suppression) to examine th
 
 Finally, in Chapter 8, we discuss the overall findings and suggest ways forward from both an experimental and a theoretical perspective.
 
-\newpage
-\blankpage
+-->
 
+<!--
+\afterpage{\blankpage}
+\clearemptydoublepage
 -->
 
 \clearemptydoublepage

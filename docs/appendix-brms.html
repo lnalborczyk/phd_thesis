@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>A An Introduction to Bayesian Multilevel Models Using brms: A Case Study of Gender Effects on Vowel Variability in Standard Indonesian | Understanding rumination as a form of inner speech</title>
   <meta name="description" content="A An Introduction to Bayesian Multilevel Models Using brms: A Case Study of Gender Effects on Vowel Variability in Standard Indonesian | Understanding rumination as a form of inner speech" />
-  <meta name="generator" content="bookdown 0.9.17 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.12 and GitBook 2.6.7" />
 
   <meta property="og:title" content="A An Introduction to Bayesian Multilevel Models Using brms: A Case Study of Gender Effects on Vowel Variability in Standard Indonesian | Understanding rumination as a form of inner speech" />
   <meta property="og:type" content="book" />
@@ -54,7 +54,6 @@ a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
 a.sourceLine:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
@@ -575,30 +574,30 @@ Figure A.2: Prior distributions used in the first model, for <span class="math i
 </p>
 </div>
 <p>These priors can be specified in numerous ways (see <code>?set_prior</code> for more details), among which the following:</p>
-<pre class="sourceCode r"><code class="sourceCode r">prior1 &lt;-<span class="st"> </span><span class="kw">c</span>(
-    <span class="kw">prior</span>(<span class="kw">normal</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> Intercept),
-    <span class="kw">prior</span>(<span class="kw">normal</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> b, <span class="dt">coef =</span> gender),
-    <span class="kw">prior</span>(<span class="kw">cauchy</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> sigma)
-    )</code></pre>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1">prior1 &lt;-<span class="st"> </span><span class="kw">c</span>(</a>
+<a class="sourceLine" id="cb1-2" title="2">    <span class="kw">prior</span>(<span class="kw">normal</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> Intercept),</a>
+<a class="sourceLine" id="cb1-3" title="3">    <span class="kw">prior</span>(<span class="kw">normal</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> b, <span class="dt">coef =</span> gender),</a>
+<a class="sourceLine" id="cb1-4" title="4">    <span class="kw">prior</span>(<span class="kw">cauchy</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> sigma)</a>
+<a class="sourceLine" id="cb1-5" title="5">    )</a></code></pre></div>
 <p>where a prior can be defined over a class of parameters (e.g., for all variance components, using the <code>sd</code> class) or for a specific one, for instance as above by specifying the coefficient (<code>coef</code>) to which the prior corresponds (here the slope of the constant effect of gender).</p>
 <p>The model can be fitted with <code>brms</code> with the following command:</p>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(brms)
-
-bmod1 &lt;-<span class="st"> </span><span class="kw">brm</span>(
-        distance <span class="op">~</span><span class="st"> </span>gender,
-        <span class="dt">data =</span> indo, <span class="dt">family =</span> <span class="kw">gaussian</span>(),
-        <span class="dt">prior =</span> prior1,
-        <span class="dt">warmup =</span> <span class="dv">2000</span>, <span class="dt">iter =</span> <span class="dv">5000</span>
-    )</code></pre>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">library</span>(brms)</a>
+<a class="sourceLine" id="cb2-2" title="2"></a>
+<a class="sourceLine" id="cb2-3" title="3">bmod1 &lt;-<span class="st"> </span><span class="kw">brm</span>(</a>
+<a class="sourceLine" id="cb2-4" title="4">        distance <span class="op">~</span><span class="st"> </span>gender,</a>
+<a class="sourceLine" id="cb2-5" title="5">        <span class="dt">data =</span> indo, <span class="dt">family =</span> <span class="kw">gaussian</span>(),</a>
+<a class="sourceLine" id="cb2-6" title="6">        <span class="dt">prior =</span> prior1,</a>
+<a class="sourceLine" id="cb2-7" title="7">        <span class="dt">warmup =</span> <span class="dv">2000</span>, <span class="dt">iter =</span> <span class="dv">5000</span></a>
+<a class="sourceLine" id="cb2-8" title="8">    )</a></code></pre></div>
 <p>where <code>distance</code> is the distance from the centre of gravity. The <code>iter</code> argument serves to specify the total number of iterations of the Markov Chain Monte Carlo (MCMC) algorithm, and the <code>warmup</code> argument specifies the number of iterations that are run at the beginning of the process to “calibrate” the MCMC, so that only <code>iter - warmup</code> iterations are retained in the end to approximate the shape of the posterior distribution <span class="citation">(for more details, see McElreath, <a href="references.html#ref-mcelreath_statistical_2016" role="doc-biblioref">2016</a><a href="references.html#ref-mcelreath_statistical_2016" role="doc-biblioref">b</a>)</span>.</p>
 <p>Figure <a href="appendix-brms.html#fig:plotbmod1">A.3</a> depicts the estimations of this first model for the intercept <span class="math inline">\(\alpha\)</span>, the slope <span class="math inline">\(\beta\)</span>, and the residual standard deviation <span class="math inline">\(\sigma_{e}\)</span>. The left part of the plot shows histograms of draws taken from the posterior distribution, and from which several summaries can be computed (e.g., mean, mode, quantiles). The right part of Figure <a href="appendix-brms.html#fig:plotbmod1">A.3</a> shows the behaviour of the two simulations (i.e., the two chains) used to approximate the posterior distribution, where the x-axis represents the number of iterations and the y-axis the value of the parameter. This plot reveals one important aspect of the simulations that should be checked, known as <em>mixing</em>. A chain is considered well mixed if it explores many different values for the target parameters and does not stay in the same region of the parameter space. This feature can be evaluated by checking that these plots, usually referred to as <em>trace plots</em>, show random scatter around a mean value (they look like a “fat hairy caterpillar”).</p>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(tidyverse)
-
-bmod1 <span class="op">%&gt;%</span>
-<span class="st">    </span><span class="kw">plot</span>(
-        <span class="dt">combo =</span> <span class="kw">c</span>(<span class="st">&quot;hist&quot;</span>, <span class="st">&quot;trace&quot;</span>), <span class="dt">widths =</span> <span class="kw">c</span>(<span class="dv">1</span>, <span class="fl">1.5</span>),
-        <span class="dt">theme =</span> <span class="kw">theme_bw</span>(<span class="dt">base_size =</span> <span class="dv">10</span>)
-        )</code></pre>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">library</span>(tidyverse)</a>
+<a class="sourceLine" id="cb3-2" title="2"></a>
+<a class="sourceLine" id="cb3-3" title="3">bmod1 <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb3-4" title="4"><span class="st">    </span><span class="kw">plot</span>(</a>
+<a class="sourceLine" id="cb3-5" title="5">        <span class="dt">combo =</span> <span class="kw">c</span>(<span class="st">&quot;hist&quot;</span>, <span class="st">&quot;trace&quot;</span>), <span class="dt">widths =</span> <span class="kw">c</span>(<span class="dv">1</span>, <span class="fl">1.5</span>),</a>
+<a class="sourceLine" id="cb3-6" title="6">        <span class="dt">theme =</span> <span class="kw">theme_bw</span>(<span class="dt">base_size =</span> <span class="dv">10</span>)</a>
+<a class="sourceLine" id="cb3-7" title="7">        )</a></code></pre></div>
 <div class="figure" style="text-align: center"><span id="fig:plotbmod1"></span>
 <img src="91-appendix_brms_files/figure-html/plotbmod1-1.pdf" alt="Histograms of posterior samples and trace plots of the intercept, the slope for gender and the standard deviation of the residuals of the constant effects model." width="100%" />
 <p class="caption">
@@ -669,19 +668,19 @@ statistic for each parameter of the constant effect model bmod1.</em>
 \]</span></p>
 
 <p>This model can be fitted with <code>brms</code> with the following command (where we specify the HalfCauchy prior on <span class="math inline">\(\sigma_{subject}\)</span> by applying it on parameters of class <code>sd</code>):</p>
-<pre class="sourceCode r"><code class="sourceCode r">prior2 &lt;-<span class="st"> </span><span class="kw">c</span>(
-    <span class="kw">prior</span>(<span class="kw">normal</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> Intercept),
-    <span class="kw">prior</span>(<span class="kw">normal</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> b, <span class="dt">coef =</span> gender),
-    <span class="kw">prior</span>(<span class="kw">cauchy</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> sd),
-    <span class="kw">prior</span>(<span class="kw">cauchy</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> sigma)
-    )
-
-bmod2 &lt;-<span class="st"> </span><span class="kw">brm</span>(
-    distance <span class="op">~</span><span class="st"> </span>gender <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span><span class="op">|</span>subj),
-    <span class="dt">data =</span> indo, <span class="dt">family =</span> <span class="kw">gaussian</span>(),
-    <span class="dt">prior =</span> prior2,
-    <span class="dt">warmup =</span> <span class="dv">2000</span>, <span class="dt">iter =</span> <span class="dv">10000</span>
-    )</code></pre>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" title="1">prior2 &lt;-<span class="st"> </span><span class="kw">c</span>(</a>
+<a class="sourceLine" id="cb4-2" title="2">    <span class="kw">prior</span>(<span class="kw">normal</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> Intercept),</a>
+<a class="sourceLine" id="cb4-3" title="3">    <span class="kw">prior</span>(<span class="kw">normal</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> b, <span class="dt">coef =</span> gender),</a>
+<a class="sourceLine" id="cb4-4" title="4">    <span class="kw">prior</span>(<span class="kw">cauchy</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> sd),</a>
+<a class="sourceLine" id="cb4-5" title="5">    <span class="kw">prior</span>(<span class="kw">cauchy</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> sigma)</a>
+<a class="sourceLine" id="cb4-6" title="6">    )</a>
+<a class="sourceLine" id="cb4-7" title="7"></a>
+<a class="sourceLine" id="cb4-8" title="8">bmod2 &lt;-<span class="st"> </span><span class="kw">brm</span>(</a>
+<a class="sourceLine" id="cb4-9" title="9">    distance <span class="op">~</span><span class="st"> </span>gender <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span><span class="op">|</span>subj),</a>
+<a class="sourceLine" id="cb4-10" title="10">    <span class="dt">data =</span> indo, <span class="dt">family =</span> <span class="kw">gaussian</span>(),</a>
+<a class="sourceLine" id="cb4-11" title="11">    <span class="dt">prior =</span> prior2,</a>
+<a class="sourceLine" id="cb4-12" title="12">    <span class="dt">warmup =</span> <span class="dv">2000</span>, <span class="dt">iter =</span> <span class="dv">10000</span></a>
+<a class="sourceLine" id="cb4-13" title="13">    )</a></code></pre></div>
 <p>As described in the first part of the present paper, we now have two sources of variation in the model: the standard deviation of the residuals <span class="math inline">\(\sigma_{e}\)</span> and the standard deviation of the by-subject varying intercepts <span class="math inline">\(\sigma_{subject}\)</span>. The latter represents the standard deviation of the population of varying intercepts, and is also learned from the data. It means that the estimation of each unique intercept will inform the estimation of the population of intercepts, which, in return, will inform the estimation of the other intercepts. We call this sharing of information between groups the <em>partial pooling</em> strategy, in comparison with the <em>no pooling</em> strategy, where each intercept is estimated independently, and with the <em>complete pooling</em> strategy, in which all intercepts are given the same value <span class="citation">(Gelman et al., <a href="references.html#ref-gelman_bayesian_2013" role="doc-biblioref">2013</a>; Gelman &amp; Hill, <a href="references.html#ref-gelman_data_2006" role="doc-biblioref">2006</a>; McElreath, <a href="references.html#ref-mcelreath_statistical_2016" role="doc-biblioref">2016</a><a href="references.html#ref-mcelreath_statistical_2016" role="doc-biblioref">b</a>)</span>. This is one of the most essential features of MLMs, and what leads to better estimations than single-level regression models for repeated measurements or unbalanced sample sizes. This pooling of information is made apparent through the phenomenon of <em>shrinkage</em>, which is illustrated in Figure <a href="appendix-brms.html#fig:ranefplotbmod2">A.4</a>, and later on, in Figure <a href="appendix-brms.html#fig:shrinkageplot">A.6</a>.</p>
 <p>Figure <a href="appendix-brms.html#fig:ranefplotbmod2">A.4</a> shows the posterior distribution as estimated by this second model for each participant, in relation to the raw mean of its category (i.e., females or males), represented by the vertical dashed lines. We can see for instance that participants <code>M02</code> and <code>F09</code> have smaller average distance than the means of their groups, while participants <code>M03</code> and <code>F08</code> have larger ones. The arrows represent the amount of <em>shrinkage</em>, that is, the deviation between the mean in the raw data (represented by a cross underneath each density) and the estimated mean of the posterior distribution (represented by the peak of the arrow). As shown in Figure <a href="appendix-brms.html#fig:ranefplotbmod2">A.4</a>, this <em>shrinkage</em> is always directed toward the mean of the considered group (i.e., females or males) and the amount of <em>shrinkage</em> is determined by the deviation of the individual mean from its group mean. This mechanism acts like a safeguard against overfitting, preventing the model from overly trusting each individual datum.</p>
 <div class="figure" style="text-align: center"><span id="fig:ranefplotbmod2"></span>
@@ -760,19 +759,19 @@ statistic for each parameter of model bmod2 with a varying intercept by subject.
 \]</span></p>
 
 <p>This model can be fitted with <code>brms</code> with the following command:</p>
-<pre class="sourceCode r"><code class="sourceCode r">prior3 &lt;-<span class="st"> </span><span class="kw">c</span>(
-    <span class="kw">prior</span>(<span class="kw">normal</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> Intercept),
-    <span class="kw">prior</span>(<span class="kw">normal</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> b, <span class="dt">coef =</span> gender),
-    <span class="kw">prior</span>(<span class="kw">cauchy</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> sd),
-    <span class="kw">prior</span>(<span class="kw">cauchy</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> sigma)
-    )
-
-bmod3 &lt;-<span class="st"> </span><span class="kw">brm</span>(
-    distance <span class="op">~</span><span class="st"> </span>gender <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span><span class="op">|</span>subj) <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span><span class="op">|</span>vowel),
-    <span class="dt">data =</span> indo, <span class="dt">family =</span> <span class="kw">gaussian</span>(),
-    <span class="dt">prior =</span> prior3,
-    <span class="dt">warmup =</span> <span class="dv">2000</span>, <span class="dt">iter =</span> <span class="dv">10000</span>
-    )</code></pre>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" title="1">prior3 &lt;-<span class="st"> </span><span class="kw">c</span>(</a>
+<a class="sourceLine" id="cb5-2" title="2">    <span class="kw">prior</span>(<span class="kw">normal</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> Intercept),</a>
+<a class="sourceLine" id="cb5-3" title="3">    <span class="kw">prior</span>(<span class="kw">normal</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> b, <span class="dt">coef =</span> gender),</a>
+<a class="sourceLine" id="cb5-4" title="4">    <span class="kw">prior</span>(<span class="kw">cauchy</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> sd),</a>
+<a class="sourceLine" id="cb5-5" title="5">    <span class="kw">prior</span>(<span class="kw">cauchy</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> sigma)</a>
+<a class="sourceLine" id="cb5-6" title="6">    )</a>
+<a class="sourceLine" id="cb5-7" title="7"></a>
+<a class="sourceLine" id="cb5-8" title="8">bmod3 &lt;-<span class="st"> </span><span class="kw">brm</span>(</a>
+<a class="sourceLine" id="cb5-9" title="9">    distance <span class="op">~</span><span class="st"> </span>gender <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span><span class="op">|</span>subj) <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span><span class="op">|</span>vowel),</a>
+<a class="sourceLine" id="cb5-10" title="10">    <span class="dt">data =</span> indo, <span class="dt">family =</span> <span class="kw">gaussian</span>(),</a>
+<a class="sourceLine" id="cb5-11" title="11">    <span class="dt">prior =</span> prior3,</a>
+<a class="sourceLine" id="cb5-12" title="12">    <span class="dt">warmup =</span> <span class="dv">2000</span>, <span class="dt">iter =</span> <span class="dv">10000</span></a>
+<a class="sourceLine" id="cb5-13" title="13">    )</a></code></pre></div>
 <p>where the same Half-Cauchy is specified for the two varying intercepts, by applying it directly to the <code>sd</code> class.</p>
 <caption>
 <span id="tab:sumbmod3">Table A.4: </span>
@@ -872,20 +871,20 @@ statistic for each parameter of model bmod3 with a varying intercept by subject 
 Figure A.5: Visualisation of the LKJ prior for different values of the shape parameter <span class="math inline">\(\zeta\)</span>.
 </p>
 </div>
-<pre class="sourceCode r"><code class="sourceCode r">prior4 &lt;-<span class="st"> </span><span class="kw">c</span>(
-    <span class="kw">prior</span>(<span class="kw">normal</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> Intercept),
-    <span class="kw">prior</span>(<span class="kw">normal</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> b, <span class="dt">coef =</span> gender),
-    <span class="kw">prior</span>(<span class="kw">cauchy</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> sd),
-    <span class="kw">prior</span>(<span class="kw">cauchy</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> sigma),
-    <span class="kw">prior</span>(<span class="kw">lkj</span>(<span class="dv">2</span>), <span class="dt">class =</span> cor)
-    )
-
-bmod4 &lt;-<span class="st"> </span><span class="kw">brm</span>(
-    distance <span class="op">~</span><span class="st"> </span>gender <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span><span class="op">|</span>subj) <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span> <span class="op">+</span><span class="st"> </span>gender<span class="op">|</span>vowel),
-    <span class="dt">data =</span> indo, <span class="dt">family =</span> <span class="kw">gaussian</span>(),
-    <span class="dt">prior =</span> prior4,
-    <span class="dt">warmup =</span> <span class="dv">2000</span>, <span class="dt">iter =</span> <span class="dv">10000</span>
-    )</code></pre>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" title="1">prior4 &lt;-<span class="st"> </span><span class="kw">c</span>(</a>
+<a class="sourceLine" id="cb6-2" title="2">    <span class="kw">prior</span>(<span class="kw">normal</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> Intercept),</a>
+<a class="sourceLine" id="cb6-3" title="3">    <span class="kw">prior</span>(<span class="kw">normal</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> b, <span class="dt">coef =</span> gender),</a>
+<a class="sourceLine" id="cb6-4" title="4">    <span class="kw">prior</span>(<span class="kw">cauchy</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> sd),</a>
+<a class="sourceLine" id="cb6-5" title="5">    <span class="kw">prior</span>(<span class="kw">cauchy</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> sigma),</a>
+<a class="sourceLine" id="cb6-6" title="6">    <span class="kw">prior</span>(<span class="kw">lkj</span>(<span class="dv">2</span>), <span class="dt">class =</span> cor)</a>
+<a class="sourceLine" id="cb6-7" title="7">    )</a>
+<a class="sourceLine" id="cb6-8" title="8"></a>
+<a class="sourceLine" id="cb6-9" title="9">bmod4 &lt;-<span class="st"> </span><span class="kw">brm</span>(</a>
+<a class="sourceLine" id="cb6-10" title="10">    distance <span class="op">~</span><span class="st"> </span>gender <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span><span class="op">|</span>subj) <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span> <span class="op">+</span><span class="st"> </span>gender<span class="op">|</span>vowel),</a>
+<a class="sourceLine" id="cb6-11" title="11">    <span class="dt">data =</span> indo, <span class="dt">family =</span> <span class="kw">gaussian</span>(),</a>
+<a class="sourceLine" id="cb6-12" title="12">    <span class="dt">prior =</span> prior4,</a>
+<a class="sourceLine" id="cb6-13" title="13">    <span class="dt">warmup =</span> <span class="dv">2000</span>, <span class="dt">iter =</span> <span class="dv">10000</span></a>
+<a class="sourceLine" id="cb6-14" title="14">    )</a></code></pre></div>
 <p>Estimates of this model are summarised in Table <a href="appendix-brms.html#tab:sumbmod4">A.5</a>. This summary reveals a negative correlation between the intercepts and slopes for vowels, meaning that vowels with a large “baseline level of variability” (i.e., with a large average <code>distance</code> value) tend to be pronounced with more variability by females than by males. However, we notice that this model’s estimation of <span class="math inline">\(\beta\)</span> is even more uncertain than that of the previous models, as shown by the associated standard error and the width of the credible interval.</p>
 <caption>
 <span id="tab:sumbmod4">Table A.5: </span>
@@ -1004,20 +1003,20 @@ Figure A.6: Shrinkage of estimates in the parameter space, due to the pooling of
 \]</span>
 </p>
 <p>This model can be fitted with the following command:</p>
-<pre class="sourceCode r"><code class="sourceCode r">prior5 &lt;-<span class="st"> </span><span class="kw">c</span>(
-    <span class="kw">prior</span>(<span class="kw">normal</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> Intercept),
-    <span class="kw">prior</span>(<span class="kw">normal</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> b, <span class="dt">coef =</span> gender),
-    <span class="kw">prior</span>(<span class="kw">cauchy</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> sd),
-    <span class="kw">prior</span>(<span class="kw">cauchy</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> sigma),
-    <span class="kw">prior</span>(<span class="kw">lkj</span>(<span class="dv">2</span>), <span class="dt">class =</span> cor)
-    )
-
-bmod5 &lt;-<span class="st"> </span><span class="kw">brm</span>(
-    distance <span class="op">~</span><span class="st"> </span>gender <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span><span class="op">|</span>subj) <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span> <span class="op">+</span><span class="st"> </span>gender<span class="op">|</span>vowel) <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span><span class="op">|</span>subj<span class="op">:</span>vowel),
-    <span class="dt">data =</span> indo, <span class="dt">family =</span> <span class="kw">gaussian</span>(),
-    <span class="dt">prior =</span> prior5,
-    <span class="dt">warmup =</span> <span class="dv">2000</span>, <span class="dt">iter =</span> <span class="dv">10000</span>
-    )</code></pre>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" title="1">prior5 &lt;-<span class="st"> </span><span class="kw">c</span>(</a>
+<a class="sourceLine" id="cb7-2" title="2">    <span class="kw">prior</span>(<span class="kw">normal</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> Intercept),</a>
+<a class="sourceLine" id="cb7-3" title="3">    <span class="kw">prior</span>(<span class="kw">normal</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> b, <span class="dt">coef =</span> gender),</a>
+<a class="sourceLine" id="cb7-4" title="4">    <span class="kw">prior</span>(<span class="kw">cauchy</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> sd),</a>
+<a class="sourceLine" id="cb7-5" title="5">    <span class="kw">prior</span>(<span class="kw">cauchy</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="dt">class =</span> sigma),</a>
+<a class="sourceLine" id="cb7-6" title="6">    <span class="kw">prior</span>(<span class="kw">lkj</span>(<span class="dv">2</span>), <span class="dt">class =</span> cor)</a>
+<a class="sourceLine" id="cb7-7" title="7">    )</a>
+<a class="sourceLine" id="cb7-8" title="8"></a>
+<a class="sourceLine" id="cb7-9" title="9">bmod5 &lt;-<span class="st"> </span><span class="kw">brm</span>(</a>
+<a class="sourceLine" id="cb7-10" title="10">    distance <span class="op">~</span><span class="st"> </span>gender <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span><span class="op">|</span>subj) <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span> <span class="op">+</span><span class="st"> </span>gender<span class="op">|</span>vowel) <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span><span class="op">|</span>subj<span class="op">:</span>vowel),</a>
+<a class="sourceLine" id="cb7-11" title="11">    <span class="dt">data =</span> indo, <span class="dt">family =</span> <span class="kw">gaussian</span>(),</a>
+<a class="sourceLine" id="cb7-12" title="12">    <span class="dt">prior =</span> prior5,</a>
+<a class="sourceLine" id="cb7-13" title="13">    <span class="dt">warmup =</span> <span class="dv">2000</span>, <span class="dt">iter =</span> <span class="dv">10000</span></a>
+<a class="sourceLine" id="cb7-14" title="14">    )</a></code></pre></div>
 <p>Estimates of this model are summarised in Table <a href="appendix-brms.html#tab:sumbmod5">A.6</a>. From this table, we first notice that the more varying effects we add, the more the model is uncertain about the estimation of <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span>, which can be explained in the same way as in section 2.2. Second, we see the opposite pattern for <span class="math inline">\(\sigma_{e}\)</span>, the residuals standard deviation, which has decreased by a considerable amount compared to the first model, indicating a better fit.</p>
 <caption>
 <span id="tab:sumbmod5">Table A.6: </span>
@@ -1170,10 +1169,10 @@ varying slope by vowel and a varying intercept for the interaction between subje
 <div id="comparison-of-brms-and-lme4-estimations" class="section level2">
 <h2><span class="header-section-number">A.4</span> Comparison of <code>brms</code> and <code>lme4</code> estimations</h2>
 <p>Figure <a href="appendix-brms.html#fig:compestim">A.7</a> illustrates the comparison of <code>brms</code> (Bayesian approach) and <code>lme4</code> (frequentist approach) estimates for the last model (<code>bmod5</code>), fitted in <code>lme4</code> with the following command.</p>
-<pre class="sourceCode r"><code class="sourceCode r">lmer_model &lt;-<span class="st"> </span><span class="kw">lmer</span>(
-    distance <span class="op">~</span><span class="st"> </span>gender <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span><span class="op">|</span>subj) <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span> <span class="op">+</span><span class="st"> </span>gender<span class="op">|</span>vowel) <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span><span class="op">|</span>subj<span class="op">:</span>vowel),
-    <span class="dt">REML =</span> <span class="ot">FALSE</span>, <span class="dt">data =</span> indo
-    )</code></pre>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb8-1" title="1">lmer_model &lt;-<span class="st"> </span><span class="kw">lmer</span>(</a>
+<a class="sourceLine" id="cb8-2" title="2">    distance <span class="op">~</span><span class="st"> </span>gender <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span><span class="op">|</span>subj) <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span> <span class="op">+</span><span class="st"> </span>gender<span class="op">|</span>vowel) <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span><span class="op">|</span>subj<span class="op">:</span>vowel),</a>
+<a class="sourceLine" id="cb8-3" title="3">    <span class="dt">REML =</span> <span class="ot">FALSE</span>, <span class="dt">data =</span> indo</a>
+<a class="sourceLine" id="cb8-4" title="4">    )</a></code></pre></div>
 <p>Densities represent the posterior distribution as estimated by <code>brms</code> along with 95% credible intervals, while the crosses underneath represent the <em>maximum likelihood estimate</em> (MLE) from <code>lme4</code> along with 95% confidence intervals, obtained with parametric bootstrapping.</p>
 <div class="figure" style="text-align: center"><span id="fig:compestim"></span>
 <img src="91-appendix_brms_files/figure-html/compestim-1.pdf" alt="Comparison of estimations from `brms` and `lme4`. Dots represent means of posterior distribution along with 95\% CrIs, as estimated by the `bmod5` model. Crosses represent estimations of `lme4` along with bootstrapped 95\% CIs." width="100%" />
@@ -1195,8 +1194,8 @@ Figure A.8: Histogram of posterior samples of the slope for gender, as estimated
 </p>
 </div>
 <p>This quantity can be easily computed from the posterior samples:</p>
-<pre class="sourceCode r"><code class="sourceCode r">post &lt;-<span class="st"> </span><span class="kw">posterior_samples</span>(bmod5) <span class="co"># extracting posterior samples</span>
-<span class="kw">mean</span>(post<span class="op">$</span>b_gender <span class="op">&lt;</span><span class="st"> </span><span class="dv">0</span>) <span class="co"># computing p(beta&lt;0)</span></code></pre>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb9-1" title="1">post &lt;-<span class="st"> </span><span class="kw">posterior_samples</span>(bmod5) <span class="co"># extracting posterior samples</span></a>
+<a class="sourceLine" id="cb9-2" title="2"><span class="kw">mean</span>(post<span class="op">$</span>b_gender <span class="op">&lt;</span><span class="st"> </span><span class="dv">0</span>) <span class="co"># computing p(beta&lt;0)</span></a></code></pre></div>
 <pre><code>## [1] 0.940625</code></pre>
 <p>Of course, this estimate can (and should) be refined using more data from several experiments, with more speakers. In this line, it should be pointed out that <code>brms</code> can easily be used to extend the multilevel strategy to meta-analyses <span class="citation">(e.g., Bürkner, Williams, Simmons, &amp; Woolley, <a href="references.html#ref-burkner_intranasal_2017" role="doc-biblioref">2017</a>; Williams &amp; Bürkner, <a href="references.html#ref-williams_effects_2017" role="doc-biblioref">2017</a>)</span>. Its flexibility makes it possible to fit multilevel hierarchical Bayesian models at two, three, or more levels, enabling researchers to model the heterogeneity between studies as well as dependencies between experiments of the same study, or between studies carried out by the same research team. Such a modelling strategy is usually equivalent to the ordinary frequentist random-effect meta-analysis models, while offering all the benefits inherent to the Bayesian approach.</p>
 <p>Another useful source of information comes from the examination of effects sizes. One of the most used criteria is Cohen’s <span class="math inline">\(d\)</span> standardized effect size, that expresses the difference between two groups in terms of their pooled standard deviation:</p>
@@ -1210,14 +1209,14 @@ Figure A.8: Histogram of posterior samples of the slope for gender, as estimated
 \]</span></p>
 
 <p>As this effect size is dependent on the parameters estimated by the model, one can derive a probability distribution for this index as well. This is easily done in <code>R</code>, computing it from the posterior samples:</p>
-<pre class="sourceCode r"><code class="sourceCode r">delta_t &lt;-
-<span class="st">    </span><span class="co"># extracting posterior samples from bmod5</span>
-<span class="st">    </span><span class="kw">posterior_samples</span>(bmod5, <span class="dt">pars =</span> <span class="kw">c</span>(<span class="st">&quot;^b_&quot;</span>, <span class="st">&quot;sd_&quot;</span>, <span class="st">&quot;sigma&quot;</span>) ) <span class="op">%&gt;%</span>
-<span class="st">    </span><span class="co"># taking the square of each variance component</span>
-<span class="st">    </span><span class="kw">mutate_at</span>(<span class="dt">.vars =</span> <span class="dv">3</span><span class="op">:</span><span class="dv">7</span>, <span class="dt">.funs =</span> <span class="kw">funs</span>(.<span class="op">^</span><span class="dv">2</span>) ) <span class="op">%&gt;%</span>
-<span class="st">    </span><span class="co"># dividing the slope estimate by the square root of the sum of</span>
-<span class="st">    </span><span class="co"># all variance components</span>
-<span class="st">    </span><span class="kw">mutate</span>(<span class="dt">delta =</span> b_gender <span class="op">/</span><span class="st"> </span><span class="kw">sqrt</span>(<span class="kw">rowSums</span>(.[<span class="dv">3</span><span class="op">:</span><span class="dv">7</span>]) ) )</code></pre>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb11-1" title="1">delta_t &lt;-</a>
+<a class="sourceLine" id="cb11-2" title="2"><span class="st">    </span><span class="co"># extracting posterior samples from bmod5</span></a>
+<a class="sourceLine" id="cb11-3" title="3"><span class="st">    </span><span class="kw">posterior_samples</span>(bmod5, <span class="dt">pars =</span> <span class="kw">c</span>(<span class="st">&quot;^b_&quot;</span>, <span class="st">&quot;sd_&quot;</span>, <span class="st">&quot;sigma&quot;</span>) ) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb11-4" title="4"><span class="st">    </span><span class="co"># taking the square of each variance component</span></a>
+<a class="sourceLine" id="cb11-5" title="5"><span class="st">    </span><span class="kw">mutate_at</span>(<span class="dt">.vars =</span> <span class="dv">3</span><span class="op">:</span><span class="dv">7</span>, <span class="dt">.funs =</span> <span class="kw">funs</span>(.<span class="op">^</span><span class="dv">2</span>) ) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb11-6" title="6"><span class="st">    </span><span class="co"># dividing the slope estimate by the square root of the sum of</span></a>
+<a class="sourceLine" id="cb11-7" title="7"><span class="st">    </span><span class="co"># all variance components</span></a>
+<a class="sourceLine" id="cb11-8" title="8"><span class="st">    </span><span class="kw">mutate</span>(<span class="dt">delta =</span> b_gender <span class="op">/</span><span class="st"> </span><span class="kw">sqrt</span>(<span class="kw">rowSums</span>(.[<span class="dv">3</span><span class="op">:</span><span class="dv">7</span>]) ) )</a></code></pre></div>
 <p>This distribution is plotted in Figure <a href="appendix-brms.html#fig:postdhist">A.9</a>, and reveals the large uncertainty associated with the estimation of <span class="math inline">\(\delta_{t}\)</span>.</p>
 <div class="figure" style="text-align: center"><span id="fig:postdhist"></span>
 <img src="91-appendix_brms_files/figure-html/postdhist-1.pdf" alt="Posterior distribution of $\delta_{t}$." width="100%" />
@@ -1226,7 +1225,7 @@ Figure A.9: Posterior distribution of <span class="math inline">\(\delta_{t}\)</
 </p>
 </div>
 <p>In the same fashion, undirected effect sizes (e.g., <span class="math inline">\(R^{2}\)</span>) can be computed directly from the posterior samples, or included in the model specification as a parameter of the model, in a way that at each iteration of the MCMC, a value of the effect size is sampled, resulting in an estimation of its full posterior distribution.<a href="#fn71" class="footnote-ref" id="fnref71"><sup>71</sup></a> A Bayesian version of the <span class="math inline">\(R^{2}\)</span> is also available in <code>brms</code> using the <code>bayes_R2</code> method, for which the calculations are based on <span class="citation">Gelman, Goodrich, Gabry, &amp; Vehtari (<a href="references.html#ref-gelman_r-squared_2018" role="doc-biblioref">2018</a>)</span>.</p>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">bayes_R2</span>(bmod5)</code></pre>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb12-1" title="1"><span class="kw">bayes_R2</span>(bmod5)</a></code></pre></div>
 <pre><code>##     Estimate  Est.Error      Q2.5     Q97.5
 ## R2 0.2957082 0.01584398 0.2642193 0.3260956</code></pre>
 <p>In brief, we found a weak effect of gender on vowel production variability in Indonesian (<span class="math inline">\(\beta =\)</span> -0.042, <span class="math inline">\(\ 95 \% \ \text{CrI} =\)</span> [-0.102, 0.018], <span class="math inline">\(\ \delta_{t} =\)</span> -0.345, <span class="math inline">\(\ 95 \% \ \text{CrI} = [-0.81, 0.10]\)</span>), this effect being associated with a large uncertainty (as expressed by the width of the credible interval). This result seems to show that females tend to pronounce vowels with more variability than males, while the variation observed across vowels (as suggested by <span class="math inline">\(\sigma_{\beta_{vowel}}\)</span>) suggests that there might exist substantial inter-vowel variability, that should be subsequently properly studied. A follow-up analysis specifically designed to test the effect of gender on each vowel should help better describe inter-vowel variability (we give an example of such an analysis in the <a href="appendix-brms.html#suppApp">supplementary materials</a>).</p>
