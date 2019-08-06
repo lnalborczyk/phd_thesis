@@ -1067,7 +1067,7 @@ The first author is funded by a PhD fellowship from Univ. Grenoble Alpes. We tha
 
 \begin{summary}{Summary of Chapter\getcurrentref{chapter}}
 
-TBD...
+In this chapter, we extended the experiment from Chapter 6 by comparing the effects of articulatory suppression (vs. finger-tapping) on rumination and problem-solving, another (more adaptive) form of repetitive thinking. To overcome the limitations of the previous experiment, we used a validated scale of state rumination and asked our participants to use their non-dominant forearm in the finger-tapping condition. We also made sure that our baseline measurements were not contaminated by any systematic effect. The data collection for this experiment is still ongoing and given the very low sample size (around 10 participants per group at the time of writing), we will not consider these results further in the discussion. However, preliminary analyses presented in the results section suggest that articulatory suppression may indeed interfere with induced rumination.
 
 \end{summary}
 

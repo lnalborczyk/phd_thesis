@@ -144,9 +144,9 @@
 
 \usepackage{fontspec} % special characters (e.g., accents) with xelatex or luatex
 \usepackage{pdflscape} % figures in landscape mode
-\usepackage{tikz}
-\usepackage{lscape}
-\usepackage{indentfirst}
+\usepackage{tikz} % creating graphic elements
+\usepackage{lscape} % figures or tables in landscape mode
+\usepackage{indentfirst} % indents first pragraph after section header
 \usepackage{float}
 \usepackage[flushleft]{threeparttable} % allows for three part tables with a specified notes section
 \usepackage[fulladjust]{marginnote}
@@ -182,18 +182,6 @@
 % https://github.com/rstudio/bookdown-demo/blob/master/preamble.tex %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% \usepackage{graphicx}
-% \usepackage{amsthm}
-%
-% \makeatletter
-%
-% \def\thm@space@setup{
-%   \thm@preskip=8pt plus 2pt minus 4pt
-%   \thm@postskip=\thm@preskip
-% }
-%
-% \makeatother
-
 %%%%%%%%%%%%%%%%%%%%%%%%
 % Remove default title %
 % https://stackoverflow.com/questions/45963505/coverpage-and-copyright-notice-before-title-in-r-bookdown
@@ -214,37 +202,45 @@
      		{\textsc{#1}}}{}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Format of the page (margins etc)                          %
+% Format of the page (block, header, margins, etc.)         %
 % https://texdoc.net/texmf-dist/doc/latex/memoir/memman.pdf %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\setstocksize{11in}{8.5in} % "real" paper size, already set by a4paper class option
-%\settrimmedsize{11in}{8.5in}{*} % trimmed paper size (trimmed on the left and right)
+% Sets the "real" paper size (already set by a4paper class option)
+% \setstocksize{11in}{8.5in}
 
-% Spine and trim page margins from main typeblock
-%\setlrmarginsandblock{25mm}{25mm}{*}
+% Trimmed paper size (trimmed on the left and right)
+% \settrimmedsize{11in}{8.5in}{*}
+
+% Sets the \headheight and \footskip parameters (respectively)
+\setheadfoot{\onelineskip}{2\onelineskip}
+%\setheadfoot{13pt}{26pt}
+
+% Sets space between header and block
+\setheaderspaces{*}{2\onelineskip}{*}
+%\setheaderspaces{*}{10mm}{*}
+
+% Spine and trim page margins from main typeblock (left and right margins if oneside)
+\setlrmarginsandblock{25mm}{25mm}{*}
 
 % Top and bottom page margins from main typeblock
-%\setulmarginsandblock{15mm}{20mm}{*}
+\setulmarginsandblock{25mm}{*}{1}
 
-%\setlrmargins{25mm}{*}{*}
-%\setulmargins{15mm}{*}{*}
+% Applies and enforces the layout
+\checkandfixthelayout
 
-%\setheadfoot{13pt}{26pt}
-%\setheaderspaces{*}{13pt}{*} % set space between header and block
+% Ensures single spacing between sentences
+\frenchspacing
 
-\setlrmarginsandblock{25mm}{25mm}{*} % set left and right margins
-\setulmarginsandblock{25mm}{*}{1} % set upper and lower margins
-
-\checkandfixthelayout % apply and enforce the layout
-\frenchspacing % ensure single spacing between sentences
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Chapter style (taken and slightly modified from Lars Madsen Memoir Chapter) %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Fonts
+% -------------------------------------------------------
 % Best LaTeX fonts: https://r2src.github.io/top10fonts/
 % https://www.quora.com/Which-is-a-good-font-choice-for-writing-a-PhD-thesis-I-have-provisionally-chosen-CharterITC-but-I-am-not-sure-about-it-I-think-the-best-way-to-go-is-a-serif-font-but-I-dont-want-a-classic-look-but-something-more-updated
 %https://tex.stackexchange.com/questions/59702/suggest-a-nice-font-family-for-my-basic-latex-template-text-and-math/59706
@@ -333,7 +329,7 @@
 % Create summary box to put at the end of each chapter %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\newtcolorbox[]{summary}[2][]{title=#2,#1}
+\newtcolorbox[]{summary}[2][]{fonttitle=\bfseries,title=#2,#1}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Create explanation Box environment %
@@ -347,7 +343,7 @@
     fonttitle = \bfseries,
     title = Box~\thetcbcounter: #2,
     #1
-}
+    }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Get the number of current chapter %
@@ -434,7 +430,10 @@
 \usepackage{caption}
 \captionsetup[figure]{labelsep=period,labelfont={it,normalsize},textfont={normalsize}}
 
-% remove extra vertical blank spaces between paragraphs
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Removing extra vertical blank spaces between paragraphs %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \raggedbottom
 
 \begin{document}
@@ -1582,7 +1581,7 @@ Supplementary data associated with this article can be found at \url{https://osf
 
 \begin{summary}{Summary of Chapter\getcurrentref{chapter}}
 
-Rumination is predominantly experienced in the form of repetitive verbal thoughts and can therefore be considered as a particular case of inner speech. According to the Motor Simulation view, inner speech is a kind of motor action, recruiting the speech motor system. In this framework, we predicted an increase in speech muscle activity during rumination as compared to rest. We also predicted increased forehead activity, associated with anxiety during rumination. We measured electromyographic activity over the orbicularis oris superior and inferior, frontalis and flexor carpi radialis muscles. Results showed increased lip and forehead activity after rumination induction compared to an initial relaxed state, together with increased self-reported levels of rumination. Moreover, our data suggest that orofacial relaxation is more effective in reducing rumination than non-orofacial relaxation. Altogether, these results support the hypothesis that verbal rumination involves the speech motor system, and provide a promising psychophysiological index to assess the presence of verbal rumination...
+Rumination is predominantly experienced in the form of repetitive verbal thoughts and can therefore be considered as a particular case of inner speech. According to the \textit{motor simulation view}, inner speech is a kind of motor action, recruiting the speech motor system. In this framework, we predicted an increase in speech muscle activity during rumination as compared to rest. We also predicted increased forehead activity (associated with anxiety) during rumination. We measured electromyographic activity over the orbicularis oris superior and orbicularis oris inferior muscles, over the frontalis as well as over the flexor carpi radialis muscles. Results showed an increased lip and forehead activity after rumination induction as compared to an initial relaxed state, together with increased self-reported levels of rumination. Moreover, our data suggest that orofacial relaxation is more effective in reducing self-reported state rumination than non-orofacial relaxation. Altogether, these results support the hypothesis that verbal rumination involves the speech motor system. However, as the effects of the rumination induction were not compared to another experimental manipulation, it is difficult to conclude with certainty on the \textit{specificity} of these findings. Therefore, in the next study, we manipulate the modality of ruminative thoughs (i.e., verbal vs. non-verbal thoughts) by comparing the EMG correlates of two forms of rumination induction. This comparison should critically reveals whether the EMG correlates observed in this chapter are specific to speech motor processes.
 
 \end{summary}
 
@@ -2094,7 +2093,7 @@ This project was funded by the ANR project INNERSPEECH (grant number ANR-13-BSH2
 
 \begin{summary}{Summary of Chapter\getcurrentref{chapter}}
 
-TBD...
+In this chapter, we sought to examine the differences (if any) between different forms of induced rumination, that should theoretically involve the speech motor system to a different extent. We compared the EMG orofacial correlates of either verbal rumination or non-verbal (visual) rumination. Unfortunately, self-reports of the modal content of the ruminative thoughts showed that our induction did not succeed in inducing rumination in different modalities. However, even when exploring the (a posteriori) relation between the modality of the ruminative thoughts and the facial EMG correlates, we failed to find the predicted relation. Put simply, verbal rumination was not associated with more activity in the speech muscles than non-verbal rumination. Moreover, comparing two types of relaxation revealed that, in contrast to previous results (cf. Chapter 3), the arm relaxation was slightly more efficient than the orofacial relaxation in reducing state rumination. Averaging the relaxation results from these two first studies revealed that both relaxation types have a similar effect on state rumination. These results therefore suggest that verbal rumination is not specifically accompanied with peripheral muscular activity in the speech muscles. However, it is unclear whether this result is due to a poor sensitivity of the surface EMG measurements or to the fact that rumination is a form of inner speech that does not involve the speech motor system. In the next chapter, we seek to resolve that ambiguity by examining the reliability of our EMG measurements to detect peripheral muscular activity during inner speech production.
 
 \end{summary}
 
@@ -2531,7 +2530,7 @@ This project was funded by the ANR project INNERSPEECH (grant number ANR-13-BSH2
 
 \begin{summary}{Summary of Chapter\getcurrentref{chapter}}
 
-TBD...
+In this chapter, we examined the reliability of our EMG measurements to detect peripheral muscular activity during inner speech production. To this end, we asked participants to produce two lists of nonwords, that were designed to induce either a strong activation of the lip muscles or a strong activation of the zygomaticus major muscle. We recorded the EMG amplitude of several facial muscles (including the orbicularis oris inferior and the zygomaticus major muscles) during the production of these nonwords in inner speech, overt speech, and during the listening of these nonwords. Based on previous results in the literature, we hypothesised that surface EMG may be used to discriminate the content (here, the class of nonword) produced in inner speech. However, an automatic classification revealed that although we were able to discriminate content produced in overt speech, we were not able to discriminate the content produced in inner speech based on surface EMG measurements. This result stands in contrast with previous historical results but also with more recent results obtained by other teams. However, crucial differences between other studies and ours include differences in the material used (e.g., surface vs. intramuscular recordings), the population (e.g., children vs. adults), or the general methodology (e.g., hypothesis testing vs. classification and optimisation). Despite this surprising result and the failure of the surface EMG methodology to "decode" the content of inner speech, the abundance of positive results in the literature still speaks in favour of the peripheral muscular components of inner speech and that it is possible to assess it using surface EMG. However, in order to avoid this potential limitation, we shifted in the second part of the present work to another strategy in examining the role of motor processes in rumination. More precisely, instead of recording peripheral muscular activation of induced rumination, in the next two chapters we try to directly interfere with the speech motor system to check whether this would affect verbal rumination.
 
 \end{summary}
 
@@ -2889,7 +2888,7 @@ Pre-registered protocol, preprint, data, as well as reproducible code and figure
 
 \begin{summary}{Summary of Chapter\getcurrentref{chapter}}
 
-TBD...
+In this chapter, we set up a critical test of the \textit{motor simulation view} of inner speech (and rumination). Indeed, if the involvement of the speech motor system is \textit{necessary} during inner speech and rumination, then a disruption of the speech motor system should disrupt (or impair) the production of inner speech (and rumination). To examine this idea, we compared the effects of an articulatory suppression task to a finger-tapping task, following a rumination induction, on the levels of self-reported state rumination. Our results suggest a similar decrease in state rumination following both motor activities, suggesting that rumination would not be a form of inner speech that would crucially depend on the activity of the speech motor system (it does not mean that the speech motor system may never be involved in rumination, only that its involvement is not necessary). However, some important limitations make the interpretation of these results delicate. First, there were important differences between the two groups (i.e., articulatory suppression vs. finger-tapping groups) at baseline, possibly due do the rhythmic training proposed before baseline measurements. Second, the measure of state rumination consisted in one single non-validated scale (already used in Chapter 3) and may not be a reliable index of state rumination. Third, as in Chapter 3, there was no control group to the rumination induction and any effect following to the rumination induction may not be specifically attributable to the rumination induction. Fourth, there is some evidence suggesting that finger-tapping (with the dominant hand) may also perturbs speech motor planning and may therefore not be the best control condition to articulatory suppression. We try to overcome these limitations in the next and last empirical chapter.
 
 \end{summary}
 
@@ -3257,7 +3256,7 @@ The first author is funded by a PhD fellowship from Univ. Grenoble Alpes. We tha
 
 \begin{summary}{Summary of Chapter\getcurrentref{chapter}}
 
-TBD...
+In this chapter, we extended the experiment from Chapter 6 by comparing the effects of articulatory suppression (vs. finger-tapping) on rumination and problem-solving, another (more adaptive) form of repetitive thinking. To overcome the limitations of the previous experiment, we used a validated scale of state rumination and asked our participants to use their non-dominant forearm in the finger-tapping condition. We also made sure that our baseline measurements were not contaminated by any systematic effect. The data collection for this experiment is still ongoing and given the very low sample size (around 10 participants per group at the time of writing), we will not consider these results further in the discussion. However, preliminary analyses presented in the results section suggest that articulatory suppression may indeed interfere with induced rumination.
 
 \end{summary}
 
@@ -3278,7 +3277,7 @@ As argued in Chapter \ref{intro}, the guiding assumption underlying this work wa
 
 To tackle these limitations, in Chapter \ref{chap4}, we sought to examine the differences between different forms of induced rumination, that should theoretically involve the speech motor system to a different extent. We compared the EMG orofacial correlates of either verbal rumination or non-verbal (visual) rumination. Unfortunately, self-reports of the modal content of the ruminative thoughts showed that our induction did not succeed in inducing rumination in different modalities. However, even when exploring the (a posteriori) relation between the modality of the ruminative thoughts and the facial EMG correlates, we failed to find the predicted relation. Put simply, verbal rumination was not associated with more activity in the speech muscles than non-verbal rumination. Moreover, comparing two types of relaxation (as in Chapter \ref{chap3}) revealed that, in contrast to previous results, the arm relaxation was slightly more efficient than the orofacial relaxation in reducing state rumination. Averaging the relaxation results from these two first studies revealed that both relaxation types have a similar effect on state rumination. These results therefore suggest that verbal rumination is not specifically accompanied with peripheral muscular activity in the speech muscles. However, it is unclear whether this result is due to a poor sensitivity of the surface EMG measurements or to the fact that rumination is a form of inner speech that does not involve the speech motor system.
 
-In Chapter \ref{chap5}, we sought to resolve that ambiguity by examining the reliability of our EMG measurements to detect peripheral muscular activity during inner speech production. To this end, we asked participants to produce two lists of nonwords, that were designed to induce either a strong activation of the lip muscles or a strong activation of the zygomaticus major muscle. We recorded the EMG amplitude of several facial muscles (including the orbicularis oris inferior and the zygomaticus major) during the production of these nonwords in inner speech, overt speech, and during the listening of these nonwords. Based on previous results in the literature, we hypothesised that surface EMG may be used to discriminate the content (here, the class of nonword) produced in inner speech. However, an automatic classification revealed that although we were able to discriminate content produced in overt speech, we were not able to discriminate the content produced in inner speech based on surface EMG measurements. This result stands in contrast with previous historical results but also with more recent results obtained by other teams. However, crucial differences between other studies and ours include differences in the material used (e.g., surface vs.~intramuscular recordings), the population (e.g., children vs.~adults), or the general methodology (e.g., hypothesis testing vs.~classification and optimisation). Despite this surprising result and the failure of the surface EMG methodology to \enquote{decode} the content of inner speech, the abundance of positive results in the literation still speaks in favour of the peripheral muscular components of inner speech and that it is possible to assess it using surface EMG. However, in order to avoid this potential limitation, we shifted in the second part of the present work to another strategy in examining the role of motor processes in rumination. More precisely, instead of recording peripheral muscular activation of induced rumination, we tried to directly interfere with the speech motor system to check whether this would affect verbal rumination.
+In Chapter \ref{chap5}, we sought to resolve that ambiguity by examining the reliability of our EMG measurements to detect peripheral muscular activity during inner speech production. To this end, we asked participants to produce two lists of nonwords, that were designed to induce either a strong activation of the lip muscles or a strong activation of the zygomaticus major muscle. We recorded the EMG amplitude of several facial muscles (including the orbicularis oris inferior and the zygomaticus major) during the production of these nonwords in inner speech, overt speech, and during the listening of these nonwords. Based on previous results in the literature, we hypothesised that surface EMG may be used to discriminate the content (here, the class of nonword) produced in inner speech. However, an automatic classification revealed that although we were able to discriminate content produced in overt speech, we were not able to discriminate the content produced in inner speech based on surface EMG measurements. This result stands in contrast with previous historical results but also with more recent results obtained by other teams. However, crucial differences between other studies and ours include differences in the material used (e.g., surface vs.~intramuscular recordings), the population (e.g., children vs.~adults), or the general methodology (e.g., hypothesis testing vs.~classification and optimisation). Despite this surprising result and the failure of the surface EMG methodology to \enquote{decode} the content of inner speech, the abundance of positive results in the literature still speaks in favour of the peripheral muscular components of inner speech and that it is possible to assess it using surface EMG. However, in order to avoid this potential limitation, we shifted in the second part of the present work to another strategy in examining the role of motor processes in rumination. More precisely, instead of recording peripheral muscular activation of induced rumination, we tried to directly interfere with the speech motor system to check whether this would affect verbal rumination.
 
 In Chapter \ref{chap6}, we set up a critical test of the motor simulation view of inner speech (and rumination). Indeed, if the involvement of the speech motor system is necessary during inner speech and rumination, then a disruption of the speech motor system should disrupt (or impair) the production of inner speech (and rumination). To examine this idea, we compared the effects of an articulatory suppression task to a finger-tapping task, following a rumination induction, on the levels of self-reported state rumination. Our results suggest a similar decrease in state rumination following both motor activities, suggesting that rumination would not be a form of inner speech that would crucially depend on the activity of the speech motor system (it does not mean that the speech motor system may never be involved in rumination, only that its involvement is not necessary). However, some important limitations make the interpretation of these results delicate. First, there were important differences between the two groups (i.e., articulatory suppression vs.~finger-tapping groups) at baseline, possibly due do the rhythmic training proposed before baseline measurements. Second, the measure of state rumination consisted in one single non-validated scale (already used in Chapter \ref{chap3}) and may not be a reliable index of state rumination. Third, as in Chapter \ref{chap3}, there was no control group to the rumination induction and any effect following to the rumination induction may not be specifically attributable to the rumination induction. Fourth, there is some evidence suggesting that finger-tapping (with the dominant hand) may also perturbs speech motor planning and may therefore not be the best control condition to articulatory suppression. We sought to overcome these limitations in the last empirical chapter.
 

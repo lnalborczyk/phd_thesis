@@ -23,14 +23,14 @@ bookdown::pdf_book: # generating the pdf version of the thesis
   includes:
     in_header: latex/preamble.tex # defines style and latex options
     before_body: latex/before_body.tex # defines cover page
-  latex_engine: xelatex # xelatex or lualatex
+  latex_engine: xelatex # pdflatex, xelatex, or lualatex
   citation_package: none # natbib or biblatex - needs to be "none" (using pandoc-citeproc) in order to use the csl file
   keep_tex: true # keeps the .tex file
   toc_appendix: true # adds the appendix part to the toc
   dev: "cairo_pdf" # plotting device
   toc: false # deactivates default table of contents
   highlight: pygments # code highlighting
-  pandoc_args: ["--csl", "./csl/apa6.csl"] # specifies the csl file to be used
+  pandoc_args: ["--csl", "./csl/apa6.csl"] # specifies the csl (citation style) file
 
 # bookdown::word_document2: # generating the word version of the thesis
 #   pandoc_args: [

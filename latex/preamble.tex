@@ -23,9 +23,9 @@
 
 \usepackage{fontspec} % special characters (e.g., accents) with xelatex or luatex
 \usepackage{pdflscape} % figures in landscape mode
-\usepackage{tikz}
-\usepackage{lscape}
-\usepackage{indentfirst}
+\usepackage{tikz} % creating graphic elements
+\usepackage{lscape} % figures or tables in landscape mode
+\usepackage{indentfirst} % indents first pragraph after section header
 \usepackage{float}
 \usepackage[flushleft]{threeparttable} % allows for three part tables with a specified notes section
 \usepackage[fulladjust]{marginnote}
@@ -61,18 +61,6 @@
 % https://github.com/rstudio/bookdown-demo/blob/master/preamble.tex %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% \usepackage{graphicx}
-% \usepackage{amsthm}
-%
-% \makeatletter
-%
-% \def\thm@space@setup{
-%   \thm@preskip=8pt plus 2pt minus 4pt
-%   \thm@postskip=\thm@preskip
-% }
-%
-% \makeatother
-
 %%%%%%%%%%%%%%%%%%%%%%%%
 % Remove default title %
 % https://stackoverflow.com/questions/45963505/coverpage-and-copyright-notice-before-title-in-r-bookdown
@@ -93,37 +81,45 @@
      		{\textsc{#1}}}{}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Format of the page (margins etc)                          %
+% Format of the page (block, header, margins, etc.)         %
 % https://texdoc.net/texmf-dist/doc/latex/memoir/memman.pdf %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\setstocksize{11in}{8.5in} % "real" paper size, already set by a4paper class option
-%\settrimmedsize{11in}{8.5in}{*} % trimmed paper size (trimmed on the left and right)
+% Sets the "real" paper size (already set by a4paper class option)
+% \setstocksize{11in}{8.5in}
 
-% Spine and trim page margins from main typeblock
-%\setlrmarginsandblock{25mm}{25mm}{*}
+% Trimmed paper size (trimmed on the left and right)
+% \settrimmedsize{11in}{8.5in}{*}
+
+% Sets the \headheight and \footskip parameters (respectively)
+\setheadfoot{\onelineskip}{2\onelineskip}
+%\setheadfoot{13pt}{26pt}
+
+% Sets space between header and block
+\setheaderspaces{*}{2\onelineskip}{*}
+%\setheaderspaces{*}{10mm}{*}
+
+% Spine and trim page margins from main typeblock (left and right margins if oneside)
+\setlrmarginsandblock{25mm}{25mm}{*}
 
 % Top and bottom page margins from main typeblock
-%\setulmarginsandblock{15mm}{20mm}{*}
+\setulmarginsandblock{25mm}{*}{1}
 
-%\setlrmargins{25mm}{*}{*}
-%\setulmargins{15mm}{*}{*}
+% Applies and enforces the layout
+\checkandfixthelayout
 
-%\setheadfoot{13pt}{26pt}
-%\setheaderspaces{*}{13pt}{*} % set space between header and block
+% Ensures single spacing between sentences
+\frenchspacing
 
-\setlrmarginsandblock{25mm}{25mm}{*} % set left and right margins
-\setulmarginsandblock{25mm}{*}{1} % set upper and lower margins
-
-\checkandfixthelayout % apply and enforce the layout
-\frenchspacing % ensure single spacing between sentences
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Chapter style (taken and slightly modified from Lars Madsen Memoir Chapter) %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Fonts
+% -------------------------------------------------------
 % Best LaTeX fonts: https://r2src.github.io/top10fonts/
 % https://www.quora.com/Which-is-a-good-font-choice-for-writing-a-PhD-thesis-I-have-provisionally-chosen-CharterITC-but-I-am-not-sure-about-it-I-think-the-best-way-to-go-is-a-serif-font-but-I-dont-want-a-classic-look-but-something-more-updated
 %https://tex.stackexchange.com/questions/59702/suggest-a-nice-font-family-for-my-basic-latex-template-text-and-math/59706
@@ -212,7 +208,7 @@
 % Create summary box to put at the end of each chapter %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\newtcolorbox[]{summary}[2][]{title=#2,#1}
+\newtcolorbox[]{summary}[2][]{fonttitle=\bfseries,title=#2,#1}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Create explanation Box environment %
@@ -226,7 +222,7 @@
     fonttitle = \bfseries,
     title = Box~\thetcbcounter: #2,
     #1
-}
+    }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Get the number of current chapter %
@@ -313,5 +309,8 @@
 \usepackage{caption}
 \captionsetup[figure]{labelsep=period,labelfont={it,normalsize},textfont={normalsize}}
 
-% remove extra vertical blank spaces between paragraphs
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Removing extra vertical blank spaces between paragraphs %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \raggedbottom

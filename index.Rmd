@@ -12,8 +12,6 @@ lof: false # deactivating the default list of figures
 
 link-citations: yes
 bibliography: [bib/thesis.bib, bib/packages.bib]
-# biblio-style: apalike # needs to be commented in order to use the apa6.csl instead
-# csl: apa6.csl # does not work in the YAML, see instead _output.yml
 ---
 
 `r if (knitr::is_html_output() ) '# Abstract {-}'`
