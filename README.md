@@ -16,14 +16,38 @@ Overall, these results highlight that although verbal rumination may be consider
 
 -->
 
+---
+
 ## Technical notes
 
-My dissertation is a book based on R Markdown and **bookdown**
+### Premises
+
+My dissertation is a book based on `RMarkdown` and the **bookdown** package
 (<https://github.com/rstudio/bookdown>, <https://bookdown.org/>). This bookdown project was originally a fork of the demo book
 (<https://github.com/rstudio/bookdown-demo>) and is largely inspired by Tristan Mahr's own dissertation: <https://github.com/tjmahr/dissertation/blob/master/README.md>.
 
-Some things I have changed from previous versions of the template.
+Some things I have changed from previous versions of the template:
 
-* I deactivated the default TOC from bookdown and defined a custom one in `00-toc.Rmd` to be able to define the order of the `00-*.Rmd` files (e.g., abstract, preface, etc.).
+* I deactivated the default TOC from `bookdown` and defined a custom one in `00-toc.Rmd` to be able to define the order of the `00-*.Rmd` files (e.g., abstract, preface, etc.).
 
-* I deactivated the default references manager (i.e., natbib or biblatex) to be able to provide a .csl file for the references (`citation_package` in `_output.yml` needs to be `none`). See the `pandoc_args` in the `_output.yml` file.
+* I deactivated the default references manager (i.e., `natbib` or `biblatex`) to be able to provide a .csl file for the references (`citation_package` in `_output.yml` needs to be `none`). See the `pandoc_args` in the `_output.yml` file.
+
+* I used the `memoir` LaTeX class in combination with `bookdown` (https://ctan.org/pkg/memoir?lang=en)
+
+### How does all of that work?
+
+The most important elements of the template are listed and discussed below:
+
+* The `index.Rmd` file is the central file of the thesis. It contains basic metadata such as the author name, the title of the thesis, and so on (in the YAML header). Importantly, it also defines the `documenclass` (in my case, it uses the `memoir` package) and the class options. In the YAML header of this file, I also specify the bibliography files (in a better BibTeX format, issued from Zotero). The index file also contains the (English) abstract of the thesis, displayed on the welcome page of the online html version of the thesis.
+
+* The `preamble.tex` (in the ./latex folder) file is like a usual preamble .tex file. It loads the relevant LaTeX packages, defines some commands tu be used later in the thesis (such as `\initial`) and defines some formatting elements. I have tried to comment the code as much as possible but nobody's perfect.
+
+* The `before_body.tex` (in the ./latex folder) defines elements for the cover page (specific to Univ. Grenoble Alpes). The last lines of this file may be more generally useful as they define some formatting elements for the rest of the thesis (e.g., I define the main font and set the line stretch to `\OnehalfSpacing`).
+
+* The UGA cover page template is managed by the `cover_page.sty` style file (in the ./cover folder).
+
+* The `_bookdown.yml` files defines the name of the outputted document (here "thesis"), the label for the chapters, the outputting directory (i.e., where outputted documents are stored) and the .Rmd files that should be included for each output format.
+
+* Another crucial element, the `_output.yml` file defines the argument to be passed to the function creating each output. For each output format (here, gitbook, pdf, and word), it defines format-specific arguments. Importantly, for the PDF output, to be able to define a citation style (using a .csl), the `citation_package` argument should be set to `none` so that `pandoc-citeproc` is used (instead of `natbib` or `biblatex`, for instance).
+
+* A citation style can then be applied by using the `pandoc_args` argument of the `bookdown::pdf_book` function.
