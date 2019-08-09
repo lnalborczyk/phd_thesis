@@ -17,30 +17,28 @@
 \usepackage{tcolorbox} % provides environment for colored boxes
 \usepackage{pdfpages} % simplifies the inclusion of PDF documents
 
-\usetikzlibrary{intersections}
+\usetikzlibrary{intersections} % used to determine lines intersections
 \tcbuselibrary{listings,breakable}
 
-\usepackage{pifont}
-\usepackage{graphicx,pdflscape}
-\usepackage{geometry}
-\usepackage{float}
-\usepackage{longtable}
-\usepackage{supertabular}
-\usepackage{subfig}
-\usepackage{scrextend}
-\usepackage{tabularx}
-\usepackage{lscape}
-\usepackage{tabu}
-\usepackage{array}
-\usepackage[gen]{eurosym} % provides € symbol
+\usepackage{pifont} % provides commands for pi fonts (e.g., dingbats, symbol)
+\usepackage{graphicx} % provides optionnal arguments to the \includegraphics command
+\usepackage{geometry} % provides an easy and flexible user interface to customize page layout
+\usepackage{longtable} % allows writing tables that extend on several pages
+\usepackage{supertabular} % the predecessor of the longtable package
+\usepackage{scrextend} % uses components of KOMA-Script
+\usepackage{tabularx} % defines the tabularx environment
+\usepackage{lscape} % modifies the margins and rotates the page contents but not the page number.
+\usepackage{tabu} % provides flexible latex table environment (e.g., long table)
+\usepackage{array} % an extended implementation of the array and tabular environments
+\usepackage[gen]{eurosym} % provides the euro (€) symbol
 \usepackage{gensymb} % provides the degree (°) symbol
-\usepackage{subfig}
+\usepackage{subfig} % provides support for the manipulation and reference of small or ‘sub’ figures and tables within a single figure or table environment
 \usepackage{stackrel,amssymb}
 \usepackage{textcomp} % provides many text symbols
-\usepackage{setspace}
-\usepackage{microtype} % make better looking pdf
-\usepackage{booktabs,caption,fixltx2e}
-\usepackage[none]{hyphenat} % remove hyphenation
+\usepackage{setspace} % provides support for setting the spacing between lines
+\usepackage{microtype} % makes better looking pdf
+\usepackage{booktabs,caption,fixltx2e} % ...
+\usepackage[none]{hyphenat} % removes hyphenation
 \usepackage[a4paper]{./cover/cover_page} % specifies the path to the cover page template
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -60,7 +58,7 @@
 % Add a lettrine to the very first character of the content %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%M
 
-\usepackage{lettrine}
+\usepackage{lettrine} % supports various dropped capitals styles
 
 \newcommand{\initial}[1]{
 	\lettrine[lines=3,lhang=0.33,nindent=0em]{
@@ -111,25 +109,6 @@
 % https://www.overleaf.com/learn/latex/Font_typefaces
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% \usepackage[T1]{fontenc}
-
-% -------------------------------------------
-% (does not work... tlmgr error...)
-% \usepackage[full]{textcomp}
-% \usepackage{kpfonts} % using the Kp-fonts (the textcomp package should NOT be loaded beforehand)
-
-% \makeatletter % undo the wrong changes made by mathspec
-% \let\RequirePackage\original@RequirePackage
-% \let\usepackage\RequirePackage
-% \makeatother
-
-% \usepackage{newpxtext} % using the new Zapf palatino font (does not work with the \oe...)
-% \usepackage{newpxmath} % using the new Zapf palatino font (does not work with the \oe...)
-
-% -------------------------------------------
-
-%\setmainfont{Palatino} % using the Palatino font (should be put after cover page?)
-
 %\usepackage{libertine} % nice font that works with the \oe. Breaks the cover page though.
 %\usepackage{mathpazo} % using the Palatino font (nice font but does not work with the \oe and breaks cover page)
 %\usepackage{palatino} % nice font but does not work with the \oe... and no math support
@@ -142,7 +121,8 @@
 % Formatting
 %%%%%%%%%%%%%%%%%%%%
 
-\usepackage{calc,soul}
+\usepackage{calc} % simple arithmetics in latex commands
+\usepackage{soul} % hyphenation for letterspacing, underlining, etc.
 
 \makeatletter
 \newlength\dlf@normtxtw
@@ -203,7 +183,6 @@
 
 \newtcolorbox[auto counter, number within = chapter, number freestyle = {\noexpand\thechapter.\noexpand\arabic{\tcbcounter}}]{mybox}[2][]{%
     enhanced,
-    %breakable,
     fonttitle = \bfseries,
     title = Box~\thetcbcounter: #2,
     #1
@@ -223,7 +202,7 @@
 % Insert an empty page %
 %%%%%%%%%%%%%%%%%%%%%%%%
 
-\usepackage{afterpage}
+\usepackage{afterpage} % executes command after the next page break
 
 \newcommand\blankpage{%
     \null
@@ -238,7 +217,8 @@
 % Epigraph style %
 %%%%%%%%%%%%%%%%%%
 
-\usepackage{epigraph}
+\usepackage{epigraph} % provides commands to assist in the typesetting of a single epigraph
+
 \setlength\epigraphwidth{1\textwidth}
 \setlength\epigraphrule{0pt} % no line between
 \setlength\beforeepigraphskip{1\baselineskip} % space before and after epigraph
@@ -251,7 +231,7 @@
 %%%%%%%%%%%%%%%%%%%%%
 
 \PassOptionsToPackage{hyphens}{url}
-\usepackage{hyperref}
+\usepackage{hyperref} % extensive support for hypertext in latex
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Fixing landscape tables %
@@ -260,18 +240,18 @@
 % solution from https://github.com/crsh/papaja/issues/287
 
 % Manuscript styling
-\usepackage{csquotes}
-\usepackage{upgreek}
+\usepackage{csquotes} % provides advanced facilities for inline and display quotations.
+\usepackage{upgreek} % provides the upright Greek letters from the Euler or Adobe Symbol fonts
 \captionsetup{font=singlespacing,justification=justified}
 
 % Table formatting
-\usepackage{longtable}
-\usepackage{lscape}
+% \usepackage{longtable} % allows writing tables that extend on several pages
+% \usepackage{lscape} % figures or tables in landscape mode
 % \usepackage[counterclockwise]{rotating} % Landscape page setup for large tables
-\usepackage{multirow}	% Table styling
-\usepackage{tabularx}	% Control Column width
-\usepackage[flushleft]{threeparttable} % Allows for three part tables with a specified notes section
-\usepackage{threeparttablex} % Lets threeparttable work with longtable
+\usepackage{multirow}	% table styling
+\usepackage{tabularx}	% control column width
+\usepackage[flushleft]{threeparttable} % allows for three part tables with a specified notes section
+\usepackage{threeparttablex} % lets threeparttable work with longtable
 
 % Create new environments so endfloat can handle them
 % \newenvironment{ltable}
@@ -291,7 +271,7 @@
 % My (APA6) caption style %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\usepackage{caption}
+\usepackage{caption} % provides many ways to customise captions in floating environments
 \captionsetup[figure]{labelsep=period,labelfont={it,normalsize},textfont={normalsize}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
