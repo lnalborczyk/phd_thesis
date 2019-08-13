@@ -25,8 +25,10 @@ set.seed(666)
 
 # setting up knitr options
 opts_chunk$set(
-    cache = TRUE, echo = FALSE, warning = FALSE, message = FALSE, out.width = "100%"
-    )
+  cache = TRUE, echo = FALSE, warning = FALSE, message = FALSE,
+  fig.pos = "ht",
+  out.width = "100%"
+  )
 ```
 
 <!-- NB: You can add comments using these tags -->
@@ -187,7 +189,7 @@ The results section is divided into two sections investigating the effects of i)
 
 We represent the standardised EMG amplitude during the rumination period for each facial muscle in Figure \@ref(fig:ruminationplot). This figure reveals that the average standardised EMG amplitude was higher than baseline after the rumination induction for both the OOI and FRO muscles, while it was at the baseline level (on average) for the ZYG and lower than baseline for the NCK. Overall, this figures does not show any group (modality-specific) differences (detailed numerical descriptive statistics are reported in the [supplementary materials](#suppCh4)).
 
-```{r ruminationplot, echo = FALSE, fig.pos = "H", fig.align = "center", fig.width = 7, fig.height = 7, fig.cap = "Standardised EMG amplitude during the rumination period. The coloured dots represent the mean standardised EMG amplitude by participant and by type of induction. The boxplot represents the median as well as the first and third quartiles. Note: the y-axis differs between the two rows."}
+```{r ruminationplot, echo = FALSE, fig.align = "center", fig.width = 7, fig.height = 7, fig.cap = "Standardised EMG amplitude during the rumination period. The coloured dots represent the mean standardised EMG amplitude by participant and by type of induction. The boxplot represents the median as well as the first and third quartiles. Note: the y-axis differs between the two rows."}
 ##########################
 # Making raincloud plots #
 ##########################
@@ -307,7 +309,7 @@ priors_emg <- c(
 
 # fitting the model
 bmod1 <- brm(
-    cbind(ooi, zyg, fro, nek, fcr) ~ 1 + group,
+    mvbind(ooi, zyg, fro, nek, fcr) ~ 1 + group,
     family = gaussian(),
     prior = priors_emg,
     data = df_induction,
@@ -323,12 +325,18 @@ bmod1 <- brm(
 ```{r outputbmod1, results = "asis"}
 results_bmod1 <- 
     tidy_stan(bmod1, prob = 0.95, typical = "mean", digits = 3) %>%
+    # broom::tidy(bmod1, conf.int = 0.95) %>%
     # removing ratio and mcse
     select(-ratio, -mcse) %>%
     # removing residual correlations
     filter(!str_detect(term, "rescor") ) %>%
     filter(!str_detect(term, "temp") ) %>%
-    arrange(desc(response) ) %>%
+    # filter(!str_detect(term, "sigma") ) %>%
+    # filter(!str_detect(term, "prior") ) %>%
+    # filter(!str_detect(term, "lp") ) %>%
+    # separate(col = term, into = c(NA, "Response", "Term"), sep = "_") %>%
+    # arrange(desc(response) ) %>%
+    arrange(desc(term) ) %>%
     # rename columns
     magrittr::set_colnames(
         c("Response", "Term", "Estimate", "SE", "Lower", "Upper", "Rhat")
@@ -361,7 +369,7 @@ This analysis revealed that the average EMG amplitude of both the OOI and the FR
 
 However, before to proceed further with the interpretation of the results, it is essential to check the validity of this first model. A useful diagnostic of the model's predictive abilities is known as *posterior predictive checking* (PPC) and consists in comparing observed data to data simulated from the posterior distribution [e.g.,@gelman_bayesian_2013]. Results from this procedure are represented in Figure \@ref(fig:ppcbmod1).
 
-```{r ppcbmod1, fig.pos = "H", fig.align = "center", fig.width = 7, fig.height = 3.5, fig.cap = "Posterior predictive checking for the first model concerning the OOI and FRO muscles. The dark blue line represents the distribution of the raw data while light blue lines are dataset generated from the posterior distribution."}
+```{r ppcbmod1, fig.align = "center", fig.width = 7, fig.height = 3.5, fig.cap = "Posterior predictive checking for the first model concerning the OOI and FRO muscles. The dark blue line represents the distribution of the raw data while light blue lines are dataset generated from the posterior distribution."}
 ppc_ooi <-
     pp_check(bmod1, resp = "ooi", nsamples = 1e2) +
     theme_minimal(base_size = 11) +
@@ -438,7 +446,7 @@ represents the estimated average difference between the two types of induction (
 
 This analysis revealed that the average EMG amplitude of both the OOI and the FRO muscles was estimated to be higher than baseline (the standardised score was above zero) after rumination induction. However, it was not the case for the ZYG, NCK and FCR muscles. We did not observe the hypothesised difference according to the type of induction on the OOI (`r glue_data(results_bmod2 %>% filter(Response == "OOI", Term == "group"), "$\\beta$ = {Estimate}, 95% CrI [{Lower}, {Upper}], BF~01~ = {BF01}")`) nor on the FRO (`r glue_data(results_bmod2 %>% filter(Response == "FRO", Term == "group"), "$\\beta$ = {Estimate}, 95% CrI [{Lower}, {Upper}], BF~01~ = {BF01}")`). The posterior predictive checks for this model are presented in Figure \@ref(fig:ppcbmod2) and indicate that this model seems to better accommodate the specificities of the collected data.
 
-```{r ppcbmod2, fig.pos = "H", fig.align = "center", fig.width = 7, fig.height = 3.5, fig.cap = "Posterior predictive checking for the Skew-Normal model concerning the OOI and FRO muscles. The dark blue line represents the distribution of the raw data while light blue lines are dataset generated from the posterior distribution."}
+```{r ppcbmod2, fig.align = "center", fig.width = 7, fig.height = 3.5, fig.cap = "Posterior predictive checking for the Skew-Normal model concerning the OOI and FRO muscles. The dark blue line represents the distribution of the raw data while light blue lines are dataset generated from the posterior distribution."}
 ppc_ooi <-
     pp_check(bmod2, resp = "ooi", nsamples = 1e2) +
     theme_minimal(base_size = 11) +
@@ -492,7 +500,7 @@ df %>%
 
 Considering that both groups showed a similar ratio of verbal/non-verbal thoughts (see Table \@ref(tab:verbalvisual)), we used these self-reports to define a posteriori groups of participants that reported more verbal (or non-verbal) ruminations. To this end, we used a cluster analysis (2D k-means) to define two groups (clusters) in the space of the two VASs that have been used to assess the amount of verbal and non-verbal thoughts during the rumination period (see Figure \@ref(fig:clusters)).
 
-```{r clusters, eval = TRUE, fig.pos = "H", fig.align = "center", fig.width = 6, fig.height = 6, out.width = "75%", fig.cap = "Results of the cluster analysis. The centroid of each cluster is represented by a circle and a central cross. The green cluster represents 'verbal ruminators' while the orange one represents 'non-verbal ruminators'."}
+```{r clusters, eval = TRUE, fig.align = "center", fig.width = 6, fig.height = 6, out.width = "75%", fig.cap = "Results of the cluster analysis. The centroid of each cluster is represented by a circle and a central cross. The green cluster represents 'verbal ruminators' while the orange one represents 'non-verbal ruminators'."}
 ###################################################
 # 2D clustering on verbal and visual self-reports #
 ###################################################
@@ -617,7 +625,7 @@ represents the estimated average difference between the two types of induction (
 
 We represent the relation between self-reported levels of state rumination (after induction) and the EMG amplitude (of the four facial muscles) changes from baseline to post-induction in Figure \@ref(fig:selfemg). This figure reveals an overall positive association between the level of self-reported state rumination after induction and the increase in EMG amplitude from baseline to post-induction on the FRO muscle, but not substantial relation concerning the other muscles.
 
-```{r selfemg, fig.pos = "H", fig.align = "center", fig.width = 8, fig.height = 6, out.width = "100%", fig.cap = "Relation between self-reported levels of state rumination (on the x-axis) and standardised EMG amplitude after the rumination induction (on the y-axis). The dots represent individual observations, whose size varies with the percentage of signal that was kept after removing artefacts. The black line represents the regression line with its 95\\% CI."}
+```{r selfemg, fig.align = "center", fig.width = 8, fig.height = 6, out.width = "100%", fig.cap = "Relation between self-reported levels of state rumination (on the x-axis) and standardised EMG amplitude after the rumination induction (on the y-axis). The dots represent individual observations, whose size varies with the percentage of signal that was kept after removing artefacts. The black line represents the regression line with its 95\\% CI."}
 
 df_induction %>%
     gather(muscle, value, fcr:zyg) %>%
@@ -832,7 +840,7 @@ bmod6 <- brm(
     )
 ```
 
-```{r plotrelaxbsri, fig.pos = "H", fig.align = "center", fig.width = 8, fig.height = 6, fig.cap = "Self-reported levels of state rumination (BSRI score) by condition. The left panel depicts results in the orofacial relaxation group while the right panel depicts results in the arm relaxation group. Verbal ruminators are represented in green whereas non-verbal ruminators are represented in orange. Individual observations (each participant) are represented by the smaller coloured dots whereas estimated means and 95\\% CrI are represented by the bigger surimposed coloured circles and vertical error bars."}
+```{r plotrelaxbsri, fig.align = "center", fig.width = 8, fig.height = 6, fig.cap = "Self-reported levels of state rumination (BSRI score) by condition. The left panel depicts results in the orofacial relaxation group while the right panel depicts results in the arm relaxation group. Verbal ruminators are represented in green whereas non-verbal ruminators are represented in orange. Individual observations (each participant) are represented by the smaller coloured dots whereas estimated means and 95\\% CrI are represented by the bigger surimposed coloured circles and vertical error bars."}
 ##################################
 # plotting posterior predictions #
 ##################################
@@ -909,7 +917,7 @@ The three way interaction term (the last line of Table \@ref(tab:outputbmod5)) i
 <!--
 Figure \@ref(fig:postinteraction) represents the posterior distribution of the interaction effect, indicating the mean of the distribution, the 95% credible interval and the proportion of the distribution that is above and below zero. This proportion can be interpreted as the probability (given the data and the priors) that the interaction effects is superior or below zero.
 
-```{r postinteraction, eval = FALSE, fig.pos = "H", fig.align = "center", fig.width = 6, fig.height = 6, out.width = "75%", fig.cap = "Posterior distribution of the interaction effect between Condition, Induction, and Relaxation. The mean and the 95\\% credible interval are displayed at the top and the bottom of the histogram. The green text indicates the proportion of the distribution that is either below or above zero. NB: 'HDI' stands for \\textit{highest density interval}, a particular type of credible interval."}
+```{r postinteraction, eval = FALSE, fig.align = "center", fig.width = 6, fig.height = 6, out.width = "75%", fig.cap = "Posterior distribution of the interaction effect between Condition, Induction, and Relaxation. The mean and the 95\\% credible interval are displayed at the top and the bottom of the histogram. The green text indicates the proportion of the distribution that is either below or above zero. NB: 'HDI' stands for \\textit{highest density interval}, a particular type of credible interval."}
 # retrieving the posterior samples
 post_interaction <- posterior_samples(bmod5)$`b_group:relax_type`
 
@@ -1069,7 +1077,7 @@ MA_cohen_d <- round((cohen_d_2017$estimate * (se_cohen2017) + cohen_d_2019$estim
 
 Nevertheless, the high similarity between these two studies warrants a meta-analytical way of thinking about their results. In other words, given that both studies used a similar rumination induction and the same relaxation recordings, we can compute an average effect size across these two studies to get a more accurate estimate of the population effect size. The effect size (pooled Cohen's d) for the difference between the two types of relaxation was of `r glue_data(cohen_d_2017, "$\\delta$ = {estimate} (95% CI [{lower}, {upper}])")` in @nalborczyk_orofacial_2017 and of `r glue_data(cohen_d_2019, "$\\delta$ = {estimate} (95% CI [{lower}, {upper}])")` in the current article. Because the current study has a larger sample size, the uncertainty (the width of the CI) about the value of the Cohen's d is smaller. Therefore, weighting both estimates by their respective standard error reveals an average effect size that is very close to zero ($\delta$ = `r MA_cohen_d`).
 
-To sum up, we did not observe a stronger effect of the orofacial relaxation (when compared to the non-orofacial relaxation) and we did not observe the hypothesised interaction effect between the type of rumination induction and the type of relaxation. Moreover, we also did not observe an interaction between the type of rumination induction and the clusters defined a posteriori (see [supplementary materials](#suppCh4)). These results taken together corroborate the hypothesis formulated previously, according to which rumination --as a mental habit [@watkins_habit-goal_2014]-- could be considered as a strongly internalised form of inner speech. As such, ruminative thinking would not *require* the involvement of the speech motor system. Therefore, rumination is not expected to be disrupted by motor interferences such as relaxation or articulatory suppression (Nalborczyk et al., *submitted*).
+To sum up, we did not observe a stronger effect of the orofacial relaxation (when compared to the non-orofacial relaxation) and we did not observe the hypothesised interaction effect between the type of rumination induction and the type of relaxation. Moreover, we also did not observe an interaction between the type of rumination induction and the clusters defined a posteriori (see [supplementary materials](#suppCh4)). These results taken together corroborate the hypothesis formulated previously, according to which rumination --as a mental habit [@watkins_habit-goal_2014]-- could be considered as a strongly internalised form of inner speech. As such, ruminative thinking would not *require* the involvement of the speech motor system. Therefore, rumination is not expected to be disrupted by motor interferences such as relaxation or articulatory suppression [@nalborczyk_articulatory_2018].
 
 ### Conclusions
 

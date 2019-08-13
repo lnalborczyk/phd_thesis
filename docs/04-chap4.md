@@ -142,7 +142,7 @@ The results section is divided into two sections investigating the effects of i)
 
 We represent the standardised EMG amplitude during the rumination period for each facial muscle in Figure \@ref(fig:ruminationplot). This figure reveals that the average standardised EMG amplitude was higher than baseline after the rumination induction for both the OOI and FRO muscles, while it was at the baseline level (on average) for the ZYG and lower than baseline for the NCK. Overall, this figures does not show any group (modality-specific) differences (detailed numerical descriptive statistics are reported in the [supplementary materials](#suppCh4)).
 
-\begin{figure}[H]
+\begin{figure}[ht]
 
 {\centering \includegraphics[width=1\linewidth]{04-chap4_files/figure-latex/ruminationplot-1} 
 
@@ -166,15 +166,15 @@ In accordance with the preregistered analysis plan, we then fitted a multivariat
 \toprule
 Response & \multicolumn{1}{c}{Term} & \multicolumn{1}{c}{Estimate} & \multicolumn{1}{c}{SE} & \multicolumn{1}{c}{Lower} & \multicolumn{1}{c}{Upper} & \multicolumn{1}{c}{Rhat} & \multicolumn{1}{c}{BF01}\\
 \midrule
-ZYG & Intercept & -0.054 & 0.033 & -0.120 & 0.011 & 1.000 & 8.251\\
-ZYG & group & 0.065 & 0.066 & -0.066 & 0.193 & 1.000 & 9.332\\
 OOI & Intercept & 1.022 & 0.183 & 0.656 & 1.378 & 1.000 & <0.001\\
-OOI & group & 0.209 & 0.341 & -0.466 & 0.904 & 1.000 & 2.469\\
-NEK & Intercept & -0.002 & 0.023 & -0.050 & 0.043 & 1.000 & 41.497\\
-NEK & group & 0.042 & 0.046 & -0.050 & 0.132 & 1.000 & 13.642\\
+ZYG & Intercept & -0.054 & 0.033 & -0.120 & 0.011 & 1.000 & 8.251\\
 FRO & Intercept & 1.504 & 0.184 & 1.131 & 1.861 & 1.000 & <0.001\\
-FRO & group & -0.178 & 0.346 & -0.869 & 0.516 & 1.000 & 2.535\\
+NEK & Intercept & -0.002 & 0.023 & -0.050 & 0.043 & 1.000 & 41.497\\
 FCR & Intercept & -0.036 & 0.036 & -0.107 & 0.037 & 1.000 & 17.464\\
+OOI & group & 0.209 & 0.341 & -0.466 & 0.904 & 1.000 & 2.469\\
+ZYG & group & 0.065 & 0.066 & -0.066 & 0.193 & 1.000 & 9.332\\
+FRO & group & -0.178 & 0.346 & -0.869 & 0.516 & 1.000 & 2.535\\
+NEK & group & 0.042 & 0.046 & -0.050 & 0.132 & 1.000 & 13.642\\
 FCR & group & 0.092 & 0.072 & -0.048 & 0.235 & 1.000 & 6.094\\
 \bottomrule
 \addlinespace
@@ -193,7 +193,7 @@ This analysis revealed that the average EMG amplitude of both the OOI and the FR
 
 However, before to proceed further with the interpretation of the results, it is essential to check the validity of this first model. A useful diagnostic of the model's predictive abilities is known as *posterior predictive checking* (PPC) and consists in comparing observed data to data simulated from the posterior distribution [e.g.,@gelman_bayesian_2013]. Results from this procedure are represented in Figure \@ref(fig:ppcbmod1).
 
-\begin{figure}[H]
+\begin{figure}[ht]
 
 {\centering \includegraphics[width=1\linewidth]{04-chap4_files/figure-latex/ppcbmod1-1} 
 
@@ -242,7 +242,7 @@ represents the estimated average difference between the two types of induction (
 
 This analysis revealed that the average EMG amplitude of both the OOI and the FRO muscles was estimated to be higher than baseline (the standardised score was above zero) after rumination induction. However, it was not the case for the ZYG, NCK and FCR muscles. We did not observe the hypothesised difference according to the type of induction on the OOI ($\beta$ = -0.073, 95% CrI [-0.565, 0.45], BF~01~ = 4.013) nor on the FRO ($\beta$ = -0.03, 95% CrI [-0.7, 0.588], BF~01~ = 3.194). The posterior predictive checks for this model are presented in Figure \@ref(fig:ppcbmod2) and indicate that this model seems to better accommodate the specificities of the collected data.
 
-\begin{figure}[H]
+\begin{figure}[ht]
 
 {\centering \includegraphics[width=1\linewidth]{04-chap4_files/figure-latex/ppcbmod2-1} 
 
@@ -273,7 +273,7 @@ visual & 83.92 (4.04) & 30 (4.53) & 41\\
 
 Considering that both groups showed a similar ratio of verbal/non-verbal thoughts (see Table \@ref(tab:verbalvisual)), we used these self-reports to define a posteriori groups of participants that reported more verbal (or non-verbal) ruminations. To this end, we used a cluster analysis (2D k-means) to define two groups (clusters) in the space of the two VASs that have been used to assess the amount of verbal and non-verbal thoughts during the rumination period (see Figure \@ref(fig:clusters)).
 
-\begin{figure}[H]
+\begin{figure}[ht]
 
 {\centering \includegraphics[width=0.75\linewidth]{04-chap4_files/figure-latex/clusters-1} 
 
@@ -340,7 +340,7 @@ represents the estimated average difference between the two types of induction (
 
 We represent the relation between self-reported levels of state rumination (after induction) and the EMG amplitude (of the four facial muscles) changes from baseline to post-induction in Figure \@ref(fig:selfemg). This figure reveals an overall positive association between the level of self-reported state rumination after induction and the increase in EMG amplitude from baseline to post-induction on the FRO muscle, but not substantial relation concerning the other muscles.
 
-\begin{figure}[H]
+\begin{figure}[ht]
 
 {\centering \includegraphics[width=1\linewidth]{04-chap4_files/figure-latex/selfemg-1} 
 
@@ -429,7 +429,7 @@ This analysis revealed a general decrease in self-reported levels of state rumin
 
 
 
-\begin{figure}[H]
+\begin{figure}[ht]
 
 {\centering \includegraphics[width=1\linewidth]{04-chap4_files/figure-latex/plotrelaxbsri-1} 
 
@@ -480,7 +480,7 @@ Interestingly, these results are contradicting those of @nalborczyk_orofacial_20
 
 Nevertheless, the high similarity between these two studies warrants a meta-analytical way of thinking about their results. In other words, given that both studies used a similar rumination induction and the same relaxation recordings, we can compute an average effect size across these two studies to get a more accurate estimate of the population effect size. The effect size (pooled Cohen's d) for the difference between the two types of relaxation was of $\delta$ = -0.498 (95% CI [-1.095, 0.098]) in @nalborczyk_orofacial_2017 and of $\delta$ = 0.217 (95% CI [-0.216, 0.65]) in the current article. Because the current study has a larger sample size, the uncertainty (the width of the CI) about the value of the Cohen's d is smaller. Therefore, weighting both estimates by their respective standard error reveals an average effect size that is very close to zero ($\delta$ = -0.052).
 
-To sum up, we did not observe a stronger effect of the orofacial relaxation (when compared to the non-orofacial relaxation) and we did not observe the hypothesised interaction effect between the type of rumination induction and the type of relaxation. Moreover, we also did not observe an interaction between the type of rumination induction and the clusters defined a posteriori (see [supplementary materials](#suppCh4)). These results taken together corroborate the hypothesis formulated previously, according to which rumination --as a mental habit [@watkins_habit-goal_2014]-- could be considered as a strongly internalised form of inner speech. As such, ruminative thinking would not *require* the involvement of the speech motor system. Therefore, rumination is not expected to be disrupted by motor interferences such as relaxation or articulatory suppression (Nalborczyk et al., *submitted*).
+To sum up, we did not observe a stronger effect of the orofacial relaxation (when compared to the non-orofacial relaxation) and we did not observe the hypothesised interaction effect between the type of rumination induction and the type of relaxation. Moreover, we also did not observe an interaction between the type of rumination induction and the clusters defined a posteriori (see [supplementary materials](#suppCh4)). These results taken together corroborate the hypothesis formulated previously, according to which rumination --as a mental habit [@watkins_habit-goal_2014]-- could be considered as a strongly internalised form of inner speech. As such, ruminative thinking would not *require* the involvement of the speech motor system. Therefore, rumination is not expected to be disrupted by motor interferences such as relaxation or articulatory suppression [@nalborczyk_articulatory_2018].
 
 ### Conclusions
 

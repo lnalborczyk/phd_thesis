@@ -4,7 +4,7 @@
 knitr::opts_chunk$set(
   cache = TRUE, echo = FALSE, warning = FALSE, message = FALSE,
   out.width = "100%",
-  #fig.pos = "H",
+  fig.pos = "ht",
   fig.align = "center"
   )
 ```

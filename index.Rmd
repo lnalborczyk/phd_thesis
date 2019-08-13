@@ -1,7 +1,7 @@
 --- 
 title: Understanding rumination as a form of inner speech
-author: "" # Ladislas Nalborczyk
-date: "" #"`r Sys.Date()`"
+author: "" # defined in _output.yml
+date: "" # defined in _output.yml
 site: bookdown::bookdown_site
 
 documentclass: memoir # using the memoir package
@@ -21,6 +21,6 @@ cat("Rumination is known to be a predominantly verbal process and has been propo
 ```
 
 ```{r writebib, eval = FALSE, include = FALSE, warning = FALSE}
-# automatically create a bib database for all installed R packages
+# automatically creates a .bib file for all installed R packages
 knitr::write_bib(x = installed.packages()[, 1], file = "bib/packages.bib")
 ```

@@ -150,7 +150,7 @@ To foreshadow the results, we did not observe such a clear dissociation between 
 
 Before to move to the statistical results, we represent the distribution of the whole dataset, by class, by condition and by muscle for the two main muscles of interest (OOI and ZYG) in Figure \@ref(fig:generalplot). More precisely, the first row of this figure represents the distribution of the standardised EMG scores in the inner speech condition, the second row depicts the distribution of these scores in the listening condition, whereas the third row depicts the distribution of the standardised EMG scores in the overt speech condition. The first column depicts the distribution of the standardised EMG scores recorded over the OOI muscle whereas the second one represents the distribution of the standardised EMG scores recorded over the ZYG muscle. Each individual data point is represented as a vertical bar along the x-axis of each panel whereas the vertical coloured line represents the class-specific median. Additionally, a vertical dashed line is plotted at zero, which represents the baseline level. Thus, a positive value on the x-axis represents EMG standardised scores that are higher than baseline^[We also created a `shiny` application [@R-shiny] allowing for further visual exploration of the data by muscle, by condition, and by participant, in the 3D space formed by three (to be chosen) muscles. This application is available online (https://barelysignificant.shinyapps.io/3d_plotly/) and the associated code is available in the OSF repository ([https://osf.io/czer4](https://osf.io/czer4)).].
 
-\begin{figure}[H]
+\begin{figure}[ht]
 
 {\centering \includegraphics[width=1\linewidth]{05-chap5_files/figure-latex/generalplot-1} 
 
@@ -208,7 +208,7 @@ The results of this model are summarised in Table \@ref(tab:outputbmod1). This t
 
 Figure \@ref(fig:predbmod1) depicts these results by representing the distribution of the raw data (coloured dots) along with the predictions from this model. The black dots and vertical intervals represent the predicted mean and associated 95% credible interval for each class of non-word, each condition and for the OOI and the ZYG. Coherently with Table \@ref(tab:outputbmod1), this figure shows that the fitted model predicts no noticeable differences between the two classes of non-words in any condition for the OOI muscle. However, it predicts a higher average EMG amplitude associated with the rounded item as compared to the spread items in the overt speech condition for the ZYG muscle.
 
-\begin{figure}[H]
+\begin{figure}[ht]
 
 {\centering \includegraphics[width=1\linewidth]{05-chap5_files/figure-latex/predbmod1-1} 
 
@@ -219,7 +219,7 @@ Figure \@ref(fig:predbmod1) depicts these results by representing the distributi
 
 Before proceeding further with the interpretation of the results, it is essential to check the quality of this first model. A useful diagnostic of the model's predictive abilities is known as *posterior predictive checking* (PPC) and consists in comparing observed data to data simulated from the posterior distribution [e.g.,@gelman_bayesian_2013]. The idea behind PPC is that a good model should be able to generate data that resemble the observed data [@gabry_visualization_2019]. In this vein, Figure \@ref(fig:ppcbmod1) represents the distribution of the whole dataset (across all participants and conditions) by muscle (the dark blue line) along with the distribution of hypothetical datasets generated from the posterior distribution of the model (the light blue lines). As can be seen from this Figure, the distributions of the data generated from the model differ considerably from the distribution of the observed data. Therefore, in the next section, we turn to a more appropriate model for these data.
 
-\begin{figure}[H]
+\begin{figure}[ht]
 
 {\centering \includegraphics[width=1\linewidth]{05-chap5_files/figure-latex/ppcbmod1-1} 
 
@@ -301,7 +301,7 @@ The previous figure reveals an important failure of the first model, as it fails
 
 
 
-\begin{figure}[H]
+\begin{figure}[ht]
 
 {\centering \includegraphics[width=1\linewidth]{05-chap5_files/figure-latex/ppcbmod3-1} 
 
@@ -349,7 +349,7 @@ of nonwords in each condition (i.e., the interaction effect). The 'Lower' and 'U
 
 The estimates of this second model are summarised in Table \@ref(tab:outputbmod3) and Figure \@ref(fig:predbmod3). According to this model, the EMG amplitude of the OOI was higher than baseline (the estimated standardised score was above zero) in every condition whereas it was only the case in the overt speech condition for the ZYG. We did not observe the hypothesised difference according to the class of nonwords during inner speech production, neither on the OOI  ($\beta$ = 0.043, 95% CrI [-0.015, 0.103], BF~01~ = 118.391) nor on the ZYG ($\beta$ = 0.005, 95% CrI [-0.011, 0.021], BF~01~ = 1089.341).
 
-\begin{figure}[H]
+\begin{figure}[ht]
 
 {\centering \includegraphics[width=1\linewidth]{05-chap5_files/figure-latex/predbmod3-1} 
 
@@ -364,7 +364,7 @@ Predictions from this model are visually represented in Figure \@ref(fig:predbmo
 
 In the previous section, we tried to predict the average EMG amplitude by condition on each single muscle. Although this approach was appropriate to tackle our initial research question (i.e., can we distinguish muscle-specific EMG correlates of inner speech production?), it is not optimal to answer more general questions such as "can we predict the content of inner speech based on the available EMG data?". In Figure \@ref(fig:2Demg), we depict the distribution of the by-word averaged EMG scores in the 2D space formed by the OOI and the ZYG muscles. This figure reveals that although different nonwords produced in overt speech seem difficult to discriminate on the basis of a single muscle (cf. Figure \@ref(fig:generalplot)), it seems easier to discriminate them in the space formed by two muscles (here OOI and ZYG). More precisely, the two classes of nonwords seem to form two separate clusters in the overt speech condition, but these clusters do not seem discriminable in the inner speech or in the listening condition.
 
-\begin{figure}[H]
+\begin{figure}[ht]
 
 {\centering \includegraphics[width=1\linewidth]{05-chap5_files/figure-latex/2Demg-1} 
 
@@ -395,17 +395,17 @@ We first tried to predict the class of nonwords produced in overt speech, based 
 \cmidrule(r){2-3}
 Prediction & \multicolumn{1}{c}{rounded} & \multicolumn{1}{c}{spread} & \multicolumn{1}{c}{class.error}\\
 \midrule
-rounded & 971 & 165 & 0.145\\
-spread & 204 & 956 & 0.176\\
+rounded & 956 & 180 & 0.158\\
+spread & 211 & 949 & 0.182\\
 \bottomrule
 \end{tabular}
 \end{threeparttable}
 \end{center}
 \end{table}
 
-This analysis revealed an overall classification accuracy of 0.841, 95% CI [0.809, 0.87]. The relative importance of each feature (i.e., each muscle) for prediction is represented in Figure \@ref(fig:VarImpOvert).
+This analysis revealed an overall classification accuracy of 0.862, 95% CI [0.831, 0.889]. The relative importance of each feature (i.e., each muscle) for prediction is represented in Figure \@ref(fig:VarImpOvert).
 
-\begin{figure}[H]
+\begin{figure}[ht]
 
 {\centering \includegraphics[width=1\linewidth]{05-chap5_files/figure-latex/VarImpOvert-1} 
 
@@ -432,15 +432,15 @@ We then applied the same strategy (the same algorithm) to the signals recorded i
 \cmidrule(r){2-3}
 Prediction & \multicolumn{1}{c}{rounded} & \multicolumn{1}{c}{spread} & \multicolumn{1}{c}{class.error}\\
 \midrule
-rounded & 460 & 550 & 0.545\\
-spread & 517 & 532 & 0.493\\
+rounded & 470 & 540 & 0.535\\
+spread & 509 & 540 & 0.485\\
 \bottomrule
 \end{tabular}
 \end{threeparttable}
 \end{center}
 \end{table}
 
-This analysis revealed an overall classification accuracy of 0.508, 95% CI [0.464, 0.552] in the inner speech condition, which indicates that the RF algorithm did not allow discriminating the two classes of nonwords better than random guessing.
+This analysis revealed an overall classification accuracy of 0.494, 95% CI [0.45, 0.538] in the inner speech condition, which indicates that the RF algorithm did not allow discriminating the two classes of nonwords better than random guessing.
 
 
 
@@ -454,15 +454,15 @@ This analysis revealed an overall classification accuracy of 0.508, 95% CI [0.46
 \cmidrule(r){2-3}
 Prediction & \multicolumn{1}{c}{rounded} & \multicolumn{1}{c}{spread} & \multicolumn{1}{c}{class.error}\\
 \midrule
-rounded & 512 & 517 & 0.502\\
-spread & 525 & 490 & 0.517\\
+rounded & 479 & 550 & 0.534\\
+spread & 540 & 475 & 0.532\\
 \bottomrule
 \end{tabular}
 \end{threeparttable}
 \end{center}
 \end{table}
 
-This analysis similarly revealed an overall classification accuracy of 0.488, 95% CI [0.444, 0.533] in the listening condition.
+This analysis similarly revealed an overall classification accuracy of 0.496, 95% CI [0.452, 0.54] in the listening condition.
 
 ## Discussion
 

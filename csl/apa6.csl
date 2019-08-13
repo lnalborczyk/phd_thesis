@@ -447,16 +447,16 @@
       <if variable="issued">
         <group delimiter="/">
           <choose>
-            <if is-uncertain-date="original-date">
+            <if is-uncertain-date="origdate">
               <group prefix="[" suffix="]" delimiter=" ">
                 <text term="circa" form="short"/>
-                <date variable="original-date">
+                <date variable="origdate">
                   <date-part name="year"/>
                 </date>
               </group>
             </if>
             <else>
-              <date variable="original-date">
+              <date variable="origdate">
                 <date-part name="year"/>
               </date>
             </else>
@@ -494,20 +494,20 @@
       </else>
     </choose>
   </macro>
-  <macro name="original-date">
+  <macro name="origdate">
     <choose>
       <if type="bill legal_case legislation" match="any"/>
       <else-if type="speech" match="any">
-        <date variable="original-date" delimiter=" ">
+        <date variable="origdate" delimiter=" ">
           <date-part name="month"/>
           <date-part name="year"/>
         </date>
       </else-if>
       <else-if type="article article-magazine article-newspaper broadcast interview pamphlet personal_communication post post-weblog treaty webpage" match="any">
-        <date variable="original-date" form="text"/>
+        <date variable="origdate" form="text"/>
       </else-if>
       <else>
-        <date variable="original-date">
+        <date variable="origdate">
           <date-part name="year"/>
         </date>
       </else>
@@ -756,17 +756,17 @@
       </group>
       <text macro="access" prefix=" "/>
       <choose>
-        <if is-uncertain-date="original-date">
+        <if is-uncertain-date="origdate">
           <group prefix=" [" suffix="]" delimiter=" ">
             <text macro="original-published"/>
             <text term="circa" form="short"/>
-            <text macro="original-date"/>
+            <text macro="origdate"/>
           </group>
         </if>
-        <else-if variable="original-date">
+        <else-if variable="origdate">
           <group prefix=" (" suffix=")" delimiter=" ">
             <text macro="original-published"/>
-            <text macro="original-date"/>
+            <text macro="origdate"/>
           </group>
         </else-if>
       </choose>

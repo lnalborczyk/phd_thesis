@@ -6,9 +6,4 @@
 
 **Trefworden**: ruminatie; innerlijke spraak; motorische beelden; electromyografie; articulatoire onderdrukking
 
-<!--
-\afterpage{\blankpage}
-\clearemptydoublepage
--->
-
 \afterpage{\blankpage}

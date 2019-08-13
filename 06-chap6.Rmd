@@ -23,6 +23,8 @@ set.seed(666)
 # setting up knitr options
 knitr::opts_chunk$set(
   cache = TRUE, echo = FALSE, warning = FALSE, message = FALSE,
+  fig.pos = "ht",
+  fig.align = "center",
   out.width = "100%"
   )
 ```
@@ -341,7 +343,7 @@ DF2 <-
     data.frame
 ```
 
-```{r diagram, dev = "pdf", fig.pos = "H", cache = TRUE, fig.align = "center", fig.width = 6, fig.height = 6, fig.cap = "Timeline of the experiment, from top to bottom."}
+```{r diagram, dev = "pdf", cache = TRUE, fig.align = "center", fig.width = 6, fig.height = 6, fig.cap = "Timeline of the experiment, from top to bottom."}
 # graph LR (left-right) or graph TD (top-down)
 
 g <- mermaid("
@@ -420,7 +422,7 @@ summary_stat <-
     select(Condition, Session, RUM, Age:Vividness) %>%
     data.frame()
 
-write.csv2(summary_stat, "summary_statistics.csv", sep = "\t", row.names = FALSE)
+#write.csv2(summary_stat, "summary_statistics.csv", sep = "\t", row.names = FALSE)
 ```
 
 ```{r sumstat, results = "asis"}
@@ -451,7 +453,7 @@ summary_stat3 %>%
 
 Figure \@ref(fig:plotexp1) shows the overall evolution of the mean *RUM* scores (i.e., self-reported state rumination) through the experiment according to each *Session* (Baseline, Post-induction, Post-motor) and *Condition* (Mouthing, Tapping). As displayed in this figure, an important inter-individual variability was observed in all conditions. After the rumination induction, *RUM* score increased in both groups, and decreased after the motor task, with a stronger decrease in the *Mouthing* condition.
 
-```{r plotexp1, fig.pos = "H", fig.width = 8, fig.height = 6, fig.cap = "Mean RUM score by Session and Condition, along with violin plots and individual data. Error bars represent 95\\% confidence intervals."}
+```{r plotexp1, fig.width = 8, fig.height = 6, fig.cap = "Mean RUM score by Session and Condition, along with violin plots and individual data. Error bars represent 95\\% confidence intervals."}
 
 pd <- position_dodge(0.9)
 
@@ -514,7 +516,7 @@ DFcorr <- DFclean[DFclean$Session == "Baseline", ]
 
 To prevent multicollinearity, we estimated the correlation between each pair of continuous predictors. Figure \@ref(fig:correxp1) displays these correlations along with the marginal distribution of each variable. The absence of strong correlations ($r > 0.8$) between any of these variables suggests that they can each be included as control variables in the following statistical models.
 
-```{r correxp1, fig.pos = "H", fig.width = 10, fig.height = 10, fig.cap = "Diagonal: marginal distribution of each variable. Panels above the diagonal: Pearson's correlations between main continuous predictors, along with 95\\% CIs. The absolute size of the correlation coefficient is represented by the size of the text (lower coefficients appear as smaller). Panels below the diagonal: scatterplot of each variables pair."}
+```{r correxp1, fig.width = 10, fig.height = 10, fig.cap = "Diagonal: marginal distribution of each variable. Panels above the diagonal: Pearson's correlations between main continuous predictors, along with 95\\% CIs. The absolute size of the correlation coefficient is represented by the size of the text (lower coefficients appear as smaller). Panels below the diagonal: scatterplot of each variables pair."}
 ######################
 # correlation matrix #
 ######################
@@ -924,7 +926,7 @@ Second, we can look at the BF for this particular parameter. As can be seen from
 
 Third, and more interestingly, we can also directly look at the posterior distribution of the parameter of interest (the interaction term). Figure \@ref(fig:postdist) shows this posterior distribution, its mean and 95% credible interval, as well as the proportion of the distribution which is above 0. This reveals that although the 95% credible interval largely encompasses 0, there is a `r round(mean(posterior_samples(bestmodel_motor)["b_Session:Condition"]>0), 3)` probability that the interaction between *Session* and *Condition* is positive (given the data and the priors). This suggests that the decrease in *RUM* score was indeed larger in the mouthing than in the tapping group.
 
-```{r postdist, fig.pos = "H", fig.width = 5, fig.height = 5, fig.cap = "Posterior distribution of the interaction parameter between Session (before vs. after the motor task) and Condition (mouthing vs. finger-tapping). The mean and the 95\\% credible interval are displayed at the top and the bottom of the histogram. The green text indicates the proportion of the distribution that is either below or above zero."}
+```{r postdist, fig.width = 5, fig.height = 5, fig.cap = "Posterior distribution of the interaction parameter between Session (before vs. after the motor task) and Condition (mouthing vs. finger-tapping). The mean and the 95\\% credible interval are displayed at the top and the bottom of the histogram. The green text indicates the proportion of the distribution that is either below or above zero."}
 post_interaction <- posterior_samples(bestmodel_motor)$`b_Session:Condition`
 
 plotPost(
@@ -973,7 +975,7 @@ The large variation between participants can be appreciated by computing the *in
 
 Figure \@ref(fig:plotverbal) shows the effects of *Verbality* on the relative change (i.e., after - before) in self-reported rumination after both motor activities (i.e., *Mouthing* and *Tapping*). As *Verbality* was centred before analysis, its score cannot be interpreted in absolute terms. However, a high score on this index indicates more verbal than non-verbal (e.g., visual images, non-speech sounds) thoughts, whereas a low score indicates more non-verbal than verbal thoughts. Contrary to our predictions but consistent with the model comparison, this figure depicts a similar relationship between *Verbality* and the change in *RUM* score (between before and after the motor task), according to the Condition. In the Mouthing condition, the change in *RUM* score did decrease for participants with a higher self-reported degree of verbal content. This suggests that the more verbal the rumination is, the more it is affected by mouthing interference. But contrary to our expectation, a similar trend (although perhaps weaker) was observed in the Tapping condition. This suggests that the more verbal the rumination is, the more it is affected by any motor task.
 
-```{r plotverbal, fig.pos = "H", fig.width = 8, fig.height = 6, fig.cap = "Mean RUM relative change after motor activity, as a function of the degree of Verbality, in the mouthing (the green dots and regression line) and finger tapping (the orange dots and regression line) conditions."}
+```{r plotverbal, fig.width = 8, fig.height = 6, fig.cap = "Mean RUM relative change after motor activity, as a function of the degree of Verbality, in the mouthing (the green dots and regression line) and finger tapping (the orange dots and regression line) conditions."}
 
 differential <- function(x) {
     

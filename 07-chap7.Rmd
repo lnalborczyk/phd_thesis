@@ -24,7 +24,7 @@ set.seed(666)
 # setting up knitr options
 opts_chunk$set(
     cache = TRUE, echo = FALSE, warning = FALSE, message = FALSE,
-    out.width = "100%", fig.align = "center"
+    out.width = "100%", fig.align = "center", fig.pos = "ht"
     )
 ```
 
@@ -105,9 +105,9 @@ Upon arriving at the laboratory, participants were asked whether they had recent
 
 After filling-in the consent form, participants watched a series of short (around 30s each) neutral video clips for a total duration of 5mn in order to neutralise pre-existing mood differences between participants [@marchetti_brief_2018;@samson_eliciting_2015]. Then, participants filled-in baseline measurements of state rumination (BSRI) and state affects (PANAS). Afterwards, participants went through either a rumination or a problem-solving thinking induction, as described previously. Following this induction, participants filled-in again the BSRI questionnaire to check whether the rumination induction was successful in inducing rumination. Participants in each group were then randomly allocated to either a 5-min articulatory suppression condition (gum-chewing) or a 5-min finger-tapping condition, resulting in four groups of participants. Following the motor activity, participants filled-in again both the BSRI and the PANAS questionnaires. Then, participants filled-in the RRS questionnaire to assess their propensity to ruminate in daily life.
 
-At the end of the experiment, all participants went through a positive mood induction (remembering and reliving a positive memory) to attenuate the effects of the stress induction. Finally, participants were fully debriefed about the goals of the study. The entire experiment was video-monitored using a Sony HANDYCAM video camera to check whether the participants effectively completed the task. In addition, the experimenter was able to monitor the participant's performance during the experiment through a one-way mirror (located behind the participant). This procedure is summarised in Figure \@ref(fig:diagram).
+At the end of the experiment, all participants went through a positive mood induction (remembering and reliving a positive memory) to attenuate the effects of the stress induction. Finally, participants were fully debriefed about the goals of the study. The entire experiment was video-monitored using a Sony HANDYCAM video camera to check whether the participants effectively completed the task. In addition, the experimenter was able to monitor the participant's performance during the experiment through a one-way mirror (located behind the participant). This procedure is summarised in Figure \@ref(fig:diagramCh7).
 
-```{r diagramCh7, dev = "pdf", fig.pos = "H", cache = TRUE, out.width = "66%", fig.cap = "Timeline of the experiment, from top to bottom."}
+```{r diagramCh7, dev = "pdf", cache = TRUE, out.width = "66%", fig.cap = "Timeline of the experiment, from top to bottom."}
 # graph LR (left-right) or graph TD (top-down)
 
 g <- mermaid("
@@ -165,7 +165,7 @@ plotly::export(g, file = "assets/mermaid_ch7.pdf")
 
 Statistical analyses were conducted using `R` version 3.5.0 [@R-base], and are reported with the `papaja` [@R-papaja] and `knitr` [@R-knitr] packages.
 
-To model state rumination and affect in response to the thinking-style induction and the articulatory suppression manipulation, we fitted a series of Bayesian regression models^[An introduction to Bayesian statistical modelling is outside the scope of the current paper but the interested reader is referred to @nalborczyk_introduction_2019, for an introduction to Bayesian multilevel modelling using the `brms` package.]. These analyses were conducted using the `brms` package [@R-brms], an implementation of Bayesian multilevel models that employs the probabilistic programming language `Stan` [@carpenter_stan_2017]. Four chains were run for each model, including each 10,000 iterations and a warmup of 2,000 iterations. Posterior convergence was assessed examining autocorrelation and trace plots, as well as the Gelman-Rubin statistic. Constant effects estimates were summarised via their posterior mean and 95% credible interval (CrI), where a credible interval interval can be considered as the Bayesian analogue of a classical confidence interval, except that it can be interpreted in a probabilistic way [contrary to confidence intervals, @nalborczyk_pragmatism_2019]. When applicable, we also report Bayes factors (BFs) computed using the Savage-Dickey method.^[This method simply consists in taking the ratio of the posterior density at the point of interest divided by the prior density at that point [@wagenmakers_bayesian_2010].] These BFs can be interpreted as updating factors, from prior knowledge (what we knew before seeing the data) to posterior knowledge (what we know after seeing the data).
+To model state rumination and affect in response to the thinking-style induction and the articulatory suppression manipulation, we fitted a series of Bayesian regression models.^[An introduction to Bayesian statistical modelling is outside the scope of the current paper but the interested reader is referred to @nalborczyk_introduction_2019, for an introduction to Bayesian multilevel modelling using the `brms` package.] These analyses were conducted using the `brms` package [@R-brms], an implementation of Bayesian multilevel models that employs the probabilistic programming language `Stan` [@carpenter_stan_2017]. Four chains were run for each model, including each 10,000 iterations and a warmup of 2,000 iterations. Posterior convergence was assessed examining autocorrelation and trace plots, as well as the Gelman-Rubin statistic. Constant effects estimates were summarised via their posterior mean and 95% credible interval (CrI), where a credible interval interval can be considered as the Bayesian analogue of a classical confidence interval, except that it can be interpreted in a probabilistic way [contrary to confidence intervals, @nalborczyk_pragmatism_2019]. When applicable, we also report Bayes factors (BFs) computed using the Savage-Dickey method.^[This method simply consists in taking the ratio of the posterior density at the point of interest divided by the prior density at that point [@wagenmakers_bayesian_2010].] These BFs can be interpreted as updating factors, from prior knowledge (what we knew before seeing the data) to posterior knowledge (what we know after seeing the data).
 
 ## Results
 
@@ -353,6 +353,7 @@ parameters1 <-
     mutate(Term = str_replace(Term, "session.", "session:") ) %>%
     mutate(Term = str_replace(Term, "b_", "") ) %>%
     filter(Term != "sigma") %>%
+    dplyr::distinct() %>% # remove duplicate rows
     # compute BF for each effect
     mutate(
         BF10 = (1 / hypothesis(bestmodel, glue("{Term} = 0") )$
@@ -605,6 +606,7 @@ parameters2 <-
     mutate(Term = str_replace(Term, "activity.", "activity:") ) %>%
     mutate(Term = str_replace(Term, "b_", "") ) %>%
     filter(Term != "sigma") %>%
+    dplyr::distinct() %>% # remove duplicate rows
     # compute BF for each effect
     mutate(
         BF10 = (1 / hypothesis(M6_motor, glue("{Term} = 0") )$
@@ -997,6 +999,7 @@ parameters_panas <-
     mutate(Term = str_replace(Term, "activity.", "activity:") ) %>%
     mutate(Term = str_replace(Term, "b_", "") ) %>%
     filter(Term != "sigma") %>%
+    dplyr::distinct() %>% # remove duplicate rows
     # compute BF for each effect
     mutate(
         BF10 = (1 / hypothesis(M6_motor_panas, glue("{Term} = 0") )$

@@ -1,37 +1,6 @@
 # References {-}
 
-```{r special-characters-bib, eval = FALSE, include = FALSE, message = FALSE, warning = FALSE}
-library(tidyverse)
-library(bibtex)
-
-#bib <- read.bib("bib/thesis.bib")
-#new_bib <- gsub("Å", "\\oe", bib)
-#write.bib(new_bib, "bib/thesis2.bib")
-
-raw_text <- readLines("bib/thesis.bib")
-new_text <- gsub("\\oe", "\\\\oe", raw_text)
-writeLines(new_text, con = "bib/thesis.bib")
-```
-
-<!--
-
-`r if (knitr::is_html_output()) '# References {-}'`
-
-\singlespacing
-\sloppy
-
--->
-
 \markboth{References}{References} <!-- This manually sets the header for this unnumbered chapter -->
-
-<!--
-
-\noindent
-\setlength{\parindent}{-0.20in}
-\setlength{\leftskip}{0.20in}
-\setlength{\parskip}{8pt}
-
--->
 
 \setlength{\parindent}{-0.5in} <!-- config from papaja -->
 \setlength{\leftskip}{0.5in}
