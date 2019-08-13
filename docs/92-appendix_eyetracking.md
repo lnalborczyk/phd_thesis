@@ -6,7 +6,7 @@ The purpose of this control experiment was to check whether the two motor tasks 
 
 ## Sample
 
-Twenty-four participants (Mean age = 19.46, SD = 1.18, Min-Max = 18-21, 21 females, 21 right-handed), drawn from the same population (i.e., undergraduate psychology students at Univ. Grenoble Alpes) as the main experiment took part in this eye-tracking pretest.
+Twenty-four participants (Mean age = 19.46, SD = 1.18, Min-Max = 18-21, 21 females, 21 right-handed), drawn from the same population (i.e., undergraduate Psychology students at Univ. Grenoble Alpes) as the main experiment took part in this eye-tracking pretest.
 
 ## Sample size
 
