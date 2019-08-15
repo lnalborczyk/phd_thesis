@@ -1,4 +1,4 @@
-# Muscle-specific electromyographic correlates of inner speech production {#chap5}
+# Can covertly produced rounded and spread features be distinguished using surface electromyography? {#chap5}
 
 ```{r setupCH5, include = FALSE, message = FALSE, warning = FALSE, results = "hide"}
 library(wordcountaddin)
@@ -27,7 +27,7 @@ knitr::opts_chunk$set(
 
 <!-- NB: You can add comments using these tags -->
 
-\initial{A}lthough having a long history of scrutiny in experimental psychology, it is still controversial whether inner speech (covert speech) production is accompanied by specific activity in speech muscles. We address this question by briefly reviewing previous findings related to inner speech and to the broader phenomenon of motor imagery. We then present the results of a preregistered experiment looking at the electromyographic correlates of both overt speech and inner speech production of two classes of nonwords. An automatic classification approach was undertaken to discriminate these signals according to the class of nonword to be uttered in both overt and covert speech. Although this approach led to reasonable accuracy rates during overt speech production, it failed to discriminate inner speech content based on surface electromyography signals. We discuss these results in relation to the existing literature and suggest alternative ways to test the engagement of the speech motor system during inner speech production.^[This experimental chapter is a submitted manuscript reformatted for the need of this thesis. Pre-registered protocol, preprint, data, as well as reproducible code and figures are available at: [https://osf.io/czer4/](https://osf.io/czer4/).]
+\initial{A}lthough having a long history of scrutiny in experimental psychology, it is still controversial whether inner speech (covert speech) production is accompanied by specific activity in speech muscles. We address this question by briefly reviewing previous findings related to inner speech and to the broader phenomenon of motor imagery. We then present the results of a preregistered experiment looking at the electromyographic correlates of both overt speech and inner speech production of two classes of nonwords. An automatic classification approach was undertaken to discriminate these signals according to the class of nonword to be uttered in both overt and covert speech. Although this approach led to reasonable accuracy rates during overt speech production, it failed to discriminate inner speech content based on surface electromyography signals. However, exploratory analyses conducted at the individual level revealed that it was possible to discriminate inner speech content for two participants. We discuss these results in relation to the existing literature and suggest alternative ways to test the engagement of the speech motor system during inner speech production.^[This experimental chapter is a working manuscript reformatted for the need of this thesis. Source: Nalborczyk, L., Grandchamp, R., Koster, E.H.W., Perrone-Bertolotti, M., \& L\oe venbruck, H. (*in preparation*). Can covertly produced rounded and spread features be distinguished using surface electromyography? Pre-registered protocol, preprint, data, supplementary materials, as well as reproducible code and figures are available at: [https://osf.io/czer4/](https://osf.io/czer4/).]
 
 ## Introduction
 
@@ -964,7 +964,7 @@ apa_table(
     )
 ```
 
-This analysis revealed an overall classification accuracy of `r glue("{results_inner['Accuracy']}, 95% CI [{results_inner['AccuracyLower']}, {results_inner['AccuracyUpper']}]")` in the inner speech condition, which indicates that the RF algorithm did not allow discriminating the two classes of nonwords better than random guessing.
+This analysis revealed an overall classification accuracy of `r glue("{results_inner['Accuracy']}, 95% CI [{results_inner['AccuracyLower']}, {results_inner['AccuracyUpper']}]")` in the inner speech condition, which indicates that the RF algorithm did not allow discriminating the two classes of nonwords better than random guessing.^[NB: as the classification accuracy in the inner speech and listening conditions was not better than chance, we do not report the relative importance of the predictors. Indeed, it would be difficult to interpret the importance of predictors for a classification task at which they do not perform better than chance.]
 
 ```{r RFlistening}
 df_rf <- df %>%
@@ -1115,7 +1115,7 @@ In summary, we have demonstrated that whereas surface electromyography may lead 
 
 ## Supplementary materials {#suppCh5}
 
-Pre-registered protocol, open data, as well as reproducible code and figures are available at [https://osf.io/czer4](https://osf.io/czer4).
+Pre-registered protocol, open data, supplementary materials, as well as reproducible code and figures are available at [https://osf.io/czer4](https://osf.io/czer4).
 
 Aside from previously cited packages, several other packages have been used for the writing of this paper, among which the `ggrepel` and `ggplot2` packages for plotting [@R-ggrepel;@R-ggplot2] as well as the `tidyverse`, `sjstats`, `here`, `skimr`, and `glue` packages for code writing and formatting [@R-tidyverse;@R-sjstats;@R-glue;@R-here;@R-skimr].
 

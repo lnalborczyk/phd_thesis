@@ -1,6 +1,6 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Loading relevant packages %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Loading (other) relevant packages %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %\usepackage[latin1]{inputenc} % special characters with pdflatex
 %\usepackage[utf8]{inputenc} % special characters with pdflatex
@@ -18,7 +18,7 @@
 \usepackage{pdfpages} % simplifies the inclusion of PDF documents
 
 \usetikzlibrary{intersections} % used to determine lines intersections
-\tcbuselibrary{listings,breakable}
+\tcbuselibrary{listings,breakable} % ...
 
 \usepackage{pifont} % provides commands for pi fonts (e.g., dingbats, symbol)
 \usepackage{graphicx} % provides optionnal arguments to the \includegraphics command
@@ -279,3 +279,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \raggedbottom
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Command used in the manual list of abbreviations %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand\nomenclature[2]{#1 & #2 \\}

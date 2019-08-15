@@ -2,16 +2,48 @@
 
 \renewcommand{\contentsname}{Table of contents}
 \maxtocdepth{subsection}
+
 \tableofcontents*
 \addtocontents{toc}{\par\nobreak \mbox{}\hfill{\bf Page}\par\nobreak}
 \newpage
+
+<!-- List of tables -->
 
 \listoftables
 \addtocontents{lot}{\par\nobreak\textbf{{\scshape Table} \hfill Page}\par\nobreak}
 \newpage
 
+<!-- List of figures -->
+
 \listoffigures
 \addtocontents{lof}{\par\nobreak\textbf{{\scshape Figure} \hfill Page}\par\nobreak}
 \newpage
+
+<!-- Manual list of abbreviations -->
+
+\addcontentsline{toc}{chapter}{List of Abbreviations}
+\chapter*{List of Abbreviations}
+
+\begin{longtable}{@{}p{2cm}@{}p{\dimexpr\textwidth-2cm\relax}@{}}
+
+\nomenclature{\textbf{AVH}}{Auditory Verbal Hallucination}
+\nomenclature{\textbf{BSRI}}{Brief State Rumination Inventory}
+\nomenclature{\textbf{CERTS}}{Cambridge Exeter Repetitive Thought Scale}
+\nomenclature{\textbf{DES}}{Descriptive Experience Sampling}
+\nomenclature{\textbf{ECoG}}{Electrocorticography}
+\nomenclature{\textbf{EMG}}{Electromyography}
+\nomenclature{\textbf{HRV}}{Heart Rate Variability}
+\nomenclature{\textbf{MEP}}{Motor Evoked Potential}
+\nomenclature{\textbf{MTVT}}{Motor Theory of Voluntary Thinking}
+\nomenclature{\textbf{MST}}{Motor Simulation Theory}
+\nomenclature{\textbf{PPF}}{Predictive Processing Framework}
+\nomenclature{\textbf{RRS}}{Ruminative Response Scale}
+\nomenclature{\textbf{RSQ}}{Response Style Questionnaire}
+\nomenclature{\textbf{VAS}}{Visual Analogue Scale}
+
+\end{longtable}
+
+\newpage
+\blankpage
 
 \pagenumbering{arabic}
