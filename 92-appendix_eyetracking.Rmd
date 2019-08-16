@@ -26,7 +26,7 @@ knitr::opts_chunk$set(
   )
 ```
 
-The purpose of this control experiment was to check whether the two motor tasks used in the main experiment presented in Chapter \@ref(chap6), namely, finger tapping and articulatory suppression (mouthing) were equivalent in terms of task difficulty or general dual-task demand [@emerson_role_2003]. Participants performed a computer-based visual search task (i.e., finding a T among an array of Ls), adapted from @treisman_feature-integration_1980 paradigm (see below for details).
+The purpose of this control experiment was to check whether the two motor tasks used in the main experiment presented in Chapter \@ref(chap6), namely, finger tapping and articulatory suppression (mouthing) were equivalent in terms of task difficulty or general dual-task demand [@emerson_role_2003]. Participants performed a computer-based visual search task (i.e., finding a T among an array of Ls), adapted from @treisman_feature-integration_1980 paradigm (see below for details).^[This appendix is presented in a submitted manuscript reformatted for the need of this thesis. Source: Nalborczyk, L., Perrone-Bertolotti, M., Baeyens, C., Grandchamp, R., Spinelli, E., Koster, E.H.W., \& L\oe venbruck, H. (*submitted*). Articulatory suppression effects on induced rumination. Pre-registered protocol, preprint, data, as well as reproducible code and figures are available at: [https://osf.io/3bh67/](https://osf.io/3bh67/).]
 
 ## Sample
 
@@ -34,7 +34,7 @@ Twenty-four participants (Mean age = 19.46, SD = 1.18, Min-Max = 18-21, 21 femal
 
 ## Sample size
 
-As we aimed to compare four conditions (i.e., visual search (VS) task alone, VS + finger tapping, VS + foot tapping and VS + mouth movements), we recruited 24 participants in order to have at least one participant per order in our random counter-balanced repeated measures design ($n = k!$ where $n$ is the number of possible orders of conditions for $k$ conditions, then $n =4 != 24$).
+As we aimed to compare four conditions (i.e., visual search task alone, visual search + finger tapping, visual search + foot tapping and visual search + mouth movements), we recruited 24 participants in order to have at least one participant per order in our random counter-balanced repeated measures design ($n = k!$ where $n$ is the number of possible orders of conditions for $k$ conditions, then $n =4 != 24$).
 
 ## Material
 
@@ -42,7 +42,8 @@ Experiment took place individually in a dark room. Participants had to seat in f
 
 ## Procedure
 
-The target (the letter "T") was presented at each trial, either on the right or on the left of the central vertical axis of the grid. The grid was an array of 6x6 items. Each stimulus was displayed until the participant response (maximum duration in case of no response: 5 seconds). Each grid of letters was preceded by a central fixation circle, that was displayed for 500ms after the participant moved his/her gaze towards it. In order to give their response ("left" or "right"), participants had to gaze towards a large filled gray circle, situated either on the left or on the right side of the grid. Each participant went through each condition, in a random order. A first general training session was proposed, at the beginning of the experiment, using ten items that were not used subsequently in the four conditions. Each condition was composed of 90 trials (45 left and 45 right), knowing that the first ten trials of each condition were considered as training trials and thus not included in analysis. All participants were filmed in order to ensure that they effectively performed the motor activity. 
+The target (the letter "T") was presented at each trial, either on the right or on the left of the central vertical axis of the grid. The grid was an array of 6x6 items. Each stimulus was displayed until the participant response (maximum duration in case of no response: 5 seconds). Each grid of letters was preceded by a central fixation circle, that was displayed for 500ms after the participant moved his/her gaze towards it. In order to give their response ("left" or "right"), participants had to gaze towards a large filled gray circle, situated either on the left or on the right side of the grid. Each participant went through each condition, in a random order. A first general training session was proposed, at the beginning of the experiment, using ten items that were not used subsequently in the four conditions. Each condition was composed of 90 trials (45 left and 45 right), knowing that the first ten trials of each condition were considered as training trials and thus not included in analysis. All participants were filmed in order to ensure that they effectively performed the motor activity.
+
 Our measure of interest was the delay between the apparition of the grid and the participant's response (the time at which his/her gaze reached the response circle), below referred to as "response time" (RT).
 
 ## Data preprocessing

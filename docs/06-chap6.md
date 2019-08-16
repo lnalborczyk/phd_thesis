@@ -4,7 +4,7 @@
 
 <!-- NB: You can add comments using these tags -->
 
-\initial{T}his study explores whether the speech motor system is involved in verbal rumination, a particular kind of inner speech. The motor simulation hypothesis considers inner speech as an action, accompanied by simulated speech percepts, that would as such involve the speech motor system. If so, we could expect verbal rumination to be disrupted by concurrent involvement of the speech apparatus. We recruited 106 healthy adults and measured their self-reported level of rumination before and after a rumination induction, as well as after five minutes of a subsequent motor task (either an articulatory suppression -silent mouthing- task or a finger tapping control task). We also evaluated to what extent ruminative thoughts were experienced with a verbal quality or in another modality (e.g., visual images, non-speech sounds). Self-reported levels of rumination showed a decrease after both motor activities (silent mouthing and finger-tapping), with only a slightly stronger decrease after the articulatory suppression than the control task. The rumination level decrease was not moderated by the modality of the ruminative thoughts. We discuss these results within the framework of verbal rumination as simulated speech and suggest alternative ways to test the engagement of the speech motor system in verbal rumination.^[This experimental chapter is a submited manuscript reformatted for the need of this thesis. Source: Nalborczyk, L., Perrone-Bertolotti, M., Baeyens, C., Grandchamp, R., Spinelli, E., Koster, E.H.W., \& L\oe venbruck, H. (*submitted*). Articulatory suppression effects on induced rumination. Pre-registered protocol, preprint, data, as well as reproducible code and figures are available at: [https://osf.io/3bh67/](https://osf.io/3bh67/).]
+\initial{T}his study explores whether the speech motor system is involved in verbal rumination, a particular kind of inner speech. The motor simulation hypothesis considers inner speech as an action, accompanied by simulated speech percepts, that would as such involve the speech motor system. If so, we could expect verbal rumination to be disrupted by concurrent involvement of the speech apparatus. We recruited 106 healthy adults and measured their self-reported level of rumination before and after a rumination induction, as well as after five minutes of a subsequent motor task (either an articulatory suppression -silent mouthing- task or a finger tapping control task). We also evaluated to what extent ruminative thoughts were experienced with a verbal quality or in another modality (e.g., visual images, non-speech sounds). Self-reported levels of rumination showed a decrease after both motor activities (silent mouthing and finger-tapping), with only a slightly stronger decrease after the articulatory suppression than the control task. The rumination level decrease was not moderated by the modality of the ruminative thoughts. We discuss these results within the framework of verbal rumination as simulated speech and suggest alternative ways to test the engagement of the speech motor system in verbal rumination.^[This experimental chapter is a submitted manuscript reformatted for the need of this thesis. Source: Nalborczyk, L., Perrone-Bertolotti, M., Baeyens, C., Grandchamp, R., Spinelli, E., Koster, E.H.W., \& L\oe venbruck, H. (*submitted*). Articulatory suppression effects on induced rumination. Pre-registered protocol, preprint, data, as well as reproducible code and figures are available at: [https://osf.io/3bh67/](https://osf.io/3bh67/).]
 
 ## Introduction
 
@@ -38,7 +38,7 @@ We originally planned for 128 participants to take part in the study. This sampl
 
 As we anticipated drop-out of participants due to our inclusion criteria (see below), a total of 184 undergraduate students in psychology from Univ. Grenoble Alpes took part in this experiment, in exchange for course credits. They were recruited via mailing list, online student groups, and posters. Each participant provided a written consent and this study was approved by the local ethics committee (CERNI N° 2016-05-31-9). To be eligible, participants had to be between 18 and 35 years of age, with no self-reported history of motor, neurological, psychiatric, or speech-development disorders. All participants spoke French as their mother tongue. After each participant gave their written consent, they completed the Center for Epidemiologic Studies - Depression scale [CES-D; @radloff_ces-d_1977]. The CES-D is a 12-item questionnaire, validated in French [@morin_psychometric_2011], aiming to assess the level of depressive symptoms in a subclinical population. Participants exceeding the threshold of clinical depressive symptoms [i.e., >23 for females and >17 for males; @radloff_ces-d_1977] were not included in the study for ethical reasons (N = 26). These participants were then fully debriefed about the aims of the experiment and were given the necessary information concerning available psychological care on campus.
 
-To investigate articulatory suppression effects in the context of rumination, a successful induction of rumination is a prerequisite. Therefore, analyses were only conducted on participants who showed an effect of the rumination induction (i.e., strictly speaking, participants who reported more rumination after the induction than before). We thus discarded participants who did not show any increase in rumination level (N = 52, 32.91% of total sample). The final sample comprised 106 participants (Mean age = 20.3018868, SD = 2.5728064, Min-Max = 18-31, 96 females).
+To investigate articulatory suppression effects in the context of rumination, a successful induction of rumination is a prerequisite. Therefore, analyses were only conducted on participants who showed an effect of the rumination induction (i.e., strictly speaking, participants who reported more rumination after the induction than before). We thus discarded participants who did not show any increase in rumination level (N = 52, 32.91% of total sample). The final sample comprised 106 participants (Mean age = 20.3, SD = 2.57, Min-Max = 18-31, 96 females).
 
 ### Material
 
@@ -74,17 +74,17 @@ The second step consisted of the rumination induction proper. We used a French t
 
 After the rumination induction, participants were asked to continue to think about "the meaning, causes, and consequences" of their feelings while either repetitively making mouth movements (for participants allocated in the "Mouthing" condition) or finger-tapping with the dominant hand for five minutes (for participants allocated in the "Tapping" condition). Afterwards, state rumination was again evaluated using the *RUM* scale.
 
-In order to evaluate trait rumination, participants completed the short version of the RRS (see above). Then, they filled in the questionnaire on the modality of the thoughts that occurred while performing the motor task (see above). Figure \@ref(fig:diagram) summarises the full procedure.
+In order to evaluate trait rumination, participants completed the short version of the RRS (see above). Then, they filled in the questionnaire on the modality of the thoughts that occurred while performing the motor task (see above). Figure \@ref(fig:diagramCH6) summarises the full procedure.
 
 
 
 \begin{figure}[ht]
 
-{\centering \includegraphics[width=1\linewidth]{06-chap6_files/figure-latex/diagram-1} 
+{\centering \includegraphics[width=1\linewidth]{06-chap6_files/figure-latex/diagramCH6-1} 
 
 }
 
-\caption{Timeline of the experiment, from top to bottom.}(\#fig:diagram)
+\caption{Timeline of the experiment, from top to bottom.}(\#fig:diagramCH6)
 \end{figure}
 
 ### Data analysis
@@ -97,7 +97,7 @@ We centred and standardised each predictor in order to facilitate the interpreta
 
 Models were compared using the Widely Applicable Information Criterion [WAIC; @watanabe_asymptotic_2010] --a generalisation of the Akaike information criterion [@akaike_new_1974]-- and evidence ratios [@burnham_model_2002;@burnham_aic_2011;@hegyi_using_2011]. The WAIC provides a relative measure of predictive accuracy of the models (the WAIC is an approximation of the out-of-sample deviance of a model) and balances underfitting and overfitting by sanctioning models for their number of parameters. Evidence ratios (ERs) were computed as the ratios of weights: $ER_{ij} = \dfrac{w_{i}}{w_{j}}$, where $w_{i}$ and $w_{j}$ are the Akaike weights of models $i$ and $j$, respectively. These weights can be interpreted as the probability of the model being the best model in terms of out-of-sample prediction [@burnham_model_2002]. Whereas the use of WAIC is appropriate for model comparison and selection, it tells us nothing about the absolute fit of the model. To estimate this fit, we computed the Bayesian $R^2$ for MLMs using the `bayes_R2()` method in the brms package [@R-brms].
 
-Models were fitted using weakly informative priors (see the [supplementary materials](#supp) for code details). Two Markov Chain Monte-Carlo (MCMC) were ran for each model to approximate the posterior distribution, including each 5.000 iterations and a warmup of 2.000 iterations. Posterior convergence was assessed examining trace plots as well as the Gelman-Rubin statistic $\hat{R}$. Constant effect estimates were summarised via their posterior mean and 95% credible interval (CrI), where a credible interval can be considered as the Bayesian analogue of a classical confidence interval. When applicable, we also report Bayes factors (BFs), computed using the Savage-Dickey method, which consists in taking the ratio of the posterior density at the point of interest divided by the prior density at that point. These BFs can be interpreted as an updating factor, from prior knowledge (what we knew before seeing the data) to posterior knowledge (what we know after seeing the data).
+Models were fitted using weakly informative priors (see the [supplementary materials](#suppCH6) for code details). Two Markov Chain Monte-Carlo (MCMC) were ran for each model to approximate the posterior distribution, including each 5.000 iterations and a warmup of 2.000 iterations. Posterior convergence was assessed examining trace plots as well as the Gelman-Rubin statistic $\hat{R}$. Constant effect estimates were summarised via their posterior mean and 95% credible interval (CrI), where a credible interval can be considered as the Bayesian analogue of a classical confidence interval. When applicable, we also report Bayes factors (BFs), computed using the Savage-Dickey method, which consists in taking the ratio of the posterior density at the point of interest divided by the prior density at that point. These BFs can be interpreted as an updating factor, from prior knowledge (what we knew before seeing the data) to posterior knowledge (what we know after seeing the data).
 
 #### Articulatory suppression effects
 
@@ -107,14 +107,14 @@ To assess the effects of articulatory suppression on self-reported state ruminat
 
 The results section follows the data analysis workflow. More precisely, for each part of the experiment (i.e., first the analysis of the induction effects and then, the analysis of the impact of mouthing vs. finger-tapping), we first present the results of the model comparison stage in which we compare different models of increasing complexity. Subsequently, we report the estimates of the best model (the model with the lowest WAIC) and base our conclusions on this model.
 
-Recall that, to assess rumination induction, the dependent variable is *RUM*, the main categorical predictor is *Induction* and additional continuous predictors are *PANAS*, *RRS*, *Vividness*, and *Verbality.* To assess articulatory suppression effects, the dependent variable is *RUM*, the main categorical predictors are *Session* (within-subject) and *Condition* (between-subject), and additional continuous predictors are *PANAS*, *RRS* and *Vividness.* Summary statistics (mean and standard deviation) for all these variables can be found in Table \@ref(tab:sumstat).
+Recall that, to assess rumination induction, the dependent variable is *RUM*, the main categorical predictor is *Induction* and additional continuous predictors are *PANAS*, *RRS*, *Vividness*, and *Verbality.* To assess articulatory suppression effects, the dependent variable is *RUM*, the main categorical predictors are *Session* (within-subject) and *Condition* (between-subject), and additional continuous predictors are *PANAS*, *RRS* and *Vividness.* Summary statistics (mean and standard deviation) for all these variables can be found in Table \@ref(tab:sumstatCH6).
 
 
 
 \begin{lltable}
 \small{
 \begin{longtable}{lcccccc}\noalign{\getlongtablewidth\global\LTcapwidth=\longtablewidth}
-\caption{\label{tab:sumstat}Descriptive statistics (mean and standard deviation) of each recorded variable, for the final sample of participants that were included in the study.}\\
+\caption{\label{tab:sumstatCH6}Descriptive statistics (mean and standard deviation) of each recorded variable, for the final sample of participants that were included in the study.}\\
 \toprule
  & \multicolumn{3}{c}{Mouthing} & \multicolumn{3}{c}{Tapping} \\
 \cmidrule(r){2-4} \cmidrule(r){5-7}
@@ -163,7 +163,7 @@ To prevent multicollinearity, we estimated the correlation between each pair of 
 
 
 
-To examine the efficiency of the induction procedure (i.e., the effect of *Induction*) while controlling for the other variables (i.e., *Vividness*, *RRSbrooding*, *RRSreflection*, *PANASpos*, and *PANASneg*),^[Note that we only included predictors that were theoretically relevant [as recommended, amongst others, by @burnham_model_2002;@burnham_multimodel_2004]. We did not blindly assess every combination of predictors.] we then compared the parsimony of models containing main constant effects and a varying intercept for *Participant*. Model comparison showed that the best model (i.e., the model with the lowest WAIC) was the model including *Induction*, *PANASpos*, *PANASneg*, *RRSbooding*, and an interaction term between *Induction* and *Vividness* as predictors (see Table \@ref(tab:compexp1)). Fit of the best model was moderate ($R^2$ = 0.667, 95% CrI [0.574, 0.735]).
+To examine the efficiency of the induction procedure (i.e., the effect of *Induction*) while controlling for the other variables (i.e., *Vividness*, *RRSbrooding*, *RRSreflection*, *PANASpos*, and *PANASneg*),^[Note that we only included predictors that were theoretically relevant [as recommended, amongst others, by @burnham_model_2002;@burnham_multimodel_2004]. We did not blindly assess every combination of predictors.] we then compared the parsimony of models containing main constant effects and a varying intercept for *Participant*. Model comparison showed that the best model (i.e., the model with the lowest WAIC) was the model including *Induction*, *PANASpos*, *PANASneg*, *RRSbooding*, and an interaction term between *Induction* and *Vividness* as predictors (see Table \@ref(tab:compexp1CH6)). Fit of the best model was moderate ($R^2$ = 0.667, 95% CrI [0.574, 0.735]).
 
 \begin{lltable}
 \begin{TableNotes}[para]
@@ -171,7 +171,7 @@ To examine the efficiency of the induction procedure (i.e., the effect of *Induc
 \end{TableNotes}
 \small{
 \begin{longtable}{lcccc}\noalign{\getlongtablewidth\global\LTcapwidth=\longtablewidth}
-\caption{\label{tab:compexp1}Comparison of models, ordered by WAIC. The best model has the lowest WAIC.}\\
+\caption{\label{tab:compexp1CH6}Comparison of models, ordered by WAIC. The best model has the lowest WAIC.}\\
 \toprule
  & \multicolumn{1}{c}{$WAIC$} & \multicolumn{1}{c}{$pWAIC$} & \multicolumn{1}{c}{$\Delta_{WAIC}$} & \multicolumn{1}{c}{$Weight$}\\
 \midrule
@@ -191,12 +191,12 @@ $Int+Ind$ & 1868.17 & 65.31 & 10.72 & 0.002\\
 }
 \end{lltable}
 
-Constant effect estimates for the best model are reported in Table \@ref(tab:paramexp1). Based on these values, it seems that *Induction* (i.e., the effects of the rumination induction) increased *RUM* scores by approximately 24.76 points on average (\(d_{av} =\) 1.037, 95% CI [0.748, 1.325]). The main positive effect of *PANASneg* and the main negative effects of *PANASpos* indicate, respectively, that negative baseline mood was associated with higher levels of rumination while positive baseline mood was associated with lower levels of self-reported rumination.
+Constant effect estimates for the best model are reported in Table \@ref(tab:paramexp1CH6). Based on these values, it seems that *Induction* (i.e., the effects of the rumination induction) increased *RUM* scores by approximately 24.76 points on average (\(d_{av} =\) 1.037, 95% CI [0.748, 1.325]). The main positive effect of *PANASneg* and the main negative effects of *PANASpos* indicate, respectively, that negative baseline mood was associated with higher levels of rumination while positive baseline mood was associated with lower levels of self-reported rumination.
 
-\begin{table}[H]
+\begin{table}[ht]
 \begin{center}
 \begin{threeparttable}
-\caption{\label{tab:paramexp1}Coefficient estimates, standard errors (SE), 95\% CrI (Lower, Upper), Rhat and Bayes factor (BF10) for the best model.}
+\caption{\label{tab:paramexp1CH6}Coefficient estimates, standard errors (SE), 95\% CrI (Lower, Upper), Rhat and Bayes factor (BF10) for the best model.}
 \small{
 \begin{tabular}{lcccccc}
 \toprule
@@ -225,7 +225,7 @@ Higher scores on *Vividness* were associated with higher increase in self-report
 
 
 
-In order to examine the effect of the two motor tasks (articulatory suppression and finger-tapping, *Condition* variable) on *RUM* while controlling for other variables (i.e., *Vividness*, *RRSbrooding*, *RRSreflection*, *Verbality*, *PANASpos*, and *PANASneg*), we compared the parsimony of several models, with or without these variables or their interaction. Given the group differences on *RUM* score at baseline (i.e., after training), we also included this score as a control variable in the models, as the *RUMb* variable ($M_{mouthing}$ = 28.5, $M_{tapping}$ = 20.96). Based on our hypotheses, we examined the three-way interaction between *Session*, *Condition* and *Verbality*. More precisely, we expected that greater amounts of verbal thoughts would be associated with a greater difference in the effects of the motor task on self-reported state rumination (i.e., *RUM*) with respect to the group (i.e., mouthing  vs. finger-tapping). Model comparison showed that the best model was the model including *Session*, *Cond*, an interaction term between *Session* and *Condition*, *RUMb*, *PANASneg*, *RRSbrooding* and *RRSreflection* as predictors (cf. Table \@ref(tab:paramexp2)). Absolute fit of the best model was moderate ($R^2$ = 0.655, 95% CrI [0.559, 0.724]). Therefore, contrary to our hypothesis, the best model did not include the three-way interaction between *Session*, *Condition* and *Verbality* as a constant effect. It did include an interaction between *Session* and *Condition*, however.
+In order to examine the effect of the two motor tasks (articulatory suppression and finger-tapping, *Condition* variable) on *RUM* while controlling for other variables (i.e., *Vividness*, *RRSbrooding*, *RRSreflection*, *Verbality*, *PANASpos*, and *PANASneg*), we compared the parsimony of several models, with or without these variables or their interaction. Given the group differences on *RUM* score at baseline (i.e., after training), we also included this score as a control variable in the models, as the *RUMb* variable ($M_{mouthing}$ = 28.5, $M_{tapping}$ = 20.96). Based on our hypotheses, we examined the three-way interaction between *Session*, *Condition* and *Verbality*. More precisely, we expected that greater amounts of verbal thoughts would be associated with a greater difference in the effects of the motor task on self-reported state rumination (i.e., *RUM*) with respect to the group (i.e., mouthing  vs. finger-tapping). Model comparison showed that the best model was the model including *Session*, *Cond*, an interaction term between *Session* and *Condition*, *RUMb*, *PANASneg*, *RRSbrooding* and *RRSreflection* as predictors (cf. Table \@ref(tab:paramexp2CH6)). Absolute fit of the best model was moderate ($R^2$ = 0.655, 95% CrI [0.559, 0.724]). Therefore, contrary to our hypothesis, the best model did not include the three-way interaction between *Session*, *Condition* and *Verbality* as a constant effect. It did include an interaction between *Session* and *Condition*, however.
 
 \begin{lltable}
 \begin{TableNotes}[para]
@@ -233,7 +233,7 @@ In order to examine the effect of the two motor tasks (articulatory suppression 
 \end{TableNotes}
 \small{
 \begin{longtable}{lcccc}\noalign{\getlongtablewidth\global\LTcapwidth=\longtablewidth}
-\caption{\label{tab:compexp2}Comparison of models, ordered by WAIC. The best model has the lowest WAIC.}\\
+\caption{\label{tab:compexp2CH6}Comparison of models, ordered by WAIC. The best model has the lowest WAIC.}\\
 \toprule
  & \multicolumn{1}{c}{$WAIC$} & \multicolumn{1}{c}{$pWAIC$} & \multicolumn{1}{c}{$\Delta_{WAIC}$} & \multicolumn{1}{c}{$Weight$}\\
 \midrule
@@ -253,40 +253,40 @@ $Null\ model$ & 1876.96 & 67.42 & 19.97 & 0.000\\
 }
 \end{lltable}
 
-Parameter values of the best model for the second part of the experiment are reported in Table \@ref(tab:paramexp2). Based on these values, it seems that self-reported rumination decreased after both motor tasks (the coefficient for *Session* is negative), but this decrease was substantially larger in the *Mouthing* condition (\(d_{av} =\) -0.351, 95% CI [-0.735, 0.034]) than in the *Tapping* condition (\(d_{av} =\) -0.117, 95% CI [-0.506, 0.273]), as can be read from the coefficient of the interaction term between *Session* and *Condition* (*Est* = 4.979, *SE* = 4.002, *95% CrI* [-3.105, 12.47]). Importantly, the large uncertainty associated with this result (as expressed by the width of the confidence interval) warrants a careful interpretation of this result, that should be considered as suggestive evidence, rather than conclusive evidence.
+Parameter values of the best model for the second part of the experiment are reported in Table \@ref(tab:paramexp2CH6). Based on these values, it seems that self-reported rumination decreased after both motor tasks (the coefficient for *Session* is negative), but this decrease was substantially larger in the *Mouthing* condition (\(d_{av} =\) -0.351, 95% CI [-0.735, 0.034]) than in the *Tapping* condition (\(d_{av} =\) -0.117, 95% CI [-0.506, 0.273]), as can be read from the coefficient of the interaction term between *Session* and *Condition* (*Est* = 4.979, *SE* = 4.002, *95% CrI* [-3.105, 12.47]). Importantly, the large uncertainty associated with this result (as expressed by the width of the confidence interval) warrants a careful interpretation of this result, that should be considered as suggestive evidence, rather than conclusive evidence.
 
-However, the Bayesian framework provides tools that permit richer inference. First, we can compare the relative weight of the best model (the model with the lowest WAIC) with a similar model without the interaction term (the second model in Table \@ref(tab:compexp2)). This reveals that the model including an interaction term between *Session* and *Condition* is 2.6200366 more *credible* than the model without the interaction term, which can be considered as weak but meaningful evidence [@burnham_model_2002].
+However, the Bayesian framework provides tools that permit richer inference. First, we can compare the relative weight of the best model (the model with the lowest WAIC) with a similar model without the interaction term (the second model in Table \@ref(tab:compexp2CH6)). This reveals that the model including an interaction term between *Session* and *Condition* is 2.6200366 more *credible* than the model without the interaction term, which can be considered as weak but meaningful evidence [@burnham_model_2002].
 
-Second, we can look at the BF for this particular parameter. As can be seen from Table \@ref(tab:paramexp2), the BF for the interaction term is equal to 1.24, which is evidence for neither the presence or the absence of effect. However, this BF is computed using the Savage-Dickey method^[This method simply consists in taking the ratio of the posterior density at the point of interest divided by the prior density at that point [for a practical introduction, see @wagenmakers_bayesian_2010].] and as such is extremely sensitive to the prior choice. Thus, other priors (for instance a prior that is more peaked on zero) would provide stronger evidence for the interaction effect.
+Second, we can look at the BF for this particular parameter. As can be seen from Table \@ref(tab:paramexp2CH6), the BF for the interaction term is equal to 1.24, which is evidence for neither the presence or the absence of effect. However, this BF is computed using the Savage-Dickey method^[This method simply consists in taking the ratio of the posterior density at the point of interest divided by the prior density at that point [for a practical introduction, see @wagenmakers_bayesian_2010].] and as such is extremely sensitive to the prior choice. Thus, other priors (for instance a prior that is more peaked on zero) would provide stronger evidence for the interaction effect.
 
-Third, and more interestingly, we can also directly look at the posterior distribution of the parameter of interest (the interaction term). Figure \@ref(fig:postdist) shows this posterior distribution, its mean and 95% credible interval, as well as the proportion of the distribution which is above 0. This reveals that although the 95% credible interval largely encompasses 0, there is a 0.892 probability that the interaction between *Session* and *Condition* is positive (given the data and the priors). This suggests that the decrease in *RUM* score was indeed larger in the mouthing than in the tapping group.
+Third, and more interestingly, we can also directly look at the posterior distribution of the parameter of interest (the interaction term). Figure \@ref(fig:postdistCH6) shows this posterior distribution, its mean and 95% credible interval, as well as the proportion of the distribution which is above 0. This reveals that although the 95% credible interval largely encompasses 0, there is a 0.892 probability that the interaction between *Session* and *Condition* is positive (given the data and the priors). This suggests that the decrease in *RUM* score was indeed larger in the mouthing than in the tapping group.
 
 \begin{figure}[H]
 
-{\centering \includegraphics[width=1\linewidth]{06-chap6_files/figure-latex/postdist-1} 
+{\centering \includegraphics[width=1\linewidth]{06-chap6_files/figure-latex/postdistCH6-1} 
 
 }
 
-\caption{Posterior distribution of the interaction parameter between Session (before vs. after the motor task) and Condition (mouthing vs. finger-tapping). The mean and the 95\% credible interval are displayed at the top and the bottom of the histogram. The green text indicates the proportion of the distribution that is either below or above zero.}(\#fig:postdist)
+\caption{Posterior distribution of the interaction parameter between Session (before vs. after the motor task) and Condition (mouthing vs. finger-tapping). The mean and the 95\% credible interval are displayed at the top and the bottom of the histogram. The green text indicates the proportion of the distribution that is either below or above zero.}(\#fig:postdistCH6)
 \end{figure}
 
-\begin{table}[H]
+\begin{table}[ht]
 \begin{center}
 \begin{threeparttable}
-\caption{\label{tab:paramexp2}Coefficient estimates, standard errors (SE), 95\% CrI (Lower, Upper), Rhat and Bayes factor (BF10) for the best model.}
+\caption{\label{tab:paramexp2CH6}Coefficient estimates, standard errors (SE), 95\% CrI (Lower, Upper), Rhat and Bayes factor (BF10) for the best model.}
 \small{
 \begin{tabular}{lcccccc}
 \toprule
 Term & \multicolumn{1}{c}{Estimate} & \multicolumn{1}{c}{SE} & \multicolumn{1}{c}{Lower} & \multicolumn{1}{c}{Upper} & \multicolumn{1}{c}{Rhat} & \multicolumn{1}{c}{BF10}\\
 \midrule
-Intercept & 47.635 & 2.020 & 43.793 & 51.557 & 1.001 & 1.932*10\textasciicircum{}21\\
-Session & -5.964 & 2.163 & -9.916 & -1.862 & 1.000 & 13.47\\
-Condition & -1.010 & 3.622 & -8.160 & 6.503 & 1.000 & 0.384\\
-RUMbaseline & 12.792 & 2.226 & 8.350 & 16.973 & 1.000 & 5.434*10\textasciicircum{}15\\
-RRSbrooding & 2.389 & 2.084 & -1.490 & 6.670 & 1.000 & 0.392\\
-RRSreflection & -1.914 & 2.004 & -5.635 & 2.231 & 1.000 & 0.307\\
-PANASneg & 0.544 & 2.264 & -3.872 & 5.048 & 1.000 & 0.232\\
-Session:Condition & 5.031 & 4.032 & -3.039 & 12.895 & 1.000 & 0.878\\
+Intercept & 47.582 & 2.001 & 43.737 & 51.622 & 1.001 & 4.292*10\textasciicircum{}17\\
+Session & -5.923 & 2.138 & -10.090 & -1.572 & 1.000 & 6.624\\
+Condition & -0.994 & 3.785 & -8.770 & 6.175 & 1.000 & 0.379\\
+RUMbaseline & 12.746 & 2.214 & 8.327 & 17.066 & 1.003 & -6.831*10\textasciicircum{}18\\
+RRSbrooding & 2.381 & 2.071 & -1.507 & 6.705 & 1.000 & 0.407\\
+RRSreflection & -1.811 & 1.933 & -5.600 & 2.096 & 1.001 & 0.307\\
+PANASneg & 0.544 & 2.220 & -3.796 & 4.870 & 1.001 & 0.217\\
+Session:Condition & 4.979 & 4.002 & -3.105 & 12.470 & 1.001 & 0.808\\
 \bottomrule
 \end{tabular}
 }
@@ -309,13 +309,13 @@ Figure \@ref(fig:plotverbal) shows the effects of *Verbality* on the relative ch
 
 ## Discussion
 
-The purpose of the current study was to investigate the effects of articulatory suppression on induced verbal rumination. We predicted that if verbal rumination, which can be construed as a type of inner speech, does involve the mental simulation of overt speech production, its generation should be disrupted by articulatory suppression, but not by finger tapping. This prediction was not strictly corroborated by the data, as we observed a decrease of self-reported rumination after both types of motor activities (see Figure \@ref(fig:plotexp1) and Table \@ref(tab:compexp2)), with a somewhat stronger decrease in the Mouthing condition. In the following, we examine the validity of our methods and discuss interpretations of our results. Finally, we formulate how subsequent research should address this kind of question and suggest alternative ways to test the above mentioned hypothesis. We begin by discussing the results of the rumination induction procedure.
+The purpose of the current study was to investigate the effects of articulatory suppression on induced verbal rumination. We predicted that if verbal rumination, which can be construed as a type of inner speech, does involve the mental simulation of overt speech production, its generation should be disrupted by articulatory suppression, but not by finger tapping. This prediction was not strictly corroborated by the data, as we observed a decrease of self-reported rumination after both types of motor activities (see Figure \@ref(fig:plotexp1) and Table \@ref(tab:compexp2CH6)), with a somewhat stronger decrease in the Mouthing condition. In the following, we examine the validity of our methods and discuss interpretations of our results. Finally, we formulate how subsequent research should address this kind of question and suggest alternative ways to test the above mentioned hypothesis. We begin by discussing the results of the rumination induction procedure.
 
 ### Rumination induction
 
-It is noteworthy that 32.91% of the total sample of participants who were recruited did not respond to this induction, and were therefore not included in the analyses. Moreover, as reported in Table \@ref(tab:paramexp1), it seems that the *Vividness* of the memory chosen by the participant during the mood induction was moderating the effect of the rumination induction. In other words, the more vivid (i.e., the more "intense") the memory, the more successful the rumination induction was. This highlights the fact that this aspect should be carefully controlled each time a mood induction is used in order to foster subsequent repetitive negative thinking.
+It is noteworthy that 32.91% of the total sample of participants who were recruited did not respond to this induction, and were therefore not included in the analyses. Moreover, as reported in Table \@ref(tab:paramexp1CH6), it seems that the *Vividness* of the memory chosen by the participant during the mood induction was moderating the effect of the rumination induction. In other words, the more vivid (i.e., the more "intense") the memory, the more successful the rumination induction was. This highlights the fact that this aspect should be carefully controlled each time a mood induction is used in order to foster subsequent repetitive negative thinking.
 
-Moreover, we observed a group difference of approximately 7.5 points in the average *RUM* score at baseline. This difference might be explained by motor training, which took place before baseline measurement of state rumination. During this training, participants had to perform the motor task (either finger-tapping or mouthing) in front of a black screen on which a white dot was moving randomly for 1 min. During the task, the experimenter stayed in the room to check that participants were performing the motor task adequately. Being an unusual and potentially embarrassing motor activity, mouthing might have been a higher source of stress for the participants, as compared to the more common activity of finger-tapping. This group difference in baseline state rumination subsisted after the induction, as the group difference after the induction was of approximately 8 points (see summary statistics in Table \@ref(tab:sumstat) and full dataset in the [supplementary materials](#supp)).
+Moreover, we observed a group difference of approximately 7.5 points in the average *RUM* score at baseline. This difference might be explained by motor training, which took place before baseline measurement of state rumination. During this training, participants had to perform the motor task (either finger-tapping or mouthing) in front of a black screen on which a white dot was moving randomly for 1 min. During the task, the experimenter stayed in the room to check that participants were performing the motor task adequately. Being an unusual and potentially embarrassing motor activity, mouthing might have been a higher source of stress for the participants, as compared to the more common activity of finger-tapping. This group difference in baseline state rumination subsisted after the induction, as the group difference after the induction was of approximately 8 points (see summary statistics in Table \@ref(tab:sumstatCH6) and full dataset in the [supplementary materials](#suppCH6)).
 
 ### Articulatory suppression effects
 
@@ -323,7 +323,7 @@ In the following section, we discuss in more depth the results of the second par
 
 First, it is important to examine whether the weakness of the effect of the interaction we had predicted between session and condition could come from a lack of statistical power. We planned 128 participants in order to reach a power of .80 for a targeted effect size of $\eta_{p}^{2}=.06$. As explained above, out of the 184 recruited participants, only 106 could be included in the study. With 106 participants, the a priori power for detecting an effect size of $\eta_{p}^{2}=.06$ was approximately of .70, which is much higher than the median power in typical psychological studies.
 
-Second, it is important to acknowledge that despite the weakness of the difference between the two conditions in their influence on the level of self-reported rumination (i.e., *RUM*), both activities did lead, on average, to a decrease in self-reported rumination of approximately 6 points on the VAS (as indicated by the slope for *Session* in Table \@ref(tab:paramexp2)). This decrease might be interpreted in two ways. First, it might be explained by the simple exposition to the VAS and by compliance effects. When asked to rate their level of rumination again after five minutes of motor activity, some participants might be prompted to indicate a lower level of rumination than before the motor task. But compliance effects could similarly lead participants to consider the motor task as irritating, and therefore as prone to rumination increase. Some participants could therefore also be biased towards indicating a higher level of rumination after the motor task. Second, it might be considered that this decrease reflects a genuine decrease in rumination. In the following, we adopt the latter perspective and discuss explanations for the weak difference between the two conditions.
+Second, it is important to acknowledge that despite the weakness of the difference between the two conditions in their influence on the level of self-reported rumination (i.e., *RUM*), both activities did lead, on average, to a decrease in self-reported rumination of approximately 6 points on the VAS (as indicated by the slope for *Session* in Table \@ref(tab:paramexp2CH6)). This decrease might be interpreted in two ways. First, it might be explained by the simple exposition to the VAS and by compliance effects. When asked to rate their level of rumination again after five minutes of motor activity, some participants might be prompted to indicate a lower level of rumination than before the motor task. But compliance effects could similarly lead participants to consider the motor task as irritating, and therefore as prone to rumination increase. Some participants could therefore also be biased towards indicating a higher level of rumination after the motor task. Second, it might be considered that this decrease reflects a genuine decrease in rumination. In the following, we adopt the latter perspective and discuss explanations for the weak difference between the two conditions.
 
 #### Effect of the rumination quality (verbality)
 
@@ -353,7 +353,7 @@ A lot of useful packages have been used for the writing of this paper, among whi
 
 This project was funded by the ANR project INNERSPEECH (grant number ANR-13-BSH2-0003-01). The first author of the manuscript is funded by a doctoral fellowship from Univ. Grenoble Alpes.
 
-## Data Accessibility Statement
+## Data Accessibility Statement {#suppCH6}
 
 Pre-registered protocol, preprint, data, as well as reproducible code and figures are available at: [https://osf.io/3bh67/](http://osf.io/3bh67).
 
@@ -365,7 +365,7 @@ Pre-registered protocol, preprint, data, as well as reproducible code and figure
 
 \begin{summary}{Summary of Chapter\getcurrentref{chapter}}
 
-In this chapter, we set up a critical test of the \textit{motor simulation view} of inner speech (and rumination). Indeed, if the involvement of the speech motor system is \textit{necessary} during inner speech and rumination, then a disruption of the speech motor system should disrupt (or impair) the production of inner speech (and rumination). To examine this idea, we compared the effects of an articulatory suppression task to those of a finger-tapping task, following a rumination induction, on the levels of self-reported state rumination. Our results suggest a similar decrease in state rumination following both motor activities, suggesting that rumination would not be a form of inner speech that would crucially depend on the activity of the speech motor system (it does not mean that the speech motor system may never be involved in rumination, only that its involvement is not necessary). However, some important limitations make the interpretation of these results delicate. First, there were important differences between the two groups (i.e., articulatory suppression vs. finger-tapping groups) at baseline, possibly due do the rhythmic training proposed before baseline measurements. Second, the measure of state rumination consisted in one single non-validated scale (already used in Chapter 3) and may not be a reliable index of state rumination. Third, as in Chapter 3, there was no control group to the rumination induction and any effect following to the rumination induction may not be specifically attributable to the rumination induction. Fourth, there is some evidence suggesting that finger-tapping (with the dominant hand) may also perturbs speech motor planning and may therefore not be the best control condition to articulatory suppression. We try to overcome these limitations in the next and last empirical chapter.
+In this chapter, we set up a critical test of the \textit{motor simulation view} of inner speech (and rumination). Indeed, if the involvement of the speech motor system is \textit{necessary} during inner speech and rumination, then a disruption of the speech motor system should disrupt (or impair) the production of inner speech (and rumination). To examine this idea, we compared the effects of an articulatory suppression task to those of a finger-tapping task, following a rumination induction, on the levels of self-reported state rumination. Our results suggest that self-reported state rumination decrease after both motor activities, with only a slightly stronger decrease following articulatory suppression, suggesting that rumination would not be a form of inner speech that would crucially depend on the activity of the speech motor system (it does not mean that the speech motor system may never be involved in rumination, only that its involvement is not necessary). However, some important limitations make the interpretation of these results delicate. First, there were important differences between the two groups (i.e., articulatory suppression vs. finger-tapping groups) at baseline, possibly due do the rhythmic training proposed before baseline measurements. Second, the measure of state rumination consisted in one single non-validated scale (already used in Chapter 3) and may not be a reliable index of state rumination. Third, as in Chapter 3, there was no control group to the rumination induction and any effect following to the rumination induction may not be specifically attributable to the rumination induction. Fourth, there is some evidence suggesting that finger-tapping (with the dominant hand) may also perturbs speech motor planning and may therefore not be the best control condition to articulatory suppression. We try to overcome these limitations in the next and last empirical chapter.
 
 \end{summary}
 

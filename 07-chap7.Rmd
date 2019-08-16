@@ -30,31 +30,23 @@ opts_chunk$set(
 
 <!-- NB: You can add comments using these tags -->
 
-\initial{I}t has been suggested that verbal rumination may be considered as a form of inner speech and may therefore involve the speech motor system. This study explores whether the speech motor system is involved in verbal rumination by examining the effects of articulatory suppression (via gum-chewing) on two forms of induced repetitive thoughts (rumination and problem-solving), following the presentation of a stressor. We expected that (unconstrained) rumination would lead to sustained negative affects following a stressor whereas (unconstrained) problem-solving would lead to less detrimental effects on mood (in comparison to rumination). However, if motor processes are involved during rumination and problem-solving, articulatory suppression should dampen the differential effects of rumination and problem-solving on mood. At the time of the writing, data collection is still ongoing and the analyses presented in this chapter are therefore very preliminary. However, data collected so far suggest that articulatory suppression (gum-chewing) is indeed associated with a weaker difference in the effects of rumination versus problem-solving on state negative affects.^[This experimental chapter is a working manuscript reformatted for the need of this thesis. Source: Nalborczyk, L., Perrone-Bertolotti, M., Koster, E.H.W., \& L\oe venbruck, H. (*in preparation*). Examining the involvement of the speech motor system during rumination: a dual-task investigation. Pre-registered protocol, preprint, data, as well as reproducible code and figures will be made available at: [https://osf.io/8ab2d/](https://osf.io/8ab2d/).]
+\initial{I}t has been suggested that verbal rumination may be considered as a form of inner speech and may therefore recruit the speech motor system. This study explores whether the speech motor system is involved in verbal rumination by examining the effects of articulatory suppression (via gum-chewing) on two forms of induced repetitive thoughts (rumination and problem-solving), following the presentation of a stressor. We expected that (unconstrained) rumination would lead to sustained negative affects following a stressor whereas (unconstrained) problem-solving would lead to less detrimental effects on mood (in comparison to rumination). However, if motor processes are involved during rumination and problem-solving, articulatory suppression should dampen the differential effects of rumination and problem-solving on mood. At the time of the writing, data collection is still ongoing and the analyses presented in this chapter are therefore very preliminary. However, data collected so far suggest that articulatory suppression (gum-chewing) is indeed associated with a weaker difference in the effects of rumination versus problem-solving on state negative affects.^[This experimental chapter is a working manuscript reformatted for the need of this thesis. Source: Nalborczyk, L., Perrone-Bertolotti, M., Baeyens, C., Koster, E.H.W., \& L\oe venbruck, H. (*in preparation*). Examining the involvement of the speech motor system during rumination: a dual-task investigation. Pre-registered protocol, preprint, data, as well as reproducible code and figures will be made available at: [https://osf.io/8ab2d/](https://osf.io/8ab2d/).]
 
 ## Introduction
 
-The ability to talk to oneself silently is a core foundational ability that supports many higher cognitive functions such as remembering, planning, task-switching or problem-solving [for review, see @alderson-day_inner_2015;@Perrone-Bertolotti2014]. Although inner speech supports many cognitive abilities, its dysfunctions are similarly numerous and diverse. For instance, auditory verbal hallucinations (i.e., intrusive and agency-less inner voices) or obsessional thoughts can be considered as occurrences of dysfunctional inner speech [@Perrone-Bertolotti2014]. In the present article, we focus on rumination, a form of repetitive negative thinking [@ehring_repetitive_2008] than can be broadly defined as unconstructive repetitive thinking about past events and current mood states [@Martin].
-
-<!--
-This inner speech can take the form of a monologue or the form of a dialogue, can be expressed in a more or less abbreviated format and can be triggered either automatically (i.e., without intention) or intentionnally. 
--->
+The ability to talk to oneself silently is a central ability that supports many higher cognitive functions such as remembering, planning, task-switching or problem-solving [for review, see @alderson-day_inner_2015;@Perrone-Bertolotti2014]. Although inner speech supports many cognitive abilities, its dysfunctions are similarly numerous and diverse. For instance, auditory verbal hallucinations (which can be conceived of as intrusive and agency-defective inner voices) or obsessional thoughts can be considered as occurrences of dysfunctional inner speech [@Perrone-Bertolotti2014]. In the present article, we focus on rumination, a form of repetitive negative thinking [@ehring_repetitive_2008] than can be broadly defined as unconstructive repetitive thinking about past events and current mood states [@Martin].
 
 Rumination has been consistently related to increased risks of onset and maintenance of depressive episodes [for review, see @ehring_repetitive_2008;@Nolen-Hoeksema2008] and has been suggested to contribute in exacerbating current depression [e.g.,@Raedt2010]. A particularly maladaptive and harmful form of rumination is brooding, defined as self-critical pondering on one's current or past mood states and unachieved goals [@treynor_rumination_2003]. Brooding has been shown to uniquely contribute to the maladaptive consequences of self-focused repetitive thinking. Experimental studies have shown that induced rumination, in comparison to distraction or problem-solving, worsens (i.e., lengthens and/or intensifies) negative mood [e.g.,@Huffziger2009;@Philippot2008], impairs cognitive processes [e.g.,@Philippot2008;@whitmer_switching_2012] and increases the retrieval of overgeneral and negative autobiographic memories [e.g.,@Lyubomirsky1998;@watkins_rumination_2001].
 
-Overall, rumination is known to be a predominantly verbal process [@ehring_repetitive_2008;@goldwin_concreteness_2012;@goldwin_concreteness_2013;@mclaughlin_effects_2007] and has been proposed to be considered as such as a dysfunctional form of inner speech [e.g., @Perrone-Bertolotti2014]. On the other hand, research on the psychophysiology of inner speech revealed that the neural processes involved in overt speech and inner speech tend to be very similar. Indeed, both forms of speech involve a landscape of inferior frontal areas, motor and auditory areas [for an overview, see @loevenbruck_cognitive_2018]. This is coherent with the idea that some forms of inner speech could be considered as a kind of simulation of overt speech [e.g.,@postma_production_1996;@jeannerod_motor_2006], in the same way as imagined actions can be considered as the result of a simulation of the corresponding overt action [e.g., walking and imagined walking, @decety_timing_1989]. In other words, the motor simulation hypothesis suggests that the speech motor system should be involved as well during inner speech production.
+Overall, rumination is known to be a predominantly verbal process [@ehring_repetitive_2008;@goldwin_concreteness_2012;@goldwin_concreteness_2013;@mclaughlin_effects_2007] and has been proposed to be considered as such as a dysfunctional form of inner speech [e.g., @Perrone-Bertolotti2014]. Research on the psychophysiology of inner speech revealed that the neural processes involved in overt and covert speech tend to be very similar. Indeed, both forms of speech involve a landscape of inferior frontal areas, motor and auditory areas [for an overview, see @Perrone-Bertolotti2014;@loevenbruck_cognitive_2018]. This is coherent with the idea that some forms of inner speech could be considered as a kind of simulation of overt speech [e.g.,@postma_production_1996;@jeannerod_motor_2006], in the same way as imagined actions can be considered as the result of a simulation of the corresponding overt action [e.g., walking and imagined walking, @decety_timing_1989]. In other words, the motor simulation hypothesis suggests that the speech motor system should be involved during inner speech production.
 
-Accordingly, in the same way motor imagery is usually accompanied by peripheral muscular activation [for review, see @guillot_electromyographic_2010], inner speech production should also be accompanied by peripheral muscular activation in the speech muscles. This hypothesis has been corroborated by many studies showing peripheral muscular activation during inner speech production [e.g.,@livesay_covert_1996;@locke_subvocal_1970-1;@locke_subvocal_1970;@mcguigan_patterns_1989;@mcguigan_discriminative_1974;@sokolov_inner_1972], during auditory verbal hallucinations in patients with schizophrenia [@Rapin2013] and during induced rumination [@nalborczyk_orofacial_2017]. Some authors also recently demonstrated that it was possible to decode inner speech content based on surface electromyography signals [@kapur_alterego_2018], although other teams failed to obtain such results [e.g.,@meltzner_speech_2008].
+Accordingly, in the same way that motor imagery is usually accompanied by peripheral muscular activation [for a review, see @guillot_electromyographic_2010], inner speech production should also be associated with activation in the speech muscles. This hypothesis has been corroborated by many studies showing peripheral muscular activation during inner speech production [e.g.,@livesay_covert_1996;@locke_subvocal_1970-1;@locke_subvocal_1970;@mcguigan_patterns_1989;@mcguigan_discriminative_1974;@sokolov_inner_1972], during auditory verbal hallucinations in patients with schizophrenia [@Rapin2013] and during induced rumination [@nalborczyk_orofacial_2017]. Some authors also recently demonstrated that it was possible to decode inner speech content based on surface electromyography signals [@kapur_alterego_2018], although other teams failed to obtain such results [e.g.,@meltzner_speech_2008].
 
-The corollary hypothesis might be drawn, according to which the production of inner speech (and rumination) should be disrupted by a disruption of the speech motor system. This idea is supported by a large number of working memory studies using articulatory suppression to disrupt the subvocal rehearsal component of working memory, leading to impaired recall performance [e.g.,@baddeley_exploring_1984;@larsen_disruption_2003]. Although articulatory suppression usually refers to the overt and vocalised repetition of speech sounds (e.g., repeating a syllable or a word out loud), several studies have shown that concurrent subvocalisation or mechanical perturbation of the speech motor system (e.g., unvoiced or mouthed speech) was also interfering with speech planning [e.g.,@reisberg_enacted_1989;@smith_role_1995]. Interestingly, the effects of this motor interference are usually described as increasingly efficient depending on the degree of "enactment", ranging from silent mouthing to vocalised utterance [@reisberg_enacted_1989].
+The corollary hypothesis might be drawn, according to which the production of inner speech (and rumination) should be affected by a disruption of the speech motor system. This idea is supported by a large number of working memory studies using articulatory suppression to interfere with the subvocal rehearsal component of working memory, leading to impaired recall performance [e.g.,@baddeley_exploring_1984;@larsen_disruption_2003]. Although articulatory suppression usually refers to the overt and vocalised repetition of speech sounds (e.g., repeating a syllable or a word out loud), several studies have shown that concurrent subvocalisation or mechanical perturbation of the speech motor system (e.g., unvoiced or mouthed speech) could also interfere with speech planning [e.g.,@reisberg_enacted_1989;@smith_role_1995]. Interestingly, the effects of this motor interference are usually described as increasingly efficient depending on the degree of "enactment", ranging from silent mouthing to vocalised utterance [@reisberg_enacted_1989].
 
-The effects of articulatory suppression on inner speech production are also known to depend on other factors such as the complexity and the novelty of the inner speech content [@sokolov_inner_1972]. Similarly, the effects of articulatory suppression seem to vary according to the degree to which inner speech production has been automatised (e.g., rehearsing a poem learned by heart vs. rehearsing a just heard phone number). Therefore, inner speech might be more or less affected by mechanical constraints, depending on the type of inner speech to be produced. In other words, inner speech might vary in form along several dimensions, such as "enactment" (i.e., the degree of implication of the speech motor system) or "abbreviatedness" (i.e., the abstractness vs. concreteness of inner speech). These different dimensions and varieties of inner speech have been thoroughly studied by experience sampling methods and questionnaires [e.g.,@Hurlburt2011;@Hurlburt2013;@McCarthy-Jones2011] but also more recently using neuroimagery [@grandchamp_condensation_2019]. Therefore, a central question of the present article is to elucidate whether rumination is a form of inner speech that is affected by articulatory suppression.
+The effects of articulatory suppression on inner speech production are also known to depend on other factors such as the complexity and the novelty of the inner speech content [@sokolov_inner_1972]. Similarly, the effects of articulatory suppression seem to vary according to the degree to which inner speech production has been automatised [e.g., rehearsing novel vs. known content, @sokolov_inner_1972]. Therefore, inner speech might be more or less affected by mechanical constraints, depending on the type of inner speech to be produced. As suggested in the ConDialInt model presented in @grandchamp_condensation_2019, inner speech might vary in form along several dimensions, such as "enactment" (i.e., the degree of implication of the speech motor system), itself related to condensation (some forms are syntactically and lexically condensed, others include full syntactical, lexical, phonological and articulatory specification). These different dimensions and varieties of inner speech have been thoroughly studied by experience sampling methods and questionnaires [e.g.,@Hurlburt2011;@Hurlburt2013;@McCarthy-Jones2011] but also more recently using neuroimagery [@grandchamp_condensation_2019]. In light of these considerations, a central question of the present article is to elucidate whether rumination is a form of inner speech that is affected by articulatory suppression.
 
-<!--
-For instance, several studies have shown that chewing gum impairs short-term memory [@kozlov_gummed-up_2012]... @macken_functional_1995... effects of finger-tapping too [e.g.,@saito_what_1994;@saito_when_1997]... Whereas some authors have suggested that chewing gum improves cognitives abilities such as short-term memory, the overall available evidence is mitigated [for review, see @Allen2011;@miquel_systematic_2019;@Tucha2012]...
--->
-
-It has been highlighted that *earworms* (i.e., "involuntary musical imagery") might share some similarities with repetitive negative thoughts such as obsessional thoughts [see review in @Beaman2010]. In a recent study, these authors have shown that chewing a gum induced a reduction in the number of self-reported earworms episodes, in comparison to a resting condition [@Beaman2015]. However, these results should be interpreted cautiously, as the gum-chewing condition was compared to a resting (passive) condition and not to an active control condition (e.g., finger-tapping) in Experiment 1 and Experiment 2. The results of the third experiment reported in @Beaman2015, in which gum-chewing was compared to finger-tapping, suggest that gum-chewing might indeed be more efficient than finger-tapping in reducing the number of self-reported earworms episodes. However, it should be noted that these results contradict several previous results [e.g.,@kozlov_gummed-up_2012] and should therefore be interpreted as suggestive.
+It has been highlighted that *earworms* (i.e., "involuntary musical imagery") might share some similarities with repetitive negative thoughts such as obsessional thoughts [see a review in @Beaman2010]. In a recent study, Beaman and colleagues have shown that chewing a gum induced a reduction in the number of self-reported earworms episodes, in comparison to a resting condition [@Beaman2015]. However, these results should be interpreted cautiously, as the gum-chewing condition was compared to a resting (passive) condition and not to an active control condition (e.g., finger-tapping) in Experiment 1 and Experiment 2. The results of the third experiment reported in @Beaman2015, in which gum-chewing was compared to finger-tapping, suggest that gum-chewing might indeed be more efficient than finger-tapping in reducing the number of self-reported earworms episodes. However, it should be noted that these results contradict several previous results [e.g.,@kozlov_gummed-up_2012] and should therefore be interpreted as suggestive.
 
 To the best of our knowledge, only one study investigated the effects of a perturbation of the speech motor system on verbal repetitive negative thinking [@rapee_utilisation_1993]. This study revealed a "marginally significant" decrease in worry-related thoughts following an articulatory suppression. In the same vein, we recently carried out a study in which we compared the effects of an articulatory suppression (silent mouthing) to the effects of finger-tapping following a rumination induction [@nalborczyk_articulatory_2018]. The results of this study revealed, as in @rapee_utilisation_1993, a marginally superior effect of articulatory suppression (compared to finger-tapping) in reducing self-reported state rumination. However, it was not clear whether this effect was due to articulatory suppression per se or to extraneous factors such as baseline differences [see discussion in @nalborczyk_articulatory_2018].
 
@@ -97,11 +89,11 @@ The thinking-style induction was adapted from @grol_effects_2015 and consisted i
 
 #### Articulatory suppression
 
-In the articulatory suppression condition, participants were asked to open an opaque box (disposed aside from the computer screen) in which they found chewing gums^[These gums were chosen to be as neutral and usual as possible. More precisely, we used sugar-free and allergenic-free mint-flavoured gums.]. They were then asked to chew the gum in a "sustained but natural way" (in order to avoid too much interruption) during the next 5 minutes. In the finger-tapping condition, participants were asked to tap with the index of their non-dominant (i.e., left) arm at a "sustained but natural" pace for the next 5 minutes. In both conditions, participants were also asked to "continue to think about the car-accident situation and the following prompts".
+In the articulatory suppression condition, participants were asked to open an opaque box (disposed aside from the computer screen) in which they found chewing gums.^[These gums were chosen to be as neutral and usual as possible. More precisely, we used sugar-free and allergenic-free mint-flavoured gums.] They were then asked to chew the gum in a "sustained but natural way" (in order to avoid too much interruption) during the next 5 minutes. In the finger-tapping condition, participants were asked to tap with the index of their non-dominant (i.e., usually left) arm at a "sustained but natural" pace for the next 5 minutes. In both conditions, participants were also asked to "continue to think about the car-accident situation and the following prompts".
 
 ### Procedure
 
-Upon arriving at the laboratory, participants were asked whether they had recently been involved in a traffic accident. No participant was excluded on this basis. Participants then completed the BDI-II-NL questionnaire. No participant was excluded on the basis of a BDI-II-NL score greater than 29. Afterwards, participants were given a brief verbal overview of the experiment by the experimenter, before the experimenter definitely leaves the room. The participant then started the experiment on a computer. The experiment was programmed with the OpenSesame software program [@mathot_opensesame_2012].
+Upon arriving at the laboratory, participants were asked whether they had recently been involved in a traffic accident. No participant was excluded on this basis. Participants then completed the BDI-II-NL questionnaire. No participant was excluded on the basis of a BDI-II-NL score greater than 29. Afterwards, participants were given a brief verbal overview of the experiment by the experimenter, before the experimenter definitely left the room. The participant then started the experiment on a computer. The experiment was programmed with the OpenSesame software program [@mathot_opensesame_2012].
 
 After filling-in the consent form, participants watched a series of short (around 30s each) neutral video clips for a total duration of 5mn in order to neutralise pre-existing mood differences between participants [@marchetti_brief_2018;@samson_eliciting_2015]. Then, participants filled-in baseline measurements of state rumination (BSRI) and state affects (PANAS). Afterwards, participants went through either a rumination or a problem-solving thinking induction, as described previously. Following this induction, participants filled-in again the BSRI questionnaire to check whether the rumination induction was successful in inducing rumination. Participants in each group were then randomly allocated to either a 5-min articulatory suppression condition (gum-chewing) or a 5-min finger-tapping condition, resulting in four groups of participants. Following the motor activity, participants filled-in again both the BSRI and the PANAS questionnaires. Then, participants filled-in the RRS questionnaire to assess their propensity to ruminate in daily life.
 
@@ -176,7 +168,7 @@ df %>%
     group_by(thinking_mode, motor_activity) %>%
     summarise(sample_size = n_distinct(participant) ) %>%
     apa_table(
-        placement = "H",
+        placement = "ht",
         align = c("l", "l", "c"),
         caption = "Current sample size per group.",
         small = FALSE,
@@ -373,7 +365,7 @@ To examine the efficiency of the induction procedure (i.e., the effects of time,
 ```{r compexp1, results = "asis"}
 apa_table(
     WAIC_table_induction,
-    placement = "H",
+    placement = "ht",
     align = c("l", "c", "c", "c", "c"),
     caption = "Comparison of models, ordered by WAIC relative to the best model (i.e., the model with the lowest WAIC).",
     note = "$pWAIC$ is the number of effective parameters in the model. $Int$ = Intercept, $Ind$ = Induction, $RRSbro$ = RRSbrooding, $BDI$ = BDI-II score. All models include a varying intercept by participant.",
@@ -406,7 +398,7 @@ changeSciNot <- function (n) {
 
 apa_table(
     parameters1 %>% mutate(BF10 = changeSciNot(BF10) ),
-    placement = "H",
+    placement = "ht",
     align = c("l", "c", "c", "c", "c", "c", "c"),
     caption = "Coefficient estimates, standard errors (SE), 95% CrI (Lower, Upper), Rhat, and Bayes factor (BF10) for the best model.",
     note = "As all predictors were centered to the mean for analysis, these coefficients approximate coefficients from simpler models.",
@@ -451,7 +443,7 @@ parameters_interaction <-
 
 apa_table(
     parameters_interaction %>% mutate(BF10 = changeSciNot(BF10) ),
-    placement = "H",
+    placement = "ht",
     align = c("l", "c", "c", "c", "c", "c", "c"),
     caption = "Coefficient estimates, standard errors (SE), 95% CrI (Lower, Upper), Rhat, and Bayes factor (BF10) for the model including an interaction between session and thinking-style.",
     note = "As all predictors were centered to the mean for analysis, these coefficients approximate coefficients from simpler models.",
@@ -468,7 +460,7 @@ apa_table(
     )
 ```
 
-This analysis revealed that both the thinking-style (i.e., rumination vs. problem-solving) and the interaction between time and thinking-style have a negligible effect on self-reported state rumination (`r glue_data(parameters_interaction %>% data.frame %>% dplyr::filter(Term == "Session x Thinking mode"), "$\\beta$ = {Estimate}, 95% CrI [{Lower}, {Upper}], $BF10$ = {BF10}")`). In other words, the rumination induction was not associated with more self-reported state rumination than the problem-solving induction (although more rumination was reported after induction than before on average).
+This analysis revealed that both the thinking-style (i.e., rumination vs. problem-solving) and the interaction between time and thinking-style have a negligible effect on self-reported state rumination (`r glue_data(parameters_interaction %>% data.frame %>% dplyr::filter(Term == "Session x Thinking mode"), "$\\beta$ = {Estimate}, 95% CrI [{Lower}, {Upper}], $BF10$ = {BF10}")`). In other words, contrary to our expectations, the rumination induction was not associated with more self-reported state rumination than the problem-solving induction (although more rumination was reported after induction than before on average).
 
 ### Articulatory suppression effects
 
@@ -627,7 +619,7 @@ We then examined the effect of the two motor tasks (gum-chewing vs. finger-tappi
 ```{r compexp2, results = "asis"}
 apa_table(
     WAIC_table_motor,
-    placement = "H",
+    placement = "ht",
     align = c("l", "c", "c", "c", "c"),
     caption = "Comparison of models, ordered by WAIC relative to the best model (i.e., the model with the lowest WAIC).",
     note = "$pWAIC$ is the number of effective parameters in the model. $Int$ = Intercept, $Ind$ = Induction, $RRSbro$ = RRSbrooding, $BDI$ = BDI-II score. All models include a varying intercept by participant.",
@@ -646,7 +638,7 @@ However, because we are interested in estimating the effect of each predictor (a
 ```{r paramexp2, results = "asis"}
 apa_table(
     parameters2 %>% mutate(BF10 = changeSciNot(BF10) ),
-    placement = "H",
+    placement = "ht",
     align = c("l", "c", "c", "c", "c", "c", "c"),
     caption = "Coefficient estimates, standard errors (SE), 95% CrI (Lower, Upper), Rhat and Bayes factor (BF10) for the best model.",
     note = "As all predictors were centered to the mean for analysis, these coefficients approximate coefficients from simpler models.",
@@ -1018,7 +1010,7 @@ eff_size_bestmodel_motor_panas <- bayes_R2(M6_motor_panas)
 ```{r compexp2panas, results = "asis"}
 apa_table(
     WAIC_table_motor_panas,
-    placement = "H",
+    placement = "ht",
     align = c("l", "c", "c", "c", "c"),
     caption = "Comparison of models, ordered by WAIC relative to the best model (i.e., the model with the lowest WAIC).",
     note = "$pWAIC$ is the number of effective parameters in the model. $Int$ = Intercept, $Ind$ = Induction, $RRSbro$ = RRSbrooding, $BDI$ = BDI-II score. All models include a varying intercept by participant.",
@@ -1037,7 +1029,7 @@ However, because we are interested in estimating the effect of each predictor (a
 ```{r paramexp2panas, results = "asis"}
 apa_table(
     parameters_panas %>% mutate(BF10 = changeSciNot(BF10) ),
-    placement = "H",
+    placement = "ht",
     align = c("l", "c", "c", "c", "c", "c", "c"),
     caption = "Coefficient estimates, standard errors (SE), 95% CrI (Lower, Upper), Rhat, and Bayes factor (BF10) for the best model.",
     note = "As all predictors were centered to the mean for analysis, these coefficients approximate coefficients from simpler models.",
@@ -1053,7 +1045,7 @@ apa_table(
 
 ## Discussion
 
-The discussion section will be completed once data will be fully gathered and analysed.
+The discussion section will be completed once data are fully gathered and analysed.
 
 ## Supplementary materials {#supp}
 

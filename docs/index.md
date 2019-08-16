@@ -12,7 +12,6 @@ lof: false # deactivating the default list of figures
 
 link-citations: yes
 bibliography: [bib/thesis.bib, bib/packages.bib]
-#nocite: @ito_control_2008
 ---
 
 

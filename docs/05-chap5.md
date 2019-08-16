@@ -68,7 +68,7 @@ The experiment was video-monitored using a Sony HDR-CX240E video camera to track
 
 We selected ten rounded and ten spread bi-syllabic nonwords (see Table \@ref(tab:words)). Each class of nonwords was specifically designed to either induce a greater activation of the lip muscle (rounded items) or a greater activation of the zygomaticus muscle (spread items). Rounded items consisted in the repetition of a syllable containing a bilabial consonant followed by a rounded vowel, whereas spread items consisted in the repetition of a syllable containing a lingual consonant followed by a spread vowel.
 
-\begin{table}[H]
+\begin{table}[ht]
 \begin{center}
 \begin{threeparttable}
 \caption{\label{tab:words}List of bisyllabic nonwords used in the test session.}
@@ -110,7 +110,7 @@ After pre-processing and artefact rejection, we computed the by-trial average am
 
 ### Data analysis
 
-Statistical analyses were conducted using `R` version 3.5.3 [@R-base], and are reported with the `papaja` [@R-papaja] and `knitr` [@R-knitr] packages. To assess the effects of the condition and the class of nonwords on the standardised EMG amplitude, we analysed these data using *Condition* (3 modalities: speech, inner speech, and listening) and *Class* of nonwords (2 modalities, rounded and spread, contrast-coded) as within-subject categorical predictors, and the standardised EMG amplitude as a dependent variable in a multivariate (i.e., with multiple outcomes) Bayesian multilevel linear model (BMLM).^[An introduction to Bayesian statistics is outside the scope of this paper. However, the interested reader is referred to @nalborczyk_introduction_2019, for an introduction to Bayesian multilevel modelling using the `brms` package.] In order to take into account the dependencies between repeated observations by participant, we also included in this model a varying intercept by participant. Contrary to what we pre-registered, we used a multivariate model (instead of separate models by muscle). This allowed us to estimate the correlation between each pair of muscles. Models were fitted with the `brms` package [@R-brms] and using weakly informative priors (see the [supplementary materials](#suppCh5) for code details). Two Markov Chain Monte-Carlo (MCMC) chains were run for each model to approximate the posterior distribution, including each 5.000 iterations and a warmup of 2.000 iterations. Posterior convergence was assessed examining trace plots as well as the Gelman-Rubin statistic $\hat{R}$. Constant effect estimates were summarised via their posterior mean and 95% credible interval (CrI), where a credible interval can be considered as the Bayesian analogue of a classical confidence interval. When applicable, we also report Bayes factors (BFs), computed using the Savage-Dickey method, which consists in taking the ratio of the posterior density at the point of interest divided by the prior density at that point. These BFs can be interpreted as an updating factor, from prior knowledge (what we knew before seeing the data) to posterior knowledge (what we know after seeing the data).
+Statistical analyses were conducted using `R` version 3.5.3 [@R-base], and are reported with the `papaja` [@R-papaja] and `knitr` [@R-knitr] packages. To assess the effects of the condition and the class of nonwords on the standardised EMG amplitude, we analysed these data using *Condition* (3 modalities: speech, inner speech, and listening) and *Class* of nonwords (2 modalities, rounded and spread, contrast-coded) as within-subject categorical predictors, and the standardised EMG amplitude as a dependent variable in a multivariate (i.e., with multiple outcomes) Bayesian multilevel linear model (BMLM).^[An introduction to Bayesian statistics is outside the scope of this paper. However, the interested reader is referred to @nalborczyk_introduction_2019, for an introduction to Bayesian multilevel modelling using the `brms` package.] In order to take into account the dependencies between repeated observations by participant, we also included in this model a varying intercept by participant. Contrary to what we pre-registered, we used a multivariate model (instead of separate models by muscle). This allowed us to estimate the correlation between each pair of muscles. Models were fitted with the `brms` package [@R-brms] and using weakly informative priors (see the [supplementary materials](#suppCh5) for code details). Two Markov Chain Monte-Carlo (MCMC) were run for each model to approximate the posterior distribution, including each 5.000 iterations and a warmup of 2.000 iterations. Posterior convergence was assessed examining trace plots as well as the Gelman-Rubin statistic $\hat{R}$. Constant effect estimates were summarised via their posterior mean and 95% credible interval (CrI), where a credible interval can be considered as the Bayesian analogue of a classical confidence interval. When applicable, we also report Bayes factors (BFs), computed using the Savage-Dickey method, which consists in taking the ratio of the posterior density at the point of interest divided by the prior density at that point. These BFs can be interpreted as an updating factor, from prior knowledge (what we knew before seeing the data) to posterior knowledge (what we know after seeing the data).
 
 ## Results
 
@@ -118,15 +118,15 @@ The *Results* section is divided into two parts. First, we present results from 
 
 To foreshadow the results, we did not observe such a clear dissociation between the EMG activity of the OOI and the ZYG muscles, neither in the inner speech condition nor in the overt speech condition. Contrary to theoretical expectations based on phonetics and speech production theory [e.g.,@fromkin_neuro-muscular_1966;@ladefoged_course_2006;@lieberman_speech_1988;@zemlin_speech_1968], the activity of both muscles was of higher amplitude for the pronunciation of rounded nonwords (as compared to spread nonwords) during overt speech production. Additionally, the EMG amplitude on both muscles of interest was similar during the inner production (or listening) of the two classes of nonwords. However, in the [exploratory analyses](#exploratory) section, we report results from supervised machine learning algorithms (classification using random forests), showing a reasonable accuracy to classify EMG signals according to the class of nonwords during overt speech production. This strategy was however unsuccessful for the inner speech and the listening conditions.
 
-Before moving to the statistical results, we represent the distribution of the whole dataset, by class, by condition and by muscle for the two main muscles of interest (OOI and ZYG) in Figure \@ref(fig:generalplot). More precisely, the first row of this figure represents the distribution of the standardised EMG scores in the inner speech condition, the second row depicts the distribution of these scores in the listening condition, whereas the third row depicts the distribution of the standardised EMG scores in the overt speech condition. The first column depicts the distribution of the standardised EMG scores recorded over the OOI muscle whereas the second one represents the distribution of the standardised EMG scores recorded over the ZYG muscle. Each individual data point is represented as a vertical bar along the x-axis of each panel whereas the vertical coloured line represents the class-specific median. Additionally, a vertical dashed line is plotted at zero, which represents the baseline level. Thus, a positive value on the x-axis represents EMG standardised scores that are higher than baseline.^[We also created a `shiny` application [@R-shiny] allowing for further visual exploration of the data by muscle, by condition, and by participant, in the 3D space formed by three (to be chosen) muscles. This application is available online (https://barelysignificant.shinyapps.io/3d_plotly/) and the associated code is available in the OSF repository ([https://osf.io/czer4](https://osf.io/czer4)).]
+Before moving to the statistical results, we represent the distribution of the whole dataset, by class, by condition and by muscle for the two main muscles of interest (OOI and ZYG) in Figure \@ref(fig:generalplotCH5). More precisely, the first row of this figure represents the distribution of the standardised EMG scores in the inner speech condition, the second row depicts the distribution of these scores in the listening condition, whereas the third row depicts the distribution of the standardised EMG scores in the overt speech condition. The first column depicts the distribution of the standardised EMG scores recorded over the OOI muscle whereas the second one represents the distribution of the standardised EMG scores recorded over the ZYG muscle. Each individual data point is represented as a vertical bar along the x-axis of each panel whereas the vertical coloured line represents the class-specific median. Additionally, a vertical dashed line is plotted at zero, which represents the baseline level. Thus, a positive value on the x-axis represents EMG standardised scores that are higher than baseline.^[We also created a `shiny` application [@R-shiny] allowing for further visual exploration of the data by muscle, by condition, and by participant, in the 3D space formed by three (to be chosen) muscles. This application is available online (https://barelysignificant.shinyapps.io/3d_plotly/) and the associated code is available in the OSF repository ([https://osf.io/czer4](https://osf.io/czer4)).]
 
-\begin{figure}[ht]
+\begin{figure}[H]
 
-{\centering \includegraphics[width=1\linewidth]{05-chap5_files/figure-latex/generalplot-1} 
+{\centering \includegraphics[width=1\linewidth]{05-chap5_files/figure-latex/generalplotCH5-1} 
 
 }
 
-\caption{Distribution of standardised EMG scores by class and by muscle. The first row corresponds to the inner speech condition, the second one to the listening condition, and the third one to the overt speech condition. The first column depicts the EMG amplitude recorded over the OOI muscle while the second column represents the EMG amplitude recorded over the ZYG muscle. Each individual data point is represented as a vertical bar along the x-axis. The vertical coloured line represents the by-class median.}(\#fig:generalplot)
+\caption{Distribution of standardised EMG scores by class and by muscle. The first row corresponds to the inner speech condition, the second one to the listening condition, and the third one to the overt speech condition. The first column depicts the EMG amplitude recorded over the OOI muscle while the second column represents the EMG amplitude recorded over the ZYG muscle. Each individual data point is represented as a vertical bar along the x-axis. The vertical coloured line represents the by-class median.}(\#fig:generalplotCH5)
 \end{figure}
 
 ### Confirmatory (preregistered) analyses
@@ -137,7 +137,7 @@ We then compared the standardised EMG amplitude $\delta$ for each muscle in each
 
 
 
-\begin{table}[H]
+\begin{table}[ht]
 \begin{center}
 \begin{threeparttable}
 \caption{\label{tab:outputbmod1CH5}Estimates from the Gaussian BMLM concerning the OOI and the ZYG.}
@@ -174,11 +174,11 @@ of nonwords in each condition (i.e., the interaction effect). The 'Lower' and 'U
 \end{center}
 \end{table}
 
-The results of the Bayesian Gaussian multivariate model are summarised in Table \@ref(tab:outputbmod1CH5). This table reports the estimated average EMG amplitude in each condition and the corresponding BF.^[As they are not the main focus of interest here and for the sake of clarity, descriptive results for the other two facial muscles and for the forearm muscle are reported in the supplementary materials.] This analysis revealed that the EMG amplitude of the OOI was higher than baseline (the standardised score was above zero) in every condition whereas it was only the case in the overt speech condition for the ZYG. Moreover, in all conditions, the EMG amplitude of the ZYG was lower than that of the OOI. Crucially, we did not observe the hypothesised difference according to the class of nonwords on the OOI during inner speech production ($\beta$ = 0.071, 95% CrI [-0.202, 0.344], BF~01~ = 64.447) nor on the ZYG ($\beta$ = 0.005, 95% CrI [-0.032, 0.04], BF~01~ = 532.811).
+The results of the Bayesian Gaussian multivariate model are summarised in Table \@ref(tab:outputbmod1CH5). This table reports the estimated average EMG amplitude in each condition and the corresponding BF.^[As they are not the main focus of interest here and for the sake of clarity, descriptive results for the other two facial muscles and for the forearm muscle are reported in the [supplementary materials](#suppCh5).] This analysis revealed that the EMG amplitude of the OOI was higher than baseline (the standardised score was above zero) in every condition whereas it was only the case in the overt speech condition for the ZYG. Moreover, in all conditions, the EMG amplitude of the ZYG was lower than that of the OOI. Crucially, we did not observe the hypothesised difference according to the class of nonwords on the OOI during inner speech production ($\beta$ = 0.071, 95% CrI [-0.202, 0.344], BF~01~ = 64.447) nor on the ZYG ($\beta$ = 0.005, 95% CrI [-0.032, 0.04], BF~01~ = 532.811).
 
 Figure \@ref(fig:predbmod1CH5) depicts these results by representing the distribution of the raw data (coloured dots) along with the predictions from this model. The black dots and vertical intervals represent the predicted mean and associated 95% credible interval for each class of non-word, each condition and for the OOI and the ZYG. Coherently with Table \@ref(tab:outputbmod1CH5), this figure shows that the fitted model predicts no noticeable differences between the two classes of non-words in any condition for the OOI muscle. However, it predicts a higher average EMG amplitude associated with the rounded item as compared to the spread items in the overt speech condition for the ZYG muscle.
 
-\begin{figure}[ht]
+\begin{figure}[H]
 
 {\centering \includegraphics[width=1\linewidth]{05-chap5_files/figure-latex/predbmod1CH5-1} 
 
@@ -189,7 +189,7 @@ Figure \@ref(fig:predbmod1CH5) depicts these results by representing the distrib
 
 Before proceeding further with the interpretation of the results, it is essential to check the quality of this first model. A useful diagnostic of the model's predictive abilities is known as *posterior predictive checking* (PPC) and consists in comparing observed data to data simulated from the posterior distribution [e.g.,@gelman_bayesian_2013]. The idea behind PPC is that a good model should be able to generate data that resemble the observed data [@gabry_visualization_2019]. In this vein, Figure \@ref(fig:ppcbmod1CH5) represents the distribution of the whole dataset (across all participants and conditions) by muscle (the dark blue line) along with the distribution of hypothetical datasets generated from the posterior distribution of the model (the light blue lines). As can be seen from this Figure, the distributions of the data generated from the model differ considerably from the distribution of the observed data. Therefore, in the next section, we turn to a more appropriate model for these data.
 
-\begin{figure}[ht]
+\begin{figure}[H]
 
 {\centering \includegraphics[width=1\linewidth]{05-chap5_files/figure-latex/ppcbmod1CH5-1} 
 
@@ -200,11 +200,11 @@ Before proceeding further with the interpretation of the results, it is essentia
 
 #### Bayesian multivariate multilevel distributional Skew-Normal model
 
-Figure \@ref(fig:ppcbmod1CH5) reveals an important failure of the first model, as it fails to generate data that look like the data we have collected. More precisely, the collected data look right-skewed, as it usually happens with physiological measurements. To improve on the Gaussian model, we then assumed a Skew-normal distribution for the response variable (the standardised EMG amplitude $\delta$). The Skew-normal distribution is a generalisation of the Gaussian distribution with three parameters $\xi$ (xi), $\omega$ (omega), and $\alpha$ (alpha) for location, scale, and shape (skewness), respectively.^[NB: the Gaussian distribution can be considered a special case of the Skew-normal distribution when $\alpha = 1$.] In addition, we also improved the first model by turning it into a *distributional model*, that is, a model in which we can specify predictor terms for all parameters of the assumed response distribution [@burkner_advanced_2018]. More precisely, we used this approach to predict both the location, the scale, and the skewness of the Skew-Normal distribution (whereas the first model only allowed predicting the mean of a Gaussian distribution). As can been seen in Figure \@ref(fig:ppcbmod3CH5), this second model seems better than the first one at generating data that fit the observed data.
+Figure \@ref(fig:ppcbmod1CH5) reveals an important failure of the first model, as it fails to generate data that look like the data we have collected. More precisely, the collected data look right-skewed, as it usually happens with physiological measurements. To improve on the Gaussian model, we then assumed a Skew-Normal distribution for the response variable (the standardised EMG amplitude $\delta$). The Skew-Normal distribution is a generalisation of the Gaussian distribution with three parameters $\xi$ (xi), $\omega$ (omega), and $\alpha$ (alpha) for location, scale, and shape (skewness), respectively.^[NB: the Gaussian distribution can be considered a special case of the Skew-Normal distribution when $\alpha = 1$.] In addition, we also improved the first model by turning it into a *distributional model*, that is, a model in which we can specify predictor terms for all parameters of the assumed response distribution [@burkner_advanced_2018]. More precisely, we used this approach to predict both the location, the scale, and the skewness of the Skew-Normal distribution (whereas the first model only allowed predicting the mean of a Gaussian distribution). As can been seen in Figure \@ref(fig:ppcbmod3CH5), this second model seems better than the first one at generating data that fit the observed data.
 
 
 
-\begin{figure}[ht]
+\begin{figure}[H]
 
 {\centering \includegraphics[width=1\linewidth]{05-chap5_files/figure-latex/ppcbmod3CH5-1} 
 
@@ -213,7 +213,7 @@ Figure \@ref(fig:ppcbmod1CH5) reveals an important failure of the first model, a
 \caption{Posterior predictive checking for the Skew-Normal model concerning the OOI and ZYG muscles. The dark blue line represents the distribution of the raw data whereas light blue lines are dataset generated from the posterior distribution.}(\#fig:ppcbmod3CH5)
 \end{figure}
 
-\begin{table}[H]
+\begin{table}[ht]
 \begin{center}
 \begin{threeparttable}
 \caption{\label{tab:outputbmod3CH5}Estimates from the distributional Skew-Normal model concerning the OOI and the ZYG.}
@@ -252,7 +252,7 @@ of nonwords in each condition (i.e., the interaction effect). The 'Lower' and 'U
 
 The estimates of this second model are summarised in Table \@ref(tab:outputbmod3CH5) and Figure \@ref(fig:predbmod3CH5). According to this model, the EMG amplitude of the OOI was higher than baseline (the estimated standardised score was above zero) in every condition whereas, for the ZYG, it was only the case in the overt speech condition. We did not observe the hypothesised difference according to the class of nonwords during inner speech production, neither on the OOI  ($\beta$ = 0.025, 95% CrI [-0.014, 0.062], BF~01~ = 224.213) nor on the ZYG ($\beta$ = 0.004, 95% CrI [-0.007, 0.014], BF~01~ = 1494.149).
 
-\begin{figure}[ht]
+\begin{figure}[H]
 
 {\centering \includegraphics[width=1\linewidth]{05-chap5_files/figure-latex/predbmod3CH5-1} 
 
@@ -265,9 +265,9 @@ Predictions from this model are visually represented in Figure \@ref(fig:predbmo
 
 ### Exploratory (non-preregistered) analyses
 
-In the previous section, we tried to predict the average EMG amplitude by condition on each single muscle. Although this approach was appropriate to tackle our initial research question (i.e., can we distinguish muscle-specific EMG correlates of inner speech production?), it is not optimal to answer more general questions such as "can we predict the content of inner speech based on the available EMG data?". In Figure \@ref(fig:2Demg), we depict the distribution of the by-word averaged EMG scores in the 2D space formed by the OOI and the ZYG muscles. This figure reveals that although different nonwords produced in overt speech seem difficult to discriminate on the basis of a single muscle (cf. Figure \@ref(fig:generalplot)), it seems easier to discriminate them in the space formed by two muscles (here OOI and ZYG). More precisely, the two classes of nonwords seem to form two separate clusters in the overt speech condition, but these clusters do not seem discriminable in the inner speech or in the listening condition.
+In the previous section, we tried to predict the average EMG amplitude by condition on each single muscle. Although this approach was appropriate to tackle our initial research question (i.e., can we distinguish muscle-specific EMG correlates of inner speech production?), it is not optimal to answer more general questions such as "can we predict the content of inner speech based on the available EMG data?". In Figure \@ref(fig:2Demg), we depict the distribution of the by-word averaged EMG scores in the 2D space formed by the OOI and the ZYG muscles. This figure reveals that although different nonwords produced in overt speech seem difficult to discriminate on the basis of a single muscle (cf. Figure \@ref(fig:generalplotCH5)), it seems easier to discriminate them in the space formed by two muscles (here OOI and ZYG). More precisely, the two classes of nonwords seem to form two separate clusters in the overt speech condition, but these clusters do not seem discriminable in the inner speech or in the listening condition.
 
-\begin{figure}[ht]
+\begin{figure}[H]
 
 {\centering \includegraphics[width=1\linewidth]{05-chap5_files/figure-latex/2Demg-1} 
 
@@ -288,7 +288,7 @@ We first tried to predict the class of nonwords produced in overt speech, based 
 
 
 
-\begin{table}[H]
+\begin{table}[ht]
 \begin{center}
 \begin{threeparttable}
 \caption{\label{tab:CMovert}Confusion matrix with by-class error for the overt speech condition.}
@@ -298,17 +298,17 @@ We first tried to predict the class of nonwords produced in overt speech, based 
 \cmidrule(r){2-3}
 Prediction & \multicolumn{1}{c}{rounded} & \multicolumn{1}{c}{spread} & \multicolumn{1}{c}{class.error}\\
 \midrule
-rounded & 956 & 180 & 0.158\\
-spread & 211 & 949 & 0.182\\
+rounded & 917 & 163 & 0.151\\
+spread & 198 & 898 & 0.181\\
 \bottomrule
 \end{tabular}
 \end{threeparttable}
 \end{center}
 \end{table}
 
-This analysis revealed an overall classification accuracy of 0.862, 95% CI [0.831, 0.889]. The relative importance of each feature (i.e., each muscle) for prediction is represented in Figure \@ref(fig:VarImpOvert).
+This analysis revealed an overall classification accuracy of 0.847, 95% CI [0.814, 0.876]. The relative importance of each feature (i.e., each muscle) for prediction is represented in Figure \@ref(fig:VarImpOvert).
 
-\begin{figure}[ht]
+\begin{figure}[H]
 
 {\centering \includegraphics[width=1\linewidth]{05-chap5_files/figure-latex/VarImpOvert-1} 
 
@@ -325,7 +325,7 @@ We then applied the same strategy (the same algorithm) to the signals recorded i
 
 
 
-\begin{table}[H]
+\begin{table}[ht]
 \begin{center}
 \begin{threeparttable}
 \caption{\label{tab:CMinner}Confusion matrix with by-class classification error for the inner speech condition.}
@@ -335,19 +335,19 @@ We then applied the same strategy (the same algorithm) to the signals recorded i
 \cmidrule(r){2-3}
 Prediction & \multicolumn{1}{c}{rounded} & \multicolumn{1}{c}{spread} & \multicolumn{1}{c}{class.error}\\
 \midrule
-rounded & 470 & 540 & 0.535\\
-spread & 509 & 540 & 0.485\\
+rounded & 386 & 502 & 0.565\\
+spread & 473 & 454 & 0.510\\
 \bottomrule
 \end{tabular}
 \end{threeparttable}
 \end{center}
 \end{table}
 
-This analysis revealed an overall classification accuracy of 0.494, 95% CI [0.45, 0.538] in the inner speech condition, which indicates that the RF algorithm did not allow discriminating the two classes of nonwords better than random guessing.^[NB: as the classification accuracy in the inner speech and listening conditions was not better than chance, we do not report the relative importance of the predictors. Indeed, it would be difficult to interpret the importance of predictors for a classification task at which they do not perform better than chance.]
+This analysis revealed an overall classification accuracy of 0.472, 95% CI [0.426, 0.52] in the inner speech condition, which indicates that the RF algorithm did not allow discriminating the two classes of nonwords better than random guessing.^[NB: as the classification accuracy in the inner speech and listening conditions was not better than chance, we do not report the relative importance of the predictors. Indeed, it would be difficult to interpret the importance of predictors for a classification task at which they do not perform better than chance.]
 
 
 
-\begin{table}[H]
+\begin{table}[ht]
 \begin{center}
 \begin{threeparttable}
 \caption{\label{tab:CMlistening}Confusion matrix with by-class classification error for the listening condition.}
@@ -357,15 +357,15 @@ This analysis revealed an overall classification accuracy of 0.494, 95% CI [0.45
 \cmidrule(r){2-3}
 Prediction & \multicolumn{1}{c}{rounded} & \multicolumn{1}{c}{spread} & \multicolumn{1}{c}{class.error}\\
 \midrule
-rounded & 479 & 550 & 0.534\\
-spread & 540 & 475 & 0.532\\
+rounded & 426 & 499 & 0.539\\
+spread & 508 & 406 & 0.556\\
 \bottomrule
 \end{tabular}
 \end{threeparttable}
 \end{center}
 \end{table}
 
-This analysis similarly revealed an overall classification accuracy of 0.496, 95% CI [0.452, 0.54] in the listening condition.
+This analysis similarly revealed an overall classification accuracy of 0.46, 95% CI [0.413, 0.507] in the listening condition.
 
 ## Discussion
 
@@ -379,7 +379,7 @@ To answer the first question, we began by comparing our results to results obtai
 
 
 
-\begin{table}[H]
+\begin{table}[ht]
 \begin{center}
 \begin{threeparttable}
 \caption{\label{tab:eskes}Standardised EMG amplitude recorded over the OOI and the ZYG during overt speech production of rounded versus spread vowels in Eskes et al. (2017).}
@@ -405,7 +405,7 @@ We notice that @eskes_predicting_2017 have indeed observed the dissociation we i
 
 With regards to inner speech, our results do not support theoretical predictions of the *motor simulation view*, according to which it should be possible to discriminate classes of nonwords produced in inner speech based on EMG signals. Whereas this outcome is consistent with some recent results [@meltzner_speech_2008],^[The authors of this study were able to obtain high classification accuracies during both overt and mouthed speech but not during covert speech, despite the fact that they used eleven sensors on the neck and the lower face. However, words were only repeated three times, which might have lead to poor sensitivity. Interestingly and despite the lack of peripheral muscular activation during covert speech, they have observed similar respiratory activity between overt and covert speech, echoing previous findings [e.g.,@conrad_speech_1979].] it also stands in sharp contrast with classical results in the field [e.g.,@mcguigan_patterns_1989;@mcguigan_discriminative_1974] as well as more recent developments. For instance, @kapur_alterego_2018 developed a wearable device composed of seven surface EMG sensors that can attain a 92% median classification accuracy in discriminating internally vocalised digits. There are a few crucial differences between @kapur_alterego_2018's work and ours that stand as good candidates to explain the discrepancies between our results. First, the strategy adopted to position the sensors was radically different. Following guidelines from the field of psychophysiology, our strategy was to position sensors precisely over the facial muscles of interest, aligned with the direction of the muscle fibers and in theoretically optimal positions to record activity of this muscle while reducing cross-talk. However, precisely because of pervasive cross-talk in facial surface EMG recordings, this strategy, whereas maximising the probability of recording activity from a given single muscle, was also (as a result) reducing the probability of recording activity from potentially speech-relevant neighbour muscles. Therefore, this strategy might work sub-optimally when the goal of the experiment is to extract the maximum amount of (relevant) EMG information to discriminate inner speech content. However, this problem might be mitigated by using more sensors and a more lenient sensor-positioning approach. Whereas we recorded the EMG amplitude over only two lower facial muscles (OOI and ZIG), @kapur_alterego_2018 analysed EMG data from seven different sensors, whose position and number was defined iteratively in order to maximise the classification accuracy. In other words, the parameters of the experiment were iteratively optimised to maximise a certain outcome (classification accuracy). This strategy is radically different from the classical approach in experimental and cognitive psychology where experimental conditions are defined to test theoretically derived hypotheses. Whereas the first approach is arguably more efficient at solving a particular problem at hand, the second approach might be more efficient in tackling theoretical questions. For instance, a recent study reported a greater EMG amplitude of laryngeal and lip muscles during auditory verbal tasks (covert singing) than during visual imagery tasks [@pruitt_covert_2018]. By coupling EMG recording with demographic and psychological measures, they were able to show that these correlates were related to the level of accuracy in singing, thus shedding light upon the nature and functions of peripheral muscular activity during covert singing.
 
-Putting aside considerations related to methodological aspects of the present study, these results do not corroborate the *motor simulation view* of inner speech production. Instead, it seems to support the *abstraction view*, which postulates that inner speech results from the activation of abstract linguistic representations and does not engage the articulatory apparatus. However, individual differences in discriminability highlight that the abstractness of inner speech might be flexible, as suggested by @oppenheim_motor_2010. Indeed, although for most participants it was not possible to discriminate the content of inner speech, it was possible to discriminate between rounded and spread nonwords for two of them (S_15 and S_17). This suggests either that the extent to which inner speech production recruits the speech motor system might vary between individuals or that it might vary within individual depending on the properties of the ongoing task (these two suggestions are not mutually exclusive). For instance, we know from early research on the EMG correlates of inner speech that the average amplitude of these correlates tend to be higher when the task is more difficult [i.e., requires more effort, @sokolov_inner_1972]. As such, the extent to which inner speech production recruits the speech motor system could be moderated by manipulating the difficulty of the ongoing task. In addition, the electromyographic activity recorded during motor imagery could be modulated by the perspective taken in motor imagery. A distinction is made between first-person perspective or *internal imagery* (i.e., imagining an action as we would execute it) and third-person perspective or *external imagery* (i.e., imagining an action as an observer of this action), that may involve different neural processes [e.g.,@ruby_effect_2001]. It has been shown that a first-person perspective may result in greater EMG activity than motor imagery in a third-person perspective [@hale_effects_1982;@harris_effects_1986]. Whereas the perspective issue does not apply to inner speech production, we hypothesise that involvement of the speech motor system during inner speech production may be modulated by the specific instructions given to the participants. For instance, by instructing participants to focus on *inner speaking* (imagining speaking), instead of *inner hearing* (imagining hearing), and by asking them to focus on the kinaesthetic feelings related to speech acts (rather than on auditory percepts), we could expect to find a higher average EMG amplitude recorded over the speech muscles. In addition, by specifically asking the participants to mentally articulate the nonwords, as if they were dictating them to someone, rather than just read and visually scan them, we may expect stronger articulatory involvement.
+Putting aside considerations related to methodological aspects of the present study, these results do not corroborate the *motor simulation view* of inner speech production. Instead, it seems to support the *abstraction view*, which postulates that inner speech results from the activation of abstract linguistic representations and does not engage the articulatory apparatus. However, individual differences in discriminability highlight that the abstractness of inner speech might be flexible, as suggested by @oppenheim_motor_2010. Indeed, although for most participants it was not possible to discriminate the content of inner speech, it was possible to discriminate between rounded and spread nonwords for two of them (S_15 and S_17, cf. [supplementary materials](#suppCh5)). This suggests either that the extent to which inner speech production recruits the speech motor system might vary between individuals or that it might vary within individual depending on the properties of the ongoing task (these two suggestions are not mutually exclusive). For instance, we know from early research on the EMG correlates of inner speech that the average amplitude of these correlates tend to be higher when the task is more difficult [i.e., requires more effort, @sokolov_inner_1972]. As such, the extent to which inner speech production recruits the speech motor system could be moderated by manipulating the difficulty of the ongoing task. In addition, the electromyographic activity recorded during motor imagery could be modulated by the perspective taken in motor imagery. A distinction is made between first-person perspective or *internal imagery* (i.e., imagining an action as we would execute it) and third-person perspective or *external imagery* (i.e., imagining an action as an observer of this action), that may involve different neural processes [e.g.,@ruby_effect_2001]. It has been shown that a first-person perspective may result in greater EMG activity than motor imagery in a third-person perspective [@hale_effects_1982;@harris_effects_1986]. Whereas the perspective issue does not apply to inner speech production, we hypothesise that involvement of the speech motor system during inner speech production may be modulated by the specific instructions given to the participants. For instance, by instructing participants to focus on *inner speaking* (imagining speaking), instead of *inner hearing* (imagining hearing), and by asking them to focus on the kinaesthetic feelings related to speech acts (rather than on auditory percepts), we could expect to find a higher average EMG amplitude recorded over the speech muscles. In addition, by specifically asking the participants to mentally articulate the nonwords, as if they were dictating them to someone, rather than just read and visually scan them, we may expect stronger articulatory involvement.
 
 Of course, the current study and the above discussion should be interpreted with a few words of caution in mind. Although the number of observations reported in the present study is reasonable,^[For each class of nonwords, we collected around 6 x 10 = 60 observations by condition and by participant. For 25 participants and two classes of nonwords, this results in 25 (participants) x 120 (individual trials) x 3 (conditions) = 9000 observations. However, after rejecting trials with movement artefacts, we had 7285 observations in total.] the sensibility of the experiment could be improved by increasing the number of observations and/or by reducing two important sources of variation. More precisely, one could reduce the variance related to the item (the specific nonword being uttered) by selecting nonwords that are more similar to each other in the way they are uttered, by selecting less items or simpler items. Similarly, particular attention should be devoted to reducing inter-participant variability, which could be done by using more guided and specific instructions, as well as a longer training phase to familiarise the participant with the task.
 
@@ -429,7 +429,7 @@ This project was funded by the ANR project INNERSPEECH (grant number ANR-13-BSH2
 
 \begin{summary}{Summary of Chapter\getcurrentref{chapter}}
 
-In this chapter, we examined the reliability of our EMG measurements to detect peripheral muscular activity during inner speech production. To this end, we asked participants to produce two lists of nonwords, that were designed to induce either a strong activation of the lip muscles or a strong activation of the zygomaticus major muscle. We recorded the EMG amplitude of several facial muscles (including the orbicularis oris inferior and the zygomaticus major muscles) during the production of these nonwords in inner speech, overt speech, and during the listening of these nonwords. First, contrary to expectation, even in the overt mode, nonwords containing spread lip phonemes (e.g., /i/) did not result in more EMG activity in the zygomaticus major region than nonwords without spread phonemes. Similarly, nonwords with lip protrusion did not result in more EMG activity in the orbicularis inferior region than non-rounded nonwords. This finding suggest that surface EMG is not precise enough to obtain direct muscle activity. Based on previous results in the literature, we hypothesised that surface EMG may be used to discriminate the content (here, the class of nonword) produced in inner speech. However, an automatic classification revealed that although we were able to discriminate content produced in overt speech, we were not able to discriminate the content produced in inner speech based on surface EMG measurements. This result stands in contrast with previous historical results but also with more recent results obtained by other teams. However, crucial differences between other studies and ours include differences in the material used (e.g., surface vs. intramuscular recordings), the population (e.g., children vs. adults), or the general methodology (e.g., hypothesis testing vs. classification and optimisation). Despite this surprising result and the failure of the surface EMG methodology to "decode" the content of inner speech, the abundance of positive results in the literature still speaks in favour of the peripheral muscular components of inner speech and that it is possible to assess it using surface EMG. However, in order to avoid this potential limitation, in the second part of the present work, we shifted to another strategy to further examine the role of motor processes in rumination. More precisely, instead of recording peripheral muscular activation of induced rumination, in the next two chapters we try to directly interfere with the speech motor system to check whether this would affect verbal rumination.
+In this chapter, we examined the reliability of our EMG measurements to detect peripheral muscular activity during inner speech production. To this end, we asked participants to produce two lists of nonwords, that were designed to induce either a strong activation of the lip muscles or a strong activation of the zygomaticus major muscle. We recorded the EMG amplitude of several facial muscles (including the orbicularis oris inferior and the zygomaticus major muscles) during the production of these nonwords in inner speech, overt speech, and during the listening of these nonwords. First, contrary to expectations, even in the overt mode, nonwords containing spread lip phonemes (e.g., /i/) did not result in more EMG activity in the zygomaticus major region than nonwords without spread phonemes. Similarly, nonwords with lip protrusion did not result in more EMG activity in the orbicularis oris inferior region than non-rounded nonwords. This finding suggests that surface EMG is not precise enough to obtain direct muscle activity. Based on previous results in the literature, we hypothesised that surface EMG may be used to discriminate the content (here, the class of nonword) produced in inner speech. However, an automatic classification revealed that although we were able to discriminate content produced in overt speech, we were not able to discriminate the content produced in inner speech based on surface EMG measurements. This result stands in contrast with previous historical results but also with more recent results obtained by other teams. However, crucial differences between other studies and ours include differences in the material used (e.g., surface vs. intramuscular recordings), the population (e.g., children vs. adults), or the general methodology (e.g., hypothesis testing vs. classification and optimisation). Despite this surprising result and the failure of the surface EMG methodology to "decode" the content of inner speech, the abundance of positive results in the literature still speaks in favour of the peripheral muscular components of inner speech and that it is possible to assess it using surface EMG. However, in order to avoid this potential limitation, in the second part of the present work, we shifted to another strategy to further examine the role of motor processes in rumination. More precisely, instead of recording peripheral muscular activation of induced rumination, in the next two chapters we try to directly interfere with the speech motor system to check whether this would affect verbal rumination.
 
 \end{summary}
 

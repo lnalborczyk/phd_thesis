@@ -26,6 +26,7 @@
 
 \begin{longtable}{@{}p{2cm}@{}p{\dimexpr\textwidth-2cm\relax}@{}}
 
+\nomenclature{\textbf{AIC}}{Akaike Information Criterion}
 \nomenclature{\textbf{AVH}}{Auditory Verbal Hallucination}
 \nomenclature{\textbf{BSRI}}{Brief State Rumination Inventory}
 \nomenclature{\textbf{CERTS}}{Cambridge Exeter Repetitive Thought Scale}
@@ -33,13 +34,26 @@
 \nomenclature{\textbf{ECoG}}{Electrocorticography}
 \nomenclature{\textbf{EMG}}{Electromyography}
 \nomenclature{\textbf{HRV}}{Heart Rate Variability}
+\nomenclature{\textbf{ICC}}{Intra-Class Correlation}
+\nomenclature{\textbf{LOOIC}}{Leave-One-Out Information Criterion}
+\nomenclature{\textbf{MAP}}{Motor Action Potential}
+\nomenclature{\textbf{MCMC}}{Markov Chain Monte Carlo}
 \nomenclature{\textbf{MEP}}{Motor Evoked Potential}
-\nomenclature{\textbf{MTVT}}{Motor Theory of Voluntary Thinking}
+\nomenclature{\textbf{MLM}}{Multilevel Model}
 \nomenclature{\textbf{MST}}{Motor Simulation Theory}
+\nomenclature{\textbf{MTVT}}{Motor Theory of Voluntary Thinking}
+\nomenclature{\textbf{MUAP}}{Motor Unit Action Potential}
+\nomenclature{\textbf{MUAPT}}{Motor Unit Action Potential Train}
+\nomenclature{\textbf{PCH}}{Parsimonious Convergence Hypothesis}
+\nomenclature{\textbf{PPC}}{Posterior Predictive Checking}
 \nomenclature{\textbf{PPF}}{Predictive Processing Framework}
+\nomenclature{\textbf{PWS}}{Persons Who Stutter}
+\nomenclature{\textbf{ROPE}}{Region Of Practical Equivalence}
 \nomenclature{\textbf{RRS}}{Ruminative Response Scale}
 \nomenclature{\textbf{RSQ}}{Response Style Questionnaire}
+\nomenclature{\textbf{RST}}{Response Style Theory}
 \nomenclature{\textbf{VAS}}{Visual Analogue Scale}
+\nomenclature{\textbf{WAIC}}{Widely Applicable Information Criterion}
 
 \end{longtable}
 
