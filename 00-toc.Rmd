@@ -47,7 +47,6 @@
 \nomenclature{\textbf{PCH}}{Parsimonious Convergence Hypothesis}
 \nomenclature{\textbf{PPC}}{Posterior Predictive Checking}
 \nomenclature{\textbf{PPF}}{Predictive Processing Framework}
-\nomenclature{\textbf{PWS}}{Persons Who Stutter}
 \nomenclature{\textbf{ROPE}}{Region Of Practical Equivalence}
 \nomenclature{\textbf{RRS}}{Ruminative Response Scale}
 \nomenclature{\textbf{RSQ}}{Response Style Questionnaire}
