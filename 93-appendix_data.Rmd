@@ -1,0 +1,5 @@
+# Data storage fact sheets {#appendix-datastorage}
+
+```{r DSFS, echo = FALSE, engine = "bash", comment = ""}
+cat assets/dsfs.txt
+```

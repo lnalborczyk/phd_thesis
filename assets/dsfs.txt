@@ -1,0 +1,512 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Data Storage Fact Sheet - Chapter 3 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Orofacial electromyographic correlates of induced verbal rumination
+% Author: Ladislas Nalborczyk
+% Date: 27.08.2019
+
+1. Contact details
+===========================================================
+
+1a. Main researcher
+-----------------------------------------------------------
+
+- name: Ladislas Nalborczyk
+- address: Henri Dunantlaan 2, 9000 Ghent, Belgium
+- e-mail: ladislas.nalborczyk@gmail.com
+
+1b. Responsible Staff Member (ZAP)
+-----------------------------------------------------------
+
+- name: Prof. dr. Ernst H. W. Koster
+- address: Henri Dunantlaan 2, 9000 Ghent, Belgium
+- e-mail: Ernst.Koster@UGent.be
+
+If a response is not received when using the above contact details,
+please send an email to data.pp@ugent.be or contact Data Management,
+Faculty of Psychology and Educational Sciences, Henri Dunantlaan 2,
+9000 Ghent, Belgium.
+
+2. Information about the datasets to which this sheet applies
+===========================================================
+
+* Reference of the publication in which the datasets are reported:
+Nalborczyk, L., Perrone-Bertolotti, M., Baeyens, C., Grandchamp, R.,
+Polosan, M., Spinelli, E., ... Loevenbruck, H. (2017). Orofacial
+Electromyographic Correlates of Induced Verbal Rumination.
+Biological Psychology, 127, 53-63.
+https://dx.doi.org/ 10.1016/j.biopsycho.2017.04.013.
+
+* Which datasets in that publication does this sheet apply to?:
+All datasets reported in the article.
+
+3. Information about the files that have been stored
+===========================================================
+
+3a. Raw data
+-----------------------------------------------------------
+
+* Have the raw data been stored by the main researcher? [X] YES / [ ] NO
+
+If NO, please justify:
+
+* On which platform are the raw data stored?
+  - [X] researcher PC
+  - [ ] research group file server
+  - [ ] other (specify): informed consent files on paper
+
+* Who has direct access to the raw data
+(i.e., without intervention of another person)?
+  - [X] main researcher
+  - [X] responsible ZAP
+  - [ ] all members of the research group
+  - [ ] all members of UGent
+  - [X] other (specify): thesis supervisor at the partner university
+  (Dr. Hélène Loevenbruck at Univ. Grenoble Alpes)
+
+3b. Other files
+-----------------------------------------------------------
+
+* Which other files have been stored?
+  - [ ] file(s) describing the transition from raw data to reported results.
+  - [X] file(s) containing processed data. Specify: [data.csv]
+  - [X] file(s) containing analyses. Specify: [data_analysis.R]
+  - [ ] files(s) containing information about informed consent
+  - [ ] a file specifying legal and ethical provisions
+  - [ ] file(s) that describe the content of the stored files and how this
+  content should be interpreted. Specify: ...
+  - [ ] other files. Specify: ...
+
+* On which platform are these other files stored?
+  - [X] individual PC
+  - [ ] research group file server
+  - [X] other: Open Science Framework: https://osf.io/882te/
+
+* Who has direct access to these other files
+(i.e., without intervention of another person)?
+  - [X] main researcher
+  - [X] responsible ZAP
+  - [X] all members of the research group
+  - [X] all members of UGent
+  - [X] other (specify): everyone that has access to the OSF
+
+4. Reproduction
+===========================================================
+* Have the results been reproduced independently?: [ ] YES / [X] NO
+
+* If yes, by whom (add if multiple):
+   - name:
+   - address:
+   - affiliation:
+   - e-mail:
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Data Storage Fact Sheet - Chapter 4 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Dissociating facial electromyographic correlates of visual
+% and verbal induced rumination
+% Author: Ladislas Nalborczyk
+% Date: 27.08.2019
+
+1. Contact details
+===========================================================
+
+1a. Main researcher
+-----------------------------------------------------------
+
+- name: Ladislas Nalborczyk
+- address: Henri Dunantlaan 2, 9000 Ghent, Belgium
+- e-mail: ladislas.nalborczyk@gmail.com
+
+1b. Responsible Staff Member (ZAP)
+-----------------------------------------------------------
+
+- name: Prof. dr. Ernst H. W. Koster
+- address: Henri Dunantlaan 2, 9000 Ghent, Belgium
+- e-mail: Ernst.Koster@UGent.be
+
+If a response is not received when using the above contact details,
+please send an email to data.pp@ugent.be or contact Data Management,
+Faculty of Psychology and Educational Sciences, Henri Dunantlaan 2,
+9000 Ghent, Belgium.
+
+2. Information about the datasets to which this sheet applies
+===========================================================
+
+* Reference of the publication in which the datasets are reported:
+Nalborczyk, L., Banjac, S., Baeyens, C., Grandchamp, R., Koster,
+E.H.W., Perrone-Bertolotti, M., & Loevenbruck, H. (in preparation).
+Dissociating facial electromyographic correlates of visual and
+verbal induced rumination.
+
+* Which datasets in that publication does this sheet apply to?:
+All datasets reported in the article.
+
+3. Information about the files that have been stored
+===========================================================
+
+3a. Raw data
+-----------------------------------------------------------
+
+* Have the raw data been stored by the main researcher? [X] YES / [ ] NO
+
+If NO, please justify:
+
+* On which platform are the raw data stored?
+  - [X] researcher PC
+  - [ ] research group file server
+  - [ ] other (specify): informed consent files on paper
+
+* Who has direct access to the raw data
+(i.e., without intervention of another person)?
+  - [X] main researcher
+  - [X] responsible ZAP
+  - [ ] all members of the research group
+  - [ ] all members of UGent
+  - [X] other (specify): thesis supervisor at the partner university
+  (Dr. Hélène Loevenbruck at Univ. Grenoble Alpes)
+
+3b. Other files
+-----------------------------------------------------------
+
+* Which other files have been stored?
+  - [X] file(s) describing the transition from raw data to reported results.
+  Specify: [rumi_emg_2018.Rmd]
+  - [X] file(s) containing processed data. Specify: [data_merged.csv]
+  - [X] file(s) containing analyses. Specify: [rumi_emg_2018.Rmd]
+  - [ ] files(s) containing information about informed consent
+  - [ ] a file specifying legal and ethical provisions
+  - [X] file(s) that describe the content of the stored files and how this
+  content should be interpreted. Specify: [README.txt] and [CODEBOOK.txt]
+  - [ ] other files. Specify: ...
+
+* On which platform are these other files stored?
+  - [X] individual PC
+  - [ ] research group file server
+  - [X] other: Open Science Framework: https://osf.io/c9pag/
+
+* Who has direct access to these other files
+(i.e., without intervention of another person)?
+  - [X] main researcher
+  - [X] responsible ZAP
+  - [X] all members of the research group
+  - [X] all members of UGent
+  - [X] other (specify): everyone that has access to the OSF
+
+4. Reproduction
+===========================================================
+* Have the results been reproduced independently?: [ ] YES / [X] NO
+
+* If yes, by whom (add if multiple):
+   - name:
+   - address:
+   - affiliation:
+   - e-mail:
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Data Storage Fact Sheet - Chapter 5 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Can covertly produced rounded and spread features be
+% distinguished using surface electromyography?
+% Author: Ladislas Nalborczyk
+% Date: 27.08.2019
+
+1. Contact details
+===========================================================
+
+1a. Main researcher
+-----------------------------------------------------------
+
+- name: Ladislas Nalborczyk
+- address: Henri Dunantlaan 2, 9000 Ghent, Belgium
+- e-mail: ladislas.nalborczyk@gmail.com
+
+1b. Responsible Staff Member (ZAP)
+-----------------------------------------------------------
+
+- name: Prof. dr. Ernst H. W. Koster
+- address: Henri Dunantlaan 2, 9000 Ghent, Belgium
+- e-mail: Ernst.Koster@UGent.be
+
+If a response is not received when using the above contact details,
+please send an email to data.pp@ugent.be or contact Data Management,
+Faculty of Psychology and Educational Sciences, Henri Dunantlaan 2,
+9000 Ghent, Belgium.
+
+2. Information about the datasets to which this sheet applies
+===========================================================
+
+* Reference of the publication in which the datasets are reported:
+Nalborczyk, L., Grandchamp, R., Koster, E.H.W., Perrone-Bertolotti, M.,
+& Loevenbruck, H. (in preparation). Can covertly produced rounded
+and spread features be distinguished using surface electromyography?
+
+* Which datasets in that publication does this sheet apply to?:
+All datasets reported in the article.
+
+3. Information about the files that have been stored
+===========================================================
+
+3a. Raw data
+-----------------------------------------------------------
+
+* Have the raw data been stored by the main researcher? [X] YES / [ ] NO
+
+If NO, please justify:
+
+* On which platform are the raw data stored?
+  - [X] researcher PC
+  - [ ] research group file server
+  - [ ] other (specify): informed consent files on paper
+
+* Who has direct access to the raw data
+(i.e., without intervention of another person)?
+  - [X] main researcher
+  - [X] responsible ZAP
+  - [ ] all members of the research group
+  - [ ] all members of UGent
+  - [X] other (specify): thesis supervisor at the partner university
+  (Dr. Hélène Loevenbruck at Univ. Grenoble Alpes)
+
+3b. Other files
+-----------------------------------------------------------
+
+* Which other files have been stored?
+  - [ ] file(s) describing the transition from raw data to reported results.
+  - [X] file(s) containing processed data. Specify: [emg_data.csv]
+  - [X] file(s) containing analyses. Specify: [EMG2017.Rmd]
+  - [ ] files(s) containing information about informed consent
+  - [ ] a file specifying legal and ethical provisions
+  - [X] file(s) that describe the content of the stored files and how this
+  content should be interpreted. Specify: [README.md]
+  - [ ] other files. Specify: ...
+
+* On which platform are these other files stored?
+  - [X] individual PC
+  - [ ] research group file server
+  - [X] other: Open Science Framework: https://osf.io/czer4/
+
+* Who has direct access to these other files
+(i.e., without intervention of another person)?
+  - [X] main researcher
+  - [X] responsible ZAP
+  - [X] all members of the research group
+  - [X] all members of UGent
+  - [X] other (specify): everyone that has access to the OSF
+
+4. Reproduction
+===========================================================
+* Have the results been reproduced independently?: [ ] YES / [X] NO
+
+* If yes, by whom (add if multiple):
+   - name:
+   - address:
+   - affiliation:
+   - e-mail:
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Data Storage Fact Sheet - Chapter 6 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Articulatory suppression effects on induced rumination
+% Author: Ladislas Nalborczyk
+% Date: 27.08.2019
+
+1. Contact details
+===========================================================
+
+1a. Main researcher
+-----------------------------------------------------------
+
+- name: Ladislas Nalborczyk
+- address: Henri Dunantlaan 2, 9000 Ghent, Belgium
+- e-mail: ladislas.nalborczyk@gmail.com
+
+1b. Responsible Staff Member (ZAP)
+-----------------------------------------------------------
+
+- name: Prof. dr. Ernst H. W. Koster
+- address: Henri Dunantlaan 2, 9000 Ghent, Belgium
+- e-mail: Ernst.Koster@UGent.be
+
+If a response is not received when using the above contact details,
+please send an email to data.pp@ugent.be or contact Data Management,
+Faculty of Psychology and Educational Sciences, Henri Dunantlaan 2,
+9000 Ghent, Belgium.
+
+2. Information about the datasets to which this sheet applies
+===========================================================
+
+* Reference of the publication in which the datasets are reported:
+Nalborczyk, L., Perrone-Bertolotti, M., Baeyens, C., Grandchamp, R.,
+Spinelli, E., Koster, E.H.W., & Loevenbruck, H. (submitted).
+Articulatory suppression effects on induced rumination.
+
+* Which datasets in that publication does this sheet apply to?:
+All datasets reported in the article.
+
+3. Information about the files that have been stored
+===========================================================
+
+3a. Raw data
+-----------------------------------------------------------
+
+* Have the raw data been stored by the main researcher? [X] YES / [ ] NO
+
+If NO, please justify:
+
+* On which platform are the raw data stored?
+  - [X] researcher PC
+  - [ ] research group file server
+  - [ ] other (specify): informed consent files on paper
+
+* Who has direct access to the raw data
+(i.e., without intervention of another person)?
+  - [X] main researcher
+  - [X] responsible ZAP
+  - [ ] all members of the research group
+  - [ ] all members of UGent
+  - [X] other (specify): thesis supervisor at the partner university
+  (Dr. Hélène Loevenbruck at Univ. Grenoble Alpes)
+
+3b. Other files
+-----------------------------------------------------------
+
+* Which other files have been stored?
+  - [ ] file(s) describing the transition from raw data to reported results.
+  - [X] file(s) containing processed data.
+  Specify: [suppressiondata.csv] and [eyetracking_control.csv]
+  - [X] file(s) containing analyses. Specify: [Rumination_suppression.Rmd]
+  - [ ] files(s) containing information about informed consent
+  - [ ] a file specifying legal and ethical provisions
+  - [X] file(s) that describe the content of the stored files and how this
+  content should be interpreted. Specify: [README.md]
+  - [ ] other files. Specify: ...
+
+* On which platform are these other files stored?
+  - [X] individual PC
+  - [ ] research group file server
+  - [X] other: Open Science Framework: https://osf.io/3bh67/
+
+* Who has direct access to these other files
+(i.e., without intervention of another person)?
+  - [X] main researcher
+  - [X] responsible ZAP
+  - [X] all members of the research group
+  - [X] all members of UGent
+  - [X] other (specify): everyone that has access to the OSF
+
+4. Reproduction
+===========================================================
+* Have the results been reproduced independently?: [ ] YES / [X] NO
+
+* If yes, by whom (add if multiple):
+   - name:
+   - address:
+   - affiliation:
+   - e-mail:
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Data Storage Fact Sheet - Chapter 7 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Examining the involvement of the speech motor system during
+% rumination: a dual-task investigation
+% Author: Ladislas Nalborczyk
+% Date: 27.08.2019
+
+1. Contact details
+===========================================================
+
+1a. Main researcher
+-----------------------------------------------------------
+
+- name: Ladislas Nalborczyk
+- address: Henri Dunantlaan 2, 9000 Ghent, Belgium
+- e-mail: ladislas.nalborczyk@gmail.com
+
+1b. Responsible Staff Member (ZAP)
+-----------------------------------------------------------
+
+- name: Prof. dr. Ernst H. W. Koster
+- address: Henri Dunantlaan 2, 9000 Ghent, Belgium
+- e-mail: Ernst.Koster@UGent.be
+
+If a response is not received when using the above contact details,
+please send an email to data.pp@ugent.be or contact Data Management,
+Faculty of Psychology and Educational Sciences, Henri Dunantlaan 2,
+9000 Ghent, Belgium.
+
+2. Information about the datasets to which this sheet applies
+===========================================================
+
+* Reference of the publication in which the datasets are reported:
+Nalborczyk, L., Perrone-Bertolotti, M., Baeyens, C., Koster, E.H.W.,
+& Loevenbruck, H. (in preparation). Examining the involvement of
+the speech motor system during rumination: a dual-task investigation.
+
+* Which datasets in that publication does this sheet apply to?:
+All datasets reported in the article.
+
+3. Information about the files that have been stored
+===========================================================
+
+3a. Raw data
+-----------------------------------------------------------
+
+* Have the raw data been stored by the main researcher? [X] YES / [ ] NO
+
+If NO, please justify:
+
+* On which platform are the raw data stored?
+  - [X] researcher PC
+  - [ ] research group file server
+  - [ ] other (specify): informed consent files on paper
+
+* Who has direct access to the raw data
+(i.e., without intervention of another person)?
+  - [X] main researcher
+  - [X] responsible ZAP
+  - [ ] all members of the research group
+  - [ ] all members of UGent
+  - [X] other (specify): thesis supervisor at the partner university
+  (Dr. Hélène Loevenbruck at Univ. Grenoble Alpes)
+
+3b. Other files
+-----------------------------------------------------------
+
+* Which other files have been stored?
+  - [ ] file(s) describing the transition from raw data to reported results.
+  - [X] file(s) containing processed data. Specify: [data_merged.csv]
+  - [X] file(s) containing analyses. Specify: [articulatory_suppression_2019.Rmd]
+  - [ ] files(s) containing information about informed consent
+  - [ ] a file specifying legal and ethical provisions
+  - [ ] file(s) that describe the content of the stored files and how this
+  content should be interpreted. Specify: ...
+  - [ ] other files. Specify: ...
+
+* On which platform are these other files stored?
+  - [X] individual PC
+  - [ ] research group file server
+  - [X] other: Open Science Framework: https://osf.io/8ab2d/
+
+* Who has direct access to these other files
+(i.e., without intervention of another person)?
+  - [X] main researcher
+  - [X] responsible ZAP
+  - [X] all members of the research group
+  - [X] all members of UGent
+  - [X] other (specify): everyone that has access to the OSF
+
+4. Reproduction
+===========================================================
+* Have the results been reproduced independently?: [ ] YES / [X] NO
+
+* If yes, by whom (add if multiple):
+   - name:
+   - address:
+   - affiliation:
+   - e-mail:
