@@ -133,14 +133,6 @@ Aside from *cross-talk*, many other factors can affect the EMG signals. These fa
 
 All these factors contribute to modulating both the amplitude of the EMG signal and its spectral properties (e.g., its mean or median frequency). The importance of these perturbating factors should be acknowledged and controlled as far as possible. In our work, we use a state-of-the art surface EMG apparatus, specifically developed to tackle these issues, as well as standardised procedures (more details regarding the EMG apparatus are provided in Chapters \@ref(chap3) to \@ref(chap5)).
 
-<!--
-@fridlund_guidelines_1986 also emphasise the importance of six factors determining the quality of the recorded surface EMG signals. These factors are i) the proximity of the electrode to the underlying muscle mass, ii) the position of the electrode relative to muscle fibers size, location, and orientation...
-
-(External) factors influencing the EMG signal: i) tissue characteristics (thickness, physiological changes and temperature), nb: vary greatly from subject to subject, ii) physiological cross-talk produced by neighbouring muscles but ECG spies can also interfere with the EMG recording (especially in the upper trunk or shoulder muscles), iii) external noise in noisy electrical environments (e.g., electrical power), iv) electrodes and amplifiers...
-
-Studies have generally show that the primary energy of surface EMG signals lie between 10 and 200Hz [@fridlund_guidelines_1986]. For facial surface EMG studies more specifically... See van Boxtel 2001... [for more details on EMG signal processing, see for instance @raez_techniques_2006; @chowdhury_surface_2013]... Then, in keeping with the recommendation for facial EMG studies [@de_luca_filtering_2010], a 20 Hz – 450 Hz bandpass filter was applied, in order to focus on the facial EMG frequency band...
--->
-
 ### EMG signal processing
 
 The raw EMG signal is a stochastic train of MUAPs. As put by @fridlund_guidelines_1986, "when heard through a speaker, the raw EMG signal sounds like popcorn popping". Therefore, it is usually unsuitable for immediate quantification. In order to illustrate what the EMG signal looks like, we simulated EMG data based on a standard algorithm implemented in the `biosignalEMG` package [@R-biosignalEMG]. This simulated EMG signal is represented in Figure \@ref(fig:emgplot1).
